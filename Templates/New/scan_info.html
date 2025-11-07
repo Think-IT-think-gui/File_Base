@@ -1,0 +1,317 @@
+{% load static %}
+<link rel="stylesheet" href="{% get_static_prefix %}Home/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css">
+<link rel="stylesheet" href="{% get_static_prefix %}Home/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="{% get_static_prefix %}Home/assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="{% get_static_prefix %}Home/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css">
+<link rel="stylesheet" href="{% get_static_prefix %}Home/assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css">
+<link rel="stylesheet" href="{% get_static_prefix %}Home/assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css">
+<link rel="stylesheet" href="{% get_static_prefix %}Home/assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css">
+<link rel="stylesheet" href="{% get_static_prefix %}Home/assets/vendor/libs/select2/select2.css" />
+<link rel="stylesheet" href="{% get_static_prefix %}Home/assets/vendor/libs/@form-validation/umd/styles/index.min.css" />
+<style>
+  .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  }
+  .upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0;
+  }
+  </style>
+{% include "New/Extra/header.html" %}
+
+      <!-- Content wrapper -->
+      <div class="content-wrapper">
+
+        <!-- Content -->
+
+          <div class="container-xxl flex-grow-1 container-p-y">
+
+
+<h4 class="py-3 mb-4">
+
+</h4>
+
+<div class="row">
+    {% for i in Remark %}
+
+        <div class="col-md-4 col-lg-2">
+                  <div class="bg-white card text-center alert-dismissible fade show alert p-0 card-hover" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <div class="p-2 d-block mt-3">
+                      <img src="{% get_media_prefix %}Admin/{{i.User}}.jpg" width="75" height='75' style="height:75px:object-fit:cover;border-radius:100px" class="">
+                      <h5 class="card-title mt-3">{{i.Name}}</h5>
+                      <span class="badge bg-success-subtle text-success rounded-pill mb-3">{{i.time}}</span>
+                      <a onclick="show({{i.id}})" class="btn bg-success-subtle text-success  d-block w-100">View Remark</a>
+                      <input type="hidden" value="{{i.About}}" id="Read_{{i.id}}">
+                    </div>
+                  </div>
+                </div>
+
+   {% endfor %}
+    </div>
+  <script>
+
+      function show(id){
+          var s = document.getElementById("Read_"+id)
+          alert(s.value)
+      }
+  </script>
+
+<div class="row">
+  <!-- User Sidebar -->
+  <div class="col-xl-4 col-lg-5 col-md-5 order-1 order-md-0">
+    <!-- User Card -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="user-avatar-section">
+          <div class=" d-flex align-items-center flex-column">
+              {% if Cleint.Type == "New" %}
+            <img class="img-fluid rounded mb-3 mt-4" src="{% get_media_prefix %}Booking/{{Client.id}}.jpg?{{Rand}}" height="120" width="120" alt="User avatar" />
+               {% else %}
+                     <img class="img-fluid rounded mb-3 mt-4" src="{% get_media_prefix %}Profiles/{{Client.Type}}.jpg?{{Rand}}" height="120" width="120" alt="User avatar" />
+               {% endif %}
+
+            <div class="user-info text-center">
+              <h4>{{Client.Name}}</h4>
+              <span class="badge bg-label-danger rounded-pill">Visiting Client</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between flex-wrap my-2 py-3">
+          <div class="d-flex align-items-center me-4 mt-3 gap-3">
+            <div class="avatar">
+              <div class="avatar-initial bg-label-primary rounded">
+                <i class="mdi mdi-clock-time-eight-outline mdi-24px"></i>
+              </div>
+            </div>
+            <div>
+              <h6 class="mb-0">Time Scheduled</h6>
+              <span>{{Client.Schedule_Time}}</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mt-3 gap-3">
+            <div class="avatar">
+              <div class="avatar-initial bg-label-primary rounded">
+                <i class="mdi mdi-calendar-badge-outline mdi-24px"></i>
+              </div>
+            </div>
+            <div>
+              <h6 class="mb-0">Date Scheduled</h6>
+              <span>{{Client.Schedule_Date}}</span>
+            </div>
+          </div>
+        </div>
+        <h5 class="pb-3 border-bottom mb-3">Details</h5>
+        <div class="info-container">
+          <ul class="list-unstyled mb-4">
+            <li class="mb-3">
+              <span class="fw-medium text-heading me-2">Full Name:</span>
+              <span>{{Client.Name}}</span>
+            </li>
+            <li class="mb-3">
+              <span class="fw-medium text-heading me-2">Gender:</span>
+              <span>{{Client.Gender}}</span>
+            </li>
+            <li class="mb-3">
+              <span class="fw-medium text-heading me-2">Location:</span>
+              <span class="badge bg-label-success rounded-pill">{{Client.Location}}</span>
+            </li>
+
+            <li class="mb-3">
+              <span class="fw-medium text-heading me-2">Contact:</span>
+              <span>{{Client.Contact}}</span>
+            </li>
+
+
+          </ul>
+          <div class="d-flex justify-content-center">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /User Card -->
+    <!-- Plan Card -->
+
+    <!-- /Plan Card -->
+  </div>
+  <!--/ User Sidebar -->
+
+
+  <!-- User Content -->
+  <div class="col-xl-8 col-lg-7 col-md-7 order-0 order-md-1">
+    <!-- User Tabs -->
+
+    <!--/ User Tabs -->
+
+    <!-- Change Password -->
+    <div class="card mb-4">
+      <h5 class="card-header">About Schedule</h5>
+      <div class="card-body">
+        <div>
+          {% csrf_token %}
+          Meeting Topic:
+          <div class="card-header">
+             <h5 class="mb-0">{{Client.Topic}}</h5>
+
+          </div>
+
+            <p>About Meeting</p>
+            <p style="font-size:11px">{{Client.About}}</p>
+
+<hr>
+         <p>Message Assigned To Card</p>
+            <p style="font-size:11px">{{Card.About}}</p>
+
+          <div class="row">
+           <form action="{% url 'create_card_point_message' Card.id %}" method="post">
+               {% csrf_token %}
+            <div class="form-floating form-floating-outline mb-4">
+              <textarea class="form-control h-px-100" id="exampleFormControlTextarea1" required name="About" style="height:100px" >{{Client.Details}}</textarea>
+              <label for="exampleFormControlTextarea1">Leave Client Remark</label>
+            </div>
+            <div style="text-align:center;padding-bottom:20px">
+            <button type="submit"  class="btn btn-success">Post Remark</button>
+             </div>
+             </form>
+             <p style="padding-top:20px"></p>
+             {% for i in Point %}
+             {% for o in Perm %}
+             {% if i.Point == o.Point %}
+            <div class="mb-3 col-lg-4 col-sm-6 form-password-toggle">
+               <div class="input-group input-group-merge">
+                <div class="form-floating form-floating-outline">
+                  <select onchange="update('{{i.id}}')" class="form-control" required id="Point_{{i.id}}" >
+                      <option>{{i.Status}}</option>
+                    <option>Pending</option>
+                    <option>On Hold</option>
+                    <option>Rescheduled</option>
+                    <option>Canciled</option>
+                    <option>Completed</option>
+
+
+                  </select>
+                  <label for="newPassword">{{i.Name}}</label>
+                </div>
+
+              </div>
+            </div>
+            {% endif %}
+
+
+            {% endfor %}
+        {% endfor %}
+
+        </div>
+      </div>
+    </div>
+    <!--/ Change Password -->
+
+    <!-- Two-steps verification -->
+
+    <!--/ Two-steps verification -->
+
+    <!-- Recent Devices -->
+
+    <!--/ Recent Devices -->
+  </div>
+  <!--/ User Content -->
+</div>
+
+
+<!--/ Edit User Modal -->
+
+<!-- Enable OTP Modal -->
+
+<!--/ Upgrade Plan -->
+
+<!-- /Modals -->
+          </div>
+          <!-- / Content -->
+
+
+
+
+<h3>Session Breakdown</h3>
+<div class="row">
+
+{% for i in Sessions %}
+    <div class="col-lg-4 col-md-6">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <img src="{% get_media_prefix %}Admin/{{i.User}}.jpg" class="rounded-1 img-fluid" width="160">
+                      <div class="mt-n2">
+                        <span class="badge text-bg-primary">{{i.Status}}</span>
+                        <h3 class="card-title mt-3">{{i.Title}}</h3>
+                        <h6 class="card-subtitle">Done By: {{i.Name}}</h6>
+                      </div>
+                      <div class="row mt-3 justify-content-center">
+                        <div class="col-6">
+                          <div class=" align-items-center">
+
+                            <div class="">
+                              <h6 class="fw-normal text-muted mb-0">Time Done</h6>
+                              <h4 class="mb-0 fs-5">{{i.Time}}</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="align-items-center">
+
+                            <div class="">
+                              <h6 class="fw-normal text-muted mb-0">Date Done</h6>
+                              <h4 class="mb-0 fs-5">{{i.Date}}</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+{% endfor %}
+</div>
+
+
+<script>
+
+
+                function update(id){
+                var state = document.getElementById("Point_"+id)
+                data = JSON.stringify({
+                Status:state.value,
+                id:id
+                })
+                fetch("{% url 'set_card_point_session'  %}", {
+                method: 'POST',
+                body: data,
+                headers: { 'X-CSRFToken': '{{ csrf_token }}','Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json',
+                    },
+                })
+                .then(response => response.json())
+                .then(data => {
+                if (data === 'Ok'){
+
+
+                    alert("Session updated successfully!")
+
+                }else{
+                    alert("Please an error occured when updating data!")
+
+                }
+                });
+
+              }
+</script>
+
+
+          {% include "New/Extra/footer.html" %}

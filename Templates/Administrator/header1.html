@@ -1,0 +1,184 @@
+{% load static %}
+
+<nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+  <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+    <a class="navbar-brand brand-logo mr-5" href="{% url 'admin_dashboard'%}">
+      <img src="{% get_static_prefix%}2a.jpg" class="mr-2" alt="logo"/></a>
+    <a class="navbar-brand brand-logo-mini" href="{% url 'admin_dashboard'%}"><img src="{% get_static_prefix%}2a.jpg" alt="logo"/></a>
+  </div>
+  <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+    <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+      <span class="icon-menu"></span>
+    </button>
+    <ul class="navbar-nav mr-lg-2">
+      <li class="nav-item nav-search d-none d-lg-block">
+        <div class="input-group">
+          <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+              <span class="input-group-text" id="search">
+                <i class="icon-search"></i>
+              </span>
+          </div>
+          <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav navbar-nav-right">
+      <li class="nav-item dropdown">
+        <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+          <i class="icon-bell mx-0"></i>
+          <span class="count"></span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+          <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+          <a class="dropdown-item preview-item">
+            <div class="preview-thumbnail">
+              <div class="preview-icon bg-success">
+                <i class="ti-info-alt mx-0"></i>
+              </div>
+            </div>
+            <div class="preview-item-content">
+              <h6 class="preview-subject font-weight-normal">Application Error</h6>
+              <p class="font-weight-light small-text mb-0 text-muted">
+                Just now
+              </p>
+            </div>
+          </a>
+
+        </div>
+      </li>
+      <li class="nav-item nav-settings d-none d-lg-flex">
+        <a href="{% url 'admin_logout'%}" class="btn">
+          <i class="ti-power-off text-primary"></i>
+          Logout
+        </a>
+      </li>
+
+    </ul>
+    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+      <span class="icon-menu"></span>
+    </button>
+  </div>
+</nav>
+<!-- partial -->
+<div class="container-fluid page-body-wrapper">
+  <!-- partial:partials/_settings-panel.html -->
+
+
+  <!-- partial -->
+  <!-- partial:partials/_sidebar.html -->
+  <nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'admin_dashboard'%}">
+          <i class="icon-grid menu-icon"></i>
+          <span class="menu-title">Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#form-elements11" aria-expanded="false" aria-controls="form-elements11">
+          <i class="icon-location menu-icon"></i>
+          <span class="menu-title">Platform Insights</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="form-elements11">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"><a class="nav-link" href="{% url 'traffic_table'%}">View Traffic Data</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'traffic_graph'%}">Traffic Report</a></li>
+
+
+          </ul>
+        </div>
+      </li>
+
+<li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#tables4" aria-expanded="false" aria-controls="tables4">
+          <i class="icon-grid-2 menu-icon"></i>
+          <span class="menu-title">Travel Package</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="tables4">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="{% url 'job_pannel'  %}">Create Package</a></li>
+            <li class="nav-item"> <a class="nav-link" href="{% url 'job_pannel_manage'  %}">View Package</a></li>
+          </ul>
+        </div>
+      </li>
+
+     <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+          <i class="icon-grid-2 menu-icon"></i>
+          <span class="menu-title">Account Tables</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="tables">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="{% url 'manager_account' %}">Applicant Table</a></li>
+
+            <li class="nav-item"> <a class="nav-link" href="{% url 'manager_account_group' 'New Applicant' %}">New Applicants</a></li>
+            <li class="nav-item"> <a class="nav-link" href="{% url 'manager_account_group' 'Pending' %}">Pending Applicants</a></li>
+            <li class="nav-item"> <a class="nav-link" href="{% url 'manager_account_group' 'Ready' %}">Ready Applicants</a></li>
+            <li class="nav-item"> <a class="nav-link" href="{% url 'manager_account_group' 'Active' %}">Active Applicants</a></li>
+
+            <li class="nav-item"> <a class="nav-link" href="{% url 'manager_account_group' 'Declined' %}">Declined Applicants</a></li>
+
+
+
+
+
+
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#form-elements1" aria-expanded="false" aria-controls="form-elements1">
+          <i class="icon-file menu-icon"></i>
+          <span class="menu-title">Financial Status</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="form-elements1">
+          <ul class="nav flex-column sub-menu">
+
+            <li class="nav-item"><a class="nav-link" href="{% url 'payment_issued'%}">Payments Issued</a></li>
+
+
+
+
+
+          </ul>
+        </div>
+      </li>
+
+<li class="nav-item">
+        <a class="nav-link" href="{% url 'billings'%}">
+          <i class="icon-book menu-icon"></i>
+          <span class="menu-title">Bills & Prices</span>
+        </a>
+      </li>
+
+
+    </ul>
+  </nav>
+
+  <script>
+
+      function getCookie(name) {
+      let cookieValue = null;
+      if (document.cookie && document.cookie !== '') {
+          const cookies = document.cookie.split(';');
+          for (let i = 0; i < cookies.length; i++) {
+              const cookie = cookies[i].trim();
+              // Does this cookie string begin with the name we want?
+              if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                  cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                  break;
+              }
+          }
+      }
+      return cookieValue;
+      }
+
+      const csrftoken = getCookie('csrftoken');
+      console.log(csrftoken)
+
+    </script>

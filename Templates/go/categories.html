@@ -1,0 +1,124 @@
+﻿<!doctype html>
+<html lang="en">
+    {% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Omall</title>
+
+    <!-- manifest meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="{% get_static_prefix%}go/manifest.json">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="180x180">
+    <link rel="icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="16x16" type="image/png">
+
+    <!-- Google fonts-->
+    <link href="{% get_static_prefix%}go/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="{% get_static_prefix%}go/css2-1?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="{% get_static_prefix%}go/npm/bootstrap-icons%401.5.0/font/bootstrap-icons.css">
+
+    <!-- nouislider CSS -->
+    <link href="{% get_static_prefix%}go/assets/vendor/nouislider/nouislider.min.css" rel="stylesheet">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="{% get_static_prefix%}go/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.css">
+
+    <!-- style css for this template -->
+    <link href="{% get_static_prefix%}go/assets/css/style.css" rel="stylesheet" id="style">
+</head>
+
+<body class="body-scroll" data-page="home">
+             
+     {% include 'go/Extra/header.html' %}
+          
+        <!-- main page content -->
+        <div class="main-container container">
+
+            <!-- search -->
+            <form action="{% url 'find' %}" method="post">
+                {% csrf_token %}
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-floating">
+                        <input type="text" name="Key" required class="form-control is-valid" id="search" placeholder="Search">
+                        <label for="search">Search</label>
+                    <input type="hidden" value="No" name="Filter">
+
+                        <button type="submit" class="btn btn-link tooltip-btn d-block text-color-theme">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <button  class="btn btn-lg btn-theme shadow-sm filter-btn">
+                        <i class="bi bi-filter size-22"></i>
+                    </button>
+                </div>
+            </div>
+            </form>
+
+            <!-- categories -->
+        
+            <!-- Categories -->
+            <div class="row mb-3">
+                <div class="col">
+                    <h5 class="mb-0" > What are you looking for? </h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mb-2">
+                   {% for i in Categories %}
+                   <a href="{% url 'category_select' i.Name %}"> <div class="badge-new me-2 mb-3 shadow-sm">{{i.Name}}</div></a>
+                   {% endfor %}
+                   
+                </div>
+            </div>
+
+            <!-- trending items -->
+            
+        
+        
+    </main>
+    <!-- Page ends-->
+
+    <!-- Footer -->
+   
+    {% include 'go/Extra/footer.html' %}
+
+
+    <!-- Required jquery and libraries -->
+    <script src="{% get_static_prefix%}go/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="{% get_static_prefix%}go/assets/js/popper.min.js"></script>
+    <script src="{% get_static_prefix%}go/assets/vendor/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+
+    <!-- cookie js -->
+    <script src="{% get_static_prefix%}go/assets/js/jquery.cookie.js"></script>
+
+    <!-- PWA app service registration and works -->
+    <script src="{% get_static_prefix%}go/assets/js/pwa-services.js"></script>
+
+    <!-- swiper script -->
+    <script src="{% get_static_prefix%}go/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.js"></script>
+
+    <!-- nouislider js -->
+    <script src="{% get_static_prefix%}go/assets/vendor/nouislider/nouislider.min.js"></script>
+
+    <!-- Customized jquery file  -->
+    <script src="{% get_static_prefix%}go/assets/js/main.js"></script>
+    <script src="{% get_static_prefix%}go/assets/js/color-scheme.js"></script>
+
+    <!-- page level custom script -->
+    <script src="{% get_static_prefix%}go/assets/js/app.js"></script>
+
+</body>
+
+</html>

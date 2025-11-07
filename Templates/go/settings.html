@@ -1,0 +1,340 @@
+﻿<!doctype html>
+<html lang="en">
+    {% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Omall</title>
+
+    <!-- manifest meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="{% get_static_prefix%}go/manifest.json">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="180x180">
+    <link rel="icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="16x16" type="image/png">
+
+    <!-- Google fonts-->
+    <link href="{% get_static_prefix%}go/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="{% get_static_prefix%}go/css2-1?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="{% get_static_prefix%}go/npm/bootstrap-icons%401.5.0/font/bootstrap-icons.css">
+
+    <!-- nouislider CSS -->
+    <link href="{% get_static_prefix%}go/assets/vendor/nouislider/nouislider.min.css" rel="stylesheet">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="{% get_static_prefix%}go/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.css">
+
+    <!-- style css for this template -->
+    <link href="{% get_static_prefix%}go/assets/css/style.css" rel="stylesheet" id="style">
+</head>
+
+<style>
+    .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    }	  
+    .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0;
+    }
+    </style>
+
+
+
+<body class="body-scroll" data-page="">
+    {% include 'go/Extra/header.html' %}
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}    
+    <div class="main-container container">
+
+            <!-- profile picture -->
+            <div class="row  mb-4">
+                <div class="col-auto">
+                    <figure class="avatar avatar-100 rounded mx-auto">
+                        <img id="imgm" src="{% get_media_prefix%}User_Imgs/{{User_Data.id}}.jpg?{{Rand}}" alt="">
+                    </figure>
+                    
+<div class="upload-btn-wrapper" style="">
+    <button  class="btn  btn-theme btn--icon-text btn-block"><i class="bi bi-camera"></i></button>
+   
+    <input  class="mdc-text-field__input"  id="file-input" style="width: 100%;" type="file"  name="New_Img" accept="image/*" />
+</div>
+
+                </div>
+
+                <div class="col align-self-center">
+                    <h5 class="">{{User_Data.Name}}</h5>
+                    <p class="text-opac">{{User_Data.Area}},<br>{{User_Data.City}}
+                        </p>
+                </div>
+            </div>
+
+            <script>
+
+                // vars
+                
+                upload = document.getElementById("file-input"),
+                
+                cropper = '';
+                
+                // on change show image with crop options
+                upload.addEventListener('change', (e) => {
+                  if (e.target.files.length) {
+                    
+                    const reader = new FileReader();
+                    reader.onload = (e)=> {
+                      if(e.target.result){
+                      console.log(e);
+                        
+                        let img = document.getElementById('imgm');
+                        
+                        img.src = e.target.result;
+                        
+                      }
+                    };
+                    reader.readAsDataURL(e.target.files[0]);
+                  }
+                });
+                </script>
+
+            <!-- Email Notifications settings -->
+            <div class="row mb-3">
+                <div class="col">
+                    <h5 class="mb-0">Notification Receive</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card card-light shadow-sm mb-4">
+                        <ul class="list-group list-group-flush bg-none">
+                            <li class="list-group-item py-3">
+                                <div class="row">
+                                    <div class="col-auto pr-0 align-self-center text-end">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="settingscheck1" checked="">
+                                            <label class="form-check-label" for="settingscheck1"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col ps-0">
+                                        <h6 class="mb-1">Email Notification</h6>
+                                        <p class="text-opac small d-block">Default all notification will be
+                                            sent</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item py-3">
+                                <div class="row">
+                                    <div class="col-auto pr-0 align-self-center text-end">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="settingscheck2" checked="">
+                                            <label class="form-check-label" for="settingscheck2"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col ps-0">
+                                        <h6 class="mb-1">SMS Notification</h6>
+                                        <p class="text-opac small d-block">Receive SMS notification</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item py-3">
+                                <div class="row">
+                                    <div class="col-auto pr-0 align-self-center text-end">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="settingscheck3">
+                                            <label class="form-check-label" for="settingscheck3"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col ps-0">
+                                        <h6 class="mb-1">Profile Availability</h6>
+                                        <p class="text-opac small d-block">Everyone can see my profile in
+                                            search</p>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- profile information -->
+            <div class="row mb-3">
+                <div class="col">
+                    <h5 class="mb-0">Basic Information</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card card-light shadow-sm mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                               
+
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="form-group form-floating  mb-3">
+                                        <input type="text" class="form-control" value="{{User_Data.Name}}" name="Name" required placeholder="Name" id="names">
+                                        <label for="names">Name</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="form-group form-floating  mb-3">
+                                        <input type="text" class="form-control" value="{{User_Data.Email}}" style="disabled" placeholder="Email .." id="emailphone">
+                                        <label for="emailphone">Email Address</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="form-group form-floating   mb-3">
+                                        <input type="text" class="form-control" required value="{{User_Data.Contact}}" name="Contact" placeholder="0123456789" id="surnames">
+                                        <label for="surnames">Contact</label>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- add edit address form -->
+            <div class="row mb-3">
+                <div class="col">
+                    <h5 class="mb-0">Address Change</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card card-light shadow-sm mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="form-floating mb-3">
+                                        <select name="City" required class="form-control" id="country">
+  <option value="accra">Accra</option>
+  <option value="kumasi">Kumasi</option>
+  <option value="tamale">Tamale</option>
+  <option value="sekondi-takoradi">Sekondi-Takoradi</option>
+  <option value="cape-coast">Cape Coast</option>
+  <option value="tema">Tema</option>
+  <option value="obuasi">Obuasi</option>
+  <option value="sunyani">Sunyani</option>
+  <option value="teshie">Teshie</option>
+  <option value="ho">Ho</option>
+  <option value="wa">Wa</option>
+  <option value="koforidua">Koforidua</option>
+  <option value="techiman">Techiman</option>
+  <option value="nungua">Nungua</option>
+  <option value="dome">Dome</option>
+  <option value="lashibi">Lashibi</option>
+  <option value="nsawam">Nsawam</option>
+  <option value="winneba">Winneba</option>
+  <option value="hohoe">Hohoe</option>
+  <option value="yendi">Yendi</option>
+                                        </select>
+                                        <label for="country">City</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="form-group form-floating   mb-3">
+                                        <input type="text" class="form-control" value="{{User_Data.Area}}" placeholder="Area Address" required name="Area" id="surnames">
+                                        <label for="surnames">Area Address</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- change password -->
+            <div class="row mb-3">
+                <div class="col">
+                    <h5 class="mb-0">Change Password</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card card-light shadow-sm mb-4">
+                        <div class="card-body">
+                            <div class="row h-100">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="form-floating  mb-3">
+                                        <input type="password" class="form-control" name="Old_Password" placeholder="Old Password" id="password">
+                                        <label for="password">Old Password</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="form-floating ">
+                                        <input type="password" class="form-control" placeholder="New Password" name="New_Password"  id="confirmpassword">
+                                        <label for="confirmpassword">New Password</label>
+                                        <button type="button" class="btn btn-link text-danger tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Enter valid Password" id="passworderror">
+                                            <i class="bi bi-info-circle"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row h-100 mb-4">
+                <div class="col-12 d-grid"><button  target="_self" class="btn btn-lg btn-default shadow-sm">Update</button></div>
+            </div>
+
+        </div>
+    </form>
+        <!-- main page content ends -->
+
+
+    </main>
+    <!-- Page ends-->
+
+    {% include 'go/Extra/footer.html' %}
+
+  
+    <!-- Required jquery and libraries -->
+    <script src="{% get_static_prefix%}go/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="{% get_static_prefix%}go/assets/js/popper.min.js"></script>
+    <script src="{% get_static_prefix%}go/assets/vendor/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+
+    <!-- cookie js -->
+    <script src="{% get_static_prefix%}go/assets/js/jquery.cookie.js"></script>
+
+    <!-- PWA app service registration and works -->
+    <script src="{% get_static_prefix%}go/assets/js/pwa-services.js"></script>
+
+    <!-- swiper script -->
+    <script src="{% get_static_prefix%}go/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.js"></script>
+
+    <!-- nouislider js -->
+    <script src="{% get_static_prefix%}go/assets/vendor/nouislider/nouislider.min.js"></script>
+
+    <!-- Customized jquery file  -->
+    <script src="{% get_static_prefix%}go/assets/js/main.js"></script>
+    <script src="{% get_static_prefix%}go/assets/js/color-scheme.js"></script>
+
+    <!-- page level custom script -->
+    <script src="{% get_static_prefix%}go/assets/js/app.js"></script>
+
+
+
+</body>
+
+</html>

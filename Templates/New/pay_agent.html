@@ -1,0 +1,510 @@
+
+
+{% load static %}
+<link rel="stylesheet" href="{% get_static_prefix %}New/assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
+<style>
+  .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  }
+  .upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0;
+  }
+  </style>
+
+<!-- APP CSS & APP SCSS -->
+{% include "New/Extra/header.html" %}
+
+<link rel="stylesheet" href="{% get_static_prefix %}New/assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
+
+          <!--  Header End -->
+          <div class="card shadow-none position-relative overflow-hidden mb-4">
+            <div class="card-body d-flex align-items-center justify-content-between p-4">
+              <h4 class="card-title mb-0">(<span style="color: brown;">Pending Payment To Be Made</span>)  </h4>
+              <nav aria-label="breadcrumb">
+
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+
+
+
+            <div class="row mb-4 g-4">
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="content-left">
+                        <h5 class="mb-1">GHS {{Total}}</h5>
+                        <small>Pending Payments</small>
+                      </div>
+                      <span class="badge bg-label-primary rounded-circle p-2">
+                        <i class="ti-check"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+          <div class="datatables">
+            <!-- start Zero Configuration -->
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Pending Payment To Be Made</h4>
+                <p class="card-subtitle mb-3">
+
+
+                </p>
+                <div class="table-responsive">
+                  <table id="zep" class="table table-striped table-bordered text-nowrap align-middle">
+                    <thead>
+                      <!-- start row -->
+                      <tr>
+
+
+                        <th >
+                          Client
+                        </th>
+
+                        <th >
+                          Contact
+                         </th>
+
+                         <th >
+                         Network
+                        </th>
+                        <th >
+                        Amount
+                        </th>
+
+
+                       <th >
+                          Action
+                        </th>
+
+
+                      </tr>
+                      <!-- end row -->
+                    </thead>
+                    <tbody>
+
+
+
+                      {% for i in Staff %}
+
+                      <tr id="{{i.id}}">
+
+
+
+
+                        <td>
+                          <img src="{% get_media_prefix %}Admin/{{i.id.id}}.jpg?" style="width: 60px;height: 60px;border-radius:100px;object-fit:cover" alt="image"/>
+
+                          <a>
+                            {{i.id.Full_Name}}
+                          </a>
+
+                        </td>
+
+
+                        <td>
+                          {{i.id.Contact}}
+                        </td>
+
+                        <td>
+                          {{i.id.Method}}
+
+
+                        </td>
+                         <td>
+                         GHS {{i.Amount}}
+                        </td>
+                        <td>
+                            {% if i.Amount > 0 %}
+                            <a type="button" class="btn bg-danger-subtle text-danger w-100 rounded-pill" onclick="setup('{{i.id.id}}')"  >Make Payment</a>
+                            {% else %}
+                            <a type="button" class="btn bg-info-subtle text-info w-100 rounded-pill" >No Payment</a>
+                            {% endif %}
+
+
+
+                          </td>
+
+
+
+
+                      </tr>
+
+                      {% endfor %}
+                      <!-- end row -->
+                    </tbody>
+                    <tfoot>
+                      <!-- start row -->
+                      <tr>
+
+
+                        <th >
+                          Client
+                        </th>
+
+                        <th >
+                          Contact
+                         </th>
+
+                         <th >
+                         Network
+                        </th>
+
+                          <th >
+                        Amount
+                        </th>
+                       <th >
+                          Action
+                        </th>
+
+                      <!-- end row -->
+                    </tfoot>
+                  </table>
+                <div class="row">
+
+
+
+
+
+
+            </div>
+                </div>
+
+              </div>
+
+        </div>
+
+
+
+
+
+        {% include "New/Extra/footer.html" %}
+
+
+
+        <!--Internal Echart Plugin -->
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/echart/echart.js"></script>
+
+        <!-- Internal index js -->
+        <link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/index-a335dc45.js" /><script type="module" src="{% get_static_prefix %}Main/build/assets/index-a335dc45.js"></script>
+        <!-- Select2 js -->
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/select2/js/select2.full.min.js"></script>
+
+        <!-- Data tables -->
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/dataTables.responsive.min.js"></script>
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
+
+
+            <!-- Switcher js -->
+            <link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/switcher-d57e6ced.js" /><script type="module" src="{% get_static_prefix %}Main/build/assets/switcher-d57e6ced.js"></script>
+            <!-- APP JS-->
+        <link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/app-2392f432.js" />
+        <link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/apexcharts.common-7928d148.js" />
+        <script type="module" src="{% get_static_prefix %}Main/build/assets/app-2392f432.js"></script>        <!-- END SCRIPTS -->
+
+            <!-- sticky js-->
+        <script src="{% get_static_prefix %}Main/build/assets/sticky.js"></script>
+
+
+
+      <script src="{% get_static_prefix %}New/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+      <script src="{% get_static_prefix %}New/assets/js/datatable/datatable-basic.init.js"></script>
+
+
+      <script type="text/javascript">
+    $(document).ready(function() {
+        // Initialize DataTable with id 'zep'
+        $('#zep').DataTable();
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <input type="hidden" value="" id='hold_id'>
+      <style>
+        @keyframes pulseModal {
+          0% { transform: scale(1); }
+          50% { transform: scale(1.2); }
+          100% { transform: scale(1); }
+        }
+
+
+        .glass-open-btn {
+          padding: 12px 24px;
+          background: rgba(255, 255, 255, 0.2);
+          border: none;
+          border-radius: 12px;
+          color: #fff;
+          font-size: 16px;
+          cursor: pointer;
+          backdrop-filter: blur(5px);
+          transition: all 0.3s ease;
+        }
+
+        .glass-open-btn:hover {
+          background: rgba(255, 255, 255, 0.3);
+          transform: scale(1.05);
+        }
+
+        .glass-modal-overlay {
+          position: fixed;
+          top: 0; left: 0;
+          width: 100%; height: 100%;
+          background: rgba(0, 0, 0, 0.4);
+          backdrop-filter: blur(4px);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 1000;
+          opacity: 0;
+          pointer-events: none;
+          transition: opacity 0.4s ease;
+        }
+
+        .glass-modal-overlay.active {
+          opacity: 1;
+          pointer-events: auto;
+        }
+
+        .glass-modal {
+          background: rgba(255, 255, 255, 0.15);
+          border-radius: 20px;
+          padding: 30px;
+          max-width: 400px;
+          color: white;
+          text-align: center;
+          backdrop-filter: blur(20px);
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+          transform: translateY(-20px);
+          opacity: 0;
+          transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+
+        .glass-modal-overlay.active .glass-modal {
+          transform: translateY(0);
+          opacity: 1;
+        }
+
+        .glass-emoji {
+          font-size: 48px;
+          margin-bottom: 15px;
+          animation: pulseModal 1.5s infinite;
+        }
+
+        .glass-modal-buttons {
+          display: flex;
+          gap: 15px;
+          justify-content: center;
+          margin-top: 20px;
+          flex-wrap: wrap;
+        }
+
+        .glass-modal-btn {
+          padding: 10px 20px;
+          background: rgba(219, 42, 42, 0.3);
+          border: none;
+          border-radius: 10px;
+          color: white;
+          cursor: pointer;
+          transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .glass-modal-btn:hover {
+          background: rgba(255, 255, 255, 0.4);
+          transform: scale(1.05);
+        }
+
+        .glass-confirm-input {
+          margin-top: 20px;
+          padding: 10px;
+          border-radius: 8px;
+          border: none;
+          width: 80%;
+          text-align: center;
+        }
+
+        .glass-notification {
+          margin-top: 20px;
+          font-size: 18px;
+          color: #00ffcc;
+          display: none;
+        }
+      </style>
+
+      <div class="glass-modal-overlay" id="glassModalOverlay">
+        <div class="glass-modal" id="glassModalContent">
+          <div class="glass-emoji">⚠️</div>
+          <h2>Confirm Deletion</h2>
+          <p>Type <strong>DELETE</strong> to confirm this action.</p>
+          <input type="text" id="glassConfirmInput" class="glass-confirm-input" placeholder="Type DELETE here...">
+          <div class="glass-modal-buttons">
+            <button class="glass-modal-btn" onclick="confirmGlassDelete()">Delete</button>
+
+          </div>
+          <div class="glass-notification" id="glassAcceptedMsg">✅ Deleted successfully.</div>
+          <div class="glass-notification" id="glassDeclinedMsg">❌ Deletion cancelled.</div>
+        </div>
+      </div>
+
+      <script>
+        const glassModalOverlay = document.getElementById('glassModalOverlay');
+        const glassModalContent = document.getElementById('glassModalContent');
+        const glassConfirmInput = document.getElementById('glassConfirmInput');
+        const glassAcceptedMsg = document.getElementById('glassAcceptedMsg');
+        const glassDeclinedMsg = document.getElementById('glassDeclinedMsg');
+
+
+
+        function openGlassModal() {
+          glassModalOverlay.classList.add('active');
+          glassConfirmInput.value = '';
+          glassAcceptedMsg.style.display = 'none';
+          glassDeclinedMsg.style.display = 'none';
+          glassModalContent.innerHTML = `
+            <div class="glass-emoji">
+              <picture>
+
+              <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/26a0_fe0f/512.gif" alt="🔥" width="50" height="50">
+            </picture>
+            </div>
+            <h2>Confirm Transaction</h2>
+            <p>Type <strong>CONFIRM</strong> to confirm this action.</p>
+            <input type="text" id="glassConfirmInput" class="glass-confirm-input" placeholder="Type CONFIRM here...">
+            <div class="glass-modal-buttons">
+              <button class="glass-modal-btn" onclick="confirmGlassDelete()">Confirm</button>
+
+            </div>
+            <div class="glass-notification" id="glassAcceptedMsg">✅ Deleted successfully.</div>
+            <div class="glass-notification" id="glassDeclinedMsg">❌ Deletion cancelled.</div>
+          `;
+        }
+
+        function closeGlassModal() {
+          glassModalOverlay.classList.remove('active');
+          location.reload();
+        }
+
+        function confirmGlassDelete() {
+          const input = document.getElementById('glassConfirmInput').value.trim().toUpperCase();
+          if (input === 'CONFIRM') {
+
+            var state = document.getElementById("hold_id")
+       //     alert(state.value)
+        data = JSON.stringify({
+        ID:state.value,
+        })
+        fetch("{% url 'confirm_payout' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+
+        if (data === 'Ok'){
+
+
+            state.value=""
+            glassModalContent.innerHTML = `
+              <div class="glass-emoji">
+                <picture>
+
+              <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f60a/512.gif" alt="🔥" width="50" height="50">
+            </picture>
+              </div>
+              <h2>Confirmed Successfully</h2>
+              <p>Your item has been permanently sent.</p>
+              <div class="glass-modal-buttons">
+                <button class="glass-modal-btn" onclick="closeGlassModal()">Close</button>
+              </div>
+            `;
+
+
+        }else{
+          glassModalContent.innerHTML = `
+          <div class="glass-emoji">
+            <picture>
+
+              <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2639_fe0f/512.gif" alt="🔥" width="50" height="50">
+            </picture>
+          </div>
+          <h2>Error Occured</h2>
+          <p>Error confirming this from the system.</p>
+          <div class="glass-modal-buttons">
+            <button class="glass-modal-btn" onclick="closeGlassModal()">Close</button>
+          </div>
+        `;
+
+        }
+        });
+
+
+
+          } else {
+            alert('Please type DELETE to confirm.');
+          }
+        }
+
+        function declineGlassDelete() {
+          document.getElementById('glassDeclinedMsg').style.display = 'block';
+          document.getElementById('glassAcceptedMsg').style.display = 'none';
+        }
+
+        glassModalOverlay.addEventListener('click', (e) => {
+          if (e.target === glassModalOverlay) {
+            closeGlassModal();
+          }
+        });
+
+        function setup(id){
+          document.getElementById('hold_id').value=id
+          openGlassModal()
+        }
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

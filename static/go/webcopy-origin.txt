@@ -1,0 +1,460 @@
+Uri: https://cdn.jsdelivr.net/momentjs/latest/moment.min.js
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\momentjs\latest\moment.min.js
+Content Type: application/javascript
+
+Uri: https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\npm\bootstrap-icons@1.5.0\font\bootstrap-icons.css
+Content Type: text/css
+
+Uri: https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/fonts/bootstrap-icons.woff2?856008caa5eb66df68595e734e59580d
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\npm\bootstrap-icons@1.5.0\font\fonts\bootstrap-icons.woff2
+Content Type: font/woff2
+
+Uri: https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/fonts/bootstrap-icons.woff?856008caa5eb66df68595e734e59580d
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\npm\bootstrap-icons@1.5.0\font\fonts\bootstrap-icons.woff
+Content Type: font/woff
+
+Uri: https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\css2
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\css2-1
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmRTM.ttf
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\s\nunito\v25\XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmRTM.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshRTM.ttf
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\s\nunito\v25\XRXI3I6Li01BKofiOc5wtlZ2di8HDLshRTM.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/ptsans/v17/jizaRExUiTo99u79P0U.ttf
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\s\ptsans\v17\jizaRExUiTo99u79P0U.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/ptsans/v17/jizfRExUiTo99u79B_mh4Ok.ttf
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\s\ptsans\v17\jizfRExUiTo99u79B_mh4Ok.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/ptsans/v17/jizYRExUiTo99u79D0eEwA.ttf
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\s\ptsans\v17\jizYRExUiTo99u79D0eEwA.ttf
+Content Type: font/ttf
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\index.htm
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/404.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\404.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/aboutus.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\aboutus.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/addaddress.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\addaddress.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/addmoney.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\addmoney.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/address.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\address.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/css/style.css
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\css\style.css
+Content Type: text/css
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/404.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\404.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/americanexp.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\americanexp.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/apple-small.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\apple-small.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/apple.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\apple.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/applelogo.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\applelogo.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/background1@2x.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\background1@2x.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/background2@2x.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\background2@2x.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/background3@2x.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\background3@2x.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/banana-small.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\banana-small.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/banana.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\banana.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/Banner.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\Banner.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/Banner2.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\Banner2.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/Banner3.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\Banner3.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/berry-small.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\berry-small.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/bgshapes.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\bgshapes.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/bgshapes2.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\bgshapes2.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/favicon16.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\favicon16.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/favicon180.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\favicon180.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/favicon32.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\favicon32.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/googlelogo.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\googlelogo.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/lemon-small.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\lemon-small.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/logo.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\logo.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/maestro.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\maestro.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/map.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\map.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/microsoftlogo.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\microsoftlogo.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/news1.jpg
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\news1.jpg
+Content Type: image/jpeg
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/news2.jpg
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\news2.jpg
+Content Type: image/jpeg
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/news3.jpg
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\news3.jpg
+Content Type: image/jpeg
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/orange-slice.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\orange-slice.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/pineapple.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\pineapple.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/product1.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\product1.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/product2.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\product2.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/product3.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\product3.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/product4.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\product4.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/progress.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\progress.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/setting-bg-1@2x.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\setting-bg-1@2x.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/setting-bg-2@2x.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\setting-bg-2@2x.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/setting-bg-3@2x.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\setting-bg-3@2x.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/setting-menu-1@2x.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\setting-menu-1@2x.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/setting-menu-2@2x.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\setting-menu-2@2x.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/setting-menu-3@2x.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\setting-menu-3@2x.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/thankyou2.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\thankyou2.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/user1.jpg
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\user1.jpg
+Content Type: image/jpeg
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/user2.jpg
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\user2.jpg
+Content Type: image/jpeg
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/user3.jpg
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\user3.jpg
+Content Type: image/jpeg
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/img/visa.png
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\img\visa.png
+Content Type: image/png
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/js/app.js
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\js\app.js
+Content Type: application/javascript
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/js/color-scheme.js
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\js\color-scheme.js
+Content Type: application/javascript
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/js/jquery-3.3.1.min.js
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\js\jquery-3.3.1.min.js
+Content Type: application/javascript
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/js/jquery.cookie.js
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\js\jquery.cookie.js
+Content Type: application/javascript
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/js/main.js
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\js\main.js
+Content Type: application/javascript
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/js/popper.min.js
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\js\popper.min.js
+Content Type: application/javascript
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/js/pwa-services.js
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\js\pwa-services.js
+Content Type: application/javascript
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/vendor/bootstrap-5/js/bootstrap.bundle.min.js
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\vendor\bootstrap-5\js\bootstrap.bundle.min.js
+Content Type: application/javascript
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/vendor/chart-js-3.3.1/chart.min.js
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\vendor\chart-js-3.3.1\chart.min.js
+Content Type: application/javascript
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/vendor/daterangepicker/daterangepicker.css
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\vendor\daterangepicker\daterangepicker.css
+Content Type: text/css
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/vendor/daterangepicker/daterangepicker.js
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\vendor\daterangepicker\daterangepicker.js
+Content Type: application/javascript
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/vendor/fullcalendar-5.7/main.js
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\vendor\fullcalendar-5.7\main.js
+Content Type: application/javascript
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/vendor/fullcalendar-5.7/main.min.css
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\vendor\fullcalendar-5.7\main.min.css
+Content Type: text/css
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/vendor/nouislider/nouislider.min.css
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\vendor\nouislider\nouislider.min.css
+Content Type: text/css
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/vendor/nouislider/nouislider.min.js
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\vendor\nouislider\nouislider.min.js
+Content Type: application/javascript
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/vendor/progressbar-js/progressbar.min.js
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\vendor\progressbar-js\progressbar.min.js
+Content Type: application/javascript
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.css
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\vendor\swiperjs-6.6.2\swiper-bundle.min.css
+Content Type: text/css
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.js
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\assets\vendor\swiperjs-6.6.2\swiper-bundle.min.js
+Content Type: application/javascript
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/blog.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\blog.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/blogdetails.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\blogdetails.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/cart.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\cart.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/changeaddress.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\changeaddress.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/chat-message.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\chat-message.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/chat.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\chat.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/contactus.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\contactus.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/faqs.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\faqs.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/forgotpassword.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\forgotpassword.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/home.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\home.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/invoice.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\invoice.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/landing.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\landing.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/manifest.json
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\manifest.json
+Content Type: application/json
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/my-orders.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\my-orders.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/notifications.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\notifications.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/pages.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\pages.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/payment.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\payment.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/product.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\product.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/profile.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\profile.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/resetpassword.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\resetpassword.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/settings.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\settings.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/signin.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\signin.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/signup.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\signup.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/splash.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\splash.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/stats.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\stats.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/style.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\style.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/termsandconditions.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\termsandconditions.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/thankyou.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\thankyou.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/thankyou2.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\thankyou2.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/track.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\track.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/userlist.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\userlist.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/gomobileux2/HTML/verify.html
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\gomobileux2\HTML\verify.html
+Content Type: text/html
+
+Uri: https://maxartkiller.com/website/maxartkiller.mp4
+File Name: C:\Downloaded Web Sites\fruity\maxartkiller.com\website\maxartkiller.mp4
+Content Type: video/mp4
+

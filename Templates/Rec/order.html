@@ -1,0 +1,221 @@
+﻿{% load static %}
+
+{% include "Rec/Extra/header.html" %}
+<link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/feather/feather.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/ti-icons/css/themify-icons.css">
+<style>
+    .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    }	  
+    .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0;
+    }
+    </style>
+
+        <div class="offcanvas-overlay"></div>
+
+        <!-- ...:::Start Cart Section:::... -->
+        <div class="cart-section section-gap-top-30">
+            <div class="container">
+
+                <div class="product-single-section section-gap-top-30">
+                    <div class="container">
+                        <div class="product-gallery-image">
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="product-gallery-single-item">
+                                            <div class="image">
+                                                <img class="img-fluid" width="276" height="172" src="{% get_media_prefix %}Profiles/{{Selected.id}}.jpg?{{Rand}}" style="width: 270px;height:270px;object-fit: cover;border-radius: 10px;z-index: 1;" alt="">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                  
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                           
+                        </div>
+        
+                    </div>
+        
+                    <div class="container px-0">
+                        <div class="product-gallery-details">
+                            
+                            <h1 class="title">{{Selected.Full_Name}}</h1>
+                            <p class="text">{{Selected.Email}}</p>
+        
+                           
+        
+                            <div class="price-n-cart">
+                                <span class="pric">{{Selected.Contact}}</span>
+
+
+                                
+                                <a onclick="Open()" class="btn cart"><span class="icon"> <i class="icon-upload "></i></span>Upload Call</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-items-wrapper" style="padding-top: 20px;text-align: center;">
+                  <audio controls autoplay id="playport"></audio>
+                </div>
+                <div class="cart-items-wrapper" style="padding-top: 20px;">
+                    <ul class="cart-item-list">
+                        <!-- Start Single Cart Item -->
+
+                        
+
+                        {% for i in Rec %}
+                        <li class="single-cart-item">
+                            <div class="image">
+                                <img width="90" height="90" src="{% get_static_prefix %}Rec/logo.png" alt="">
+                            </div>
+                            <div class="content">
+                                <a href="" class="title">Uploaded By <strong>{{i.Name}}</strong></a>
+                                <div class="details">
+                                    <div class="left">
+                                        <span class="brand">Uploaded Date {{i.date}}</span>
+                                        <span class="price">Uploaded Time {{i.time}}</span>
+                                    </div>
+                                    <div class="right">
+                                       
+                                        <p><span class="icon">
+                                            <a onclick="play_id('{{i.id}}')" aria-label="Wishlist" class="btn btn--size-33-33 btn--center btn--round btn--color-pink-swan btn--bg-white btn--box-shadow">
+                                                <i style="font-size: 24px;" class="icon-play "></i>
+                                            </a>
+                                           
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        {% endfor %}
+
+                        
+                        <!-- End Single Cart Item -->
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- ...:::End Cart Section:::... -->
+
+        <!-- ...:::Start User Event Section:::... -->
+    
+        <!-- ...:::End User Event Section:::... -->
+
+        <footer class="footer-section"></footer>
+    </main>
+
+    <div id="cover"  style="background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: hidden">
+        <div style="width: 100%;height: 100%;position: fixed;" onclick="Close()"></div>
+        <div class="" style="position: fixed;top:30%;align-self: center;left: 15%;">
+            <div class="card" id="cmain" style="visibility: hidden">
+                <div class="card-body text-center ai-icon  text-primary " style="background-color: aliceblue;border-radius: 20px;" >
+                    
+                    <div class=" " style="text-align: center;width: 100%;background-color: aliceblue;border-radius: 20px;">
+                        
+                            <audio autoplay controls src="" id="aud" alt=""></audio>
+                            
+                            <br>
+                           <form action="" method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div style="text-align: center;" class="box">
+                                    <div style="padding-top: 20px;"></div>
+                                    <div class="upload-btn-wrapper">
+                                  <button  class="btn load-more-btn btn-block">Select Recorded Audio</button>
+                                 
+                                  <input  class="mdc-text-field__input"  id="AUD" required style="width: 100%;" type="file" name="AUD" accept="audio/*" />
+                            </div>
+                           
+                            <button class="load-more-btn" style="padding-bottom: 10px;">Upload Call</button>
+                            <div style="padding-top: 20px;">
+                            </div>
+                        </form>
+                        
+                    </div>
+                    
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>   
+            // vars
+
+            upload = document.getElementById("AUD"),
+            // on change show image with crop options
+            upload.addEventListener('change', (e) => {
+              if (e.target.files.length) {
+                
+                const reader = new FileReader();
+                reader.onload = (e)=> {
+                  if(e.target.result){
+             
+                    let aud = document.getElementById('aud');
+                    aud.src = e.target.result;
+                   
+                  }
+                };
+                reader.readAsDataURL(e.target.files[0]);
+              }
+            });
+           
+            function Open(){
+           
+            document.getElementById('cover').setAttribute("style", "background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: visible;z-index: 9999;")
+            document.getElementById('cmain').setAttribute("style", "visibility: visible;z-index: 9999;")
+            
+            }
+            function Close(){
+            document.getElementById('cover').setAttribute("style", "visibility: hidden;z-index: 0;")
+            document.getElementById('cmain').setAttribute("style", "z-index: 0;visibility: hidden;")
+            
+            }
+
+            function play_id(id){
+                var aud = document.getElementById('playport').src='{% get_media_prefix %}Audios/'+id+'.mp3'
+
+            }
+    </script>
+    <!-- ::::::::::::::All JS Files here :::::::::::::: -->
+    <!-- Global Vendor -->
+    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+
+    <!--Plugins JS-->
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/ion.rangeSlider.min.js"></script>
+
+    <!-- Minify Version -->
+    <!-- <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script> -->
+
+    <!--Main JS (Common Activation Codes)-->
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/main.min.js"></script> -->
+
+</body>
+
+</html>

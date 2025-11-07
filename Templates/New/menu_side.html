@@ -1,0 +1,471 @@
+{% load static %}
+
+
+{% include "New/Extra/header.html" %}
+      <!-- Content wrapper -->
+      <div class="content-wrapper" style="padding-top: 50px;">
+
+        <div class="container-xxl flex-grow-1 container-p-y">
+
+
+          <h4 class="mb-1"> Manage Status Group</h4>
+          <p class="mb-4">Here are all status group created in your company, click manage to view all files.</p>
+          <!-- Role cards -->
+          <div class="row g-4">
+
+
+
+
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <div class="card h-100">
+                <div class="row h-100">
+                  <div class="col-5">
+
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body text-sm-end text-center ps-sm-0">
+                      <a  data-bs-toggle="modal"  data-bs-target="#deleteModal1"   class="btn btn-primary mb-3 text-nowrap ">Create</a>
+                      <p class="mb-0">Add Menu Point, if it does not exist</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            {% for i in List %}
+            <div class="col-xl-4 col-lg-6 col-md-6" id="{{i.id}}">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-2">
+                    <p>🔁Time : {{i.time}}    🗓️Dated : {{i.date}}</p>
+                    <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+
+
+
+                    </ul>
+                  </div>
+                  <div class=" justify-content-between align-items-end">
+                    <div class="role-heading">
+                      <h6 class="mb-1 text-body">
+                          <input value="{{i.Name}}" id="I_{{i.id}}" style="background-color: transparent;border: transparent;">
+
+
+                          </h6>
+
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12 form-group">
+                        <label class="form-label">Status Level</label>
+                        <Input type="number" id="Status_Level_{{i.id}}" class="form-control"  value="{{i.Level}}">
+
+                      </div>
+
+                       <div class="col-6 form-group">
+                        <label class="form-label">Status Change</label>
+                        <select type="tel" id="Status_Change_{{i.id}}" class="form-control">
+                          <option value="{{i.Status_Change}}">{{i.Status_Change}}</option>
+                          <option >Yes</option>
+                          <option >No</option>
+
+                        </select>
+                      </div>
+
+
+
+                      <div class="col-6 form-group">
+                        <label class="form-label">Call Log</label>
+                        <select type="tel" id="Call_Log_{{i.id}}" class="form-control">
+                          <option value="{{i.Call_Log}}">{{i.Call_Log}}</option>
+                          <option >Yes</option>
+                          <option >No</option>
+
+                        </select>
+
+                      </div>
+
+
+
+
+                      <div class="col-6 form-group">
+                        <label class="form-label">Book Client</label>
+                        <select type="tel" id="Book_Client_{{i.id}}" class="form-control">
+                          <option value="{{i.Book_Client}}">{{i.Book_Client}}</option>
+                          <option >Yes</option>
+                          <option >No</option>
+
+                        </select>
+
+                      </div>
+
+
+
+                      <div class="col-6 form-group">
+                        <label class="form-label">Interview</label>
+                        <select type="tel" id="Interview_{{i.id}}" class="form-control">
+                          <option value="{{i.Interview}}">{{i.Interview}}</option>
+                          <option >Yes</option>
+                          <option >No</option>
+
+                        </select>
+
+                      </div>
+
+
+
+                      <div class="col-6 form-group">
+                        <label class="form-label">Chat Files</label>
+                        <select type="tel" id="Chat_Files_{{i.id}}" class="form-control">
+                          <option value="{{i.Chat_Files}}">{{i.Chat_Files}}</option>
+                          <option >Yes</option>
+                          <option >No</option>
+
+                        </select>
+
+                      </div>
+
+
+
+                      <div class="col-6 form-group">
+                        <label class="form-label">Profile</label>
+                        <select type="tel" id="Profile_{{i.id}}" class="form-control">
+                          <option value="{{i.Profile}}">{{i.Profile}}</option>
+                          <option >Yes</option>
+                          <option >No</option>
+
+                        </select>
+
+                      </div>
+
+
+
+                      <div class="col-6 form-group">
+                        <label class="form-label">Cv</label>
+                        <select type="tel" id="Cv_{{i.id}}" class="form-control">
+                          <option value="{{i.Cv}}">{{i.Cv}}</option>
+                          <option >Yes</option>
+                          <option >No</option>
+
+                        </select>
+
+                      </div>
+
+
+
+                      <div class="col-6 form-group">
+                        <label class="form-label">Payment</label>
+                        <select type="tel" id="Payment_{{i.id}}" class="form-control">
+                          <option value="{{i.Payment}}">{{i.Payment}}</option>
+                          <option >Yes</option>
+                          <option >No</option>
+
+                        </select>
+
+                      </div>
+
+
+
+                      <div class="col-6 form-group">
+                        <label class="form-label">Debit</label>
+                        <select type="tel" id="Debit_{{i.id}}" class="form-control">
+                          <option value="{{i.Debit}}">{{i.Debit}}</option>
+                          <option >Yes</option>
+                          <option >No</option>
+
+                        </select>
+
+                      </div>
+
+
+
+
+                      <div class="col-6 form-group">
+                        <label class="form-label">Id Card</label>
+                        <select type="tel" id="Id_Card_{{i.id}}" class="form-control">
+                          <option value="{{i.Id_Card}}">{{i.Id_Card}}</option>
+                          <option >Yes</option>
+                          <option >No</option>
+
+                        </select>
+
+                      </div>
+
+                      <div class="col-6 form-group">
+                        <label class="form-label">Upload Files</label>
+                        <select type="tel" id="Upload_Files_{{i.id}}" class="form-control">
+                          <option value="{{i.Upload_Files}}">{{i.Upload_Files}}</option>
+                          <option >Yes</option>
+                          <option >No</option>
+
+                        </select>
+
+                      </div>
+
+
+                      <div class="col-6 form-group">
+                        <label class="form-label">View Files</label>
+                        <select type="tel" id="View_Files_{{i.id}}" class="form-control">
+                          <option value="{{i.View_Files}}">{{i.View_Files}}</option>
+                          <option >Yes</option>
+                          <option >No</option>
+
+                        </select>
+
+                      </div>
+                      <div class="col-6 form-group">
+                        <label class="form-label">Delete</label>
+                        <select type="tel" id="Delete_{{i.id}}" class="form-control">
+                          <option value="{{i.Delete}}">{{i.Delete}}</option>
+                          <option >Yes</option>
+                          <option >No</option>
+
+                        </select>
+
+                      </div>
+                      <div class="col-6 form-group">
+                        <label class="form-label">Opperation</label>
+                        <select type="tel" id="Opperation_{{i.id}}" class="form-control">
+                          <option value="{{i.Opperation}}">{{i.Opperation}}</option>
+                          <option >Yes</option>
+                          <option >No</option>
+
+                        </select>
+
+                      </div>
+
+                       <div class="col-6 form-group">
+                        <label class="form-label">Sign</label>
+                        <select type="tel" id="Sign_{{i.id}}" class="form-control">
+                          <option value="{{i.Sign}}">{{i.Sign}}</option>
+                          <option >Yes</option>
+                          <option >No</option>
+
+                        </select>
+
+                      </div>
+
+
+                    </div>
+
+
+                    <br>
+                   <div class="row">
+                     <div class="col-4">
+
+                    </div>
+                    <div class="col-4">
+                    <a  onclick="update('{{i.id}}')"  class="btn btn-success waves-effect waves-light">
+                      <i class="mdi mdi-content-copy mdi-20px"></i> Update
+                    </a>
+                    </div>
+                    <div class="col-4">
+                    <a  onclick="setup('{{i.id}}')" data-bs-toggle="modal"  data-bs-target="#deleteModal"   class="btn btn-danger waves-effect waves-light">
+                      <i class="mdi mdi-content-copy mdi-20px"></i> Delete
+                    </a>
+                    </div>
+
+                    </div>
+
+
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+
+
+
+
+
+
+
+          </div>
+          <!--/ Role cards -->
+
+          <!-- Add Role Modal -->
+          <!-- Add Role Modal -->
+          <div class="modal fade contentmodal" id="deleteModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content doctor-profile">
+                    <div class="modal-header pb-0 border-bottom-0  justify-content-end">
+                        <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><i class="feather-x-circle"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="delete-wrap text-center">
+                            <div class="del-icon"><i class="feather-x-circle"></i></div>
+                            <h4>Type "DELETE" in below to delete this.</h4>
+                            <div class="submit-section">
+                                <input id="pass2" class="form-control" type="text" id="test" style="text-align: center;">
+
+                            </div>
+                            <div style="padding-top: 20px;" class="submit-section">
+                                <button onclick="Delete()"  class="btn btn-danger me-2" id="si_button">Delete This</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <input type="hidden" value="" id='hold_id'>
+      </div>
+          <!-- / Content -->
+
+
+          <script>
+
+                function update(id){
+                var state = document.getElementById("I_"+id)
+
+                var state1 = document.getElementById("Status_Change_"+id)
+                var state2 = document.getElementById("Call_Log_"+id)
+                var state3 = document.getElementById("Book_Client_"+id)
+                var state4 = document.getElementById("Interview_"+id)
+                var state5 = document.getElementById("Chat_Files_"+id)
+                var state6 = document.getElementById("Profile_"+id)
+                var state7 = document.getElementById("Cv_"+id)
+                var state8 = document.getElementById("Payment_"+id)
+                var state9 = document.getElementById("Debit_"+id)
+                var state10 = document.getElementById("Id_Card_"+id)
+                var state11 = document.getElementById("Upload_Files_"+id)
+                var state12 = document.getElementById("View_Files_"+id)
+                var state13 = document.getElementById("Delete_"+id)
+                var state14 = document.getElementById("Opperation_"+id)
+                var state15 = document.getElementById("Sign_"+id)
+                var state16 = document.getElementById("Status_Level_"+id)
+
+                data = JSON.stringify({
+                Name:state.value,
+                id:id,
+
+                Status_Change:state1.value,
+                Call_Log:state2.value,
+                Book_Client:state3.value,
+                Interview:state4.value,
+                Chat_Files:state5.value,
+                Profile:state6.value,
+                Cv:state7.value,
+                Payment:state8.value,
+                Debit:state9.value,
+                Id_Card:state10.value,
+                Upload_Files:state11.value,
+                View_Files:state12.value,
+                Delete:state13.value,
+                Opperation:state14.value,
+                Sign:state15.value,
+                Level:state16.value,
+
+
+                })
+                fetch("", {
+                method: 'POST',
+                body: data,
+                headers: { 'X-CSRFToken': '{{ csrf_token }}','Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json',
+                    },
+                })
+                .then(response => response.json())
+                .then(data => {
+                if (data === 'Ok'){
+
+
+                    alert("Files has been updated successfully!")
+
+                }else{
+                    alert("Please an error occured when updating data!")
+
+                }
+                });
+
+              }
+
+
+
+
+          function setup(id){
+            document.getElementById('hold_id').value=id
+          }
+          function Delete(){
+            var state = document.getElementById("hold_id")
+          data = JSON.stringify({
+          id:state.value,
+          })
+          fetch("{% url 'list_side_menu'%}", {
+          method: 'DELETE',
+          body: data,
+          headers: { 'X-CSRFToken': '{{ csrf_token }}','Accept': 'application/json, text/plain, */*',
+              'Content-Type': 'application/json',
+              },
+          })
+          .then(response => response.json())
+          .then(data => {
+          if (data === 'Ok'){
+              document.getElementById(state.value).remove()
+              state.value=""
+              document.getElementById("pass2").value=""
+              alert("Data has been deleted successfully!")
+          Close()
+          }else{
+              alert("Please an error occured when deleting data!")
+
+          }
+          });}
+
+
+
+          setInterval(load_all,1000);
+          function load_all(){
+
+
+              var pass2 = document.getElementById("pass2").value
+          if (pass2==="DELETE"){
+
+           document.getElementById("si_button").disabled = false;
+          }else{
+           document.getElementById("si_button").disabled = true;
+          }
+          }
+
+
+          </script>
+
+
+
+      <form action="{% url 'create_side_menu' %}" method="post" class="modal fade contentmodal" id="deleteModal1" tabindex="-1" aria-hidden="true">
+        {% csrf_token %}
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content doctor-profile">
+                    <div class="modal-header pb-0 border-bottom-0  justify-content-end">
+                        <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><i class="feather-x-circle"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="delete-wrap text-center">
+                            <div class="del-icon"><i class="feather-x-circle"></i></div>
+                            <p>Create a Manage Status Group</p>
+                            <div class="row">
+                                <div class="submit-section col-8">
+                                <input  class="form-control" type="text" name="Name" style="text-align: center;">
+
+                            </div>
+                                <div class="submit-section col-4">
+                                <input  class="form-control" type="number" name="Level" style="text-align: center;" value="1">
+
+                                </div>
+                            </div>
+
+                            <div style="padding-top: 20px;" class="submit-section">
+                                <button type="submit"  class="btn btn-primary me-2">Create</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+{% include "New/Extra/footer.html" %}

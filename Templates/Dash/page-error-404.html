@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+{% load static %}
+<head>
+   <!-- All Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="DexignLab">
+	<meta name="robots" content="">
+	<meta name="keywords" content="bootstrap admin, card, clean, credit card, dashboard template, elegant, invoice, modern, money, transaction, Transfer money, user interface, wallet">
+	<meta name="description" content="Dompet is a clean-coded, responsive Django template that can be easily customised to fit the needs of various credit card and invoice, modern, creative, Transfer money, and other businesses.">
+	<meta property="og:title" content="Dompet - Payment Django Admin Dashboard Bootstrap Template">
+	<meta property="og:description" content="Dompet is a clean-coded, responsive HTML template that can be easily customised to fit the needs of various credit card and invoice, modern, creative, Transfer money, and other businesses.">
+	<meta property="og:image" content="https://dompet.dexignlab.com/django/social-image.png">
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- Mobile Specific -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="{%get_static_prefix%}Dash/images/favicon.png">
+
+	<!-- Page Title Here -->
+	<title>Dompet - Payment Django Admin Dashboard Bootstrap Template</title>
+	
+	
+	
+     <link href="{%get_static_prefix%}Dash/css/style.css" rel="stylesheet">
+    
+</head>
+
+<body class="vh-100">
+	<div class="authincation h-100" style="background-image: url({%get_static_prefix%}Dash/images/student-bg.jpg); background-repeat:no-repeat; background-size:cover;">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="form-input-content  error-page">
+						<h1 class="error-text text-primary">404</h1>
+						<h4>The credecials you provided was not found!</h4>
+						<p>You may have mistyped the address or the account is deleted.</p>
+                        <a class="btn btn-primary" href="{% url 'portal_login' %}">Back to Home</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+					<img  class="w-100 move-2" src="{%get_static_prefix%}Dash/images/error.png" alt="">
+				</div>
+            </div>
+        </div>
+    </div>
+
+<!--**********************************
+	Scripts
+***********************************-->
+<!-- Required vendors -->
+<script src="{%get_static_prefix%}Dash/vendor/global/global.min.js"></script>
+  <script src="{%get_static_prefix%}Dash/js/custom.min.js"></script>
+<script src="{%get_static_prefix%}Dash/js/dlabnav-init.js"></script>
+
+</body>
+</html>

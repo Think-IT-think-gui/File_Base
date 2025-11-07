@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Admin</title>
+  <!-- plugins:css -->
+
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/table/resources/css/app.min.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/table/resources/vendors/zwicon/zwicon.min.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/table/resources/vendors/animate.css/animate.min.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/table/resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+  
+  
+
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/feather/feather.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="{% get_static_prefix %}Administrator/images/favicon.png" />
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:{% get_static_prefix %}Administrator/partials/_navbar.html -->
+    
+    {% include 'Administrator/header1.html'%}
+
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            
+             
+           
+            
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                
+               
+
+
+                <div class="card-body">
+                  <h4 class="card-title">Generated Client Requested</h4>
+                  <p class="card-description">
+                   Here are a list of requested placed by clients.
+                  </p>
+                  <div class="table-responsive data-table hover">
+                    <table id="data-table" class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th style="color: black;">
+                            Order ID
+                          </th>
+                          <th style="color: black;">
+                            Product
+                          </th>
+                          <th style="color: black;">
+                           Product Name
+                          </th>
+                          <th style="color: black;">
+                            Buyer Profile
+                          </th>
+                          <th style="color: black;">
+                            Buyer Name
+                          </th>
+                          <th style="color: black;">
+                            Vendor Profile
+                          </th>
+                          <th style="color: black;">
+                           Vendor Name
+                          </th>
+                          <th style="color: black;">
+                            Order Quantity
+                           </th>
+                           <th style="color: black;">
+                            Order Amount
+                           </th>
+                           <th style="color: black;">
+                            Payment Status
+                           </th>
+                           <th style="color: black;">
+                            Report Subject
+                           </th>
+                           <th style="color: black;">
+                            View Info
+                           </th>
+                           <th style="color: black;">
+                            Delivery Status
+                           </th>
+                           <th style="color: black;">
+                            Time Reported
+                           </th>
+                          <th style="color: black;">
+                            Date Reported
+                          </th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody id="space">
+                        {% for i in Listed %}
+                        <tr id="{{i.id}}">
+                          
+                          <td>
+                            #Ref-0{{i.id}}
+                          </td>
+                          <td>
+                            <img src="{% get_media_prefix %}Products/{{i.Item_Img}}.jpg?{{Rand}}" style="width: 80px;height: 80px; border-radius: 2px;" alt="image"/>
+                          </td>
+                          <td>
+                            {{i.Item}}
+                          </td>
+                          <td>
+                            <img src="{% get_media_prefix %}User_Imgs/{{i.C_id}}.jpg?{{Rand}}" style="width: 80px;height: 80px;" alt="image"/>
+                          </td>
+                          <td>
+                           
+                              <a href="{% url 'vendor_profile' i.C_id %}"> <button type="button" class="btn btn-danger btn-icon-text">
+                                <i class="ti-eye btn-icon-check"></i>                                                    
+                                {{i.Client}}
+                              </button></a>
+                           
+                          </td>
+                          <td>
+                            <img src="{% get_media_prefix %}User_Imgs/{{i.V_id}}.jpg?{{Rand}}" style="width: 80px;height: 80px;" alt="image"/>
+                          </td>
+                          <td>
+                            
+                            <a href="{% url 'vendor_profile' i.V_id %}"> <button type="button" class="btn btn-danger btn-icon-text">
+                              <i class="ti-eye btn-icon-check"></i>                                                    
+                              {{i.Vendor}}
+                            </button></a>
+                            
+                          </td>                     
+                          <td>
+                            {{i.Quantity}}
+                          </td>
+                          <td>
+                            ₵ {{i.Price}}
+                          </td> 
+                          <td>
+                             <button type="button" class="btn btn-warning btn-icon-text">
+                              <i class="ti-file btn-icon-check"></i>                                                    
+                              {{i.Status}}
+                            </button>
+                            
+                          </td>
+                          <td>
+                            {{i.Title}}
+                          </td>
+                          <td>
+
+                            <button type="button"  onclick="see('{{i.id}}')" class="btn btn-danger btn-icon-text">
+                              <i class="ti-chat btn-icon-check"></i>                                                    
+                              View Message
+                            </button>
+                            <input id="i{{i.id}}" value="{{i.Context}}" type="hidden" >
+                          </td>
+                          <td>
+
+                            <button type="button" class="btn btn-success btn-icon-text">
+                              <i class="ti-car btn-icon-check"></i>                                                    
+                              {{i.Recieved}}
+                            </button>
+                            
+                          </td>
+                          
+                          <td>
+                            {{i.time}}
+                          </td>
+                           <td>
+                            {{i.date}}
+                          </td>
+                         
+                        </tr>
+                        {% endfor %}
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+           
+          </div>
+        </div>
+        <script>
+          function see(id){
+            var info = document.getElementById('i'+id).value
+            alert(info)
+          }
+        </script>
+        <!-- content-wrapper ends -->
+        <!-- partial:{% get_static_prefix %}Administrator/partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+             <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023.
+              Edumcloud <a href="" target="_blank"></a> from Edumcloud. All rights reserved.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+
+  
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="{% get_static_prefix %}Administrator/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="{% get_static_prefix %}Administrator/js/off-canvas.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/hoverable-collapse.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/template.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/settings.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/todolist.js"></script>
+  <!-- endinject -->
+
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/jquery/jquery.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/popper.js/popper.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/datatables/jquery.dataTables.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/datatables/datatables-buttons/dataTables.buttons.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/datatables/datatables-buttons/buttons.print.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/jszip/jszip.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/datatables/datatables-buttons/buttons.html5.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/js/app.min.js"></script>
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+
+<script>
+
+
+function Unblock(id){
+data = JSON.stringify({
+id:id,
+})
+fetch(" ", {
+method: 'POST',
+body: data,
+headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json',
+    },
+})
+.then(response => response.json())
+.then(data => {
+if (data === 'Ok'){
+    document.getElementById(id).remove() 
+     
+    alert("Code has been deleted successfully!")
+Close()
+}else{
+    alert("Please an error occured when deleting code!")
+
+}
+});}
+
+
+function Generate(){
+  time = document.getElementById("time")
+  type = document.getElementById("type")
+data = JSON.stringify({
+Time:time.value,
+Type:type.value
+})
+fetch(" ", {
+method: 'POST',
+body: data,
+headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json',
+    },
+})
+.then(response => response.json())
+.then(data => {
+if (data["info"] === 'Ok'){
+    var space = document.getElementById("space")
+    var cover = document.createElement("tr")
+    cover.innerHTML=' <td>'+data["id"]+'</td><td>'+data["Uid"]+'</td><td>'+data["Time"]+'</td><td>'+data["Type"]+'</td><td>'+data["date"]+'</td><td><button type="button" onclick="Unblock('+data["id"]+')" class="btn btn-danger btn-icon-text"><i class="ti-alert btn-icon-check" style="padding-right:3px"></i>Delete</button></td>' 
+    cover.setAttribute("id",data["id"])
+    space.append(cover)
+    alert("Code has been added successfully!")
+Close()
+}else{
+    alert("Please an error occured when adding Code!")
+
+}
+});}
+</script>

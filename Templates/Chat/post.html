@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<!-- Mirrored from themes.pixelstrap.net/pwa/chatzy/home.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Mar 2025 05:23:25 GMT -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chatzy">
+  <meta name="keywords" content="Chatzy">
+  <meta name="author" content="Chatzy">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="{% get_static_prefix %}s.png" type="image/x-icon">
+  <title>Sikobs</title>
+  <link rel="apple-touch-icon" href="{% get_static_prefix %}s.png">
+  <meta name="theme-color" content="#01AA85">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Chatzy">
+  <meta name="msapplication-TileImage" content="{% get_static_prefix %}s.png">
+
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+    rel="stylesheet">
+
+  <!-- iconsax css -->
+  <link rel="stylesheet" type="text/css" href="{% get_static_prefix %}Chat/assets/css/vendors/iconsax.css">
+
+  <!-- swiper css -->
+  <link rel="stylesheet" type="text/css" href="{% get_static_prefix %}Chat/assets/css/vendors/swiper-bundle.min.css">
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" id="rtl-link" type="text/css" href="{% get_static_prefix %}Chat/assets/css/vendors/bootstrap.css">
+  <!-- template css -->
+  <link rel="stylesheet" id="change-link" type="text/css" href="{% get_static_prefix %}Chat/assets/css/style.css">
+</head>
+
+<body>
+  <!-- header starts -->
+  <header id="header" class="main-header section-b-space">
+    <div class="custom-container">
+      <div class="header-panel">
+        <div class="d-flex align-items-center gap-2">
+          <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft">
+            <i class="iconsax icon-btn" data-icon="text-align-left"> </i>
+          </a>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <img class="img-fluid logo" src="{% get_static_prefix %}s.png" alt="logo">
+          <span class="fw-bold dark-text">Sikobs</span>
+        </div>
+
+        <div class="d-flex align-items-center gap-sm-3 gap-2">
+
+          {% if Data.Account_Type == 'Main' %}
+          <a href="#search-offcanvas" data-bs-toggle="offcanvas">
+            <i class="iconsax icon-btn" data-icon="search-normal-2"> </i>
+          </a>
+           {% endif %}
+          <div class="dropdown more-options dropdown-menu-end">
+            <a class="btn dropdown-toggle mt-0 p-0" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="iconsax icon-btn" data-icon="menu-meatballs"> </i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a onclick="see()" class="dropdown-item"> <i class="iconsax icon" data-icon="group"></i>
+                  New Group</a> </li>
+              <li><a onclick="see()" class="dropdown-item"><img class="icon"
+                    src="{% get_static_prefix %}Chat/assets/images/svg/megaphone.svg" alt="megaphone"> New Broadcast </a>
+              </li>
+              <li><a onclick="see()" class="dropdown-item"> <i class="iconsax icon" data-icon="star"></i>
+                  Starred Message</a>
+              </li>
+              <li><a onclick="see()" class="dropdown-item"> <i class="iconsax icon" data-icon="add-square">
+                  </i>Invite a Friend</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <!-- sidebar starts -->
+  <div class="offcanvas sidebar-offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft">
+    <div class="offcanvas-header sidebar-header">
+      <div class="sidebar-logo">
+        <img class="img-fluid logo" src="{% get_static_prefix %}s.png" alt="logo">
+        <span class="fw-bold dark-text">Sikobs</span> </div>
+    </div>
+
+    <div class="offcanvas-body">
+      <ul class="link-section switch-section">
+        <li class="active">
+          <a href="{% url 'messages' %}" class="pages">
+            <i class="iconsax sidebar-icon" data-icon="messages-2"> </i>
+            <h3>Chats</h3>
+          </a>
+        </li>
+         <li>
+          <a href="{% url 'client' %}" class="pages">
+            <i class="iconsax sidebar-icon" data-icon="book-closed"> </i>
+            <h3>Home</h3>
+          </a>
+        </li>
+
+        <li>
+          <a href="{% url 'list_sign_file' %}" class="pages">
+            <i class="iconsax sidebar-icon" data-icon="document-text-1"> </i>
+            <h3>My Documents</h3>
+          </a>
+        </li>
+        <li>
+          <a onclick="see()" class="pages">
+            <img class=" ing-fluid sidebar-icon icon" src="{% get_static_prefix %}Chat/assets/images/svg/megaphone.svg" alt="megaphone">
+            <h3>New Broadcast</h3>
+          </a>
+        </li>
+        <li>
+          <a onclick="see()" class="pages">
+            <i class="iconsax sidebar-icon" data-icon="phone-add"> </i>
+            <h3>New Calls</h3>
+          </a>
+        </li>
+        <li>
+          <a onclick="see()" class="pages">
+            <i class="iconsax sidebar-icon" data-icon="star"> </i>
+
+            <h3>Starred Message</h3>
+          </a>
+        </li>
+
+        <li>
+          <a onclick="see()" class="pages">
+            <i class="iconsax sidebar-icon" data-icon="user-1-square"> </i>
+            <h3>Add New Contact</h3>
+          </a>
+        </li>
+
+
+
+
+
+        <li>
+          <a href="{% url 'client_profile' %}" class="pages">
+            <i class="iconsax sidebar-icon" data-icon="user-1"> </i>
+            <h3>Profile</h3>
+          </a>
+        </li>
+
+
+      </ul>
+
+      <div class="bottom-sidebar">
+        <ul class="link-section">
+          <li>
+            <a {% url 'client_profile' %} class="pages">
+              <i class="iconsax sidebar-icon" data-icon="nut"> </i>
+              <h3>Setting</h3>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'client_logout' %}" class="pages">
+              <i class="iconsax sidebar-icon" data-icon="logout-2"> </i>
+              <h3>Logout</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- sidebar end -->
+
+  <!-- story section starts -->
+
+
+
+  <!-- story section end -->
+  <!-- chat section starts -->
+  <section class="chat-section">
+    <div class="custom-container">
+
+
+     <div class="post-area">
+
+
+
+
+					{% for i in Posts %}
+					{% if i.Type == "Vid_Post" %}
+
+
+
+					<div id="feed-post-1" class="card is-post">
+					  <!-- Main wrap -->
+					  <div class="content-wrap">
+						  <!-- Post header -->
+						  <div class="card-heading">
+							  <!-- User meta -->
+							  <div class="user-block">
+
+								  <div class="user-info">
+
+									  <span class="time" style='padding-top:20px;padding-left:10px;font-size:11px'>Posted {{i.Time}}</span>
+								  </div>
+							  </div>
+							  <!-- Right side dropdown -->
+							  <!-- /partials/pages/feed/dropdowns/feed-post-dropdown.html -->
+
+						  </div>
+						  <!-- /Post header -->
+
+						  <!-- Post body -->
+						  <div class="card-body">
+							  <!-- Post body text -->
+							  <div class="post-text">
+								   <p style="padding-bottom:10px">
+									  {{i.Context}}
+								  </p>
+							  </div>
+							  <!-- Featured image -->
+
+							  <div class="post-image">
+
+										  <!-- <video id='video' src='images/v-2.mp4' playsinline></video> -->
+										  <video
+
+											  id="my-video"
+											  class="video-js"
+											  controls
+											  preload="auto"
+											  poster="{% get_static_prefix %}vid.png"
+											  data-setup="{}"
+											 style="width: 100%; height:400px;border-radius: 10px;">
+											  <source src="{% get_media_prefix %}Posts/Videos/{{i.Vid}}.mp4" type="video/mp4" />
+
+											</video>
+
+
+								  <!-- Action buttons -->
+								  <!-- /partials/pages/feed/buttons/feed-post-actions.html -->
+
+						  <!-- /Post footer -->
+					  </div>
+					  <!-- /Main wrap -->
+
+					  <!-- Post #1 Comments -->
+
+					  <!-- /Post #1 Comments -->
+				  </div>
+                    </div>
+                    </div>
+
+					{% elif i.Type == "Youtube" %}
+
+					<div id="feed-post-1" class="card is-post">
+					  <!-- Main wrap -->
+					  <div class="content-wrap">
+						  <!-- Post header -->
+						  <div class="card-heading">
+							  <!-- User meta -->
+							  								  <div class="user-info">
+
+									  <span class="time" style='padding-top:20px;padding-left:10px;font-size:11px'>Posted {{i.Time}}</span>
+								  </div>
+							  <!-- Right side dropdown -->
+							  <!-- /partials/pages/feed/dropdowns/feed-post-dropdown.html -->
+
+						  </div>
+						  <!-- /Post header -->
+
+						  <!-- Post body -->
+						  <div class="card-body">
+							  <!-- Post body text -->
+							  <div class="post-text">
+								   <p style="padding-bottom:10px">
+									  {{i.Context}}
+								  </p>
+							  </div>
+							  <!-- Featured image -->
+
+							  <div class="post-image">
+
+										  <!-- <video id='video' src='images/v-2.mp4' playsinline></video> -->
+										  <iframe  style="width: 100%; height: 400px;border-radius: 10px;" src="https://www.youtube.com/embed/{{i.Link}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+								  <!-- Action buttons -->
+								  <!-- /partials/pages/feed/buttons/feed-post-actions.html -->
+
+						  <!-- /Post footer -->
+					  </div>
+					  <!-- /Main wrap -->
+
+					  <!-- Post #1 Comments -->
+
+					  <!-- /Post #1 Comments -->
+
+
+					</div>
+					</div>
+                    </div>
+					{% elif i.Type == "Img_Post" %}
+					<div id="feed-post-1" class="card is-post">
+					  <!-- Main wrap -->
+					  <div class="content-wrap">
+						  <!-- Post header -->
+						  <div class="card-heading">
+							  <!-- User meta -->
+							  								  <div class="user-info">
+
+									  <span class="time" style='padding-top:20px;padding-left:10px;font-size:11px'>Posted {{i.Time}}</span>
+								  </div>
+							  <!-- Right side dropdown -->
+							  <!-- /partials/pages/feed/dropdowns/feed-post-dropdown.html -->
+
+						  </div>
+						  <!-- /Post header -->
+
+						  <!-- Post body -->
+						  <div class="card-body">
+							  <!-- Post body text -->
+							  <div class="post-text">
+								  <p style="padding-bottom:10px">
+									  {{i.Context}}
+								  </p>
+							  </div>
+							  <div class="post-image">
+								  <a data-fancybox="post1" data-lightbox-type="comments" data-thumb="{% get_media_prefix %}Posts/Images/{{i.Img}}.jpg" href="{% get_media_prefix %}Posts/Images/{{i.Img}}.jpg" data-demo-href="{% get_media_prefix %}Posts/Images/{{i.Img}}.jpg?{{Rand}}">
+									  <img src="{% get_media_prefix %}Posts/Images/{{i.Img}}.jpg" data-demo-src="{% get_media_prefix %}Posts/Images/{{i.Img}}.jpg" alt="" style="width:100%" />
+								  </a>
+								  <!-- Action buttons -->
+								  <!-- /partials/pages/feed/buttons/feed-post-actions.html -->
+								  <div class="like-wrapper">
+
+								</div>
+
+
+						  <!-- /Post footer -->
+					  </div>
+					  <!-- /Main wrap -->
+
+					  <!-- Post #1 Comments -->
+
+					  <!-- /Post #1 Comments -->
+
+		</div>
+   </div>
+                    </div>
+					{% elif i.Type == "Long_Text" %}
+
+					<div id="feed-post-1" class="card is-post">
+					  <!-- Main wrap -->
+					  <div class="content-wrap">
+						  <!-- Post header -->
+						  <div class="card-heading">
+							  <!-- User meta -->
+							  								  <div class="user-info">
+
+									  <span class="time" style='padding-top:20px;padding-left:10px;font-size:11px'>Posted {{i.Time}}</span>
+								  </div>
+							  <!-- Right side dropdown -->
+							  <!-- /partials/pages/feed/dropdowns/feed-post-dropdown.html -->
+
+						  </div>
+						  <!-- /Post header -->
+
+						  <!-- Post body -->
+						  <div class="card-body">
+							  <!-- Post body text -->
+							  <div class="post-text">
+								  <p style="padding-bottom: 30px;">
+									  {{i.Context}}
+								  </p>
+							  </div>
+							  <!-- Featured image -->
+
+
+						  </div>
+						  <!-- /Post body -->
+
+
+
+				  </div>
+					</div>
+					 {% else %}
+
+
+
+
+
+
+					<div id="feed-post-1" class="card is-post">
+					  <!-- Main wrap -->
+					  <div class="content-wrap">
+						  <!-- Post header -->
+						  <div class="card-heading">
+							  <!-- User meta -->
+							 								  <div class="user-info">
+
+									  <span class="time" style='padding-top:20px;padding-left:10px;font-size:11px'>Posted {{i.Time}}</span>
+								  </div>
+							  <!-- Right side dropdown -->
+							  <!-- /partials/pages/feed/dropdowns/feed-post-dropdown.html -->
+
+						  </div>
+						  <!-- /Post header -->
+
+						  <!-- Post body -->
+						  <div class="card-body">
+							  <!-- Post body text -->
+							  <div class="post-text">
+
+							  </div>
+							  <!-- Featured image -->
+
+							  <div class="post-image">
+								  <div class="card-body d-block p-0 mb-3" style="border-radius: 5px;">
+									  <div class="row ps-2 pe-2" style="border-radius: 5px;">
+										  <div class="col-sm-12 p-1" style="border-radius: 5px;">
+
+
+											  <div class="er" style="" data-ft="{&quot;tn&quot;:&quot;*s&quot;}"><div><div class="es" style="border-radius: 10px;background-image: {{i.Color}};"><div class="et"><div class="eu"><span class="ev" style="color:rgba(255,255,255,1.00);font-size:30px;font-weight:700;line-height:1.2000em;padding:50px 30px;text-align:center;align-self:auto;border-radius: 5px;" >
+												  <span style="height: 400px;">
+													  <div style="padding-top: 60px;"></div>
+
+													<div style="padding-right: 20px;padding-left: 20px;font-size: 2vmax;line-height: 50px;">{{i.Context}}</div>
+													  <div style="padding-top: 60px;"></div>
+
+												  </span>
+											  </span></div></div></div></div></div>
+										  </div>
+									  </div>
+								  </div>
+								  <!-- Action buttons -->
+								  <!-- /partials/pages/feed/buttons/feed-post-actions.html -->
+
+
+
+							  </div>
+
+                    </div>
+						  <!-- /Post body -->
+
+						  <!-- Post footer -->
+
+						  <!-- /Post footer -->
+
+					  <!-- /Main wrap -->
+
+					  <!-- Post #1 Comments -->
+
+					  <!-- /Post #1 Comments -->
+				  </div>
+	</div>
+					{% endif %}
+					<div style="padding-top:30px"></div>
+
+					{% endfor %}
+					</div>
+
+
+
+      </div>
+    </div>
+	<div style="text-align: center;padding-bottom: 60px;">
+
+
+						 <nav aria-label="Page navigation example p-0" style="text-align: center;padding-bottom: 100px;">
+              <span class="step-links">
+                {% if page_obj.has_previous %}
+                  <a class="btn btn-outline-secondary" href="?page=1"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
+                  <a class="btn btn-outline-secondary" href="?page={{ page_obj.previous_page_number }}"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                {% endif %}
+
+
+                {% for num in page_obj.paginator.page_range %}
+                  {% if num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                    {% if page_obj.number == num %}
+                      <span class="btn btn-secondary">{{ num }}</span>
+                    {% else %}
+                      <a class="btn btn-outline-secondary" href="?page={{ num }}">{{ num }}</a>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% if page_obj.has_next %}
+                  <a class="btn btn-outline-secondary" href="?page={{ page_obj.next_page_number }}"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                  <a class="btn btn-outline-secondary" href="?page={{ page_obj.paginator.num_pages }}"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                {% endif %}
+              </span>
+            </nav>
+
+
+				</div>
+  </section>
+
+
+  <!-- chat section end -->
+
+
+
+
+
+
+ {% if Data.Account_Type == 'Main' %}
+  <div class="new-part">
+    <a onclick="see()" class="new-chat-icon">
+      <img class="img-fluid icon" src="{% get_static_prefix %}Chat/assets/images/svg/messages.svg" alt="messages">
+    </a>
+  </div>
+{% endif %}
+
+
+  <!-- story section start -->
+  <div class="story-slider">
+    <div data-slide="slide" class="slider">
+      <div class="slider-items">
+        <img class="img-fluid story-img active" src="{% get_static_prefix %}Chat/assets/images/story-img.html" alt="story-img">
+        <img class="img-fluid story-img" src="{% get_static_prefix %}Chat/assets/images/story-img.html" alt="story-img">
+        <img class="img-fluid story-img" src="{% get_static_prefix %}Chat/assets/images/story-img.html" alt="story-img">
+      </div>
+
+      <nav class="slider-nav">
+        <div class="slider-thumb"></div>
+        <button class="slider-prev">Previous</button>
+        <button class="slider-next">Next</button>
+      </nav>
+    </div>
+  </div>
+  <!-- story section end -->
+
+  <!-- panel-space start -->
+  <section class="panel-space"></section>
+  <!-- panel-space end -->
+
+  <!-- bottom navbar start -->
+  <div class="navbar-menu" style>
+    <ul>
+      <li >
+        <a href="{% url 'messages' %}">
+          <div class="icon">
+            <img class="unactive" src="{% get_static_prefix %}Chat/assets/images/svg/chat.svg" alt="chat">
+            <img class="active" src="{% get_static_prefix %}Chat/assets/images/svg/chat-fill.svg" alt="chat">
+          </div>
+          <span >Chat</span>
+        </a>
+      </li>
+
+      <li class="active">
+        <a href="{% url 'site_blog' %}">
+          <div class="icon">
+            <img class="unactive" src="{% get_static_prefix %}Chat/assets/images/svg/megaphone.svg" alt="call">
+            <img class="active" style="font-color:green" src="{% get_static_prefix %}Chat/assets/images/svg/megaphone.svg" alt="call">
+          </div>
+          <span class="active">Blogs</span>
+        </a>
+      </li>
+
+      <li>
+        <a onclick="see()">
+          <div class="icon">
+            <img class="unactive" src="{% get_static_prefix %}Chat/assets/images/svg/setting.svg" alt="setting">
+            <img class="active" src="{% get_static_prefix %}Chat/assets/images/svg/setting-fill.svg" alt="setting">
+          </div>
+          <span>Setting</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="{% url 'client_profile' %}">
+          <div class="icon">
+            <img class="unactive" src="{% get_static_prefix %}Chat/assets/images/svg/profile.svg" alt="profile">
+            <img class="active" src="{% get_static_prefix %}Chat/assets/images/svg/profile-fill.svg" alt="profile">
+          </div>
+          <span>profile</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+      function see(){
+      alert('We are working on this feature.. Comming Soon 😉')
+      }
+  </script>
+  <!-- bottom navbar end -->
+
+  <!-- search offcanvas starts -->
+  <div class="offcanvas offcanvas-top search-offcanvas" tabindex="-1" id="search-offcanvas">
+    <form action="{% url 'find_user' %}" method="post" class="offcanvas-header">
+      <a href="setting.html" data-bs-dismiss="offcanvas">
+        <i class="iconsax icon-btn" data-icon="chevron-left"> </i>
+      </a>
+        {% csrf_token %}
+      <div class="form-input">
+        <input type="search" class="form-control search" id="inputusername" name="Key" required placeholder="Search here...">
+        <i class="iconsax search" data-icon="search-normal-2"> </i>
+
+      </div>
+    </form>
+
+    <div class="offcanvas-body">
+      <ul class="search-categories-list">
+        <li>
+          <div class="search-categories-box">
+            <img class="img img-fluid" src="{% get_static_prefix %}Chat/assets/images/svg/video.svg" alt="video">
+            <h6>Video</h6>
+          </div>
+        </li>
+        <li>
+          <div class="search-categories-box">
+            <img class="img img-fluid" src="{% get_static_prefix %}Chat/assets/images/svg/gallery.svg" alt="video">
+            <h6>Photos</h6>
+          </div>
+        </li>
+        <li>
+          <div class="search-categories-box">
+            <img class="img img-fluid" src="{% get_static_prefix %}Chat/assets/images/svg/headphone.svg" alt="video">
+            <h6>Audios</h6>
+          </div>
+        </li>
+        <li>
+          <div class="search-categories-box">
+            <img class="img img-fluid" src="{% get_static_prefix %}Chat/assets/images/svg/document.svg" alt="video">
+            <h6>Documents</h6>
+          </div>
+        </li>
+        <li>
+          <div class="search-categories-box">
+            <img class="img img-fluid" src="{% get_static_prefix %}Chat/assets/images/svg/gif.svg" alt="video">
+            <h6>GIFs</h6>
+          </div>
+        </li>
+        <li>
+          <div class="search-categories-box">
+            <img class="img img-fluid" src="{% get_static_prefix %}Chat/assets/images/svg/link.svg" alt="video">
+            <h6>Links</h6>
+          </div>
+        </li>
+
+        <li>
+          <div class="search-categories-box">
+            <img class="img img-fluid" src="{% get_static_prefix %}Chat/assets/images/svg/message.svg" alt="video">
+            <h6>Unread</h6>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- search offcanvas end -->
+
+  <!-- add story modal starts -->
+  <div class="modal fade add-modal" id="add-story-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Add Story</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <ul class="story-list">
+            <li>
+              <div class="story-types-box">
+                <div class="story-image">
+                  <img src="{% get_static_prefix %}Chat/assets/images/icons/gallery.png" alt="gallery">
+                </div>
+                <h5>Select From Gallery</h5>
+              </div>
+            </li>
+            <li>
+              <div class="story-types-box">
+                <div class="story-image">
+                  <img src="{% get_static_prefix %}Chat/assets/images/icons/camera.png" alt="camera">
+                </div>
+                <h5>Open Camera</h5>
+              </div>
+            </li>
+            <li>
+              <div class="story-types-box">
+                <div class="story-image">
+                  <img src="{% get_static_prefix %}Chat/assets/images/icons/text.png" alt="text">
+                </div>
+                <h5>Write Text</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- add story modal end  -->
+
+  <!-- friend story modal starts -->
+  <div class="modal fade story-modal" id="friend-story" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="swiper story__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide position-relative">
+                <img class="img-fluid story-img" src="{% get_static_prefix %}Chat/assets/images/story-img1.png" alt="story-img">
+                <div class="story-person-content">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="story-person-img">
+                      <img class="img-fluid person-icon" src="{% get_static_prefix %}Chat/assets/images/profile/p2.png" alt="p2">
+                    </div>
+                    <h3> Albert Flores</h3>
+                    <h6>10 min ago</h6>
+                  </div>
+                  <a href="#" data-bs-dismiss="modal">
+                    <i class="iconsax close-btn" data-icon="add"> </i>
+                  </a>
+                </div>
+
+                <form class="message-inputarea">
+                  <input type="text" class="message-input" placeholder="Type here...">
+                  <img class="img-fluid smile" src="{% get_static_prefix %}Chat/assets/images/svg/smile.svg" alt="">
+                  <i class="iconsax file" data-icon="paperclip-2"> </i>
+                  <i class="iconsax mic" data-icon="mic-2"> </i>
+
+                  <a href="home.html" type="button" class="message-send-btn">
+                    <i class="iconsax icon-btn" data-icon="send-2"> </i>
+                  </a>
+                </form>
+              </div>
+              <div class="swiper-slide">
+                <img class="img-fluid story-img" src="{% get_static_prefix %}Chat/assets/images/story-img2.png" alt="story-img">
+                <div class="story-person-content">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="story-person-img">
+                      <img class="img-fluid person-icon" src="{% get_static_prefix %}Chat/assets/images/profile/p2.png" alt="p2">
+                    </div>
+                    <h3> Albert Flores</h3>
+                    <h6>10 min ago</h6>
+                  </div>
+                  <a href="#" data-bs-dismiss="modal">
+                    <i class="iconsax close-btn" data-icon="add"> </i>
+                  </a>
+                </div>
+
+                <form class="message-inputarea">
+                  <input type="text" class="message-input" placeholder="Type here...">
+                  <img class="img-fluid smile" src="{% get_static_prefix %}Chat/assets/images/svg/smile.svg" alt="">
+                  <i class="iconsax file" data-icon="paperclip-2"> </i>
+                  <i class="iconsax mic" data-icon="mic-2"> </i>
+
+                  <a href="home.html" type="button" class="message-send-btn">
+                    <i class="iconsax icon-btn" data-icon="send-2"> </i>
+                  </a>
+                </form>
+              </div>
+              <div class="swiper-slide">
+                <img class="img-fluid story-img" src="{% get_static_prefix %}Chat/assets/images/story-img3.png" alt="story-img">
+                <div class="story-person-content">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="story-person-img">
+                      <img class="img-fluid person-icon" src="{% get_static_prefix %}Chat/assets/images/profile/p2.png" alt="p2">
+                    </div>
+                    <h3> Albert Flores</h3>
+                    <h6>10 min ago</h6>
+                  </div>
+                  <a href="#" data-bs-dismiss="modal">
+                    <i class="iconsax close-btn" data-icon="add"> </i>
+                  </a>
+                </div>
+                <form class="message-inputarea">
+                  <input type="text" class="message-input" placeholder="Type here...">
+                  <img class="img-fluid smile" src="{% get_static_prefix %}Chat/assets/images/svg/smile.svg" alt="">
+                  <i class="iconsax file" data-icon="paperclip-2"> </i>
+                  <i class="iconsax mic" data-icon="mic-2"> </i>
+
+                  <a href="home.html" type="button" class="message-send-btn">
+                    <i class="iconsax icon-btn" data-icon="send-2"> </i>
+                  </a>
+                </form>
+              </div>
+            </div>
+            <div class="story__pagination swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- friend story modal end -->
+
+  <!-- iconsax js -->
+  <script src="{% get_static_prefix %}Chat/assets/js/iconsax.js"></script>
+
+  <!-- bootstrap js -->
+  <script src="{% get_static_prefix %}Chat/assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- swiper js -->
+  <script src="{% get_static_prefix %}Chat/assets/js/swiper-bundle.min.js"></script>
+  <script src="{% get_static_prefix %}Chat/assets/js/custom-swiper.js"></script>
+
+
+
+  <!-- script js -->
+  <script src="{% get_static_prefix %}Chat/assets/js/script.js"></script>
+
+  <!-- template Setting js -->
+  <script src="{% get_static_prefix %}Chat/assets/js/template-setting.html"></script>
+</body>
+
+
+<!-- Mirrored from themes.pixelstrap.net/pwa/chatzy/home.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Mar 2025 05:23:54 GMT -->
+</html>

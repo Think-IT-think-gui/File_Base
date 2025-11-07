@@ -1,0 +1,525 @@
+
+
+{% load static %}
+{% include "New/Extra/header.html" %}
+          <!--  Header End -->
+
+<div class="row">
+           <div class="col-lg-12 col-xl-12">
+               <h5><span style="color:red"></span> Filtered Data</h5>
+
+            </div>
+
+
+
+
+           <div class="card shadow-none position-relative overflow-hidden mb-4">
+            <div class="card-body d-flex align-items-center justify-content-between p-4">
+              <h4 class="card-title mb-0">{{Note}}</h4>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item">
+                    <a class="text-muted text-decoration-none" style='color:red;font-size:30px'>{{Count}}</a>
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">Clients</li>
+                </ol>
+
+              </nav>
+
+
+
+            </div>
+             <div>
+
+
+
+          </div>
+          </div>
+          <div class="row">
+
+           {% for i in Listed %}
+            <div class="col-md-6 col-lg-4" id="{{i.idd.id}}">
+              <div class="card overflow-hidden hover-img">
+                <div class="position-relative">
+
+                  <a href="">
+                    <div  style="position: absolute;padding-top: 5px;padding-left: 5px;">
+
+                     {% if i.Status == 'Completed' %}
+                     <span class="badge bg-success" style="font-weight: 800;"><i class="ti-check" style="padding-right: 5px;"></i>{{i.Status}}</span>
+                     {% else %}
+                     <span style="font-weight: 800;" class="badge bg-danger"><i class="ti-pencil" style="padding-right: 5px;"></i>{{i.Status}}</span>
+                     {% endif %}
+
+
+
+                    </div>
+                     <div  style="position: absolute;padding-top: 5px;padding-right: 5px;right: 1px;">
+                      {% if Type == 1 %}
+
+
+                     <img src="{% get_media_prefix %}Interview/{{i.idd.User}}.jpg?{{Rand}}" onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';" style="height:50px;width: 50px;object-fit:cover;border-radius: 100px;" class="card-img-top" alt="spike-img">
+
+                      {% endif %}
+
+                    </div>
+                    <img src="{% get_media_prefix %}Profiles/{{i.id}}.jpg?{{Rand}}" style="height:350px;object-fit:cover" class="card-img-top" alt="spike-img">
+                  </a>
+                  <span class="badge text-bg-light fs-2 lh-sm mb-9 me-9 py-1 px-2 fw-semibold position-absolute bottom-0 end-0">{{i.Answer}}</span>
+
+                </div>
+                <div class="card-body p-4">
+                  <div class="d-flex align-items-center fs-2 ms-auto" style="text-align:right">
+                    <i class=" ti-bookmark-alt text-dark" style="padding-right:5px"></i> {{i.date}}
+
+                    <span style="padding-left:22px;"><span class="badge bg-primary"> <span style="font-size:12px">{{i.Start}} GMT</span></span></span>
+                    <span style="padding-left:22px;"><span class="badge bg-primary"> <span style="font-size:12px">{{i.End}} GMT</span></span></span>
+
+
+                  </div>
+                 <div class="row">
+                </div>
+                  <a class="d-block my-4 fs-5 text-dark fw-semibold link-primary" href="">
+                    {{i.Full_Name}}</a>
+                  <div class="d-flex align-items-center gap-4">
+
+
+
+
+                  </div>
+                  <div class="align-items-center gap-4 "style="padding-top:10px">
+
+                      <i class="ti-file text-dark fs-5" style="padding-right:5px"></i>{{i.Address}}
+
+                    </div>
+                     <div class="align-items-center gap-4 "style="padding-top:10px">
+
+                      <i class="ti-file text-dark fs-5" style="padding-right:5px"></i>{{i.City}}
+
+                    </div>
+
+
+                  <hr>
+
+                <div class="row" >
+                <div style="padding-top:5px" class="col-6">
+                  <a href="{% url 'interview_profile_admin' i.idd.id %}" class="btn bg-primary-subtle text-danger w-100 rounded-pill">Manage</a>
+
+                </div>
+
+                <div style="padding-top:5px" class="col-6">
+                  <a onclick="Open('{{i.idd.id}}')"  class="btn bg-danger-subtle text-danger w-100 rounded-pill">Delete</a>
+
+                </div>
+
+                <div style="padding-top:5px" class="col-12">
+                  <a href="{% url 'interview_page_client' i.id %}" class="btn bg-success-subtle text-success w-100 rounded-pill">Related Records</a>
+
+                </div>
+
+                </div>
+
+
+                </div>
+              </div>
+            </div>
+{% endfor %}
+
+
+
+
+
+          </div>
+
+
+
+<div class="container my-4">
+    <div class="card shadow-lg p-4">
+        <h2 class="mb-4 text-center">Scheduled Clients Data</h2>
+        <div class="table-responsive">
+            <table id="example" class="table table-hover table-bordered">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>ID</th>
+                        <th>Image</th>
+                        <th>Name</th>
+
+                        <th>DOB</th>
+                        <th>Contact</th>
+                        <th>Medicals</th>
+
+                        <th>Start Time</th>
+                        <th>End Time</th>
+                        <th>Interview Date</th>
+                        <th>Status</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in Listed %}
+                    <tr class="align-middle text-center">
+                        <td class="text-nowrap">{{ i.idd.id }}</td>
+                        <td>
+                            <img src="{% get_media_prefix %}Profiles/{{ i.id }}.jpg?{{ Rand }}"
+                                 class="rounded-circle border"
+                                 style="height:50px; width:50px; object-fit:cover;"
+                                 alt="Profile Image">
+                        </td>
+                        <td class="text-nowrap">{{ i.Full_Name }}</td>
+
+                        <td class="text-nowrap">{{ i.Birth }}</td>
+                        <td class="text-nowrap">{{ i.Contact }}</td>
+                        <td class="text-truncate" style="max-width: 150px;">{{ i.Medicals }}</td>
+
+                        <td class="text-nowrap">
+                            <span class="badge bg-primary p-2">
+                                <i class="bi bi-clock"></i> {{ i.Start }} GMT
+                            </span>
+                        </td>
+                        <td class="text-nowrap">
+                            <span class="badge bg-primary p-2">
+                                <i class="bi bi-clock-fill"></i> {{ i.End }} GMT
+                            </span>
+                        </td>
+                        <td class="text-nowrap">{{ i.date }}</td>
+                        <td>
+                            {% if i.Status == 'Completed' %}
+                            <span class="badge bg-success fw-bold">
+                                <i class="bi bi-check-circle"></i> {{ i.Status }}
+                            </span>
+                            {% else %}
+                            <span class="badge bg-danger fw-bold">
+                                <i class="bi bi-exclamation-triangle"></i> {{ i.Status }}
+                            </span>
+                            {% endif %}
+                        </td>
+
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<nav aria-label="Page navigation example p-0" style="text-align: center;padding-bottom: 100px;">
+              <span class="step-links">
+                {% if page_obj.has_previous %}
+                  <a class="btn btn-outline-secondary" href="?page=1">&laquo; first</a>
+                  <a class="btn btn-outline-secondary" href="?page={{ page_obj.previous_page_number }}">previous</a>
+                {% endif %}
+
+                <span class="current">
+                  Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                </span>
+
+                {% for num in page_obj.paginator.page_range %}
+                  {% if num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                    {% if page_obj.number == num %}
+                      <span class="btn btn-secondary">{{ num }}</span>
+                    {% else %}
+                      <a class="btn btn-outline-secondary" href="?page={{ num }}">{{ num }}</a>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% if page_obj.has_next %}
+                  <a class="btn btn-outline-secondary" href="?page={{ page_obj.next_page_number }}">next</a>
+                  <a class="btn btn-outline-secondary" href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                {% endif %}
+              </span>
+            </nav>
+        </div>
+      </div>
+
+
+        {% include "New/Extra/footer.html" %}
+
+
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.6/css/buttons.dataTables.min.css">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+    $('#example').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ],
+        pageLength: -1, // Shows all rows at once
+        lengthMenu: [[-1], ["All"]], // Removes pagination
+
+    });
+});
+
+    </script>
+</body>
+</html>
+
+
+
+
+        <div id="cover"  style="background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: hidden">
+          <div class="col-xl-4 col-lg-4 col-xxl-4 col-md-12" style="position: fixed;top:30%;left: 40%;">
+            <div class="card" id="cmain" style="visibility: hidden">
+              <div class="card-body text-center ai-icon  text-primary" >
+                <button style="position: absolute;right: 20px;" class="btn btn-sm btn-danger" onclick="Close()">x</button>
+                <svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" style="stroke-dasharray: 25, 45; stroke-dashoffset: 0;"></path>
+                  <path d="M8,7A4,4 0,1,1 16,7A4,4 0,1,1 8,7" style="stroke-dasharray: 26, 46; stroke-dashoffset: 0;"></path>
+                </svg>
+                <h4 class="my-2">Type "DELETE ACCOUNT" in the form below to delete Account.</h4>
+                <div class="form-group" >
+
+                  <input type="text" id="pass2" class="form-control" style="text-align: center;" >
+                </div>
+                <button onclick="Delete()" id="si_button" class="btn my-2 btn-primary btn-lg px-4"><i class="fa fa-trash"></i> Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input id="state" type="hidden">
+
+        <script>
+
+         function set_book(id){
+          document.getElementById("c_id").value=id
+          document.getElementById("img").src='{% get_media_prefix %}Profiles/'+id+'.jpg'
+
+
+        }
+          setInterval(load_all,1000);
+        function load_all(){
+
+
+            var pass2 = document.getElementById("pass2").value
+        if (pass2==="DELETE ACCOUNT"){
+
+         document.getElementById("si_button").disabled = false;
+        }else{
+         document.getElementById("si_button").disabled = true;
+        }
+        }
+
+        function Open(id){
+        document.getElementById("state").value = id
+        document.getElementById('cover').setAttribute("style", "background-color:rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: visible")
+        document.getElementById('cmain').setAttribute("style", "visibility: visible")
+
+        }
+        function Close(){
+        document.getElementById('cover').setAttribute("style", "visibility: hidden;z-index: 0;")
+        document.getElementById('cmain').setAttribute("style", "z-index: 0;visibility: hidden;")
+
+        }
+
+
+        function Delete(){
+          var state = document.getElementById("state")
+        data = JSON.stringify({
+        id:state.value,
+        })
+        fetch("{% url 'delete_interview' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+            document.getElementById(state.value).remove()
+            state.value=""
+            document.getElementById("pass2").value=""
+            alert("Account has been deleted successfully!")
+        Close()
+        }else{
+            alert("Please an error occured when deleting account!")
+
+        }
+        });}
+
+
+
+
+
+        function stat_up(id){
+          var state = document.getElementById("state_"+id)
+        data = JSON.stringify({
+        id:id,
+        Status:state.value
+        })
+        fetch("{% url 'update_proccess' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+
+            alert("Account has been updated successfully!")
+
+        }else{
+            alert("Please an error occured when updating account!")
+
+        }
+        });}
+
+
+
+        function stat_up2(id){
+          var state = document.getElementById("state2_"+id)
+        data = JSON.stringify({
+        id:id,
+        Status:state.value
+        })
+        fetch("{% url 'update_call' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+
+            alert("Account has been updated successfully!")
+
+        }else{
+            alert("Please an error occured when updating account!")
+
+        }
+        });}
+
+
+
+
+
+        function email_update(id){
+          var state = document.getElementById("em_"+id)
+          var state2 = document.getElementById("emp_"+id)
+
+        data = JSON.stringify({
+        id:id,
+        Email:state.value,
+        Password:state2.value,
+
+        })
+        fetch("{% url 'update_email_data' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+
+            alert("Account has been updated successfully!")
+
+        }else{
+            alert("Please an error occured when updating account!")
+
+        }
+        });}
+
+
+        function log_update(id){
+          var state = document.getElementById("tx_"+id)
+
+         if (state.value === ""){
+          alert('Please add a comment to the log box!')
+         }else{
+        data = JSON.stringify({
+        id:id,
+        Log:state.value,
+
+        })
+        fetch("{% url 'add_log_data' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+            state.value=""
+            alert("Account logs has been updated successfully!")
+
+        }else{
+            alert("Please an error occured when updating account logs!")
+
+        }
+        });}}
+
+
+
+        </script>
+
+
+
+         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasAddUser" aria-labelledby="offcanvasAddUserLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasAddUserLabel" class="offcanvas-title">Schedule Booking</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body mx-0 flex-grow-0 h-100">
+                <form action="{% url 'manage_booking' %}" method="post" enctype="multipart/form-data">
+                  {% csrf_token %}
+
+                  <div style="text-align: center;"  class="result">
+                    <img id='img' style="border-radius: 5px;width:200px;height:200px;object-fit: cover; " src="{% get_static_prefix %}Manager\assets\img\img-02.jpg">
+
+                    </div>
+
+                  <div style="padding-top: 10px;"></div>
+
+                  <input type="hidden" class="form-control" placeholder="" aria-label="" name="Type" value="Client" />
+                  <input type="hidden" class="form-control" placeholder="" aria-label="" name="Client" value="" id="c_id"/>
+                  <div class="form-floating form-floating-outline mb-4">
+                    <input type="text" id="add-user-email" class="form-control" placeholder="" aria-label="" name="Topic" required />
+                    <label for="add-user-email">Meeting Subject</label>
+                  </div>
+                  <div class="form-floating form-floating-outline mb-4">
+                    <input type="time" id="add-user-email" class="form-control" placeholder="" aria-label="" name="Time" required />
+                    <label for="add-user-email">Schedule Time</label>
+                  </div>
+                  <div class="form-floating form-floating-outline mb-4">
+                    <input type="date" id="add-user-email" class="form-control" placeholder="" aria-label="" name="Date" required />
+                    <label for="add-user-email">Schedule Date</label>
+                  </div>
+
+
+
+                  <div class="form-floating form-floating-outline mb-4">
+                    <textarea type="text" id="add-user-email"  class="form-control"  rows="4" cols="50" placeholder="describ the reason for the meeting.." name="About" required ></textarea>
+                    <label for="add-user-email">Meeting Description</label>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary me-sm-3 me-1 data-submit">Submit</button>
+                  <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="offcanvas">Cancel</button>
+                </form>
+              </div>
+            </div>
+          </div>

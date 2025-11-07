@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Skydash Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/feather/feather.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="{% get_static_prefix%}go/assets/img/logo.png" />
+</head>
+<style>
+    .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    }	  
+    .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0;
+    }
+    </style>
+
+<body>
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+      <div class="content-wrapper d-flex align-items-center auth px-0">
+        <div class="row w-100 mx-0">
+          <div class="col-lg-4 mx-auto">
+            <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+              <div class="brand-logo" style="text-align: center;">
+                <img src="{% get_static_prefix%}go/assets/img/logo.png" alt="logo">
+              </div>
+              <h4>New here?</h4>
+              <h6 class="font-weight-light" style="text-align: center;">Signing up for a master class is easy. It only takes a few steps, please fill the form bellow to register for a master class.</h6>
+              <form class="pt-3" method="post" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+
+                <div style="padding-top: 20px;"></div>
+
+                <div style="text-align: center;" id="fat" class="result">
+                    <img style="border-radius: 100px;width:200px;height:200px " src="{% get_static_prefix %}Profile.png">
+                  
+                  </div>
+                  
+                    
+                    
+    <div style="text-align: center;" class="box">
+        <div style="padding-top: 20px;"></div>
+        <div class="upload-btn-wrapper">
+      <button  class="btn btn-light btn-block">Select image</button>
+     
+      <input required  class="mdc-text-field__input"  id="file-input" style="width: 100%;object-fit: cover;" type="file" name="New_Img" accept="image/*" />
+      </div>
+      <script>
+
+        // vars
+        let result = document.getElementById("fat"),
+        upload = document.getElementById("file-input"),
+        
+        cropper = '';
+        
+        // on change show image with crop options
+        upload.addEventListener('change', (e) => {
+          if (e.target.files.length) {
+            
+            const reader = new FileReader();
+            reader.onload = (e)=> {
+              if(e.target.result){
+              console.log(e);
+                
+                let img = document.createElement('img');
+                img.id = 'image';
+                img.src = e.target.result;
+                console.log(e.target.result);
+                img.style = "border-radius: 100px;width:200px;height:200px;object-fit: cover"
+                
+                result.innerHTML = '';
+              
+                result.appendChild(img);
+                // show save btn and options
+                save.classList.remove('hide');
+                options.classList.remove('hide');
+                // init cropper
+                cropper = new Cropper(img);
+              }
+            };
+            reader.readAsDataURL(e.target.files[0]);
+          }
+        });
+        </script>
+    </div>
+                <div class="form-group">
+                  <input type="text" name="Name" required class="form-control form-control-lg" id="exampleInputUsername1" placeholder="Your Full Name..">
+                </div>
+                <div class="form-group">
+                  <input type="email" name="Email" required class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Your Email Address ..">
+                </div>
+                <div class="form-group">
+                  <input type="text" name="Contact" required class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Your Phone Number..">
+                </div>
+                <div class="form-group">
+                  <select class="form-control form-control-lg" required name="Group" id="exampleFormControlSelect2">
+                     
+                    <option >Wednesday</option>
+  <option >Saturday</option>
+
+ 
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select class="form-control form-control-lg" required name="Region" id="exampleFormControlSelect2">
+                    
+                    <option value="accra">Accra</option>
+  <option value="kumasi">Kumasi</option>
+  <option value="tamale">Tamale</option>
+  <option value="sekondi-takoradi">Sekondi-Takoradi</option>
+  <option value="cape-coast">Cape Coast</option>
+  <option value="tema">Tema</option>
+  <option value="obuasi">Obuasi</option>
+  <option value="sunyani">Sunyani</option>
+  <option value="teshie">Teshie</option>
+  <option value="ho">Ho</option>
+  <option value="wa">Wa</option>
+  <option value="koforidua">Koforidua</option>
+  <option value="techiman">Techiman</option>
+  <option value="nungua">Nungua</option>
+  <option value="dome">Dome</option>
+  <option value="lashibi">Lashibi</option>
+  <option value="nsawam">Nsawam</option>
+  <option value="winneba">Winneba</option>
+  <option value="hohoe">Hohoe</option>
+  <option value="yendi">Yendi</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="Location" required class="form-control form-control-lg" id="exampleInputUsername1" placeholder="Your Area Location..">
+                </div>
+                <div class="mb-4">
+                  <div class="form-check">
+                    <label class="form-check-label text-muted">
+                      <input type="checkbox" class="form-check-input">
+                      I agree to all Terms & Conditions
+                    </label>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" >SIGN UP</button>
+                </div>
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="{% get_static_prefix %}Administrator/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="{% get_static_prefix %}Administrator/js/off-canvas.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/hoverable-collapse.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/template.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/settings.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/todolist.js"></script>
+  <!-- endinject -->
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+
+
+{% load static %}
+{% include "New/Extra/header.html" %}
+          <!--  Header End -->
+           <div class="card shadow-none position-relative overflow-hidden mb-4">
+            <div class="card-body d-flex align-items-center justify-content-between p-4">
+              <h4 class="card-title mb-0">{{Note}}</h4>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item">
+                    <a class="text-muted text-decoration-none" href="{{admin_dashboard}}">Home</a>
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">Interviewer</li>
+                </ol>
+
+              </nav>
+
+            </div>
+             <div>
+
+
+
+          </div>
+          </div>
+          <div class="row">
+
+           {% for i in Listed %}
+            <div class="col-md-6 col-lg-4" id="{{i.id}}">
+              <div class="card overflow-hidden hover-img">
+                <div class="position-relative">
+
+                  <a href="">
+
+                    <img src="{% get_media_prefix %}Interview/{{i.id}}.jpg?{{Rand}}"  onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';"  style="height:350px;object-fit:cover" class="card-img-top" alt="spike-img">
+                  </a>
+                  <span class="badge text-bg-light fs-2 lh-sm mb-9 me-9 py-1 px-2 fw-semibold position-absolute bottom-0 end-0">{{i.Contact}}</span>
+
+                </div>
+                <div class="card-body p-4 row">
+
+
+
+
+                  <a class="d-block my-4 fs-5 text-dark fw-semibold link-primary" href="">
+                    {{i.Full_Name}}</a>
+                  <div class="d-flex align-items-center gap-4">
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="ti-email text-dark fs-5" style="padding-right:5px"></i>{{i.Email}}
+                    <br>
+                      <i class="ti-file text-dark fs-5" style="padding-right:5px"></i>{{i.Location}}
+                    </div>
+                  </div>
+
+
+
+                  <div style="padding-top:10px" class="col-6">
+                    <a href="{% url 'edit_interviewer' i.id %}" class="btn bg-primary-subtle text-primary w-100 rounded-pill">Edit</a>
+
+                  </div>
+
+                <div style="padding-top:10px" class="col-6">
+                  <a onclick="Open('{{i.id}}')" class="btn bg-danger-subtle text-danger w-100 rounded-pill">Delete Client</a>
+
+                </div>
+
+                <div style="padding-top:10px" class="col-12">
+                  <a href="{% url 'interview_paged' i.id %}" class="btn bg-success-subtle text-success w-100 rounded-pill">Account Overview</a>
+
+                </div>
+
+
+</div>
+
+
+
+              </div>
+            </div>
+{% endfor %}
+
+
+
+
+
+          </div>
+<span class="step-links">
+                  {% if page_obj.has_previous %}
+                      <a class="btn btn-outline-secondary" href="?page=1">&laquo; first</a>
+                      <a class="btn btn-outline-secondary" href="?page={{ page_obj.previous_page_number }}">previous</a>
+                  {% endif %}
+
+                  <span class="current">
+                      Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                  </span>
+
+                  {% if page_obj.has_next %}
+                      <a class="btn btn-outline-secondary" href="?page={{ page_obj.next_page_number }}">next</a>
+                      <a class="btn btn-outline-secondary" href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                  {% endif %}
+              </span>
+        </div>
+      </div>
+
+
+        {% include "New/Extra/footer.html" %}
+
+
+
+
+        <div id="cover"  style="background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: hidden">
+          <div class="col-xl-4 col-lg-4 col-xxl-4 col-md-12" style="position: fixed;top:30%;left: 40%;">
+            <div class="card" id="cmain" style="visibility: hidden">
+              <div class="card-body text-center ai-icon  text-primary" >
+                <button style="position: absolute;right: 20px;" class="btn btn-sm btn-danger" onclick="Close()">x</button>
+                <svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" style="stroke-dasharray: 25, 45; stroke-dashoffset: 0;"></path>
+                  <path d="M8,7A4,4 0,1,1 16,7A4,4 0,1,1 8,7" style="stroke-dasharray: 26, 46; stroke-dashoffset: 0;"></path>
+                </svg>
+                <h4 class="my-2">Type "DELETE ACCOUNT" in the form below to delete Account.</h4>
+                <div class="form-group" >
+
+                  <input type="text" id="pass2" class="form-control" style="text-align: center;" >
+                </div>
+                <button onclick="Delete()" id="si_button" class="btn my-2 btn-primary btn-lg px-4"><i class="fa fa-trash"></i> Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input id="state" type="hidden">
+
+        <script>
+          setInterval(load_all,1000);
+        function load_all(){
+
+
+            var pass2 = document.getElementById("pass2").value
+        if (pass2==="DELETE ACCOUNT"){
+
+         document.getElementById("si_button").disabled = false;
+        }else{
+         document.getElementById("si_button").disabled = true;
+        }
+        }
+
+        function Open(id){
+        document.getElementById("state").value = id
+        document.getElementById('cover').setAttribute("style", "background-color:rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: visible")
+        document.getElementById('cmain').setAttribute("style", "visibility: visible")
+
+        }
+        function Close(){
+        document.getElementById('cover').setAttribute("style", "visibility: hidden;z-index: 0;")
+        document.getElementById('cmain').setAttribute("style", "z-index: 0;visibility: hidden;")
+
+        }
+
+
+        function Delete(){
+          var state = document.getElementById("state")
+        data = JSON.stringify({
+        id:state.value,
+        })
+        fetch("{% url 'manager_interview_account' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+            document.getElementById(state.value).remove()
+            state.value=""
+            document.getElementById("pass2").value=""
+            alert("Account has been deleted successfully!")
+        Close()
+        }else{
+            alert("Please an error occured when deleting account!")
+
+        }
+        });}
+
+
+
+
+
+        function stat_up(id){
+          var state = document.getElementById("state_"+id)
+        data = JSON.stringify({
+        id:id,
+        Status:state.value
+        })
+        fetch("{% url 'update_proccess' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+
+            alert("Account has been updated successfully!")
+
+        }else{
+            alert("Please an error occured when updating account!")
+
+        }
+        });}
+
+
+
+        function stat_up2(id){
+          var state = document.getElementById("state2_"+id)
+        data = JSON.stringify({
+        id:id,
+        Status:state.value
+        })
+        fetch("{% url 'update_call' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+
+            alert("Account has been updated successfully!")
+
+        }else{
+            alert("Please an error occured when updating account!")
+
+        }
+        });}
+
+
+
+
+
+        function email_update(id){
+          var state = document.getElementById("em_"+id)
+          var state2 = document.getElementById("emp_"+id)
+
+        data = JSON.stringify({
+        id:id,
+        Email:state.value,
+        Password:state2.value,
+
+        })
+        fetch("{% url 'update_email_data' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+
+            alert("Account has been updated successfully!")
+
+        }else{
+            alert("Please an error occured when updating account!")
+
+        }
+        });}
+
+
+        function log_update(id){
+          var state = document.getElementById("tx_"+id)
+
+         if (state.value === ""){
+          alert('Please add a comment to the log box!')
+         }else{
+        data = JSON.stringify({
+        id:id,
+        Log:state.value,
+
+        })
+        fetch("{% url 'add_log_data' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+            state.value=""
+            alert("Account logs has been updated successfully!")
+
+        }else{
+            alert("Please an error occured when updating account logs!")
+
+        }
+        });}}
+
+
+
+        </script>

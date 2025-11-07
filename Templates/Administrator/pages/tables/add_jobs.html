@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Admin</title>
+
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/table/resources/css/app.min.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/table/resources/vendors/zwicon/zwicon.min.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/table/resources/vendors/animate.css/animate.min.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/table/resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/feather/feather.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="{% get_static_prefix %}Administrator/images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:{% get_static_prefix %}Administrator/partials/_navbar.html -->
+
+    {% include 'Administrator/header1.html'%}
+
+        <!-- Content wrapper --> <style>
+    .upload-btn-wrapper {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      cursor: pointer;
+      }
+      .upload-btn-wrapper input[type=file] {
+      font-size: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      cursor: pointer;
+      width: 50%;
+      opacity: 0;
+      }
+      </style>
+      <!-- Content wrapper -->
+      <div class="content-wrapper">
+
+        <!-- Content -->
+
+          <div class="container-xxl flex-grow-1 container-p-y">
+
+
+
+<h4 class="py-3 mb-4">
+  <span class="text-muted fw-light">Jobs/</span>
+  Create Application
+</h4>
+<!-- Sticky Actions -->
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header sticky-element bg-label-secondary d-flex justify-content-sm-between align-items-sm-center flex-column flex-sm-row">
+        <h5 class="card-title mb-sm-0 me-2">New Job Application Form</h5>
+        <div class="action-btns">
+
+        </div>
+      </div>
+      <div class="card-body">
+        <form class="row" action="{% url "job_pannel" %}" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="col-lg-8 mx-auto">
+            <!-- 1. Delivery Address -->
+            <div style="padding-top: 20px;"></div>
+
+            <div style="text-align: center;" id="fat" class="result">
+                <img id="img" style="border-radius: 2px;width:200px;height:200px;object-fit: cover;" src="{% get_static_prefix %}OIP.jpg">
+
+              </div>
+
+
+                {% csrf_token %}
+<div style="text-align: center;" class="box">
+    <div style="padding-top: 20px;"></div>
+    <div class="upload-btn-wrapper">
+  <button  class="btn btn-light btn-block">Select image</button>
+
+  <input  class="mdc-text-field__input"  id="file-input" style="width: 100%;" type="file" name="New_Img" required accept="image/*" />
+  </div>
+
+
+</div>
+            <h5 class="mb-4">1.Basic Job Info</h5>
+            <div class="row g-4">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="form-label">Job Role Title</label>
+
+                  <input type="text" id="fullname" required name="Title" class="form-control" placeholder="Python Developer (Full Stack)">
+                </div>
+              </div>
+
+
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form-label">Job Offer Type</label>
+
+                  <select  id="phone" class="form-control phone-mask" name="Type" >
+                  <option>All </option>
+                  <option>Fulltime</option>
+                  <option>Parttime</option>
+
+                  </select>
+
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="form-label">Minimume Salary</label>
+                  <input type="number" id="alt-num" name="Min_Salary" class="form-control phone-mask" placeholder="100">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="form-label">Maximume Salary</label>
+                  <input type="number" id="alt-num" name="Max_Salary" class="form-control phone-mask" required placeholder="1000">
+
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" name="Check" id="deliveryAdd" checked="">
+
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-group">Show Salary On Application Page </label>
+                  <label for="form-label">Job Description</label>
+                  <textarea name="About" class="form-control" id="address" rows="5" placeholder="1456, Mall Road" style="height: 65px;"></textarea>
+
+                </div>
+              </div>
+
+            </div>
+            <hr>
+            <!-- 2. Delivery Type -->
+            <h5 class="my-4">2. Experience Level</h5>
+            <div class="row gy-3">
+              <div class="col-md">
+                <div class="form-check custom-option custom-option-icon">
+                  <label class="form-check-label custom-option-content" for="customRadioIcon1">
+                    <span class="custom-option-body">
+                      <i class='mdi mdi-briefcase-account-outline'></i>
+                      <span class="custom-option-title"> Beginer </span>
+                      <small> New to this role </small>
+                    </span>
+                    <input name="Experience" class="form-check-input" type="radio" value="Beginer" id="customRadioIcon1" checked="">
+                  </label>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="form-check custom-option custom-option-icon">
+                  <label class="form-check-label custom-option-content" for="customRadioIcon2">
+                    <span class="custom-option-body">
+                      <i class='mdi mdi-send-outline'></i>
+                      <span class="custom-option-title"> Intermidiate </span>
+                      <small>Mid career in this role.</small>
+                    </span>
+                    <input name="Experience" class="form-check-input" type="radio" value="Intermidiate" id="customRadioIcon2">
+                  </label>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="form-check custom-option custom-option-icon">
+                  <label class="form-check-label custom-option-content" for="customRadioIcon3">
+                    <span class="custom-option-body">
+                      <i class='mdi mdi-crown-outline'></i>
+                      <span class="custom-option-title"> Expert </span>
+                      <small> Proffecient in this role </small>
+                    </span>
+                    <input name="Experience" class="form-check-input" type="radio" value="Expert" id="customRadioIcon3">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <!-- 3. Apply Promo code -->
+            <h5 class="my-4">3. Responsibilities And Roles</h5>
+            <div class="row g-3">
+
+              <div class="col-sm-10 col-8">
+                <div class="form-group">
+                  <label for="form-label">Create Job Responsibilities</label>
+                  <input type="text" id="Rb" class="form-control" placeholder="TAKEITALL">
+
+                </div>
+              </div>
+              <div class="col-sm-2 col-4 d-grid">
+                <button onclick="add_list('R')" type="button" class="btn btn-primary">Add</button>
+              </div>
+
+              <div class="divider divider-dashed">
+                <div class="divider-text">Responsibilities Added</div>
+              </div>
+
+              <div class="col-12">
+                <ul class="list-group" id="R_Hold">
+
+
+
+                </ul>
+              </div>
+            </div>
+            <hr style="padding-top:80px">
+            <h5 class="my-4">4. Skills Set Requirements</h5>
+            <div class="row g-3">
+
+              <div class="col-sm-10 col-8">
+                <div class="form-group">
+                  <label for="form-label">Required Skills</label>
+                  <input type="text" id="Sb" id="promo-code" class="form-control" placeholder="TAKEITALL">
+
+                </div>
+              </div>
+              <div class="col-sm-2 col-4 d-grid">
+                <button class="btn btn-primary" type="button" onclick="add_list('S')">Add</button>
+              </div>
+
+              <div class="divider divider-dashed">
+                <div class="divider-text">Required Skills Added</div>
+              </div>
+
+              <div class="col-12">
+                <ul class="list-group" id="S_Hold">
+
+
+
+                </ul>
+              </div>
+            </div>
+            <hr style="padding-top:80px">
+            <h5 class="my-4">5. Job Benefits</h5>
+            <div class="row g-3">
+
+              <div class="col-sm-10 col-8">
+                <div class="form-group">
+                  <label for="form-label">Job Benefits</label>
+                  <input type="text" id="Bb" class="form-control"  placeholder="TAKEITALL">
+
+                </div>
+              </div>
+              <div class="col-sm-2 col-4 d-grid">
+                <button class="btn btn-primary" type="button" onclick="add_list('B')">Add</button>
+              </div>
+
+              <div class="divider divider-dashed">
+                <div class="divider-text">Benefits Added</div>
+              </div>
+
+              <div class="col-12">
+                <ul class="list-group" id="B_Hold">
+
+
+                </ul>
+              </div>
+            </div>
+            <!-- 4. Payment Method -->
+
+            <div class="" style="text-align:center;padding-top:30px">
+              <button type="submit" class="btn btn-primary" >Create Application</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Sticky Actions -->
+          </div>
+          <!-- / Content -->
+
+
+          <input type="hidden" value="0" id='counter'>
+          <input type="hidden" value="0" id='counter1'>
+          <input type="hidden" value="0" id='counter2'>
+<script>
+  function add_list(id){
+
+    if (id === 'R'){
+      var tb = document.getElementById('Rb')
+      var cu = document.getElementById('counter')
+
+      var h = document.getElementById('R_Hold')
+      var ne = document.createElement('li')
+      ne.setAttribute('class', 'list-group-item d-flex justify-content-between flex-column flex-sm-row')
+      ne.id='R_'+cu.value
+      var htm = ' <div class="col-10"><input type="text"  required value="'+tb.value+'" name="RN_'+cu.value+'" class="form-control" placeholder="TAKEITALL"></div><div class="apply mt-3 mt-sm-0"><button class="btn btn-outline-primary" onclick="del(`R_'+cu.value+'`)">Delete</button></div>'
+      ne.innerHTML=htm
+      h.append(ne)
+      cu.value=parseInt(cu.value)+1
+      tb.value=""
+    } else if (id === 'S'){
+      var tb = document.getElementById('Sb')
+      var cu = document.getElementById('counter1')
+
+      var h = document.getElementById('S_Hold')
+      var ne = document.createElement('li')
+      ne.setAttribute('class', 'list-group-item d-flex justify-content-between flex-column flex-sm-row')
+      ne.id='S_'+cu.value
+      var htm = ' <div class="col-10"><input type="text"  required value="'+tb.value+'" name="SN_'+cu.value+'" class="form-control" placeholder="TAKEITALL"></div><div class="apply mt-3 mt-sm-0"><button class="btn btn-outline-primary" onclick="del(`S_'+cu.value+'`)">Delete</button></div>'
+      ne.innerHTML=htm
+      h.append(ne)
+      cu.value=parseInt(cu.value)+1
+      tb.value=""
+    } else if (id === 'B'){
+      var tb = document.getElementById('Bb')
+      var cu = document.getElementById('counter2')
+
+      var h = document.getElementById('B_Hold')
+      var ne = document.createElement('li')
+      ne.setAttribute('class', 'list-group-item d-flex justify-content-between flex-column flex-sm-row')
+      ne.id='B_'+cu.value
+      var htm = ' <div class="col-10"><input type="text"  required value="'+tb.value+'" name="BN_'+cu.value+'" class="form-control" placeholder="TAKEITALL"></div><div class="apply mt-3 mt-sm-0"><button class="btn btn-outline-primary" onclick="del(`B_'+cu.value+'`)">Delete</button></div>'
+      ne.innerHTML=htm
+      h.append(ne)
+      cu.value=parseInt(cu.value)+1
+      tb.value=""
+    }
+
+
+  }
+
+  function del(id){
+    var tb = document.getElementById(id).remove()
+  }
+  upload = document.getElementById("file-input"),
+  upload.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+</script>
+        <!-- content-wrapper ends -->
+        <!-- partial:{% get_static_prefix %}Administrator/partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+             <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023.
+              Edumcloud <a href="" target="_blank"></a> from Edumcloud. All rights reserved.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="{% get_static_prefix %}Administrator/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="{% get_static_prefix %}Administrator/js/off-canvas.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/hoverable-collapse.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/template.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/settings.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+
+
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/jquery/jquery.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/popper.js/popper.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/datatables/jquery.dataTables.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/datatables/datatables-buttons/dataTables.buttons.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/datatables/datatables-buttons/buttons.print.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/jszip/jszip.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/datatables/datatables-buttons/buttons.html5.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/js/app.min.js"></script>
+</body>
+
+</html>

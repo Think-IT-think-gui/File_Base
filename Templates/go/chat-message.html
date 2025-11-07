@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="en">
+    {% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Sikobs</title>
+
+    <!-- manifest meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="{% get_static_prefix%}go/manifest.json">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="180x180">
+    <link rel="icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="16x16" type="image/png">
+
+    <!-- Google fonts-->
+    <link href="{% get_static_prefix%}go/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="{% get_static_prefix%}go/css2-1?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="{% get_static_prefix%}go/npm/bootstrap-icons%401.5.0/font/bootstrap-icons.css">
+
+    <!-- nouislider CSS -->
+    <link href="{% get_static_prefix%}go/assets/vendor/nouislider/nouislider.min.css" rel="stylesheet">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="{% get_static_prefix%}go/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.css">
+
+    <!-- style css for this template -->
+    <link href="{% get_static_prefix%}go/assets/css/style.css" rel="stylesheet" id="style">
+</head>
+<body class="body-scroll" data-page="">
+
+    <!-- loader section -->
+
+    <!-- loader section ends -->
+
+    <!-- Begin page -->
+    <main class="h-100 has-header">
+
+        <!-- Header -->
+        <header class="container-fluid header">
+            <div class="row h-100">
+                <div class="col-auto align-self-center">
+                    <a href="{% url 'client' %}" class="btn text-color-theme">
+                        <i class="bi bi-arrow-left size-20"></i>
+                    </a>
+                </div>
+                <div class="col text-center align-self-center">
+                    <h5 class="mb-0">My Chats</h5>
+                </div>
+                <div class="col-auto align-self-center">
+                    <a href="{% url 'client' %}" class="link text-color-theme">
+                        <i class="bi bi-shop size-22"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+<style>
+    .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    }
+    .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0;
+    }
+    </style>
+
+
+<body class="body-scroll" data-page="chat-message">
+    <!-- Begin page -->
+    <main class="h-100 has-header has-footer">
+
+        <!-- Header -->
+        <header class="container-fluid header">
+            <div class="row h-100">
+                <div class="col-auto align-self-center">
+                    <a href="{% url 'messages' %}" class="btn   text-color-theme">
+                        <i class="bi bi-arrow-left size-20"></i>
+                    </a>
+                </div>
+                <div class="col align-self-center">
+
+                    <div class="row">
+                        <div class="col-auto">
+                            <a  style="cursor: pointer;"> <div class="avatar avatar-40 coverimg rounded-circle">
+                                <img src="{% get_media_prefix%}Profiles/{{Client.id}}.jpg?{{Rand}}assets/img/user1.jpg" alt="">
+                            </div></a>
+                        </div>
+                        <div class="col align-self-center ps-0">
+                            <p class="mb-0 lh-small" >{{Client.Full_Name}}</p>
+                            <span class="text-opac small" id="online">Joined on {{Client.date}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto align-self-center">
+                    <a href="{% url 'home' %}" class="link text-color-theme">
+                        <i class="bi bi-shop size-22"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- Header ends -->
+
+        <!-- main page content -->
+        <div class="main-container container">
+            <!-- Chat list   -->
+            <div class="row no-margin">
+                <a href="{% url 'all_chat' Client.id  %}"><div class="col-12 text-center">
+                    <span class="page-bg text-color-theme shadow-sm mx-auto btn btn-sm py-1 mb-3">See Older Chats</span>
+                </div></a>
+            </div>
+            <div class="row">
+                <div class="col-12 chat-list scroll-y" id="tab_in">
+                   {% for i in Messages %}
+                    {% if i.Sender == User_Data.id %}
+                   {% if i.Type == "Text" %}
+                    <div class="row no-margin right-chat">
+                    <div class="col-12">
+                        <div class="chat-block">
+                            <div class="row">
+                                <div class="col">
+                                    <span id="s{{i.id}}" > {{i.Info}}</span>
+                                    <script>
+                                     function urlify(text) {
+                                         var urlRegex = /(https?:\/\/[^\s]+)/g;
+                                         return text.replace(urlRegex, function(url) {
+                                           var con_url = url.substring(0,40)+"..."
+                                           return '<a href="' + url + '">' + con_url + '</a>';
+                                         })
+                                         // or alternatively
+                                         // return text.replace(urlRegex, '<a href="$1">$1</a>')
+                                       }
+
+                                       var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+                                       var newf = '{{i.Info}}'
+                                       var html = urlify(newf);
+                                       document.getElementById('s{{i.id}}').innerHTML=html
+                                       console.log(html)
+
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-end">
+                        <p class="text-opac small time">
+                            {% if i.Status == "Unseen" %}
+                            <i class="bi bi-check"></i>
+                            {% else %}
+                            <i class="bi bi-check-all text-primary"></i>
+
+                            {% endif %}
+                            {{i.Time}}</p>
+                    </div>
+                  </div>
+                   {%elif i.Type == "Image" %}
+
+                   <div class="row no-margin right-chat">
+                    <div class="col-12">
+                        <div class="chat-block">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mw-100 position-relative mb-2 figure">
+                                        <div class="position-absolute end-0 top-0">
+                                            <button class="avatar avatar-36 rounded-circle p-0 btn btn-info text-white shadow-sm m-2">
+                                                <a style="color:white" href="{% get_media_prefix%}Messages/Images/{{i.id}}.jpg" download="document.jpg" target="_blank" class="bi bi-download"></a>
+                                            </button>
+                                        </div>
+                                        <img src="{% get_media_prefix%}Messages/Images/{{i.id}}.jpg" alt="" class="mw-100">
+                                    </div>
+                                    <span id="s{{i.id}}"> {{i.Info}}</span>
+                                    <script>
+                                     function urlify(text) {
+                                         var urlRegex = /(https?:\/\/[^\s]+)/g;
+                                         return text.replace(urlRegex, function(url) {
+                                            var con_url = url.substring(0,40)+"..."
+                                            return '<a href="' + url + '">' + con_url + '</a>';
+                                         })
+                                         // or alternatively
+                                         // return text.replace(urlRegex, '<a href="$1">$1</a>')
+                                       }
+
+                                       var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+                                       var newf = '{{i.Info}}'
+                                       var html = urlify(newf);
+                                       document.getElementById('s{{i.id}}').innerHTML=html
+                                       console.log(html)
+
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-end">
+                        <p class="text-opac small time">
+                            {% if i.Status == "Unseen" %}
+                            <i class="bi bi-check"></i>
+                            {% else %}
+                            <i class="bi bi-check-all text-primary"></i>
+
+                            {% endif %}
+                            {{i.Time}}</p>
+                    </div>
+                </div>
+                   {% elif i.Type == "Video" %}
+                   <div class="row no-margin right-chat">
+                    <div class="col-12">
+                        <div class="chat-block">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mw-100 position-relative mb-2 figure">
+                                        <div class="position-absolute start-50 top-50 translate-middle z-index-1">
+
+                                        </div>
+                                        <video src="{% get_media_prefix%}Messages/Videos/{{i.id}}.mp4" controls=""></video>
+                                    </div>
+                                    <span id="s{{i.id}}"> {{i.Info}}</span>
+                                    <script>
+                                     function urlify(text) {
+                                         var urlRegex = /(https?:\/\/[^\s]+)/g;
+                                         return text.replace(urlRegex, function(url) {
+                                            var con_url = url.substring(0,40)+"..."
+                                           return '<a href="' + url + '">' + con_url + '</a>';
+                                         })
+                                         // or alternatively
+                                         // return text.replace(urlRegex, '<a href="$1">$1</a>')
+                                       }
+
+                                       var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+                                       var newf = '{{i.Info}}'
+                                       var html = urlify(newf);
+                                       document.getElementById('s{{i.id}}').innerHTML=html
+                                       console.log(html)
+
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-end">
+                        <p class="text-opac small time">
+                            {% if i.Status == "Unseen" %}
+                            <i class="bi bi-check"></i>
+                            {% else %}
+                            <i class="bi bi-check-all text-primary"></i>
+
+                            {% endif %}
+                            {{i.Time}}</p>
+                    </div>
+                   </div>
+                   {% else %}
+                   <div class="row no-margin right-chat">
+                    <div class="col-12">
+                        <div class="chat-block">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mw-100 position-relative mb-2 figure">
+                                        <div class="position-absolute end-0 top-0">
+                                            <button class="avatar avatar-36 rounded-circle p-0 btn btn-info text-white shadow-sm m-2">
+                                                <a style="color:white" href="{% get_media_prefix%}Messages/Files/{{i.id}}.pdf" download="document.jpg" target="_blank" class="bi bi-download"></a>
+                                            </button>
+                                        </div>
+                                        <i style="font-size:200px" class="bi bi-file-earmark-richtext "></i>
+                                    </div>
+                                    <span id="s{{i.id}}"> {{i.Info}}</span>
+                                    <script>
+                                     function urlify(text) {
+                                         var urlRegex = /(https?:\/\/[^\s]+)/g;
+                                         return text.replace(urlRegex, function(url) {
+                                            var con_url = url.substring(0,40)+"..."
+                                           return '<a href="' + url + '">' + con_url + '</a>';
+                                         })
+                                         // or alternatively
+                                         // return text.replace(urlRegex, '<a href="$1">$1</a>')
+                                       }
+
+                                       var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+                                       var newf = '{{i.Info}}'
+                                       var html = urlify(newf);
+                                       document.getElementById('s{{i.id}}').innerHTML=html
+                                       console.log(html)
+
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-end">
+                        <p class="text-opac small time">
+                            {% if i.Status == "Unseen" %}
+                            <i class="bi bi-check"></i>
+                            {% else %}
+                            <i class="bi bi-check-all text-primary"></i>
+
+                            {% endif %}
+                            {{i.Time}}</p>
+                    </div>
+                   </div>
+                   {% endif %}
+
+                    {% else %}
+                    {% if i.Type == "Text" %}
+                    <div class="row no-margin left-chat">
+                    <div class="col-12">
+                        <div class="chat-block">
+                            <div class="row">
+                                <div class="col">
+                                    <span id="s{{i.id}}"> {{i.Info}}</span>
+                                    <script>
+                                     function urlify(text) {
+                                         var urlRegex = /(https?:\/\/[^\s]+)/g;
+                                         return text.replace(urlRegex, function(url) {
+                                            var con_url = url.substring(0,40)+"..."
+                                           return '<a href="' + url + '">' + con_url + '</a>';
+                                         })
+                                         // or alternatively
+                                         // return text.replace(urlRegex, '<a href="$1">$1</a>')
+                                       }
+
+                                       var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+                                       var newf = '{{i.Info}}'
+                                       var html = urlify(newf);
+                                       document.getElementById('s{{i.id}}').innerHTML=html
+                                       console.log(html)
+
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p class="text-opac small time"> {{i.Time}}</p>
+                    </div>
+                  </div>
+                   {%elif i.Type == "Image" %}
+
+                   <div class="row no-margin left-chat">
+                    <div class="col-12">
+                        <div class="chat-block">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mw-100 position-relative mb-2 figure">
+                                        <div class="position-absolute end-0 top-0">
+                                            <button class="avatar avatar-36 rounded-circle p-0 btn btn-info text-white shadow-sm m-2">
+                                                <a style="color:white" href="{% get_media_prefix%}Messages/Images/{{i.id}}.jpg" download="document.jpg" target="_blank" class="bi bi-download"></a>
+                                            </button>
+                                        </div>
+                                        <img src="{% get_media_prefix%}Messages/Images/{{i.id}}.jpg" alt="" class="mw-100">
+                                    </div>
+
+                                   <span id="s{{i.id}}"> {{i.Info}}</span>
+                                   <script>
+                                    function urlify(text) {
+                                        var urlRegex = /(https?:\/\/[^\s]+)/g;
+                                        return text.replace(urlRegex, function(url) {
+                                            var con_url = url.substring(0,40)+"..."
+                                            return '<a href="' + url + '">' + con_url + '</a>';
+                                        })
+                                        // or alternatively
+                                        // return text.replace(urlRegex, '<a href="$1">$1</a>')
+                                      }
+
+                                      var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+                                      var newf = '{{i.Info}}'
+                                      var html = urlify(newf);
+                                      document.getElementById('s{{i.id}}').innerHTML=html
+                                      console.log(html)
+
+                                   </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <p class="text-opac small time">{{i.Time}}</p>
+                    </div>
+                </div>
+                   {% elif i.Type == "Video" %}
+                   <div class="row no-margin left-chat">
+                    <div class="col-12">
+                        <div class="chat-block">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mw-100 position-relative mb-2 figure">
+                                        <div class="position-absolute start-50 top-50 translate-middle z-index-1">
+
+                                        </div>
+                                        <video src="{% get_media_prefix%}Messages/Videos/{{i.id}}.mp4" controls=""></video>
+                                    </div>
+                                    <span id="s{{i.id}}"> {{i.Info}}</span>
+                                    <script>
+                                     function urlify(text) {
+                                         var urlRegex = /(https?:\/\/[^\s]+)/g;
+                                         return text.replace(urlRegex, function(url) {
+                                            var con_url = url.substring(0,40)+"..."
+                                           return '<a href="' + url + '">' + con_url + '</a>';
+                                         })
+                                         // or alternatively
+                                         // return text.replace(urlRegex, '<a href="$1">$1</a>')
+                                       }
+
+                                       var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+                                       var newf = '{{i.Info}}'
+                                       var html = urlify(newf);
+                                       document.getElementById('s{{i.id}}').innerHTML=html
+                                       console.log(html)
+
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <p class="text-opac small time">{{i.Time}}</p>
+                    </div>
+                   </div>
+                   {% else %}
+                   <div class="row no-margin left-chat">
+                    <div class="col-12">
+                        <div class="chat-block">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mw-100 position-relative mb-2 figure">
+                                        <div class="position-absolute end-0 top-0">
+                                            <button class="avatar avatar-36 rounded-circle p-0 btn btn-info text-white shadow-sm m-2">
+                                                <a style="color:white" href="{% get_media_prefix%}Messages/Files/{{i.id}}.pdf" download="document.jpg" target="_blank" class="bi bi-download"></a>
+                                            </button>
+                                        </div>
+                                        <i style="font-size:200px" class="bi bi-file-earmark-richtext "></i>
+                                    </div>
+                                    <span id="s{{i.id}}"> {{i.Info}}</span>
+                                    <script>
+                                     function urlify(text) {
+                                         var urlRegex = /(https?:\/\/[^\s]+)/g;
+                                         return text.replace(urlRegex, function(url) {
+                                            var con_url = url.substring(0,40)+"..."
+                                           return '<a href="' + url + '">' + con_url + '</a>';
+                                         })
+                                         // or alternatively
+                                         // return text.replace(urlRegex, '<a href="$1">$1</a>')
+                                       }
+
+                                       var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+                                       var newf = '{{i.Info}}'
+                                       var html = urlify(newf);
+                                       document.getElementById('s{{i.id}}').innerHTML=html
+                                       console.log(html)
+
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <p class="text-opac small time">{{i.Time}}</p>
+                    </div>
+                   </div>
+
+
+{% endif %}
+
+                    {% endif %}
+
+                   {% endfor %}
+
+
+                </div>
+            </div>
+        </div>
+        <!-- main page content ends -->
+
+        <!-- chat post message -->
+        <div class="position-fixed bottom-0 start-0 chat-post">
+            <div class="row gx-3">
+                <div class="col-auto">
+                    <button class="btn btn-outline-theme rounded avatar-40 avatar p-0" type="button" data-bs-toggle="modal" data-bs-target="#attachefiles">
+                        <i class="bi bi-plus"></i>
+                    </button>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        <input type="text" id="TEXT" class="form-control" onkeypress="check_key()" placeholder="Write your message">
+                        <button class="btn btn-outline-primary" onclick="send_message()"  type="button"><i class="bi bi-cursor"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- chat post message ends-->
+
+    </main>
+    <!-- Page ends-->
+
+    <!-- modal attachement -->
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50vmax;
+
+          }
+    </style>
+
+    <div class="modal fade " id="attachefiles" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+        <div class="row center" style="position: absolute;width: 100%;padding-top: 10%;border-radius: 40px;">
+
+    <img class="center" src="{% get_static_prefix %}go/1.png" style="width: 35vmax;height: 35vmax;object-fit: cover;" id="image"  >
+
+        </div>
+        <div class="modal-dialog modal-sm modal-dialog-ends ">
+
+            <div class="modal-content shadow border-0">
+
+                <div class="modal-body">
+                    <div class="row">
+
+
+                        <div class="col-12 mx-auto">
+                            <div class="row justify-content-center align-items-center mb-3 gx-3">
+                                <div class="col-auto">
+
+                                    <div class="upload-btn-wrapper" >
+                                        <button class="btn btn-outline-theme avatar-50 avatar p-0 rounded-circle" data-bs-dismiss="modal"><i class="bi bi-file-earmark-image fs-5"></i></button>
+                                        <input class="mdc-text-field__input" name="IMG" style="width: 100%;" onchange="change('IMG')" id="IMG" type="file" accept="image/*" >
+                                        </div>
+                                </div>
+                                <div class="col-auto">
+
+                                    <div class="upload-btn-wrapper" >
+                                        <button class="btn btn-outline-theme avatar-50 avatar p-0 rounded-circle" data-bs-dismiss="modal"><i class="bi bi-file-earmark-richtext fs-5"></i></button>
+                                        <input class="mdc-text-field__input" name="FILE"  id="FILE" style="width: 100%;" type="file" accept=".pdf">
+                                        </div>
+                                        <script>
+                                            var uploadField = document.getElementById("FILE");
+
+                                            uploadField.onchange = function() {
+                                            if(this.files[0].size > 1000097152){
+                                            alert("File is too big, File should be between 1mb and 10mb!");
+                                            this.value = "";
+                                               };
+                                               change('FILE')
+                                            };
+                                          </script>
+                                </div>
+
+                                <div class="col-auto">
+                                    <div class="upload-btn-wrapper" >
+                                    <button class="btn btn-outline-theme avatar-50 avatar p-0 rounded-circle" data-bs-dismiss="modal"><i  class="bi bi-camera-video fs-5"></i></button>
+                                    <input class="mdc-text-field__input" name="VID" id="VID" style="width: 100%;" type="file" accept="video/*">
+                                    </div>
+                                    <script>
+										var uploadField = document.getElementById("VID");
+
+                                        uploadField.onchange = function() {
+                                        if(this.files[0].size > 1000097152){
+                                        alert("File is too big, File should be between 1mb and 10mb!");
+                                        this.value = "";
+                                           };
+                                           change('VID')
+                                        };
+									  </script>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal attachement ends -->
+
+
+    <!-- Required jquery and libraries -->
+    <script src="{% get_static_prefix%}go/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="{% get_static_prefix%}go/assets/js/popper.min.js"></script>
+    <script src="{% get_static_prefix%}go/assets/vendor/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+
+    <!-- cookie js -->
+    <script src="{% get_static_prefix%}go/assets/js/jquery.cookie.js"></script>
+
+    <!-- PWA app service registration and works -->
+    <script src="{% get_static_prefix%}go/assets/js/pwa-services.js"></script>
+
+    <!-- swiper script -->
+    <script src="{% get_static_prefix%}go/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.js"></script>
+
+    <!-- nouislider js -->
+    <script src="{% get_static_prefix%}go/assets/vendor/nouislider/nouislider.min.js"></script>
+
+    <!-- Customized jquery file  -->
+    <script src="{% get_static_prefix%}go/assets/js/main.js"></script>
+    <script src="{% get_static_prefix%}go/assets/js/color-scheme.js"></script>
+
+    <!-- page level custom script -->
+    <script src="{% get_static_prefix%}go/assets/js/app.js"></script>
+
+
+<input type="hidden" value="TEXT" id="NOTE">
+</body>
+
+</html>
+
+<script>
+    function getCookie(name) {
+        window.scrollTo(0,document.body.scrollHeight);
+
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+        }
+
+        const csrftoken = getCookie('csrftoken');
+
+    function change(id){
+        if (id === 'IMG'){
+            var filed = document.getElementById("FILE").value=""
+            var vid =  document.getElementById("VID").value=""
+            var note = document.getElementById("NOTE").value=id
+
+            let result = document.getElementById("fat"),
+                                    upload = document.getElementById("IMG"),
+
+
+                                    cropper = '';
+
+                                    // on change show image with crop options
+
+                                    upload.addEventListener('click', (e) => {
+                                      if (e.target.files.length) {
+
+                                        const reader = new FileReader();
+                                        reader.onload = (e)=> {
+                                          if(e.target.result){
+                                          console.log(e);
+
+                                            let img = document.getElementById('image');
+                                         //   img.id = 'image';
+                                            img.src = e.target.result;
+                                            //console.log(e.target.result);
+                                           // img.style = "border-radius: 100px;width:200px;height:200px"
+
+                                         //   result.innerHTML = '';
+
+                                           // result.appendChild(img);
+                                            // show save btn and options
+                                           // save.classList.remove('hide');
+                                           // options.classList.remove('hide');
+                                            // init cropper
+                                        //    cropper = new Cropper(img);
+                                          }
+                                        };
+                                        reader.readAsDataURL(e.target.files[0]);
+                                      }
+                                    });
+
+                                    upload.click()
+
+
+        }else if(id === 'VID'){
+            var img = document.getElementById("IMG").value=""
+            var filed = document.getElementById("FILE").value=""
+            var note = document.getElementById("NOTE").value=id
+        }else if(id === 'FILE'){
+            var img = document.getElementById("IMG").value=""
+            var vid =  document.getElementById("VID").value=""
+            var note = document.getElementById("NOTE").value=id
+        }
+    }
+
+
+
+    function check_key(){
+        if (event.key === "Enter"){
+            send_message()
+        }
+    }
+
+
+    function send_message(){
+        var img = document.getElementById("IMG")
+        var filed = document.getElementById("FILE")
+        var vid =  document.getElementById("VID")
+        var text = document.getElementById("TEXT")
+        var note = document.getElementById("NOTE")
+        if (note.value === "TEXT"){
+
+           if (text.value === ""){
+            alert("please add a message!")
+            return "d"
+           }else{
+            data = JSON.stringify({
+            Reciever: {{Client.id}},
+            Info:text.value,
+            "Type":"Text"
+           })
+           }
+           var heading = { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+           'Content-Type': 'application/json',
+           }
+        }else if (note.value === "IMG"){
+            const formData = new FormData
+            formData.append('New_Img',img.files[0])
+            formData.append('Reciever', {{Client.id}})
+            formData.append('Info', text.value)
+            formData.append('Type', "Image")
+            data = formData
+            var heading = { 'X-CSRFToken': csrftoken,'Accept': 'application/json',
+            'X-Requested-with': 'XMLHttpRequest'
+           }
+        }else if (note.value === "VID"){
+            const formData = new FormData
+            formData.append('New_Video',vid.files[0])
+            formData.append('Reciever', {{Client.id}})
+            formData.append('Info', text.value)
+            formData.append('Type', "Video")
+            data = formData
+            var heading = { 'X-CSRFToken': csrftoken,'Accept': 'application/json',
+            'X-Requested-with': 'XMLHttpRequest'
+           }
+        }else if (note.value === "FILE"){
+            const formData = new FormData
+            formData.append('New_File',filed.files[0])
+            formData.append('Reciever', {{Client.id}})
+            formData.append('Info', text.value)
+            formData.append('Type', "File")
+            data = formData
+            var heading = { 'X-CSRFToken': csrftoken,'Accept': 'application/json',
+            'X-Requested-with': 'XMLHttpRequest'
+           }
+        }
+
+        fetch("{% url 'send_message' %}", {
+        method: 'POST',
+        body: data,
+        headers: heading ,
+       })
+      .then(response => response.json())
+      .then(data => {
+
+        function urlify(tex) {
+
+
+            var urlRegex = /(https?:\/\/[^\s]+)/g;
+            return tex.replace(urlRegex, function(url) {
+               var con_url = url.substring(0,40)+"..."
+              return '<a href="' + url + '">' + con_url + '</a>';
+            })
+            // or alternatively
+            // return text.replace(urlRegex, '<a href="$1">$1</a>')
+          }
+
+         // var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+          var newf = '{{i.Info}}'
+
+          var html = urlify(text.value);
+
+
+
+        var coat = document.createElement('div')
+        coat.setAttribute("class","row no-margin right-chat")
+        if (data["Type"] === "Text"){
+        coat.innerHTML='<div class="col-12"><div class="chat-block"><div class="row"><div class="col"><p>'+html+'</p></div></div></div></div><div class="col-12 text-end"><p class="text-opac small time"><i class="bi bi-check"></i>'+data["Time"]+'</p></div>'
+        }else if(data["Type"] === "Image"){
+            coat.innerHTML='<div class="col-12"><div class="chat-block"><div class="row"><div class="col"><div class="mw-100 position-relative mb-2 figure"><div class="position-absolute end-0 top-0"><button class="avatar avatar-36 rounded-circle p-0 btn btn-info text-white shadow-sm m-2"><a style="color:white" href="{% get_media_prefix%}Messages/Images/'+data["id"]+'.jpg" download="document.jpg" target="_blank" class="bi bi-download"></a></button></div><img src="{% get_media_prefix%}Messages/Images/'+data["id"]+'.jpg" alt="" class="mw-100"></div>'+html+'</div></div></div></div><div class="col-12 text-end"><p class="text-opac small time"><i class="bi bi-check"></i>'+data["Time"]+'</p></div>'
+        }else if(data["Type"] === "Video"){
+
+        coat.innerHTML='<div class="col-12"><div class="chat-block"><div class="row"><div class="col"><div class="mw-100 position-relative mb-2 figure"><div class="position-absolute start-50 top-50 translate-middle z-index-1"></div><video src="{% get_media_prefix%}Messages/Videos/'+data["id"]+'.mp4" controls=""></video></div>'+html+'</div>    </div></div></div><div class="col-12 text-end"><p class="text-opac small time"><i class="bi bi-check"></i>'+data["Time"]+'</p></div>'
+
+        }else if(data["Type"] === "File"){
+            coat.innerHTML='<div class="col-12"><div class="chat-block"><div class="row"><div class="col"><div class="mw-100 position-relative mb-2 figure"><div class="position-absolute end-0 top-0"><button class="avatar avatar-36 rounded-circle p-0 btn btn-info text-white shadow-sm m-2"><a style="color:white" href="{% get_media_prefix%}Messages/Files/'+data["id"]+'.pdf" download="document.pdf" target="_blank" class="bi bi-download"></a></button></div> <i style="font-size:200px" class="bi bi-file-earmark-richtext "></i></div>'+html+'</div></div></div></div><div class="col-12 text-end"><p class="text-opac small time"><i class="bi bi-check"></i>'+data["Time"]+'</p></div>'
+        }
+         document.getElementById("tab_in").append(coat)
+         console.log(data)
+         img.value=""
+         vid.value=""
+          filed.value=""
+          note.value="TEXT"
+        text.value=""
+        var img_hold = document.getElementById('image').src="{% get_static_prefix %}go/1.png"
+        window.scrollTo(0,document.body.scrollHeight);
+
+      });}
+
+
+      setInterval(get_message,1000);
+
+      function get_message(){
+
+
+        data = JSON.stringify({
+        id: '{{Chat.Link}}',
+       })
+        fetch("{% url 'get_message' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+       })
+      .then(response => response.json())
+      .then(data => {
+
+        for (i in data) {
+        console.log(data[i])
+        function urlify(text) {
+            var urlRegex = /(https?:\/\/[^\s]+)/g;
+            return text.replace(urlRegex, function(url) {
+               var con_url = url.substring(0,40)+"..."
+              return '<a href="' + url + '">' + con_url + '</a>';
+            })
+            // or alternatively
+            // return text.replace(urlRegex, '<a href="$1">$1</a>')
+          }
+
+          var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+          var newf = '{{i.Info}}'
+          var html = urlify(data[i]["Info"]);
+
+          console.log(html)
+            var coat = document.createElement('div')
+            coat.setAttribute("class","row no-margin left-chat")
+            if (data[i]["Type"] === "Text"){
+            coat.innerHTML='<div class="col-12"><div class="chat-block"><div class="row"><div class="col"><p>'+html+'</p></div></div></div></div><div class="col-12 "><p class="text-opac small time">'+data[i]["Time"]+'</p></div>'
+            }else if(data[i]["Type"] === "Image"){
+                coat.innerHTML='<div class="col-12"><div class="chat-block"><div class="row"><div class="col"><div class="mw-100 position-relative mb-2 figure"><div class="position-absolute end-0 top-0"><button class="avatar avatar-36 rounded-circle p-0 btn btn-info text-white shadow-sm m-2"><a style="color:white" href="{% get_media_prefix%}Messages/Images/'+data[i]["id"]+'.jpg" download="document.jpg" target="_blank" class="bi bi-download"></a></button></div><img src="{% get_media_prefix%}Messages/Images/'+data[i]["id"]+'.jpg" alt="" class="mw-100"></div>'+html+'</div></div></div></div><div class="col-12 "><p class="text-opac small time">'+data[i]["Time"]+'</p></div>'
+            }else if(data[i]["Type"] === "Video"){
+
+            coat.innerHTML='<div class="col-12"><div class="chat-block"><div class="row"><div class="col"><div class="mw-100 position-relative mb-2 figure"><div class="position-absolute start-50 top-50 translate-middle z-index-1"></div><video src="{% get_media_prefix%}Messages/Videos/'+data[i]["id"]+'.mp4" controls=""></video></div>'+html+'</div>    </div></div></div><div class="col-12 "><p class="text-opac small time">'+data[i]["Time"]+'</p></div>'
+
+            }else if(data[i]["Type"] === "File"){
+                coat.innerHTML='<div class="col-12"><div class="chat-block"><div class="row"><div class="col"><div class="mw-100 position-relative mb-2 figure"><div class="position-absolute end-0 top-0"><button class="avatar avatar-36 rounded-circle p-0 btn btn-info text-white shadow-sm m-2"><a style="color:white" href="{% get_media_prefix%}Messages/Files/'+data[i]["id"]+'.pdf" download="document.pdf" target="_blank" class="bi bi-download"></a></button></div> <i style="font-size:200px" class="bi bi-file-earmark-richtext "></i></div>'+html+'</div></div></div></div><div class="col-12 "><p class="text-opac small time">'+data[i]["Time"]+'</p></div>'
+            }
+             document.getElementById("tab_in").append(coat)
+             console.log(data)
+
+    window.scrollTo(0,document.body.scrollHeight);
+
+
+        }
+
+
+      });}
+
+
+
+    //setInterval(Online,1000);
+
+</script>

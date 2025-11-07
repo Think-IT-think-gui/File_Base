@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+<!-- Mirrored from themes.pixelstrap.net/pwa/chatzy/private-chat.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Mar 2025 05:24:28 GMT -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chatzy">
+    <meta name="keywords" content="Chatzy">
+    <meta name="author" content="Chatzy">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="{% get_static_prefix %}s.png" type="image/x-icon">
+  <title>Sikobs</title>
+  <link rel="apple-touch-icon" href="{% get_static_prefix %}s.png">
+  <meta name="theme-color" content="#01AA85">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Chatzy">
+  <meta name="msapplication-TileImage" content="{% get_static_prefix %}s.png">
+
+
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- iconsax css -->
+    <link rel="stylesheet" type="text/css" href="{% get_static_prefix %}Chat/assets/css/vendors/iconsax.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="{% get_static_prefix %}Chat/assets/css/vendors/bootstrap.css">
+    <!-- template css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="{% get_static_prefix %}Chat/assets/css/style.css">
+</head>
+<style>
+    html {
+    scroll-behavior: smooth;
+}
+</style>
+<body class="position-relative">
+    <!-- header starts -->
+    <header id="header" class=" section-t-spacee main-header inner-page-header">
+        <div class="custom-container">
+            <div class="header-panel contact-panel">
+                <div class="d-flex align-items-center gap-2">
+                    <a href="{% url 'messages' %}">
+                        <i class="iconsax icon-btn" data-icon="chevron-left"> </i>
+                    </a>
+                    <a  class="profile-head">
+                        <div class="profile-img">
+                            <img class="img-fluid img" src="{% get_media_prefix%}Profiles/{{Client.id}}.jpg" alt="" style="object-fit:cover">
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold">{{Client.Full_Name}}</h4>
+                            <h6 class="fw-normal text-white-75">Joined on {{Client.date}}</h6>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="d-flex align-items-center gap-sm-3 gap-2">
+                    <a href="#call" data-bs-toggle="modal">
+                        <i class="iconsax icon-btn" data-icon="phone-add"> </i>
+                    </a>
+
+                    <div class="dropdown more-options dropdown-menu-end">
+                        <a class="btn dropdown-toggle mt-0 p-0" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="iconsax icon-btn" data-icon="menu-meatballs"> </i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="personal-info.html" class="dropdown-item"> <i class="iconsax icon"
+                                        data-icon="group"></i>
+                                    View Info</a>
+                            </li>
+
+                            <li><a onclick="see()" id="reply-btn" class="dropdown-item">
+                                    <img class="img-fluid icon" src="{% get_static_prefix %}Chat/assets/images/svg/reply-all.svg"
+                                        alt="reply">Reply</a>
+                            </li>
+                            <li><a onclick="see()" class="dropdown-item"> <i class="iconsax icon" data-icon="star"></i>
+                                    Mute Notification</a>
+                            </li>
+                            <li><a onclick="see()" class="dropdown-item"> <i class="iconsax icon"
+                                        data-icon="picture-add"></i>
+                                    Wallpaper</a>
+                            </li>
+                            <li><a onclick="see()"class="dropdown-item"> <i class="iconsax icon" data-icon="add-square">
+                                    </i>Add Shortcut</a></li>
+                            <li><a href="#clear" data-bs-toggle="modal" class="dropdown-item"> <i class="iconsax icon"
+                                        data-icon="brush-2"></i>
+                                    Clear Chat</a>
+                            </li>
+                            <li><a onclick="see()" data-bs-toggle="modal" class="dropdown-item error-color"> <i
+                                        class="iconsax icon error-icon" data-icon="shield-slash"></i>
+                                    Block</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- private chat section starts -->
+    <section class="section-lg-b-space position-relative pt-0">
+        <img class="img-fluid chat-bg" src="{% get_static_prefix %}Chat/assets/images/wallpaper/wallpaper0.png" alt="wallpaper">
+        <div class="custom-container">
+
+             <div style="padding-top:10px">
+             <a href="{% url 'all_chat' Client.id  %}"><div class="col-12 text-center">
+                    <span class="page-bg text-color-theme shadow-sm mx-auto btn btn-sm py-1 mb-3">See Older Chats</span>
+                </div></a>
+           </div>
+            <ul class="message-box-list " id="tab_in">
+
+
+
+               {% for i in Messages %}
+                    {% if i.Sender == User_Data.id %}
+
+
+                   {% if i.Type == "Text" %}
+
+                   <li class="personal" id='X_{{i.id}}'>
+
+
+                    <a href="#" onclick="myFunction(this, '--theme-color')" id="message">
+                        <div class="message-box" >
+                            <img class="img-fluid person-img" src="{% get_media_prefix %}Profiles/{{i.Sender}}.jpg" alt="p9">
+
+                            <div class="message-box-details">
+                                {% if i.Reply_Id == 0 %}
+
+                                {% else %}
+                                <a href="#X_{{i.Reply_Id}}">
+                               <div style="background-color: white; border-radius: 10px; padding: 10px;color:black;" >
+                                 {{i.Reply}}
+                                 </div>
+                                 </a>
+                                 <div></div>
+                                 {% endif %}
+
+
+                                <h5 style="padding-top:5px" id="s{{i.id}}">{{i.Info}}</h5>
+                                <div class="timing">
+                                      <h6>{{i.Time}}</h6>
+                                     {% if i.Status == "Unseen" %}
+                                    <img class="img-fluid tick" src="{% get_static_prefix %}Chat/assets/images/svg/tick.svg" alt="pin">
+                                        {% else %}
+
+                                    <img class="img-fluid tick-all" src="{% get_static_prefix %}Chat/assets/images/svg/tick-all.svg" alt="tick">
+                                       {% endif %}
+
+                                </div>
+                                <input type="hidden" id="M_{{i.id}}" value="{{i.Info}}">
+                                <script>
+                                     function urlify(text) {
+                                         var urlRegex = /(https?:\/\/[^\s]+)/g;
+                                         return text.replace(urlRegex, function(url) {
+                                           var con_url = url.substring(0,40)+"..."
+                                           return '<a href="' + url + '">' + con_url + '</a>';
+                                         })
+                                         // or alternatively
+                                         // return text.replace(urlRegex, '<a href="$1">$1</a>')
+                                       }
+
+                                       var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+                                       var newf = '{{i.Info}}'
+                                       var html = urlify(newf);
+                                       document.getElementById('s{{i.id}}').innerHTML=html
+                                      // console.log(html)
+
+                                    </script>
+                            </div>
+                        </div>
+                     </a>
+                     <a >
+                        <img onclick='reply("{{i.id}}")' class="replay-btn" src="{% get_static_prefix %}Chat/assets/images/svg/reply.svg" alt="reply">
+                    </a>
+                  </li>
+
+                 {% elif i.Type == "Image" %}
+
+                  <li class="personal" id='X_{{i.id}}'>
+                    <div class="message-box read">
+                        <img class="img-fluid person-img" src="{% get_media_prefix %}Profiles/{{i.Sender}}.jpg" alt="p9">
+
+                        <div class="message-box-details">
+                            {% if i.Reply_Id == 0 %}
+
+                                {% else %}
+                                <a href="#X_{{i.Reply_Id}}">
+                               <div style="background-color: white; border-radius: 10px; padding: 10px;color:black;">
+                                 {{i.Reply}}
+                                 </div>
+                                 <div style="padding: 6px;"></div></a>
+                                 {% endif %}
+                            <div class="">
+
+                                    <img style="width:100%;  border-radius: 10px;" class="img-fluid  img1" src="{% get_media_prefix%}Messages/Images/{{i.id}}.jpg" alt="img1" onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';">
+
+
+                            </div>
+
+                           <h5 id="s{{i.id}}">{{i.Info}}</h5>
+                                <div class="timing">
+                                      <h6>{{i.Time}}</h6>
+                                     {% if i.Status == "Unseen" %}
+                                    <img class="img-fluid tick" src="{% get_static_prefix %}Chat/assets/images/svg/tick.svg" alt="pin">
+                                        {% else %}
+
+                                    <img class="img-fluid tick-all" src="{% get_static_prefix %}Chat/assets/images/svg/tick-all.svg" alt="tick">
+                                       {% endif %}
+
+                                </div>
+                                <input type="hidden" id="M_{{i.id}}" value="{{i.Info}}">
+                                <script>
+                                     function urlify(text) {
+                                         var urlRegex = /(https?:\/\/[^\s]+)/g;
+                                         return text.replace(urlRegex, function(url) {
+                                           var con_url = url.substring(0,40)+"..."
+                                           return '<a href="' + url + '">' + con_url + '</a>';
+                                         })
+                                         // or alternatively
+                                         // return text.replace(urlRegex, '<a href="$1">$1</a>')
+                                       }
+
+                                       var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+                                       var newf = '{{i.Info}}'
+                                       var html = urlify(newf);
+                                       document.getElementById('s{{i.id}}').innerHTML=html
+                                       console.log(html)
+
+                                    </script>
+
+                        </div>
+                    </div>
+                    <a >
+                        <img onclick='reply("{{i.id}}")' class="replay-btn" src="{% get_static_prefix %}Chat/assets/images/svg/reply.svg" alt="reply">
+                    </a>
+                </li>
+                 {% elif i.Type == "Video" %}
+
+
+
+
+                 <li class="personal" id='X_{{i.id}}'>
+                    <div class="message-box read">
+                        <img class="img-fluid person-img" src="{% get_media_prefix %}Profiles/{{i.Sender}}.jpg" alt="p9">
+
+                        <div class="message-box-details">
+                            {% if i.Reply_Id == 0 %}
+
+                                {% else %}
+                                <a href="#X_{{i.Reply_Id}}">
+                               <div style="background-color: white; border-radius: 10px; padding: 10px;color:black;">
+                                 {{i.Reply}}
+                                 </div>
+                                 <div style="padding: 6px;"></div></a>
+                                 {% endif %}
+                            <div class="">
+
+                                    <video poster="{% get_static_prefix%}play.png" src="{% get_media_prefix%}Messages/Videos/{{i.id}}.mp4" controls="" style="width:100%;  border-radius: 10px;" class="img-fluid  img1"></video>
+
+
+                            </div>
+                           <h5 id="s{{i.id}}">{{i.Info}}</h5>
+                                <div class="timing">
+                                      <h6>{{i.Time}}</h6>
+                                     {% if i.Status == "Unseen" %}
+                                    <img class="img-fluid tick" src="{% get_static_prefix %}Chat/assets/images/svg/tick.svg" alt="pin">
+                                        {% else %}
+
+                                    <img class="img-fluid tick-all" src="{% get_static_prefix %}Chat/assets/images/svg/tick-all.svg" alt="tick">
+                                       {% endif %}
+
+                                </div>
+                                <input type="hidden" id="M_{{i.id}}" value="{{i.Info}}">
+                                <script>
+                                     function urlify(text) {
+                                         var urlRegex = /(https?:\/\/[^\s]+)/g;
+                                         return text.replace(urlRegex, function(url) {
+                                           var con_url = url.substring(0,40)+"..."
+                                           return '<a href="' + url + '">' + con_url + '</a>';
+                                         })
+                                         // or alternatively
+                                         // return text.replace(urlRegex, '<a href="$1">$1</a>')
+                                       }
+
+                                       var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+                                       var newf = '{{i.Info}}'
+                                       var html = urlify(newf);
+                                       document.getElementById('s{{i.id}}').innerHTML=html
+                                       console.log(html)
+
+                                    </script>
+
+                        </div>
+                    </div>
+                    <a >
+                        <img onclick='reply("{{i.id}}")' class="replay-btn" src="{% get_static_prefix %}Chat/assets/images/svg/reply.svg" alt="reply">
+                    </a>
+                </li>
+
+
+
+                 {% else %}
+
+
+
+
+
+                    <li class="personal" id='X_{{i.id}}'>
+                    <div class="message-box read">
+                        <img class="img-fluid person-img" src="{% get_media_prefix %}Profiles/{{i.Sender}}.jpg" alt="p9">
+
+                        <div class="message-box-details">
+                            {% if i.Reply_Id == 0 %}
+
+                                {% else %}
+                                <a href="#X_{{i.Reply_Id}}">
+                               <div style="background-color: white; border-radius: 10px; padding: 10px;color:black;">
+                                 {{i.Reply}}
+                                 </div>
+                                 <div style="padding: 6px;"></div></a>
+                                 {% endif %}
+                            <div class="">
+
+                                 <a  href="{% get_media_prefix%}Messages/Files/{{i.id}}.pdf" download="document.jpg" target="_blank"> <div class="document-box">
+
+
+
+                                        <ul class="document-list">
+                            <li>
+                                <div class="document-box">
+                                    <div class="document-img">
+                                        <img class="img-fluid file-img" src="{% get_static_prefix %}Chat/assets/images/svg/pdf.svg" alt="">
+                                        <div class="dots-chain1"></div>
+                                        <div class="dots-chain2"></div>
+                                    </div>
+                                    <div class="document-details" style="width:160px">
+                                        <h5 style="color:black">Doc {{i.Time}}.pdf</h5>
+                                        <h6 style="color:black">Pdf File</h6>
+                                        <div class="dots-chain3"></div>
+                                        <div class="dots-chain4"></div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                                </div></a>
+
+                            </div>
+                           <h5 id="s{{i.id}}">{{i.Info}}</h5>
+                                <div class="timing">
+                                      <h6>{{i.Time}}</h6>
+                                     {% if i.Status == "Unseen" %}
+                                    <img class="img-fluid tick" src="{% get_static_prefix %}Chat/assets/images/svg/tick.svg" alt="pin">
+                                        {% else %}
+
+                                    <img class="img-fluid tick-all" src="{% get_static_prefix %}Chat/assets/images/svg/tick-all.svg" alt="tick">
+                                       {% endif %}
+
+                                </div>
+                                <input type="hidden" id="M_{{i.id}}" value="{{i.Info}}">
+                                <script>
+                                     function urlify(text) {
+                                         var urlRegex = /(https?:\/\/[^\s]+)/g;
+                                         return text.replace(urlRegex, function(url) {
+                                           var con_url = url.substring(0,40)+"..."
+                                           return '<a href="' + url + '">' + con_url + '</a>';
+                                         })
+                                         // or alternatively
+                                         // return text.replace(urlRegex, '<a href="$1">$1</a>')
+                                       }
+
+                                       var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+                                       var newf = '{{i.Info}}'
+                                       var html = urlify(newf);
+                                       document.getElementById('s{{i.id}}').innerHTML=html
+                                       console.log(html)
+
+                                    </script>
+
+                        </div>
+                    </div>
+                    <a >
+                        <img onclick='reply("{{i.id}}")' class="replay-btn" src="{% get_static_prefix %}Chat/assets/images/svg/reply.svg" alt="reply">
+                    </a>
+                </li>
+
+
+
+
+
+
+                {% endif %}
+                {% else %}
+
+                 {% if i.Type == "Text" %}
+
+                   <li class="new" id='X_{{i.id}}'>
+                    <a href="#" onclick="myFunction(this, '--theme-color')" id="message">
+                        <div class="message-box">
+                            <img class="img-fluid person-img" src="{% get_media_prefix %}Profiles/{{i.Sender}}.jpg" alt="p9">
+
+                            <div class="message-box-details">
+                                 {% if i.Reply_Id == 0 %}
+
+                                {% else %}
+                                <a href="#X_{{i.Reply_Id}}">
+                               <div style="background-color: white; border-radius: 10px; padding: 10px;color:black;">
+                                 {{i.Reply}}
+                                 </div>
+                                 <div></div>
+                                 </a>
+                                 {% endif %}
+                                <h5 id="s{{i.id}}">{{i.Info}}</h5>
+                                <div class="timing">
+                                      <h6>{{i.Time}}</h6>
+                                     {% if i.Status == "Unseen" %}
+                                    <img class="img-fluid tick" src="{% get_static_prefix %}Chat/assets/images/svg/tick.svg" alt="pin">
+                                        {% else %}
+
+                                    <img class="img-fluid tick-all" src="{% get_static_prefix %}Chat/assets/images/svg/tick-all.svg" alt="tick">
+                                       {% endif %}
+
+                                </div>
+                                <input type="hidden" id="M_{{i.id}}" value="{{i.Info}}">
+                                <script>
+                                     function urlify(text) {
+                                         var urlRegex = /(https?:\/\/[^\s]+)/g;
+                                         return text.replace(urlRegex, function(url) {
+                                           var con_url = url.substring(0,40)+"..."
+                                           return '<a href="' + url + '">' + con_url + '</a>';
+                                         })
+                                         // or alternatively
+                                         // return text.replace(urlRegex, '<a href="$1">$1</a>')
+                                       }
+
+                                       var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+                                       var newf = '{{i.Info}}'
+                                       var html = urlify(newf);
+                                       document.getElementById('s{{i.id}}').innerHTML=html
+                                       console.log(html)
+
+                                    </script>
+                            </div>
+                        </div>
+                     </a>
+                     <a >
+                        <img onclick='reply("{{i.id}}")' class="replay-btn" src="{% get_static_prefix %}Chat/assets/images/svg/reply.svg" alt="reply">
+                    </a>
+                  </li>
+
+                 {% elif i.Type == "Image" %}
+
+                  <li class="new" id='X_{{i.id}}'>
+                    <div class="message-box read">
+                        <img class="img-fluid person-img" src="{% get_media_prefix %}Profiles/{{i.Sender}}.jpg" alt="p9">
+
+                        <div class="message-box-details">
+                             {% if i.Reply_Id == 0 %}
+
+                                {% else %}
+                                <a href="#X_{{i.Reply_Id}}">
+                               <div style="background-color: white; border-radius: 10px; padding: 10px;color:black;">
+                                 {{i.Reply}}
+                                 </div>
+                                 <div style="padding: 6px;"></div></a>
+                                 {% endif %}
+                            <div class="">
+
+                                    <img style="width:100%;  border-radius: 10px;" class="img-fluid  img1" src="{% get_media_prefix%}Messages/Images/{{i.id}}.jpg" alt="img1" onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';">
+
+
+                            </div>
+                           <h5 id="s{{i.id}}">{{i.Info}}</h5>
+                                <div class="timing">
+                                      <h6>{{i.Time}}</h6>
+                                     {% if i.Status == "Unseen" %}
+                                    <img class="img-fluid tick" src="{% get_static_prefix %}Chat/assets/images/svg/tick.svg" alt="pin">
+                                        {% else %}
+
+                                    <img class="img-fluid tick-all" src="{% get_static_prefix %}Chat/assets/images/svg/tick-all.svg" alt="tick">
+                                       {% endif %}
+
+                                </div>
+                                <input type="hidden" id="M_{{i.id}}" value="{{i.Info}}">
+                                <script>
+                                     function urlify(text) {
+                                         var urlRegex = /(https?:\/\/[^\s]+)/g;
+                                         return text.replace(urlRegex, function(url) {
+                                           var con_url = url.substring(0,40)+"..."
+                                           return '<a href="' + url + '">' + con_url + '</a>';
+                                         })
+                                         // or alternatively
+                                         // return text.replace(urlRegex, '<a href="$1">$1</a>')
+                                       }
+
+                                       var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+                                       var newf = '{{i.Info}}'
+                                       var html = urlify(newf);
+                                       document.getElementById('s{{i.id}}').innerHTML=html
+                                       console.log(html)
+
+                                    </script>
+
+                        </div>
+                    </div>
+                    <a >
+                        <img onclick='reply("{{i.id}}")' class="replay-btn" src="{% get_static_prefix %}Chat/assets/images/svg/reply.svg" alt="reply">
+                    </a>
+                </li>
+                 {% elif i.Type == "Video" %}
+
+
+
+
+                 <li class="new" id='X_{{i.id}}'>
+                    <div class="message-box read">
+                        <img class="img-fluid person-img" src="{% get_media_prefix %}Profiles/{{i.Sender}}.jpg" alt="p9">
+
+                        <div class="message-box-details">
+                             {% if i.Reply_Id == 0 %}
+
+                                {% else %}
+                                <a href="#X_{{i.Reply_Id}}">
+                               <div style="background-color: white; border-radius: 10px; padding: 10px;color:black;">
+                                 {{i.Reply}}
+                                 </div>
+                                 <div style="padding: 6px;"></div></a>
+                                 {% endif %}
+                            <div class="">
+
+                                    <video poster="{% get_static_prefix%}play.png" src="{% get_media_prefix%}Messages/Videos/{{i.id}}.mp4" controls="" style="width:100%;  border-radius: 10px;" class="img-fluid  img1"></video>
+
+
+                            </div>
+                           <h5 id="s{{i.id}}">{{i.Info}}</h5>
+                                <div class="timing">
+                                      <h6>{{i.Time}}</h6>
+                                     {% if i.Status == "Unseen" %}
+                                    <img class="img-fluid tick" src="{% get_static_prefix %}Chat/assets/images/svg/tick.svg" alt="pin">
+                                        {% else %}
+
+                                    <img class="img-fluid tick-all" src="{% get_static_prefix %}Chat/assets/images/svg/tick-all.svg" alt="tick">
+                                       {% endif %}
+
+                                </div>
+                                <input type="hidden" id="M_{{i.id}}" value="{{i.Info}}">
+                                <script>
+                                     function urlify(text) {
+                                         var urlRegex = /(https?:\/\/[^\s]+)/g;
+                                         return text.replace(urlRegex, function(url) {
+                                           var con_url = url.substring(0,40)+"..."
+                                           return '<a href="' + url + '">' + con_url + '</a>';
+                                         })
+                                         // or alternatively
+                                         // return text.replace(urlRegex, '<a href="$1">$1</a>')
+                                       }
+
+                                       var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+                                       var newf = '{{i.Info}}'
+                                       var html = urlify(newf);
+                                       document.getElementById('s{{i.id}}').innerHTML=html
+                                       console.log(html)
+
+                                    </script>
+
+                        </div>
+                    </div>
+                    <a >
+                        <img onclick='reply("{{i.id}}")' class="replay-btn" src="{% get_static_prefix %}Chat/assets/images/svg/reply.svg" alt="reply">
+                    </a>
+                </li>
+
+
+
+                 {% else %}
+
+
+
+
+
+                    <li class="new" id='X_{{i.id}}'>
+                    <div class="message-box read">
+                        <img class="img-fluid person-img" src="{% get_media_prefix %}Profiles/{{i.Sender}}.jpg" alt="p9">
+
+                        <div class="message-box-details">
+                             {% if i.Reply_Id == 0 %}
+
+                                {% else %}
+                                <a href="#X_{{i.Reply_Id}}">
+                               <div style="background-color: white; border-radius: 10px; padding: 10px;color:black;">
+                                 {{i.Reply}}
+                                 </div>
+                                 <div style="padding: 6px;"></div></a>
+                                 {% endif %}
+                            <div class="">
+
+                                 <a  href="{% get_media_prefix%}Messages/Files/{{i.id}}.pdf" download="document.jpg" target="_blank"> <div class="document-box">
+                                     <ul class="document-list">
+                            <li>
+                                <div class="document-box">
+                                    <div class="document-img">
+                                        <img class="img-fluid file-img" src="{% get_static_prefix %}Chat/assets/images/svg/pdf.svg" alt="">
+                                        <div class="dots-chain1"></div>
+                                        <div class="dots-chain2"></div>
+                                    </div>
+                                    <div class="document-details" style="width:160px">
+                                        <h5 style="color:black">Doc {{i.Time}}.pdf</h5>
+                                        <h6 style="color:black">Pdf File</h6>
+                                        <div class="dots-chain3"></div>
+                                        <div class="dots-chain4"></div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                                </div></a>
+
+                            </div>
+                           <h5 id="s{{i.id}}">{{i.Info}}</h5>
+                                <div class="timing">
+                                      <h6>{{i.Time}}</h6>
+                                     {% if i.Status == "Unseen" %}
+                                    <img class="img-fluid tick" src="{% get_static_prefix %}Chat/assets/images/svg/tick.svg" alt="pin">
+                                        {% else %}
+
+                                    <img class="img-fluid tick-all" src="{% get_static_prefix %}Chat/assets/images/svg/tick-all.svg" alt="tick">
+                                       {% endif %}
+
+                                </div>
+                                <input type="hidden" id="M_{{i.id}}" value="{{i.Info}}">
+                                <script>
+                                     function urlify(text) {
+                                         var urlRegex = /(https?:\/\/[^\s]+)/g;
+                                         return text.replace(urlRegex, function(url) {
+                                           var con_url = url.substring(0,40)+"..."
+                                           return '<a href="' + url + '">' + con_url + '</a>';
+                                         })
+                                         // or alternatively
+                                         // return text.replace(urlRegex, '<a href="$1">$1</a>')
+                                       }
+
+                                       var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+                                       var newf = '{{i.Info}}'
+                                       var html = urlify(newf);
+                                       document.getElementById('s{{i.id}}').innerHTML=html
+
+
+                                    </script>
+
+                        </div>
+                    </div>
+                    <a >
+                        <img onclick='reply("{{i.id}}")' class="replay-btn" src="{% get_static_prefix %}Chat/assets/images/svg/reply.svg" alt="reply">
+                    </a>
+                </li>
+
+                {% endif %}
+
+
+
+                {% endif %}
+
+
+                {% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+        </div>
+    </section>
+    <!-- private chat section end -->
+
+    <!-- reply box starts -->
+    <div class="replay-section" id="reply">
+        <div class="custom-container">
+            <div class="replay-box">
+                <a href="private-chat.html" class="btn-close"></a>
+                <ul class="media-img">
+                    <li>
+                        <img class="img-fluid img-thumbnail img1" src="{% get_static_prefix %}Chat/assets/images/media/chat-img1.png" alt="img1">
+                    </li>
+                    <li>
+                        <img class="img-fluid img-thumbnail img2" src="{% get_static_prefix %}Chat/assets/images/media/chat-img2.png" alt="img1">
+                    </li>
+
+                    <li>
+                        <img class="img-fluid img-thumbnail img3" src="{% get_static_prefix %}Chat/assets/images/media/chat-img3.png" alt="img1">
+                    </li>
+
+                    <li>
+                        <img class="img-fluid img-thumbnail img4" src="{% get_static_prefix %}Chat/assets/images/media/chat-img4.png" alt="img1">
+                        <span>10+</span>
+                    </li>
+                </ul>
+                <div class="message-content">
+                    <h6 class="theme-color fw-semibold">+91 78859 63265</h6>
+                    <div class=" d-flex align-items-center gap-2">
+                        <img class="icon" src="{% get_static_prefix %}Chat/assets/images/svg/gallery.svg" alt="">
+                        <h6 class="content-color fw-medium">Photos</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="message-box read" style="position:fixed;bottom:70px"  >
+
+                        <div class="message-box-details">
+                            <div class="">
+
+
+                        <div class="document-box" id="Rep" style="display:none" onclick="close_m()" >
+                        <ul class="document-list">
+                            <li>
+                                <div class="document-box">
+                                    <div class="document-img">
+                                        <img class="img-fluid file-img" src="{% get_static_prefix %}Chat/assets/images/svg/reply.svg" alt="">
+                                        <div class="dots-chain1"></div>
+                                        <div class="dots-chain2"></div>
+                                    </div>
+                                    <div class="document-details" style="width:260px">
+                                        <h5 style="color:black">Reply This Message
+                                       <a style="text-align: right;">
+
+                                       </a>
+
+                                        </h5>
+                                        <h6 style="color:black" id="r_msg2">
+
+
+
+
+                                            </h6>
+
+                                          <input type="hidden" id="r_msg_id" value="0">
+                                            <input type="hidden" id="r_msg_value" value="">
+
+                                        <div class="dots-chain3"></div>
+                                        <div class="dots-chain4"></div>
+
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                        </div>
+
+
+
+
+
+
+
+
+    <div class="messages-panel">
+
+
+
+
+
+
+
+        <div class="message-inputarea">
+            <input type="text" onkeypress="check_key()" id="TEXT" class="message-input" placeholder="Type here...">
+            <img class="img-fluid smile" src="{% get_static_prefix %}Chat/assets/images/svg/smile.svg" alt="">
+            <a href="#file" data-bs-toggle="offcanvas">
+                <i class="iconsax file"  data-icon="paperclip-2"> </i>
+            </a>
+
+            <i  onclick="see()" class="iconsax mic"  data-icon="mic-2"> </i>
+
+            <a class="message-send-btn"  onclick="send_message()">
+                <i class="iconsax icon-btn" data-icon="send-2"> </i>
+            </a>
+        </div>
+    </div>
+    <!--  message input section end -->
+<style>
+    .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    }
+    .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0;
+    }
+    </style>
+
+    <!-- file offcanvas starts -->
+    <div class="offcanvas offcanvas-bottom file-offcanvas" tabindex="-1" id="file" data-bs-scroll="true"
+        data-bs-backdrop="false">
+        <div id="display_object" style="text-align:center"></div>
+
+        <div class="offcanvas-header pb-0">
+            <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <ul class="story-list media-list">
+                <li>
+                   <a href="#" class="media-box" onclick="document.getElementById('FILE').click();">
+               <div class="media-image mx-auto color1">
+                <img class="img-fluid icon" src="{% get_static_prefix %}Chat/assets/images/svg/document.svg" alt="gallery">
+               </div>
+               <h5>Documents</h5>
+              </a>
+               <input class="mdc-text-field__input"  onchange="change('FILE')" name="FILE" id="FILE" type="file" accept=".pdf" style="display: none;">
+
+                    <script>
+                                            var uploadField = document.getElementById("FILE");
+
+                                            uploadField.onchange = function() {
+                                            if(this.files[0].size > 1000097152){
+                                            alert("File is too big, File should be between 1mb and 10mb!");
+                                            this.value = "";
+                                               };
+                                               change('FILE')
+                                            };
+                                          </script>
+                </li>
+                <li>
+                   <a class="media-box" onclick="document.getElementById('IMG').click();">
+                  <div class="media-image mx-auto color2">
+                  <img class="img-fluid icon" src="{% get_static_prefix %}Chat/assets/images/svg/camera.svg" alt="camera">
+                 <input class="mdc-text-field__input" name="IMG"  onchange="change('IMG')" id="IMG" type="file" onchange="change('IMG')" accept="image/*" style="display: none;" >
+                </div>
+                <h5>Camera</h5>
+                    </a>
+
+
+
+                </li>
+
+                <li>
+                    <a href="https://slack.com/signin#/signin" class="media-box">
+                        <div class="media-image mx-auto color3">
+                            <img class="img-fluid icon" src="{% get_static_prefix %}Chat/assets/images/svg/headphone.svg" alt="headphone">
+                        </div>
+                        <h5>Audio</h5>
+                    </a>
+                </li>
+
+                <li>
+                    <a onclick="document.getElementById('VID').click();" class="media-box">
+                        <div class="media-image mx-auto color4">
+                            <img class="img-fluid icon" src="{% get_static_prefix %}Chat/assets/images/svg/video.svg" alt="video">
+                             <input class="mdc-text-field__input" name="VID" onchange="change('VID')" id="VID" type="file" accept="video/*" style="display: none;">
+                        </div>
+                        <h5>Video</h5>
+                    </a>
+                     <script>
+										var uploadField = document.getElementById("VID");
+
+                                        uploadField.onchange = function() {
+                                        if(this.files[0].size > 1000097152){
+                                        alert("File is too big, File should be between 1mb and 10mb!");
+                                        this.value = "";
+                                           };
+                                           change('VID')
+                                        };
+									  </script>
+                </li>
+                <li>
+                    <a href="https://telegr.am/user_mgt/login" class="media-box">
+                        <div class="media-image mx-auto color5">
+                            <img class="img-fluid icon" src="{% get_static_prefix %}Chat/assets/images/svg/contact.svg" alt="profile">
+
+                        </div>
+                        <h5>Gallery</h5>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="media-box">
+                        <div class="media-image mx-auto color7">
+                            <img class="img-fluid icon" src="{% get_static_prefix %}Chat/assets/images/svg/location.svg" alt="profile">
+                        </div>
+                        <h5>Location</h5>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- file offcanvas end -->
+
+    <!-- call modal starts -->
+    <div class="modal fade add-modal" id="call" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Select Call Type</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="story-list">
+                        <li>
+                            <a onclick="see()" class="story-types-box">
+                                <div class="story-image">
+                                    <img src="{% get_static_prefix %}Chat/assets/images/svg/call-fill.svg" alt="call">
+                                </div>
+                                <h5>Audio Call</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a onclick="see()" class="story-types-box">
+                                <div class="story-image">
+                                    <img src="{% get_static_prefix %}Chat/assets/images/svg/video-fill.svg" alt="video">
+                                </div>
+                                <h5>Video Call</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- call modal end  -->
+
+    <!-- delate chat modal starts -->
+    <div class="modal fade popup-modal" id="clear-chat" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="modal-img text-center">
+                        <img class="img-fluid img" src="{% get_static_prefix %}Chat/assets/images/clear.png" alt="contact-access">
+                    </div>
+                    <div class="form-group d-flex">
+                        <div class="form-check mb-0">
+                            <input class="form-check-input" type="checkbox" id="flexCheck1">
+                        </div>
+                        <label class="form-check-label" for="flexCheck1">Also clear media received in this chat from the
+                            device gallery</label>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <a onclick="see()" class="btn btn-link modal-btn w-50 content-color m-0"
+                        data-bs-dismiss="modal">Deny</a>
+                    <a onclick="see()" class="btn btn-link modal-btn theme-color fw-semibold w-50 m-0">Clear
+                        Chat</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- delate chat modal end -->
+
+    <!-- clear chat modal starts -->
+    <div class="modal fade popup-modal" id="clear" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="modal-img text-center">
+                        <img class="img-fluid img" src="{% get_static_prefix %}Chat/assets/images/clear.png" alt="contact-access">
+                    </div>
+                    <div class="form-group d-flex">
+                        <div class="form-check mb-0">
+                            <input class="form-check-input" type="checkbox" id="flexCheck2">
+                        </div>
+                        <label class="form-check-label dark-text text-start" for="flexCheck1">Also clear media
+                            received
+                            in this
+                            chat from the device gallery</label>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <a honclick="see()" class="btn btn-link modal-btn w-50 content-color m-0"
+                        data-bs-dismiss="modal">Deny</a>
+                    <a onclick="see()" class="btn btn-link modal-btn theme-color fw-semibold w-50 m-0">Clear
+                        Chat</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- clear chat modal end -->
+
+    <!-- block modal starts -->
+    <div class="modal fade popup-modal" id="block" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="modal-img text-center">
+                        <img class="img-fluid img" src="{% get_static_prefix %}Chat/assets/images/block.png" alt="block">
+                    </div>
+                    <h2 class="dark-text">Block Number</h2>
+                    <h4 class="content-color">After blocking number, you won’t be able to send or receive message on
+                        this number.</h4>
+                </div>
+
+                <div class="modal-footer">
+                    <a onclick="see()" class="btn btn-link modal-btn w-50 content-color m-0"
+                        data-bs-dismiss="modal">Deny</a>
+                    <a onclick="see()" class="btn btn-link modal-btn theme-color fw-semibold w-50 m-0">Block</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- block modal end -->
+
+    <!-- iconsax js -->
+    <script src="{% get_static_prefix %}Chat/assets/js/iconsax.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="{% get_static_prefix %}Chat/assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- reply js -->
+    <script src="{% get_static_prefix %}Chat/assets/js/reply.html"></script>
+
+    <!-- sticky-header js -->
+    <script src="{% get_static_prefix %}Chat/assets/js/sticky-header.js"></script>
+
+    <!-- script js -->
+    <script src="{% get_static_prefix %}Chat/assets/js/script.js"></script>
+
+    <!-- template Setting js -->
+    <script src="{% get_static_prefix %}Chat/assets/js/template-setting.html"></script>
+</body>
+  <script>
+      function see(){
+      alert('We are working on this feature.. Comming Soon 😉')
+      }
+  </script>
+
+<!-- Mirrored from themes.pixelstrap.net/pwa/chatzy/private-chat.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Mar 2025 05:24:28 GMT -->
+</html>
+
+
+
+<input type="hidden" value="TEXT" id="NOTE">
+<script>
+
+function reply(id){
+    var msg1 = document.getElementById("M_"+id);
+    document.getElementById("r_msg2").innerHTML=msg1.value;
+    document.getElementById("r_msg_value").value=msg1.value;
+    document.getElementById("r_msg_id").value=id;
+    document.getElementById("Rep").style.display='block';
+
+
+}
+
+function close_m(){
+
+    document.getElementById("r_msg2").innerHTML='';
+    document.getElementById("r_msg_value").value='';
+    document.getElementById("r_msg_id").value=0;
+    document.getElementById("Rep").style.display='none';
+
+
+}
+
+
+function change2(inputId) {
+    var input = document.getElementById(inputId);
+    var display = document.getElementById("display_object");
+
+    if (input.files && input.files[0]) {
+        var file = input.files[0];
+        var fileType = file.type.split('/')[0]; // Get 'image' or 'video'
+
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            if (fileType === 'image') {
+                display.innerHTML = `<img src="${e.target.result}" alt="Selected Image" style="max-width: 200px; border-radius: 10px;hieght:200px">`;
+            } else if (fileType === 'video') {
+                display.innerHTML = `<video controls style="max-width: 200px; border-radius: 10px;hieght:200px">
+                                        <source src="${e.target.result}" type="${file.type}">
+                                        Your browser does not support the video tag.
+                                     </video>`;
+            }
+        };
+        reader.readAsDataURL(file);
+    }
+}
+
+
+
+
+    function getCookie(name) {
+        window.scrollTo(0,document.body.scrollHeight);
+
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+        }
+
+        const csrftoken = getCookie('csrftoken');
+
+    function change(id){
+        if (id === 'IMG'){
+            var filed = document.getElementById("FILE").value=""
+            var vid =  document.getElementById("VID").value=""
+            var note = document.getElementById("NOTE").value=id
+             change2('IMG')
+
+        }else if(id === 'VID'){
+            var img = document.getElementById("IMG").value=""
+            var filed = document.getElementById("FILE").value=""
+            var note = document.getElementById("NOTE").value=id
+            change2('VID')
+        }else if(id === 'FILE'){
+            var img = document.getElementById("IMG").value=""
+            var vid =  document.getElementById("VID").value=""
+            var note = document.getElementById("NOTE").value=id
+        }
+    }
+
+
+
+    function check_key(){
+        if (event.key === "Enter"){
+            send_message()
+        }
+    }
+
+
+    function send_message(){
+        var img = document.getElementById("IMG")
+        var filed = document.getElementById("FILE")
+        var vid =  document.getElementById("VID")
+        var text = document.getElementById("TEXT")
+        var note = document.getElementById("NOTE")
+        var note1 = document.getElementById("r_msg_value")
+        var note2 = document.getElementById("r_msg_id")
+        if (note.value === "TEXT"){
+
+           if (text.value === ""){
+            alert("please add a message!")
+            return "d"
+           }else{
+            data = JSON.stringify({
+            Reciever: {{Client.id}},
+            Info:text.value,
+            Type:"Text",
+            R_ID:note2.value,
+            R_Value:note1.value,
+           })
+           }
+           var heading = { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+           'Content-Type': 'application/json',
+           }
+        }else if (note.value === "IMG"){
+            const formData = new FormData
+            formData.append('New_Img',img.files[0])
+            formData.append('Reciever', {{Client.id}})
+            formData.append('Info', text.value)
+            formData.append('R_ID', note2.value)
+            formData.append('R_Value', note1.value)
+
+            formData.append('Type', "Image")
+            data = formData
+            var heading = { 'X-CSRFToken': csrftoken,'Accept': 'application/json',
+            'X-Requested-with': 'XMLHttpRequest'
+           }
+        }else if (note.value === "VID"){
+            const formData = new FormData
+            formData.append('New_Video',vid.files[0])
+            formData.append('Reciever', {{Client.id}})
+            formData.append('Info', text.value)
+            formData.append('Type', "Video")
+            formData.append('R_ID', note2.value)
+            formData.append('R_Value', note1.value)
+            data = formData
+            var heading = { 'X-CSRFToken': csrftoken,'Accept': 'application/json',
+            'X-Requested-with': 'XMLHttpRequest'
+           }
+        }else if (note.value === "FILE"){
+            const formData = new FormData
+            formData.append('New_File',filed.files[0])
+            formData.append('Reciever', {{Client.id}})
+            formData.append('Info', text.value)
+            formData.append('Type', "File")
+            formData.append('R_ID', note2.value)
+            formData.append('R_Value', note1.value)
+            data = formData
+            var heading = { 'X-CSRFToken': csrftoken,'Accept': 'application/json',
+            'X-Requested-with': 'XMLHttpRequest'
+           }
+        }
+        document.getElementById("Rep").style.display='none';
+        fetch("{% url 'send_message' %}", {
+        method: 'POST',
+        body: data,
+        headers: heading ,
+       })
+      .then(response => response.json())
+      .then(data => {
+        let man = data["id"]
+
+        function urlify(tex) {
+
+            var urlRegex = /(https?:\/\/[^\s]+)/g;
+            return tex.replace(urlRegex, function(url) {
+               var con_url = url.substring(0,40)+"..."
+              return '<a href="' + url + '">' + con_url + '</a>';
+            })
+            // or alternatively
+            // return text.replace(urlRegex, '<a href="$1">$1</a>')
+          }
+
+         // var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+          var newf = '{{i.Info}}'
+
+          var html = urlify(text.value);
+
+
+          if (note2.value === '0' ){
+              var bx = ` `
+          }else{
+            var bx=`
+                              <a href="#X_`+note2.value+`">
+                               <div style="background-color: white; border-radius: 10px; padding: 10px;color:black;">
+                                 `+data["Reply"]+`
+                                 </div>
+                                  <div style="padding: 4px;"></div>
+                                  </a>
+                 `
+          }
+
+        var coat = document.createElement('li')
+        coat.id='X_'+data["id"]
+        coat.setAttribute("class","personal")
+        if (data["Type"] === "Text"){
+       // coat.innerHTML='<div class="col-12"><div class="chat-block"><div class="row"><div class="col"><p>'+html+'</p></div></div></div></div><div class="col-12 text-end"><p class="text-opac small time"><i class="bi bi-check"></i>'+data["Time"]+'</p></div>'
+        coat.innerHTML = `
+
+
+
+                    <a href="#" onclick="myFunction(this, '--theme-color')" id="message">
+                        <div class="message-box">
+                            <img class="img-fluid person-img" src="{% get_media_prefix %}Profiles/{{Client.id}}.jpg" alt="p9">
+
+                            <div class="message-box-details">
+
+                                    `
+                                    +bx+
+                                    `
+                                <h5 >`+html+`</h5>
+                                <div class="timing">
+                                      <h6>`+data["Time"]+`</h6>
+                                   <input type="hidden" id="M_`+man+`" value="`+text.value+`">
+                                    <img class="img-fluid tick" src="{% get_static_prefix %}Chat/assets/images/svg/tick.svg" alt="pin">
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                     </a>
+                     <a >
+                        <img onclick='reply("`+man+`")' class="replay-btn" src="{% get_static_prefix %}Chat/assets/images/svg/reply.svg" alt="reply">
+                    </a>
+
+
+        `
+
+        }else if(data["Type"] === "Image"){
+          //  coat.innerHTML='<div class="col-12"><div class="chat-block"><div class="row"><div class="col"><div class="mw-100 position-relative mb-2 figure"><div class="position-absolute end-0 top-0"><button class="avatar avatar-36 rounded-circle p-0 btn btn-info text-white shadow-sm m-2"><a style="color:white" href="{% get_media_prefix%}Messages/Images/'+data["id"]+'.jpg" download="document.jpg" target="_blank" class="bi bi-download"></a></button></div><img src="{% get_media_prefix%}Messages/Images/'+data["id"]+'.jpg" alt="" class="mw-100"></div>'+html+'</div></div></div></div><div class="col-12 text-end"><p class="text-opac small time"><i class="bi bi-check"></i>'+data["Time"]+'</p></div>'
+
+             coat.innerHTML= `
+
+
+                    <div class="message-box read">
+                        <img class="img-fluid person-img" src="{% get_media_prefix %}Profiles/{{Client.id}}.jpg" alt="p9">
+
+                        <div class="message-box-details">
+                        `
+                                    +bx+
+                                    `
+                            <div class="">
+
+                                    <img style="width:100%;  border-radius: 10px;" class="img-fluid  img1" src="{% get_media_prefix%}Messages/Images/`+data["id"]+`.jpg" alt="img1" onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';">
+
+
+                            </div>
+                          <h5 >`+html+`</h5>
+                                <div class="timing">
+                                      <h6>`+data["Time"]+`</h6>
+
+
+                                    <img class="img-fluid tick" src="{% get_static_prefix %}Chat/assets/images/svg/tick.svg" alt="pin">
+
+
+                                </div>
+                          <input type="hidden" id="M_`+man+`" value="`+text.value+`">
+                        </div>
+                    </div>
+                    <a >
+                        <img onclick='reply("`+man+`")' class="replay-btn" src="{% get_static_prefix %}Chat/assets/images/svg/reply.svg" alt="reply">
+                    </a>`
+
+
+
+        }else if(data["Type"] === "Video"){
+
+       // coat.innerHTML='<div class="col-12"><div class="chat-block"><div class="row"><div class="col"><div class="mw-100 position-relative mb-2 figure"><div class="position-absolute start-50 top-50 translate-middle z-index-1"></div><video src="{% get_media_prefix%}Messages/Videos/'+data["id"]+'.mp4" controls=""></video></div>'+html+'</div>    </div></div></div><div class="col-12 text-end"><p class="text-opac small time"><i class="bi bi-check"></i>'+data["Time"]+'</p></div>'
+        coat.innerHTML = `
+
+
+                    <div class="message-box read">
+                        <img class="img-fluid person-img" src="{% get_media_prefix %}Profiles/{{Client.id}}.jpg" alt="p9">
+
+                        <div class="message-box-details">
+                             `
+                                    +bx+
+                                    `
+                            <div class="">
+
+                                    <video poster="{% get_static_prefix%}play.png" src="{% get_media_prefix%}Messages/Videos/`+data["id"]+`.mp4" poster="{% get_static_prefix%}play.png" controls="" style="width:100%;  border-radius: 10px;" class="img-fluid  img1"></video>
+
+
+                            </div>
+                            <h5 >`+html+`</h5>
+                                <div class="timing">
+                                      <h6>`+data["Time"]+`</h6>
+
+                                    <img class="img-fluid tick" src="{% get_static_prefix %}Chat/assets/images/svg/tick.svg" alt="pin">
+
+
+                                </div>
+
+                           <input type="hidden" id="M_`+man+`" value="`+text.value+`">
+                        </div>
+                    </div>
+                    <a >
+                        <img onclick='reply("`+man+`")' class="replay-btn" src="{% get_static_prefix %}Chat/assets/images/svg/reply.svg" alt="reply">
+                    </a>
+
+
+        `
+        }else if(data["Type"] === "File"){
+            //coat.innerHTML='<div class="col-12"><div class="chat-block"><div class="row"><div class="col"><div class="mw-100 position-relative mb-2 figure"><div class="position-absolute end-0 top-0"><button class="avatar avatar-36 rounded-circle p-0 btn btn-info text-white shadow-sm m-2"><a style="color:white" href="{% get_media_prefix%}Messages/Files/'+data["id"]+'.pdf" download="document.pdf" target="_blank" class="bi bi-download"></a></button></div> <i style="font-size:200px" class="bi bi-file-earmark-richtext "></i></div>'+html+'</div></div></div></div><div class="col-12 text-end"><p class="text-opac small time"><i class="bi bi-check"></i>'+data["Time"]+'</p></div>'
+
+            coat.innerHTML = `
+
+
+
+                    <div class="message-box read">
+                        <img class="img-fluid person-img" src="{% get_media_prefix %}Profiles/{{i.Sender}}.jpg" alt="p9">
+
+                        <div class="message-box-details">
+                            `
+                                    +bx+
+                                    `
+                            <div class="">
+
+                                 <a  href="{% get_media_prefix%}Messages/Files/`+data["id"]+`.pdf" download="document.jpg" target="_blank"> <div class="document-box">
+                                     <ul class="document-list">
+                            <li>
+                                <div class="document-box">
+                                    <div class="document-img">
+                                        <img class="img-fluid file-img" src="{% get_static_prefix %}Chat/assets/images/svg/pdf.svg" alt="">
+                                        <div class="dots-chain1"></div>
+                                        <div class="dots-chain2"></div>
+                                    </div>
+                                    <div class="document-details" style="width:160px">
+                                        <h5 style="color:black">Doc `+data["Time"]+`.pdf</h5>
+                                        <h6 style="color:black">Pdf File</h6>
+                                        <div class="dots-chain3"></div>
+                                        <div class="dots-chain4"></div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                                </div></a>
+                          <input type="hidden" id="M_`+man+`" value="`+text.value+`">
+                            </div>
+                           <h5 >`+html+`</h5>
+                                <div class="timing">
+                                      <h6>`+data["Time"]+`</h6>
+
+                                    <img class="img-fluid tick" src="{% get_static_prefix %}Chat/assets/images/svg/tick.svg" alt="pin">
+
+
+                                </div>
+
+
+                        </div>
+                    </div>
+                    <a>
+                        <img onclick='reply("`+man+`")' class="replay-btn" src="{% get_static_prefix %}Chat/assets/images/svg/reply.svg" alt="reply">
+                    </a>
+
+
+
+            `
+        }
+         document.getElementById("tab_in").append(coat)
+         console.log(data)
+         img.value=""
+         vid.value=""
+          filed.value=""
+          note.value="TEXT"
+        text.value=""
+        document.getElementById("display_object").innerHTML=''
+        window.scrollTo(0,document.body.scrollHeight);
+
+      });}
+
+
+      setInterval(get_message,1000);
+
+      function get_message(){
+
+
+        data = JSON.stringify({
+        id: '{{Chat.Link}}',
+       })
+        fetch("{% url 'get_message' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+       })
+      .then(response => response.json())
+      .then(data => {
+
+        for (i in data) {
+
+        function urlify(text) {
+            var urlRegex = /(https?:\/\/[^\s]+)/g;
+            return text.replace(urlRegex, function(url) {
+               var con_url = url.substring(0,40)+"..."
+              return '<a href="' + url + '">' + con_url + '</a>';
+            })
+            // or alternatively
+            // return text.replace(urlRegex, '<a href="$1">$1</a>')
+          }
+
+          var text = 'Find me at http://www.example.com and also at http://stackoverflow.com';
+          var newf = '{{i.Info}}'
+          var html = urlify(data[i]["Info"]);
+          if (data[i]["Reply_Id"] === 0 ){
+              var bx = ` `
+          }else{
+            var bx=`
+                                <a href="#X_`+data[i]["Reply_Id"]+`">
+                               <div style="background-color: white; border-radius: 10px; padding: 10px;color:black;">
+                                 `+data[i]["Reply"]+`
+                                 </div>
+                                  <div style="padding: 4px;"></div></a>
+                 `
+          }
+          console.log(html)
+            var coat = document.createElement('li')
+            coat.setAttribute("class","new")
+           // if (data[i]["Type"] === "Text"){
+             if (data[i]["Type"] === "Text"){
+       // coat.innerHTML='<div class="col-12"><div class="chat-block"><div class="row"><div class="col"><p>'+html+'</p></div></div></div></div><div class="col-12 text-end"><p class="text-opac small time"><i class="bi bi-check"></i>'+data["Time"]+'</p></div>'
+        coat.id='X_'+data[i]["id"]
+        coat.innerHTML = `
+
+
+
+                    <a href="#" onclick="myFunction(this, '--theme-color')" id="message">
+                        <div class="message-box">
+                            <img class="img-fluid person-img" src="{% get_media_prefix %}Profiles/{{Client.id}}.jpg" alt="p9">
+
+                            <div class="message-box-details">
+                            `
+                                    +bx+
+                                    `
+                                <h5 >`+html+`</h5>
+                                <div class="timing">
+                                      <h6>`+data[i]["Time"]+`</h6>
+
+                                    <img class="img-fluid tick" src="{% get_static_prefix %}Chat/assets/images/svg/tick.svg" alt="pin">
+
+
+                                </div>
+                           <input type="hidden" id="M_`+data[i]["id"]+`" value="`+data[i]["Info"]+`">
+                            </div>
+                        </div>
+                     </a>
+                     <a>
+                        <img onclick='reply("`+data[i]["id"]+`")' class="replay-btn" src="{% get_static_prefix %}Chat/assets/images/svg/reply.svg" alt="reply">
+                    </a>
+
+        `
+
+        }else if(data[i]["Type"] === "Image"){
+          //  coat.innerHTML='<div class="col-12"><div class="chat-block"><div class="row"><div class="col"><div class="mw-100 position-relative mb-2 figure"><div class="position-absolute end-0 top-0"><button class="avatar avatar-36 rounded-circle p-0 btn btn-info text-white shadow-sm m-2"><a style="color:white" href="{% get_media_prefix%}Messages/Images/'+data["id"]+'.jpg" download="document.jpg" target="_blank" class="bi bi-download"></a></button></div><img src="{% get_media_prefix%}Messages/Images/'+data["id"]+'.jpg" alt="" class="mw-100"></div>'+html+'</div></div></div></div><div class="col-12 text-end"><p class="text-opac small time"><i class="bi bi-check"></i>'+data["Time"]+'</p></div>'
+
+             coat.innerHTML=`
+
+
+                    <div class="message-box read">
+
+                        <img class="img-fluid person-img" src="{% get_media_prefix %}Profiles/{{Client.id}}.jpg" alt="p9">
+
+                        <div class="message-box-details">
+                         `
+                                    +bx+
+                                    `
+                            <div class="">
+
+                                    <img style="width:100%;  border-radius: 10px;" class="img-fluid  img1" src="{% get_media_prefix%}Messages/Images/`+data[i]["id"]+`.jpg" alt="img1" onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';">
+
+
+                            </div>
+                          <h5 >`+html+`</h5>
+                                <div class="timing">
+                                      <h6>`+data[i]["Time"]+`</h6>
+
+
+                                    <img class="img-fluid tick" src="{% get_static_prefix %}Chat/assets/images/svg/tick.svg" alt="pin">
+                               <input type="hidden" id="M_`+data[i]["id"]+`" value="`+data[i]["Info"]+`">
+
+                                </div>
+
+                        </div>
+                    </div>
+                    <a>
+                        <img onclick='reply("`+data[i]["id"]+`")' class="replay-btn" src="{% get_static_prefix %}Chat/assets/images/svg/reply.svg" alt="reply">
+                    </a>`
+
+
+
+        }else if(data[i]["Type"] === "Video"){
+
+       // coat.innerHTML='<div class="col-12"><div class="chat-block"><div class="row"><div class="col"><div class="mw-100 position-relative mb-2 figure"><div class="position-absolute start-50 top-50 translate-middle z-index-1"></div><video src="{% get_media_prefix%}Messages/Videos/'+data["id"]+'.mp4" controls=""></video></div>'+html+'</div>    </div></div></div><div class="col-12 text-end"><p class="text-opac small time"><i class="bi bi-check"></i>'+data["Time"]+'</p></div>'
+        coat.innerHTML = `
+
+         <li class="new">
+                    <div class="message-box read">
+
+                        <img class="img-fluid person-img" src="{% get_media_prefix %}Profiles/{{Client.id}}.jpg" alt="p9">
+
+                        <div class="message-box-details">
+                         `
+                                    +bx+
+                                    `
+                            <div class="">
+
+                                    <video poster="{% get_static_prefix%}play.png" src="{% get_media_prefix%}Messages/Videos/`+data[i]["id"]+`.mp4" controls="" style="width:100%;  border-radius: 10px;" class="img-fluid  img1"></video>
+
+
+                            </div>
+                            <h5 >`+html+`</h5>
+                                <div class="timing">
+                                      <h6>`+data[i]["Time"]+`</h6>
+
+                                    <img class="img-fluid tick" src="{% get_static_prefix %}Chat/assets/images/svg/tick.svg" alt="pin">
+
+
+                                </div>
+                          <input type="hidden" id="M_`+data[i]["id"]+`" value="`+data[i]["Info"]+`">
+
+                        </div>
+                    </div>
+                    <a >
+                        <img onclick='reply("`+data[i]["id"]+`")' class="replay-btn" src="{% get_static_prefix %}Chat/assets/images/svg/reply.svg" alt="reply">
+                    </a>
+                </li>
+
+        `
+        }else if(data["Type"] === "File"){
+            //coat.innerHTML='<div class="col-12"><div class="chat-block"><div class="row"><div class="col"><div class="mw-100 position-relative mb-2 figure"><div class="position-absolute end-0 top-0"><button class="avatar avatar-36 rounded-circle p-0 btn btn-info text-white shadow-sm m-2"><a style="color:white" href="{% get_media_prefix%}Messages/Files/'+data["id"]+'.pdf" download="document.pdf" target="_blank" class="bi bi-download"></a></button></div> <i style="font-size:200px" class="bi bi-file-earmark-richtext "></i></div>'+html+'</div></div></div></div><div class="col-12 text-end"><p class="text-opac small time"><i class="bi bi-check"></i>'+data["Time"]+'</p></div>'
+
+            coat.innerHTML = `
+
+
+                    <li class="new">
+                    <div class="message-box read">
+                        <img class="img-fluid person-img" src="{% get_media_prefix %}Profiles/{{Client.id}}.jpg" alt="p9">
+
+                        <div class="message-box-details">
+                                    `
+                                    +bx+
+                                    `
+                            <div class="">
+
+                                 <a  href="{% get_media_prefix%}Messages/Files/`+data[i]["id"]+`.pdf" download="document.jpg" target="_blank"> <div class="document-box">
+                                     <ul class="document-list">
+                            <li>
+                                <div class="document-box">
+                                    <div class="document-img">
+                                        <img class="img-fluid file-img" src="{% get_static_prefix %}Chat/assets/images/svg/pdf.svg" alt="">
+                                        <div class="dots-chain1"></div>
+                                        <div class="dots-chain2"></div>
+                                    </div>
+                                    <div class="document-details" style="width:160px">
+                                        <h5 style="color:black">Doc `+data["Time"]+`.pdf</h5>
+                                        <h6 style="color:black">Pdf File</h6>
+                                        <div class="dots-chain3"></div>
+                                        <div class="dots-chain4"></div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                                </div></a>
+
+                            </div>
+                           <h5 >`+html+`</h5>
+                                <div class="timing">
+                                      <h6>`+data[i]["Time"]+`</h6>
+
+                                    <img class="img-fluid tick" src="{% get_static_prefix %}Chat/assets/images/svg/tick.svg" alt="pin">
+
+                                     <input type="hidden" id="M_`+data[i]["id"]+`" value="`+data[i]["Info"]+`">
+                                </div>
+
+
+                        </div>
+                    </div>
+                    <a >
+                        <img onclick='reply("`+data[i]["id"]+`")' class="replay-btn" src="{% get_static_prefix %}Chat/assets/images/svg/reply.svg" alt="reply">
+                    </a>
+                </li>
+
+
+            `
+        }
+             document.getElementById("tab_in").append(coat)
+             console.log(data)
+
+    window.scrollTo(0,document.body.scrollHeight);
+
+
+        }
+
+
+      });}
+
+
+
+    //setInterval(Online,1000);
+
+</script>

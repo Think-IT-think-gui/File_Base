@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+{% load static %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========================================================
+* Materialize - Material Design HTML Admin Template | v1.0.0
+==============================================================
+
+* Product Page: https://1.envato.market/materialize_admin
+* Created by: Pixinvent
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright Pixinvent (https://pixinvent.com)
+
+=========================================================
+ -->
+<!-- beautify ignore:start -->
+
+
+<html lang="en" class="dark-style layout-wide  customizer-hide" dir="ltr" data-theme="theme-default" data-assets-path="{% get_static_prefix %}Home2assets/" data-template="vertical-menu-template-dark">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Preview </title>
+
+
+    <meta name="description" content="Materialize – is the most developer friendly &amp; highly customizable Admin Dashboard Template." />
+    <meta name="keywords" content="dashboard, material, material design, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5">
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://1.envato.market/materialize_admin">
+
+
+    <!-- ? PROD Only: Google Tag Manager (Default ThemeSelection: GTM-5DDHKGP, PixInvent: GTM-5J3LMKC) -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-5J3LMKC');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{% get_static_prefix %}Home2/assets/img/favicon/favicon.ico" />
+    <link rel="stylesheet" href="{% get_static_prefix %}Home2/assets/vendor/fonts/materialdesignicons-1.css">
+    <link rel="stylesheet" href="{% get_static_prefix %}Home2/assets/vendor/fonts/flag-icons-1.css">
+
+    <!-- Menu waves for no-customizer fix -->
+    <link rel="stylesheet" href="{% get_static_prefix %}Home2/assets/vendor/libs/node-waves/node-waves-1.css">
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="{% get_static_prefix %}Home2/assets/vendor/css/rtl/core-dark-1.css" class="template-customizer-core-css">
+    <link rel="stylesheet" href="{% get_static_prefix %}Home2/assets/vendor/css/rtl/theme-default-dark-1.css" class="template-customizer-theme-css">
+    <link rel="stylesheet" href="{% get_static_prefix %}Home2/assets/css/demo-1.css">
+
+    <!-- Vendors CSS -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&ampdisplay=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="{% get_static_prefix %}Home2/assets/vendor/fonts/materialdesignicons.css" />
+    <link rel="stylesheet" href="{% get_static_prefix %}Home2/assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Menu waves for no-customizer fix -->
+    <link rel="stylesheet" href="{% get_static_prefix %}Home2/assets/vendor/libs/node-waves/node-waves.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="{% get_static_prefix %}Home2/assets/vendor/css/rtl/core-dark.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="{% get_static_prefix %}Home2/assets/vendor/css/rtl/theme-default-dark.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="{% get_static_prefix %}Home2/assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="{% get_static_prefix %}Home2/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="{% get_static_prefix %}Home2/assets/vendor/libs/typeahead-js/typeahead.css" />
+
+
+    <!-- Page CSS -->
+    <!-- Page -->
+<link rel="stylesheet" href="{% get_static_prefix %}Home2/assets/vendor/css/pages/page-misc.css">
+
+    <!-- Helpers -->
+    <script src="{% get_static_prefix %}Home2/assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="{% get_static_prefix %}Home2/assets/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="{% get_static_prefix %}Home2/assets/js/config.js"></script>
+
+</head>
+
+<div class="slider" style="position: absolute;width: 100%;height: 100%;top:0px">
+
+<div id="voiceWrapper" style="position: fixed; top: 0; left: 0; padding: 5px; z-index: 99999999999;">
+  <span id="micIcon" style="color: white; font-size: 18px; cursor: pointer;">🎤</span>
+  <select id="voiceSelect" style="
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    transition: opacity 0.3s ease;
+  "></select>
+</div>
+
+<script>
+  const mic = document.getElementById("micIcon");
+  const voiceSelect = document.getElementById("voiceSelect");
+  const wrapper = document.getElementById("voiceWrapper");
+  let isVisible = false;
+
+  mic.onclick = (event) => {
+    event.stopPropagation(); // Prevent click from bubbling to document
+    isVisible = !isVisible;
+    updateVisibility();
+  };
+
+  document.addEventListener("click", (event) => {
+    if (!wrapper.contains(event.target)) {
+      isVisible = false;
+      updateVisibility();
+    }
+  });
+
+  function updateVisibility() {
+    voiceSelect.style.opacity = isVisible ? "1" : "0";
+    voiceSelect.style.pointerEvents = isVisible ? "auto" : "none";
+  }
+</script>
+
+
+  <div class="slides" style="width: 100%;height: 100%;">
+      <div class="slide"><img src="{% get_static_prefix %}pack/1431621.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="Image 1"></div>
+      <div class="slide"><img src="{% get_static_prefix %}pack/1431622.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="Image 2"></div>
+      <div class="slide"><img src="{% get_static_prefix %}pack/185289.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="Image 3"></div>
+      <div class="slide"><img src="{% get_static_prefix %}pack/47577.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="Image 4"></div>
+  </div>
+  <div class="navigation">
+    <div class="nav-btn" onclick="currentSlide(1)"></div>
+    <div class="nav-btn" onclick="currentSlide(2)"></div>
+    <div class="nav-btn" onclick="currentSlide(3)"></div>
+    <div class="nav-btn" onclick="currentSlide(4)"></div>
+</div>
+</div>
+<body>
+
+<div>
+
+
+
+
+<div id="bay" style="
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.9;
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+">
+  <div class="misc-wrapper" id="vp" style="text-align: center;">
+    <div class="d-flex flex-column align-items-center" id="sp" style='color:#fff'>
+      <!-- Add your centered content here -->
+    </div>
+    <h1 class="mb-2 mx-2" style="font-size: 4vmax; padding-top: 20px;text-align:center" id="in">
+      <!-- Your title -->
+    </h1>
+  </div>
+</div>
+
+
+
+
+
+<!-- beautify ignore:end -->
+<style>body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  transition: 0.5s;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-btn {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+  background-color: rgba(255, 255, 255, 1);
+}
+</style>
+
+
+
+  <head>
+
+
+
+
+
+
+<!-- Error -->
+
+
+<!-- /Error -->
+
+<!-- / Content -->
+
+<textarea id="text" style="visibility:hidden;position: absolute;" ></textarea>
+<button id="play-button" style="visibility:hidden;position: absolute">Play</button>
+<label for="speed" style="visibility:hidden;position: absolute">Speed</label>
+  <input type="number" style="visibility:hidden;position: absolute" name="spee" id="speed" min=".5" max="3" step=".5" value="1">
+  <button id="pause-button" style="visibility:hidden;position: absolute">Pause</button>
+  <button id="stop-button" style="visibility:hidden;position: absolute">Stop</button>
+
+
+</body>
+<script>
+  function getCookie(name) {
+      let cookieValue = null;
+      if (document.cookie && document.cookie !== '') {
+          const cookies = document.cookie.split(';');
+          for (let i = 0; i < cookies.length; i++) {
+              const cookie = cookies[i].trim();
+              // Does this cookie string begin with the name we want?
+              if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                  cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                  break;
+              }
+          }
+      }
+      return cookieValue;
+      }
+
+      const csrftoken = getCookie('csrftoken');
+      console.log(csrftoken)
+
+setInterval(update,1000);
+function update(){
+var state = document.getElementById("hold_id")
+data = JSON.stringify({
+id: 9,
+})
+fetch("{% url 'preview_pannel' %}", {
+method: 'PUT',
+body: data,
+headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+'Content-Type': 'application/json',
+},
+})
+.then(response => response.json())
+.then(data => {
+
+if (data["Stat"] === 'Yes'){
+  document.getElementById('bay').style.visibility="visible"
+
+
+ if (data["Data"]["id"]==0){
+  document.getElementById("in").innerHTML='<span style="font-size:6vmax">Next "G-00'+data["Data"]["Name"]+'"  Visit (<span style="color:#DE4949">'+ data["Data"]["Location"]+'</span></span>)'
+  document.getElementById("text").innerHTML='Ticket number G-00'+data["Data"]["Name"]+' to '+ data["Data"]["Location"]
+  var sp = document.createElement('span')
+  sp.innerHTML=""
+ }else{
+  document.getElementById("in").innerHTML='<span style="font-size:6vmax;color:#fff">'+data["Data"]["Name"]+'<br> Visit (<span style="color:#DE4949">'+ data["Data"]["Location"]+'</span>)'
+  document.getElementById("text").innerHTML=data["Data"]["Name"]+' is needed at '+ data["Data"]["Location"]
+  var sp = document.createElement('span')
+  var h = '<img src="{% get_media_prefix %}Profiles/'+data["Data"]["id"]+'.jpg" alt="misc-under-maintenance" class="img-fluid z-1" width="290" style="border-radius:10px;object-fit:cover">'
+  sp.innerHTML=h
+
+  console.log(data["Data"])
+ }
+
+  speakText(data["Data"]["Name"]+' visit '+ data["Data"]["Location"])
+
+
+var hl = document.getElementById('sp')
+hl.innerHTML=""
+hl.append(sp)
+
+//document.getElementById("play-button").click()
+
+wait(4000);
+
+
+
+}else{
+  document.getElementById('bay').style.visibility="hidden"
+  var hl = document.getElementById('sp')
+  hl.innerHTML=""
+document.getElementById("in").innerHTML=''
+wait(2000);
+
+}
+});}
+
+
+
+
+
+
+
+
+
+    let voices = [];
+
+    function populateVoices() {
+      voices = window.speechSynthesis.getVoices();
+      const voiceSelect = document.getElementById("voiceSelect");
+      voiceSelect.innerHTML = '';
+
+      voices.forEach((voice, index) => {
+        const option = document.createElement("option");
+        option.value = voice.name;
+        option.textContent = `${voice.name} (${voice.lang})`;
+        voiceSelect.appendChild(option);
+      });
+    }
+
+    // Populate on load and when voices change (for some browsers)
+    populateVoices();
+    if (speechSynthesis.onvoiceschanged !== undefined) {
+      speechSynthesis.onvoiceschanged = populateVoices;
+    }
+
+    function speakText(id) {
+
+      const message = id;
+      const speech = new SpeechSynthesisUtterance(message);
+      const selectedVoiceName = document.getElementById("voiceSelect").value;
+      const selectedVoice = voices.find(v => v.name === selectedVoiceName);
+
+      if (selectedVoice) {
+        speech.voice = selectedVoice;
+        speech.lang = selectedVoice.lang;
+      }
+
+      speech.pitch = 1;
+      speech.rate = 0.7;
+
+      window.speechSynthesis.speak(speech);
+    }
+
+
+function wait(ms){
+  var start = new Date().getTime();
+  var end = start;
+  while(end < start + ms) {
+    end = new Date().getTime();
+ }
+}
+</script>
+
+  <!-- Core JS -->
+  <!-- build:js assets/vendor/js/core.js -->
+  <script src="{% get_static_prefix %}Home2/assets/vendor/libs/jquery/jquery.js"></script>
+  <script src="{% get_static_prefix %}Home2/assets/vendor/libs/popper/popper.js"></script>
+  <script src="{% get_static_prefix %}Home2/assets/vendor/js/bootstrap.js"></script>
+  <script src="{% get_static_prefix %}Home2/assets/vendor/libs/node-waves/node-waves.js"></script>
+  <script src="{% get_static_prefix %}Home2/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+  <script src="{% get_static_prefix %}Home2/assets/vendor/libs/hammer/hammer.js"></script>
+  <script src="{% get_static_prefix %}Home2/assets/vendor/libs/i18n/i18n.js"></script>
+  <script src="{% get_static_prefix %}Home2/assets/vendor/libs/typeahead-js/typeahead.js"></script>
+  <script src="{% get_static_prefix %}Home2/assets/vendor/js/menu.js"></script>
+
+  <!-- endbuild -->
+
+  <!-- Vendors JS -->
+
+
+
+
+
+  <!-- Main JS -->
+  <script src="{% get_static_prefix %}Home2/assets/js/main.js"></script>
+
+  <script src="{% get_static_prefix %}Speak/script.js" defer></script>
+  <!-- Page JS -->
+
+
+
+</body>
+
+</html>
+
+
+<script>
+  let slideIndex = 0;
+const slides = document.querySelector('.slides');
+const navBtns = document.querySelectorAll('.nav-btn');
+
+function showSlide(index) {
+    if (index >= navBtns.length) {
+        slideIndex = 0;
+    } else if (index < 0) {
+        slideIndex = navBtns.length - 1;
+    } else {
+        slideIndex = index;
+    }
+
+    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+
+    navBtns.forEach((btn, i) => {
+        if (i === slideIndex) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+}
+
+function currentSlide(index) {
+    showSlide(index - 1);
+}
+
+// Auto change slides every 5 seconds
+setInterval(() => {
+    showSlide(slideIndex + 1);
+}, 5000);
+
+// Initialize the slider
+showSlide(slideIndex);
+
+</script>
+</div>

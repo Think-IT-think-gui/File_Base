@@ -1,0 +1,288 @@
+Uri: https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap
+File Name: C:\Downloaded Web Sites\htmldemo.net\css2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOiCnqEu92Fr1Mu51QrIzc.ttf
+File Name: C:\Downloaded Web Sites\htmldemo.net\s\roboto\v30\KFOiCnqEu92Fr1Mu51QrIzc.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51S7ABc9.ttf
+File Name: C:\Downloaded Web Sites\htmldemo.net\s\roboto\v30\KFOjCnqEu92Fr1Mu51S7ABc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TjARc9.ttf
+File Name: C:\Downloaded Web Sites\htmldemo.net\s\roboto\v30\KFOjCnqEu92Fr1Mu51TjARc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TLBBc9.ttf
+File Name: C:\Downloaded Web Sites\htmldemo.net\s\roboto\v30\KFOjCnqEu92Fr1Mu51TLBBc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBhc9.ttf
+File Name: C:\Downloaded Web Sites\htmldemo.net\s\roboto\v30\KFOjCnqEu92Fr1Mu51TzBhc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgWxP.ttf
+File Name: C:\Downloaded Web Sites\htmldemo.net\s\roboto\v30\KFOkCnqEu92Fr1MmgWxP.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu52xP.ttf
+File Name: C:\Downloaded Web Sites\htmldemo.net\s\roboto\v30\KFOkCnqEu92Fr1Mu52xP.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9vAw.ttf
+File Name: C:\Downloaded Web Sites\htmldemo.net\s\roboto\v30\KFOlCnqEu92Fr1MmEU9vAw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5vAw.ttf
+File Name: C:\Downloaded Web Sites\htmldemo.net\s\roboto\v30\KFOlCnqEu92Fr1MmSU5vAw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlvAw.ttf
+File Name: C:\Downloaded Web Sites\htmldemo.net\s\roboto\v30\KFOlCnqEu92Fr1MmWUlvAw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtvAw.ttf
+File Name: C:\Downloaded Web Sites\htmldemo.net\s\roboto\v30\KFOlCnqEu92Fr1MmYUtvAw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf
+File Name: C:\Downloaded Web Sites\htmldemo.net\s\roboto\v30\KFOmCnqEu92Fr1Me5Q.ttf
+Content Type: font/ttf
+
+Uri: https://htmldemo.net/carce/carce/
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\index.htm
+Content Type: text/html
+
+Uri: https://htmldemo.net/carce/carce/assets/css/plugins/ion.rangeSlider.min.css
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\css\plugins\ion.rangeSlider.min.css
+Content Type: text/css
+
+Uri: https://htmldemo.net/carce/carce/assets/css/plugins/swiper-bundle.min.css
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\css\plugins\swiper-bundle.min.css
+Content Type: text/css
+
+Uri: https://htmldemo.net/carce/carce/assets/css/style.css
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\css\style.css
+Content Type: text/css
+
+Uri: https://htmldemo.net/carce/carce/assets/css/vendor/icomoon.css
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\css\vendor\icomoon.css
+Content Type: text/css
+
+Uri: https://htmldemo.net/carce/carce/assets/fonts/icomoon/icomoon.eot?ihe75g
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\fonts\icomoon\icomoon.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://htmldemo.net/carce/carce/assets/fonts/icomoon/icomoon.svg?ihe75g
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\fonts\icomoon\icomoon.svg
+Content Type: image/svg+xml
+
+Uri: https://htmldemo.net/carce/carce/assets/fonts/icomoon/icomoon.ttf?ihe75g
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\fonts\icomoon\icomoon.ttf
+Content Type: application/octet-stream
+
+Uri: https://htmldemo.net/carce/carce/assets/fonts/icomoon/icomoon.woff?ihe75g
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\fonts\icomoon\icomoon.woff
+Content Type: font/woff
+
+Uri: https://htmldemo.net/carce/carce/assets/images/catagories/bag-pack.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\catagories\bag-pack.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/catagories/bagpack.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\catagories\bagpack.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/catagories/casual-t-shirt.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\catagories\casual-t-shirt.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/catagories/headphones.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\catagories\headphones.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/catagories/shoe.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\catagories\shoe.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/catagories/sneakers.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\catagories\sneakers.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/catagories/strapless.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\catagories\strapless.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/catagories/trousers.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\catagories\trousers.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/catagories/watch.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\catagories\watch.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/favicon.ico
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\favicon.ico
+Content Type: image/x-icon
+
+Uri: https://htmldemo.net/carce/carce/assets/images/header-top-user-img.jpg
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\header-top-user-img.jpg
+Content Type: image/jpeg
+
+Uri: https://htmldemo.net/carce/carce/assets/images/hero/bg/hero-bg-1.jpg
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\hero\bg\hero-bg-1.jpg
+Content Type: image/jpeg
+
+Uri: https://htmldemo.net/carce/carce/assets/images/hero/product/product-1.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\hero\product\product-1.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/hero/product/product-2.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\hero\product\product-2.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/hero/product/product-3.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\hero\product\product-3.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/hero/shape/shape-dotted.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\hero\shape\shape-dotted.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/logo.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\logo.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/product/normal/product-img-1.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\product\normal\product-img-1.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/product/normal/product-img-2.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\product\normal\product-img-2.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/product/normal/product-img-3.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\product\normal\product-img-3.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/product/normal/product-img-4.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\product\normal\product-img-4.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/product/single/product-gallery-single-1.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\product\single\product-gallery-single-1.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/product/small/product-1-small-1.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\product\small\product-1-small-1.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/product/small/product-1-small-2.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\product\small\product-1-small-2.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/product/small/product-1-small-3.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\product\small\product-1-small-3.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/product/small/product-1-small-4.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\product\small\product-1-small-4.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/images/profile-shape-1.svg
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\profile-shape-1.svg
+Content Type: image/svg+xml
+
+Uri: https://htmldemo.net/carce/carce/assets/images/profile-shape-2.svg
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\profile-shape-2.svg
+Content Type: image/svg+xml
+
+Uri: https://htmldemo.net/carce/carce/assets/images/user-chat-active.jpg
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\user-chat-active.jpg
+Content Type: image/jpeg
+
+Uri: https://htmldemo.net/carce/carce/assets/images/user-chat.jpg
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\user-chat.jpg
+Content Type: image/jpeg
+
+Uri: https://htmldemo.net/carce/carce/assets/images/user/user-profile.png
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\images\user\user-profile.png
+Content Type: image/png
+
+Uri: https://htmldemo.net/carce/carce/assets/js/main.js
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\js\main.js
+Content Type: application/javascript
+
+Uri: https://htmldemo.net/carce/carce/assets/js/plugins/ion.rangeSlider.min.js
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\js\plugins\ion.rangeSlider.min.js
+Content Type: application/javascript
+
+Uri: https://htmldemo.net/carce/carce/assets/js/plugins/swiper-bundle.min.js
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\js\plugins\swiper-bundle.min.js
+Content Type: application/javascript
+
+Uri: https://htmldemo.net/carce/carce/assets/js/vendor/jquery-3.6.0.min.js
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\js\vendor\jquery-3.6.0.min.js
+Content Type: application/javascript
+
+Uri: https://htmldemo.net/carce/carce/assets/js/vendor/jquery-migrate-3.3.2.min.js
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\js\vendor\jquery-migrate-3.3.2.min.js
+Content Type: application/javascript
+
+Uri: https://htmldemo.net/carce/carce/assets/js/vendor/modernizr-3.11.2.min.js
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\assets\js\vendor\modernizr-3.11.2.min.js
+Content Type: application/javascript
+
+Uri: https://htmldemo.net/carce/carce/cart.html
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\cart.html
+Content Type: text/html
+
+Uri: https://htmldemo.net/carce/carce/chat.html
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\chat.html
+Content Type: text/html
+
+Uri: https://htmldemo.net/carce/carce/checkout.html
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\checkout.html
+Content Type: text/html
+
+Uri: https://htmldemo.net/carce/carce/index.html
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\index.html
+Content Type: text/html
+
+Uri: https://htmldemo.net/carce/carce/login.html
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\login.html
+Content Type: text/html
+
+Uri: https://htmldemo.net/carce/carce/notification.html
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\notification.html
+Content Type: text/html
+
+Uri: https://htmldemo.net/carce/carce/order.html
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\order.html
+Content Type: text/html
+
+Uri: https://htmldemo.net/carce/carce/profile-settings.html
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\profile-settings.html
+Content Type: text/html
+
+Uri: https://htmldemo.net/carce/carce/register.html
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\register.html
+Content Type: text/html
+
+Uri: https://htmldemo.net/carce/carce/shop-category.html
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\shop-category.html
+Content Type: text/html
+
+Uri: https://htmldemo.net/carce/carce/shop.html
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\shop.html
+Content Type: text/html
+
+Uri: https://htmldemo.net/carce/carce/single-product.html
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\single-product.html
+Content Type: text/html
+
+Uri: https://htmldemo.net/carce/carce/wishlist.html
+File Name: C:\Downloaded Web Sites\htmldemo.net\carce\carce\wishlist.html
+Content Type: text/html
+

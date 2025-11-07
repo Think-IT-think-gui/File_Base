@@ -1,0 +1,452 @@
+
+
+{% load static %}
+<link rel="stylesheet" href="{% get_static_prefix %}New/assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
+<style>
+  .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  }
+  .upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0;
+  }
+  </style>
+
+<!-- APP CSS & APP SCSS -->
+{% include "New/Extra/header.html" %}
+
+<link rel="stylesheet" href="{% get_static_prefix %}New/assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
+
+          <!--  Header End -->
+          <div class="card shadow-none position-relative overflow-hidden mb-4">
+            <div class="card-body d-flex align-items-center justify-content-between p-4">
+              <h4 class="card-title mb-0">(<span style="color: brown;">{{Client.Full_Name}}</span>)  Media Files</h4>
+              <nav aria-label="breadcrumb">
+                <form class="row" action="" method="post">
+                    {% csrf_token %}
+                    <div class="form-floating form-floating-outline mb-4 col-4">
+                    <input type="date" name='Start' class="form-control" placeholder="" aria-label=""  required />
+                    <label for="add-user-email">Start Date</label>
+                    </div>
+                  <div class="form-floating form-floating-outline mb-4 col-4">
+                    <input type="date" name='End' class="form-control" placeholder="" aria-label=""  required />
+                    <label for="add-user-email">End Date</label>
+                  </div>
+                  <div class="col-4">
+                      <button type="submit"  class="btn btn-primary me-sm-3 me-1 data-submit">Filter</button>
+                  </div>
+                </form>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+
+
+
+            <div class="row mb-4 g-4">
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="content-left">
+                        <h5 class="mb-1">{{C_Image}}</h5>
+                        <small>Images</small>
+                      </div>
+                      <span class="badge bg-label-primary rounded-circle p-2">
+                        <i class="ti-image"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="content-left">
+                        <h5 class="mb-1">{{C_Video}}</h5>
+                        <small>Videos</small>
+                      </div>
+                      <span class="badge bg-label-success rounded-circle p-2">
+                        <i class="ti-desktop"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="content-left">
+                        <h5 class="mb-1">{{C_File}}</h5>
+                        <small>Files</small>
+                      </div>
+                      <span class="badge bg-label-danger rounded-circle p-2">
+                        <i class="ti-file"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="content-left">
+                        <h5 class="mb-1">{{Total}}</h5>
+                        <small>All Files</small>
+                      </div>
+                      <span class="badge bg-label-info rounded-circle p-2">
+                         <i class="ti-list"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+            <!-- Referral List Table -->
+
+
+
+
+
+
+     <p>Image Files</p>
+     <div class="row">
+
+           {% for i in Image %}
+            <div class="col-md-6 col-lg-4" id='{{i.id}}'>
+              <div class="card overflow-hidden hover-img">
+                <div class="position-relative">
+
+                  <a >
+
+                    <img src="{% get_media_prefix %}Messages/Images/{{i.id}}.jpg" style="height:350px;object-fit:cover" onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';" class="card-img-top" alt="client-img">
+                  </a>
+
+
+                </div>
+                 <div class="card-body p-4">
+
+
+                  <div style="padding-top:10px">
+                    <a href="{% get_media_prefix%}Messages/Images/{{i.id}}.jpg" download="{{Client.Full_Name}}_Image_{{Rand}}.jpg" target="_blank" class="btn bg-primary-subtle text-primary w-100 rounded-pill">Download Image</a>
+
+                  </div>
+
+
+                </div>
+
+
+
+                <div style="padding-top:5px" class="col-12">
+                  <a onclick="Open('{{i.id}}')" class="btn bg-danger-subtle text-danger w-100 rounded-pill">Delete Image</a>
+
+                </div>
+
+
+
+                </div>
+              </div>
+
+{% endfor %}
+<hr>
+<p>Video Files</p>
+     <div class="row">
+
+           {% for i in Video %}
+            <div class="col-md-6 col-lg-4" id='{{i.id}}'>
+              <div class="card overflow-hidden hover-img">
+                <div class="position-relative">
+
+                  <a >
+
+                    <video src="{% get_media_prefix%}Messages/Videos/{{i.id}}.mp4" controls="" style="height:350px;object-fit:cover" class="card-img-top" alt="spike-img"></video>
+                  </a>
+
+
+                </div>
+
+                <div class="card-body p-4">
+
+
+                  <div style="padding-top:10px">
+                    <a href="{% get_media_prefix%}Messages/Videos/{{i.id}}.mp4" download="{{Client.Full_Name}}_Video_{{Rand}}.mp4" target="_blank" class="btn bg-primary-subtle text-primary w-100 rounded-pill">Download Video</a>
+
+                  </div>
+
+
+                </div>
+
+
+
+                <div style="padding-top:5px" class="col-12">
+                  <a onclick="Open('{{i.id}}')" class="btn bg-danger-subtle text-danger w-100 rounded-pill">Delete Video</a>
+
+                </div>
+
+
+
+                </div>
+              </div>
+
+{% endfor %}
+
+
+<p>PDF Files</p>
+ <div class="row">
+              <div class="col-12 col-sm-12">
+                <div class="card ">
+
+
+
+                  <div class="card-body example1-table">
+                    <div class="table-responsive">
+                      <table id="zero_config" class="table table-striped table-bordered text-nowrap align-middle">
+                        <thead>
+                          <tr>
+                            <th class="font-weight-normal">Start Time/Date</th>
+                            <th class="font-weight-normal">End Time/Date</th>
+
+
+                            <th class="font-weight-normal">Download</th>
+                            <th class="font-weight-normal">Delete</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+
+                          {% for i in Files %}
+                          <tr id='{{i.id}}'>
+                            <td>{{i.Start_Time}}</td>
+                            <td>{{i.End_Time}}</td>
+
+                           <td>
+                            <a href="{% get_media_prefix%}Messages/Files/{{i.id}}.pdf" download="{{Client.Full_Name}}-{{Rand}}.pdf" target="_blank" type="button" class="btn bg-primary-subtle text-primary w-100 rounded-pill">Download File</a>
+                          </td>
+                           <td>
+                            <a onclick="Open('{{i.id}}')"  type="button" class="btn bg-danger-subtle text-primary w-100 rounded-pill">Delete File</a>
+                          </td>
+                          </tr>
+                          {% endfor %}
+
+
+
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+</div>
+</div>
+      <div class="row">
+
+
+
+              <nav aria-label="Page navigation example p-0" style="text-align: center;padding-bottom: 100px;">
+                <span class="step-links">
+                  {% if page_obj.has_previous %}
+                    <a class="btn btn-outline-secondary" href="?page=1">&laquo; first</a>
+                    <a class="btn btn-outline-secondary" href="?page={{ page_obj.previous_page_number }}">previous</a>
+                  {% endif %}
+
+                  <span class="current">
+                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                  </span>
+
+                  {% for num in page_obj.paginator.page_range %}
+                    {% if num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                      {% if page_obj.number == num %}
+                        <span class="btn btn-secondary">{{ num }}</span>
+                      {% else %}
+                        <a class="btn btn-outline-secondary" href="?page={{ num }}">{{ num }}</a>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% if page_obj.has_next %}
+                    <a class="btn btn-outline-secondary" href="?page={{ page_obj.next_page_number }}">next</a>
+                    <a class="btn btn-outline-secondary" href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                  {% endif %}
+                </span>
+              </nav>
+
+
+            </div>
+
+
+
+
+        {% include "New/Extra/footer.html" %}
+
+
+
+        <!--Internal Echart Plugin -->
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/echart/echart.js"></script>
+
+        <!-- Internal index js -->
+        <link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/index-a335dc45.js" /><script type="module" src="{% get_static_prefix %}Main/build/assets/index-a335dc45.js"></script>
+        <!-- Select2 js -->
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/select2/js/select2.full.min.js"></script>
+
+        <!-- Data tables -->
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/dataTables.responsive.min.js"></script>
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
+
+
+            <!-- Switcher js -->
+            <link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/switcher-d57e6ced.js" /><script type="module" src="{% get_static_prefix %}Main/build/assets/switcher-d57e6ced.js"></script>
+            <!-- APP JS-->
+        <link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/app-2392f432.js" />
+        <link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/apexcharts.common-7928d148.js" />
+        <script type="module" src="{% get_static_prefix %}Main/build/assets/app-2392f432.js"></script>        <!-- END SCRIPTS -->
+
+            <!-- sticky js-->
+        <script src="{% get_static_prefix %}Main/build/assets/sticky.js"></script>
+
+
+<script>
+
+    function view_info(id){
+      alert(document.getElementById('info'+id).value)
+    }
+
+  // vars
+ function played(id){
+  var img = document.getElementById('plyr-audio-player');
+  img.src = '{% get_media_prefix %}Call_Logs/'+id+'.mp3'
+ }
+
+  upload1 = document.getElementById("file-input1"),
+
+  upload1.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+          var img = document.getElementById('plyr-audio-player');
+          img.src = e.target.result;
+
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  </script>
+
+
+
+   <div id="cover"  style="background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: hidden">
+          <div class="col-xl-4 col-lg-4 col-xxl-4 col-md-12" style="position: fixed;top:30%;left: 40%;">
+            <div class="card" id="cmain" style="visibility: hidden">
+              <div class="card-body text-center ai-icon  text-primary" >
+                <button style="position: absolute;right: 20px;" class="btn btn-sm btn-danger" onclick="Close()">x</button>
+                <svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" style="stroke-dasharray: 25, 45; stroke-dashoffset: 0;"></path>
+                  <path d="M8,7A4,4 0,1,1 16,7A4,4 0,1,1 8,7" style="stroke-dasharray: 26, 46; stroke-dashoffset: 0;"></path>
+                </svg>
+                <h4 class="my-2">Type "DELETE" to delete this.</h4>
+                <div class="form-group" >
+
+                  <input type="text" id="pass2" class="form-control" style="text-align: center;" >
+                </div>
+                <button onclick="Delete()" id="si_button" class="btn my-2 btn-primary btn-lg px-4"><i class="fa fa-trash"></i> Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input id="state" type="hidden">
+
+
+  <script>
+
+  function setup(id){
+    document.getElementById('hold_id').value=id
+  }
+
+function Delete(){
+  var state = document.getElementById("state")
+data = JSON.stringify({
+id:state.value,
+})
+fetch("{% url 'delete_message' %}", {
+method: 'DELETE',
+body: data,
+headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json',
+    },
+})
+.then(response => response.json())
+.then(data => {
+if (data === 'Ok'){
+    document.getElementById(state.value).remove()
+    state.value=""
+    document.getElementById("pass2").value=""
+    alert("File has been deleted successfully!")
+Close()
+}else{
+    alert("Please an error occured when deleting File!")
+
+}
+});}
+
+setInterval(load_all,1000);
+function load_all(){
+
+
+    var pass2 = document.getElementById("pass2").value
+if (pass2==="DELETE"){
+
+ document.getElementById("si_button").disabled = false;
+}else{
+ document.getElementById("si_button").disabled = true;
+}
+}
+
+  function Open(id){
+        document.getElementById("state").value = id
+        document.getElementById('cover').setAttribute("style", "background-color:rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: visible")
+        document.getElementById('cmain').setAttribute("style", "visibility: visible")
+
+        }
+        function Close(){
+        document.getElementById('cover').setAttribute("style", "visibility: hidden;z-index: 0;")
+        document.getElementById('cmain').setAttribute("style", "z-index: 0;visibility: hidden;")
+
+        }
+
+
+  </script>
+      <script src="{% get_static_prefix %}New/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+      <script src="{% get_static_prefix %}New/assets/js/datatable/datatable-basic.init.js"></script>
+
+
+      <script type="text/javascript">
+    $(document).ready(function() {
+        // Initialize DataTable with id 'zep'
+        $('#zep').DataTable();
+    });
+</script>

@@ -1,0 +1,448 @@
+{% load static %}
+      
+{% include "New/Extra/header.html" %}
+      <!-- Content wrapper -->
+      <div class="content-wrapper">
+
+        <div class="container-xxl flex-grow-1 container-p-y">
+            
+            
+
+          <h4 class="py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> My Media Posts</h4>
+          
+          <div class="app-academy">
+            <div class="card p-0 mb-4">
+              <div class="card-body d-flex flex-column flex-md-row justify-content-between p-0 pt-4">
+                <div class="app-academy-md-25 card-body py-0">
+                
+                </div>
+                <div class="app-academy-md-50 card-body d-flex align-items-md-center flex-column text-md-center mb-4">
+                  <span class="card-title mb-3 lh-lg px-md-5 display-6 text-heading">
+                    Education, talents, and career opportunities.
+                    <span class="text-primary text-nowrap">All in one place</span>.
+                  </span>
+                  <p class="mb-3 px-2">
+                    Grow your skill with the most reliable online courses and certifications in marketing, information technology, programming, and data science.
+                  </p>
+                  <div class="d-flex align-items-center justify-content-between app-academy-md-80">
+                    <input type="search" placeholder="Find your post.." class="form-control me-2">
+                    <button type="submit" class="btn btn-primary btn-icon"><i class="mdi mdi-magnify"></i></button>
+                  </div>
+                </div>
+                <div class="app-academy-md-25 d-flex align-items-end justify-content-end">
+                 
+                </div>
+              </div>
+            </div>
+            <style>
+              .upload-btn-wrapper {
+              position: relative;
+              overflow: hidden;
+              display: inline-block;
+              cursor: pointer;
+              }	  
+              .upload-btn-wrapper input[type=file] {
+              font-size: 100px;
+              position: absolute;
+              left: 0;
+              top: 0;
+              cursor: pointer;
+              width: 50%;
+              opacity: 0;
+              }
+              </style>
+          <form action="{% url 'personal_post' %}" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="card w-100 shadow-xss rounded-xxl border-0 ps-4 pt-4 pe-4 pb-3 mb-3">
+              <div class="card-body p-0">
+                  <a href="#" class=" font-xssss fw-600 text-grey-500 card-body p-0 d-flex align-items-center"><i class="btn-round-sm font-xs text-primary mdi mdi-post me-2 bg-greylight"></i>Create Post</a>
+              </div>
+              <div class="card-body p-0 mt-3 position-relative" >
+                 
+                  <textarea name="Context" id="post-box" class="h100 bor-0 w-100 rounded-xxl p-2 ps-5 font-xssss text-grey-500 fw-500 border-light-md theme-dark-bg" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
+              </div>
+              <div style="opacity: 0;">f</div>
+              <div class="card-body d-flex p-0 mt-0" style="padding-top: 20px;">
+                  
+                  <div class="upload-btn-wrapper" style="padding-top: 5px;padding-right: 5px;cursor: pointer;">
+                      <a href="#" class="btn rounded-pill waves-effect waves-light bg-secondary-subtle text-secondary  pe-4" style="cursor: pointer;"><i class="font-md text-danger mdi mdi-video-vintage me-2"></i><span class="d-none-xs">Videos</span></a>
+          
+                  <input  class="mdc-text-field__input"  onchange="vid()"  id="file-vid" style="width: 100%;cursor: pointer;"  type="file" name="vid" accept="video/*" />
+                  </div>
+                  <div class="upload-btn-wrapper" style="padding-top: 5px;padding-right: 5px;cursor: pointer;">
+                      <a href="#" class="btn rounded-pill waves-effect waves-light bg-secondary-subtle text-secondary "><i class="font-md text-success mdi mdi-image-plus-outline me-2"></i><span class="d-none-xs">Photos</span></a>
+                  <input  class="mdc-text-field__input" onchange="img()"  id="file-img" style="width: 100%;cursor: pointer;"  type="file" name="img" accept="image/*" />
+                  </div>
+          
+          
+                  <div class="upload-btn-wrapper" style="padding-top: 5px;">
+                      
+                  </div>
+          
+          
+                  <a href="#"   href="#" id="dropdownMenu21a" data-bs-toggle="dropdown" aria-expanded="false" class="btn rounded-pill waves-effect waves-light bg-secondary-subtle text-secondary "><i class="font-md text-info mdi mdi-link-variant-plus me-2"></i><span class="d-none-xs">Link</span></a>
+          
+              
+                      <div class="dropdown-menu dropdown-menu-end p-4 rounded-xxl border-0 shadow-lg" aria-labelledby="dropdownMenu21a">
+                          <h4 class="fw-700 font-xss text-grey-900 d-flex align-items-center"><span style="color: black;">Post Youtube Video </span></span> <i class="mdi mdi-close ms-auto font-xssss btn-round-xs bg-greylight text-grey-900 me-2"></i></h4>
+                          <div class="card-body p-0 d-flex">
+                              
+                                  <div class="col-12"> 
+                                      <iframe style="width:100%;height:100%" id="vids" src=""  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                          
+                          </div>
+                          <div  class="form-group form-floating mb-3 is-valid">
+                              <input onchange="vid0()" type="text" class="form-control" name="youtube" value="" id="vid1" placeholder="Youtube">
+                              <label class="form-control-label" for="email">Youtube Link</label>
+                           <div style="padding-top: 10px;text-align: center;">
+                              <button onclick="vid0()" type="button" style="border-width: 0cap;border-color:transparent;" class="btn btn-primary  rounded-xl"><i class="mdi mdi-play-box " style="border: #fff;padding-right: 10px;" ></i>Play</button>
+                           </div>   
+                          </div>
+                         
+                      
+                      </div>
+          
+                    
+                  <div style="text-align: right; right: 0px;padding-left: 5px;">
+                  <button type="submit" style="border-width: 0cap;border-color:transparent;" class="btn btn-primary  rounded-xl"><i class="mdi mdi-send " style="border: #fff;padding-right: 10px;" ></i> post</button>
+                  </div>
+              </div>
+          </div>
+          </form>
+          <script>
+          function vid0(){
+              console.log('dddd')
+               urls = document.getElementById('vid1')
+               if (urls.value === ''){
+                  alert('Add A Youtube Link!')
+               }else{
+               document.getElementById('vids').src='https://www.youtube.com/embed/'+urls.value
+               }
+               vid1()
+          }
+                function vid(){
+                  document.getElementById("file-img").value=""
+                  document.getElementById("vid1").value=""
+          
+                }
+                function vid1(){
+                  document.getElementById("file-img").value=""
+                  document.getElementById("file-vid").value=""
+          
+                }
+                function img(){
+                  document.getElementById("file-vid").value=""
+                  document.getElementById("vid1").value=""
+          
+                }
+          
+                
+          </script>
+            <div class="card mb-4">
+              <div class="card-header d-flex flex-wrap justify-content-between gap-3">
+                <div class="card-title mb-0 me-1">
+                  <h5 class="mb-1">My Media Posts</h5>
+                  <p class="mb-0">Total <strong style="color: red;">{{Total}}</strong> media posts you have created</p>
+                </div>
+                <div class="d-flex justify-content-md-end align-items-center gap-3 flex-wrap">
+                  <select id="select2_course_select" class="select2 form-select" data-placeholder="All Courses">
+                    <option value="">All Posts</option>
+                    <option value="all courses">New Posts</option>
+                    
+                  </select>
+          
+               
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="row gy-4 mb-4">
+                  
+                  
+                  {% for i in Posts %}
+                  {% if i.Type == "Img_Post" %}
+                  <div id='{{i.id}}' class="col-sm-6 col-lg-4">
+                    <div class="card p-2 h-100 shadow-none border">
+                      <div class="rounded-2 text-center mb-3">
+                        <a ><img class="img-fluid" src="{% get_media_prefix %}Posts/Images/{{i.Img}}.jpg?{{Rand}}" style="object-fit: cover; width: 400px;height: 400px;"   alt="tutor image 1"></a>
+                      </div>
+                      <div class="card-body p-3 pt-2">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                          <span class="badge rounded-pill bg-label-primary"><img src="{% get_media_prefix %}{{i.User}}.jpg?{{Rand}}" style="object-fit: cover; width: 50px;height: 50px;border-radius: 100px;" alt="Post Author"> 
+                          </span>
+                          <p class="d-flex align-items-center justify-content-center gap-1 mb-0">
+                            {{i.Admin}} <span class="text-warning"><i class="mdi mdi-star me-1"></i></span><span class="fw-normal">{{i.date}}</span>
+                          </p>
+                        </div>
+
+                       
+                        <a class="h5">
+                          <i class="mdi mdi-thumb-up-outline"></i> Likes : {{i.Like}}
+                          <i class="mdi mdi-comment-text-multiple-outline"></i> Comments : {{i.Comment}}
+
+                        </a>
+                        
+                        <p>{{i.Context}}</p>
+                                   
+
+
+                       
+                        <div class="d-flex flex-column flex-md-row gap-3 text-nowrap flex-wrap flex-md-nowrap  flex-lg-wrap flex-xxl-nowrap">
+                         
+                          <a  onclick="setup('{{i.id}}')" data-bs-toggle="modal" data-bs-target="#deleteModal" class="w-100 btn btn-outline-primary d-flex align-items-center col-12" >
+                            <span class="me-1">Delete</span><i class="mdi mdi-trash-can-outline lh-1 scaleX-n1-rtl"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {% elif i.Type == "Vid_Post" %}
+                  <div id='{{i.id}}' class="col-sm-6 col-lg-4">
+                    <div class="card p-2 h-100 shadow-none border">
+                      <div class="rounded-2 text-center mb-3">
+                        <a><video class="img-fluid" src="{% get_media_prefix %}Posts/Videos/{{i.Vid}}.mp4?{{Rand}}" controls style="object-fit: cover; width: 400px;height: 400px;"   alt="tutor image 1"></video></a>
+                      </div>
+                      <div class="card-body p-3 pt-2">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                          <span class="badge rounded-pill bg-label-primary"><img src="{% get_media_prefix %}{{i.User}}.jpg?{{Rand}}" style="object-fit: cover; width: 50px;height: 50px;border-radius: 100px;" alt="Post Author"> 
+                          </span>
+                          <p class="d-flex align-items-center justify-content-center gap-1 mb-0">
+                            {{i.Admin}} <span class="text-warning"><i class="mdi mdi-star me-1"></i></span><span class="fw-normal">{{i.date}}</span>
+                          </p>
+                        </div>
+
+                       
+                        <a class="h5">
+                          <i class="mdi mdi-thumb-up-outline"></i> Likes : {{i.Like}}
+                          <i class="mdi mdi-comment-text-multiple-outline"></i> Comments : {{i.Comment}}
+
+                        </a>
+                        
+                        <p>{{i.Context}}</p>
+                                   
+
+
+                       
+                         <div class="d-flex flex-column flex-md-row gap-3 text-nowrap flex-wrap flex-md-nowrap  flex-lg-wrap flex-xxl-nowrap">
+                         
+                          <a  onclick="setup('{{i.id}}')" data-bs-toggle="modal" data-bs-target="#deleteModal" class="w-100 btn btn-outline-primary d-flex align-items-center col-12" >
+                            <span class="me-1">Delete</span><i class="mdi mdi-trash-can-outline lh-1 scaleX-n1-rtl"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {% elif i.Type == "Youtube" %}
+                  <div id='{{i.id}}' class="col-sm-6 col-lg-4">
+                    <div class="card p-2 h-100 shadow-none border">
+                      <div class="rounded-2 text-center mb-3">
+                        <a>
+										      <iframe  style="object-fit: cover; width: 400px;height: 400px;" src="https://www.youtube.com/embed/{{i.Link}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                          </video></a>
+                      </div>
+                      <div class="card-body p-3 pt-2">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                          <span class="badge rounded-pill bg-label-primary"><img src="{% get_media_prefix %}{{i.User}}.jpg?{{Rand}}" style="object-fit: cover; width: 50px;height: 50px;border-radius: 100px;" alt="Post Author"> 
+                          </span>
+                          <p class="d-flex align-items-center justify-content-center gap-1 mb-0">
+                            {{i.Admin}} <span class="text-warning"><i class="mdi mdi-star me-1"></i></span><span class="fw-normal">{{i.date}}</span>
+                          </p>
+                        </div>
+
+                       
+                        <a class="h5">
+                          <i class="mdi mdi-thumb-up-outline"></i> Likes : {{i.Like}}
+                          <i class="mdi mdi-comment-text-multiple-outline"></i> Comments : {{i.Comment}}
+
+                        </a>
+                        
+                        <p>{{i.Context}}</p>
+                                   
+
+
+                       
+                         <div class="d-flex flex-column flex-md-row gap-3 text-nowrap flex-wrap flex-md-nowrap  flex-lg-wrap flex-xxl-nowrap">
+                         
+                          <a  onclick="setup('{{i.id}}')" data-bs-toggle="modal" data-bs-target="#deleteModal" class="w-100 btn btn-outline-primary d-flex align-items-center col-12" >
+                            <span class="me-1">Delete</span><i class="mdi mdi-trash-can-outline lh-1 scaleX-n1-rtl"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {% else %}
+                  <div id='{{i.id}}' class="col-sm-6 col-lg-4">
+                    <div class="card p-2 h-100 shadow-none border">
+                      
+                      <div class="card-body p-3 pt-2">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                          <span class="badge rounded-pill bg-label-primary"><img src="{% get_media_prefix %}{{i.User}}.jpg?{{Rand}}" style="object-fit: cover; width: 50px;height: 50px;border-radius: 100px;" alt="Post Author"> 
+                          </span>
+                          <p class="d-flex align-items-center justify-content-center gap-1 mb-0">
+                            {{i.Admin}} <span class="text-warning"><i class="mdi mdi-star me-1"></i></span><span class="fw-normal">{{i.date}}</span>
+                          </p>
+                        </div>
+
+                       
+                        <a class="h5">
+                          <i class="mdi mdi-thumb-up-outline"></i> Likes : {{i.Like}}
+                          <i class="mdi mdi-comment-text-multiple-outline"></i> Comments : {{i.Comment}}
+
+                        </a>
+                        
+                        <p>{{i.Context}}</p>
+                                   
+
+
+                       
+                        <div class="d-flex flex-column flex-md-row gap-3 text-nowrap flex-wrap flex-md-nowrap  flex-lg-wrap flex-xxl-nowrap">
+                         
+                          <a  onclick="setup('{{i.id}}')" data-bs-toggle="modal" data-bs-target="#deleteModal" class="w-100 btn btn-outline-primary d-flex align-items-center col-12" >
+                            <span class="me-1">Delete</span><i class="mdi mdi-trash-can-outline lh-1 scaleX-n1-rtl"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {% endif %}
+                 {% endfor %}
+                  
+                  
+                  
+                  
+                  
+                 
+                </div>
+                
+              </div>
+            </div>
+          
+           
+            
+          </div>
+        <div class="row">
+
+										
+										
+						<nav aria-label="Page navigation example p-0" style="text-align: center;padding-bottom: 100px;">
+              <span class="step-links">
+                {% if page_obj.has_previous %}
+                  <a class="btn btn-outline-secondary" href="?page=1">&laquo; first</a>
+                  <a class="btn btn-outline-secondary" href="?page={{ page_obj.previous_page_number }}">previous</a>
+                {% endif %}
+            
+                <span class="current">
+                  Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                </span>
+            
+                {% for num in page_obj.paginator.page_range %}
+                  {% if num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                    {% if page_obj.number == num %}
+                      <span class="btn btn-secondary">{{ num }}</span>
+                    {% else %}
+                      <a class="btn btn-outline-secondary" href="?page={{ num }}">{{ num }}</a>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+            
+                {% if page_obj.has_next %}
+                  <a class="btn btn-outline-secondary" href="?page={{ page_obj.next_page_number }}">next</a>
+                  <a class="btn btn-outline-secondary" href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                {% endif %}
+              </span>
+            </nav>
+            
+            
+          </div>
+
+      </div>
+          <!-- / Content -->
+
+          <div class="modal fade contentmodal" id="deleteModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content doctor-profile">
+                    <div class="modal-header pb-0 border-bottom-0  justify-content-end">
+                        <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><i class="feather-x-circle"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="delete-wrap text-center">
+                            <div class="del-icon"><i class="feather-x-circle"></i></div>
+                            <h4>Type "DELETE" in below to delete this.</h4>
+                            <div class="submit-section">
+                                <input id="pass2" class="form-control" type="text" id="test" style="text-align: center;">
+
+                            </div>	
+                            <div style="padding-top: 20px;" class="submit-section">
+                                <button onclick="deletePost()"  class="btn btn-danger me-2" id="si_button">Delete This</button>
+                               
+                            </div>								
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+          <input type="hidden" value="" id='hold_id'>
+          
+          
+          <script>
+          
+          
+          
+      function deletePost() {
+    var state = document.getElementById("hold_id");
+    let data = JSON.stringify({
+        id: state.value,
+    });
+
+    fetch("{% url 'view_media_posts' %}", {
+        method: 'POST',
+        body: data,
+        headers: {
+            'X-CSRFToken': '{{ csrf_token }}',
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+        },
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data === 'Ok') {
+            document.getElementById(state.value).remove(); 
+            state.value = ""; 
+            document.getElementById("pass2").value = "";
+            alert("Post has been deleted successfully!");
+            Close();
+        } else {
+            alert("An error occurred while deleting the post!");
+        }
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        alert("Something went wrong. Please try again.");
+    });
+}
+
+        
+        
+      
+          function setup(id){
+            document.getElementById('hold_id').value=id
+          }
+          
+    
+        setInterval(load_all,1000);
+        function load_all(){
+           
+        
+            var pass2 = document.getElementById("pass2").value
+        if (pass2==="DELETE"){
+        
+         document.getElementById("si_button").disabled = false;
+        }else{
+         document.getElementById("si_button").disabled = true;
+        }   
+        }  
+        
+          </script>
+
+{% include "New/Extra/footer.html" %}

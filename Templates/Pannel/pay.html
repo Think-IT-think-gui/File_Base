@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+  {% include "Pannel/Extra.html" %}
+
+			<section class="content">
+				<header class="main-header">
+					<div class="main-header__nav">
+						<h1 class="main-header__title">
+							<i class="pe-7f-home"></i>
+							<span>Dashboard</span>
+						</h1>
+						<ul class="main-header__breadcrumb">
+
+						</ul>
+					</div>
+
+					<div class="main-header__date">
+						<input type="radio" id="radio_date_1" name="tab-radio" value="today" checked>
+						<!--
+					-->
+
+					<input type="radio" id="radio_date_2" name="tab-radio" value="yesterday">
+						<!--
+					-->
+
+						<!--
+					-->
+						<button>
+							<i class="pe-7f-date"></i>
+							<span>{{Date}}</span>
+						</button>
+					</div>
+				</header>
+				<!-- /main-header -->
+
+
+				<!-- row -->
+				<form method="post">
+				<div class="col-md-4  col-md-offset-4">
+					<article class="widget widget__login">
+						<header class="widget__header one-btn">
+							<div class="widget__title">
+								<div class="main-logo"></div>Please enter an amount
+							</div>
+							<div class="widget__config">
+								<a href="#" ><i class="pe-7s-help1"></i></a>
+							</div>
+						</header>
+
+
+					<div class="widget__content">
+						{% csrf_token %}
+						<input type="text" placeholder="" readonly>
+						<input type="number" step="0.1" name="pay" placeholder="0.0" style="font-size: 30px;height: 55px;width: 100%;background-color: rgba(0, 0, 0, 0.3);border: 0cap;padding-left: 10px;text-align: center;">
+						<input type="text" placeholder="" readonly>
+						<button type="submit">Make Payment</button>
+				</div>
+
+					</article><!-- /widget -->
+				</div>
+
+				<!-- row -->
+
+
+				<div>
+				</form>
+
+
+				<footer class="footer-brand">
+					<img src="img/logo_trim.png">
+					<p>© 2023 Kingdom Dynasty. All rights reserved</p>
+				</footer>
+
+			</section>
+			<!-- /content -->
+
+		</div>
+
+		<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/main.js"></script>
+		<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/amcharts/amcharts.js"></script>
+		<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/amcharts/serial.js"></script>
+		<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/amcharts/pie.js"></script>
+		<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/chart.js"></script>
+	</body>
+</html>

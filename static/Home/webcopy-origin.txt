@@ -1,0 +1,3404 @@
+Uri: https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap
+File Name: D:\POCK\preyantechnosys.com\css2-1
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap
+File Name: D:\POCK\preyantechnosys.com\css2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/playfairdisplay/v36/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_gGUbtY.ttf
+File Name: D:\POCK\preyantechnosys.com\s\playfairdisplay\v36\nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_gGUbtY.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/playfairdisplay/v36/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_iiUbtY.ttf
+File Name: D:\POCK\preyantechnosys.com\s\playfairdisplay\v36\nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_iiUbtY.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/playfairdisplay/v36/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_k-UbtY.ttf
+File Name: D:\POCK\preyantechnosys.com\s\playfairdisplay\v36\nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_k-UbtY.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/playfairdisplay/v36/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_naUbtY.ttf
+File Name: D:\POCK\preyantechnosys.com\s\playfairdisplay\v36\nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_naUbtY.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/playfairdisplay/v36/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_pqTbtY.ttf
+File Name: D:\POCK\preyantechnosys.com\s\playfairdisplay\v36\nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_pqTbtY.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/playfairdisplay/v36/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf
+File Name: D:\POCK\preyantechnosys.com\s\playfairdisplay\v36\nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/playfairdisplay/v36/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKd3vUDQ.ttf
+File Name: D:\POCK\preyantechnosys.com\s\playfairdisplay\v36\nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKd3vUDQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/playfairdisplay/v36/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvUDQ.ttf
+File Name: D:\POCK\preyantechnosys.com\s\playfairdisplay\v36\nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvUDQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/playfairdisplay/v36/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKebukDQ.ttf
+File Name: D:\POCK\preyantechnosys.com\s\playfairdisplay\v36\nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKebukDQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/playfairdisplay/v36/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiukDQ.ttf
+File Name: D:\POCK\preyantechnosys.com\s\playfairdisplay\v36\nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiukDQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/playfairdisplay/v36/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFukDQ.ttf
+File Name: D:\POCK\preyantechnosys.com\s\playfairdisplay\v36\nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFukDQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/playfairdisplay/v36/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsukDQ.ttf
+File Name: D:\POCK\preyantechnosys.com\s\playfairdisplay\v36\nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsukDQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v20/pxiAyp8kv8JHgFVrJJLmE3tF.ttf
+File Name: D:\POCK\preyantechnosys.com\s\poppins\v20\pxiAyp8kv8JHgFVrJJLmE3tF.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5V1s.ttf
+File Name: D:\POCK\preyantechnosys.com\s\poppins\v20\pxiByp8kv8JHgFVrLBT5V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7V1s.ttf
+File Name: D:\POCK\preyantechnosys.com\s\poppins\v20\pxiByp8kv8JHgFVrLCz7V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4V1s.ttf
+File Name: D:\POCK\preyantechnosys.com\s\poppins\v20\pxiByp8kv8JHgFVrLDD4V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8V1s.ttf
+File Name: D:\POCK\preyantechnosys.com\s\poppins\v20\pxiByp8kv8JHgFVrLDz8V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6V1s.ttf
+File Name: D:\POCK\preyantechnosys.com\s\poppins\v20\pxiByp8kv8JHgFVrLEj6V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_V1s.ttf
+File Name: D:\POCK\preyantechnosys.com\s\poppins\v20\pxiByp8kv8JHgFVrLFj_V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9V1s.ttf
+File Name: D:\POCK\preyantechnosys.com\s\poppins\v20\pxiByp8kv8JHgFVrLGT9V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm111lEA.ttf
+File Name: D:\POCK\preyantechnosys.com\s\poppins\v20\pxiDyp8kv8JHgFVrJJLm111lEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm21llEA.ttf
+File Name: D:\POCK\preyantechnosys.com\s\poppins\v20\pxiDyp8kv8JHgFVrJJLm21llEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm81xlEA.ttf
+File Name: D:\POCK\preyantechnosys.com\s\poppins\v20\pxiDyp8kv8JHgFVrJJLm81xlEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmg1hlEA.ttf
+File Name: D:\POCK\preyantechnosys.com\s\poppins\v20\pxiDyp8kv8JHgFVrJJLmg1hlEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmr19lEA.ttf
+File Name: D:\POCK\preyantechnosys.com\s\poppins\v20\pxiDyp8kv8JHgFVrJJLmr19lEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmv1plEA.ttf
+File Name: D:\POCK\preyantechnosys.com\s\poppins\v20\pxiDyp8kv8JHgFVrJJLmv1plEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmy15lEA.ttf
+File Name: D:\POCK\preyantechnosys.com\s\poppins\v20\pxiDyp8kv8JHgFVrJJLmy15lEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJA.ttf
+File Name: D:\POCK\preyantechnosys.com\s\poppins\v20\pxiEyp8kv8JHgFVrFJA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrJJLedw.ttf
+File Name: D:\POCK\preyantechnosys.com\s\poppins\v20\pxiGyp8kv8JHgFVrJJLedw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrLPTedw.ttf
+File Name: D:\POCK\preyantechnosys.com\s\poppins\v20\pxiGyp8kv8JHgFVrLPTedw.ttf
+Content Type: font/ttf
+
+Uri: https://preyantechnosys.com/html/truvik/
+File Name: D:\POCK\preyantechnosys.com\html\truvik\index.htm
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/about-us-2.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\about-us-2.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/about-us.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\about-us.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/australia.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\australia.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/blog-left-sidebar.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\blog-left-sidebar.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/blog-right-sidebar.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\blog-right-sidebar.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/blog.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\blog.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/business-visa.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\business-visa.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/contact-us.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\contact-us.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/{%get_static_prefix%}Home/animate.css
+File Name: D:\POCK\preyantechnosys.com\html\truvik\css\animate.css
+Content Type: text/css
+
+Uri: https://preyantechnosys.com/html/truvik/{%get_static_prefix%}Home/aos.css
+File Name: D:\POCK\preyantechnosys.com\html\truvik\css\aos.css
+Content Type: text/css
+
+Uri: https://preyantechnosys.com/html/truvik/{%get_static_prefix%}Home/bootstrap.min.css
+File Name: D:\POCK\preyantechnosys.com\html\truvik\css\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://preyantechnosys.com/html/truvik/{%get_static_prefix%}Home/flag-icon.css
+File Name: D:\POCK\preyantechnosys.com\html\truvik\css\flag-icon.css
+Content Type: text/css
+
+Uri: https://preyantechnosys.com/html/truvik/{%get_static_prefix%}Home/flaticon.css
+File Name: D:\POCK\preyantechnosys.com\html\truvik\css\flaticon.css
+Content Type: text/css
+
+Uri: https://preyantechnosys.com/html/truvik/{%get_static_prefix%}Home/font-awesome.css
+File Name: D:\POCK\preyantechnosys.com\html\truvik\css\font-awesome.css
+Content Type: text/css
+
+Uri: https://preyantechnosys.com/html/truvik/{%get_static_prefix%}Home/fontello.css
+File Name: D:\POCK\preyantechnosys.com\html\truvik\css\fontello.css
+Content Type: text/css
+
+Uri: https://preyantechnosys.com/html/truvik/{%get_static_prefix%}Home/main.css
+File Name: D:\POCK\preyantechnosys.com\html\truvik\css\main.css
+Content Type: text/css
+
+Uri: https://preyantechnosys.com/html/truvik/{%get_static_prefix%}Home/megamenu.css
+File Name: D:\POCK\preyantechnosys.com\html\truvik\css\megamenu.css
+Content Type: text/css
+
+Uri: https://preyantechnosys.com/html/truvik/{%get_static_prefix%}Home/prettyPhoto.css
+File Name: D:\POCK\preyantechnosys.com\html\truvik\css\prettyPhoto.css
+Content Type: text/css
+
+Uri: https://preyantechnosys.com/html/truvik/{%get_static_prefix%}Home/responsive.css
+File Name: D:\POCK\preyantechnosys.com\html\truvik\css\responsive.css
+Content Type: text/css
+
+Uri: https://preyantechnosys.com/html/truvik/{%get_static_prefix%}Home/shortcodes.css
+File Name: D:\POCK\preyantechnosys.com\html\truvik\css\shortcodes.css
+Content Type: text/css
+
+Uri: https://preyantechnosys.com/html/truvik/{%get_static_prefix%}Home/slick.css
+File Name: D:\POCK\preyantechnosys.com\html\truvik\css\slick.css
+Content Type: text/css
+
+Uri: https://preyantechnosys.com/html/truvik/{%get_static_prefix%}Home/themify-icons.css
+File Name: D:\POCK\preyantechnosys.com\html\truvik\css\themify-icons.css
+Content Type: text/css
+
+Uri: https://preyantechnosys.com/html/truvik/{%get_static_prefix%}Home/twentytwenty.css
+File Name: D:\POCK\preyantechnosys.com\html\truvik\css\twentytwenty.css
+Content Type: text/css
+
+Uri: https://preyantechnosys.com/html/truvik/diplomatic-visa.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\diplomatic-visa.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/england.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\england.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/error.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\error.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/faq.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\faq.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ad.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ad.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ae.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ae.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/af.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\af.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ag.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ag.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ai.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ai.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/al.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\al.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/am.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\am.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ao.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ao.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/aq.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\aq.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ar.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ar.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/as.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\as.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/at.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\at.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/au.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\au.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/aw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\aw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ax.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ax.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/az.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\az.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ba.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ba.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/bb.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\bb.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/bd.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\bd.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/be.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\be.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/bf.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\bf.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/bg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\bg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/bh.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\bh.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/bi.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\bi.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/bj.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\bj.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/bl.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\bl.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/bm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\bm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/bn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\bn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/bo.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\bo.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/bq.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\bq.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/br.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\br.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/bs.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\bs.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/bt.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\bt.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/bv.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\bv.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/bw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\bw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/by.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\by.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/bz.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\bz.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ca.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ca.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/cc.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\cc.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/cd.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\cd.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/cf.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\cf.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/cg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\cg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ch.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ch.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ci.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ci.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ck.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ck.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/cl.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\cl.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/cm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\cm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/cn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\cn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/co.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\co.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/cr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\cr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/cu.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\cu.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/cv.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\cv.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/cw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\cw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/cx.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\cx.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/cy.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\cy.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/cz.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\cz.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/de.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\de.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/dj.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\dj.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/dk.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\dk.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/dm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\dm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/do.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\do.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/dz.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\dz.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ec.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ec.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ee.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ee.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/eg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\eg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/eh.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\eh.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/er.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\er.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/es-ca.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\es-ca.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/es.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\es.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/et.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\et.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/eu.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\eu.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/fi.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\fi.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/fj.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\fj.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/fk.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\fk.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/fm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\fm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/fo.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\fo.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/fr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\fr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ga.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ga.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gb-eng.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gb-eng.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gb-nir.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gb-nir.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gb-sct.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gb-sct.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gb-wls.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gb-wls.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gb.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gb.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gd.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gd.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ge.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ge.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gf.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gf.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gh.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gh.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gi.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gi.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gl.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gl.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gp.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gp.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gq.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gq.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gs.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gs.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gt.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gt.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gu.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gu.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/gy.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\gy.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/hk.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\hk.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/hm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\hm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/hn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\hn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/hr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\hr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ht.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ht.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/hu.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\hu.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/id.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\id.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ie.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ie.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/il.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\il.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/im.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\im.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/in.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\in.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/io.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\io.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/iq.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\iq.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ir.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ir.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/is.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\is.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/it.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\it.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/je.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\je.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/jm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\jm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/jo.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\jo.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/jp.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\jp.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ke.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ke.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/kg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\kg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/kh.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\kh.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ki.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ki.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/km.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\km.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/kn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\kn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/kp.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\kp.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/kr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\kr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/kw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\kw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ky.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ky.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/kz.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\kz.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/la.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\la.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/lb.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\lb.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/lc.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\lc.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/li.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\li.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/lk.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\lk.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/lr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\lr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ls.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ls.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/lt.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\lt.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/lu.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\lu.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/lv.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\lv.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ly.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ly.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ma.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ma.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/mc.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\mc.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/md.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\md.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/me.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\me.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/mf.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\mf.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/mg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\mg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/mh.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\mh.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/mk.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\mk.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ml.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ml.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/mm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\mm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/mn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\mn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/mo.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\mo.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/mp.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\mp.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/mq.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\mq.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/mr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\mr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ms.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ms.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/mt.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\mt.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/mu.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\mu.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/mv.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\mv.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/mw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\mw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/mx.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\mx.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/my.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\my.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/mz.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\mz.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/na.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\na.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/nc.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\nc.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ne.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ne.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/nf.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\nf.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ng.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ng.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ni.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ni.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/nl.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\nl.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/no.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\no.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/np.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\np.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/nr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\nr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/nu.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\nu.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/nz.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\nz.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/om.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\om.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/pa.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\pa.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/pe.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\pe.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/pf.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\pf.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/pg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\pg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ph.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ph.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/pk.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\pk.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/pl.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\pl.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/pm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\pm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/pn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\pn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/pr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\pr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ps.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ps.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/pt.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\pt.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/pw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\pw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/py.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\py.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/qa.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\qa.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/re.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\re.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ro.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ro.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/rs.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\rs.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ru.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ru.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/rw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\rw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/sa.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\sa.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/sb.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\sb.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/sc.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\sc.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/sd.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\sd.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/se.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\se.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/sg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\sg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/sh.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\sh.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/si.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\si.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/sj.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\sj.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/sk.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\sk.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/sl.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\sl.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/sm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\sm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/sn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\sn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/so.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\so.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/sr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\sr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ss.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ss.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/st.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\st.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/sv.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\sv.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/sx.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\sx.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/sy.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\sy.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/sz.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\sz.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/tc.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\tc.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/td.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\td.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/tf.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\tf.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/tg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\tg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/th.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\th.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/tj.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\tj.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/tk.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\tk.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/tl.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\tl.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/tm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\tm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/tn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\tn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/to.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\to.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/tr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\tr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/tt.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\tt.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/tv.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\tv.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/tw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\tw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/tz.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\tz.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ua.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ua.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ug.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ug.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/um.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\um.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/un.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\un.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/us.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\us.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/uy.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\uy.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/uz.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\uz.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/va.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\va.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/vc.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\vc.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ve.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ve.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/vg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\vg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/vi.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\vi.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/vn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\vn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/vu.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\vu.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/wf.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\wf.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ws.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ws.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/xk.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\xk.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/ye.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\ye.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/yt.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\yt.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/za.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\za.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/zm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\zm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/1x1/zw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\1x1\zw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ad.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ad.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ae.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ae.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/af.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\af.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ag.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ag.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ai.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ai.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/al.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\al.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/am.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\am.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ao.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ao.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/aq.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\aq.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ar.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ar.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/as.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\as.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/at.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\at.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/au.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\au.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/aw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\aw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ax.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ax.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/az.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\az.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ba.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ba.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/bb.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\bb.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/bd.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\bd.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/be.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\be.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/bf.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\bf.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/bg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\bg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/bh.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\bh.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/bi.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\bi.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/bj.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\bj.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/bl.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\bl.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/bm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\bm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/bn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\bn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/bo.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\bo.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/bq.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\bq.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/br.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\br.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/bs.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\bs.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/bt.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\bt.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/bv.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\bv.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/bw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\bw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/by.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\by.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/bz.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\bz.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ca.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ca.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/cc.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\cc.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/cd.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\cd.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/cf.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\cf.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/cg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\cg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ch.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ch.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ci.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ci.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ck.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ck.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/cl.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\cl.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/cm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\cm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/cn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\cn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/co.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\co.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/cr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\cr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/cu.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\cu.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/cv.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\cv.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/cw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\cw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/cx.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\cx.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/cy.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\cy.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/cz.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\cz.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/de.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\de.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/dj.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\dj.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/dk.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\dk.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/dm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\dm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/do.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\do.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/dz.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\dz.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ec.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ec.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ee.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ee.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/eg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\eg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/eh.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\eh.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/er.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\er.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/es-ca.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\es-ca.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/es.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\es.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/et.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\et.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/eu.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\eu.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/fi.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\fi.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/fj.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\fj.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/fk.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\fk.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/fm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\fm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/fo.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\fo.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/fr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\fr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ga.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ga.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gb-eng.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gb-eng.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gb-nir.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gb-nir.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gb-sct.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gb-sct.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gb-wls.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gb-wls.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gb.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gb.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gd.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gd.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ge.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ge.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gf.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gf.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gh.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gh.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gi.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gi.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gl.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gl.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gp.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gp.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gq.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gq.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gs.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gs.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gt.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gt.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gu.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gu.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/gy.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\gy.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/hk.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\hk.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/hm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\hm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/hn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\hn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/hr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\hr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ht.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ht.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/hu.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\hu.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/id.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\id.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ie.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ie.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/il.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\il.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/im.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\im.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/in.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\in.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/io.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\io.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/iq.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\iq.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ir.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ir.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/is.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\is.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/it.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\it.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/je.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\je.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/jm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\jm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/jo.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\jo.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/jp.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\jp.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ke.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ke.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/kg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\kg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/kh.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\kh.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ki.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ki.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/km.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\km.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/kn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\kn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/kp.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\kp.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/kr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\kr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/kw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\kw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ky.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ky.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/kz.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\kz.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/la.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\la.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/lb.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\lb.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/lc.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\lc.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/li.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\li.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/lk.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\lk.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/lr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\lr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ls.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ls.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/lt.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\lt.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/lu.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\lu.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/lv.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\lv.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ly.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ly.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ma.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ma.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/mc.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\mc.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/md.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\md.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/me.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\me.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/mf.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\mf.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/mg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\mg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/mh.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\mh.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/mk.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\mk.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ml.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ml.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/mm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\mm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/mn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\mn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/mo.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\mo.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/mp.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\mp.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/mq.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\mq.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/mr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\mr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ms.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ms.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/mt.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\mt.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/mu.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\mu.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/mv.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\mv.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/mw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\mw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/mx.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\mx.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/my.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\my.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/mz.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\mz.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/na.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\na.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/nc.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\nc.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ne.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ne.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/nf.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\nf.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ng.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ng.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ni.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ni.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/nl.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\nl.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/no.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\no.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/np.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\np.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/nr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\nr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/nu.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\nu.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/nz.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\nz.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/om.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\om.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/pa.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\pa.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/pe.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\pe.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/pf.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\pf.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/pg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\pg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ph.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ph.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/pk.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\pk.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/pl.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\pl.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/pm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\pm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/pn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\pn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/pr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\pr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ps.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ps.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/pt.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\pt.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/pw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\pw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/py.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\py.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/qa.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\qa.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/re.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\re.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ro.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ro.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/rs.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\rs.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ru.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ru.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/rw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\rw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/sa.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\sa.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/sb.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\sb.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/sc.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\sc.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/sd.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\sd.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/se.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\se.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/sg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\sg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/sh.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\sh.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/si.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\si.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/sj.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\sj.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/sk.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\sk.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/sl.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\sl.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/sm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\sm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/sn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\sn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/so.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\so.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/sr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\sr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ss.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ss.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/st.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\st.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/sv.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\sv.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/sx.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\sx.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/sy.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\sy.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/sz.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\sz.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/tc.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\tc.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/td.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\td.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/tf.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\tf.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/tg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\tg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/th.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\th.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/tj.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\tj.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/tk.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\tk.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/tl.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\tl.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/tm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\tm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/tn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\tn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/to.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\to.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/tr.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\tr.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/tt.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\tt.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/tv.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\tv.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/tw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\tw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/tz.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\tz.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ua.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ua.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ug.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ug.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/um.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\um.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/un.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\un.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/us.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\us.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/uy.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\uy.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/uz.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\uz.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/va.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\va.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/vc.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\vc.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ve.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ve.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/vg.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\vg.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/vi.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\vi.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/vn.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\vn.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/vu.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\vu.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/wf.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\wf.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ws.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ws.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/xk.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\xk.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/ye.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\ye.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/yt.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\yt.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/za.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\za.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/zm.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\zm.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/flags/4x3/zw.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\flags\4x3\zw.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/flaticon.eot?f8638b9cfdaf466de8e8e2c7d9fa9cd0
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\flaticon.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/flaticon.svg?f8638b9cfdaf466de8e8e2c7d9fa9cd0
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\flaticon.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/flaticon.ttf?f8638b9cfdaf466de8e8e2c7d9fa9cd0
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\flaticon.ttf
+Content Type: font/ttf
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/flaticon.woff2?f8638b9cfdaf466de8e8e2c7d9fa9cd0
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\flaticon.woff2
+Content Type: font/woff2
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/flaticon.woff?f8638b9cfdaf466de8e8e2c7d9fa9cd0
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\flaticon.woff
+Content Type: font/woff
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/fontawesome-webfont.eot?
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\fontawesome-webfont-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/fontawesome-webfont.eot?v=4.7.0
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\fontawesome-webfont.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/fontawesome-webfont.svg?v=4.7.0
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\fontawesome-webfont.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/fontawesome-webfont.ttf?v=4.7.0
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\fontawesome-webfont.ttf
+Content Type: font/ttf
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/fontawesome-webfont.woff2?v=4.7.0
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\fontawesome-webfont.woff2
+Content Type: font/woff2
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/fontawesome-webfont.woff?v=4.7.0
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\fontawesome-webfont.woff
+Content Type: font/woff
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/fontello.eot?84748422
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\fontello.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/fontello.svg?84748422
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\fontello.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/fontello.ttf?84748422
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\fontello.ttf
+Content Type: font/ttf
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/fontello.woff2?84748422
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\fontello.woff2
+Content Type: font/woff2
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/fontello.woff?84748422
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\fontello.woff
+Content Type: font/woff
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/themify.eot?
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\themify-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/themify.eot?-fvbane
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\themify.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/themify.svg?-fvbane
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\themify.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/themify.ttf?-fvbane
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\themify.ttf
+Content Type: font/ttf
+
+Uri: https://preyantechnosys.com/html/truvik/fonts/themify.woff?-fvbane
+File Name: D:\POCK\preyantechnosys.com\html\truvik\fonts\themify.woff
+Content Type: font/woff
+
+Uri: https://preyantechnosys.com/html/truvik/france.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\france.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/free-visa.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\free-visa.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/gma-coaching.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\gma-coaching.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/gre-coaching.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\gre-coaching.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/homepage-2.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\homepage-2.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/homepage-3.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\homepage-3.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/ielts-coaching.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\ielts-coaching.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/images/agent.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\agent.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-1.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-1.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-10.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-10.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-11.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-11.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-12.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-12.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-13.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-13.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-14.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-14.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-15.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-15.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-16.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-16.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-17.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-17.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-18.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-18.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-19.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-19.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-2.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-2.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-20.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-20.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-21.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-21.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-22.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-22.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-23.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-23.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-24.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-24.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-25.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-25.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-26.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-26.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-27.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-27.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-28.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-28.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-29.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-29.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-3.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-3.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-30.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-30.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-31.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-31.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-32.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-32.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-33.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-33.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-34.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-34.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-35.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-35.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-36.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-36.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-37.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-37.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-4.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-4.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-5.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-5.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-6.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-6.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-7.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-7.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-8.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-8.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/col-bgimage-9.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\col-bgimage-9.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/footer-bg.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\footer-bg.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/row-bg-img-1.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\row-bg-img-1.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/row-bg-img-2.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\row-bg-img-2.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/row-bg-img-3.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\row-bg-img-3.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/bg-image/row-bg-img-4.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\bg-image\row-bg-img-4.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/blog/05.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\blog\05.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/blog/06.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\blog\06.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/blog/07.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\blog\07.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/blog/08.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\blog\08.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/blog/09.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\blog\09.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/certificate/01.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\certificate\01.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/certificate/02.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\certificate\02.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/certificate/03.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\certificate\03.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/client/client-1.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\client\client-1.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/client/client-10.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\client\client-10.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/client/client-2.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\client\client-2.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/client/client-3.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\client\client-3.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/client/client-4.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\client\client-4.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/client/client-5.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\client\client-5.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/client/client-6.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\client\client-6.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/client/client-7.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\client\client-7.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/client/client-8.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\client\client-8.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/client/client-9.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\client\client-9.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/contact-us/01.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\contact-us\01.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/contact-us/02.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\contact-us\02.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/contact-us/03.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\contact-us\03.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/error.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\error.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/favicon.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\favicon.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/flag-1.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\flag-1.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/flag-2.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\flag-2.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/flag-3.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\flag-3.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/flag-4.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\flag-4.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/footer-img.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\footer-img.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/gallery/01.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\gallery\01.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/gallery/02.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\gallery\02.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/gallery/03.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\gallery\03.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/gallery/04.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\gallery\04.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/logo-img.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\logo-img.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/images/logo-light.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\logo-light.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/images/logo-white.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\logo-white.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/images/pagetitle-bg-about.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\pagetitle-bg-about.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/pagetitle-bg-country.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\pagetitle-bg-country.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/pagetitle-bg-services.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\pagetitle-bg-services.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/pagetitle-bg-team.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\pagetitle-bg-team.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/pagetitle-bg.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\pagetitle-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/plane.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\plane.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/portfolio/01.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\portfolio\01.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/portfolio/02.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\portfolio\02.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/portfolio/03.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\portfolio\03.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/portfolio/04.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\portfolio\04.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/portfolio/05.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\portfolio\05.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/portfolio/06.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\portfolio\06.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/portfolio/07.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\portfolio\07.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/portfolio/08.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\portfolio\08.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/dark_rounded/btnNext.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\dark_rounded\btnNext.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/dark_rounded/btnPrevious.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\dark_rounded\btnPrevious.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/dark_rounded/contentPattern.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\dark_rounded\contentPattern.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/dark_rounded/loader.gif
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\dark_rounded\loader.gif
+Content Type: image/gif
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/dark_rounded/sprite.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\dark_rounded\sprite.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/dark_square/btnNext.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\dark_square\btnNext.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/dark_square/btnPrevious.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\dark_square\btnPrevious.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/dark_square/loader.gif
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\dark_square\loader.gif
+Content Type: image/gif
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/dark_square/sprite.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\dark_square\sprite.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/default/default_thumb.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\default\default_thumb.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/default/loader.gif
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\default\loader.gif
+Content Type: image/gif
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/default/sprite.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\default\sprite.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/default/sprite_next.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\default\sprite_next.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/default/sprite_prev.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\default\sprite_prev.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/default/sprite_x.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\default\sprite_x.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/default/sprite_y.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\default\sprite_y.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/facebook/btnNext.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\facebook\btnNext.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/facebook/btnPrevious.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\facebook\btnPrevious.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/facebook/contentPatternBottom.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\facebook\contentPatternBottom.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/facebook/contentPatternLeft.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\facebook\contentPatternLeft.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/facebook/contentPatternRight.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\facebook\contentPatternRight.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/facebook/contentPatternTop.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\facebook\contentPatternTop.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/facebook/default_thumbnail.gif
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\facebook\default_thumbnail.gif
+Content Type: image/gif
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/facebook/loader.gif
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\facebook\loader.gif
+Content Type: image/gif
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/facebook/sprite.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\facebook\sprite.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/light_rounded/btnNext.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\light_rounded\btnNext.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/light_rounded/btnPrevious.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\light_rounded\btnPrevious.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/light_rounded/loader.gif
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\light_rounded\loader.gif
+Content Type: image/gif
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/light_rounded/sprite.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\light_rounded\sprite.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/light_square/btnNext.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\light_square\btnNext.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/light_square/btnPrevious.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\light_square\btnPrevious.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/prettyPhoto/light_square/sprite.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\prettyPhoto\light_square\sprite.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/process-1.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\process-1.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/process-2.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\process-2.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/process-3.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\process-3.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/process-4.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\process-4.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/process-box/01.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\process-box\01.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/process-box/02.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\process-box\02.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/process-box/03.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\process-box\03.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/recent-post-01.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\recent-post-01.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/recent-post-02.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\recent-post-02.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/recent-post-03.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\recent-post-03.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/search.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\search.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/images/services/services-1-896x590.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\services\services-1-896x590.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/services/services-2-896x590.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\services\services-2-896x590.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/services/services-3-896x590.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\services\services-3-896x590.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/services/services-4-896x590.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\services\services-4-896x590.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/services/services-6-896x590.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\services\services-6-896x590.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-1.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-1.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-10.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-10.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-10.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-10.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-11.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-11.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-12.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-12.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-13.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-13.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-14.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-14.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-15.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-15.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-16.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-16.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-17.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-17.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-19.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-19.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-2.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-2.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-20.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-20.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-21.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-21.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-22.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-22.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-23.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-23.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-24.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-24.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-25.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-25.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-26.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-26.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-27.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-27.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-28.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-28.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-29.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-29.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-30.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-30.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-31.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-31.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-32.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-32.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-33.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-33.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-34.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-34.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-35.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-35.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-36.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-36.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-37.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-37.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-38.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-38.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-39.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-39.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-4.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-4.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-40.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-40.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-41.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-41.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-42.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-42.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-43.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-43.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-6.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-6.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-7.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-7.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-8.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-8.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/single-img-9.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\single-img-9.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/slides/sliderbg-001.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\slides\sliderbg-001.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/slides/sliderbg-002.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\slides\sliderbg-002.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/slides/sliderbg-003.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\slides\sliderbg-003.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/slides/sliderbg-004.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\slides\sliderbg-004.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/slides/sliderbg-005.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\slides\sliderbg-005.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/slides/sliderbg-006.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\slides\sliderbg-006.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/star-rating.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\star-rating.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/stepbox/01.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\stepbox\01.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/stepbox/02.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\stepbox\02.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/stepbox/03.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\stepbox\03.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/stepbox/04.png
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\stepbox\04.png
+Content Type: image/png
+
+Uri: https://preyantechnosys.com/html/truvik/images/tab/01.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\tab\01.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/tab/02.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\tab\02.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/tab/03.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\tab\03.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/team-member/01.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\team-member\01.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/team-member/02.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\team-member\02.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/team-member/03.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\team-member\03.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/team-member/04.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\team-member\04.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/team-member/05.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\team-member\05.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/team-member/06.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\team-member\06.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/team-member/07.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\team-member\07.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/team-member/08.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\team-member\08.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/testimonial/testimonial-1-150x150.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\testimonial\testimonial-1-150x150.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/testimonial/testimonial-2-150x150.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\testimonial\testimonial-2-150x150.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/testimonial/testimonial-3-150x150.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\testimonial\testimonial-3-150x150.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/testimonial/testimonial-4-150x150.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\testimonial\testimonial-4-150x150.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/testimonial/testimonial-5-150x150.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\testimonial\testimonial-5-150x150.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/testimonial/testimonial-6-150x150.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\testimonial\testimonial-6-150x150.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/testimonial/testimonial-7-150x150.jpg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\testimonial\testimonial-7-150x150.jpg
+Content Type: image/jpeg
+
+Uri: https://preyantechnosys.com/html/truvik/images/whatsapp-logo.svg
+File Name: D:\POCK\preyantechnosys.com\html\truvik\images\whatsapp-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/{% url "home" %}
+File Name: D:\POCK\preyantechnosys.com\html\truvik\{% url "home" %}
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/india.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\india.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/italy.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\italy.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/job-visa.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\job-visa.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/js/aos.js
+File Name: D:\POCK\preyantechnosys.com\html\truvik\js\aos.js
+Content Type: application/javascript
+
+Uri: https://preyantechnosys.com/html/truvik/js/bootstrap.bundle.js
+File Name: D:\POCK\preyantechnosys.com\html\truvik\js\bootstrap.bundle.js
+Content Type: application/javascript
+
+Uri: https://preyantechnosys.com/html/truvik/js/circle-progress.min.js
+File Name: D:\POCK\preyantechnosys.com\html\truvik\js\circle-progress.min.js
+Content Type: application/javascript
+
+Uri: https://preyantechnosys.com/html/truvik/js/imagesloaded.min.js
+File Name: D:\POCK\preyantechnosys.com\html\truvik\js\imagesloaded.min.js
+Content Type: application/javascript
+
+Uri: https://preyantechnosys.com/html/truvik/js/jquery-3.6.0.min.js
+File Name: D:\POCK\preyantechnosys.com\html\truvik\js\jquery-3.6.0.min.js
+Content Type: application/javascript
+
+Uri: https://preyantechnosys.com/html/truvik/js/jquery-isotope.js
+File Name: D:\POCK\preyantechnosys.com\html\truvik\js\jquery-isotope.js
+Content Type: application/javascript
+
+Uri: https://preyantechnosys.com/html/truvik/js/jquery-migrate-3.3.2.min.js
+File Name: D:\POCK\preyantechnosys.com\html\truvik\js\jquery-migrate-3.3.2.min.js
+Content Type: application/javascript
+
+Uri: https://preyantechnosys.com/html/truvik/js/jquery-validate.js
+File Name: D:\POCK\preyantechnosys.com\html\truvik\js\jquery-validate.js
+Content Type: application/javascript
+
+Uri: https://preyantechnosys.com/html/truvik/js/jquery-waypoints.js
+File Name: D:\POCK\preyantechnosys.com\html\truvik\js\jquery-waypoints.js
+Content Type: application/javascript
+
+Uri: https://preyantechnosys.com/html/truvik/js/jquery.prettyPhoto.js
+File Name: D:\POCK\preyantechnosys.com\html\truvik\js\jquery.prettyPhoto.js
+Content Type: application/javascript
+
+Uri: https://preyantechnosys.com/html/truvik/js/jquery.twentytwenty.js
+File Name: D:\POCK\preyantechnosys.com\html\truvik\js\jquery.twentytwenty.js
+Content Type: application/javascript
+
+Uri: https://preyantechnosys.com/html/truvik/js/main.js
+File Name: D:\POCK\preyantechnosys.com\html\truvik\js\main.js
+Content Type: application/javascript
+
+Uri: https://preyantechnosys.com/html/truvik/js/numinate.min.js
+File Name: D:\POCK\preyantechnosys.com\html\truvik\js\numinate.min.js
+Content Type: application/javascript
+
+Uri: https://preyantechnosys.com/html/truvik/js/slick.min.js
+File Name: D:\POCK\preyantechnosys.com\html\truvik\js\slick.min.js
+Content Type: application/javascript
+
+Uri: https://preyantechnosys.com/html/truvik/our-team.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\our-team.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/pte-coaching.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\pte-coaching.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/revolution/assets/loader.gif
+File Name: D:\POCK\preyantechnosys.com\html\truvik\revolution\assets\loader.gif
+Content Type: image/gif
+
+Uri: https://preyantechnosys.com/html/truvik/revolution/{%get_static_prefix%}Home/rs6.css
+File Name: D:\POCK\preyantechnosys.com\html\truvik\revolution\css\rs6.css
+Content Type: text/css
+
+Uri: https://preyantechnosys.com/html/truvik/revolution/fonts/revicons/revicons.eot?5510888
+File Name: D:\POCK\preyantechnosys.com\html\truvik\revolution\fonts\revicons\revicons.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://preyantechnosys.com/html/truvik/revolution/fonts/revicons/revicons.svg?5510888
+File Name: D:\POCK\preyantechnosys.com\html\truvik\revolution\fonts\revicons\revicons.svg
+Content Type: image/svg+xml
+
+Uri: https://preyantechnosys.com/html/truvik/revolution/fonts/revicons/revicons.ttf?5510888
+File Name: D:\POCK\preyantechnosys.com\html\truvik\revolution\fonts\revicons\revicons.ttf
+Content Type: font/ttf
+
+Uri: https://preyantechnosys.com/html/truvik/revolution/fonts/revicons/revicons.woff?5510888
+File Name: D:\POCK\preyantechnosys.com\html\truvik\revolution\fonts\revicons\revicons.woff
+Content Type: font/woff
+
+Uri: https://preyantechnosys.com/html/truvik/revolution/js/revolution.tools.min.js
+File Name: D:\POCK\preyantechnosys.com\html\truvik\revolution\js\revolution.tools.min.js
+Content Type: application/javascript
+
+Uri: https://preyantechnosys.com/html/truvik/revolution/js/rs6.min.js
+File Name: D:\POCK\preyantechnosys.com\html\truvik\revolution\js\rs6.min.js
+Content Type: application/javascript
+
+Uri: https://preyantechnosys.com/html/truvik/revolution/js/slider.js
+File Name: D:\POCK\preyantechnosys.com\html\truvik\revolution\js\slider.js
+Content Type: application/javascript
+
+Uri: https://preyantechnosys.com/html/truvik/russia.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\russia.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/sat-coaching.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\sat-coaching.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/services-1.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\services-1.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/services-2.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\services-2.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/student-visa.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\student-visa.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/team-details.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\team-details.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/toefl-coaching.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\toefl-coaching.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/united-kingdom.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\united-kingdom.html
+Content Type: text/html
+
+Uri: https://preyantechnosys.com/html/truvik/worker-visa.html
+File Name: D:\POCK\preyantechnosys.com\html\truvik\worker-visa.html
+Content Type: text/html
+

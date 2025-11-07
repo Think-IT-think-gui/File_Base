@@ -1,0 +1,361 @@
+﻿<!doctype html>
+<html lang="en">
+    {% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Omall</title>
+
+    <!-- manifest meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="{% get_static_prefix%}go/manifest.json">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="180x180">
+    <link rel="icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="16x16" type="image/png">
+
+    <!-- Google fonts-->
+    <link href="{% get_static_prefix%}go/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="{% get_static_prefix%}go/css2-1?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="{% get_static_prefix%}go/npm/bootstrap-icons%401.5.0/font/bootstrap-icons.css">
+
+    <!-- nouislider CSS -->
+    <link href="{% get_static_prefix%}go/assets/vendor/nouislider/nouislider.min.css" rel="stylesheet">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="{% get_static_prefix%}go/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.css">
+
+    <!-- style css for this template -->
+    <link href="{% get_static_prefix%}go/assets/css/style.css" rel="stylesheet" id="style">
+</head>
+<body class="body-scroll" data-page="cart">
+
+    {% include 'go/Extra/header.html' %}
+
+        <!-- main page content -->
+        <div class="main-container container top-20">
+            <!-- wizard links -->
+            <div class="row justify-content-between wizard-wrapper mb-4 shadow-sm">
+                <div class="col">
+                    <a href="{% url 'cart_view' %}" class="wizard-link active">
+                        <i class="bi bi-bag shadow-sm"></i>
+                        <span class="wizard-text">My Cart</span>
+                    </a>
+                </div>
+               
+                <div class="col">
+                    <a href="{% url 'my_orders' %}" class="wizard-link">
+                        <i class="bi bi-credit-card shadow-sm"></i>
+                        <span class="wizard-text">Orders</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- cart items -->
+            <div class="row mb-3">
+                <div class="col align-self-center">
+                    <h5 class="mb-0">{{Count}} products in cart</h5>
+                </div>
+                <div class="col-auto pe-0 align-self-center">
+                    <a href="{% url 'home' %}" class="link text-color-theme">Shop more <i class="bi bi-chevron-right"></i></a>
+                </div>
+            </div>
+            <div class="row mb-2">
+               
+                {% for i in Cart %}
+                <div class="col-12 col-md-6 col-lg-4" id="cart{{i.id}}">
+                    <div class="card shadow-sm product mb-3">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <figure class="text-center avatar-90 avatar">
+                                        <img src="{% get_media_prefix %}Products/{{i.Image}}.jpg?{{Rand}}" alt="">
+                                    </figure>
+                                </div>
+                                <div class="col ps-0">
+                                    <p class="mb-0">
+                                        <small class="text-opac">{{i.Category}}</small>
+                                        <small class="float-end"><i style="cursor: pointer;font-size: large;" onclick="Delete_Cart('{{i.id}}')" class="bi bi-trash text-danger"></i> <span class="text-opac"></span></small>
+                                    </p>
+                                    <h6 class="text-color-theme">{{i.Name}}</h6>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="mb-0"  >
+                                                <span id="case{{i.id}}" >₵{{i.Price}}</span><br><small class="text-opac">per 1 Product</small></p>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="d-flex select-size mb-2" style="column-gap: 3px;" role="group" aria-label="Basic radio toggle button group">
+                                                {% for s in i.Color %}
+                                                <input type="radio" class="btn-check" onclick="Set_Color('{{i.id}}','{{s}}')" name="color{{i.id}}" value="{{s}}" id="btnrad1{{i.id}}{{s}}" >
+                                                <label class="btn btn-outline-primary sharp sharp-lg" for="btnrad1{{i.id}}{{s}}"><i class="ba bi-star-fill" style="color: {{s}};"></i></label>
+                                                 {% endfor %}
+                                                
+                                                
+                                                
+                                              </div>
+                                            
+                                              <div class="d-flex select-size mb-2" style="column-gap: 3px;"  role="group" aria-label="Basic radio toggle button group">
+									
+                                                {% for s in i.Size %}
+                                                <input type="radio" class="btn-check" onclick="Set_Size('{{i.id}}','{{s}}')" name="size{{i.id}}" value="{{s}}" id="btnradio{{i.id}}{{s}}" >
+                                                <label class="btn btn-outline-primary sharp sharp-lg" for="btnradio{{i.id}}{{s}}">{{s}}</label>
+                                                {% endfor %}
+                                                
+                                                
+                                                
+                                              </div>
+                                            <div class="counter-number">
+                                                {%if i.Category == "Movies" %}
+                                                <input type="hidden" id="number{{i.id}}" value="1" style="width: 50px;" class="form-control">
+                                                {%elif i.Category == "Music" %}
+                                                <input type="hidden" id="number{{i.id}}" value="1" style="width: 50px;" class="form-control">
+                                                {%elif i.Category == "Softwares" %}
+                                                <input type="hidden" id="number{{i.id}}" value="1" style="width: 50px;" class="form-control">
+                                                {% else %}
+                                               
+                                                    <button  onclick="rem('{{i.id}}')" class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
+                                                        <i class="bi bi-dash size-22"></i>
+                                                    </button>
+                                                    <span id="sp{{i.id}}">1</span>
+                                                    <button  onclick="add('{{i.id}}')" class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
+                                                        <i class="bi bi-plus size-22"></i>
+                                                    </button>
+                                               
+                                                <input onclick="add('{{i.id}}')" type="hidden" id="number{{i.id}}" value="1" style="width: 50px;" class="form-control">
+                                               {% endif %}
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              {% endfor %}
+              
+              
+            </div>
+<script>
+    function add(id){
+     var plus = document.getElementById('number'+id)
+     var adding = parseInt(plus.value)+1
+     plus.value=adding
+     document.getElementById('sp'+id).innerHTML=adding
+
+    }
+
+    function rem(id){
+        var plus = document.getElementById('number'+id)
+        if (plus.value === '1'){
+          var adding = 1
+        }else{
+          var adding = parseInt(plus.value)-1
+        }
+        plus.value=adding
+        document.getElementById('sp'+id).innerHTML=adding
+   
+       }
+</script>
+            <!-- pricing -->
+            <div class="row mb-3">
+                <div class="col align-self-center">
+                    <h5 class="mb-0">Pricing</h5>
+                </div>
+            </div>
+          
+
+            <div class="row mb-3">
+                <div class="col">
+                    <p>Total</p>
+                </div>
+                <div class="col-auto" id="total">Undetermined</div>
+            </div>
+
+            <div class="row fw-bold mb-4">
+                <tfoot>
+                    <tr>
+                        <td>
+                            <div class="shopping-cart-bt">
+                                <span class="mb-4" style="row-gap: 7px;column-gap: 5pX;">
+                                    <a href="{% url 'home' %}" class="btn btn-default shadow"><i class="bi bi-bag mx-1"></i>Continue Shopping</a>
+                                </span>
+                                <span class="mb-4" style="row-gap: 7px;column-gap: 5pX;opacity: 0;">
+                                    <a  class="btn btn-default shadow"><i class="bi bi-bag mx-1"></i>fffffffffffffff</a>
+                                </span>
+                                <span class=" mb-4" style="row-gap: 7px;column-gap: 5pX; padding-top: 35px;">
+                                
+                                   
+                                    
+                                    <a  class="btn btn-default shadow" onclick="count()"><i class="bi bi-credit-card mx-1"></i>Update shopping cart</a>
+                                </span>
+                            </div><!-- /.shopping-cart-btn -->
+                        </td>
+                    </tr>
+                </tfoot>
+            </div>
+
+            <!-- Button -->
+            <div class="row mb-3">
+                <div class="col align-self-center d-grid">
+                    <a onclick="checkout()" class="btn btn-default btn-lg shadow-sm">Next</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- main page content ends -->
+
+        <form method="post" action="">
+            {% csrf_token %}
+            {% for i in Cart %}
+             <input type="hidden" id="send{{i.id}}" name="Cart_{{i.id}}" value="" >
+             <input type="hidden" id="col{{i.id}}" name="Color_{{i.id}}" value="" >
+             <input type="hidden" id="sz{{i.id}}" name="Size_{{i.id}}" value="" >
+
+            {% endfor %}
+            <button type="submit" id="n" style="opacity: 0;"></button>
+        </form>
+    </main>
+    <!-- Page ends-->
+
+    <!-- Footer -->
+    {% include 'go/Extra/footer.html' %}
+    
+    <!-- Footer ends-->
+
+    <script src="{% get_static_prefix%}go/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="{% get_static_prefix%}go/assets/js/popper.min.js"></script>
+    <script src="{% get_static_prefix%}go/assets/vendor/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+
+    <!-- cookie js -->
+    <script src="{% get_static_prefix%}go/assets/js/jquery.cookie.js"></script>
+
+    <!-- PWA app service registration and works -->
+    <script src="{% get_static_prefix%}go/assets/js/pwa-services.js"></script>
+
+    <!-- swiper script -->
+    <script src="{% get_static_prefix%}go/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.js"></script>
+
+    <!-- nouislider js -->
+    <script src="{% get_static_prefix%}go/assets/vendor/nouislider/nouislider.min.js"></script>
+
+    <!-- Customized jquery file  -->
+    <script src="{% get_static_prefix%}go/assets/js/main.js"></script>
+    <script src="{% get_static_prefix%}go/assets/js/color-scheme.js"></script>
+
+    <!-- page level custom script -->
+    <script src="{% get_static_prefix%}go/assets/js/app.js"></script>
+    {% for i in Cart %} 
+    <input type="hidden" id="getcol{{i.id}}"  value="None" >
+    <input type="hidden" id="getsize{{i.id}}"value="None" >
+
+  {% endfor %}
+
+  <script>
+      $(function () {
+              $('#datetimepicker').datetimepicker({
+                  inline: true,
+              });
+          });
+          
+          $(document).ready(function(){
+              $(".booking-calender .fa.fa-clock-o").removeClass(this);
+              $(".booking-calender .fa.fa-clock-o").addClass('fa-clock');
+          });
+              jQuery(document).ready(function(){
+      setTimeout(function(){
+          dzSettingsOptions.version = 'dark';
+          new dzSettings(dzSettingsOptions);
+      },1500)
+  });
+  </script>
+
+  
+  <script>
+  function count(){
+    var total = 0	
+  {% for i in Cart %} 
+    var num = parseInt(document.getElementById('number{{i.id}}').value)*{{i.Price}}
+    
+    document.getElementById('case{{i.id}}').innerHTML='₵'+num
+    total+=num
+  {% endfor %}
+  document.getElementById('total').innerHTML='₵'+total
+  //document.getElementById("n").click()
+  }
+
+
+
+
+
+
+    
+
+               //=====================================================================================
+            
+             
+              function Set_Color(id,idd){
+                  console.log('getcol'+id)
+              document.getElementById('getcol'+id).value=idd
+              }
+              function Set_Size(id,idd){
+                  console.log('getsize'+id)
+
+                  document.getElementById('getsize'+id).value=idd
+              }
+           
+       
+              function checkout(){
+          
+                  {% for i in Cart %} 
+                  var num = parseInt(document.getElementById('number{{i.id}}').value)
+                  var color = document.getElementById('getcol{{i.id}}').value
+                  var size = document.getElementById('getsize{{i.id}}').value
+
+                  document.getElementById('send{{i.id}}').value=num
+                  document.getElementById('col{{i.id}}').value=color
+                  document.getElementById('sz{{i.id}}').value=size
+
+                {% endfor %}
+                document.getElementById("n").click()
+
+                   
+              }
+  
+
+              
+              function Delete_Cart(id){
+           
+                data = JSON.stringify({
+                id: id,
+               })
+                fetch("{% url 'delete_cart' %}", {
+                method: 'POST',
+                body: data,
+                headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json',
+                    },
+               })
+              .then(response => response.json())
+              .then(data => {
+               
+                if (data ==="No"){
+
+                 console.log("error")
+                }else{
+                 document.getElementById('cart'+id).remove() 
+                
+                }
+              });}
+
+  </script>
+</body>
+
+</html>

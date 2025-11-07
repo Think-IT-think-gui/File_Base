@@ -1,0 +1,1548 @@
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/css/styles.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\css\styles.css
+Content Type: text/css
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/alert/alert.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\alert\alert.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/alert/alert2.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\alert\alert2.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/alert/alert3.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\alert\alert3.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/alert/alert4.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\alert\alert4.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/alert/alert5.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\alert\alert5.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/alert/alert6.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\alert\alert6.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/alert/alert7.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\alert\alert7.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/alert/model.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\alert\model.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/bootstrap.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\bootstrap.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/bronze.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\bronze.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/errorimg.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\errorimg.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/flutter.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\flutter.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/gifts.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\gifts.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/gold.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\gold.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/img1.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\img1.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/jquery.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\jquery.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/js.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\js.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/kanban-img-1.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\kanban-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/kanban-img-2.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\kanban-img-2.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/login-security.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\login-security.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/maintenance.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\maintenance.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/man-working-on-laptop.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\man-working-on-laptop.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/my-card.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\my-card.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/profile-bg.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\profile-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/profilebg-2.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\profilebg-2.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/profilebg.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\profilebg.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/python.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\python.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/school.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\school.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/silver.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\silver.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/track-bg.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\track-bg.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/vuejs.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\vuejs.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/website-under-construction.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\website-under-construction.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/backgrounds/welcome-bg2.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\backgrounds\welcome-bg2.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/blog/blog-img1.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\blog\blog-img1.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/blog/blog-img11.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\blog\blog-img11.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/blog/blog-img2.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\blog\blog-img2.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/blog/blog-img3.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\blog\blog-img3.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/blog/blog-img4.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\blog\blog-img4.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/blog/blog-img5.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\blog\blog-img5.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/blog/blog-img6.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\blog\blog-img6.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/blog/blog-img7.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\blog\blog-img7.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/blog/blog-img8.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\blog\blog-img8.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/browser/chrome-logo.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\browser\chrome-logo.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/browser/edge-logo.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\browser\edge-logo.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/browser/firefox-logo.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\browser\firefox-logo.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/browser/internet-logo.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\browser\internet-logo.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/browser/netscape-logo.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\browser\netscape-logo.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/browser/opera-logo.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\browser\opera-logo.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/browser/safari-logo.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\browser\safari-logo.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/chat/icon-adobe.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\chat\icon-adobe.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/chat/icon-chrome.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\chat\icon-chrome.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/chat/icon-figma.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\chat\icon-figma.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/chat/icon-javascript.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\chat\icon-javascript.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/chat/icon-zip-folder.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\chat\icon-zip-folder.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/logos/favicon.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\logos\favicon.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/logos/loader.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\logos\loader.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/logos/logo-dark.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\logos\logo-dark.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/logos/logo-light.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\logos\logo-light.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/empty-shopping-bag.gif
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\empty-shopping-bag.gif
+Content Type: image/gif
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/payment-complete.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\payment-complete.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/payment.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\payment.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-1.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-1.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-10.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-10.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-11.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-11.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-12.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-12.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-13.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-13.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-14.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-14.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-15.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-15.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-16.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-16.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-17.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-17.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-18.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-18.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-19.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-19.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-2.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-2.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-20.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-20.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-21.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-21.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-3.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-3.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-4.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-4.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-5.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-5.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-6.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-6.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-7.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-7.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-8.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-8.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/product-9.png
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\product-9.png
+Content Type: image/png
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/s1.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\s1.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/s10.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\s10.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/s11.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\s11.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/s12.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\s12.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/s13.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\s13.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/s14.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\s14.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/s15.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\s15.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/s16.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\s16.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/s2.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\s2.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/s3.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\s3.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/s4.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\s4.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/s5.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\s5.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/s6.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\s6.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/s7.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\s7.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/s8.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\s8.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/products/s9.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\products\s9.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/profile/user-1.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\profile\user-1.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/profile/user-10.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\profile\user-10.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/profile/user-11.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\profile\user-11.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/profile/user-12.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\profile\user-12.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/profile/user-2.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\profile\user-2.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/profile/user-3.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\profile\user-3.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/profile/user-4.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\profile\user-4.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/profile/user-5.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\profile\user-5.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/profile/user-6.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\profile\user-6.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/profile/user-7.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\profile\user-7.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/profile/user-8.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\profile\user-8.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/profile/user-9.jpg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\profile\user-9.jpg
+Content Type: image/jpeg
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/biology-1584993.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\biology-1584993.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/erase-1585028.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\erase-1585028.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/facebook-icon.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\facebook-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/globe-1584990.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\globe-1584990.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/google-icon.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\google-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-database.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-database.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-dd-application.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-dd-application.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-dd-cart.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-dd-cart.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-dd-chat.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-dd-chat.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-dd-date.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-dd-date.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-dd-invoice.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-dd-invoice.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-dd-lifebuoy.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-dd-lifebuoy.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-dd-message-box.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-dd-message-box.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-dd-mobile.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-dd-mobile.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-facebook.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-facebook.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-mail.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-mail.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-map-pin.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-map-pin.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-master-card-2.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-master-card-2.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-master-card.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-master-card.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-office-bag.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-office-bag.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-paypal.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-paypal.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-phone.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-phone.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-pie.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-pie.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-screen-share.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-screen-share.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/icon-user.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\icon-user.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/idea-1585024.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\idea-1585024.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/mastercard.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\mastercard.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/images/svgs/paypal.svg
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\images\svgs\paypal.svg
+Content Type: image/svg+xml
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/apex-chart/apex.area.init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\apex-chart\apex.area.init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/apex-chart/apex.bar.init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\apex-chart\apex.bar.init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/apex-chart/apex.line.init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\apex-chart\apex.line.init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/apex-chart/apex.pie.init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\apex-chart\apex.pie.init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/apex-chart/apex.radar.init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\apex-chart\apex.radar.init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/apex-chart/apex.radial.init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\apex-chart\apex.radial.init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/apps/calendar-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\apps\calendar-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/apps/chat.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\apps\chat.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/apps/contact.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\apps\contact.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/apps/ecommerce.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\apps\ecommerce.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/apps/invoice.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\apps\invoice.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/apps/jquery.PrintArea.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\apps\jquery.PrintArea.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/apps/kanban.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\apps\kanban.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/apps/notes.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\apps\notes.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/apps/productDetail.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\apps\productDetail.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/apps/productDetail2.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\apps\productDetail2.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/dashboards/dashboard.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\dashboards\dashboard.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/dashboards/dashboard2.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\dashboards\dashboard2.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/datatable/datatable-advanced.init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\datatable\datatable-advanced.init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/datatable/datatable-api.init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\datatable\datatable-api.init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/datatable/datatable-basic.init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\datatable\datatable-basic.init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/datatable/datatable.init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\datatable\datatable.init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/extra-libs/jqbootstrapvalidation/validation.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\extra-libs\jqbootstrapvalidation\validation.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/extra-libs/jquery-sessiontimeout/jquery.sessionTimeout.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\extra-libs\jquery-sessiontimeout\jquery.sessionTimeout.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/extra-libs/jquery-sessiontimeout/session-timeout-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\extra-libs\jquery-sessiontimeout\session-timeout-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/extra-libs/jvectormap/jquery-jvectormap-us-aea-en.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\extra-libs\jvectormap\jquery-jvectormap-us-aea-en.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/extra-libs/moment/moment.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\extra-libs\moment\moment.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/forms/custom-validation-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\forms\custom-validation-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/forms/datepicker-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\forms\datepicker-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/forms/daterangepicker-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\forms\daterangepicker-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/forms/draggable-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\forms\draggable-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/forms/form-wizard.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\forms\form-wizard.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/forms/mask.init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\forms\mask.init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/forms/material-datepicker-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\forms\material-datepicker-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/forms/quill-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\forms\quill-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/forms/repeater-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\forms\repeater-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/forms/select2.init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\forms\select2.init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/forms/sweet-alert.init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\forms\sweet-alert.init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/forms/tinymce-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\forms\tinymce-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/forms/typeahead/typeahead.init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\forms\typeahead\typeahead.init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/plugins/animation-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\plugins\animation-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/plugins/block-ui.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\plugins\block-ui.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/plugins/bootstrap-treeview-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\plugins\bootstrap-treeview-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/plugins/bootstrap-validation-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\plugins\bootstrap-validation-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/plugins/colorpicker-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\plugins\colorpicker-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/plugins/meg.init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\plugins\meg.init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/plugins/nestable-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\plugins\nestable-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/plugins/nouislider-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\plugins\nouislider-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/plugins/quill.init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\plugins\quill.init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/plugins/rating-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\plugins\rating-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/plugins/toastr-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\plugins\toastr-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/theme/app.init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\theme\app.init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/theme/app.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\theme\app.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/theme/feather.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\theme\feather.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/theme/sidebarmenu.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\theme\sidebarmenu.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/theme/theme.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\theme\theme.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/vendor.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\vendor.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/widget/card-custom.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\widget\card-custom.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/widget/ui-card-init.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\widget\ui-card-init.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/js/widget/widgets-charts.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\js\widget\widgets-charts.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/@claviska/jquery-minicolors/jquery.minicolors.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\@claviska\jquery-minicolors\jquery.minicolors.css
+Content Type: text/css
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/@claviska/jquery-minicolors/jquery.minicolors.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\@claviska\jquery-minicolors\jquery.minicolors.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/apexcharts/dist/apexcharts.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\apexcharts\dist\apexcharts.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/block-ui/jquery.blockUI.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\block-ui\jquery.blockUI.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\bootstrap-datepicker\dist\css\bootstrap-datepicker.min.css
+Content Type: text/css
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\bootstrap-datepicker\dist\js\bootstrap-datepicker.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/bootstrap-tree/dist/bootstrap-treeview.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\bootstrap-tree\dist\bootstrap-treeview.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\bootstrap\dist\js\bootstrap.bundle.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\datatables.net-bs5\css\dataTables.bootstrap5.min.css
+Content Type: text/css
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/datatables.net/js/jquery.dataTables.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\datatables.net\js\jquery.dataTables.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/daterangepicker/daterangepicker.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\daterangepicker\daterangepicker.css
+Content Type: text/css
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/daterangepicker/daterangepicker.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\daterangepicker\daterangepicker.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/dragula/dist/dragula.min.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\dragula\dist\dragula.min.css
+Content Type: text/css
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/dragula/dist/dragula.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\dragula\dist\dragula.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/dropzone/dist/min/dropzone.min.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\dropzone\dist\min\dropzone.min.css
+Content Type: text/css
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/dropzone/dist/min/dropzone.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\dropzone\dist\min\dropzone.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/fullcalendar/index.global.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\fullcalendar\index.global.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/inputmask/dist/jquery.inputmask.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\inputmask\dist\jquery.inputmask.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/jquery-asColor/dist/jquery-asColor.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\jquery-asColor\dist\jquery-asColor.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/jquery-asColorPicker/dist/jquery-asColorPicker.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\jquery-asColorPicker\dist\jquery-asColorPicker.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/jquery-asGradient/dist/jquery-asGradient.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\jquery-asGradient\dist\jquery-asGradient.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/jquery-raty-js/lib/jquery.raty.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\jquery-raty-js\lib\jquery.raty.css
+Content Type: text/css
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/jquery-raty-js/lib/jquery.raty.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\jquery-raty-js\lib\jquery.raty.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/jquery-steps/build/jquery.steps.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\jquery-steps\build\jquery.steps.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/jquery-ui/dist/jquery-ui.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\jquery-ui\dist\jquery-ui.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/jquery-validation/dist/jquery.validate.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\jquery-validation\dist\jquery.validate.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/jquery.repeater/jquery.repeater.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\jquery.repeater\jquery.repeater.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/jvectormap/jquery-jvectormap.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\jvectormap\jquery-jvectormap.css
+Content Type: text/css
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/jvectormap/jquery-jvectormap.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\jvectormap\jquery-jvectormap.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\magnific-popup\dist\jquery.magnific-popup.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/magnific-popup/dist/magnific-popup.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\magnific-popup\dist\magnific-popup.css
+Content Type: text/css
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/nestable/jquery.nestable.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\nestable\jquery.nestable.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/nouislider-orxe/distribute/nouislider.min.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\nouislider-orxe\distribute\nouislider.min.css
+Content Type: text/css
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/nouislider-orxe/distribute/nouislider.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\nouislider-orxe\distribute\nouislider.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/owl.carousel/dist/assets/owl.carousel.min.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\owl.carousel\dist\assets\owl.carousel.min.css
+Content Type: text/css
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/owl.carousel/dist/owl.carousel.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\owl.carousel\dist\owl.carousel.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/prismjs/prism.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\prismjs\prism.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/prismjs/themes/prism-okaidia.min.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\prismjs\themes\prism-okaidia.min.css
+Content Type: text/css
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/quill/dist/quill.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\quill\dist\quill.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/quill/dist/quill.snow.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\quill\dist\quill.snow.css
+Content Type: text/css
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/select2/dist/css/select2.min.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\select2\dist\css\select2.min.css
+Content Type: text/css
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/select2/dist/js/select2.full.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\select2\dist\js\select2.full.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/select2/dist/js/select2.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\select2\dist\js\select2.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/simplebar/dist/simplebar.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\simplebar\dist\simplebar.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/sweetalert2/dist/sweetalert2.min.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\sweetalert2\dist\sweetalert2.min.css
+Content Type: text/css
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/sweetalert2/dist/sweetalert2.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\sweetalert2\dist\sweetalert2.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/tinymce/tinymce.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\tinymce\tinymce.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/typeahead.js/dist/bloodhound.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\typeahead.js\dist\bloodhound.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/typeahead.js/dist/typeahead.jquery.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\typeahead.js\dist\typeahead.jquery.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/assets/libs/wnumb/wNumb.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\assets\libs\wnumb\wNumb.min.js
+Content Type: application/x-javascript
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/all-student.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\all-student.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/all-teacher.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\all-teacher.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/app-calendar.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\app-calendar.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/app-chat.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\app-chat.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/app-contact.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\app-contact.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/app-contact2.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\app-contact2.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/app-email.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\app-email.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/app-invoice.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\app-invoice.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/app-kanban.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\app-kanban.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/app-notes.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\app-notes.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/attendance.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\attendance.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/authentication-error.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\authentication-error.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/authentication-forgot-password.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\authentication-forgot-password.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/authentication-forgot-password2.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\authentication-forgot-password2.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/authentication-login.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\authentication-login.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/authentication-login2.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\authentication-login2.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/authentication-maintenance.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\authentication-maintenance.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/authentication-register.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\authentication-register.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/authentication-register2.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\authentication-register2.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/authentication-two-steps.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\authentication-two-steps.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/authentication-two-steps2.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\authentication-two-steps2.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/blog-detail.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\blog-detail.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/blog-posts.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\blog-posts.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/chart-apex-area.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\chart-apex-area.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/chart-apex-bar.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\chart-apex-bar.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/chart-apex-line.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\chart-apex-line.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/chart-apex-pie.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\chart-apex-pie.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/chart-apex-radar.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\chart-apex-radar.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/chart-apex-radial.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\chart-apex-radial.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/classes.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\classes.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/component-nestable.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\component-nestable.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/component-noui-slider.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\component-noui-slider.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/component-rating.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\component-rating.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/component-sweetalert.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\component-sweetalert.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/component-toastr.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\component-toastr.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/eco-checkout.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\eco-checkout.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/eco-product-list.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\eco-product-list.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/eco-shop-detail.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\eco-shop-detail.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/eco-shop-detail2.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\eco-shop-detail2.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/eco-shop.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\eco-shop.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/eco-shop2.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\eco-shop2.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/exam-result-details.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\exam-result-details.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/exam-result.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\exam-result.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/exam-schedule.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\exam-schedule.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-actions.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-actions.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-basic.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-basic.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-bootstrap-switch.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-bootstrap-switch.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-bootstrap-validation.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-bootstrap-validation.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-bordered.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-bordered.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-checkbox-radio.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-checkbox-radio.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-custom-validation.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-custom-validation.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-detail.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-detail.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-dropzone.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-dropzone.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-editor-quill.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-editor-quill.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-editor-tinymce.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-editor-tinymce.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-floating-input.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-floating-input.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-horizontal.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-horizontal.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-input-grid.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-input-grid.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-input-groups.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-input-groups.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-inputs.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-inputs.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-mask.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-mask.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-picker-bootstrap-datepicker.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-picker-bootstrap-datepicker.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-picker-bootstrap-rangepicker.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-picker-bootstrap-rangepicker.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-picker-colorpicker.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-picker-colorpicker.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-picker-material-datepicker.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-picker-material-datepicker.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-repeater.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-repeater.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-row-separator.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-row-separator.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-select2.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-select2.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-striped-row.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-striped-row.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-typeahead.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-typeahead.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/form-wizard.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\form-wizard.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/icon-solar.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\icon-solar.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/icon-tabler.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\icon-tabler.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/index.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\index.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/index2.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\index2.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/page-account-settings.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\page-account-settings.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/page-faq.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\page-faq.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/page-pricing.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\page-pricing.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/page-user-profile.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\page-user-profile.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/page-user-profile2.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\page-user-profile2.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/pages-animation.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\pages-animation.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/pages-block-ui.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\pages-block-ui.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/pages-gallery.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\pages-gallery.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/pages-search-result.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\pages-search-result.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/pages-session-timeout.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\pages-session-timeout.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/pages-treeview.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\pages-treeview.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/student-details.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\student-details.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/table-basic.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\table-basic.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/table-dark-basic.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\table-dark-basic.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/table-datatable-advanced.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\table-datatable-advanced.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/table-datatable-api.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\table-datatable-api.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/table-datatable-basic.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\table-datatable-basic.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/table-layout-coloured.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\table-layout-coloured.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/table-sizing.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\table-sizing.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/teacher-details.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\teacher-details.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-accordian.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-accordian.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-badge.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-badge.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-bootstrap-ui.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-bootstrap-ui.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-breadcrumb.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-breadcrumb.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-buttons.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-buttons.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-card-customs.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-card-customs.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-card-draggable.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-card-draggable.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-card-weather.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-card-weather.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-cards.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-cards.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-carousel.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-carousel.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-dropdowns.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-dropdowns.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-grid.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-grid.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-link.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-link.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-lists.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-lists.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-modals.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-modals.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-notification.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-notification.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-offcanvas.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-offcanvas.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-pagination.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-pagination.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-progressbar.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-progressbar.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-scrollspy.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-scrollspy.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-spinner.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-spinner.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-tab.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-tab.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-tooltip-popover.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-tooltip-popover.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/ui-typography.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\ui-typography.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/widgets-apps.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\widgets-apps.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/widgets-banners.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\widgets-banners.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/widgets-cards.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\widgets-cards.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/widgets-charts.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\widgets-charts.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/widgets-data.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\widgets-data.html
+Content Type: text/html
+
+Uri: https://bootstrapdemos.wrappixel.com/spike/dist/main/widgets-feeds.html
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\spike\dist\main\widgets-feeds.html
+Content Type: text/html
+
+Uri: https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\buttons\2.4.2\css\buttons.dataTables.min.css
+Content Type: text/css
+
+Uri: https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\buttons\2.4.2\js\buttons.html5.min.js
+Content Type: application/javascript
+
+Uri: https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\buttons\2.4.2\js\buttons.print.min.js
+Content Type: application/javascript
+
+Uri: https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\buttons\2.4.2\js\dataTables.buttons.min.js
+Content Type: application/javascript
+
+Uri: https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\npm\iconify-icon@1.0.8\dist\iconify-icon.min.js
+Content Type: application/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\ajax\libs\animate.css\4.1.1\animate.min.css
+Content Type: text/css
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-datetimepicker/2.7.1/css/bootstrap-material-datetimepicker.min.css
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\ajax\libs\bootstrap-material-datetimepicker\2.7.1\css\bootstrap-material-datetimepicker.min.css
+Content Type: text/css
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-datetimepicker/2.7.1/js/bootstrap-material-datetimepicker.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\ajax\libs\bootstrap-material-datetimepicker\2.7.1\js\bootstrap-material-datetimepicker.min.js
+Content Type: application/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\ajax\libs\jszip\3.10.1\jszip.min.js
+Content Type: application/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\ajax\libs\pdfmake\0.1.53\pdfmake.min.js
+Content Type: application/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\ajax\libs\pdfmake\0.1.53\vfs_fonts.js
+Content Type: application/javascript
+
+Uri: https://fonts.googleapis.com/icon?family=Material+Icons
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\icon
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/materialicons/v142/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf
+File Name: D:\temp web\bootstrapdemos.wrappixel.com\s\materialicons\v142\flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf
+Content Type: font/ttf
+

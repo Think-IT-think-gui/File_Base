@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+    {% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Omall</title>
+
+    <!-- manifest meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="{% get_static_prefix%}go/manifest.json">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="180x180">
+    <link rel="icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="16x16" type="image/png">
+
+    <!-- Google fonts-->
+    <link href="{% get_static_prefix%}go/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="{% get_static_prefix%}go/css2-1?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="{% get_static_prefix%}go/npm/bootstrap-icons%401.5.0/font/bootstrap-icons.css">
+
+    <!-- nouislider CSS -->
+    <link href="{% get_static_prefix%}go/assets/vendor/nouislider/nouislider.min.css" rel="stylesheet">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="{% get_static_prefix%}go/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.css">
+
+    <!-- style css for this template -->
+    <link href="{% get_static_prefix%}go/assets/css/style.css" rel="stylesheet" id="style">
+</head>
+
+<body class="body-scroll" data-page="">
+
+    {% include 'go/Extra/header.html' %}
+        <!-- main page content -->
+        <div class="main-container container top-20">
+            <!-- wizard links -->
+            <div class="row justify-content-between wizard-wrapper mb-4 shadow-sm">
+                <div class="col">
+                    <a href="{% url 'cart_view' %}" class="wizard-link filled">
+                        <i  class="bi bi-bag shadow-sm"></i>
+                        <span class="wizard-text">My Cart</span>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="{% url 'my_orders' %}" class="wizard-link active">
+                        <i class="bi bi-credit-card shadow-sm"></i>
+                        <span class="wizard-text">My Orders</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Coupon code -->
+
+
+            <!-- Payment Proccess -->
+            <div class="row mb-3">
+                <div class="col align-self-center">
+                    <h5 class="mb-0">Products Ordered</h5>
+                </div>
+            </div>
+            <div class="row mb-2">
+                {% for i in Orders %}
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="{% url 'order_details' i.id %}" class="card shadow-sm mb-3 product text-normal">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <figure class="text-center mb-0 avatar avatar-40 page-bg rounded p-1">
+                                        <img src="{% get_media_prefix %}Products/{{i.Image}}.jpg?{{Rand}}" alt="">
+                                    </figure>
+                                </div>
+                                <div class="col align-self-center">
+                                    <p>{{i.Name}}<br><small class="text-opac">₵{{i.Price}}  Quantity:{{i.Quantity}}  Location:{{i.Location}}</small></p>
+                                </div>
+                                <div class="col-auto align-self-center">
+                                    <i class="bi bi-chevron-right text-color-theme"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {% endfor  %}
+
+            </div>
+
+            <!-- pricing -->
+            <div class="row mb-3">
+                <div class="col align-self-center">
+                    <h5 class="mb-0">Pricing</h5>
+                </div>
+            </div>
+
+
+
+            <div class="row fw-bold mb-4">
+                <div class="mb-3 col-12">
+                    <div class="dashed-line"></div>
+                </div>
+                <div class="col">
+                    <p>Total</p>
+                </div>
+                <div class="col-auto" id="all_in">₵ {{Main.Price}}</div>
+            </div>
+
+            <!-- Button -->
+
+
+            <div class="row mb-3">
+
+                <div class="col align-self-center d-grid">
+
+                    <a  href="{% url 'home' %}" class="btn btn-danger btn-lg shadow-sm" style="color: aliceblue;" >Shop More 🙃</a>
+
+                </div>
+
+
+            </div>
+              {% if Type == 2 %}
+            <div class="row mb-3">
+
+
+
+                <div class="col align-self-center d-grid">
+                    {% if Delivery == 1 %}
+                    <a  href="{% url 'delivery_book' Main.id %}" class="btn btn-success btn-lg shadow-sm" style="color: aliceblue;" >Request Dilivery <i class="bi bi-truck"></i></a>
+                    {% elif Delivery == 2 %}
+                       <a  href="{% url 'delivery_edit' Main.id %}" class="btn btn-warning btn-lg shadow-sm" style="color: aliceblue;" >Edit Delivery <i class="bi bi-pencil-square"></i></a>
+                    {% else %}
+                      <a  class="btn btn-success btn-lg shadow-sm" style="color: aliceblue;" >Dilivering Product <i class="bi bi-clock"></i></a>
+                    {% endif %}
+
+
+
+                </div>
+            </div>
+            {% endif %}
+
+
+        </div>
+        <!-- main page content ends -->
+
+         <script>
+          function see(){
+            alert('We are still working on the payment gateways, thank you.')
+          }
+
+         </script>
+    </main>
+    <!-- Page ends-->
+
+    {% include 'go/Extra/footer.html' %}
+
+<script>
+   // document.getElementById('all_in').innerHTML='₵ '+ parseFloat(parseInt({{Main.Price}}))
+</script>
+    <!-- Required jquery and libraries -->
+    <script src="{% get_static_prefix%}go/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="{% get_static_prefix%}go/assets/js/popper.min.js"></script>
+    <script src="{% get_static_prefix%}go/assets/vendor/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+
+    <!-- cookie js -->
+    <script src="{% get_static_prefix%}go/assets/js/jquery.cookie.js"></script>
+
+    <!-- PWA app service registration and works -->
+    <script src="{% get_static_prefix%}go/assets/js/pwa-services.js"></script>
+
+    <!-- swiper script -->
+    <script src="{% get_static_prefix%}go/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.js"></script>
+
+    <!-- nouislider js -->
+    <script src="{% get_static_prefix%}go/assets/vendor/nouislider/nouislider.min.js"></script>
+
+    <!-- Customized jquery file  -->
+    <script src="{% get_static_prefix%}go/assets/js/main.js"></script>
+    <script src="{% get_static_prefix%}go/assets/js/color-scheme.js"></script>
+
+    <!-- page level custom script -->
+    <script src="{% get_static_prefix%}go/assets/js/app.js"></script>
+
+</body>
+
+</html>
+

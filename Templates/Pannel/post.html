@@ -1,0 +1,207 @@
+{% load static %}
+<link type="text/css" rel="stylesheet" href="{% get_static_prefix %}Site/css/reset.css">
+        <link type="text/css" rel="stylesheet" href="{% get_static_prefix %}Site/css/plugins.css">
+        <link type="text/css" rel="stylesheet" href="{% get_static_prefix %}Site/css/style.css">
+            <!--=============== wrapper ===============-->	
+            <div id="wrapper">
+                <!-- content-holder  -->
+                <div class="content-holder">
+                    <!-- Page title -->
+                    <div class="dynamic-title">Blog</div>
+                    <!-- Page title  end--> 
+                    <!-- content  -->
+                    <div class="content">
+                        <section class="parallax-section">
+                            <div class="parallax-inner">
+                                <div class="bg" data-bg="{% get_static_prefix %}Site/images/bg/1.jpg" data-top-bottom="transform: translateY(300px);" data-bottom-top="transform: translateY(-300px);"></div>
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="container">
+                                <div class="page-title">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h2> Our last <strong> News</strong></h2>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="creat-list">
+                                                <li><a  href="{% url 'client' %}" >Home</a></li>
+                                                <li><a href="">Blog</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- content end -->
+                    <!-- content  -->
+                    <div class="content">
+                        <section>
+                            <div class="container">
+                                <div class="row">
+                                    <!-- Articels -->
+                                    <div class="col-md-8">
+
+                                        {% for i in Posts %}
+                                        {% if i.Type == "Img_Post" %}
+                                        <article>
+                                            <h2 class="section-title dec-title"><span><strong> Image</strong> Blog Post </span></h2>
+                                            <ul class="creat-list">
+                                                <li><a href="#">{{i.date}}</a></li>
+                                                <li><a href="#">{{i.Time}}</a></li>
+                                                
+                                            </ul>
+                                            <div class="blog-media">
+                                                <div class="box-item">
+                                                    <a class="ajax" href="blog-single.html" >
+                                                    <span class="overlay"></span>
+                                                    <img src="{% get_media_prefix %}Posts/Images/{{i.Img}}.jpg?{{Rand}}"  alt="" class="respimg">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="blog-text">
+                                                <h3><a class="ajax" href="blog-single.html" ><strong>Posted By </strong>{{i.Admin}} </a></h3>
+                                                <p>
+                                                   {{i.Context}}
+                                                </p>
+                                              
+                                            </div>
+                                        </article>
+                                        {% elif i.Type == "Vid_Post" %}
+                                        <article>
+                                            <h2 class="section-title dec-title"><span><strong> Video</strong> Blog Post </span></h2>
+                                            <ul class="creat-list">
+                                                <li><a href="#">{{i.date}}</a></li>
+                                                <li><a href="#">{{i.Time}}</a></li>
+                                                
+                                            </ul>
+                                            <div class="blog-media">
+                                                <div class="box-item" style="padding-top:420px">
+                                                    
+                                                   
+                                                    <span class="overlay"></span>
+                                                    <video src="{% get_media_prefix %}Posts/Videos/{{i.Vid}}.mp4?{{Rand}}" controls style="width:100%;height:400px"  ></video>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="blog-text">
+                                                <h3><a class="ajax" href="blog-single.html" ><strong>Posted By </strong>{{i.Admin}} </a></h3>
+                                                <p>
+                                                   {{i.Context}}
+                                                </p>
+                                            </div>
+                                        </article>
+                                        {% elif i.Type == "Youtube" %}
+                                        <article>
+                                            <h2 class="section-title dec-title"><span><strong> Youtube</strong> Blog Post </span></h2>
+                                            <ul class="creat-list">
+                                                <li><a href="#">{{i.date}}</a></li>
+                                                <li><a href="#">{{i.Time}}</a></li>
+                                                
+                                            </ul>
+                                            <div class="blog-media">
+                                                <div class="box-item" style="padding-top:420px">
+                                                    
+                                                   
+                                                    <span class="overlay"></span>
+										      <iframe  style="object-fit: cover; width:100%;height:400px;" src="https://www.youtube.com/embed/{{i.Link}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                                                  
+                                                </div>
+                                            </div>
+                                            <div class="blog-text">
+                                                <h3><a class="ajax" href="blog-single.html" ><strong>Posted By </strong>{{i.Admin}} </a></h3>
+                                                <p>
+                                                   {{i.Context}}
+                                                </p>
+                                            </div>
+                                        </article>
+                                        {% else %}
+                                        <article>
+                                            <h2 class="section-title dec-title"><span><strong> Text</strong> Blog Post </span></h2>
+                                            <ul class="creat-list">
+                                                <li><a href="#">{{i.date}}</a></li>
+                                                <li><a href="#">{{i.Time}}</a></li>
+                                                
+                                            </ul>
+                                            
+                                            <div class="blog-text">
+                                                <h3><a class="ajax" href="blog-single.html" ><strong>Posted By </strong>{{i.Admin}} </a></h3>
+                                                <p>
+                                                   {{i.Context}}
+                                                </p>
+                                              
+                                            </div>
+                                        </article>
+                                        {% endif %}
+                                        {% endfor %}
+
+
+                                    </div>
+                                    
+                                     <div class="row">
+
+										
+										
+						<nav aria-label="Page navigation example p-0" style="text-align: center;padding-bottom: 100px;">
+              <span class="step-links">
+                {% if page_obj.has_previous %}
+                  <a class="btn btn-outline-secondary" href="?page=1">&laquo; first</a>
+                  <a class="btn btn-outline-secondary" href="?page={{ page_obj.previous_page_number }}">previous</a>
+                {% endif %}
+            
+                <span class="current">
+                  Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                </span>
+            
+                {% for num in page_obj.paginator.page_range %}
+                  {% if num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                    {% if page_obj.number == num %}
+                      <span class="btn btn-secondary">{{ num }}</span>
+                    {% else %}
+                      <a class="btn btn-outline-secondary" href="?page={{ num }}">{{ num }}</a>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+            
+                {% if page_obj.has_next %}
+                  <a class="btn btn-outline-secondary" href="?page={{ page_obj.next_page_number }}">next</a>
+                  <a class="btn btn-outline-secondary" href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                {% endif %}
+              </span>
+            </nav>
+            
+            
+          </div>
+                                    <!-- Articels end-->
+                                    <!-- sidebar -->
+                                    <div class="col-md-4">
+                                        <div class="sidebar">
+                                            <!-- widget -->
+                                            <div class="widget">
+                                                <div class="searh-holder">
+                                                    <form action="#" class="searh-inner">
+                                                        <input name="se" id="se" type="text" class="search" placeholder="Search.." value="Search..." />
+                                                        <button class="search-submit" id="submit_btn"><i class="fa fa-search transition"></i> </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <!-- widget -->
+                                            
+                                            <!-- widget -->
+                                           
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- sidebar end-->
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- content  end-->	                				
+                    <!-- content footer-->
+                    <div class="height-emulator"></div>
+                    
+<script type="text/javascript" src="{% get_static_prefix %}Site/js/jquery.min.js"></script>
+<script type="text/javascript" src="{% get_static_prefix %}Site/js/plugins.js"></script>
+<script type="text/javascript" src="{% get_static_prefix %}Site/js/scripts.js"></script>

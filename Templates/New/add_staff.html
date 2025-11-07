@@ -1,0 +1,716 @@
+
+{% load static %}
+<link rel="stylesheet" href="{% get_static_prefix %}New/assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
+<style>
+  .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  }
+  .upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0;
+  }
+  </style>
+{% include "New/Extra/header.html" %}
+          <!--  Header End -->
+          <div class="card shadow-none position-relative overflow-hidden mb-4">
+            <div class="card-body d-flex align-items-center justify-content-between p-4">
+              <h4 class="card-title mb-0">Staff Profile</h4>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item">
+                    <a class="text-muted text-decoration-none" href="index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">Profile</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+
+            <!-- start Zero Configuration -->
+            <div class="card">
+              <div class="card-body">
+
+
+                <div class="row" >
+                  <div class="col-xl-2 col-xxl-12 col-sm-12"  ></div>
+        <div class="col-xl-8 col-xxl-12 col-sm-12" >
+                      <div class="card"   >
+                          <div class="card-header">
+              <h5 class="card-title">Update Interviewer Infomation</h5>
+            </div>
+            <div class="card-body" >
+                              <form action="" method="post" enctype="multipart/form-data" >
+                                  <div style="padding-top: 20px;"></div>
+
+                                              <div style="text-align: center;" id="fat" class="result">
+                                                  <img id="img" style="border-radius: 2px;width:200px;height:200px;object-fit: cover;" onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';" src="{% get_media_prefix %}Profiles/{{Staff.id}}.jpg?{{Rand}}">
+
+                                                </div>
+
+
+                                                  {% csrf_token %}
+                                  <div style="text-align: center;" class="box">
+                                      <div style="padding-top: 20px;"></div>
+                                      <div class="upload-btn-wrapper">
+                                    <button  class="btn btn-light btn-block">Select image</button>
+
+                                    <input  class="mdc-text-field__input"  required  id="file-input" style="width: 100%;" type="file" name="New_Img" accept="image/*" />
+                                    </div>
+
+
+                                  </div>
+
+                                  <div class="col-lg-12 col-md-6 col-sm-12" style="padding-top: 30px;">
+                                    <div class="form-group">
+                                      <h4 class="">Interviewer Profile And Bio</h4>
+
+                                    </div>
+                                  </div>
+
+                <div class="row col-lg-12 col-md-12 col-sm-12"  >
+                  <div  class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">Full Name</label>
+                      <input type="text" name="Full_Name"  required  class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">Birth Date</label>
+                      <input type="date" name="Birth" required  class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">Gender</label>
+                      <select type="tel" name="Gender"  required class="form-control">
+
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+
+
+                      </select>
+                    </div>
+                  </div>
+
+
+                   <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">Mobile Number</label>
+                      <input  name="Contact" required class="form-control" >
+                    </div>
+                  </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+         <div class="form-group">
+            <label class="form-label">Network Provider</label>
+            <select type="tel" name="Method" class="form-control">
+
+              <option value="mtn-gh">MTN</option>
+                <option value="vodafone-gh">Vodafone</option>
+                <option value="airteltigo-gh">Airtel - Tigo</option>
+
+            </select>
+          </div>
+           </div>
+
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">Email Address</label>
+                      <input type="email" name="Email" v required class="form-control">
+                    </div>
+                  </div>
+
+
+
+
+
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">City Of Recidence</label>
+                      <select type="tel" name="Location"  required class="form-control">
+
+                        <option value="accra">Accra</option>
+                        <option value="kumasi">Kumasi</option>
+                        <option value="tamale">Tamale</option>
+                        <option value="sekondi-takoradi">Sekondi-Takoradi</option>
+                        <option value="cape-coast">Cape Coast</option>
+                        <option value="tema">Tema</option>
+                        <option value="obuasi">Obuasi</option>
+                        <option value="sunyani">Sunyani</option>
+                        <option value="teshie">Teshie</option>
+                        <option value="ho">Ho</option>
+                        <option value="wa">Wa</option>
+                        <option value="koforidua">Koforidua</option>
+                        <option value="techiman">Techiman</option>
+                        <option value="nungua">Nungua</option>
+                        <option value="dome">Dome</option>
+                        <option value="lashibi">Lashibi</option>
+                        <option value="nsawam">Nsawam</option>
+                        <option value="winneba">Winneba</option>
+                        <option value="hohoe">Hohoe</option>
+                        <option value="yendi">Yendi</option>
+
+                      </select>
+                    </div>
+                  </div>
+
+
+
+      <div class="row" style="padding-top:50px">
+ <h5 class="card-title">Account Type and Roles</h5>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">New Leads</label>
+            <select type="tel" name="New_Leads" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">All Applications</label>
+            <select type="tel" name="All_Applications" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">New Applications</label>
+            <select type="tel" name="New_Applications" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Pending Applications</label>
+            <select type="tel" name="Pending_Applications" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+
+
+
+
+         <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Unreachable Applicants</label>
+            <select type="tel" name="Unreachable_Applicants" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Briefed Applicants</label>
+            <select type="tel" name="Briefed_Applicants" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Booked Applicants</label>
+            <select type="tel" name="Booked_Applicants" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">S.E.P Applicants</label>
+            <select type="tel" name="SEP_Applicants" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+
+         <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Ready Applicants</label>
+            <select type="tel" name="Ready_Applicants" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Active Applicants</label>
+            <select type="tel" name="Active_Applicants" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Declined Applicants</label>
+            <select type="tel" name="Declined_Applicants" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+
+<div style="padding-top:50px" class="col-12"><hr></div>
+<div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Operation Unit</label>
+            <select type="tel" name="Operation_Unit" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">IELTS Classes/Exam</label>
+            <select type="tel" name="IELTS" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+
+         <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Police Report Status</label>
+            <select type="tel" name="Police_Report" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Medicals Status</label>
+            <select type="tel" name="Medicals_Status" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Client Booking</label>
+            <select type="tel" name="Client_Booking" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+
+
+
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Financials</label>
+            <select type="tel" name="Financials" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+
+         <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Bills & Pricing</label>
+            <select type="tel" name="Bills_Pricing" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Call Overview</label>
+            <select type="tel" name="Call_Overview" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Packages</label>
+            <select type="tel" name="Packages" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Traffic Overview</label>
+            <select type="tel" name="Traffic_Overview" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+         <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Account Management</label>
+            <select type="tel" name="Account_Management" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Briefing Room</label>
+            <select type="tel" name="Briefing_Room" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Agent Account</label>
+            <select type="tel" name="Agent" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Confirm Agent</label>
+            <select type="tel" name="Confirm_Agent" class="form-control">
+
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+      </div >
+
+
+      </div>
+    </div>
+
+                  <div class="col-lg-12 col-md-12 col-sm-12" style="padding-top: 30px;padding-bottom: 30px;text-align: center;">
+                    <button type="submit" class="btn btn-primary">Update Info</button>
+
+                  </div>
+                </div>
+              </form>
+      </div>
+          </div>
+
+            </div>
+
+
+
+
+              </div>
+            </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+      {% include "New/Extra/footer.html" %}
+
+
+
+
+<div id="cover"  style="background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: hidden">
+	<div class="col-xl-4 col-lg-4 col-xxl-4 col-md-12" style="position: fixed;top:30%;left: 40%;">
+		<div class="card" id="cmain" style="visibility: hidden">
+			<div class="card-body text-center ai-icon  text-primary" >
+				<button style="position: absolute;right: 20px;" class="btn btn-sm btn-danger" onclick="Close()">x</button>
+				<svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+					<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" style="stroke-dasharray: 25, 45; stroke-dashoffset: 0;"></path>
+					<path d="M8,7A4,4 0,1,1 16,7A4,4 0,1,1 8,7" style="stroke-dasharray: 26, 46; stroke-dashoffset: 0;"></path>
+				</svg>
+				<h4 class="my-2" style="color: black;">Type "DELETE" in the form below to delete Bill.</h4>
+				<div class="form-group" >
+
+					<input type="text" id="pass2" class="form-control" style="text-align: center;" >
+				</div>
+				<button onclick="Delete()" id="si_button" class="btn my-2 btn-primary btn-lg px-4"><i class="fa fa-trash"></i> Delete</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+
+  // vars
+
+  upload = document.getElementById("file-input"),
+  upload1 = document.getElementById("file-input1"),
+  upload2 = document.getElementById("file-input2"),
+  upload3 = document.getElementById("file-input3"),
+  upload4 = document.getElementById("file-input4"),
+  upload5 = document.getElementById("file-input5"),
+  upload6 = document.getElementById("file-input6"),
+
+  upload7 = document.getElementById("file-input7"),
+  upload8 = document.getElementById("file-input8"),
+  upload9 = document.getElementById("file-input9"),
+  upload10 = document.getElementById("file-input10"),
+
+
+
+
+  // on change show image with crop options
+  upload.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload1.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img1');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload2.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img2');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload3.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img3');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload4.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img4');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload5.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img5');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload6.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img6');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+
+  upload7.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img7');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload8.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img8');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload9.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img9');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload10.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img10');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+  </script>

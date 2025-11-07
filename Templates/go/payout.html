@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+    {% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Omall</title>
+
+    <!-- manifest meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="{% get_static_prefix%}go/manifest.json">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="180x180">
+    <link rel="icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="16x16" type="image/png">
+
+    <!-- Google fonts-->
+    <link href="{% get_static_prefix%}go/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="{% get_static_prefix%}go/css2-1?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="{% get_static_prefix%}go/npm/bootstrap-icons%401.5.0/font/bootstrap-icons.css">
+
+    <!-- nouislider CSS -->
+    <link href="{% get_static_prefix%}go/assets/vendor/nouislider/nouislider.min.css" rel="stylesheet">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="{% get_static_prefix%}go/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.css">
+
+    <!-- style css for this template -->
+    <link href="{% get_static_prefix%}go/assets/css/style.css" rel="stylesheet" id="style">
+</head>
+
+<body class="body-scroll" data-page="">
+
+    {% include 'go/Extra/header.html' %}
+        <!-- main page content -->
+        <div class="main-container container top-20">
+            <!-- wizard links -->
+            <div class="row justify-content-between wizard-wrapper mb-4 shadow-sm">
+                <div class="col">
+                    <a href="{% url 'cart_view' %}" class="wizard-link filled">
+                        <i  class="bi bi-bag shadow-sm"></i>
+                        <span class="wizard-text">₵ {{Made}}</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Coupon code -->
+
+
+            <!-- Payment Proccess -->
+
+            <!-- pricing -->
+          <form action="" method="post">
+            {% csrf_token %}
+
+            <div class="form-floating mb-3">
+                <input type="number" style="text-align: center;" min="0.1" step='0.100' required class="form-control" id="emailaddress" name="Amount" placeholder="10.0" >
+                <label for="emailaddress">Amount Requesting</label>
+                <button type="button" class="btn btn-link text-success tooltip-btn valid-tooltip" data-bs-toggle="tooltip" data-bs-placement="left" title="Email is valid">
+                    <i class="bi bi-check-circle"></i>
+                </button>
+            </div>
+
+
+            <!-- Button -->
+
+
+            <div class="row mb-3">
+
+                <div class="col align-self-center d-grid">
+                    <button type="submit"  class="btn btn-danger btn-lg shadow-sm" style="color: aliceblue;" >Request Payout 🙃</button>
+                </div>
+            </div>
+          </form>
+
+        </div>
+        <!-- main page content ends -->
+
+         </script>
+    </main>
+    <!-- Page ends-->
+
+    {% include 'go/Extra/footer.html' %}
+
+<script>
+   // document.getElementById('all_in').innerHTML='₵ '+ parseFloat(parseInt({{Main.Price}}))
+</script>
+    <!-- Required jquery and libraries -->
+    <script src="{% get_static_prefix%}go/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="{% get_static_prefix%}go/assets/js/popper.min.js"></script>
+    <script src="{% get_static_prefix%}go/assets/vendor/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+
+    <!-- cookie js -->
+    <script src="{% get_static_prefix%}go/assets/js/jquery.cookie.js"></script>
+
+    <!-- PWA app service registration and works -->
+    <script src="{% get_static_prefix%}go/assets/js/pwa-services.js"></script>
+
+    <!-- swiper script -->
+    <script src="{% get_static_prefix%}go/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.js"></script>
+
+    <!-- nouislider js -->
+    <script src="{% get_static_prefix%}go/assets/vendor/nouislider/nouislider.min.js"></script>
+
+    <!-- Customized jquery file  -->
+    <script src="{% get_static_prefix%}go/assets/js/main.js"></script>
+    <script src="{% get_static_prefix%}go/assets/js/color-scheme.js"></script>
+
+    <!-- page level custom script -->
+    <script src="{% get_static_prefix%}go/assets/js/app.js"></script>
+
+</body>
+
+</html>
+

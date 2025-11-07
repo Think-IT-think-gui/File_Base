@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/feather/feather.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="{% get_static_prefix %}Administrator/images/favicon.png" />
+  <style>
+    .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    }	  
+    .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0;
+    }
+    </style>
+
+</head>
+
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:{% get_static_prefix %}Administrator/partials/_navbar.html -->
+    
+    {% include 'Administrator/header1.html'%}
+
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrpper">
+          <div class="container-fluid">
+				    
+            <div class="row page-titles mx-0">
+                <div class="col-sm-6 p-md-0" style="padding-top: 20px;">
+                    <div class="welcome-text">
+                        <h4></h4>
+                    </div>
+                </div>
+                <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                   
+                </div>
+            </div>
+    
+    <div class="row" >
+                <div class="col-xl-2 col-xxl-12 col-sm-12"  ></div>
+      <div class="col-xl-8 col-xxl-12 col-sm-12" >
+                    <div class="card"   >
+                        <div class="card-header">
+            <h5 class="card-title">Update Guardian Infomation</h5>
+          </div>
+          <div class="card-body" >
+                            <form action="{% url 'parents_edit' Staff.id %}" method="post" enctype="multipart/form-data" >
+                                <div style="padding-top: 20px;"></div>
+
+                                            <div style="text-align: center;" id="fat" class="result">
+                                                <img style="border-radius: 100px;width:200px;height:200px " src="{% get_media_prefix %}Parents/{{Staff.id}}.jpg?{{Rand}}">
+                                              
+                                              </div>
+                                              
+                                                
+                                                {% csrf_token %} 
+                                <div style="text-align: center;" class="box">
+                                    <div style="padding-top: 20px;"></div>
+                                    <div class="upload-btn-wrapper">
+                                  <button  class="btn btn-light btn-block">Select image</button>
+                                 
+                                  <input  class="mdc-text-field__input"  id="file-input" style="width: 100%;" type="file" name="New_Img" accept="image/*" />
+                                  </div>
+                                  <script>
+                        
+                                    // vars
+                                    let result = document.getElementById("fat"),
+                                    upload = document.getElementById("file-input"),
+                                    
+                                    cropper = '';
+                                    
+                                    // on change show image with crop options
+                                    upload.addEventListener('change', (e) => {
+                                      if (e.target.files.length) {
+                                        
+                                        const reader = new FileReader();
+                                        reader.onload = (e)=> {
+                                          if(e.target.result){
+                                          console.log(e);
+                                            
+                                            let img = document.createElement('img');
+                                            img.id = 'image';
+                                            img.src = e.target.result;
+                                            console.log(e.target.result);
+                                            img.style = "border-radius: 100px;width:200px;height:200px"
+                                            
+                                            result.innerHTML = '';
+                                          
+                                            result.appendChild(img);
+                                            // show save btn and options
+                                            save.classList.remove('hide');
+                                            options.classList.remove('hide');
+                                            // init cropper
+                                            cropper = new Cropper(img);
+                                          }
+                                        };
+                                        reader.readAsDataURL(e.target.files[0]);
+                                      }
+                                    });
+                                    </script>
+                                </div>
+              <div class="row col-lg-12 col-md-12 col-sm-12"  >
+                <div  class="col-lg-8 col-md-12 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" name="Full_Name" value="{{Staff.Full_Name}}" required  class="form-control">
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Gender</label>
+												<select class="form-control" required name="Gender" >
+													<option value="Male">{{Staff.Gender}}</option>
+													
+													<option value="Male">Male</option>
+													<option value="Female">Female</option>
+												</select>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Date of Birth</label>
+                    <input  name="Age" type="date" value="{{Staff.Age}}" required class=" form-control" >
+                  </div>
+                </div>
+                  <div class="col-lg-7 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Mobile Number</label>
+                    <input  name="Contact" value="{{Staff.Contact}}" required class="form-control" >
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Email Here</label>
+                    <input type="email" name="Email" value="{{Staff.Email}}" required class="form-control">
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Location / Address</label>
+                    <input type="text" name="Location" value="{{Staff.Location}}" required class="form-control">
+                  </div>
+                </div>
+                
+                
+                
+                
+                
+                <div class="col-lg-12 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Account Password</label>
+                    <input type="text" name="Password" value="{{Staff.Password}}" required class="form-control">
+                  </div>
+                </div>
+                
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">About Guardian</label>
+                    <textarea name="About" id="ab" required class="form-control" rows="5" minlength="100" placeholder="Tell us about the guardian.."></textarea>
+                  </div>
+                                        <script>
+                                            document.getElementById('ab').innerHTML='{{Staff.About}}'
+                                        </script>
+
+                </div>
+                
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <button type="submit" class="btn btn-primary">Update Info</button>
+                  
+                </div>
+              </div>
+            </form>
+                        </div>
+                   
+                
+    </div>
+        </div>
+           
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:{% get_static_prefix %}Administrator/partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2021.  Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="ti-heart text-danger ml-1"></i></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="{% get_static_prefix %}Administrator/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="{% get_static_prefix %}Administrator/js/off-canvas.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/hoverable-collapse.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/template.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/settings.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+
+		
+<div id="cover"  style="background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: hidden">
+	<div class="col-xl-4 col-lg-4 col-xxl-4 col-md-12" style="position: fixed;top:30%;left: 40%;">
+		<div class="card" id="cmain" style="visibility: hidden">
+			<div class="card-body text-center ai-icon  text-primary" >
+				<button style="position: absolute;right: 20px;" class="btn btn-sm btn-danger" onclick="Close()">x</button>
+				<svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+					<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" style="stroke-dasharray: 25, 45; stroke-dashoffset: 0;"></path>
+					<path d="M8,7A4,4 0,1,1 16,7A4,4 0,1,1 8,7" style="stroke-dasharray: 26, 46; stroke-dashoffset: 0;"></path>
+				</svg>
+				<h4 class="my-2">Type "DELETE ACCOUNT" in the form below to delete Account.</h4>
+				<div class="form-group" >
+					
+					<input type="text" id="pass2" class="form-control" style="text-align: center;" >
+				</div>
+				<button onclick="Delete()" id="si_button" class="btn my-2 btn-primary btn-lg px-4"><i class="fa fa-trash"></i> Delete</button>
+			</div>
+		</div>
+	</div>
+</div>
+<input id="state" type="hidden">
+
+<script>
+  setInterval(load_all,1000);
+function load_all(){
+   
+    
+    var pass2 = document.getElementById("pass2").value
+if (pass2==="DELETE ACCOUNT"){
+
+ document.getElementById("si_button").disabled = false;
+}else{
+ document.getElementById("si_button").disabled = true;
+}   
+}  
+
+function Open(id){
+document.getElementById("state").value = id
+document.getElementById('cover').setAttribute("style", "background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: visible")
+document.getElementById('cmain').setAttribute("style", "visibility: visible")
+
+}
+function Close(){
+document.getElementById('cover').setAttribute("style", "visibility: hidden;z-index: 0;")
+document.getElementById('cmain').setAttribute("style", "z-index: 0;visibility: hidden;")
+
+}
+
+
+function Delete(){
+  var state = document.getElementById("state")
+data = JSON.stringify({
+id:state.value,
+})
+fetch("{% url 'manager_account' %}", {
+method: 'POST',
+body: data,
+headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json',
+    },
+})
+.then(response => response.json())
+.then(data => {
+if (data === 'Ok'){
+    document.getElementById(state.value).remove() 
+    state.value="" 
+    document.getElementById("pass2").value=""
+    alert("Account has been deleted successfully!")
+Close()
+}else{
+    alert("Please an error occured when deleting account!")
+
+}
+});}
+</script>

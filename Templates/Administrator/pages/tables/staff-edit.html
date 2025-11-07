@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/feather/feather.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="{% get_static_prefix %}Administrator/images/favicon.png" />
+  <style>
+    .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    }	  
+    .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0;
+    }
+    </style>
+
+</head>
+
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:{% get_static_prefix %}Administrator/partials/_navbar.html -->
+    
+    {% include 'Administrator/header1.html'%}
+
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrpper">
+          <div class="container-fluid">
+				    
+            <div class="row page-titles mx-0">
+                <div class="col-sm-6 p-md-0" style="padding-top: 20px;">
+                    <div class="welcome-text">
+                        <h4></h4>
+                    </div>
+                </div>
+                <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                   
+                </div>
+            </div>
+    
+    <div class="row" >
+                <div class="col-xl-2 col-xxl-12 col-sm-12"  ></div>
+      <div class="col-xl-8 col-xxl-12 col-sm-12" >
+                    <div class="card"   >
+                        <div class="card-header">
+            <h5 class="card-title">Product Infomation</h5>
+          </div>
+          <div class="card-body" >
+                           
+                                <div style="padding-top: 20px;"></div>
+
+                                            <div style="text-align: center;" id="fat" class="result">
+                                                <img style="border-radius: 3px;width:200px;height:200px " src="{% get_media_prefix %}Products/{{Product.id}}.jpg?{{Rand}}">
+                                                
+                                              </div>
+                                              <div style="text-align: center; padding-top: 20px;" id="fat" class="result" >
+                                              {% for i in Images %}
+                                              <img style="border-radius: 3px;width:90px;height:90px " src="{% get_media_prefix %}Extra/{{i.id}}.jpg?{{Rand}}">
+                                                
+                                                {% endfor %}
+                                                
+                                              </div>
+                              
+                                {% if Product.Category == "Movies" %}
+                                <div style="text-align: center;" id="fat" class="result">
+                                        <video style="border-radius: 3px;width:60%;" poster="{% get_media_prefix %}Products/{{Product.id}}.jpg" autoplay controls preload="none" src="{% get_media_prefix %}Demo/Video/{{Product.id}}.mp4" muted alt="" class="h-190 mb-2"></video>
+                                       <div class="row col-lg-12 col-md-12 col-sm-12" >
+                                        <div  class="col-lg-12 col-md-12 col-sm-12"style="column-gap: 5px; row-gap: 5px;" >
+                                          <div class="form-group" >
+                                            <label class="form-label">Product File Link</label>
+                                           <form action="" method="post">
+                                            {% csrf_token %}
+                                            <input type="text" name="Link" value="{{Link}}" required  class="form-control">
+                                            
+                                            <div style="opacity: 0;">.</div>
+                                            <button style="padding-top: 10px;"  class="btn btn-primary">Update Link</button>
+                                           </form>
+                                          </div>
+                                        </div>
+                                        
+                                       </div>
+                                      </div>
+                                     </div>
+
+                                {% endif %}
+                                {% if Product.Category == "Music" %}
+                                <div style="text-align: center;" id="fat" class="result">
+                    <audio autoplay src="{% get_media_prefix %}Demo/Music/{{Product.id}}.mp3" controls></audio>  
+                    </div>
+                    <div  class="col-lg-12 col-md-12 col-sm-12" style="column-gap: 5px; row-gap: 5px; text-align: center;" >
+                      <div class="form-group" >
+                        <label class="form-label">Product File Link</label>
+                       <form action="" method="post">
+                        {% csrf_token %}
+                        <input type="text" name="Link" value="{{Link}}" required  class="form-control">
+                        
+                        <div style="opacity: 0;">.</div>
+                        <button style="padding-top: 10px;"  class="btn btn-primary">Update Link</button>
+                       </form>
+                      </div>
+                    </div>
+                    {%  endif %}
+              <div class="row col-lg-12 col-md-12 col-sm-12"  >
+                <div  class="col-lg-8 col-md-12 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Product Name</label>
+                    <input type="text" name="Full_Name" value="{{Product.Name}}" required  class="form-control">
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Category</label>
+                    <input type="text" name="Full_Name" value="{{Product.Category}}" required  class="form-control">
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Product Price</label>
+                    <input type="text"value="₵ {{Product.Price}}" required  class="form-control">
+                  </div>
+                </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Discount Percentage</label>
+                    <input  name="Contact" value="{{Product.Discount}}%" required class="form-control" >
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Product Quantity</label>
+                    <input type="email" name="Email" value="{{Product.Quantity}}" required class="form-control">
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Sub Category</label>
+                    <input type="text" name="Location" value="{{Product.Condition}}" required class="form-control">
+                  </div>
+                </div>
+                
+                
+                
+                
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Product Status</label>
+                    <input type="text" name="Location" value="{{Product.Status}}" required class="form-control">
+                  </div>
+                </div>
+               
+                
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Product Description</label>
+                    <p >{{Product.Description}}</p>
+                  </div>
+                                      
+
+                </div>
+                
+                <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                  <a href="{% url 'staff_account' %}" class="btn btn-primary">Go Back</a>
+                  
+                </div>
+              </div>
+       
+                        
+                   
+                
+    </div>
+      </div>
+        </div>
+           
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:{% get_static_prefix %}Administrator/partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+             <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023.
+              Edumcloud <a href="" target="_blank"></a> from Edumcloud. All rights reserved.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="{% get_static_prefix %}Administrator/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="{% get_static_prefix %}Administrator/js/off-canvas.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/hoverable-collapse.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/template.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/settings.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+
+		
+<div id="cover"  style="background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: hidden">
+	<div class="col-xl-4 col-lg-4 col-xxl-4 col-md-12" style="position: fixed;top:30%;left: 40%;">
+		<div class="card" id="cmain" style="visibility: hidden">
+			<div class="card-body text-center ai-icon  text-primary" >
+				<button style="position: absolute;right: 20px;" class="btn btn-sm btn-danger" onclick="Close()">x</button>
+				<svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+					<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" style="stroke-dasharray: 25, 45; stroke-dashoffset: 0;"></path>
+					<path d="M8,7A4,4 0,1,1 16,7A4,4 0,1,1 8,7" style="stroke-dasharray: 26, 46; stroke-dashoffset: 0;"></path>
+				</svg>
+				<h4 class="my-2">Type "DELETE ACCOUNT" in the form below to delete Account.</h4>
+				<div class="form-group" >
+					
+					<input type="text" id="pass2" class="form-control" style="text-align: center;" >
+				</div>
+				<button onclick="Delete()" id="si_button" class="btn my-2 btn-primary btn-lg px-4"><i class="fa fa-trash"></i> Delete</button>
+			</div>
+		</div>
+	</div>
+</div>
+<input id="state" type="hidden">
+
+<script>
+  setInterval(load_all,1000);
+function load_all(){
+   
+    
+    var pass2 = document.getElementById("pass2").value
+if (pass2==="DELETE ACCOUNT"){
+
+ document.getElementById("si_button").disabled = false;
+}else{
+ document.getElementById("si_button").disabled = true;
+}   
+}  
+
+function Open(id){
+document.getElementById("state").value = id
+document.getElementById('cover').setAttribute("style", "background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: visible")
+document.getElementById('cmain').setAttribute("style", "visibility: visible")
+
+}
+function Close(){
+document.getElementById('cover').setAttribute("style", "visibility: hidden;z-index: 0;")
+document.getElementById('cmain').setAttribute("style", "z-index: 0;visibility: hidden;")
+
+}
+
+
+function Delete(){
+  var state = document.getElementById("state")
+data = JSON.stringify({
+id:state.value,
+})
+fetch("{% url 'manager_account' %}", {
+method: 'POST',
+body: data,
+headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json',
+    },
+})
+.then(response => response.json())
+.then(data => {
+if (data === 'Ok'){
+    document.getElementById(state.value).remove() 
+    state.value="" 
+    document.getElementById("pass2").value=""
+    alert("Account has been deleted successfully!")
+Close()
+}else{
+    alert("Please an error occured when deleting account!")
+
+}
+});}
+</script>

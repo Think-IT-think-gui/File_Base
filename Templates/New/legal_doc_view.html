@@ -1,0 +1,562 @@
+
+
+{% load static %}
+{% include "New/Extra/header.html" %}
+          <!--  Header End -->
+
+
+
+
+          <div class="col-lg-12 col-xl-12">
+              <div class="row">
+
+
+                <div class="col-lg-12 col-xl-12 row">
+
+
+                <div class="col-sm-3">
+                  <div class="card danger-card overflow-hidden text-bg-primary">
+                    <div class="card-body p-4">
+                      <div class="mb-7">
+                        <i class="ti-thumb-up fs-8 fw-lighter"></i>
+                      </div>
+                      <h5 class="text-white fw-bold fs-14">
+                        {{Today}} <span class="fs-2 fw-light"></span>
+                      </h5>
+                      <p class="opacity-50 mb-0">Today's Signed Documments</p>
+                    </div>
+                  </div>
+                </div>
+
+              <div class="col-sm-3">
+                  <div class="card info-card overflow-hidden text-bg-primary">
+                    <div class="card-body p-4">
+                      <div class="mb-7">
+                        <i class="ti-thumb-up fs-8 fw-lighter"></i>
+                      </div>
+                      <h5 class="text-white fw-bold fs-14 text-nowrap">
+                        {{Completed}} <span class="fs-2 fw-light"></span>
+                      </h5>
+                      <p class="opacity-50 mb-0">Total Completed Documments</p>
+                    </div>
+                  </div>
+                </div>
+
+                 <div class="col-sm-3">
+                  <div class="card danger-card overflow-hidden text-bg-primary">
+                    <div class="card-body p-4">
+                      <div class="mb-7">
+                        <i class="ti-thumb-down fs-8 fw-lighter"></i>
+                      </div>
+                      <h5 class="text-white fw-bold fs-14">
+                        {{Pending}} <span class="fs-2 fw-light"></span>
+                      </h5>
+                      <p class="opacity-50 mb-0">Total Pending Documments</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card danger-card overflow-hidden text-bg-primary">
+                    <div class="card-body p-4">
+                      <div class="mb-7">
+                        <i class="ti-thumb-down fs-8 fw-lighter"></i>
+                      </div>
+                      <h5 class="text-white fw-bold fs-14">
+                        {{Total}} <span class="fs-2 fw-light"></span>
+                      </h5>
+                      <p class="opacity-50 mb-0">Total Documments</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+
+
+
+
+
+           <div class="card shadow-none position-relative overflow-hidden mb-4">
+            <div class="card-body d-flex align-items-center justify-content-between p-4">
+              <h4 class="card-title mb-0">{{Name}}</h4>
+
+
+
+
+            </div>
+             <div>
+
+
+
+          </div>
+          </div>
+
+
+
+
+
+    <section class="section-b-space">
+        <div class="custom-container">
+            <div class="row g-4">
+
+
+
+
+
+
+
+           <div class="col-sm-4 col-6">
+           <div class="country-select-box" onclick="goToSignFile(1)">
+           <input class="form-check-input" type="radio" name="flexRadioDefault">
+
+            <div class="country-box">
+                <div class="country-icon">
+                    <img class="img-fluid icon" src="{% get_static_prefix %}pdf.png">
+                </div>
+                <h6 class="country-name">Communication Agreement</h6>
+            </div>
+           </div>
+           </div>
+
+
+
+           <div class="col-sm-4 col-6">
+           <div class="country-select-box" onclick="goToSignFile(2)">
+           <input class="form-check-input" type="radio" name="flexRadioDefault">
+
+            <div class="country-box">
+                <div class="country-icon">
+                    <img class="img-fluid icon" src="{% get_static_prefix %}pdf.png">
+                </div>
+                <h6 class="country-name">Consent Form</h6>
+            </div>
+           </div>
+           </div>
+
+
+
+
+            <div class="col-sm-4 col-6">
+           <div class="country-select-box" onclick="goToSignFile(3)">
+           <input class="form-check-input" type="radio" name="flexRadioDefault">
+
+            <div class="country-box">
+                <div class="country-icon">
+                    <img class="img-fluid icon" src="{% get_static_prefix %}pdf.png">
+                </div>
+                <h6 class="country-name">Interview Consent</h6>
+            </div>
+           </div>
+           </div>
+
+
+
+
+           <div class="col-sm-4 col-6">
+           <div class="country-select-box" onclick="goToSignFile(4)">
+           <input class="form-check-input" type="radio" name="flexRadioDefault">
+
+            <div class="country-box">
+                <div class="country-icon">
+                    <img class="img-fluid icon" src="{% get_static_prefix %}pdf.png">
+                </div>
+                <h6 class="country-name">Guarantor Application</h6>
+            </div>
+           </div>
+           </div>
+
+
+
+
+           <div class="col-sm-4 col-6">
+           <div class="country-select-box" onclick="goToSignFile(5)">
+           <input class="form-check-input" type="radio" name="flexRadioDefault">
+
+            <div class="country-box">
+                <div class="country-icon">
+                    <img class="img-fluid icon" src="{% get_static_prefix %}pdf.png">
+                </div>
+                <h6 class="country-name">Agreement Contract - General</h6>
+            </div>
+           </div>
+           </div>
+
+
+           <div class="col-sm-4 col-6">
+           <div class="country-select-box" onclick="goToSignFile(6)">
+           <input class="form-check-input" type="radio" name="flexRadioDefault">
+
+            <div class="country-box">
+                <div class="country-icon">
+                    <img class="img-fluid icon" src="{% get_static_prefix %}pdf.png">
+                </div>
+                <h6 class="country-name">Refund Policy</h6>
+            </div>
+           </div>
+           </div>
+
+
+
+
+           <div class="col-sm-4 col-6">
+           <div class="country-select-box" onclick="goToSignFile(7)">
+           <input class="form-check-input" type="radio" name="flexRadioDefault">
+
+            <div class="country-box">
+                <div class="country-icon">
+                    <img class="img-fluid icon" src="{% get_static_prefix %}pdf.png">
+                </div>
+                <h6 class="country-name">SEP Participation Consent</h6>
+            </div>
+           </div>
+           </div>
+
+
+           <div class="col-sm-4 col-6">
+           <div class="country-select-box" onclick="goToSignFile(8)">
+           <input class="form-check-input" type="radio" name="flexRadioDefault">
+
+            <div class="country-box">
+                <div class="country-icon">
+                    <img class="img-fluid icon" src="{% get_static_prefix %}pdf.png">
+                </div>
+                <h6 class="country-name">Medical Referral Consent</h6>
+            </div>
+           </div>
+           </div>
+
+
+
+          <div class="col-sm-4 col-6">
+           <div class="country-select-box" onclick="goToSignFile(9)">
+           <input class="form-check-input" type="radio" name="flexRadioDefault">
+
+            <div class="country-box">
+                <div class="country-icon">
+                    <img class="img-fluid icon" src="{% get_static_prefix %}pdf.png">
+                </div>
+                <h6 class="country-name">SEP Ccontract Agreement</h6>
+            </div>
+           </div>
+           </div>
+
+
+           <div class="col-sm-4 col-6">
+           <div class="country-select-box" onclick="goToSignFile(10)">
+           <input class="form-check-input" type="radio" name="flexRadioDefault">
+
+            <div class="country-box">
+                <div class="country-icon">
+                    <img class="img-fluid icon" src="{% get_static_prefix %}pdf.png">
+                </div>
+                <h6 class="country-name">Confidentiality and Non-Disclosure</h6>
+            </div>
+           </div>
+           </div>
+
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+          <div class="row">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+<script>
+  function goToSignFile(id) {
+    // Replace with correct base URL or use Django template variable
+    window.location.href = `/admin_sign_file/${id}/{{Pk}}`;
+    // If using Django template tag:
+    // window.location.href = "{% url 'sign_file' 0 %}".replace('/0/', '/' + id + '/');
+  }
+</script>
+        {% include "New/Extra/footer.html" %}
+
+
+
+
+        <div id="cover"  style="background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: hidden">
+          <div class="col-xl-4 col-lg-4 col-xxl-4 col-md-12" style="position: fixed;top:30%;left: 40%;">
+            <div class="card" id="cmain" style="visibility: hidden">
+              <div class="card-body text-center ai-icon  text-primary" >
+                <button style="position: absolute;right: 20px;" class="btn btn-sm btn-danger" onclick="Close()">x</button>
+                <svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" style="stroke-dasharray: 25, 45; stroke-dashoffset: 0;"></path>
+                  <path d="M8,7A4,4 0,1,1 16,7A4,4 0,1,1 8,7" style="stroke-dasharray: 26, 46; stroke-dashoffset: 0;"></path>
+                </svg>
+                <h4 class="my-2">Type "DELETE ACCOUNT" in the form below to delete Account.</h4>
+                <div class="form-group" >
+
+                  <input type="text" id="pass2" class="form-control" style="text-align: center;" >
+                </div>
+                <button onclick="Delete()" id="si_button" class="btn my-2 btn-primary btn-lg px-4"><i class="fa fa-trash"></i> Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input id="state" type="hidden">
+
+        <script>
+
+         function set_book(id){
+          document.getElementById("c_id").value=id
+          document.getElementById("img").src='{% get_media_prefix %}Profiles/'+id+'.jpg'
+
+
+        }
+          setInterval(load_all,1000);
+        function load_all(){
+
+
+            var pass2 = document.getElementById("pass2").value
+        if (pass2==="DELETE ACCOUNT"){
+
+         document.getElementById("si_button").disabled = false;
+        }else{
+         document.getElementById("si_button").disabled = true;
+        }
+        }
+
+        function Open(id){
+        document.getElementById("state").value = id
+        document.getElementById('cover').setAttribute("style", "background-color:rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: visible")
+        document.getElementById('cmain').setAttribute("style", "visibility: visible")
+
+        }
+        function Close(){
+        document.getElementById('cover').setAttribute("style", "visibility: hidden;z-index: 0;")
+        document.getElementById('cmain').setAttribute("style", "z-index: 0;visibility: hidden;")
+
+        }
+
+
+        function Delete(){
+          var state = document.getElementById("state")
+        data = JSON.stringify({
+        id:state.value,
+        })
+        fetch("{% url 'manager_account' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+            document.getElementById(state.value).remove()
+            state.value=""
+            document.getElementById("pass2").value=""
+            alert("Account has been deleted successfully!")
+        Close()
+        }else{
+            alert("Please an error occured when deleting account!")
+
+        }
+        });}
+
+
+
+
+
+        function stat_up(id){
+          var state = document.getElementById("state_"+id)
+        data = JSON.stringify({
+        id:id,
+        Status:state.value
+        })
+        fetch("{% url 'update_proccess' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+
+            alert("Account has been updated successfully!")
+
+        }else{
+            alert("Please an error occured when updating account!")
+
+        }
+        });}
+
+
+
+        function stat_up2(id){
+          var state = document.getElementById("state2_"+id)
+        data = JSON.stringify({
+        id:id,
+        Status:state.value
+        })
+        fetch("{% url 'update_call' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+
+            alert("Account has been updated successfully!")
+
+        }else{
+            alert("Please an error occured when updating account!")
+
+        }
+        });}
+
+
+
+
+
+        function email_update(id){
+          var state = document.getElementById("em_"+id)
+          var state2 = document.getElementById("emp_"+id)
+
+        data = JSON.stringify({
+        id:id,
+        Email:state.value,
+        Password:state2.value,
+
+        })
+        fetch("{% url 'update_email_data' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+
+            alert("Account has been updated successfully!")
+
+        }else{
+            alert("Please an error occured when updating account!")
+
+        }
+        });}
+
+
+        function log_update(id){
+          var state = document.getElementById("tx_"+id)
+
+         if (state.value === ""){
+          alert('Please add a comment to the log box!')
+         }else{
+        data = JSON.stringify({
+        id:id,
+        Log:state.value,
+
+        })
+        fetch("{% url 'add_log_data' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+            state.value=""
+            alert("Account logs has been updated successfully!")
+
+        }else{
+            alert("Please an error occured when updating account logs!")
+
+        }
+        });}}
+
+
+
+
+
+
+
+
+        </script>
+
+
+
+         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasAddUser" aria-labelledby="offcanvasAddUserLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasAddUserLabel" class="offcanvas-title">Schedule Booking</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body mx-0 flex-grow-0 h-100">
+                <form action="{% url 'manage_booking' %}" method="post" enctype="multipart/form-data">
+                  {% csrf_token %}
+
+                  <div style="text-align: center;"  class="result">
+                    <img id='img' style="border-radius: 5px;width:200px;height:200px;object-fit: cover; " src="{% get_static_prefix %}Manager\assets\img\img-02.jpg">
+
+                    </div>
+
+                  <div style="padding-top: 10px;"></div>
+
+                  <input type="hidden" class="form-control" placeholder="" aria-label="" name="Type" value="Client" />
+                  <input type="hidden" class="form-control" placeholder="" aria-label="" name="Client" value="" id="c_id"/>
+                  <div class="form-floating form-floating-outline mb-4">
+                    <input type="text" id="add-user-email" class="form-control" placeholder="" aria-label="" name="Topic" required />
+                    <label for="add-user-email">Meeting Subject</label>
+                  </div>
+                  <div class="form-floating form-floating-outline mb-4">
+                    <input type="time" id="add-user-email" class="form-control" placeholder="" aria-label="" name="Time" required />
+                    <label for="add-user-email">Schedule Time</label>
+                  </div>
+                  <div class="form-floating form-floating-outline mb-4">
+                    <input type="date" id="add-user-email" class="form-control" placeholder="" aria-label="" name="Date" required />
+                    <label for="add-user-email">Schedule Date</label>
+                  </div>
+
+
+
+                  <div class="form-floating form-floating-outline mb-4">
+                    <textarea type="text" id="add-user-email"  class="form-control"  rows="4" cols="50" placeholder="describ the reason for the meeting.." name="About" required ></textarea>
+                    <label for="add-user-email">Meeting Description</label>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary me-sm-3 me-1 data-submit">Submit</button>
+                  <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="offcanvas">Cancel</button>
+                </form>
+              </div>
+            </div>
+          </div>

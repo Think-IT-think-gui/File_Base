@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Admin</title>
+
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/table/resources/css/app.min.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/table/resources/vendors/zwicon/zwicon.min.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/table/resources/vendors/animate.css/animate.min.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/table/resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+  
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/feather/feather.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="{% get_static_prefix %}Administrator/images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:{% get_static_prefix %}Administrator/partials/_navbar.html -->
+    
+    {% include 'Administrator/header1.html'%}
+
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            
+            
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Recuring Payments</h4>
+                  <p class="card-description">
+                    Accounts here are under recuring payments.
+                  </p>
+                  <a href="{% url 'add_recure' %}" type="button" class="btn btn-warning btn-icon-text">
+                    <i class="ti-pencil-alt"></i>                                                    
+                    Add Reccuring Reciept
+                  </a>
+                  <div class="table-responsive data-table hover">
+                    <table id="data-table" class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th style="color: black;">
+                            ID
+                           </th>
+                           <th style="color: black;">
+                            Name
+                           </th>
+                           <th style="color: black;">
+                            Recuring Type
+                           </th>
+                           
+                           <th style="color: black;">
+                            Mobile Money Type
+                           </th>
+                           <th style="color: black;">
+                            Mobile Money Number
+                           </th>
+                           <th style="color: black;">
+                             Start Date
+                           </th>
+                           
+                           <th style="color: black;">
+                            End Date
+                           </th>
+                           <th style="color: black;">
+                            Initial Amount
+                           </th>
+                           <th style="color: black;">
+                            Recuring Amount
+                           </th>
+                           <th style="color: black;">
+                            Total Ammount
+                           </th>
+                           <th style="color: black;">
+                            Time Requested
+                          </th>
+                           <th style="color: black;">
+                             Date Requested
+                           </th>
+                         
+                          <th style="color: black;">
+                            Statuse
+                          </th>
+
+                          <th style="color: black;">
+                            Delete
+                          </th>
+                         
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for i in Listed %}
+                        <tr id="{{i.id}}">
+                          <td class="py-1">
+                            {{i.id}}
+                          </td>
+                          <td>
+                            {{i.Name}}
+                          </td>
+                          <td>
+                           {{i.Type}}
+                          </td>
+                          
+                          <td>
+                            <a href="#" type="button" class="btn btn-warning btn-icon-text">
+                              <i class="t-notepad btn-icon-check"></i>                                                    
+                              {{i.Network}}
+                            </a>
+                            
+                          </td>
+                          <td>
+                            <a href="#" type="button" class="btn btn-success btn-icon-text">
+                              <i class="t-notepad btn-icon-check"></i>                                                    
+                              {{i.Contact}}
+                            </a>
+                            
+                          </td>
+                          <td>
+                            {{i.Start_Date}}
+                          </td>
+                        
+                          <td>
+                           {{i.End_Date}}
+                          </td>
+                          <td>
+                            <a href="#" type="button" class="btn btn-warning btn-icon-text">
+                              <i class="t-notepad btn-icon-check"></i>                                                    
+                              ₵ {{i.First}}
+                            </a>
+                          </td>
+                          <td>
+                            <a href="#" type="button" class="btn btn-warning btn-icon-text">
+                              <i class="t-notepad btn-icon-check"></i>                                                    
+                              ₵ {{i.Recure}}
+                            </a>
+                          </td>
+                          <td>
+                            <a href="#" type="button" class="btn btn-warning btn-icon-text">
+                              <i class="t-notepad btn-icon-check"></i>                                                    
+                              ₵ {{i.Amount}}
+                            </a>
+                          </td>
+                          <td>
+                            {{i.time}}
+                          </td>
+                          <td>
+                            {{i.date}}
+                          </td>
+                        
+                       
+                          <td id="in{{i.idd}}">
+                            {% if i.Status == "Active" %}
+                            <button type="button" class="btn btn-success btn-icon-text">
+                              <i class="ti-thumb-up btn-icon-check"></i>                                                    
+                              {{i.Status}}
+                            </button>
+                            {% elif i.Status == "Pending" %}
+                            <button type="button" onclick="Init({{i.id}})" class="btn btn-warning btn-icon-text">
+                              <i class="ti-reload btn-icon-check"></i>                                                    
+                              {{i.Status}}
+                            </button>
+                            {% else %}
+                            <button type="button" onclick="Init({{i.id}})" class="btn btn-danger btn-icon-text">
+                              <i class="ti-thumb-down btn-icon-check"></i>                                                    
+                              {{i.Status}}
+                            </button>
+                            {% endif %}
+                          </td>
+
+                          <td id="in{{i.idd}}">
+                            
+                            <button type="button" onclick="Open('{{i.id}}')" class="btn btn-danger btn-icon-text">
+                              <i class="ti-close btn-icon-check"></i>                                                    
+                              Delete
+                            </button>
+                           
+                          </td>
+                        </tr>
+                        {% endfor %}
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+           
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:{% get_static_prefix %}Administrator/partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023.
+              Edumcloud <a href="" target="_blank"></a> from Edumcloud. All rights reserved.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="{% get_static_prefix %}Administrator/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="{% get_static_prefix %}Administrator/js/off-canvas.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/hoverable-collapse.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/template.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/settings.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+
+  
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/jquery/jquery.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/popper.js/popper.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/datatables/jquery.dataTables.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/datatables/datatables-buttons/dataTables.buttons.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/datatables/datatables-buttons/buttons.print.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/jszip/jszip.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/datatables/datatables-buttons/buttons.html5.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/js/app.min.js"></script>
+</body>
+
+</html>
+
+		
+<div id="cover"  style="background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: hidden">
+	<div class="col-xl-4 col-lg-4 col-xxl-4 col-md-12" style="position: fixed;top:30%;left: 40%;">
+		<div class="card" id="cmain" style="visibility: hidden">
+			<div class="card-body text-center ai-icon  text-primary" >
+				<button style="position: absolute;right: 20px;" class="btn btn-sm btn-danger" onclick="Close()">x</button>
+				<svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+					<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" style="stroke-dasharray: 25, 45; stroke-dashoffset: 0;"></path>
+					<path d="M8,7A4,4 0,1,1 16,7A4,4 0,1,1 8,7" style="stroke-dasharray: 26, 46; stroke-dashoffset: 0;"></path>
+				</svg>
+				<h4 class="my-2" style="color: black;">Type "APPROVE CHANGES" in the form below to effect changes.</h4>
+				<div class="form-group" >
+					
+					<input type="text" id="pass2" class="form-control" style="text-align: center;" >
+				</div>
+				<button onclick="Delete()" id="si_button" class="btn my-2 btn-primary btn-lg px-4"><i class="fa fa-trash"></i> Approve</button>
+			</div>
+		</div>
+	</div>
+</div>
+<input id="state" type="hidden">
+
+<div id="cover1"  style="background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: hidden">
+	<div class="col-xl-4 col-lg-4 col-xxl-4 col-md-12" style="position: fixed;top:30%;left: 40%;">
+		<div class="card" id="cmain1" style="visibility: hidden">
+			<div class="card-body text-center ai-icon  text-primary" >
+				<button style="position: absolute;right: 20px;" class="btn btn-sm btn-danger" onclick="Close1()">x</button>
+				<svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+					<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" style="stroke-dasharray: 25, 45; stroke-dashoffset: 0;"></path>
+					<path d="M8,7A4,4 0,1,1 16,7A4,4 0,1,1 8,7" style="stroke-dasharray: 26, 46; stroke-dashoffset: 0;"></path>
+				</svg>
+				<h4 class="my-2" style="color: black;">Type The OTP in the form below to send request.</h4>
+				<div class="form-group" >
+					
+					<input type="number" id="pass3" class="form-control" style="text-align: center;" >
+				</div>
+				<button onclick="Init2()" id="si_button" class="btn my-2 btn-primary btn-lg px-4"><i class="fa fa-trash"></i> Request</button>
+			</div>
+		</div>
+	</div>
+</div>
+<input id="state1" type="hidden">
+
+<script>
+  setInterval(load_all,1000);
+function load_all(){
+   
+    
+    var pass2 = document.getElementById("pass2").value
+if (pass2==="APPROVE CHANGES"){
+
+ document.getElementById("si_button").disabled = false;
+}else{
+ document.getElementById("si_button").disabled = true;
+}   
+}  
+
+function Open(id){
+document.getElementById("state").value = id
+document.getElementById('cover').setAttribute("style", "background-color:rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: visible")
+document.getElementById('cmain').setAttribute("style", "visibility: visible")
+
+}
+function Close(){
+document.getElementById('cover').setAttribute("style", "visibility: hidden;z-index: 0;")
+document.getElementById('cmain').setAttribute("style", "z-index: 0;visibility: hidden;")
+
+}
+
+function Open1(id){
+  document.getElementById("state1").value = id
+  document.getElementById('cover1').setAttribute("style", "background-color:rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: visible")
+  document.getElementById('cmain1').setAttribute("style", "visibility: visible")
+  
+  }
+  function Close1(){
+  document.getElementById('cover1').setAttribute("style", "visibility: hidden;z-index: 0;")
+  document.getElementById('cmain1').setAttribute("style", "z-index: 0;visibility: hidden;")
+  
+  }
+
+function Delete(){
+  var state = document.getElementById("state")
+data = JSON.stringify({
+id:state.value,
+})
+fetch("", {
+method: 'POST',
+body: data,
+headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json',
+    },
+})
+.then(response => response.json())
+.then(data => {
+if (data === 'Yes'){
+   
+    document.getElementById(state.value).remove()
+    alert("changes applied successfully!")
+Close()
+}else{
+    alert("Please an error occured while applying changes!")
+}
+});}
+
+
+function Init(id){
+data = JSON.stringify({
+id:id,
+})
+fetch("{% url 'init_recure' %}", {
+method: 'POST',
+body: data,
+headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json',
+    },
+})
+.then(response => response.json())
+.then(data => {
+if (data === 'Ok'){
+   
+    Open1(id)
+Close()
+}else{
+    alert("Please an error occured while applying changes!")
+}
+});}
+
+
+function Init2(){
+  var state1 = document.getElementById("state1")
+  var otp = document.getElementById("pass3")
+
+
+  data = JSON.stringify({
+  id:state1.value,
+  otp:otp.value
+  })
+  fetch("{% url 'init_recure' %}", {
+  method: 'PUT',
+  body: data,
+  headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      },
+  })
+  .then(response => response.json())
+  .then(data => {
+  if (data === 'Ok'){
+     
+      //document.getElementById(state.value).remove()
+      alert("changes applied successfully!")
+  Close1()
+  }else{
+      alert("Please an error occured while applying changes!")
+  }
+  });}
+</script>
+

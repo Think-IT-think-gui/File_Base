@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% get_static_prefix %}Id/IDCard.css">
+    <title>ID Card</title>
+    <link type="text/css" rel="stylesheet" href="{% get_static_prefix %}style.css">
+</head>
+<body>
+    <div class="container" id="e">
+        <div class="invoice-info clearfix" id="element-to-print">
+        <div class="padding">
+        <div class="font" style="background-image:url('{% get_static_prefix %}Id/h.jpg');">
+            <div class="companyname">
+                <img src="{% get_static_prefix %}s.png?2" style="width: 50px;" alt="">
+
+            </div>
+            <div class="top">
+                <img src="{% get_media_prefix %}Profiles/{{Data.id}}.jpg?{{Rand}}" alt="">
+            </div>
+            <div class="">
+                <div class="ename">
+                <p class="p1"><b style="text-transform: capitalize;">{{Data.Full_Name}}</b></p>
+                <p>Sikobs Member</p>
+                </div>
+                <div class="edetails" style="padding-top:10px">
+                    <P><b>Gender :</b> {{Data.Gender}}</P>
+
+                    <P><b>Mobile No :</b> {{Data.Contact}}</P>
+                    <p><b>DOB :</b>{{Data.Birth}} </p>
+                    <b>Location : </b>{{Data.City}} </div>
+
+                </div>
+
+                <div class="signature">
+                    <img src="{% get_static_prefix %}Id/signature.PNG" alt="">
+                </div>
+
+                <div style="padding-top:40px" class="barcode">
+                    <img src="{% get_media_prefix %}QR/{{Data.id}}.jpg?{{Rand}}" alt="">
+                </div>
+                <style>
+                     .qr img
+        {
+            position: absolute;
+            top: 87%;
+            left: 2%;
+            height: 30px;
+            width:120px;
+            margin:20px;
+            background-color:white;
+
+        }
+                </style>
+                <div class="qr" style="padding-top:40px">
+                    <img src="{% get_static_prefix %}Id/barcode.jpg" alt="">
+                </div>
+
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+</html>
+<script>
+// Select the button and content element
+const downloadButton = document.getElementById("download-pdf");
+const contentElement = document.getElementById("e");
+
+// Add a click event listener to the button
+downloadButton.addEventListener("click", () => {
+    // Create a new jsPDF instance
+    const doc = new jsPDF();
+
+    // Use jsPDF's fromHTML function to add content from the HTML element
+    doc.fromHTML(contentElement, 15, 15);
+
+    // Save the PDF with a specified name
+    doc.save("sample.pdf");
+});
+</script>
+<script src="{% get_static_prefix %}jspdf.min.js"></script>

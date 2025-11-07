@@ -1,0 +1,169 @@
+﻿{% load static %}
+{% include "Cv/Extra/header.html" %}
+<body class="bg-triangles">
+    <!-- Preloader -->
+    <div class="preloader">
+	    <div class="preloader__wrap">
+		    <div class="circle-pulse">
+                <div class="circle-pulse__1"></div>
+                <div class="circle-pulse__2"></div>
+            </div>
+		    <div class="preloader__progress"><span></span></div>
+		</div>
+	</div>
+
+    <main class="main">
+	    <div class="container gutter-top">
+		    <div class="row sticky-parent">
+			    <!-- Sidebar -->
+                <aside class="col-12 col-md-12 col-xl-3">
+				    <div class="sidebar box shadow pb-0 sticky-column">
+						<svg class="avatar avatar--180" viewbox="0 0 188 188">
+                            <g class="avatar__box">
+                                <image xlink:href="{%get_media_prefix%}Lottery_Profiles/{{Data.id}}.jpg?{{Rand}}" height="100%" width="100%"></image>
+                            </g>
+                        </svg>
+						<div class="text-center">
+						    <h3 class="title title--h3 sidebar__user-name">{{Data.Full_Name}}</h3>
+							<div class="badge badge--light">Sikorbs Client</div>
+							
+							<!-- Social -->
+		                    <div class="social">
+		                        <a class="social__link" href="https://www.facebook.com/"><i class="font-icon icon-facebook"></i></a>
+		                        <a class="social__link" href="https://www.behance.com/"><i class="font-icon icon-twitter"></i></a>
+		                        <a class="social__link" href="https://www.linkedin.com/"><i class="font-icon icon-linkedin2"></i></a>
+		                    </div>
+						</div>
+						
+						<div class="sidebar__info box-inner box-inner--rounded">
+		                    <ul class="contacts-block">
+					            <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Birthday">
+							        <i class="font-icon icon-calendar"></i>{{Data.Birth}}
+							    </li>
+						        <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Address">
+							        <i class="font-icon icon-location"></i>{{Data.City}}
+							    </li>
+						        <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="E-mail">
+							        <a href="mailto:example@mail.com"><i class="font-icon icon-envelope"></i>{{Data.Email}}</a>
+							    </li>
+						        <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Phone">
+							        <i class="font-icon icon-phone"></i>{{Data.Contact}}
+							    </li>
+						      
+					        </ul>
+							
+							<a class="btn" href="#"><i class="font-icon icon-download"></i> Download CV</a>
+						</div>
+					</div>	
+		        </aside>
+		        
+				<!-- Content -->
+		        <div class="col-12 col-md-12 col-xl-9">
+				    <div class="box shadow pb-0">
+					    <!-- Menu -->
+					    
+						
+
+			            <div class="content" id="content">
+						    <div id="about-tab" class="tabcontent active">
+					            <!-- ABOUT -->
+						        <div class="pb-0 pb-sm-2">
+		                            <h1 class="title title--h1 first-title title__separate">About Me</h1>
+						            <p>Dedicated and results-driven professional with a passion for my work. Possessing a diverse set of skills honed through hands-on experience and a commitment to continuous learning. Known for adaptability, attention to detail, and the ability to thrive in dynamic environments. A collaborative team player with excellent communication and problem-solving skills. Committed to achieving organizational goals through a combination of innovation and a strong work ethic.
+
+										My career has been marked by a commitment to excellence and a proactive approach to challenges. I have a proven track record of my achievements and projects. My analytical mindset allows me to approach problems methodically, and my strong interpersonal skills enable me to work effectively with colleagues at all levels.</p>
+					            </div>
+						
+						        <!-- What -->
+						       
+						
+								<div class="box-inner pb-0">
+									<h2 class="title title--h3">My Bio</h2>
+									<div class="row">
+										<!-- Case Item -->
+										<div class="col-12 col-lg-6">
+											<div class="case-item box box__second">
+												<img class="case-item__icon" src="{%get_static_prefix%}Cv/assets/icons/icon-design.svg" alt="" />
+												<div>
+													<h3 class="title title--h5">About Me</h3>
+													<p class="case-item__caption">
+														<span>Gender : {{Data.Gender}}</span><br>
+														<span>Marital Status : {{Data.Marital}}</span><br>
+														<span>Birth Date : {{Data.Birth}}</span><br>
+														<span>National ID : {{Data.Card_Id}}</span>
+													</p>
+												</div>	
+											</div>
+										</div>
+										
+										<!-- Case Item -->
+										<div class="col-12 col-lg-6">
+											<div class="case-item box box__second">
+												<img class="case-item__icon" src="{%get_static_prefix%}Cv/assets/icons/icon-design.svg" alt="" />
+												<div>
+													<h3 class="title title--h5">My Make</h3>
+													<p class="case-item__caption">
+														<span>Height : {{Data.Height}} ft</span><br>
+														<span>Weight : {{Data.Weight}} kg</span><br>
+														<span>Hair Color : {{Data.Hair}}</span><br>
+														<span>Eye Color : {{Data.Eye}}</span>
+
+													</p>
+												</div>
+											</div>
+										</div>
+										
+										<!-- Case Item -->
+										
+										
+										<!-- Case Item -->
+										<div class="col-12 col-lg-6">
+											<div class="case-item box box__second">
+												<img class="case-item__icon" src="{%get_static_prefix%}Cv/assets/icons/icon-design.svg" alt="" />
+												<div>
+													<h3 class="title title--h5">Place Of Recidence</h3>
+													<span>Recidence Country : {{Data.Country_Recidence}}</span><br>
+														<span>Recidence City : {{Data.City}}</span><br>
+														<span>Recidence Address : {{Data.Address}}</span><br>
+														<span>Postal Code : {{Data.Postal_Code_Recidence}}</span>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+						        <!-- Testimonials -->
+						       
+								
+						        <!-- Clients -->
+						      <div style="padding-top: 30px;"></div>
+						    </div>
+							
+							
+							
+							
+							<!-- CONTACT -->
+							
+							
+						</div>
+					</div>
+					
+					<!-- Footer -->
+					<footer class="footer">© 2023 vCard</footer>
+		        </div>
+			</div>
+		</div>	
+    </main>
+
+    <!-- Demo Menu -->	
+
+	<!-- JavaScripts -->
+	<script src="{%get_static_prefix%}Cv/assets/js/jquery-3.4.1.min.js"></script>
+	<script src="{%get_static_prefix%}Cv/assets/js/plugins.min.js"></script>
+    <script src="{%get_static_prefix%}Cv/assets/js/common.js"></script>
+    
+	<!-- Mapbox init -->
+	<script src="{%get_static_prefix%}Cv/assets/js/mapbox.init.js"></script>
+	
+	<script src="{%get_static_prefix%}Cv/assets/demo/plugins-demo.js"></script>
+</body>
+</html>

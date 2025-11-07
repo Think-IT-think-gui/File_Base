@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kingdom Dynasty</title>
+
+		<link rel="icon" sizes="192x192" href="{% get_static_prefix %}Pannel/img/touch-icon.png"/>
+		<link rel="apple-touch-icon" href="{% get_static_prefix %}Pannel/img/touch-icon-iphone.png"/>
+		<link rel="apple-touch-icon" sizes="76x76" href="{% get_static_prefix %}Pannel/img/touch-icon-ipad.png"/>
+		<link rel="apple-touch-icon" sizes="120x120" href="{% get_static_prefix %}Pannel/img/touch-icon-iphone-retina.png"/>
+		<link rel="apple-touch-icon" sizes="152x152" href="{% get_static_prefix %}Pannel/img/touch-icon-ipad-retina.png"/>
+
+		<link rel="shortcut icon" type="image/x-icon" href="{% get_static_prefix %}Pannel/img/favicon.ico"/>
+
+		<link rel="stylesheet" type="text/css" href="{% get_static_prefix %}Pannel/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="{% get_static_prefix %}Pannel/css/main.min.css">
+
+		<!-- Pixeden Icon Fonts -->
+		<link rel="stylesheet" type="text/css" href="{% get_static_prefix %}Pannel/css/pe-icon-7-filled.css">
+		<link rel="stylesheet" type="text/css" href="{% get_static_prefix %}Pannel/css/pe-icon-7-stroke.css">
+	</head>
+<body>
+	<div id="loading">
+		<div class="loader loader-light loader-large"></div>
+	</div>
+
+
+
+
+					<div>
+
+					<div class="col-md-4  col-md-offset-4">
+						<article class="widget widget__login">
+
+
+							<form action="" method="post" class="widget__content">
+                                      {% csrf_token %}
+									<script src="{% get_static_prefix%}scan/qrScript.js"></script>
+									<div style="text-align: center;">
+
+
+
+
+
+                                    <div >
+
+                                    	<article class="widget widget__form">
+                                    							<div class="widget__content">
+                                    								<input type="text" placeholder='Your Contact' name='Contact'>
+                                    						</div>
+                                    </article>
+                                    <div >
+
+                                    	<article class="widget widget__form">
+                                    							<div class="widget__content">
+                                    								<input type="password" placeholder='Your Password' name='Password'>
+                                    						</div>
+                                    </article>
+                                    </div>
+
+
+
+
+
+
+									</form>
+
+
+                            <div class="login__remember text-center">
+
+								<button class="btn" >Log In</button>
+							</div>
+							</form>
+
+						</article><!-- /widget -->
+					</div>
+				</div>
+				<script>
+
+					function getCookie(name) {
+					let cookieValue = null;
+					if (document.cookie && document.cookie !== '') {
+						const cookies = document.cookie.split(';');
+						for (let i = 0; i < cookies.length; i++) {
+							const cookie = cookies[i].trim();
+							// Does this cookie string begin with the name we want?
+							if (cookie.substring(0, name.length + 1) === (name + '=')) {
+								cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+								break;
+							}
+						}
+					}
+					return cookieValue;
+					}
+
+					const csrftoken = getCookie('csrftoken');
+					console.log(csrftoken)
+
+				  </script>
+
+				<script src="{% get_static_prefix%}Pannel/qrScript.js"></script>
+				<script>
+					const html5Qrcode = new Html5Qrcode('reader');
+					const qrCodeSuccessCallback = (decodedText, decodedResult)=>{
+						if(decodedText){
+							console.log('hh')
+							Online(decodedText)
+
+						}
+					}
+					const config = {fps:10, qrbox:{width:250, height:250}}
+					html5Qrcode.start({facingMode:"environment"}, config,qrCodeSuccessCallback );
+
+				 function Online(id){
+
+
+					   data = JSON.stringify({
+					   id:id,
+					  })
+					   fetch("{% url 'login_authenticate' %}", {
+					   method: 'POST',
+					   body: data,
+					   headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+						   'Content-Type': 'application/json',
+						   },
+					  })
+					 .then(response => response.json())
+					 .then(data => {
+					   console.log(data);
+					   if (data["State"] ==="Ok"){
+						   html5Qrcode.stop();
+
+						   window.open("{% url 'client' %}","_self")
+					   }else{
+						   alert(data["State"])
+					   }
+					 });}
+					</script>
+
+				<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/main.js"></script>
+				<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/amcharts/amcharts.js"></script>
+				<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/amcharts/serial.js"></script>
+				<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/amcharts/pie.js"></script>
+				<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/chart.js"></script>
+</body>
+</html>

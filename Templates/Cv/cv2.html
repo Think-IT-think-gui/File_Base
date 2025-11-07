@@ -1,0 +1,228 @@
+{% load static %}
+{% include "Cv/Extra/header.html" %}
+<body class="bg-triangles">
+    <!-- Preloader -->
+    <div class="preloader">
+	    <div class="preloader__wrap">
+		    <div class="circle-pulse">
+                <div class="circle-pulse__1"></div>
+                <div class="circle-pulse__2"></div>
+            </div>
+		    <div class="preloader__progress"><span></span></div>
+		</div>
+	</div>
+<style>
+  .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  }
+  .upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0;
+  }
+  </style>
+    <main class="main">
+	    <div class="container gutter-top">
+		    <div class="row sticky-parent">
+			    <!-- Sidebar -->
+
+
+				<!-- Content -->
+		        <div class="col-12 col-md-12 col-xl-9">
+				    <div class="box shadow pb-0">
+					    <!-- Menu -->
+
+
+
+			            <div class="content" id="content">
+						    <div id="about-tab" class="tabcontent active">
+					            <!-- ABOUT -->
+						        <div class="pb-0 pb-sm-2">
+		                            <h1 class="title title--h1 first-title title__separate">Interview Report ({{i.Dated}})</h1>
+
+					            </div>
+
+						        <!-- What -->
+
+
+								<div class="box-inner pb-0">
+
+									<div class="row">
+										<!-- Case Item -->
+										<div class="col-12 ">
+											<div class="case-item box box__second">
+												<img class="case-item__icon" src="{%get_static_prefix%}Cv/assets/icons/icon-design.svg" alt="" />
+												<div>
+													<h3 class="title title--h5">Client Info</h3>
+													<p class="case-item__caption">
+
+														<span>Full Name : {{Data.Full_Name}}</span><br>
+														<span>Gender : {{Data.Gender}}</span><br>
+														<span>Birth Date : {{Data.Birth}}</span><br>
+
+													</p>
+												</div>
+											</div>
+										</div>
+
+										<!-- Case Item -->
+										<div class="col-12 ">
+											<div class="case-item box box__second">
+												<img class="case-item__icon" src="{%get_static_prefix%}Cv/assets/icons/icon-design.svg" alt="" />
+												<div>
+													<h3 class="title title--h5">Interviewed By</h3>
+													<p class="case-item__caption">
+														<span>Full Name : {{Admin.Name}} ft</span><br>
+														<span>Country : {{Admin.Country}}</span><br>
+														<span>Location : {{Admin.Location}}</span><br>
+
+
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 ">
+											<div class="case-item box box__second">
+												<img class="case-item__icon" src="{%get_static_prefix%}Cv/assets/icons/icon-design.svg" alt="" />
+												<div>
+													<h3 class="title title--h5">Your Score </h3>
+													<p class="case-item__caption">
+														<span>Your Score : {{Percent}}</span><br>
+														<span>Pass Mark : 50% </span><br>
+														<span>Remark : {{Score}}</span><br>
+
+
+													</p>
+												</div>
+											</div>
+										</div>
+
+										<!-- Case Item -->
+
+									</div>
+								</div>
+						        <!-- Testimonials -->
+
+								<div class="pb-2">
+									<h1 class="title title--h1 first-title title__separate">Performance Info</h1>
+								</div>
+
+
+<div class="row">
+
+                                             {% if i.Status == "Completed" %}
+                                         	<div class="col-12 col-lg-12">
+											<div class="case-item box box__second">
+
+												<div>
+													<h3 class="title title--h5">Communication Skill ({{i.Communication}}0% / 100% ):</h3>
+													<span>{{C5.0.Remark}}</span>
+												</div>
+											</div>
+									     	</div>
+
+									     	<div class="col-12 col-lg-12">
+											<div class="case-item box box__second">
+
+												<div>
+													<h3 class="title title--h5">Practical Experience ({{i.Practical}}0% / 100% ):</h3>
+													<span>{{C2.0.Remark}}</span>
+												</div>
+											</div>
+									     	</div>
+
+									     	<div class="col-12 col-lg-12">
+											<div class="case-item box box__second">
+
+												<div>
+													<h3 class="title title--h5">Commitment ({{i.Commitment}}0% / 100% ):</h3>
+													<span>{{C6.0.Remark}}</span>
+												</div>
+											</div>
+									     	</div>
+
+
+
+									     	<div class="col-12 col-lg-12">
+											<div class="case-item box box__second">
+
+												<div>
+													<h3 class="title title--h5">Medicals ({{i.Medicals}}0% / 100% ):</h3>
+													<span>{{C1.0.Remark}}</span>
+												</div>
+											</div>
+									     	</div>
+
+									     	<div class="col-12 col-lg-12">
+											<div class="case-item box box__second">
+
+												<div>
+													<h3 class="title title--h5">Confidence ({{i.Confidence}}0% / 100% ):</h3>
+													<span>{{C3.0.Remark}}</span>
+												</div>
+											</div>
+									     	</div>
+
+									     	<div class="col-12 col-lg-12">
+											<div class="case-item box box__second">
+
+												<div>
+													<h3 class="title title--h5">Knowladge ({{i.Knowledge}}0% / 100% ):</h3>
+													<span>{{C4.0.Remark}}</span>
+												</div>
+											</div>
+									     	</div>
+
+
+
+                                           {% endif %}
+
+
+
+
+										<div style="padding-top: 30px;"></div>
+									</div>
+
+								</div>
+
+								</div>
+						        <!-- Clients -->
+						      <div style="padding-top: 30px;"></div>
+						    </div>
+
+
+
+
+							<!-- CONTACT -->
+
+
+						</div>
+					</div>
+
+					<!-- Footer -->
+					<footer class="footer">© 2025 Sikobs</footer>
+		        </div>
+			</div>
+		</div>
+    </main>
+
+    <!-- Demo Menu -->
+
+	<!-- JavaScripts -->
+	<script src="{%get_static_prefix%}Cv/assets/js/jquery-3.4.1.min.js"></script>
+	<script src="{%get_static_prefix%}Cv/assets/js/plugins.min.js"></script>
+    <script src="{%get_static_prefix%}Cv/assets/js/common.js"></script>
+
+	<!-- Mapbox init -->
+	<script src="{%get_static_prefix%}Cv/assets/js/mapbox.init.js"></script>
+
+	<script src="{%get_static_prefix%}Cv/assets/demo/plugins-demo.js"></script>
+</body>
+</html>

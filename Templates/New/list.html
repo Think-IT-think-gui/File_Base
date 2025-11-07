@@ -1,0 +1,887 @@
+
+
+{% load static %}
+{% include "New/Extra/header.html" %}
+          <!--  Header End -->
+           <div class="card shadow-none position-relative overflow-hidden mb-4">
+            <div class="card-body d-flex align-items-center justify-content-between p-4">
+              <h4 class="card-title mb-0">{{Note}}</h4>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item">
+                    <a class="text-muted text-decoration-none" style='color:red;font-size:30px'>{{Count}}</a>
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">Clients</li>
+                </ol>
+
+              </nav>
+
+              {% if Side_Perm.id == "No" %}
+
+              {% else %}
+              {% if Data.Regional == "Yes" %}
+              <form class="row col-5" action="{% url 'manager_account_group_filter_region' Side_Perm.id %}" method="post">
+                {% csrf_token %}
+                  <span class="badge text-bg-light fs-2 py-1 px-2 lh-sm  mt-3 col-5">
+
+
+                  <select type="tel" name="Key" style="border-color:transparent"  required class="form-control">
+
+                      <option value="Ashanti">Ashanti Region: Kumasi</option>
+                                <option value="Bono">Bono Region: Sunyani</option>
+                                <option value="Bono East">Bono East Region: Techiman</option>
+                                <option value="Central">Central Region: Cape Coast</option>
+                                <option value="Eastern">Eastern Region: Koforidua</option>
+                                <option value="Greater Accra">Greater Accra Region: Accra</option>
+                                <option value="Northern">Northern Region: Tamale</option>
+                                <option value="North East">North East Region: Nalerigu</option>
+                                <option value="Oti">Oti Region: Dambai</option>
+                                <option value="Savannah">Savannah Region: Damongo</option>
+                                <option value="Upper East">Upper East Region: Bolgatanga</option>
+                                <option value="Upper West">Upper West Region: Wa</option>
+                                <option value="Volta">Volta Region: Ho</option>
+                                <option value="Western">Western Region: Takoradi</option>
+                                <option value="Western North">Western North Region: Wiawso</option>
+                                <option value="Ahafo">Ahafo Region: Goaso</option>
+
+
+                  </select>
+                </span>
+
+                <div style="padding-top:22px" class="col-3">
+                  <button type="submit"  class="btn bg-success-subtle text-success w-100 rounded-pill">  <i class="ti-search text-dark fs-5" style="padding-right:5px"></i></button>
+
+                </div>
+
+              </form>
+              {% endif %}
+
+              <form class="row " action="{% url 'manager_account_group_filter' Side_Perm.id  %}" method="post">
+                {% csrf_token %}
+                  <span class="badge text-bg-light fs-2 py-1 px-2 lh-sm  mt-3 col-5">
+
+
+                  <select type="tel" name="Key" style="border-color:transparent"  required class="form-control">
+
+                    <option value="Called">Called</option>
+                    <option value="Not Called">Not Called</option>
+
+                    <option value="Picked Up">Picked Up</option>
+                    <option value="Rescheduled">Rescheduled</option>
+                    <option value="Unavailable">Unavailable</option>
+
+                  </select>
+                </span>
+                <span class="badge text-bg-light fs-2 py-1 px-2 lh-sm  mt-3 col-4">
+
+
+                  <input type="date" name="Date"  style="border-color:transparent"  required class="form-control">
+
+
+                </span>
+                <div style="padding-top:22px" class="col-3">
+                  <button type="submit"  class="btn bg-success-subtle text-success w-100 rounded-pill">  <i class="ti-search text-dark fs-5" style="padding-right:5px"></i></button>
+
+                </div>
+
+              </form>
+
+              {% endif %}
+
+              {% if Type == 'Decition' %}
+              {% if Type_Link == 2 %}
+                 <form class="row " action="{% url 'filter_decition_account'  %}" method="post">
+
+              {% else %}
+                  <form class="row " action="{% url 'proccess_account_filter'  %}" method="post">
+              {% endif %}
+                  <span class="badge text-bg-light fs-2 py-1 px-2 lh-sm  mt-3 col-5">
+
+                    {% csrf_token %}
+                  <input type="number" value="1" name="Start" style="border-color:transparent"  required class="form-control">
+
+
+                </span>
+                <span class="badge text-bg-light fs-2 py-1 px-2 lh-sm  mt-3 col-4">
+
+
+                   <input type="number" value="100" name="End" style="border-color:transparent"   required class="form-control">
+
+
+
+                </span>
+                <div style="padding-top:22px" class="col-3">
+                  <button type="submit"  class="btn bg-success-subtle text-success w-100 rounded-pill">  <i class="ti-search text-dark fs-5" style="padding-right:5px"></i></button>
+
+                </div>
+
+              </form>
+
+              {% endif %}
+            </div>
+             <div>
+
+
+
+          </div>
+          </div>
+
+
+          <div class="row">
+
+           {% for i in Listed %}
+            <div class="col-md-6 col-lg-4">
+              <div class="card overflow-hidden hover-img">
+                <div class="position-relative">
+
+                  <a href="">
+                    <div  style="position: absolute;padding-top: 5px;padding-left: 5px;">
+
+                     {% if i.SEP == None %}
+                     <span class="badge bg-danger"><i class="ti-check" style="padding-right: 5px;"></i>{{i.SEP}}</span>
+                     {% else %}
+                     <span class="badge bg-info"><i class="ti-check" style="padding-right: 5px;"></i>{{i.SEP}}</span>
+                     {% endif %}
+
+
+                     {% if i.Group == "Active" %}
+
+
+
+                      {% if i.Type == 1 %}
+                      <span class="badge bg-danger"><i class="ti-timer" style="padding-right: 5px;"></i> {{i.Week}} Weeks Left</span>
+                      {% elif i.Type == 2 %}
+                      <span class="badge bg-primary"><i class="ti-timer" style="padding-right: 5px;"></i> {{i.Week}} Weeks Left</span>
+                      {% else %}
+                      <span class="badge bg-success"><i class="ti-timer" style="padding-right: 5px;"></i> {{i.Week}} Weeks Left</span>
+
+                      {% endif %}
+                       {% endif %}
+
+                    </div>
+                    <div  style="position: absolute;padding-top: 5px;padding-right: 5px;right: 1px;">
+                      {% if i.Call == 0 %}
+
+                      {% else %}
+                     <img src="{% get_media_prefix %}Admin/{{i.Call}}.jpg?{{Rand}}" onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';" style="height:50px;width: 50px;object-fit:cover;border-radius: 100px;" class="card-img-top" alt="spike-img">
+
+                      {% endif %}
+
+                    </div>
+                    <img src="{% get_media_prefix %}Profiles/{{i.id}}.jpg?{{Rand}}" onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';" style="height:350px;object-fit:cover" class="card-img-top" alt="spike-img">
+                  </a>
+                  <span class="badge text-bg-light fs-2 lh-sm mb-9 me-9 py-1 px-2 fw-semibold position-absolute bottom-0 end-0">{{i.Contact}}</span>
+
+                </div>
+
+
+                <div class="d-flex align-items-center gap-3 py-3 border-bottom">
+                      <img src="{% get_media_prefix %}{{i.Agent_Image}}/{{i.Agent}}.jpg?{{Rand}}" onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';" style="height:40px;width: 40px;object-fit:cover;border-radius: 100px;" class="card-img-top" alt="spike-img">
+                      <div>
+                        <h6 class="mb-0 fw-semibold">{{i.Agent_Name}}</h6>
+                        <span class="fs-2">{{i.Agent_Contact}}</span>
+                      </div>
+                      <div class="ms-auto text-end">
+                        <h6 class="mb-0 fw-semibold">{{i.Agent_Location}}</h6>
+                        <span class="fs-2">{{i.Agent_Type}} Account</span>
+                      </div>
+                    </div>
+
+
+                {% if Type == 'Decition' %}
+                 <span style="padding-top:10px;padding-left:10px">{{i.Percent}}% Completed</span>
+                <div class="progress mt-3 text-bg-light">
+
+                            <div class="progress-bar text-bg-primary" role="progressbar" style="width: {{i.Percent}}%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                {% endif  %}
+
+                <div class="card-body p-4">
+                  <div class="d-flex align-items-center fs-2 ms-auto" style="text-align:right">
+                    <i class=" ti-bookmark-alt text-dark" style="padding-right:5px"></i> {{i.date}}
+                    {% if i.Stat == "Not Called" %}
+                    <span style="padding-left:22px;"><span class="badge bg-danger"><i class="ti-alert" ></i> {{i.Stat}}</span></span>
+                    {% else %}
+                    <span style="padding-left:22px;"><span class="badge bg-primary"><i class="ti-alert" ></i> {{i.Stat}}</span></span>
+
+                    {% endif %}
+                     <span style="padding-left:22px;text-align:end;font-size:20px"><span class="badge bg-primary"><i class="ti-user" ></i> {{i.Main}}</span></span>
+                  </div>
+
+                 <div class="row">
+                {% if Side_Perm.Status_Change == 'Yes' %}
+                  <span class="badge text-bg-light fs-2 py-1 px-2 lh-sm  mt-3 col-6">
+
+
+                    <select type="tel" id="state_{{i.id}}" style="border-color:transparent" onchange="stat_up('{{i.id}}')"  required class="form-control">
+                      <option selected="" value="{{i.Group}}">{{i.Group}}</option>
+
+                       {% for i in Side_Bar %}
+                      {% if i.id in Permission %}
+                      <option value="{{i.Name}}">{{i.Name}}</option>
+                      {% endif %}
+                       {% endfor %}
+
+
+
+                    </select>
+                  </span>
+                  {% endif %}
+
+
+                  <span class="badge text-bg-light fs-2 py-1 px-2 lh-sm  mt-3 col-6">
+
+
+                    <select type="tel" id="state2_{{i.id}}" style="border-color:transparent" onchange="stat_up2('{{i.id}}')"  required class="form-control">
+                      <option value="0">Assign CRO</option>
+
+                      {% for a in Admins %}
+                      <option value="{{a.id}}">{{a.Full_Name}}</option>
+                      {% endfor %}
+                    </select>
+
+                  </span>
+
+                </div>
+
+                  <a class="d-block my-4 fs-5 text-dark fw-semibold link-primary" href="">
+                    {{i.Full_Name}}</a>
+                  <div class="d-flex align-items-center gap-4">
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="ti-email text-dark fs-5" style="padding-right:5px"></i>{{i.Email}}
+                    <br>
+                      <i class="ti-file text-dark fs-5" style="padding-right:5px"></i>{{i.Seen}}
+
+
+                    </div>
+
+
+
+                  </div>
+                  <div class="align-items-center gap-4 "style="padding-top:10px">
+
+                      <i class="ti-file text-dark fs-5" style="padding-right:5px"></i>{{i.Address}}
+
+                    </div>
+                     <div class="align-items-center gap-4 "style="padding-top:10px">
+
+                      <i class="ti-file text-dark fs-5" style="padding-right:5px"></i>{{i.City}}
+
+                    </div>
+
+                  {% if Side_Perm.Call_Log == 'Yes' %}
+                  <div style="padding-top:10px">
+                    <a href="{% url 'add_call_logs' i.id %}" class="btn bg-primary-subtle text-primary w-100 rounded-pill">Call Logs</a>
+
+                  </div>
+                  {% endif %}
+
+
+                  {% if Side_Perm.Book_Client == 'Yes' %}
+                   <div style="padding-top:10px">
+                    <a onclick="set_book('{{i.id}}')" class="btn bg-primary-subtle text-primary w-100 rounded-pill" aria-controls="DataTables_Table_0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddUser" >Book Client</a>
+
+                  </div>
+                  {% endif %}
+
+                  {% if Side_Perm.Interview == 'Yes' %}
+                  <div style="padding-top:10px">
+                    <a onclick="set_book('{{i.id}}')" class="btn bg-primary-subtle text-primary w-100 rounded-pill" aria-controls="DataTables_Table_0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddUser2" >Set Up Client Interview</a>
+
+                  </div>
+                  {% endif %}
+
+                  {% if Side_Perm.Chat_Files == 'Yes' %}
+                  <div style="padding-top:10px">
+                    <a href="{% url 'client_media' i.id %}" class="btn bg-info-subtle text-info w-100 rounded-pill">Submited Media Files</a>
+
+                  </div>
+                 {% endif %}
+
+
+                  <hr>
+
+                  <div class="row">
+                  {% if Side_Perm.Profile == 'Yes' %}
+                  <div style="padding-top:5px" class="col-6">
+                    <a href="{% url 'manager_edit' i.id %}" class="btn bg-warning-subtle text-warning w-100 rounded-pill">View Profile</a>
+
+                  </div>
+                  {% endif %}
+
+                  {% if Side_Perm.Cv == 'Yes' %}
+                  <div style="padding-top:5px" class="col-6">
+                    <a href="{% url 'profile_cv' i.id %}" class="btn bg-success-subtle text-success w-100 rounded-pill">View Cv </a>
+
+                  </div>
+                  {% endif %}
+                </div>
+
+                  {% if Side_Perm.Payment == 'Yes' %}
+                  <div style="padding-top:10px">
+                    <a href="{% url 'manager_paid' i.id %}" class="btn bg-primary-subtle text-primary w-100 rounded-pill">Payment Report</a>
+
+                  </div>
+                  {% endif %}
+                  <hr>
+
+
+                  <div class="row">
+                      {% if Side_Perm.Debit == 'Yes' %}
+                  <div style="padding-top:5px" class="col-6">
+                    <a href="{% url 'manager_debit' i.id %}" class="btn bg-warning-subtle text-warning w-100 rounded-pill">Debit Account</a>
+
+                  </div>
+                   {% endif %}
+
+                  {% if Side_Perm.Id_Card == 'Yes' %}
+                  <div style="padding-top:5px" class="col-6">
+                    <a href="{% url 'cards' i.id %}" class="btn bg-success-subtle text-success w-100 rounded-pill">View Id Card</a>
+
+                  </div>
+                 {% endif %}
+                   <div class="row">
+
+                {% if Side_Perm.Upload_Files == 'Yes' %}
+                  <div style="padding-top:5px" class="col-6">
+                    <a href="{% url 'manage_files' i.id %}" class="btn bg-warning-subtle text-warning w-100 rounded-pill">Upload Files</a>
+
+                  </div>
+
+                  {% endif %}
+
+                  {% if Side_Perm.View_Files == 'Yes' %}
+                  <div style="padding-top:5px" class="col-6">
+                    <a href="{% url 'list_uploaded_files' i.id %}" class="btn bg-success-subtle text-success w-100 rounded-pill">View Files</a>
+
+                  </div>
+                  {% endif %}
+                  </div>
+
+                </div>
+
+
+                 {% if Side_Perm.Sign == 'Yes' %}
+                <div style="padding-top:5px" class="col-12">
+                  <a href="{% url 'confirm_documment_list' i.id %}" class="btn bg-info-subtle text-info w-100 rounded-pill">Client Signed Documments</a>
+
+                </div>
+                {% endif %}
+
+
+                {% if Side_Perm.Delete == 'Yes' %}
+                <div style="padding-top:5px" class="col-12">
+                  <a onclick="Open('{{i.id}}')" class="btn bg-danger-subtle text-danger w-100 rounded-pill">Delete Client</a>
+
+                </div>
+                {% endif %}
+
+                {% if Side_Perm.Opperation == 'Yes' %}
+                <hr>
+                  <p style="text-align: center;">Job Status Tab</p>
+                  <div>
+
+                    <div  class="col-lg-12 col-md-12 col-sm-12">
+                      <div class="form-group">
+                        <label class="form-label">Contact Email</label>
+                        <input type="text"  value="{{i.Contact_Email}}" id="em_{{i.id}}" required  class="form-control">
+                      </div>
+                    </div>
+
+                    <div  class="col-lg-12 col-md-12 col-sm-12">
+                      <div class="form-group">
+                        <label class="form-label">Email Password</label>
+                        <input type="text" name="Garantor_Name" id="emp_{{i.id}}" value="{{i.Contact_Email_Password}}" required  class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div style="padding-top:5px" class="col-6">
+                        <a onclick="email_update('{{i.id}}')" class="btn bg-warning-subtle text-warning w-100 rounded-pill">Update</a>
+
+                      </div>
+                      <div style="padding-top:5px" class="col-6">
+                        <a href="{% url 'view_log' i.id %}" class="btn bg-success-subtle text-success w-100 rounded-pill">View Logs </a>
+
+                      </div>
+                    </div>
+<hr>
+<div  class="col-lg-12 col-md-12 col-sm-12">
+  <div class="form-group">
+    <label class="form-label">Create Log</label>
+    <textarea type="text" name="Garantor_Name" id="tx_{{i.id}}"  required placeholder="Log client work status here.."  class="form-control"></textarea>
+  </div>
+</div>
+                    <div style="padding-top:5px" class="col-12">
+                      <a onclick="log_update('{{i.id}}')" class="btn bg-success-subtle text-success w-100 rounded-pill">Post Log</a>
+
+                    </div>
+                  </div>
+{% endif %}
+
+
+
+
+                </div>
+              </div>
+            </div>
+
+{% endfor %}
+
+
+
+
+
+          </div>
+          {% if Type_Down == 'Decition' %}
+
+              <form method="POST">
+                {% csrf_token %}
+                <input type="hidden" value="{{Start}}" name="Start">
+                <input type="hidden" value="{{End}}" name="End">
+
+
+                {% for product in page_obj %}
+                    <p>{{ product.name }}</p>
+                {% endfor %}
+
+                <div>
+                    {% if page_obj.has_previous %}
+
+                        <button type="submit" name="page" class="btn btn-outline-secondary" value="1">&laquo; first </button>
+                        <button type="submit" name="page" class="btn btn-outline-secondary" value="{{ page_obj.previous_page_number }}">previous</button>
+                    {% endif %}
+
+                    <span class="current">
+                      Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                    </span>
+
+
+                    {% for num in page_obj.paginator.page_range %}
+                    {% if num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                      {% if page_obj.number == num %}
+                        <span class="btn btn-secondary">{{ num }}</span>
+                      {% else %}
+                      <button type="submit" name="page" class="btn btn-outline-secondary" value="{{ num }}">{{ num }}</button>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+
+                    {% if page_obj.has_next %}
+
+                        <button type="submit" name="page" class="btn btn-outline-secondary" value="{{ page_obj.next_page_number }}">next</button>
+                        <button type="submit" name="page" class="btn btn-outline-secondary" value="{{ page_obj.paginator.num_pages }}">last &raquo;</button>
+                    {% endif %}
+                </div>
+            </form>
+            {% else %}
+<nav aria-label="Page navigation example p-0" style="text-align: center;padding-bottom: 100px;">
+              <span class="step-links">
+                {% if page_obj.has_previous %}
+                  <a class="btn btn-outline-secondary" href="?page=1">&laquo; first</a>
+                  <a class="btn btn-outline-secondary" href="?page={{ page_obj.previous_page_number }}">previous</a>
+                {% endif %}
+
+                <span class="current">
+                  Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                </span>
+
+                {% for num in page_obj.paginator.page_range %}
+                  {% if num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                    {% if page_obj.number == num %}
+                      <span class="btn btn-secondary">{{ num }}</span>
+                    {% else %}
+                      <a class="btn btn-outline-secondary" href="?page={{ num }}">{{ num }}</a>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% if page_obj.has_next %}
+                  <a class="btn btn-outline-secondary" href="?page={{ page_obj.next_page_number }}">next</a>
+                  <a class="btn btn-outline-secondary" href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                {% endif %}
+              </span>
+            </nav>
+        </div>
+      </div>
+      {% endif %}
+
+
+        {% include "New/Extra/footer.html" %}
+
+
+
+
+        <div id="cover"  style="background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: hidden">
+          <div class="col-xl-4 col-lg-4 col-xxl-4 col-md-12" style="position: fixed;top:30%;left: 40%;">
+            <div class="card" id="cmain" style="visibility: hidden">
+              <div class="card-body text-center ai-icon  text-primary" >
+                <button style="position: absolute;right: 20px;" class="btn btn-sm btn-danger" onclick="Close()">x</button>
+                <svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" style="stroke-dasharray: 25, 45; stroke-dashoffset: 0;"></path>
+                  <path d="M8,7A4,4 0,1,1 16,7A4,4 0,1,1 8,7" style="stroke-dasharray: 26, 46; stroke-dashoffset: 0;"></path>
+                </svg>
+                <h4 class="my-2">Type "DELETE ACCOUNT" in the form below to delete Account.</h4>
+                <div class="form-group" >
+
+                  <input type="text" id="pass2" class="form-control" style="text-align: center;" >
+                </div>
+                <button onclick="Delete()" id="si_button" class="btn my-2 btn-primary btn-lg px-4"><i class="fa fa-trash"></i> Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input id="state" type="hidden">
+
+        <script>
+
+         function set_book(id){
+          document.getElementById("c_id").value=id
+          document.getElementById("img").src='{% get_media_prefix %}Profiles/'+id+'.jpg'
+          document.getElementById("c_id2").value=id
+          document.getElementById("img2").src='{% get_media_prefix %}Profiles/'+id+'.jpg'
+
+
+        }
+          setInterval(load_all,1000);
+        function load_all(){
+
+
+            var pass2 = document.getElementById("pass2").value
+        if (pass2==="DELETE ACCOUNT"){
+
+         document.getElementById("si_button").disabled = false;
+        }else{
+         document.getElementById("si_button").disabled = true;
+        }
+        }
+
+        function Open(id){
+        document.getElementById("state").value = id
+        document.getElementById('cover').setAttribute("style", "background-color:rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: visible")
+        document.getElementById('cmain').setAttribute("style", "visibility: visible")
+
+        }
+        function Close(){
+        document.getElementById('cover').setAttribute("style", "visibility: hidden;z-index: 0;")
+        document.getElementById('cmain').setAttribute("style", "z-index: 0;visibility: hidden;")
+
+        }
+
+
+        function Delete(){
+          var state = document.getElementById("state")
+        data = JSON.stringify({
+        id:state.value,
+        })
+        fetch("{% url 'manager_account' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+            document.getElementById(state.value).remove()
+            state.value=""
+            document.getElementById("pass2").value=""
+            alert("Account has been deleted successfully!")
+        Close()
+        }else{
+            alert("Please an error occured when deleting account!")
+
+        }
+        });}
+
+
+
+
+
+        function stat_up(id){
+          var state = document.getElementById("state_"+id)
+        data = JSON.stringify({
+        id:id,
+        Status:state.value
+        })
+        fetch("{% url 'update_proccess' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+
+            alert("Account has been updated successfully!")
+
+        }else{
+            alert("Please an error occured when updating account!")
+
+        }
+        });}
+
+
+
+        function stat_up2(id){
+          var state = document.getElementById("state2_"+id)
+        data = JSON.stringify({
+        id:id,
+        Status:state.value
+        })
+        fetch("{% url 'update_call' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+
+            alert("Account has been updated successfully!")
+
+        }else{
+            alert("Please an error occured when updating account!")
+
+        }
+        });}
+
+
+
+
+
+        function email_update(id){
+          var state = document.getElementById("em_"+id)
+          var state2 = document.getElementById("emp_"+id)
+
+        data = JSON.stringify({
+        id:id,
+        Email:state.value,
+        Password:state2.value,
+
+        })
+        fetch("{% url 'update_email_data' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+
+            alert("Account has been updated successfully!")
+
+        }else{
+            alert("Please an error occured when updating account!")
+
+        }
+        });}
+
+
+        function log_update(id){
+          var state = document.getElementById("tx_"+id)
+
+         if (state.value === ""){
+          alert('Please add a comment to the log box!')
+         }else{
+        data = JSON.stringify({
+        id:id,
+        Log:state.value,
+
+        })
+        fetch("{% url 'add_log_data' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+            state.value=""
+            alert("Account logs has been updated successfully!")
+
+        }else{
+            alert("Please an error occured when updating account logs!")
+
+        }
+        });}}
+
+
+
+        function set_interview(){
+          var user = document.getElementById("c_id2")
+          var ad = document.getElementById("M_User")
+          var start = document.getElementById("M_Start")
+          var end = document.getElementById("M_End")
+          var date = document.getElementById("M_Date")
+          var q_q = document.getElementById("M_Q")
+
+        if (ad.value === ""){
+          alert('Please select an Interviewer')
+
+        }else if (start.value === ""){
+              alert('Please select a meeting start time')
+        }else if (end.value === ""){
+              alert('Please select a meeting end time')
+
+        }else if (date.value === ""){
+              alert('Please select a meeting date')
+
+         }else{
+        data = JSON.stringify({
+        Client:user.value,
+        User:ad.value,
+        Start:start.value,
+        End:end.value,
+        Dated:date.value,
+        Question:q_q.value,
+
+
+        })
+        fetch("{% url 'add_interview' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+            state.value=""
+            alert("Interview has been scheduled successfully!")
+
+        }else{
+            alert("Please an error occured when scheduling meeting!")
+
+        }
+        });}}
+
+        </script>
+
+
+
+         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasAddUser" aria-labelledby="offcanvasAddUserLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasAddUserLabel" class="offcanvas-title">Schedule Booking</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body mx-0 flex-grow-0 h-100">
+                <form action="{% url 'manage_booking' %}" method="post" enctype="multipart/form-data">
+                  {% csrf_token %}
+
+                  <div style="text-align: center;"  class="result">
+                    <img id='img' style="border-radius: 5px;width:200px;height:200px;object-fit: cover; " src="{% get_static_prefix %}Manager\assets\img\img-02.jpg">
+
+                    </div>
+
+                  <div style="padding-top: 10px;"></div>
+
+                  <input type="hidden" class="form-control" placeholder="" aria-label="" name="Type" value="Client" />
+                  <input type="hidden" class="form-control" placeholder="" aria-label="" name="Client" value="" id="c_id"/>
+                  <div class="form-floating form-floating-outline mb-4">
+                    <input type="text" id="add-user-email" class="form-control" placeholder="" aria-label="" name="Topic" required />
+                    <label for="add-user-email">Meeting Subject</label>
+                  </div>
+                  <div class="form-floating form-floating-outline mb-4">
+                    <input type="time" id="add-user-email" class="form-control" placeholder="" aria-label="" name="Time" required />
+                    <label for="add-user-email">Schedule Time</label>
+                  </div>
+                  <div class="form-floating form-floating-outline mb-4">
+                    <input type="date" id="add-user-email" class="form-control" placeholder="" aria-label="" name="Date" required />
+                    <label for="add-user-email">Schedule Date</label>
+                  </div>
+
+
+
+                  <div class="form-floating form-floating-outline mb-4">
+                    <textarea type="text" id="add-user-email"  class="form-control"  rows="4" cols="50" placeholder="describ the reason for the meeting.." name="About" required ></textarea>
+                    <label for="add-user-email">Meeting Description</label>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary me-sm-3 me-1 data-submit">Submit</button>
+                  <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="offcanvas">Cancel</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasAddUser2" aria-labelledby="offcanvasAddUserLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasAddUserLabel" class="offcanvas-title">Schedule Client Interview </h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body mx-0 flex-grow-0 h-100">
+                <div >
+
+
+                  <div style="text-align: center;"  class="result">
+                    <img id='img2' style="border-radius: 5px;width:200px;height:200px;object-fit: cover; " src="{% get_static_prefix %}Manager\assets\img\img-02.jpg">
+
+                    </div>
+
+                  <div style="padding-top: 10px;"></div>
+
+
+                  <input type="hidden" class="form-control" placeholder="" aria-label="" name="Client" value="" id="c_id2"/>
+                  <div class="form-floating form-floating-outline mb-4">
+                    <select type="text"  class="form-control" placeholder="" aria-label="" id="M_User" required />
+                    {% for i in Interview %}
+                    <option value="{{i.id}}">{{i.Name}}</option>
+
+                    {% endfor %}
+                    </select>
+                    <label for="add-user-email">Interviewer</label>
+                  </div>
+
+
+                   <div class="form-floating form-floating-outline mb-4">
+                    <select type="text"  class="form-control" placeholder="" aria-label="" id="M_Q" required />
+                    <option value="0">No Questions</option>
+                    {% for i in Q %}
+                    <option value="{{i.id}}">{{i.Name}}</option>
+
+                    {% endfor %}
+                    </select>
+                    <label for="add-user-email">Interviewer Questions</label>
+                  </div>
+
+
+                  <div class="form-floating form-floating-outline mb-4">
+                    <input type="time"  class="form-control" placeholder="" aria-label="" id="M_Start" required />
+                    <label for="add-user-email">Start Time</label>
+                  </div>
+                  <div class="form-floating form-floating-outline mb-4">
+                    <input type="time" class="form-control" placeholder="" aria-label="" id="M_End" required />
+                    <label for="add-user-email">End Time</label>
+                  </div>
+                  <div class="form-floating form-floating-outline mb-4">
+                    <input type="date"  class="form-control" placeholder="" aria-label="" id="M_Date" required />
+                    <label for="add-user-email">Schedule Date</label>
+                  </div>
+
+
+
+                  <button type="button" onclick="set_interview()" class="btn btn-primary me-sm-3 me-1 data-submit">Submit</button>
+                  <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="offcanvas">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>

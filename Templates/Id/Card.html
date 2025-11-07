@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest ID Card</title>
+
+</head>
+<style>
+.val{
+    font-family:  "Courier New";
+
+font-size: 30px;
+font-weight: bold;
+font-variant: small-caps;
+}
+
+</style>
+<style>
+    .school-name {
+        font-family: 'Georgia', serif; /* Elegant font */
+        font-size: 19px; /* Large size */
+        font-weight: bold; /* Bold text */
+        color: #2c3e50; /* Dark blue color */
+        text-transform: uppercase; /* Uppercase letters */
+        text-align: center; /* Centered */
+
+        background: linear-gradient(to right, #d49f63, #803623); /* Gradient effect */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; /* Gradient text effect */
+        letter-spacing: 2px; /* Spacing between letters */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    }
+</style>
+<body >
+<div >
+    <img src="{% get_static_prefix %}card\face.png" height="550px" style="border-radius: 10px;position:ablosute;border: 1px solid rgba(54, 54, 54, 0.219);" >
+    <img src="{% get_static_prefix %}card\back.png" height="550px" style="border-radius: 10px;position:ablosute;left:700px;border:3px;border: 1px solid rgba(54, 54, 54, 0.219);" >
+
+    <img src="{% get_media_prefix %}ID_QR\{{Card.id}}.png?55"  style="position: absolute;border-radius: 40px;height: 136px; width:136px;left:99px;top:178px" >
+   <h4 style="position: absolute; top: 325px; left: 0px; width: 340px; text-align: center; font-family: Helvetica; font-size: 20px;">
+    <span style="background: linear-gradient(to right, gold, #8B7500); -webkit-background-clip: text; color: transparent;font-size:30px">ID {{Card.id}}</span>
+</h4>
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+

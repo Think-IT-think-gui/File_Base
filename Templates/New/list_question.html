@@ -1,0 +1,291 @@
+{% load static %}
+      
+
+{% include "New/Extra/header.html" %}
+      <!-- Content wrapper -->
+      <div class="content-wrapper" style="padding-top: 50px;">
+
+        <div class="container-xxl flex-grow-1 container-p-y">
+            
+            
+          <h4 class="mb-1">Question Group Created</h4>
+          <p class="mb-4">Here are all question group created in your company, click manage to view all question group.</p>
+          <!-- Role cards -->
+          <div class="row g-4">
+            
+            
+            
+            
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <div class="card h-100">
+                <div class="row h-100">
+                  <div class="col-5">
+                    <div class="d-flex align-items-end h-100 justify-content-center">
+                     
+                    </div>
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body text-sm-end text-center ps-sm-0">
+                      <a data-bs-target="#addRoleModal" data-bs-toggle="modal" class="btn btn-primary mb-3 text-nowrap add-new-role">Create</a>
+                      <p class="mb-0">Add Group, if it does not exist</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% for i in Listed %}
+            <div class="col-xl-4 col-lg-6 col-md-6" id="{{i.id}}">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-2">
+                    <p>{{i.Name}}</p>
+                    <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                      Status : <span style="padding-left: 10px;">{{i.Status}}</span><br>
+                      
+                      
+                    </ul>
+                  </div>
+                  <div class="d-flexx justify-content-between align-items-end">
+                   
+                    <div class="role-hseading col-12">
+                      
+                      Time: (<span style="color:#D11D1F ;">{{i.time}}</span>)
+                      <br>
+                      Date : (<span style="color:#1ED157 ;">{{i.date}}</span>)<br>
+                     
+
+                    </div>
+                    <br>
+                    <div>
+                    <a href="{% url 'manager_questions_view' i.id  %}"  class="btn btn-primary waves-effect waves-light">
+                      <i class="mdi mdi-content-copy mdi-20px"></i>  Manage
+                    </a>
+                    <button type="button" onclick="setup('{{i.id}}')" data-bs-toggle="modal" data-bs-target="#deleteModal"  class="btn btn-danger ">
+                    Delete
+                    </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+           
+           
+           
+           
+           
+          
+           
+          </div>
+          				
+						<nav aria-label="Page navigation example p-0" style="text-align: center;padding-bottom: 100px;">
+              <span class="step-links">
+                {% if page_obj.has_previous %}
+                  <a class="btn btn-outline-secondary" href="?page=1">&laquo; first</a>
+                  <a class="btn btn-outline-secondary" href="?page={{ page_obj.previous_page_number }}">previous</a>
+                {% endif %}
+            
+                <span class="current">
+                  Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                </span>
+            
+                {% for num in page_obj.paginator.page_range %}
+                  {% if num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                    {% if page_obj.number == num %}
+                      <span class="btn btn-secondary">{{ num }}</span>
+                    {% else %}
+                      <a class="btn btn-outline-secondary" href="?page={{ num }}">{{ num }}</a>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+            
+                {% if page_obj.has_next %}
+                  <a class="btn btn-outline-secondary" href="?page={{ page_obj.next_page_number }}">next</a>
+                  <a class="btn btn-outline-secondary" href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                {% endif %}
+              </span>
+            </nav>
+          <!--/ Role cards -->
+          
+          <!-- Add Role Modal -->
+          <!-- Add Role Modal -->
+          <div class="modal fade contentmodal" id="deleteModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content doctor-profile">
+                    <div class="modal-header pb-0 border-bottom-0  justify-content-end">
+                        <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><i class="feather-x-circle"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="delete-wrap text-center">
+                            <div class="del-icon"><i class="feather-x-circle"></i></div>
+                            <h4>Type "DELETE" in below to delete this.</h4>
+                            <div class="submit-section">
+                                <input id="pass2" class="form-control" type="text" id="test" style="text-align: center;">
+
+                            </div>	
+                            <div style="padding-top: 20px;" class="submit-section">
+                                <button onclick="Delete()"  class="btn btn-danger me-2" id="si_button">Delete This</button>
+                               
+                            </div>								
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+          <input type="hidden" value="" id='hold_id'>
+      </div>
+          <!-- / Content -->
+         <script>
+
+          
+             
+          function setup(id){
+            document.getElementById('hold_id').value=id
+          }
+          function Delete(){
+            var state = document.getElementById("hold_id")
+          data = JSON.stringify({
+          id:state.value,
+          })
+          fetch("", {
+          method: 'DELETE',
+          body: data,
+          headers: { 'X-CSRFToken':'{{ csrf_token }}','Accept': 'application/json, text/plain, */*',
+              'Content-Type': 'application/json',
+              },
+          })
+          .then(response => response.json())
+          .then(data => {
+          if (data === 'Ok'){
+              document.getElementById(state.value).remove() 
+              state.value="" 
+              document.getElementById("pass2").value=""
+              alert("Group has been deleted successfully!")
+          Close()
+          }else{
+              alert("Please an error occured when deleting group!")
+          
+          }
+          });}
+          
+          setInterval(load_all,1000);
+          function load_all(){
+             
+              
+              var pass2 = document.getElementById("pass2").value
+          if (pass2==="DELETE"){
+          
+           document.getElementById("si_button").disabled = false;
+          }else{
+           document.getElementById("si_button").disabled = true;
+          }   
+          }  
+
+    
+          </script>   
+          
+          
+          
+          <div class="modal fade" id="addRoleModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-add-new-role">
+              <div class="modal-content p-3 p-md-5">
+                <button type="button" class="btn-close btn-pinned" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body p-md-0">
+                  <div class="text-center mb-4">
+                    <h3 class="role-title mb-2 pb-0">Create A Question Group</h3>
+                    <p>Provide relevant info to create a question group </p>
+                  </div>
+                  <!-- Add role form -->
+                  <form action="" method="post" enctype="multipart/form-data">
+										{% csrf_token %}
+                   <div class="row">
+                    <div class="col-8 mb-4">
+                      <div class="form-floating form-floating-outline">
+                        <input type="text" id="modalRoleName" name="Name"  required class="form-control" tabindex="-1" />
+                        <label for="modalRoleName">Group Name</label>
+                      </div>
+                    </div>
+                    
+
+                    
+                    <div class="col-4 mb-4">
+                      <div class="form-floating form-floating-outline">
+                        <select  id="modalRoleName" name="Status" required class="form-control" value="1" >
+                        
+                          <option >Active</option>
+                          <option >Deactive</option>
+                          
+
+                        
+                         </optgroup>
+                        </select>
+                        <label for="modalRoleName">Group Status</label>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="col-12 mb-4">
+                      <div class="form-floating form-floating-outline">
+                        <textarea rows="30" cols="200" type="text" id="modalRoleName" name="About" required class="form-control" style="height: 80px;" placeholder="Enter shelf desription.." tabindex="-1" ></textarea>
+                        <label for="modalRoleName">Group Desription</label>
+                      </div>
+                    </div>
+                    
+
+
+                    <div class="col-12 text-center" style="padding-top: 30px;">
+                      <button type="submit" id="send_button" class="btn btn-primary me-sm-3 me-1" onclick="load1()">Submit</button>
+                      <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                    </div>
+                  </form>
+                  <!--/ Add role form -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="cv" style="position: fixed;width: 100%;height: 100%; background-color: #0000008A;top:0px;text-align: center;visibility: hidden; ">
+            <img src="{% get_static_prefix %}Icons/1.gif" style="width:300px;padding-top: 10%;" />
+            <h1><span id="cm">0</span> 
+              <span class="mdi mdi-clock-fast"></span></h1>
+          </div>
+          
+            <script>
+          
+               let cc = 0
+              
+              setInterval(time,1000);
+              function time(){
+              var ti = document.getElementById('cm')
+              ti.innerHTML=cc
+              cc+=1
+          
+           }
+           function load1(){
+            var cv = document.getElementById('cv')
+            cv.setAttribute('style','position: fixed;width: 100%;height: 100%; background-color: #0000008A;top:0px;text-align: center;visibility: visible;z-index:999999')
+            cc=0
+          
+           }
+
+            setInterval(load_all2,100);
+            function load_all2(){
+               
+                
+                var pass1 = document.getElementById("type1").value
+                var pass2 = document.getElementById("type2").value
+
+            if (pass2===pass1){
+            
+             document.getElementById("send_button").disabled = true;
+            }else{
+             document.getElementById("send_button").disabled = false;
+            }   
+            }
+        
+
+           
+            
+          </script>
+          <!--/ Add Role Modal -->
+          
+{% include "New/Extra/footer.html" %}

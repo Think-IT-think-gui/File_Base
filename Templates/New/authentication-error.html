@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Blue_Theme" data-layout="vertical">
+
+{% load static %}
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon icon-->
+  <link rel="shortcut icon" type="image/png" href="{% get_static_prefix%}2a.jpg">
+
+  <!-- Core Css -->
+  <link rel="stylesheet" href="{% get_static_prefix %}New/assets/css/styles.css">
+
+  <title>Error</title>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="{% get_static_prefix %}New/assets/images/logos/loader.svg" alt="loader" class="lds-ripple img-fluid">
+  </div>
+  <div id="main-wrapper" class="p-0">
+    <div class="position-relative overflow-hidden min-vh-100 w-100 d-flex align-items-center justify-content-center">
+      <div class="d-flex align-items-center justify-content-center w-100">
+        <div class="row justify-content-center w-100">
+          <div class="col-lg-4">
+            <div class="text-center">
+              <img src="{% get_static_prefix%}2a.jpg" style="width:400px;border-radius:100px"  alt="spike-img" class="img-fluid" width="500">
+              <h1 class="fw-semibold mb-7 fs-9">Opps!!!</h1>
+              <h4 class="fw-semibold mb-7">This Email is already been used for another account, use a defferent Email..</h4>
+              <a class="btn btn-primary" href="{% url 'add_staff' %}" role="button">Try Again</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dark-transparent sidebartoggler"></div>
+  </div>
+  <!-- Import Js Files -->
+  <script src="{% get_static_prefix %}New/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="{% get_static_prefix %}New/assets/libs/simplebar/dist/simplebar.min.js"></script>
+  <script src="{% get_static_prefix %}New/assets/js/theme/app.init.js"></script>
+  <script src="{% get_static_prefix %}New/assets/js/theme/theme.js"></script>
+  <script src="{% get_static_prefix %}New/assets/js/theme/app.min.js"></script>
+  <script src="{% get_static_prefix %}New/assets/js/theme/sidebarmenu.js"></script>
+  <script src="{% get_static_prefix %}New/assets/js/theme/feather.min.js"></script>
+
+  <!-- solar icons -->
+  <script src="{% get_static_prefix %}New/npm/iconify-icon%401.0.8/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>

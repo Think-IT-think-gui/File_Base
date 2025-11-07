@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+    {% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Omall</title>
+
+    <!-- manifest meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="{% get_static_prefix%}go/manifest.json">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="180x180">
+    <link rel="icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="16x16" type="image/png">
+
+    <!-- Google fonts-->
+    <link href="{% get_static_prefix%}go/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="{% get_static_prefix%}go/css2-1?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="{% get_static_prefix%}go/npm/bootstrap-icons%401.5.0/font/bootstrap-icons.css">
+
+    <!-- nouislider CSS -->
+    <link href="{% get_static_prefix%}go/assets/vendor/nouislider/nouislider.min.css" rel="stylesheet">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="{% get_static_prefix%}go/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.css">
+
+    <!-- style css for this template -->
+    <link href="{% get_static_prefix%}go/assets/css/style.css" rel="stylesheet" id="style">
+</head>
+
+<body class="body-scroll d-flex flex-column h-100 dark-bg bg1" data-page="signin">
+
+    <!-- loader section -->
+    <div class="container-fluid loader-wrap">
+        <div class="row h-100">
+            <div class="col-10 col-md-6 col-lg-5 col-xl-3 mx-auto text-center align-self-center">
+                <div class="loader-cube-wrap mx-auto">
+                    <div class="loader-cube1 loader-cube"></div>
+                    <div class="loader-cube2 loader-cube"></div>
+                    <div class="loader-cube4 loader-cube"></div>
+                    <div class="loader-cube3 loader-cube"></div>
+                </div>
+                <p>Let's Create Difference<br><strong>Please wait...</strong></p>
+            </div>
+        </div>
+    </div>
+    <!-- loader section ends -->
+
+    <!-- Begin page content -->
+    <main class="container-fluid h-100 main-container">
+        <div class="overlay-image text-end">
+            <img src="assets/img/orange-slice.png" class="orange-slice" alt="">
+        </div>
+
+        <div class="row h-100">
+            <div class="col-12 text-center">
+                <div class="logo-small">
+                    <img src="assets/img/logo.png" alt="" class="img">
+                    <h6>Omall<br><small style="text-align: center;"> Shop With Trust....</small></h6>
+
+                </div>
+            </div>
+            <div class="col-12 mx-auto text-center">
+                <div class="row h-100">
+                    <div class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3 mx-auto align-self-center">
+                        <h2 class="text-center">OTP Verification</h2>
+                        <p class=" mb-4">Verify OTP sent to your provided email address</p>
+                        <div class="card card-light shadow-sm mb-4">
+                            <div class="card-body">
+                                <form class="" method="post">
+                                    {% csrf_token %}
+
+
+                                             <div class="form-floating mb-3" style=";text-align: center;">
+                                                <div class="row" style="column-gap: 5% ;text-align: center;">
+                                                    <input type="number" class="form-control" name="1" required pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otc-1" class="trasparent-input text-center col-3"  style="width:16%;font-size: 40px;"   placeholder="0">
+                                                        <input class="form-control" type="number" name="2" required pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otc-2" class="trasparent-input text-center col-3"  style="width: 16%;font-size: 40px;"   placeholder="0">
+                                                        <input class="form-control" type="number" name="3" required pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otc-3" class="trasparent-input text-center col-3"  style="width: 16%;font-size: 40px;"   placeholder="0">
+                                                        <input class="form-control" type="number" name="4" required pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otc-4" class="trasparent-input text-center col-3"  style="width: 16%;font-size: 40px;"   placeholder="0">
+                                                        <input class="form-control" type="number" name="5" required pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otc-5" class="trasparent-input text-center col-3"  style="width: 16%;font-size: 40px;"   placeholder="0">
+                                                    </div>
+
+
+                                             </div>
+
+
+                                         <div class="d-grid"><button type="submit" class="btn btn-lg btn-default shadow-sm">Verify</button></div>
+                                          </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 text-center align-self-end py-2">
+                <div class="row">
+                    <div class="col text-center">
+                        <span class="progressstimer">
+                            <img src="{% get_static_prefix%}go/assets/img/progress.png" alt="">
+                            <span class="timer" id="timer"></span>
+                        </span>
+                        <br>
+                        <a href="{% url 'change_verify' %}" class="btn btn-link text-white" >Resend Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <!-- Required jquery and libraries -->
+    <script src="{% get_static_prefix%}go/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="{% get_static_prefix%}go/assets/js/popper.min.js"></script>
+    <script src="{% get_static_prefix%}go/assets/vendor/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+
+    <!-- cookie js -->
+    <script src="{% get_static_prefix%}go/assets/js/jquery.cookie.js"></script>
+
+    <!-- swiper script -->
+    <script src="{% get_static_prefix%}go/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.js"></script>
+
+    <!-- page level custom script -->
+    <script src="{% get_static_prefix%}go/assets/js/app.js"></script>
+
+    <!-- Customized jquery file  -->
+    <script src="{% get_static_prefix%}go/assets/js/main.js"></script>
+    <script src="{% get_static_prefix%}go/assets/js/color-scheme.js"></script>
+
+    <!-- PWA app service registration and works -->
+    <script src="{% get_static_prefix%}go/assets/js/pwa-services.js"></script>
+
+</body>
+
+</html>
+
+<script>
+
+    setInterval(load_all,1000);
+        function load_all(){
+
+            var pass1 = document.getElementById("pass1").value
+            var pass2 = document.getElementById("pass2").value
+    if (pass1===pass2){
+
+         document.getElementById("si_button").disabled = false;
+
+
+    }else{
+      document.getElementById("si_button").disabled = true;
+    }
+    }
+
+    let in1 = document.getElementById('otc-1'),
+ins = document.querySelectorAll('input[type="number"]'),
+ splitNumber = function(e) {
+    let data = e.data || e.target.value; // Chrome doesn't get the e.data, it's always empty, fallback to value then.
+    if ( ! data ) return; // Shouldn't happen, just in case.
+    if ( data.length === 1 ) return; // Here is a normal behavior, not a paste action.
+
+    popuNext(e.target, data);
+    //for (i = 0; i < data.length; i++ ) { ins[i].value = data[i]; }
+},
+popuNext = function(el, data) {
+    el.value = data[0]; // Apply first item to first input
+    data = data.substring(1); // remove the first char.
+    if ( el.nextElementSibling && data.length ) {
+        // Do the same with the next element and next data
+        popuNext(el.nextElementSibling, data);
+    }
+};
+
+ins.forEach(function(input) {
+/**
+ * Control on keyup to catch what the user intent to do.
+ * I could have check for numeric key only here, but I didn't.
+ */
+input.addEventListener('keyup', function(e){
+    // Break if Shift, Tab, CMD, Option, Control.
+    if (e.keyCode === 16 || e.keyCode == 9 || e.keyCode == 224 || e.keyCode == 18 || e.keyCode == 17) {
+         return;
+    }
+
+    // On Backspace or left arrow, go to the previous field.
+    if ( (e.keyCode === 8 || e.keyCode === 37) && this.previousElementSibling && this.previousElementSibling.tagName === "INPUT" ) {
+        this.previousElementSibling.select();
+    } else if (e.keyCode !== 8 && this.nextElementSibling) {
+        this.nextElementSibling.select();
+    }
+
+    // If the target is populated to quickly, value length can be > 1
+    if ( e.target.value.length > 1 ) {
+        splitNumber(e);
+    }
+});
+
+/**
+ * Better control on Focus
+ * - don't allow focus on other field if the first one is empty
+ * - don't allow focus on field if the previous one if empty (debatable)
+ * - get the focus on the first empty field
+ */
+input.addEventListener('focus', function(e) {
+    // If the focus element is the first one, do nothing
+    if ( this === in1 ) return;
+
+    // If value of input 1 is empty, focus it.
+    if ( in1.value == '' ) {
+        in1.focus();
+    }
+
+    // If value of a previous input is empty, focus it.
+    // To remove if you don't wanna force user respecting the fields order.
+    if ( this.previousElementSibling.value == '' ) {
+        this.previousElementSibling.focus();
+    }
+});
+});
+
+/**
+* Handle copy/paste of a big number.
+* It catches the value pasted on the first field and spread it into the inputs.
+*/
+in1.addEventListener('input', splitNumber);
+    </script>

@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Page not found &#8211; Jobbox</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//code.jquery.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Jobbox &raquo; Feed" href="https://jthemes.com/themes/wp/jobbox/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Jobbox &raquo; Comments Feed" href="https://jthemes.com/themes/wp/jobbox/comments/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/jthemes.com\/themes\/wp\/jobbox\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.3"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://jthemes.com/themes/wp/jobbox/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.6' media='all' />
+<link rel='stylesheet' id='wp-job-manager-bookmarks-frontend-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/plugins/control-job-manager/vendor/bookmarks/assets/dist/css/frontend.css?ver=1.2.3' media='all' />
+<link rel='stylesheet' id='wp-job-manager-tags-frontend-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/plugins/control-job-manager/vendor/tags/assets/dist/css/frontend.css?ver=1.2.3' media='all' />
+<link rel='stylesheet' id='jm-application-deadline-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/plugins/control-job-manager/vendor/application-deadline/assets/dist/css/frontend.css?ver=1.2.3' media='' />
+<style id='woocommerce-inline-inline-css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='wp-job-manager-job-listings-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/plugins/wp-job-manager/assets/dist/css/job-listings.css?ver=598383a28ac5f9f156e4' media='all' />
+<link rel='stylesheet' id='jquery-ui-css' href='//code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.min.css?ver=1.13.2' media='all' />
+<link rel='stylesheet' id='jobbox-google-fonts-css' href='https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans%3A400%2C500%2C600%2C700%2C800&#038;ver=1.0.0' media='all' />
+<link rel='stylesheet' id='jobbox-normalize-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/css/vendors/normalize.css?ver=8.0.1' media='all' />
+<link rel='stylesheet' id='bootstrap-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/css/bootstrap/bootstrap.css?ver=5.2.2' media='all' />
+<link rel='stylesheet' id='jobbox-uicons-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/css/vendors/uicons-regular-rounded.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='fontawesome-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/css/all.min.css?ver=6.2.0' media='all' />
+<link rel='stylesheet' id='jobbox-swiper-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/css/plugins/swiper-bundle.min.css?ver=8.3.2' media='all' />
+<link rel='stylesheet' id='jobbox-magnific-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/css/plugins/magnific-popup.css?ver=1.1.0' media='all' />
+<link rel='stylesheet' id='jobbox-select2-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/css/plugins/select2.min.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='jobbox-perfect-scrollbar-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/css/plugins/perfect-scrollbar.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='jobbox-animate-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/css/plugins/animate.min.css?ver=3.5.2' media='all' />
+<link rel='stylesheet' id='jobbox-theme-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/css/theme.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='jobbox-style-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/css/style.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='woocommerce-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/css/woocommerce.css?ver=1.2.8' media='all' />
+<link rel='stylesheet' id='wp-job-manager-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/css/wp-job-manager.css?ver=1.2.8' media='all' />
+<link rel='stylesheet' id='jobbox-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/style.css?ver=6.4.3' media='all' />
+<style id='jobbox-inline-css'>
+:root{--jobbox-font-heading: Plus Jakarta Sans; 
+--jobbox-font-text: Plus Jakarta Sans; --jobbox-font-3xs: 10px; 
+--jobbox-font-xxs: 10px; 
+--jobbox-font-xs: 12px; 
+--jobbox-font-sm: 14px; 
+--jobbox-font-md: 16px; 
+--jobbox-font-md-2: 15px; 
+--jobbox-font-lg: 18px; 
+--jobbox-font-xl: 20px; 
+--jobbox-font-2xl: 22px; 
+--jobbox-font-3xl: 56px; --jobbox-color-brand: #05264E; 
+--jobbox-color-brand-2: #3C65F5; 
+--jobbox-color-white: #ffffff; 
+--jobbox-color-green: #85FF83; 
+--jobbox-color-text-paragraph: #4F5E64; 
+--jobbox-color-text-paragraph-2: #66789C; 
+--jobbox-color-text-mutted: #A0ABB8; 
+--jobbox-color-border-1: #B4C0E0; 
+--jobbox-color-border-2: #E0E6F7; 
+--jobbox-color-border-3: #EFF2FB; 
+--jobbox-color-black-1: #253D4E; --jobbox-background-1: #f2f3f4; 
+--jobbox-background-2: #f4f6fa; 
+--jobbox-background-3: #def9ec; 
+--jobbox-background-4: #72e0bf; 
+--jobbox-background-5: #F8FAFF; 
+--jobbox-background-6: #EFF3FC; 
+--jobbox-background-7: #F2F6FD; 
+--jobbox-background-8: rgba(81,146,255,0.12); 
+--jobbox-background-9: #EFF7FF; 
+--jobbox-background-10: #bee2ae; 
+--jobbox-background-11: #9fdbe9; 
+--jobbox-background-12: #9FB5FF; 
+--jobbox-background-13: #5aa6ff; 
+--jobbox-background-14: #D8F1FF; 
+--jobbox-background-15: #F4F7FF; 
+--jobbox-background-16: rgba(81,146,255,0.12); 
+--jobbox-background-white: #ffffff; 
+--jobbox-background-green: #3AAB67; 
+--jobbox-background-orange: #F58A3C; 
+--jobbox-background-pink: #D159E4; 
+--jobbox-background-urgent: #FFF6F1; 
+--jobbox-background-brand: #9777fa; 
+--jobbox-background-head-single: #FFF9F3; 
+--jobbox-background-blue-light-2: #E9F7FF; 
+--jobbox-background-primary-trans: rgba(81,146,255,0.3); 
+--jobbox-background-primary: rgba(81,146,255,1); 
+--jobbox-background-grey: rgba(186,186,186,0.3); 
+--jobbox-background-success: #00c070; --jobbox-border-color: #E0E6F6; 
+--jobbox-border-color-1: rgba(6,18,36,0.1); 
+--jobbox-border-color-3: rgba(26,15,9,0.1); 
+--jobbox-border-color-4: rgba(26,15,9,0.1); 
+--jobbox-border-color-5: rgba(165,165,165,1); }.card{--bs-card-border-color: var(--jobbox-color-border-2);}.header-logo{--jobbox-logo-size: 150px;}.header-logo{--jobbox-logo-size-sm: 150px;}
+</style>
+<link rel='stylesheet' id='control-elementor-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/plugins/control-elementor//assets/css/control-elementor.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='control-block-patterns-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/plugins/control-block-patterns/assets/css/control-block-patterns.css?ver=1.3.5.4' media='all' />
+<style id='control-block-patterns-inline-css'>
+.stick + .main{padding-top: 77px;}
+</style>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.5.2" id="jquery-blockui-js" defer data-wp-strategy="defer"></script>
+<script id="wc-add-to-cart-js-extra">
+var wc_add_to_cart_params = {"ajax_url":"\/themes\/wp\/jobbox\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/themes\/wp\/jobbox\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/jthemes.com\/themes\/wp\/jobbox\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+</script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.5.2" id="wc-add-to-cart-js" defer data-wp-strategy="defer"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.5.2" id="js-cookie-js" defer data-wp-strategy="defer"></script>
+<script id="woocommerce-js-extra">
+var woocommerce_params = {"ajax_url":"\/themes\/wp\/jobbox\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/themes\/wp\/jobbox\/?wc-ajax=%%endpoint%%"};
+</script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.5.2" id="woocommerce-js" defer data-wp-strategy="defer"></script>
+<link rel="https://api.w.org/" href="https://jthemes.com/themes/wp/jobbox/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://jthemes.com/themes/wp/jobbox/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<meta name="generator" content="WooCommerce 8.5.2" />
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Elementor 3.19.0; features: e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints, block_editor_assets_optimize, e_image_loading_optimization; settings: css_print_method-external, google_font-enabled, font_display-auto">
+		<style id="wp-custom-css">
+			body .mt-5{
+	margin-top: 5px !important;
+}
+body .mb-5{
+	margin-bottom: 5px !important;
+}
+body .pt-5{
+	padding-top: 5px !important;
+}
+body .pb-5{
+	padding-top: 5px !important;
+}
+.select2-container--open .select2-dropdown--below {
+    border-top: 1px solid #dae0e5;
+}		</style>
+		</head>
+
+<body class="error404 wp-embed-responsive theme-jobbox woocommerce-no-js jobbox elementor-default elementor-kit-2295">
+
+
+	
+<div id="preloader-active">
+	<div class="preloader d-flex align-items-center justify-content-center">
+			<div class="spinner">
+			<div class="bounce1"></div>
+			<div class="bounce2"></div>
+			<div class="bounce3"></div>
+		</div>
+		</div>
+</div>
+<header class="header sticky-bar sticky-nav-on">
+	<div class="container">
+		<div class="main-header">
+			
+			<div class="header-left">
+    <div class="header-logo">
+        <a class="d-flex" href="https://jthemes.com/themes/wp/jobbox/">
+                        <img alt="Jobbox" src="https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/imgs/template/jobhub-logo.svg">
+                    </a>
+    </div>
+</div>			
+<div class="header-nav">
+        <nav class="primary-menu-container nav-main-menu"><ul id="primary-menu-list" class="menu-wrapper main-menu list-unstyled mb-0"><li id="menu-item-93" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-93 has-children"><a href="https://jthemes.com/themes/wp/jobbox/">Home</a>
+<ul class="sub-menu">
+	<li id="menu-item-1348" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1348"><a href="https://jthemes.com/themes/wp/jobbox/">Home 1</a></li>
+	<li id="menu-item-1347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1347"><a href="https://jthemes.com/themes/wp/jobbox/home-2/">Home 2</a></li>
+	<li id="menu-item-1346" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1346"><a href="https://jthemes.com/themes/wp/jobbox/home-3/">Home 3</a></li>
+	<li id="menu-item-1368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1368"><a href="https://jthemes.com/themes/wp/jobbox/home-4/">Home 4</a></li>
+	<li id="menu-item-1409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409"><a href="https://jthemes.com/themes/wp/jobbox/home-5/">Home 5</a></li>
+	<li id="menu-item-1408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1408"><a href="https://jthemes.com/themes/wp/jobbox/home-6/">Home 6</a></li>
+</ul>
+</li>
+<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-145 has-children"><a href="https://jthemes.com/themes/wp/jobbox/jobs/">Find a Job</a>
+<ul class="sub-menu">
+	<li id="menu-item-566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-566"><a href="https://jthemes.com/themes/wp/jobbox/jobs/">All Jobs</a></li>
+	<li id="menu-item-2422" class="menu-item menu-item-type-post_type menu-item-object-job_listing menu-item-2422"><a href="https://jthemes.com/themes/wp/jobbox/job/full-stack-engineer-3/">Job Details</a></li>
+	<li id="menu-item-643" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-643"><a href="https://jthemes.com/themes/wp/jobbox/job-dashboard/">Job Dashboard</a></li>
+</ul>
+</li>
+<li id="menu-item-134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-134 has-children"><a href="https://jthemes.com/themes/wp/jobbox/recruiters/">Recruiters</a>
+<ul class="sub-menu">
+	<li id="menu-item-135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135"><a href="https://jthemes.com/themes/wp/jobbox/recruiters/">Recruiters</a></li>
+	<li id="menu-item-2429" class="menu-item menu-item-type-post_type menu-item-object-ctrljm_recruiter menu-item-2429"><a href="https://jthemes.com/themes/wp/jobbox/company/aceable-inc/">Recruiter Details</a></li>
+</ul>
+</li>
+<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-139 has-children"><a href="https://jthemes.com/themes/wp/jobbox/candidates/">Candidates</a>
+<ul class="sub-menu">
+	<li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"><a href="https://jthemes.com/themes/wp/jobbox/candidates/">Candidates</a></li>
+	<li id="menu-item-2432" class="menu-item menu-item-type-post_type menu-item-object-ctrljm_candidate menu-item-2432"><a href="https://jthemes.com/themes/wp/jobbox/candidate/floyd-miles/">Candidate Details</a></li>
+	<li id="menu-item-2433" class="menu-item menu-item-type-post_type menu-item-object-ctrljm_candidate menu-item-2433"><a href="https://jthemes.com/themes/wp/jobbox/candidate/robert-fox-2/">Candidate With Video</a></li>
+</ul>
+</li>
+<li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-has-children menu-item-96 has-children"><a href="https://jthemes.com/themes/wp/jobbox/blog/">Blog</a>
+<ul class="sub-menu">
+	<li id="menu-item-851" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-851"><a href="https://jthemes.com/themes/wp/jobbox/blog/">Blog Grid</a></li>
+	<li id="menu-item-850" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-850"><a href="https://jthemes.com/themes/wp/jobbox/how-to-write-an-application-letter-with-examples-2/">Blog Single</a></li>
+</ul>
+</li>
+<li id="menu-item-123" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-123 has-children"><a href="#">Pages</a>
+<ul class="sub-menu">
+	<li id="menu-item-124" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124"><a href="https://jthemes.com/themes/wp/jobbox/about-us/">About Us</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://jthemes.com/themes/wp/jobbox/contact-us/">Contact</a></li>
+	<li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131"><a href="https://jthemes.com/themes/wp/jobbox/pricing-plan/">Pricing Plan</a></li>
+	<li id="menu-item-1410" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1410"><a href="https://jthemes.com/themes/wp/jobbox/shop/">Shop Page</a></li>
+</ul>
+</li>
+</ul></nav>        <div class="burger-icon burger-icon-white" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu">
+            <span class="burger-icon-top"></span>
+            <span class="burger-icon-mid"></span>
+            <span class="burger-icon-bottom"></span>
+        </div>
+    </div>
+        			<div class="header-right">
+    <div class="block-signin d-flex align-items-center gap-2">
+                                    <a class="text-link-bd-btom hover-up" href="#controlJobManagerRegister" data-bs-toggle="modal">Register</a>
+                <a class="btn btn-default btn-shadow ml-30 hover-up" href="#controlJobManagerLogin" data-bs-toggle="modal">Sign in</a>
+                    
+        
+    </div>
+</div>			
+		</div>
+	</div>
+</header>
+
+
+<div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+	<div class="offcanvas-header justify-content-end">
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	</div>
+	<div class="mobile-header-wrapper-inner offcanvas-body">
+		<div class="mobile-header-content-area">
+			<div class="perfect-scroll">			
+				<div class="mobile-search mobile-header-border mb-30">
+					<form role="search" method="get" action="https://jthemes.com/themes/wp/jobbox/">
+						<input type="search" placeholder="Search.."  value="" name="s" /><i class="fi-rr-search"></i>
+					</form>
+				</div>
+				<div class="mobile-menu-wrap mobile-header-border">
+					<!-- mobile menu start-->
+					<nav class="primary-menu-container"><ul id="primary-mobile-menu-list" class="menu-wrapper mobile-menu font-heading list-unstyled"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-93 has-children"><a href="https://jthemes.com/themes/wp/jobbox/">Home</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1348"><a href="https://jthemes.com/themes/wp/jobbox/">Home 1</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1347"><a href="https://jthemes.com/themes/wp/jobbox/home-2/">Home 2</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1346"><a href="https://jthemes.com/themes/wp/jobbox/home-3/">Home 3</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1368"><a href="https://jthemes.com/themes/wp/jobbox/home-4/">Home 4</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409"><a href="https://jthemes.com/themes/wp/jobbox/home-5/">Home 5</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1408"><a href="https://jthemes.com/themes/wp/jobbox/home-6/">Home 6</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-145 has-children"><a href="https://jthemes.com/themes/wp/jobbox/jobs/">Find a Job</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-566"><a href="https://jthemes.com/themes/wp/jobbox/jobs/">All Jobs</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-job_listing menu-item-2422"><a href="https://jthemes.com/themes/wp/jobbox/job/full-stack-engineer-3/">Job Details</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-643"><a href="https://jthemes.com/themes/wp/jobbox/job-dashboard/">Job Dashboard</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-134 has-children"><a href="https://jthemes.com/themes/wp/jobbox/recruiters/">Recruiters</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135"><a href="https://jthemes.com/themes/wp/jobbox/recruiters/">Recruiters</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-ctrljm_recruiter menu-item-2429"><a href="https://jthemes.com/themes/wp/jobbox/company/aceable-inc/">Recruiter Details</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-139 has-children"><a href="https://jthemes.com/themes/wp/jobbox/candidates/">Candidates</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"><a href="https://jthemes.com/themes/wp/jobbox/candidates/">Candidates</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-ctrljm_candidate menu-item-2432"><a href="https://jthemes.com/themes/wp/jobbox/candidate/floyd-miles/">Candidate Details</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-ctrljm_candidate menu-item-2433"><a href="https://jthemes.com/themes/wp/jobbox/candidate/robert-fox-2/">Candidate With Video</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-has-children menu-item-96 has-children"><a href="https://jthemes.com/themes/wp/jobbox/blog/">Blog</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-851"><a href="https://jthemes.com/themes/wp/jobbox/blog/">Blog Grid</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-850"><a href="https://jthemes.com/themes/wp/jobbox/how-to-write-an-application-letter-with-examples-2/">Blog Single</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-123 has-children"><a href="#">Pages</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124"><a href="https://jthemes.com/themes/wp/jobbox/about-us/">About Us</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://jthemes.com/themes/wp/jobbox/contact-us/">Contact</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131"><a href="https://jthemes.com/themes/wp/jobbox/pricing-plan/">Pricing Plan</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1410"><a href="https://jthemes.com/themes/wp/jobbox/shop/">Shop Page</a></li>
+</ul>
+</li>
+</ul></nav>			
+				</div>
+
+								<div class="mobile-account">
+					<h6 class="mb-10">Your Account</h6>
+											<div class="header-right">
+    <div class="block-signin d-flex align-items-center gap-2">
+                                    <a class="text-link-bd-btom hover-up" href="#controlJobManagerRegister" data-bs-toggle="modal">Register</a>
+                <a class="btn btn-default btn-shadow ml-30 hover-up" href="#controlJobManagerLogin" data-bs-toggle="modal">Sign in</a>
+                    
+        
+    </div>
+</div>									</div>
+								<div class="site-copyright pt-2 border-top">
+					Copyright 2024 &copy; Jobbox.					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+    
+
+	<main class="main">
+
+	
+
+	
+	<section class="section-box mt-50">
+        <div class="post-loop-grid">
+          <div class="container">	
+	
+	
+<section class="no-results not-found max-width-single d-grid gap-3">
+	<header class="page-header alignwide">
+		
+			<h1 class="page-title">Nothing here</h1>
+
+			</header><!-- .page-header -->
+
+	<div class="page-content default-max-width d-grid gap-2">
+
+		
+			<p>It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.</p>
+			<div class="search-form">
+	<form role="search"  method="get" action="https://jthemes.com/themes/wp/jobbox/">
+		<label class="visually-hidden" for="search-form-1">Search&hellip;</label>
+		<input type="search" id="search-form-1" class="search-field" value="" name="s" />
+		<button type="submit"><i class="fi-rr-search"></i></button>
+	</form>
+</div>
+
+
+
+			</div><!-- .page-content -->
+</section><!-- .no-results -->
+		
+
+	            </div>
+        </div>
+      </section>
+	
+<section class="section-box mt-50 mb-20">
+    <div class="container">
+        <div class="box-newsletter" style="">
+            <div class="row align-items-center">
+
+                <div class="col-xl-3 col-12 text-center d-none d-xl-block">
+                                        <img src="https://jthemes.com/themes/wp/jobbox/wp-content/uploads/2023/03/newsletter-left.png" alt="Newsletter">
+                                    </div>
+
+                <div class="col-lg-12 col-xl-6 col-12">
+                    <h2 class="text-md-newsletter text-center">New Things Will Always Update Regularly</h2>
+                    <div class="box-form-newsletter mt-40">
+                        			<form id="mc-form" class="form-newsletter">
+				<input id="mc-email" class="input-newsletter" type="email" placeholder="Enter your email" required="required">				
+				<button class="btn btn-default font-heading icon-send-letter" type="submit">Subscribe</button>
+            </form>
+		                        
+                    </div>
+                    <div id="mc-response" class="mt-15"></div>
+                </div>
+
+                <div class="col-xl-3 col-12 text-center d-none d-xl-block">
+                                        <img src="https://jthemes.com/themes/wp/jobbox/wp-content/uploads/2023/03/newsletter-right.png" alt="Newsletter">
+                                    </div>
+
+            </div><!--row-->
+        </div>
+    </div>
+</section>	
+	</main>
+	
+	<footer class="footer  mt-50 pt-30 " style="--jobbox-footer-bg-image: url()">
+		<div class="container">					
+    <div class="row justify-content-start">
+                    <div class="footer-col-1 col-md-3 col-sm-12">
+                <div id="block-7" class="widget widget_block widget_media_image">
+<figure class="wp-block-image size-full text-start"><img decoding="async" src="https://jthemes.com/themes/wp/jobbox/wp-content/uploads/2023/03/jobhub-logo.svg" alt="" class="wp-image-2193"/></figure>
+</div><div id="block-13" class="widget widget_block widget_text">
+<p class="small mt-20 mb-20">JobBox is the heart of the design community and the best resource to discover and connect with designers and jobs worldwide</p>
+</div><div id="block-9" class="widget widget_block">
+<ul class="wp-block-social-links is-layout-flex wp-block-social-links-is-layout-flex"><li class="wp-social-link wp-social-link-facebook  wp-block-social-link"><a href="https://#" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Facebook</span></a></li>
+
+<li class="wp-social-link wp-social-link-twitter  wp-block-social-link"><a href="https://#" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Twitter</span></a></li>
+
+<li class="wp-social-link wp-social-link-linkedin  wp-block-social-link"><a href="https://#" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M19.7,3H4.3C3.582,3,3,3.582,3,4.3v15.4C3,20.418,3.582,21,4.3,21h15.4c0.718,0,1.3-0.582,1.3-1.3V4.3 C21,3.582,20.418,3,19.7,3z M8.339,18.338H5.667v-8.59h2.672V18.338z M7.004,8.574c-0.857,0-1.549-0.694-1.549-1.548 c0-0.855,0.691-1.548,1.549-1.548c0.854,0,1.547,0.694,1.547,1.548C8.551,7.881,7.858,8.574,7.004,8.574z M18.339,18.338h-2.669 v-4.177c0-0.996-0.017-2.278-1.387-2.278c-1.389,0-1.601,1.086-1.601,2.206v4.249h-2.667v-8.59h2.559v1.174h0.037 c0.356-0.675,1.227-1.387,2.526-1.387c2.703,0,3.203,1.779,3.203,4.092V18.338z"></path></svg><span class="wp-block-social-link-label screen-reader-text">LinkedIn</span></a></li></ul>
+</div>            </div>
+                        <div class="footer-col-2 col-md-2 col-xs-6">
+                <div id="nav_menu-2" class="widget widget_nav_menu"><h6 class="mb-20">Resources</h6><nav class="menu-resources-container" aria-label="Resources"><ul id="menu-resources" class="menu"><li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="https://jthemes.com/themes/wp/jobbox/about-us/">About Us</a></li>
+<li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="https://jthemes.com/themes/wp/jobbox/candidates/">Candidates</a></li>
+<li id="menu-item-154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-154"><a href="https://jthemes.com/themes/wp/jobbox/contact-us/">Contact Us</a></li>
+</ul></nav></div>            </div>
+                        <div class="footer-col-3 col-md-2 col-xs-6">
+                <div id="nav_menu-3" class="widget widget_nav_menu"><h6 class="mb-20">Community</h6><nav class="menu-community-container" aria-label="Community"><ul id="menu-community" class="menu"><li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156"><a href="#">Feature</a></li>
+<li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157"><a href="#">Pricing</a></li>
+<li id="menu-item-158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-158"><a href="#">Credit</a></li>
+<li id="menu-item-159" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-159"><a href="#">FAQ</a></li>
+</ul></nav></div>            </div>
+                        <div class="footer-col-4 col-md-2 col-xs-6">
+                <div id="nav_menu-4" class="widget widget_nav_menu"><h6 class="mb-20">Quick links</h6><nav class="menu-quick-links-container" aria-label="Quick links"><ul id="menu-quick-links" class="menu"><li id="menu-item-149" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-149"><a href="#">iOS</a></li>
+<li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150"><a href="#">Android</a></li>
+<li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a href="#">Microsoft</a></li>
+<li id="menu-item-152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152"><a href="#">Desktop</a></li>
+</ul></nav></div>            </div>
+                        <div class="footer-col-5 col-md-2 col-xs-6">
+                <div id="nav_menu-5" class="widget widget_nav_menu"><h6 class="mb-20">More</h6><nav class="menu-legal-menu-container" aria-label="More"><ul id="menu-legal-menu" class="menu"><li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="#">Privacy</a></li>
+<li id="menu-item-161" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-161"><a href="#">Helps</a></li>
+<li id="menu-item-162" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-162"><a href="#">Terms</a></li>
+<li id="menu-item-163" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-163"><a href="#">FAQ</a></li>
+</ul></nav></div>            </div>
+                        <div class="footer-col-6 col-md-3 col-sm-12">
+                <div id="block-10" class="widget widget_block"><h6 class="mb-20">Download App</h6></div><div id="block-11" class="widget widget_block"><p class="small">Download our Apps and get extra 15% Discount on your first Order…!</p></div><div id="block-12" class="widget widget_block"><div class="d-flex mt-15"><a class="mr-5" href="#"><img decoding="async" src="https://jthemes.com/themes/wp/jobbox/wp-content/uploads/2023/03/app-store.svg" width="102" alt="joxBox"></a><a href="#"><img decoding="async" width="102" src="https://jthemes.com/themes/wp/jobbox/wp-content/uploads/2023/03/google-play.svg" alt="joxBox"></a></div></div>            </div>
+                </div><!-- .row -->
+</div><!-- .container -->		
+<div class="container">
+    <div class="footer-bottom mt-50">
+        <div class="row gy-3">
+            <div class="col-md-6">
+                <span class="font-xs color-text-paragraph">Copyright &copy; 2024. JobBox all right reserved</span>
+            </div>
+            <div class="col-md-6 text-md-end text-start">
+                                <div class="footer-social">
+                    <a href="#" class="font-xs color-text-paragraph">Privacy Policy</a>
+<a href="#" class="font-xs color-text-paragraph ml-30">Terms &#038; Conditions</a>
+<a href="#" class="font-xs color-text-paragraph ml-30">Security</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>	</footer>
+
+
+
+<div class="modal fade control-job-manager-login" id="controlJobManagerLogin" aria-hidden="true" aria-labelledby="controlJobManagerLoginLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="controlJobManagerLoginLabel">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">                
+                <form class="rwmb-form mbup-form" method="post" enctype="multipart/form-data" id="login-form"><input type="hidden" name="mbup_key" value="b48f929e758cdc62260a3e01b77335dd"><input type="hidden" name="mbup_type" value="login"><div class="ctrlbp-control-block-patterns" data-autosave="false" data-object-type="user" data-object-id=""><input type="hidden" id="nonce_rwmb-user-login" name="nonce_rwmb-user-login" value="2bef6f99a9" /><input type="hidden" name="_wp_http_referer" value="/themes/wp/jobbox/home/customer/www/jthemes.com/public_html/themes/wp/jobbox/wp-content/plugins/control-user-profileassets/user-profile.js" /><h2></h2><div class="ctrlbp-field ctrlbp-row ctrlbp-text-wrapper  required ctrlbp-field-has-label"><div class="ctrlbp-label ctrlbp-col-12 ctrlbp-col-md-3">
+					<label for="user_login">Username or Email Address<span class="ctrlbp-required">*</span></label>
+					
+				</div><div class="ctrlbp-input ctrlbp-col-12 ctrlbp-col-md-12"><input  type="text" required="1" id="user_login" class="ctrlbp-text" name="user_login"></div></div><div class="ctrlbp-field ctrlbp-row ctrlbp-password-wrapper  required ctrlbp-field-has-label"><div class="ctrlbp-label ctrlbp-col-12 ctrlbp-col-md-3">
+					<label for="user_pass">Password<span class="ctrlbp-required">*</span></label>
+					
+				</div><div class="ctrlbp-input ctrlbp-col-12 ctrlbp-col-md-12"><input  type="password" required="1" id="user_pass" class="ctrlbp-password" name="user_pass"></div></div><div class="ctrlbp-field ctrlbp-row ctrlbp-checkbox-wrapper  ctrlbp-field-no-label"><div class="ctrlbp-input ctrlbp-col-12 ctrlbp-col-md-12"><label id='remember_description' class='description'><input  value="1" type="checkbox" id="remember" class="ctrlbp-checkbox" name="remember" > Remember Me</label></div></div><div class="ctrlbp-field ctrlbp-row ctrlbp-button-wrapper  ctrlbp-field-no-label"><div class="ctrlbp-input ctrlbp-col-12 ctrlbp-col-md-12"><button  type="submit" id="submit" class="ctrlbp-button btn btn-default button hide-if-no-js" name="rwmb_profile_submit_login" value="1">Log In</button></div></div></div></form>            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <div>
+                    <a href="https://jthemes.com/themes/wp/jobbox/my-account/lost-password/" class="btn-link">Lost your password?</a>
+                </div>
+                <div>
+                    Don&#039;t have an Account?                    <a href="#" class="btn-link" data-bs-target="#controlJobManagerRegister" data-bs-toggle="modal">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade control-job-manager-register" id="controlJobManagerRegister" aria-hidden="true" aria-labelledby="controlJobManagerLoginLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="controlJobManagerLoginLabel2">Register</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+                        
+            <form class="rwmb-form mbup-form" method="post" enctype="multipart/form-data" id="register-form"><input type="hidden" name="mbup_key" value="1883f334f3d9aefeb181cd6bfacacb62"><input type="hidden" name="mbup_type" value="register"><div class="ctrlbp-control-block-patterns" data-autosave="false" data-object-type="user" data-object-id=""><input type="hidden" id="nonce_rwmb-user-register" name="nonce_rwmb-user-register" value="751f8978a0" /><input type="hidden" name="_wp_http_referer" value="/themes/wp/jobbox/home/customer/www/jthemes.com/public_html/themes/wp/jobbox/wp-content/plugins/control-user-profileassets/user-profile.js" /><h2></h2><div class="ctrlbp-field ctrlbp-row ctrlbp-text-wrapper  required ctrlbp-field-has-label"><div class="ctrlbp-label ctrlbp-col-12 ctrlbp-col-md-3">
+					<label for="user_login">Username<span class="ctrlbp-required">*</span></label>
+					
+				</div><div class="ctrlbp-input ctrlbp-col-12 ctrlbp-col-md-12"><input  type="text" required="1" id="user_login" class="ctrlbp-text" name="user_login"></div></div><div class="ctrlbp-field ctrlbp-row ctrlbp-email-wrapper  required ctrlbp-field-has-label"><div class="ctrlbp-label ctrlbp-col-12 ctrlbp-col-md-3">
+					<label for="user_email">Email<span class="ctrlbp-required">*</span></label>
+					
+				</div><div class="ctrlbp-input ctrlbp-col-12 ctrlbp-col-md-12"><input  type="email" required="1" id="user_email" class="ctrlbp-email" name="user_email"></div></div><div class="ctrlbp-field ctrlbp-row ctrlbp-password-wrapper  required ctrlbp-field-has-label"><div class="ctrlbp-label ctrlbp-col-12 ctrlbp-col-md-3">
+					<label for="user_pass">Password<span class="ctrlbp-required">*</span></label>
+					
+				</div><div class="ctrlbp-input ctrlbp-col-12 ctrlbp-col-md-12"><input  type="password" required="1" id="user_pass" class="ctrlbp-password" name="user_pass"><p id="user_pass-description" class='description'><span id="password-strength" class="rwmb-password-strength"></span></p></div></div><div class="ctrlbp-field ctrlbp-row ctrlbp-password-wrapper  required ctrlbp-field-has-label"><div class="ctrlbp-label ctrlbp-col-12 ctrlbp-col-md-3">
+					<label for="user_pass2">Confirm Password<span class="ctrlbp-required">*</span></label>
+					
+				</div><div class="ctrlbp-input ctrlbp-col-12 ctrlbp-col-md-12"><input  type="password" required="1" id="user_pass2" class="ctrlbp-password" name="user_pass2"></div></div><div class="ctrlbp-field ctrlbp-row ctrlbp-radio-wrapper  ctrlbp-field-has-label"><div class="ctrlbp-label ctrlbp-col-12 ctrlbp-col-md-3">
+					<label for="user_role">Register as : </label>
+					
+				</div><div class="ctrlbp-input ctrlbp-col-12 ctrlbp-col-md-12"><ul class="ctrlbp-input-list ctrlbp-collapse ctrlbp-inline"><li><label><input  value="employer" type="radio" class="ctrlbp-radio" name="user_role" >Recruiter</label></li><li><label><input  value="candidate" type="radio" class="ctrlbp-radio" name="user_role" >Candidate</label></li></ul></div></div></div>		<div class="rwmb-field rwmb-button-wrapper rwmb-form-submit">
+			<div class="rwmb-input">
+				<button type="submit" class="rwmb-button btn btn-default mt-20" id="submit" name="rwmb_profile_submit_register" value="1">Register</button>
+			</div>
+		</div>
+		</form>            
+        </div>
+        <div class="modal-footer">
+            Already have an Account?            <a href="#" class="btn-link" data-bs-target="#controlJobManagerLogin" data-bs-toggle="modal">Login</a>
+        </div>
+        </div>
+    </div>
+</div>	<script>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel='stylesheet' id='wc-blocks-style-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=11.8.0-dev' media='all' />
+<link rel='stylesheet' id='cup-css' href='https://jthemes.com/themes/wp/jobbox/home/customer/www/jthemes.com/public_html/themes/wp/jobbox/wp-content/plugins/control-user-profileassets/user-profile.css?ver=2.1.1' media='all' />
+<link rel='stylesheet' id='wp-color-picker-css' href='https://jthemes.com/themes/wp/jobbox/wp-admin/css/color-picker.min.css?ver=6.4.3' media='all' />
+<link rel='stylesheet' id='ctrlbp-css' href='https://jthemes.com/themes/wp/jobbox/wp-content/plugins/control-block-patterns/assets/css/ctrlbp-admin.min.css?ver=1.3.5.4' media='all' />
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8.6" id="swv-js"></script>
+<script id="contact-form-7-js-extra">
+var wpcf7 = {"api":{"root":"https:\/\/jthemes.com\/themes\/wp\/jobbox\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+</script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8.6" id="contact-form-7-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/control-job-manager/assets/js/bootstrap.bundle.min.js?ver=5.2.0" id="bootstrap-bundle-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/jquery/ui/menu.min.js?ver=1.13.2" id="jquery-ui-menu-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/dom-ready.min.js?ver=392bdd43726760d1f3ca" id="wp-dom-ready-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/a11y.min.js?ver=7032343a947cfccf5608" id="wp-a11y-js"></script>
+<script id="jquery-ui-autocomplete-js-extra">
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+</script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.13.2" id="jquery-ui-autocomplete-js"></script>
+<script id="control-job-manager-js-extra">
+var controlJobManager = {"skills":["Adobe XD","APP","Digital","Figma","PSD"],"ajax":"https:\/\/jthemes.com\/themes\/wp\/jobbox\/wp-admin\/admin-ajax.php"};
+</script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/control-job-manager/assets/js/control-job-manager.js?ver=1.2.3" id="control-job-manager-js"></script>
+<script id="wp-job-manager-bookmarks-bookmark-js-js-extra">
+var job_manager_bookmarks = {"i18n_confirm_delete":"Are you sure you want to delete this bookmark?","i18n_add_bookmark":"Add Bookmark","i18n_update_bookmark":"Update Bookmark","spinner_url":"https:\/\/jthemes.com\/themes\/wp\/jobbox\/wp-includes\/images\/spinner.gif"};
+</script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/control-job-manager/vendor/bookmarks/assets/dist/js/bookmark.js?ver=1.2.3" id="wp-job-manager-bookmarks-bookmark-js-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/control-job-manager/vendor/tags/assets/dist/js/tag-filter.js?ver=1.2.3" id="wp-job-manager-ajax-tag-filters-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=8.5.2" id="sourcebuster-js-js"></script>
+<script id="wc-order-attribution-js-extra">
+var wc_order_attribution = {"params":{"lifetime":1.0000000000000000818030539140313095458623138256371021270751953125e-5,"session":30,"ajaxurl":"https:\/\/jthemes.com\/themes\/wp\/jobbox\/wp-admin\/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":"yes"}};
+</script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=8.5.2" id="wc-order-attribution-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/vendor/react.min.js?ver=18.2.0" id="react-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/deprecated.min.js?ver=73ad3591e7bc95f4777a" id="wp-deprecated-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/dom.min.js?ver=49ff2869626fbeaacc23" id="wp-dom-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.2.0" id="react-dom-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/escape-html.min.js?ver=03e27a7b6ae14f7afaa6" id="wp-escape-html-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/element.min.js?ver=ed1c7604880e8b574b40" id="wp-element-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/is-shallow-equal.min.js?ver=20c2b06ecf04afb14fee" id="wp-is-shallow-equal-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/keycodes.min.js?ver=3460bd0fac9859d6886c" id="wp-keycodes-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/priority-queue.min.js?ver=422e19e9d48b269c5219" id="wp-priority-queue-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/compose.min.js?ver=3189b344ff39fef940b7" id="wp-compose-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/private-apis.min.js?ver=11cb2ebaa70a9f1f0ab5" id="wp-private-apis-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/redux-routine.min.js?ver=0be1b2a6a79703e28531" id="wp-redux-routine-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/data.min.js?ver=dc5f255634f3da29c8d5" id="wp-data-js"></script>
+<script id="wp-data-js-after">
+( function() {
+	var userId = 0;
+	var storageKey = "WP_DATA_USER_" + userId;
+	wp.data
+		.use( wp.data.plugins.persistence, { storageKey: storageKey } );
+} )();
+</script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.19" id="lodash-js"></script>
+<script id="lodash-js-after">
+window.lodash = _.noConflict();
+</script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks-registry.js?ver=1c879273bd5c193cad0a" id="wc-blocks-registry-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/url.min.js?ver=b4979979018b684be209" id="wp-url-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/api-fetch.min.js?ver=0fa4dabf8bf2c7adf21a" id="wp-api-fetch-js"></script>
+<script id="wp-api-fetch-js-after">
+wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "https://jthemes.com/themes/wp/jobbox/wp-json/" ) );
+wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "f1b9acd0a1" );
+wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
+wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
+wp.apiFetch.nonceEndpoint = "https://jthemes.com/themes/wp/jobbox/wp-admin/admin-ajax.php?action=rest-nonce";
+</script>
+<script id="wc-settings-js-before">
+var wcSettings = wcSettings || JSON.parse( decodeURIComponent( '%7B%22shippingCostRequiresAddress%22%3Afalse%2C%22adminUrl%22%3A%22https%3A%5C%2F%5C%2Fjthemes.com%5C%2Fthemes%5C%2Fwp%5C%2Fjobbox%5C%2Fwp-admin%5C%2F%22%2C%22countries%22%3A%7B%22AF%22%3A%22Afghanistan%22%2C%22AX%22%3A%22%5Cu00c5land%20Islands%22%2C%22AL%22%3A%22Albania%22%2C%22DZ%22%3A%22Algeria%22%2C%22AS%22%3A%22American%20Samoa%22%2C%22AD%22%3A%22Andorra%22%2C%22AO%22%3A%22Angola%22%2C%22AI%22%3A%22Anguilla%22%2C%22AQ%22%3A%22Antarctica%22%2C%22AG%22%3A%22Antigua%20and%20Barbuda%22%2C%22AR%22%3A%22Argentina%22%2C%22AM%22%3A%22Armenia%22%2C%22AW%22%3A%22Aruba%22%2C%22AU%22%3A%22Australia%22%2C%22AT%22%3A%22Austria%22%2C%22AZ%22%3A%22Azerbaijan%22%2C%22BS%22%3A%22Bahamas%22%2C%22BH%22%3A%22Bahrain%22%2C%22BD%22%3A%22Bangladesh%22%2C%22BB%22%3A%22Barbados%22%2C%22BY%22%3A%22Belarus%22%2C%22PW%22%3A%22Belau%22%2C%22BE%22%3A%22Belgium%22%2C%22BZ%22%3A%22Belize%22%2C%22BJ%22%3A%22Benin%22%2C%22BM%22%3A%22Bermuda%22%2C%22BT%22%3A%22Bhutan%22%2C%22BO%22%3A%22Bolivia%22%2C%22BQ%22%3A%22Bonaire%2C%20Saint%20Eustatius%20and%20Saba%22%2C%22BA%22%3A%22Bosnia%20and%20Herzegovina%22%2C%22BW%22%3A%22Botswana%22%2C%22BV%22%3A%22Bouvet%20Island%22%2C%22BR%22%3A%22Brazil%22%2C%22IO%22%3A%22British%20Indian%20Ocean%20Territory%22%2C%22BN%22%3A%22Brunei%22%2C%22BG%22%3A%22Bulgaria%22%2C%22BF%22%3A%22Burkina%20Faso%22%2C%22BI%22%3A%22Burundi%22%2C%22KH%22%3A%22Cambodia%22%2C%22CM%22%3A%22Cameroon%22%2C%22CA%22%3A%22Canada%22%2C%22CV%22%3A%22Cape%20Verde%22%2C%22KY%22%3A%22Cayman%20Islands%22%2C%22CF%22%3A%22Central%20African%20Republic%22%2C%22TD%22%3A%22Chad%22%2C%22CL%22%3A%22Chile%22%2C%22CN%22%3A%22China%22%2C%22CX%22%3A%22Christmas%20Island%22%2C%22CC%22%3A%22Cocos%20%28Keeling%29%20Islands%22%2C%22CO%22%3A%22Colombia%22%2C%22KM%22%3A%22Comoros%22%2C%22CG%22%3A%22Congo%20%28Brazzaville%29%22%2C%22CD%22%3A%22Congo%20%28Kinshasa%29%22%2C%22CK%22%3A%22Cook%20Islands%22%2C%22CR%22%3A%22Costa%20Rica%22%2C%22HR%22%3A%22Croatia%22%2C%22CU%22%3A%22Cuba%22%2C%22CW%22%3A%22Cura%26ccedil%3Bao%22%2C%22CY%22%3A%22Cyprus%22%2C%22CZ%22%3A%22Czech%20Republic%22%2C%22DK%22%3A%22Denmark%22%2C%22DJ%22%3A%22Djibouti%22%2C%22DM%22%3A%22Dominica%22%2C%22DO%22%3A%22Dominican%20Republic%22%2C%22EC%22%3A%22Ecuador%22%2C%22EG%22%3A%22Egypt%22%2C%22SV%22%3A%22El%20Salvador%22%2C%22GQ%22%3A%22Equatorial%20Guinea%22%2C%22ER%22%3A%22Eritrea%22%2C%22EE%22%3A%22Estonia%22%2C%22SZ%22%3A%22Eswatini%22%2C%22ET%22%3A%22Ethiopia%22%2C%22FK%22%3A%22Falkland%20Islands%22%2C%22FO%22%3A%22Faroe%20Islands%22%2C%22FJ%22%3A%22Fiji%22%2C%22FI%22%3A%22Finland%22%2C%22FR%22%3A%22France%22%2C%22GF%22%3A%22French%20Guiana%22%2C%22PF%22%3A%22French%20Polynesia%22%2C%22TF%22%3A%22French%20Southern%20Territories%22%2C%22GA%22%3A%22Gabon%22%2C%22GM%22%3A%22Gambia%22%2C%22GE%22%3A%22Georgia%22%2C%22DE%22%3A%22Germany%22%2C%22GH%22%3A%22Ghana%22%2C%22GI%22%3A%22Gibraltar%22%2C%22GR%22%3A%22Greece%22%2C%22GL%22%3A%22Greenland%22%2C%22GD%22%3A%22Grenada%22%2C%22GP%22%3A%22Guadeloupe%22%2C%22GU%22%3A%22Guam%22%2C%22GT%22%3A%22Guatemala%22%2C%22GG%22%3A%22Guernsey%22%2C%22GN%22%3A%22Guinea%22%2C%22GW%22%3A%22Guinea-Bissau%22%2C%22GY%22%3A%22Guyana%22%2C%22HT%22%3A%22Haiti%22%2C%22HM%22%3A%22Heard%20Island%20and%20McDonald%20Islands%22%2C%22HN%22%3A%22Honduras%22%2C%22HK%22%3A%22Hong%20Kong%22%2C%22HU%22%3A%22Hungary%22%2C%22IS%22%3A%22Iceland%22%2C%22IN%22%3A%22India%22%2C%22ID%22%3A%22Indonesia%22%2C%22IR%22%3A%22Iran%22%2C%22IQ%22%3A%22Iraq%22%2C%22IE%22%3A%22Ireland%22%2C%22IM%22%3A%22Isle%20of%20Man%22%2C%22IL%22%3A%22Israel%22%2C%22IT%22%3A%22Italy%22%2C%22CI%22%3A%22Ivory%20Coast%22%2C%22JM%22%3A%22Jamaica%22%2C%22JP%22%3A%22Japan%22%2C%22JE%22%3A%22Jersey%22%2C%22JO%22%3A%22Jordan%22%2C%22KZ%22%3A%22Kazakhstan%22%2C%22KE%22%3A%22Kenya%22%2C%22KI%22%3A%22Kiribati%22%2C%22KW%22%3A%22Kuwait%22%2C%22KG%22%3A%22Kyrgyzstan%22%2C%22LA%22%3A%22Laos%22%2C%22LV%22%3A%22Latvia%22%2C%22LB%22%3A%22Lebanon%22%2C%22LS%22%3A%22Lesotho%22%2C%22LR%22%3A%22Liberia%22%2C%22LY%22%3A%22Libya%22%2C%22LI%22%3A%22Liechtenstein%22%2C%22LT%22%3A%22Lithuania%22%2C%22LU%22%3A%22Luxembourg%22%2C%22MO%22%3A%22Macao%22%2C%22MG%22%3A%22Madagascar%22%2C%22MW%22%3A%22Malawi%22%2C%22MY%22%3A%22Malaysia%22%2C%22MV%22%3A%22Maldives%22%2C%22ML%22%3A%22Mali%22%2C%22MT%22%3A%22Malta%22%2C%22MH%22%3A%22Marshall%20Islands%22%2C%22MQ%22%3A%22Martinique%22%2C%22MR%22%3A%22Mauritania%22%2C%22MU%22%3A%22Mauritius%22%2C%22YT%22%3A%22Mayotte%22%2C%22MX%22%3A%22Mexico%22%2C%22FM%22%3A%22Micronesia%22%2C%22MD%22%3A%22Moldova%22%2C%22MC%22%3A%22Monaco%22%2C%22MN%22%3A%22Mongolia%22%2C%22ME%22%3A%22Montenegro%22%2C%22MS%22%3A%22Montserrat%22%2C%22MA%22%3A%22Morocco%22%2C%22MZ%22%3A%22Mozambique%22%2C%22MM%22%3A%22Myanmar%22%2C%22NA%22%3A%22Namibia%22%2C%22NR%22%3A%22Nauru%22%2C%22NP%22%3A%22Nepal%22%2C%22NL%22%3A%22Netherlands%22%2C%22NC%22%3A%22New%20Caledonia%22%2C%22NZ%22%3A%22New%20Zealand%22%2C%22NI%22%3A%22Nicaragua%22%2C%22NE%22%3A%22Niger%22%2C%22NG%22%3A%22Nigeria%22%2C%22NU%22%3A%22Niue%22%2C%22NF%22%3A%22Norfolk%20Island%22%2C%22KP%22%3A%22North%20Korea%22%2C%22MK%22%3A%22North%20Macedonia%22%2C%22MP%22%3A%22Northern%20Mariana%20Islands%22%2C%22NO%22%3A%22Norway%22%2C%22OM%22%3A%22Oman%22%2C%22PK%22%3A%22Pakistan%22%2C%22PS%22%3A%22Palestinian%20Territory%22%2C%22PA%22%3A%22Panama%22%2C%22PG%22%3A%22Papua%20New%20Guinea%22%2C%22PY%22%3A%22Paraguay%22%2C%22PE%22%3A%22Peru%22%2C%22PH%22%3A%22Philippines%22%2C%22PN%22%3A%22Pitcairn%22%2C%22PL%22%3A%22Poland%22%2C%22PT%22%3A%22Portugal%22%2C%22PR%22%3A%22Puerto%20Rico%22%2C%22QA%22%3A%22Qatar%22%2C%22RE%22%3A%22Reunion%22%2C%22RO%22%3A%22Romania%22%2C%22RU%22%3A%22Russia%22%2C%22RW%22%3A%22Rwanda%22%2C%22ST%22%3A%22S%26atilde%3Bo%20Tom%26eacute%3B%20and%20Pr%26iacute%3Bncipe%22%2C%22BL%22%3A%22Saint%20Barth%26eacute%3Blemy%22%2C%22SH%22%3A%22Saint%20Helena%22%2C%22KN%22%3A%22Saint%20Kitts%20and%20Nevis%22%2C%22LC%22%3A%22Saint%20Lucia%22%2C%22SX%22%3A%22Saint%20Martin%20%28Dutch%20part%29%22%2C%22MF%22%3A%22Saint%20Martin%20%28French%20part%29%22%2C%22PM%22%3A%22Saint%20Pierre%20and%20Miquelon%22%2C%22VC%22%3A%22Saint%20Vincent%20and%20the%20Grenadines%22%2C%22WS%22%3A%22Samoa%22%2C%22SM%22%3A%22San%20Marino%22%2C%22SA%22%3A%22Saudi%20Arabia%22%2C%22SN%22%3A%22Senegal%22%2C%22RS%22%3A%22Serbia%22%2C%22SC%22%3A%22Seychelles%22%2C%22SL%22%3A%22Sierra%20Leone%22%2C%22SG%22%3A%22Singapore%22%2C%22SK%22%3A%22Slovakia%22%2C%22SI%22%3A%22Slovenia%22%2C%22SB%22%3A%22Solomon%20Islands%22%2C%22SO%22%3A%22Somalia%22%2C%22ZA%22%3A%22South%20Africa%22%2C%22GS%22%3A%22South%20Georgia%5C%2FSandwich%20Islands%22%2C%22KR%22%3A%22South%20Korea%22%2C%22SS%22%3A%22South%20Sudan%22%2C%22ES%22%3A%22Spain%22%2C%22LK%22%3A%22Sri%20Lanka%22%2C%22SD%22%3A%22Sudan%22%2C%22SR%22%3A%22Suriname%22%2C%22SJ%22%3A%22Svalbard%20and%20Jan%20Mayen%22%2C%22SE%22%3A%22Sweden%22%2C%22CH%22%3A%22Switzerland%22%2C%22SY%22%3A%22Syria%22%2C%22TW%22%3A%22Taiwan%22%2C%22TJ%22%3A%22Tajikistan%22%2C%22TZ%22%3A%22Tanzania%22%2C%22TH%22%3A%22Thailand%22%2C%22TL%22%3A%22Timor-Leste%22%2C%22TG%22%3A%22Togo%22%2C%22TK%22%3A%22Tokelau%22%2C%22TO%22%3A%22Tonga%22%2C%22TT%22%3A%22Trinidad%20and%20Tobago%22%2C%22TN%22%3A%22Tunisia%22%2C%22TR%22%3A%22Turkey%22%2C%22TM%22%3A%22Turkmenistan%22%2C%22TC%22%3A%22Turks%20and%20Caicos%20Islands%22%2C%22TV%22%3A%22Tuvalu%22%2C%22UG%22%3A%22Uganda%22%2C%22UA%22%3A%22Ukraine%22%2C%22AE%22%3A%22United%20Arab%20Emirates%22%2C%22GB%22%3A%22United%20Kingdom%20%28UK%29%22%2C%22US%22%3A%22United%20States%20%28US%29%22%2C%22UM%22%3A%22United%20States%20%28US%29%20Minor%20Outlying%20Islands%22%2C%22UY%22%3A%22Uruguay%22%2C%22UZ%22%3A%22Uzbekistan%22%2C%22VU%22%3A%22Vanuatu%22%2C%22VA%22%3A%22Vatican%22%2C%22VE%22%3A%22Venezuela%22%2C%22VN%22%3A%22Vietnam%22%2C%22VG%22%3A%22Virgin%20Islands%20%28British%29%22%2C%22VI%22%3A%22Virgin%20Islands%20%28US%29%22%2C%22WF%22%3A%22Wallis%20and%20Futuna%22%2C%22EH%22%3A%22Western%20Sahara%22%2C%22YE%22%3A%22Yemen%22%2C%22ZM%22%3A%22Zambia%22%2C%22ZW%22%3A%22Zimbabwe%22%7D%2C%22currency%22%3A%7B%22code%22%3A%22USD%22%2C%22precision%22%3A2%2C%22symbol%22%3A%22%24%22%2C%22symbolPosition%22%3A%22left%22%2C%22decimalSeparator%22%3A%22.%22%2C%22thousandSeparator%22%3A%22%2C%22%2C%22priceFormat%22%3A%22%251%24s%252%24s%22%7D%2C%22currentUserId%22%3A0%2C%22currentUserIsAdmin%22%3Afalse%2C%22dateFormat%22%3A%22F%20j%2C%20Y%22%2C%22homeUrl%22%3A%22https%3A%5C%2F%5C%2Fjthemes.com%5C%2Fthemes%5C%2Fwp%5C%2Fjobbox%5C%2F%22%2C%22locale%22%3A%7B%22siteLocale%22%3A%22en_US%22%2C%22userLocale%22%3A%22en_US%22%2C%22weekdaysShort%22%3A%5B%22Sun%22%2C%22Mon%22%2C%22Tue%22%2C%22Wed%22%2C%22Thu%22%2C%22Fri%22%2C%22Sat%22%5D%7D%2C%22dashboardUrl%22%3A%22https%3A%5C%2F%5C%2Fjthemes.com%5C%2Fthemes%5C%2Fwp%5C%2Fjobbox%5C%2Fmy-account%5C%2F%22%2C%22orderStatuses%22%3A%7B%22pending%22%3A%22Pending%20payment%22%2C%22processing%22%3A%22Processing%22%2C%22on-hold%22%3A%22On%20hold%22%2C%22completed%22%3A%22Completed%22%2C%22cancelled%22%3A%22Cancelled%22%2C%22refunded%22%3A%22Refunded%22%2C%22failed%22%3A%22Failed%22%2C%22checkout-draft%22%3A%22Draft%22%7D%2C%22placeholderImgSrc%22%3A%22https%3A%5C%2F%5C%2Fjthemes.com%5C%2Fthemes%5C%2Fwp%5C%2Fjobbox%5C%2Fwp-content%5C%2Fuploads%5C%2Fwoocommerce-placeholder-300x300.png%22%2C%22productsSettings%22%3A%7B%22cartRedirectAfterAdd%22%3Afalse%7D%2C%22siteTitle%22%3A%22Jobbox%22%2C%22storePages%22%3A%7B%22myaccount%22%3A%7B%22id%22%3A8%2C%22title%22%3A%22My%20account%22%2C%22permalink%22%3A%22https%3A%5C%2F%5C%2Fjthemes.com%5C%2Fthemes%5C%2Fwp%5C%2Fjobbox%5C%2Fmy-account%5C%2F%22%7D%2C%22shop%22%3A%7B%22id%22%3A5%2C%22title%22%3A%22Shop%22%2C%22permalink%22%3A%22https%3A%5C%2F%5C%2Fjthemes.com%5C%2Fthemes%5C%2Fwp%5C%2Fjobbox%5C%2Fshop%5C%2F%22%7D%2C%22cart%22%3A%7B%22id%22%3A6%2C%22title%22%3A%22Cart%22%2C%22permalink%22%3A%22https%3A%5C%2F%5C%2Fjthemes.com%5C%2Fthemes%5C%2Fwp%5C%2Fjobbox%5C%2Fcart%5C%2F%22%7D%2C%22checkout%22%3A%7B%22id%22%3A7%2C%22title%22%3A%22Checkout%22%2C%22permalink%22%3A%22https%3A%5C%2F%5C%2Fjthemes.com%5C%2Fthemes%5C%2Fwp%5C%2Fjobbox%5C%2Fcheckout%5C%2F%22%7D%2C%22privacy%22%3A%7B%22id%22%3A0%2C%22title%22%3A%22%22%2C%22permalink%22%3Afalse%7D%2C%22terms%22%3A%7B%22id%22%3A0%2C%22title%22%3A%22%22%2C%22permalink%22%3Afalse%7D%7D%2C%22wcAssetUrl%22%3A%22https%3A%5C%2F%5C%2Fjthemes.com%5C%2Fthemes%5C%2Fwp%5C%2Fjobbox%5C%2Fwp-content%5C%2Fplugins%5C%2Fwoocommerce%5C%2Fassets%5C%2F%22%2C%22wcVersion%22%3A%228.5.2%22%2C%22wpLoginUrl%22%3A%22https%3A%5C%2F%5C%2Fjthemes.com%5C%2Fthemes%5C%2Fwp%5C%2Fjobbox%5C%2Fwp-login.php%22%2C%22wpVersion%22%3A%226.4.3%22%2C%22collectableMethodIds%22%3A%5B%5D%2C%22admin%22%3A%7B%22wccomHelper%22%3A%7B%22isConnected%22%3Afalse%2C%22connectURL%22%3A%22https%3A%5C%2F%5C%2Fjthemes.com%5C%2Fthemes%5C%2Fwp%5C%2Fjobbox%5C%2Fwp-admin%5C%2Fadmin.php%3Fpage%3Dwc-addons%26section%3Dhelper%26wc-helper-connect%3D1%26wc-helper-nonce%3D727ddc225a%22%2C%22userEmail%22%3A%22%22%2C%22userAvatar%22%3A%22https%3A%5C%2F%5C%2Fsecure.gravatar.com%5C%2Favatar%5C%2F%3Fs%3D48%26d%3Dmm%26r%3Dg%22%2C%22storeCountry%22%3A%22US%22%2C%22inAppPurchaseURLParams%22%3A%7B%22wccom-site%22%3A%22https%3A%5C%2F%5C%2Fjthemes.com%5C%2Fthemes%5C%2Fwp%5C%2Fjobbox%22%2C%22wccom-back%22%3A%22%252Fthemes%252Fwp%252Fjobbox%252Fhome%252Fcustomer%252Fwww%252Fjthemes.com%252Fpublic_html%252Fthemes%252Fwp%252Fjobbox%252Fwp-content%252Fplugins%252Fcontrol-user-profileassets%252Fuser-profile.js%22%2C%22wccom-woo-version%22%3A%228.5.2%22%2C%22wccom-connect-nonce%22%3A%22727ddc225a%22%7D%7D%2C%22_feature_nonce%22%3A%22bdd6d6d51c%22%2C%22alertCount%22%3A%221%22%2C%22visibleTaskListIds%22%3A%5B%22setup%22%5D%7D%7D' ) );
+</script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/woocommerce/assets/client/blocks/wc-settings.js?ver=07c2f0675ddd247d2325" id="wc-settings-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/data-controls.min.js?ver=fe4ccc8a1782ea8e2cb1" id="wp-data-controls-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/html-entities.min.js?ver=36a4a255da7dd2e1bf8e" id="wp-html-entities-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/notices.min.js?ver=38e88f4b627cf873edd0" id="wp-notices-js"></script>
+<script id="wc-blocks-middleware-js-before">
+			var wcBlocksMiddlewareConfig = {
+				storeApiNonce: 'f320e7fb58',
+				wcStoreApiNonceTimestamp: '1708494256'
+			};
+			
+</script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks-middleware.js?ver=ca04183222edaf8a26be" id="wc-blocks-middleware-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks-data.js?ver=c96aba0171b12e03b8a6" id="wc-blocks-data-store-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/primitives.min.js?ver=6984e6eb5d6157c4fe44" id="wp-primitives-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/dist/warning.min.js?ver=122829a085511691f14d" id="wp-warning-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/woocommerce/assets/client/blocks/blocks-components.js?ver=b165bb2bd213326d7f31" id="wc-blocks-components-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/woocommerce/assets/client/blocks/blocks-checkout.js?ver=9f469ef17beaf7c51576" id="wc-blocks-checkout-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution-blocks.min.js?ver=8.5.2" id="wc-order-attribution-blocks-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/js/vendor/modernizr-3.6.0.min.js?ver=3.6.0" id="modernizr-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/js/plugins/waypoints.js?ver=5.0.0" id="waypoints-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/js/plugins/counterup.js?ver=1.0" id="counterup-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/js/plugins/wow.js?ver=5.0.0" id="wow-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/js/plugins/magnific-popup.js?ver=5.0.0" id="magnific-popup-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/js/plugins/perfect-scrollbar.min.js?ver=5.0.0" id="perfect-scrollbar-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/woocommerce/assets/js/select2/select2.full.min.js?ver=4.0.3-wc.8.5.2" id="select2-js" defer data-wp-strategy="defer"></script>
+<script id="jobbox-autocomplete-js-extra">
+var JOBBOX = {"ajaxurl":"https:\/\/jthemes.com\/themes\/wp\/jobbox\/wp-admin\/admin-ajax.php","keywords":["Figma Designer","Senior System Engineer","Full Stack Engineer","UI \/ UX Designer fulltime"]};
+</script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/js/autocomplete.js?ver=1.2.8" id="jobbox-autocomplete-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/js/plugins/isotope.js?ver=5.0.0" id="isotope-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/js/plugins/scrollup.js?ver=5.0.0" id="scrollup-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/js/plugins/swiper-bundle.min.js?ver=5.0.0" id="swiper-bundle-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b" id="jquery-masonry-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/themes/jobbox/assets/js/main.js?ver=5.0.0" id="jobbox-main-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/control-email-subscriber/jquery.ajaxchimp.min.js?ver=1.3.0" id="jquery-ajaxchimp-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/control-email-subscriber/jquery.ajaxchimp.langs.min.js?ver=1.3.0" id="jquery-ajaxchimp-langs-js"></script>
+<script id="control-email-subscriber-js-extra">
+var controlEmailSubscriber = {"ajaxurl":"https:\/\/jthemes.com\/themes\/wp\/jobbox\/wp-admin\/admin-ajax.php","ajaxchimpurl":"https:\/\/themeperch.us9.list-manage.com\/subscribe\/post?u=d33802e92fdc29def2e7af643&id=0085e5e2b5"};
+</script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/control-email-subscriber/scripts.js?ver=1.0.0" id="control-email-subscriber-js"></script>
+<script id="zxcvbn-async-js-extra">
+var _zxcvbnSettings = {"src":"https:\/\/jthemes.com\/themes\/wp\/jobbox\/wp-includes\/js\/zxcvbn.min.js"};
+</script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-includes/js/zxcvbn-async.min.js?ver=1.0" id="zxcvbn-async-js"></script>
+<script id="password-strength-meter-js-extra">
+var pwsL10n = {"unknown":"Password strength unknown","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
+</script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-admin/js/password-strength-meter.min.js?ver=6.4.3" id="password-strength-meter-js"></script>
+<script id="mbup-js-extra">
+var MBUP_Data_b48f929e758cdc62260a3e01b77335dd = {"ajaxUrl":"https:\/\/jthemes.com\/themes\/wp\/jobbox\/wp-admin\/admin-ajax.php","very-weak":"Very weak","weak":"Weak","medium":"Medium","strong":"Strong","mismatch":"Mismatch","strength":"weak"};
+var MBUP_Data_1883f334f3d9aefeb181cd6bfacacb62 = {"ajaxUrl":"https:\/\/jthemes.com\/themes\/wp\/jobbox\/wp-admin\/admin-ajax.php","very-weak":"Very weak","weak":"Weak","medium":"Medium","strong":"Strong","mismatch":"Mismatch","strength":"strong"};
+</script>
+<script src="https://jthemes.com/themes/wp/jobbox/home/customer/www/jthemes.com/public_html/themes/wp/jobbox/wp-content/plugins/control-user-profileassets/user-profile.js?ver=2.1.1" id="mbup-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/control-block-patterns/assets/js/script.js?ver=1.3.5.4" id="ctrlbp-js"></script>
+<script id="ctrlbp-validation-js-extra">
+var ctrlbpValidation = {"message":"Please correct the errors highlighted below and try again."};
+</script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/control-block-patterns/assets/js/validation.min.js?ver=1.3.5.4" id="ctrlbp-validation-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/control-block-patterns/assets/js/tabs.js?ver=1.1.7" id="ctrlbp-tabs-js"></script>
+<script src="https://jthemes.com/themes/wp/jobbox/wp-content/plugins/control-block-patterns/assets/js/input-list.js?ver=1.3.5.4" id="ctrlbp-input-list-js"></script>
+
+</body>
+</html>

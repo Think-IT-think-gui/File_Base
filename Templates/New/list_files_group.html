@@ -1,0 +1,371 @@
+{% load static %}
+
+
+{% include "New/Extra/header.html" %}
+      <!-- Content wrapper -->
+      <div class="content-wrapper" style="padding-top: 50px;">
+
+        <div class="container-xxl flex-grow-1 container-p-y">
+
+      <div class="card shadow-none position-relative overflow-hidden mb-4">
+            <div class="card-body d-flex align-items-center justify-content-between p-4">
+
+              <nav >
+                <form class="row" action="{% url 'list_uploaded_files_group_filter' %}" method="post">
+                    {% csrf_token %}
+
+                    <div class="form-floating form-floating-outline mb-4 col-4">
+                    <select type="date" name='CRO' class="form-control" placeholder="" aria-label=""  required >
+                        {% for i in CRO %}
+                        <option value="{{i.id}}">{{i.Full_Name}}</option>
+
+                        {% endfor %}
+                    </select>
+                    <label for="add-user-email">Account</label>
+                    </div>
+
+
+                    <div class="form-floating form-floating-outline mb-4 col-3">
+                    <input type="date" name='Start' class="form-control" placeholder="" aria-label=""  required />
+                    <label for="add-user-email">Start Date</label>
+                    </div>
+                  <div class="form-floating form-floating-outline mb-4 col-3">
+                    <input type="date" name='End' class="form-control" placeholder="" aria-label=""  required />
+                    <label for="add-user-email">End Date</label>
+                  </div>
+                  <div class="col-2">
+                      <button type="submit"  class="btn btn-primary me-sm-3 me-1 data-submit">Filter</button>
+                  </div>
+                </form>
+              </nav>
+            </div>
+          </div>
+
+       <div class="row g-4 mb-4">
+            <div class="col-sm-6 col-xl-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="me-1">
+                      <p class="text-heading mb-2">Today's Briefing History</p>
+                      <div class="d-flex align-items-center">
+                        <h4 class="mb-2 me-1 display-6">{{Day}}</h4>
+
+                      </div>
+                      <p class="mb-0">Today's Briefed Clients</p>
+                      <h4 class="mb-2 me-1 display-6">{{ADay}}</h4>
+                    </div>
+                    <div class="avatar">
+                      <div class="avatar-initial bg-label-primary rounded">
+                        <div class="mdi mdi-account-outline mdi-24px"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="me-1">
+                      <p class="text-heading mb-2">Last week's Briefing History</p>
+                      <div class="d-flex align-items-center">
+                        <h4 class="mb-2 me-1 display-6"> {{Week}}</h4>
+
+                      </div>
+                      <p class="mb-0">Last week's Briefed Clients</p>
+                      <h4 class="mb-2 me-1 display-6"> {{AWeek}}</h4>
+                    </div>
+                    <div class="avatar">
+                      <div class="avatar-initial bg-label-danger rounded">
+                        <div class="mdi mdi-account-plus-outline mdi-24px scaleX-n1"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="me-1">
+                      <p class="text-heading mb-2">Last Month Briefing History</p>
+                      <div class="d-flex align-items-center">
+                        <h4 class="mb-2 me-1 display-6">{{Month}}</h4>
+
+                      </div>
+                      <p class="mb-0">Last Month Briefed Clients</p>
+                      <h4 class="mb-2 me-1 display-6">{{AMonth}}</h4>
+                    </div>
+                    <div class="avatar">
+                      <div class="avatar-initial bg-label-success rounded">
+                        <div class="mdi mdi-account-check-outline mdi-24px"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="me-1">
+                      <p class="text-heading mb-2">Total Briefing History</p>
+                      <div class="d-flex align-items-center">
+                        <h4 class="mb-2 me-1 display-6"> {{Total}}</h4>
+
+                      </div>
+                      <p class="mb-0">Total Briefed Clients</p>
+                       <h4 class="mb-2 me-1 display-6"> {{ATotal}}</h4>
+                    </div>
+                    <div class="avatar">
+                      <div class="avatar-initial bg-label-warning rounded">
+                        <div class="mdi mdi-account-search mdi-24px"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <h4 class="mb-1">Group Files Uploaded </h4>
+          <p class="mb-4">Here are all files upload in your company, click manage to view all files.</p>
+          <!-- Role cards -->
+          <div class="row g-4">
+
+
+
+
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <div class="card h-100">
+                <div class="row h-90">
+                  <div class="col-5">
+
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body text-sm-end text-center ps-sm-0">
+                      <a href="{% url 'manage_files_group' %}" data-bs-target="#addRoleModal"  class="btn btn-primary mb-3 text-nowrap ">Create</a>
+                      <p class="mb-0">Add files, if it does not exist</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            {% for i in Schedule %}
+            <div class="col-xl-4 col-lg-6 col-md-6" id="{{i.id}}">
+              <div class="card">
+                <div class="card-body">
+                    <h5 style="position:absolute">{{i.Count}} Clients</h5>
+                    <div style="text-align:right">
+                     <img src="{% get_media_prefix %}Admin/{{i.User}}.jpg?{{Rand}}" style="height:50px;width: 50px;object-fit:cover;border-radius: 100px;" class="card-img-top" alt="spike-img">
+                     </div>
+                  <div class="d-flex justify-content-between mb-2">
+                    <p>🔁Time : {{i.time}}    🗓️Dated : {{i.date}}</p>
+                    <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+
+
+
+                    </ul>
+                  </div>
+                  <div class=" justify-content-between align-items-end">
+                    <div class="role-heading">
+
+                      <h6 class="mb-1 text-body">
+                          <p>{{i.Name}}</p>
+
+
+                          </h6>
+
+                      Files Uploaded : {{i.Count}}<br>
+                    </div>
+                    <br>
+                   <div class="row">
+                     <div class="col-4">
+                    <a href="{% url 'view_uploaded_files_group' i.id %}"   class="btn btn-primary waves-effect waves-light">
+                      <i class="mdi mdi-content-copy mdi-20px"></i>  View
+                    </a>
+                    </div>
+                    <div class="col-4">
+                    <a href='{% url 'manage_files_group_edit' i.id %}' class="btn btn-success waves-effect waves-light">
+                      <i class="mdi mdi-content-copy mdi-20px"></i> Edit
+                    </a>
+                    </div>
+                    <div class="col-4">
+                    <a  onclick="setup('{{i.id}}')" data-bs-toggle="modal"  data-bs-target="#deleteModal"   class="btn btn-danger waves-effect waves-light">
+                      <i class="mdi mdi-content-copy mdi-20px"></i> Delete
+                    </a>
+                    </div>
+
+                    </div>
+
+
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+
+
+
+
+
+
+
+          </div>
+          <!--/ Role cards -->
+<div class="row">
+
+
+
+              <nav aria-label="Page navigation example p-0" style="text-align: center;padding-bottom: 100px;">
+                <span class="step-links">
+                  {% if page_obj.has_previous %}
+                    <a class="btn btn-outline-secondary" href="?page=1">&laquo; first</a>
+                    <a class="btn btn-outline-secondary" href="?page={{ page_obj.previous_page_number }}">previous</a>
+                  {% endif %}
+
+                  <span class="current">
+                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                  </span>
+
+                  {% for num in page_obj.paginator.page_range %}
+                    {% if num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                      {% if page_obj.number == num %}
+                        <span class="btn btn-secondary">{{ num }}</span>
+                      {% else %}
+                        <a class="btn btn-outline-secondary" href="?page={{ num }}">{{ num }}</a>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% if page_obj.has_next %}
+                    <a class="btn btn-outline-secondary" href="?page={{ page_obj.next_page_number }}">next</a>
+                    <a class="btn btn-outline-secondary" href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                  {% endif %}
+                </span>
+              </nav>
+
+
+            </div>
+          <!-- Add Role Modal -->
+          <!-- Add Role Modal -->
+          <div class="modal fade contentmodal" id="deleteModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content doctor-profile">
+                    <div class="modal-header pb-0 border-bottom-0  justify-content-end">
+                        <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><i class="feather-x-circle"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="delete-wrap text-center">
+                            <div class="del-icon"><i class="feather-x-circle"></i></div>
+                            <h4>Type "DELETE" in below to delete this.</h4>
+                            <div class="submit-section">
+                                <input id="pass2" class="form-control" type="text" id="test" style="text-align: center;">
+
+                            </div>
+                            <div style="padding-top: 20px;" class="submit-section">
+                                <button onclick="Delete()"  class="btn btn-danger me-2" id="si_button">Delete This</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <input type="hidden" value="" id='hold_id'>
+      </div>
+          <!-- / Content -->
+
+
+          <script>
+
+                function update(id){
+                var state = document.getElementById("I_"+id)
+                data = JSON.stringify({
+                Name:state.value,
+                id:id
+                })
+                fetch("{% url 'list_uploaded_files_group'%}", {
+                method: 'POST',
+                body: data,
+                headers: { 'X-CSRFToken': '{{ csrf_token }}','Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json',
+                    },
+                })
+                .then(response => response.json())
+                .then(data => {
+                if (data === 'Ok'){
+
+
+                    alert("Files has been updated successfully!")
+
+                }else{
+                    alert("Please an error occured when updating data!")
+
+                }
+                });
+
+              }
+
+
+
+
+          function setup(id){
+            document.getElementById('hold_id').value=id
+          }
+          function Delete(){
+            var state = document.getElementById("hold_id")
+          data = JSON.stringify({
+          id:state.value,
+          })
+          fetch("{% url 'list_uploaded_files_group'%}", {
+          method: 'DELETE',
+          body: data,
+          headers: { 'X-CSRFToken': '{{ csrf_token }}','Accept': 'application/json, text/plain, */*',
+              'Content-Type': 'application/json',
+              },
+          })
+          .then(response => response.json())
+          .then(data => {
+          if (data === 'Ok'){
+              document.getElementById(state.value).remove()
+              state.value=""
+              document.getElementById("pass2").value=""
+              alert("Files has been deleted successfully!")
+          Close()
+          }else{
+              alert("Please an error occured when deleting schedulr!")
+
+          }
+          });}
+
+
+
+          setInterval(load_all,1000);
+          function load_all(){
+
+
+              var pass2 = document.getElementById("pass2").value
+          if (pass2==="DELETE"){
+
+           document.getElementById("si_button").disabled = false;
+          }else{
+           document.getElementById("si_button").disabled = true;
+          }
+          }
+
+
+          </script>
+
+
+{% include "New/Extra/footer.html" %}

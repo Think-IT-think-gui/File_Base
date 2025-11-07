@@ -1,0 +1,440 @@
+
+<script>
+  document.getElementById('cl').setAttribute('data-bs-theme',"dark")
+ </script>
+
+ <style>
+     .container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto new lines */
+  gap: 20px; /* sets both row and column gaps */
+}
+
+.item {
+  background-color: lightgreen;
+  padding: 10px;
+  flex: 1 1 calc(33.33% - 20px); /* Makes items take up 1/3 of the container width */
+}
+
+ </style>
+{% load static %}
+{% include "New/Extra/header.html" %}
+
+          <!--  Header End -->
+          <div class="row">
+            <div class="col-lg-12 col-xl-12">
+              <div class="card">
+                <div class="card-body position-relative">
+                  <div>
+                    <h4 class="card-title mb-1">Welcome {{Data.Full_Name}}</h4>
+                    <p class="card-subtitle mb-3 pb-1">Vist Site Home Page </p>
+                      <div class="col-8 row container">
+
+                     <a href="{% url 'home' %}" target="_blank" class="btn btn-primary rounded-pill col-4" style="padding-top:5px,padding-left:5px" type="button">
+                      Home Page
+                    </a>
+
+                    <a href="{% url 'enquiry' %}" target="_blank" class="btn btn-primary rounded-pill col-4" type="button" style="padding-top:5px,padding-left:5px">
+                      Form 'General Jobs'
+                    </a>
+                    <a href="{% url 'quick_visa_share_with' 'S.E.P' %}" target="_blank" class="btn btn-primary rounded-pill col-4" type="button" style="padding-top:5px,padding-left:5px">
+                      Form 'S.E.P'
+                    </a>
+
+                    <a href="{% url 'quick_visa_share_with' 'Study Program' %}" target="_blank" class="btn btn-primary rounded-pill col-4" type="button" style="padding-top:5px,padding-left:5px">
+                       Form 'Study Program'
+                    </a>
+
+                    <a href="{% url 'quick_visa_share_with' 'Business Travel' %}" target="_blank" class="btn btn-primary rounded-pill col-4" type="button" style="padding-top:5px,padding-left:5px">
+                       Form 'Business Travel'
+                    </a>
+
+
+
+                    <a href="{% url 'quick_visa_share_with' 'Tourist' %}" target="_blank" class="btn btn-primary rounded-pill col-4" type="button" style="padding-top:5px,padding-left:5px">
+                       Form 'Tourist'
+                    </a>
+                 </div>
+                  </div>
+                  <div class="school-img d-none d-sm-block">
+                    <img src="{% get_static_prefix %}New/assets/images/backgrounds/school.png" class="img-fluid" alt="spike-img">
+                  </div>
+
+                  <div class="d-sm-none d-block text-center">
+                    <img src="{% get_static_prefix %}New/assets/images/backgrounds/school.png" class="img-fluid" alt="spike-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 col-xl-12">
+              <div class="row">
+                <div class="col-sm-2">
+                  <div class="card warning-card overflow-hidden text-bg-primary">
+                    <div class="card-body p-4">
+                      <div class="mb-7">
+                        <i class="ti-user fs-8 fw-lighter"></i>
+                      </div>
+
+                      <h5 class="text-white fw-bold fs-14 text-nowrap">
+                        {{Total}} <span class="fs-2 fw-light"></span>
+                      </h5>
+                      <p class="opacity-50 mb-0 ">All Applicants</p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="col-sm-2">
+                  <div class="card info-card overflow-hidden text-bg-primary">
+                    <div class="card-body p-4">
+                      <div class="mb-7">
+                        <i class="ti-tag fs-8 fw-lighter"></i>
+                      </div>
+                      <h5 class="text-white fw-bold fs-14 text-nowrap">
+                        {{New}} <span class="fs-2 fw-light"></span>
+                      </h5>
+                      <p class="opacity-50 mb-0">New Applicants</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-2">
+                  <div class="card info-card overflow-hidden text-bg-primary">
+                    <div class="card-body p-4">
+                      <div class="mb-7">
+                        <i class="ti-flag fs-8 fw-lighter"></i>
+                      </div>
+                      <h5 class="text-white fw-bold fs-14 text-nowrap">
+                        {{Pending}} <span class="fs-2 fw-light"></span>
+                      </h5>
+                      <p class="opacity-50 mb-0">Pending Applicants</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="card info-card overflow-hidden text-bg-primary">
+                    <div class="card-body p-4">
+                      <div class="mb-7">
+                        <i class="ti-thumb-down fs-8 fw-lighter"></i>
+                      </div>
+                      <h5 class="text-white fw-bold fs-14 text-nowrap">
+                        {{Decliend}} <span class="fs-2 fw-light"></span>
+                      </h5>
+                      <p class="opacity-50 mb-0">Decliend Applicants</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="card info-card overflow-hidden text-bg-primary">
+                    <div class="card-body p-4">
+                      <div class="mb-7">
+                        <i class="ti-check-box fs-8 fw-lighter"></i>
+                      </div>
+                      <h5 class="text-white fw-bold fs-14 text-nowrap">
+                        {{Active}} <span class="fs-2 fw-light"></span>
+                      </h5>
+                      <p class="opacity-50 mb-0">Active Applicants</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="card danger-card overflow-hidden text-bg-primary">
+                    <div class="card-body p-4">
+                      <div class="mb-7">
+                        <i class="ti-thumb-up fs-8 fw-lighter"></i>
+                      </div>
+                      <h5 class="text-white fw-bold fs-14">
+                        {{Ready}} <span class="fs-2 fw-light"></span>
+                      </h5>
+                      <p class="opacity-50 mb-0">Ready Applicants</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-8 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body border-bottom position-relative">
+                  <h4 class="card-title mb-1">Congratulations {{Data.Full_Name}}</h4>
+                  <p class="card-subtitle mb-0">You have done 38% more sales</p>
+                  <div class="mt-6">
+                    <ul class="list-unstyled mb-0">
+                      <li class="d-flex align-items-center mb-9">
+                        <div class="bg-success-subtle p-6 me-3 rounded-circle d-flex align-items-center justify-content-center">
+                          <iconify-icon icon="solar:cart-5-line-duotone" class="fs-7 text-success"></iconify-icon>
+                        </div>
+                        <div>
+                          <h6 class="mb-1 fs-4">Packages Created</h6>
+                          <p class="mb-0">{{Package}}</p>
+                        </div>
+                      </li>
+                      <li class="d-flex align-items-center mb-9">
+                        <div class="bg-warning-subtle p-6 me-3 rounded-circle d-flex align-items-center justify-content-center">
+                          <iconify-icon icon="solar:pause-line-duotone" class="fs-6 text-warning"></iconify-icon>
+                        </div>
+                        <div>
+                          <h6 class="mb-1 fs-4">Bills Created</h6>
+                          <p class="mb-0">{{Bill}}</p>
+                        </div>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <div class="bg-indigo-subtle p-6 me-3 rounded-circle d-flex align-items-center justify-content-center">
+                          <iconify-icon icon="solar:bicycling-round-bold-duotone" class="fs-7 text-indigo"></iconify-icon>
+                        </div>
+                        <div>
+                          <h6 class="mb-1 fs-4">Payment Initated</h6>
+                          <p class="mb-0">{{Ini}}</p>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="man-working-on-laptop">
+                      <img src="{% get_static_prefix %}New/assets/images/backgrounds/man-working-on-laptop.png" alt="spike-img" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body pb-2">
+
+                  <div id="netsells" class="mx-n6"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-flex align-items-stretch">
+              <div class="d-block w-100">
+                <div class="card w-100">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <h4 class="card-title mb-1">Total Income</h4>
+                        <p class="card-subtitle"></p>
+                      </div>
+                      <div>
+                        <h4 class="card-title mb-1 text-end">₵ {{Profit}}</h4>
+
+                      </div>
+                    </div>
+                    <div id="products" class="my-8"></div>
+                    <p class="mb-0 text-center">₵ {{Profit}} Is the pulled in cash since commence</p>
+                  </div>
+                </div>
+                <div class="card w-100">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <h4 class="card-title mb-1">Applicants On Hold</h4>
+
+                      </div>
+                      <div>
+                        <h4 class="card-title mb-1 text-end">{{All_T}}</h4>
+                        <span class="badge rounded-pill bg-success-subtle text-success border-success border text-end">{{Per}}%</span>
+                      </div>
+                    </div>
+                    <div id="customers" class="my-5"></div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <p class="mb-0">Pending Applicants</p>
+                      <p class="mb-0">{{Pending}}</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="mb-0">Declined Applicants</p>
+                      <p class="mb-0">{{Decliend}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+{% if Data.Type == "5" %}
+
+            <div class="col-lg-12 d-flex align-items-stretch">
+              <div class="card w-100">
+
+                <div class="card-body">
+                  <div class="mb-9 mb-md-0">
+                    <h4 class="card-title">Latest Payment</h4>
+                    <p class="card-subtitle mb-0">Review Of recent payments</p>
+                  </div>
+                  <div class="table-responsive overflow-x-auto products-tabel">
+                    <table class="table text-nowrap customize-table mb-0 align-middle">
+                      <thead class="text-dark fs-4">
+                        <tr>
+                          <th>Client Info</th>
+                          <th>Payment</th>
+                          <th>Status</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for i in Pay %}
+                        <tr>
+                          <td class="ps-0">
+                            <div class="d-flex align-items-center product text-truncate">
+                              <img src="{% get_media_prefix %}Profiles/{{i.id}}.jpg?{{Rand}}" onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';" style="border-radius:10px;height:70px;width:70px;object-fit:cover" class="img-fluid flex-shrink-0" width="60" height="60">
+                              <div class="ms-3 product-title">
+                                <h6 class="fs-4 mb-0 text-truncate-2">{{i.Name}}</h6>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <h5 class="mb-0 fs-4">₵ {{i.Amount}} <span class="text-muted"></span>
+                            </h5>
+                            <p class="text-muted mb-2">{{i.date}} - {{i.time}}</p>
+                            <div class="progress bg-light-subtle w-100 h-4">
+                              <div class="progress-bar text-bg-danger" role="progressbar" aria-label="Example 4px high"  style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td>
+                            {% if i.Status == "Recieved" %}
+                            <span class="badge rounded-pill bg-success-subtle text-success border-success border">Recieved</span>
+
+                            {% else %}
+
+                            <span class="badge rounded-pill bg-danger-subtle text-danger border-danger border">Pending</span>
+
+                            {% endif %}
+                          </td>
+
+
+
+                        {% endfor %}
+
+
+                  </tr>
+                  </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% endif %}
+          <div class="col-12">
+            <div class="card mb-0">
+              <div class="card-body">
+                <div class="d-md-flex justify-content-between mb-9">
+                  <div class="mb-9 mb-md-0">
+                    <h4 class="card-title">Latest Applicants</h4>
+                    <p class="card-subtitle mb-0">Review new applicants across all channels</p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <form class="position-relative me-3 w-100">
+                      <input type="text" class="form-control search-chat py-2 ps-5" id="text-srh" placeholder="Search">
+                      <i class="ti-search position-absolute top-50 start-0 translate-middle-y fs-6 text-dark ms-3"></i>
+                    </form>
+                    <div class="dropdown">
+                      <a class="btn border-dark-subtle shadow-none px-3" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ti-search fs-5"></i>
+                      </a>
+
+
+                    </div>
+                  </div>
+                </div>
+                <div class="table-responsive overflow-x-auto latest-reviews-table">
+                  <table class="table align-middle text-nowrap">
+                    <thead class="text-dark fs-4">
+                      <tr>
+                        <th class="ps-0">
+                          #
+                        </th>
+                        <th>Client Profile</th>
+                        <th>Email Id</th>
+                        <th>Contact</th>
+                        <th>Location</th>
+                        <th>Time Added</th>
+                        <th>Date Added</th>
+
+
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+
+
+
+                    {% for i in Users %}
+                      <tr>
+                        <td class="ps-0">
+                          <div class="form-check mb-0 flex-shrink-0">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center product text-truncate">
+                            <img src="{% get_media_prefix %}Profiles/{{i.id}}.jpg?{{Rand}}" onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';" style="border-radius:10px;height:70px;width:70px;object-fit:cover" class="img-fluid flex-shrink-0" width="60" height="60">
+                            <div class="ms-3 product-title">
+                              <h6 class="fs-4 mb-0 text-truncate-2">{{i.Full_Name}}</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center text-truncate">
+                            <div class="ms-3">
+
+                              <p class="card-subtitle">{{i.Contact}}</p>
+                            </div>
+                          </div>
+                        </td>
+
+                        <td>
+                          <span class="badge rounded-pill bg-success-subtle text-success border-success border">{{i.Contact}}</span>
+                        </td>
+
+                        <td>
+                          <div class="d-flex align-items-center text-truncate">
+                            <div class="ms-3">
+
+                              <p class="card-subtitle">{{i.City}}</p>
+                            </div>
+                          </div>
+                        </td>
+
+
+                         <td>
+                          <p class="mb-0">{{i.time}}</p>
+                        </td>
+                        <td>
+                          <p class="mb-0">{{i.date}}</p>
+                        </td>
+                        <td>
+                          <div class="dropdown dropstart">
+                            <a href="javascript:void(0)" class="text-muted " id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="ti-more-alt fs-5"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                              <li>
+                                <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)">
+                                  <i class="fs-4 ti-marker-alt"></i>Edit
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)">
+                                  <i class="fs-4 ti-trash"></i>Delete
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+
+                        {% endfor %}
+
+
+
+
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    {% include "New/Extra/footer.html" %}

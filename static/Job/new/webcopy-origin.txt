@@ -1,0 +1,272 @@
+Uri: https://fonts.googleapis.com/css?family=Work+Sans:400,500,600
+File Name: C:\Downloaded Web Sites\www.ansonika.com\css
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBi8Jow.ttf
+File Name: C:\Downloaded Web Sites\www.ansonika.com\s\worksans\v19\QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBi8Jow.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K3vXBi8Jow.ttf
+File Name: C:\Downloaded Web Sites\www.ansonika.com\s\worksans\v19\QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K3vXBi8Jow.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K5fQBi8Jow.ttf
+File Name: C:\Downloaded Web Sites\www.ansonika.com\s\worksans\v19\QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K5fQBi8Jow.ttf
+Content Type: font/ttf
+
+Uri: https://www.ansonika.com/potenza/
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\index.htm
+Content Type: text/html
+
+Uri: https://www.ansonika.com/potenza/about.html
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\about.html
+Content Type: text/html
+
+Uri: https://www.ansonika.com/potenza/assets/validate.js
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\assets\validate.js
+Content Type: application/javascript
+
+Uri: https://www.ansonika.com/potenza/contacts.html
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\contacts.html
+Content Type: text/html
+
+Uri: https://www.ansonika.com/potenza/css/bootstrap.min.css
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://www.ansonika.com/potenza/css/custom.css
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\custom.css
+Content Type: text/css
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/ElegantIcons.eot
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\ElegantIcons.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/ElegantIcons.eot?
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\ElegantIcons-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/ElegantIcons.svg
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\ElegantIcons.svg
+Content Type: image/svg+xml
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/ElegantIcons.ttf
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\ElegantIcons.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/ElegantIcons.woff
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\ElegantIcons.woff
+Content Type: font/woff
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/fontello.eot?32974303
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\fontello.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/fontello.svg?32974303
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\fontello.svg
+Content Type: image/svg+xml
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/fontello.ttf?32974303
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\fontello.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/fontello.woff?32974303
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\fontello.woff
+Content Type: font/woff
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/Glyphter.eot
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\Glyphter.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/Glyphter.eot?
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\Glyphter-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/Glyphter.svg
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\Glyphter.svg
+Content Type: image/svg+xml
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/Glyphter.ttf
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\Glyphter.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/Glyphter.woff
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\Glyphter.woff
+Content Type: font/woff
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/Pe-icon-7-stroke.eot?
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\Pe-icon-7-stroke-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/Pe-icon-7-stroke.eot?d7yf1v
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\Pe-icon-7-stroke.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/Pe-icon-7-stroke.svg?d7yf1v
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\Pe-icon-7-stroke.svg
+Content Type: image/svg+xml
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/Pe-icon-7-stroke.ttf?d7yf1v
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\Pe-icon-7-stroke.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/Pe-icon-7-stroke.woff?d7yf1v
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\Pe-icon-7-stroke.woff
+Content Type: font/woff
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/themify.eot?
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\themify-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/themify.eot?-fvbane
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\themify.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/themify.svg?-fvbane
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\themify.svg
+Content Type: image/svg+xml
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/themify.ttf?-fvbane
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\themify.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://www.ansonika.com/potenza/css/icon_fonts/font/themify.woff?-fvbane
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\icon_fonts\font\themify.woff
+Content Type: font/woff
+
+Uri: https://www.ansonika.com/potenza/css/menu.css
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\menu.css
+Content Type: text/css
+
+Uri: https://www.ansonika.com/potenza/css/style.css
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\style.css
+Content Type: text/css
+
+Uri: https://www.ansonika.com/potenza/css/vendors.css
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\css\vendors.css
+Content Type: text/css
+
+Uri: https://www.ansonika.com/potenza/img/about.svg
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\img\about.svg
+Content Type: image/svg+xml
+
+Uri: https://www.ansonika.com/potenza/img/apple-touch-icon-114x114-precomposed.png
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\img\apple-touch-icon-114x114-precomposed.png
+Content Type: image/png
+
+Uri: https://www.ansonika.com/potenza/img/apple-touch-icon-144x144-precomposed.png
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\img\apple-touch-icon-144x144-precomposed.png
+Content Type: image/png
+
+Uri: https://www.ansonika.com/potenza/img/apple-touch-icon-57x57-precomposed.png
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\img\apple-touch-icon-57x57-precomposed.png
+Content Type: image/png
+
+Uri: https://www.ansonika.com/potenza/img/apple-touch-icon-72x72-precomposed.png
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\img\apple-touch-icon-72x72-precomposed.png
+Content Type: image/png
+
+Uri: https://www.ansonika.com/potenza/img/favicon.ico
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\img\favicon.ico
+Content Type: image/x-icon
+
+Uri: https://www.ansonika.com/potenza/img/info_graphic_1.svg
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\img\info_graphic_1.svg
+Content Type: image/svg+xml
+
+Uri: https://www.ansonika.com/potenza/img/logo.png
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\img\logo.png
+Content Type: image/png
+
+Uri: https://www.ansonika.com/potenza/img/logo_in.png
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\img\logo_in.png
+Content Type: image/png
+
+Uri: https://www.ansonika.com/potenza/img/team/team-1.jpg
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\img\team\team-1.jpg
+Content Type: image/jpeg
+
+Uri: https://www.ansonika.com/potenza/img/team/team-2.jpg
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\img\team\team-2.jpg
+Content Type: image/jpeg
+
+Uri: https://www.ansonika.com/potenza/img/team/team-3.jpg
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\img\team\team-3.jpg
+Content Type: image/jpeg
+
+Uri: https://www.ansonika.com/potenza/img/team/team-4.jpg
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\img\team\team-4.jpg
+Content Type: image/jpeg
+
+Uri: https://www.ansonika.com/potenza/img/upload_icon.svg
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\img\upload_icon.svg
+Content Type: image/svg+xml
+
+Uri: https://www.ansonika.com/potenza/index-2.html
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\index-2.html
+Content Type: text/html
+
+Uri: https://www.ansonika.com/potenza/index-3.html
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\index-3.html
+Content Type: text/html
+
+Uri: https://www.ansonika.com/potenza/index-4.html
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\index-4.html
+Content Type: text/html
+
+Uri: https://www.ansonika.com/potenza/index.html
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\index.html
+Content Type: text/html
+
+Uri: https://www.ansonika.com/potenza/js/common_functions.js
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\js\common_functions.js
+Content Type: application/javascript
+
+Uri: https://www.ansonika.com/potenza/js/common_scripts.min.js
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\js\common_scripts.min.js
+Content Type: application/javascript
+
+Uri: https://www.ansonika.com/potenza/js/file-validator.js
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\js\file-validator.js
+Content Type: application/javascript
+
+Uri: https://www.ansonika.com/potenza/js/func_1.js
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\js\func_1.js
+Content Type: application/javascript
+
+Uri: https://www.ansonika.com/potenza/js/func_2.js
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\js\func_2.js
+Content Type: application/javascript
+
+Uri: https://www.ansonika.com/potenza/js/func_3.js
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\js\func_3.js
+Content Type: application/javascript
+
+Uri: https://www.ansonika.com/potenza/js/func_4.js
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\js\func_4.js
+Content Type: application/javascript
+
+Uri: https://www.ansonika.com/potenza/js/jquery-3.7.1.min.js
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\js\jquery-3.7.1.min.js
+Content Type: application/javascript
+
+Uri: https://www.ansonika.com/potenza/js/modernizr.js
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\js\modernizr.js
+Content Type: application/javascript
+
+Uri: https://www.ansonika.com/potenza/js/owl-carousel.js
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\js\owl-carousel.js
+Content Type: application/javascript
+
+Uri: https://www.ansonika.com/potenza/js/parallax.min.js
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\js\parallax.min.js
+Content Type: application/javascript
+
+Uri: https://www.ansonika.com/potenza/js/tagify.min.js
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\js\tagify.min.js
+Content Type: application/javascript
+
+Uri: https://www.ansonika.com/potenza/js/velocity.min.js
+File Name: C:\Downloaded Web Sites\www.ansonika.com\potenza\js\velocity.min.js
+Content Type: application/javascript
+

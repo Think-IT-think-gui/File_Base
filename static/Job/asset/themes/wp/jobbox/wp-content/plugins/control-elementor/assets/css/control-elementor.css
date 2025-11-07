@@ -1,0 +1,4 @@
+.elementor-editor-active #loader,
+.elementor-editor-active #preloader{
+    display: none;
+}

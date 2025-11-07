@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}  
+
+  {% include "Home/Extra/Header.html" %}
+  <style>
+    .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    }	  
+    .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0;
+    }
+    </style>
+
+        <!-- page-title -->
+      
+        <!-- page-title end -->
+
+        <!--site-main start-->
+        <div class="site-main">
+
+            <!-- sidebar-top-section -->
+           
+            <!-- sidebar-top-section-end -->
+
+
+
+
+            <html lang="en">
+                <head>
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link rel="shortcut icon" href="{% get_media_prefix %}Logos/{{User.id}}.jpg?{{Rand}}">
+                    <!-- Page Title -->
+                    <title>Job Infomation</title>
+                    <!-- Google Fonts -->
+                
+                    <link href="{% get_static_prefix %}Job/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+                    <link href="{% get_static_prefix %}Job/css2-1?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap" rel="stylesheet">
+                    <!-- Font Awesome -->
+                    <link rel="stylesheet" href="{% get_static_prefix %}Job/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+                    <!-- Additional Plugins Styles -->
+                    <link rel="stylesheet" href="{% get_static_prefix %}Job/css/vendors.css">
+                    <!-- Bootstrap -->
+                    <link rel="stylesheet" href="{% get_static_prefix %}Job/css/bootstraps.css">
+                    <!-- Site main stylesheet-->
+                    <link rel="stylesheet" href="{% get_static_prefix %}Job/cssf/main.css">
+                </head>
+                <body>
+                    <!-- main container of all the page elements -->
+                    
+                    <!-- Bootstrap JS -->
+                    <script src="{% get_static_prefix %}Job/npm/%40popperjs/core%402.11.6/dist/umd/popper.min.js"></script>
+                    <script src="{% get_static_prefix %}Job/npm/bootstrap%405.2.3/dist/js/bootstrap.min.js"></script>
+                    <!-- jQuery Library -->
+                    <script src="{% get_static_prefix %}Job/js/jquery-3.6.4.min.js"></script>
+                    <!-- jQuery Plugins -->
+                    <script src="{% get_static_prefix %}Job/js/vendor.js"></script>
+                    <!-- jQuery Main -->
+                    <script src="{% get_static_prefix %}Job/js/jquery.main.js"></script>
+                </body>
+                </html>
+                
+
+
+
+
+            <!-- services01-first-section -->
+            <section class="prt-row services01-first-section clearfix">
+                <div class="container">
+                    <div class="row" >
+                        <div class="col-xl-2 col-xxl-12 col-sm-12"  ></div>
+              <div class="col-xl-8 col-xxl-12 col-sm-12" >
+                            <div class="card"   >
+                                <div class="card-header">
+                    <h5 class="card-title">Passport Request Form</h5>
+                  </div>
+                  
+                  <div class="card-body" id="fill" >
+                                    <form action="{% url 'applying' %}" method="post" enctype="multipart/form-data" >
+                                        <div style="padding-top: 20px;"></div>
+        
+                                                    <div style="text-align: center;" id="fat" class="result">
+                                                        <img style="border-radius: 1px;width:200px;height:200px;object-fit: cover; " src="{% get_static_prefix %}Home/s.png">
+                                                      
+                                                      </div>
+                                                      
+                                                        
+                                                        {% csrf_token %} 
+                                        <div style="text-align: center;" class="box">
+                                            <div style="padding-top: 20px;"></div>
+                                            <div class="upload-btn-wrapper">
+                                          <button  class="btn btn-light btn-block">Select image</button>
+                                         
+                                          <input required class="mdc-text-field__input"  id="file-input" style="width: 100%;" type="file" name="New_Img" accept="image/*" />
+                                          </div>
+                                          <script>
+                                
+                                            // vars
+                                            let result = document.getElementById("fat"),
+                                            upload = document.getElementById("file-input"),
+                                            
+                                            cropper = '';
+                                            
+                                            // on change show image with crop options
+                                            upload.addEventListener('change', (e) => {
+                                              if (e.target.files.length) {
+                                                
+                                                const reader = new FileReader();
+                                                reader.onload = (e)=> {
+                                                  if(e.target.result){
+                                                  console.log(e);
+                                                    
+                                                    let img = document.createElement('img');
+                                                    img.id = 'image';
+                                                    img.src = e.target.result;
+                                                    console.log(e.target.result);
+                                                    img.style = "border-radius: 1px;width:200px;height:200px;object-fit: cover;"
+                                                    
+                                                    result.innerHTML = '';
+                                                  
+                                                    result.appendChild(img);
+                                                    // show save btn and options
+                                                    save.classList.remove('hide');
+                                                    options.classList.remove('hide');
+                                                    // init cropper
+                                                    cropper = new Cropper(img);
+                                                  }
+                                                };
+                                                reader.readAsDataURL(e.target.files[0]);
+                                              }
+                                            });
+                                            </script>
+                                        </div>
+                      <div class="row col-lg-12 col-md-12 col-sm-12"  >
+                        <h5 class="form-label" style="padding-top: 20px;opacity: 0.4;">Applicant Personal Info</h5>
+
+                        <div class="col-lg-4 col-md-12 col-sm-12"  style="padding-top: 20px;">
+                            <div class="form-group">
+                              <label class="form-label">First Name</label>
+                              <input  name="First_name"  required class="form-control">
+                            </div>
+                          </div>
+                        <input name="Code" value="{{Code}}" type="hidden">
+                          <div class="col-lg-4 col-md-12 col-sm-12"  style="padding-top: 20px;">
+                            <div class="form-group">
+                              <label class="form-label">Last Name</label>
+                              <input  name="Last_name"  required class="form-control">
+                            </div>
+                          </div>
+
+                          <div class="col-lg-4 col-md-12 col-sm-12"  style="padding-top: 20px;">
+                            <div class="form-group">
+                              <label class="form-label">Other Name</label>
+                              <input  name="Other_name"  required class="form-control">
+                            </div>
+                          </div>
+                        
+                        <div  class="col-lg-3 col-md-12 col-sm-12" style="padding-top: 20px;">
+                            <div class="form-group">
+                              <label class="form-label">Applicant's Gender</label>
+                              <select type="text" name="Gender" required  class="form-control">
+                                <option>Male </option>
+                                <option>Female</option>
+                              </select>
+                            </div>
+                          </div>
+                         
+                          <div class="col-lg-3 col-md-12 col-sm-12" style="padding-top: 20px;">
+                            <div class="form-group">
+                              <label class="form-label">Date Of Birth</label>
+                              <input type="date" name="Date_of_birth"  required class="form-control">
+                            </div>
+                          </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12" style="padding-top: 20px;">
+                          <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email"  name="Email"  required class="form-control">
+                          </div>
+                        </div>
+
+                        <div  class="col-lg-3 col-md-12 col-sm-12" style="padding-top: 20px;">
+                            <div class="form-group">
+                              <label class="form-label">Mobile Number</label>
+                              <input  name="Contact" required  class="form-control">
+                            </div>
+                          </div>
+                         
+
+                        <div class="col-lg-3 col-md-12 col-sm-12"  style="padding-top: 20px;">
+                          <div class="form-group">
+                            <label class="form-label">City / Town Of Birth</label>
+                            <input  name="City_of_birth"  required class="form-control">
+                          </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-12 col-sm-12"  style="padding-top: 20px;">
+                            <div class="form-group">
+                              <label class="form-label">Country Of Birth</label>
+                              <input  name="Country_of_birth"  required class="form-control">
+                            </div>
+                          </div>
+                          
+                        
+                        <div class="row">
+                            <!-- Years of Experience -->
+                            
+                        
+                            <!-- Height -->
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Height</label>
+                                    <input name="Height" value="" required class="form-control">
+                                </div>
+                            </div>
+                        
+                            <!-- Colour of Eyes -->
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Colour of Eyes</label>
+                                    <input name="Colour_of_eyes" value="Brown" required class="form-control">
+                                </div>
+                            </div>
+                        
+                            <!-- Colour of Hair -->
+                            <div class="col-lg-2 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Colour of Hair</label>
+                                    <input name="Colour_of_hair" value="Black" required class="form-control">
+                                </div>
+                            </div>
+                        
+                            <!-- Nationality -->
+                            <div class="col-lg-6 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Nationality</label>
+                                    <input name="Nationality" value="" required class="form-control">
+                                </div>
+                            </div>
+                        
+                            <!-- Marital Status -->
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Marital Status</label>
+                                    <input name="Marital_status" value="" required class="form-control">
+                                </div>
+                            </div>
+                        
+                            <!-- Profession -->
+                            <div class="col-lg-6 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Profession</label>
+                                    <input name="Profession" value="" required class="form-control">
+                                </div>
+                            </div>
+                        
+                            <!-- Previous Profession -->
+                            <div class="col-lg-6 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Previous Profession</label>
+                                    <input name="Previous_profession" value="" required class="form-control">
+                                </div>
+                            </div>
+                        
+                          
+                            <!-- National ID -->
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">National ID</label>
+                                    <input name="National_id" value="" required class="form-control">
+                                </div>
+                            </div>
+                        
+                            <!-- Social Security -->
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Social Security</label>
+                                    <input name="Social_security" value="" required class="form-control">
+                                </div>
+                            </div>
+                        
+                      
+                            
+                        
+                            <!-- House Number -->
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">House Number</label>
+                                    <input name="House_number" value="" required class="form-control">
+                                </div>
+                            </div>
+                        
+                            <!-- Street Name -->
+                            <div class="col-lg-6 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Street Name</label>
+                                    <input name="Street_name" value="" required class="form-control">
+                                </div>
+                            </div>
+                        
+                            <!-- Postal Address -->
+                            <div class="col-lg-3 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Postal Address</label>
+                                    <input name="Postal_address" value="" required class="form-control">
+                                </div>
+                            </div>
+                        
+                          
+                            <!-- City of Residence -->
+                            <div class="col-lg-3 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">City of Residence</label>
+                                    <input name="City_of_residence" value="" required class="form-control">
+                                </div>
+                            </div>
+                        
+                            <!-- Country of Residence -->
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Country of Residence</label>
+                                    <input name="Country_of_residence" value="" required class="form-control">
+                                </div>
+                            </div>
+                        
+                            <!-- ZIP/Postal Code -->
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">ZIP/Postal Code</label>
+                                    <input name="Zip_code" value="" required class="form-control">
+                                </div>
+                            </div>
+                            <h5 class="form-label" style="padding-top: 20px;opacity: 0.4;">Education Infomation</h5>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="form-group">
+                                  
+                                  <button type="button" onclick="add_edu()" class="btn btn-success">Add New Education Info</button>
+                                   
+                                </div>
+                              </div>
+                            
+                               
+                              <div class="col-lg-12 col-md-6 col-sm-12" style="padding-top: 30px;">
+                                <div class="form-group">
+                                  <label class="form-label">Applicant Education Enteries</label>
+                                </div>
+                              </div>
+                              <div class="row col-12" id="edu">
+              
+                                </div>
+               
+                            <h5 class="form-label" style="padding-top: 20px;opacity: 0.4;">Father's Infomation</h5>
+                        
+                            <!-- Father's Information -->
+                            <div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Father's Full Name</label>
+                                    <input name="Father_full_name" value="" required class="form-control">
+                                </div>
+                            </div>
+                              
+                            <div class="col-lg-4 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Father's Living</label>
+                                    <select name="Father_living" value="" required class="form-control">
+                                        <option>Living</option>
+                                        <option>Not Living</option>
+
+
+                                    </select>
+                                </div>
+                            </div>
+                            
+
+                            <div class="col-lg-4 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Father's Contact</label>
+                                    <input name="Father_contact" value="" required class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Father's Email</label>
+                                    <input name="Father_email" type="email" value="" required class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Father's Home Town</label>
+                                    <input name="Father_home_town" value="" required class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Father's Residencial Address</label>
+                                    <input name="Father_residential_address" value="" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Father's Nationality</label>
+                                    <input name="Father_nationality" value="" required class="form-control">
+                                </div>
+                            </div>
+                            <!-- Repeat the above structure for Mother's and Grandparent's information -->
+                        
+
+                            <h5 class="form-label" style="padding-top: 20px;opacity: 0.4;">Mother's Infomation</h5>
+                        
+                            <!-- Father's Information -->
+                            <div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Mother's Full Name</label>
+                                    <input name="Mother_full_name" value="" required class="form-control">
+                                </div>
+                            </div>
+                              
+                            <div class="col-lg-4 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Mother's Living</label>
+                                    <select name="Mother_living" value="" required class="form-control">
+                                        <option>Living</option>
+                                        <option>Not Living</option>
+
+
+                                    </select>
+                                </div>
+                            </div>
+                           
+
+                            <div class="col-lg-4 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Mother's Contact</label>
+                                    <input name="Mother_contact" value="" required class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Mother's Email</label>
+                                    <input name="Mother_email" type="email" value="" required class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Mother's Home Town</label>
+                                    <input name="Mother_home_town" value="" required class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Mother's Residencial Address</label>
+                                    <input name="Mother_residential_address" value="" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Mother's Nationality</label>
+                                    <input name="Mother_nationality" value="" required class="form-control">
+                                </div>
+                            </div>
+
+
+                            <h5 class="form-label" style="padding-top: 20px;opacity: 0.4;">Grand Parent's Infomation</h5>
+                        
+                            <!-- Father's Information -->
+                            <div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Grand Parent's Full Name</label>
+                                    <input name="Grandparent_full_name" value="" required class="form-control">
+                                </div>
+                            </div>
+                              
+                            <div class="col-lg-4 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Grand Parent's Living</label>
+                                    <select name="Grandparent_living" value="" required class="form-control">
+                                        <option>Living</option>
+                                        <option>Not Living</option>
+
+
+                                    </select>
+                                </div>
+                            </div>
+                           
+
+                            <div class="col-lg-4 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Grand Parent's Contact</label>
+                                    <input name="Grandparent_contact" value="" required class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Grand Parent's Email</label>
+                                    <input name="Grandparent_email" value="" type="email" required class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Grand Parent's Home Town</label>
+                                    <input name="Grandparent_home_town" value="" required class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Grand Parent's Residencial Address</label>
+                                    <input name="Grandparent_residential_address" value="" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Grand Parent's Nationality</label>
+                                    <input name="Grandparent_nationality" value="" required class="form-control">
+                                </div>
+                            </div>
+
+
+                            
+
+                            <h5 class="form-label" style="padding-top: 20px;opacity: 0.4;">First Guarantor's Infomation</h5>
+                        
+                            <!-- Father's Information -->
+                            <div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">First Guarantor's Full Name</label>
+                                    <input name="First_guarantor_full_name" value="" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">First Guarantor's Occupation</label>
+                                    <input name="First_guarantor_occupation" value="" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">First Guarantor's Contact</label>
+                                    <input name="First_guarantor_contact" value="" required class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">First Guarantor's Email</label>
+                                    <input name="First_guarantor_email" type="email" value="" required class="form-control">
+                                </div>
+                            </div>
+
+                        
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">First Guarantor's Residencial Address</label>
+                                    <input name="First_guarantor_residential_address" value="" required class="form-control">
+                                </div>
+                            </div>
+                           
+
+
+
+
+                           
+
+
+
+                            
+                            <h5 class="form-label" style="padding-top: 20px;opacity: 0.4;">Second Guarantor's Infomation</h5>
+                        
+                            <!-- Father's Information -->
+                            <div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Second Guarantor's Full Name</label>
+                                    <input name="Second_guarantor_full_name" value="" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Second Guarantor's Occupation</label>
+                                    <input name="Second_guarantor_occupation" value="" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Second Guarantor's Contact</label>
+                                    <input name="Second_guarantor_contact" value="" required class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Second Guarantor's Email</label>
+                                    <input name="Second_guarantor_email" value="" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Second Guarantor's Residencial Address</label>
+                                    <input name="Second_guarantor_residential_address" value="" required class="form-control">
+                                </div>
+                            </div>
+                           
+
+
+
+                            <h5 class="form-label" style="padding-top: 20px;opacity: 0.4;">Witness's Infomation</h5>
+                        
+                            <!-- Father's Information -->
+                            <div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Witness's Full Name</label>
+                                    <input name="Witness_full_name" value="" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Witness's Occupation</label>
+                                    <input name="Witness_occupation" value="" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Witness's Contact</label>
+                                    <input name="Witness_contact" value="" required class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Witness's Email</label>
+                                    <input name="Witness_email" value="" required class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Witness's Home Town</label>
+                                    <input name="Witness_home_town" value="" required class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">Witness's Residencial Address</label>
+                                    <input name="Witness_residential_address" value="" required class="form-control">
+                                </div>
+                            </div>
+
+                            
+                           
+                           
+                            <!-- Repeat the above structure for each witness -->
+                        </div>
+                        
+                      
+                        <div style="padding-top: 30px;text-align: center;">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                          <button type="submit" class="btn btn-primary">Submit Application</button>
+                        </div>
+                        </div>
+                      </div>
+                    </form>
+                                </div>
+                           
+                        
+            </div>
+                </div>
+                   
+                  </div>
+                </div>
+                </div>
+            </section>
+            <!-- services01-first-section-end -->
+
+            <!-- services01-second-section -->
+            <section class="prt-row padding_top_zero-section services01-second-section clearfix">
+                <div class="container">
+                    <div class="row g-0 row-equal-height prt-vertical_sep style2">
+                        <div class="col-lg-4 col-md-4 col-sm-8 col-12">
+                            <div class="featured-icon-box style10 bg-base-dark res-575-pt-40">
+                                <div class="featured-icon">
+                                    <div class="prt-icon prt-icon_element-size-md">
+                                        <i class="fa fa-flag"></i>
+                                    </div>
+                                </div>  
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3>Our History</h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>We have helped students, business persons, tourists, clients with medical needs to acquire U.S. visas. Besides, we also help with other.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-8 col-12">
+                            <div class="featured-icon-box style10 bg-base-dark">
+                                <div class="featured-icon">
+                                    <div class="prt-icon prt-icon_element-size-md">
+                                        <i class="fa fa-briefcase"></i>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3>Our Mission</h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>To develop and provide individuals, especially young adults, with quality and safe travel experiences that shape thier outlook of the world and causes them to be impactful in thier communities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-8 col-12">
+                            <div class="featured-icon-box style10 bg-base-dark res-575-pb-40">
+                                <div class="featured-icon">
+                                    <div class="prt-icon prt-icon_element-size-md">
+                                        <i class="fa fa-low-vision"></i>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3>Our Vision</h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>To be the leading travel agency offering innovative and immersive cultural exchange experiences to the young adults in Ghana and across Africa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- services01-second-section-end -->
+
+            <!-- services01-third-section -->
+          
+            <!-- services01-third-section-end -->
+
+
+        </div><!--site-main end-->
+
+    <input id="c1" value="0" type="hidden">
+<input id="c2" value="0" type="hidden">
+
+<script>
+ function add_edu(){
+  var edu_hold = document.getElementById('edu')
+  var count = document.getElementById('c1')
+  var newed = parseInt(count.value)+1
+  count.value=newed
+  var info = '<div class="col-lg-4 col-md-6 col-sm-12"><div class="form-group"><label class="form-label">School / Institution Name</label><input type="text" name="School_'+newed+'" value="" required class="form-control"></div></div><div class="col-lg-3 col-md-6 col-sm-12"><div class="form-group"><label class="form-label">Location or Address</label><input type="text" name="Loc_'+newed+'" value="" required class="form-control"></div></div><div class="col-lg-2 col-md-6 col-sm-12"><div class="form-group"><label class="form-label">Commence Date</label><input type="date" name="Start_'+newed+'" value="{{Staff.Experience}}" required class="form-control"></div></div><div class="col-lg-2 col-md-6 col-sm-12"><div class="form-group"><label class="form-label">Completion Date</label><input type="date"  name="End_'+newed+'" value="{{Staff.Experience}}" required class="form-control"></div></div><div class="col-lg-1 col-md-6 col-sm-12"><label class="form-label">Delete</label><button  type="button" onclick="del_edu('+newed+')" class="btn btn-success col-12">X</button></div>'
+  var hold = document.createElement("div")
+  hold.setAttribute('class','row col-12') 
+  hold.id = "id_"+newed
+  hold.innerHTML=info
+  edu_hold.appendChild(hold)
+
+
+}
+function del_edu(id){
+
+  document.getElementById("id_"+id).remove()
+}
+</script>
+        <!-- footer start -->
+        <footer class="footer widget-footer clearfix">
+            <div class="second-footer prt-bgimage-yes bg-footer prt-bg bg-base-dark">
+                <div class="prt-row-wrapper-bg-layer prt-bg-layer"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-6 col-md-6 widget-area">
+                            <div class="widget">
+                                <div class="widgte-text">
+                                    <div class="widget-title">
+                                        <h3>Imagine A Better Future</h3>
+                                    </div>
+                                    <p>The Most Eminent Visas & Immigration Consultant service provider.</p>
+                                </div>
+                                
+                                <div class="widget_social">
+                                    <div class="social-icons social-hover">
+                                        <ul class="social-icons d-flex">
+                                            <li>
+                                                <a class="prt-social-instagram" href="https://www.instagram.com/theme_tech_mount/" aria-label="instagram"><i class="icon-instagram"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="prt-social-facebook" href="https://www.facebook.com/themetechMount18" rel="noopener" aria-label="facebook"><i class="icon-facebook"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="prt-social-twitter" href="https://twitter.com/themetechmount" rel="noopener" aria-label="twitter"><i class="icon-twitter"></i></a>
+                                            </li>
+                                            
+                                            <li>
+                                                <a class="prt-social-linkedin" href="https://www.linkedin.com/company/themetech-mount/" rel="noopener" aria-label="google"><i class="icon-linkedin"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 widget-area">
+                            <div class="widget">
+                                <div class="enhanced-text-widget en-1">
+                                    <div class="widget-title">
+                                        <h3 >100+ Best Universities Scholarship Programs From 20 Countries</h3>
+                                    </div>
+                                    <p>We also help with other family based employment ased and investment based Immigration.<strong>(Validity From: 2022-01-11 12:00)</strong></p>
+                                    <div class="prt-advertiser">
+                                        <a href="australia.html"><img src="{%get_static_prefix%}Home/images/flag-1.png" alt="image"></a>
+                                        <a href="united-kingdom.html"><img src="{%get_static_prefix%}Home/images/flag-2.png" alt="image"></a>
+                                        <a href="russia.html"><img src="{%get_static_prefix%}Home/images/flag-3.png" alt="image"></a>
+                                        <a href="france.html"><img src="{%get_static_prefix%}Home/images/flag-4.png" alt="image"></a>
+                                    </div>
+                                    <div class="">
+                                        <a class="prt-btn prt-btn-size-md prt-btn-color-white btn-inline mt-30" href="about-us-2.html"> Apply Visa Now! </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 widget-area">
+                            <div class="widget">
+                                <div class="enhanced-text-widget">
+                                    <div class="widget-title">
+                                        <h3>Get In Touch</h3>
+                                    </div>
+                                    <div class="res-767-pb-18">
+                                        <p>Kingdom Dynasty Limited, Sowutoum</p>
+                                        <p>Front Desk: <strong><a href="tel:+56416546546464">+233 24 377 7065</a></strong></p>
+                                        <p>Email: <strong><a href="mailto:kingdomdynasty19@gmail.com">kingdomdynasty19@gmail.com</a></strong></p>
+                                        <a class="prt-btn prt-btn-size-md fw-400 prt-btn-color-white btn-inline mt-25" href="about-us-2.html"> view all branches </a>
+                                    </div>                                        
+                                </div>
+                                <div class="widget-form">
+                                    <div class="widget-title">
+                                        <h3 class="widget-title">Sign up to Latest Updates</h3>
+                                    </div>
+                                    <form id="subscribe-form" class="newsletter-form" method="post" action="#" data-mailchimp="true">
+                                        <div class="mailchimp-inputbox clearfix" id="subscribe-content">
+                                            <p><input type="email" name="email" placeholder="Enter Your email address.." required=""></p>
+                                            <button class="submit" type="submit"><i class="fa fa-paper-plane"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 widget-area">
+                            <div class="visa-consultation">
+                                <div class="section-title">
+                                    <div class="featured-title">
+                                        <h3>Canada</h3>
+                                    </div>
+                                    <div class="big-heading">
+                                        <h3>immigrations</h3>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <h3>Give Wings to Your Dream</h3>
+                                    <p>Call Us On: <a href="tel:+123-456-7890"> +123-456-7890</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer-text prt-bg copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-left">
+                                <span class="cpy-text"> Copyright © 2022 <a href="{% url "home" %}" class=" font-weight-500"> Sikobs </a> Template by Preyantechnosys All rights reserved.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- footer end -->
+
+        <!-- back-to-top start -->
+        <a id="totop" href="#top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        <!-- back-to-top end -->
+
+    </div><!-- page end -->
+
+    <!-- Javascript -->
+    <script src="{%get_static_prefix%}Home/js/jquery-3.6.0.min.js"></script>
+    <script src="{%get_static_prefix%}Home/js/jquery-migrate-3.3.2.min.js"></script>
+    <script src="{%get_static_prefix%}Home/js/bootstrap.bundle.js"></script>
+    <script src="{%get_static_prefix%}Home/js/aos.js"></script> 
+    <script src="{%get_static_prefix%}Home/js/jquery-validate.js"></script> 
+    <script src="{%get_static_prefix%}Home/js/jquery.prettyPhoto.js"></script>
+    <script src="{%get_static_prefix%}Home/js/slick.min.js"></script>
+    <script src="{%get_static_prefix%}Home/js/jquery-waypoints.js"></script>    
+    <script src="{%get_static_prefix%}Home/js/numinate.min.js"></script>
+    <script src="{%get_static_prefix%}Home/js/imagesloaded.min.js"></script>
+    <script src="{%get_static_prefix%}Home/js/jquery-isotope.js"></script>
+    <script src="{%get_static_prefix%}Home/js/jquery.twentytwenty.js"></script>
+    <script src="{%get_static_prefix%}Home/js/circle-progress.min.js"></script>
+    <script src="{%get_static_prefix%}Home/js/main.js"></script>
+
+    <!-- Revolution Slider -->    
+    <script src='{%get_static_prefix%}Home/revolution/js/revolution.tools.min.js'></script>
+    <script src='{%get_static_prefix%}Home/revolution/js/rs6.min.js'></script>
+    <script src="{%get_static_prefix%}Home/revolution/js/slider.js"></script>
+    <!-- Javascript end-->
+
+</body>
+</html>

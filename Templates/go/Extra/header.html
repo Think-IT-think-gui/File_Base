@@ -1,0 +1,207 @@
+{% load static %}
+
+ <!-- loader section -->
+ <div class="container-fluid loader-wrap">
+    <div class="row h-100">
+        <div class="col-10 col-md-6 col-lg-5 col-xl-3 mx-auto text-center align-self-center">
+            <div class="loader-cube-wrap mx-auto">
+                <div class="loader-cube1 loader-cube"></div>
+                <div class="loader-cube2 loader-cube"></div>
+                <div class="loader-cube4 loader-cube"></div>
+                <div class="loader-cube3 loader-cube"></div>
+            </div>
+            <p>Let's Create Difference<br><strong>Please wait...</strong></p>
+        </div>
+    </div>
+</div>
+<!-- loader section ends -->
+
+<!-- Sidebar main menu -->
+<div class="sidebar-wrap  sidebar-overlay">
+    <!-- Add pushcontent or fullmenu instead overlay -->
+    <div class="closemenu text-opac">Close Menu</div>
+    <div class="sidebar">
+        {% if User_Data.id == 'NULL' %}
+
+                    {% else %}
+        <div class="row mt-4 mb-3">
+            <div class="col-auto">
+                <figure class="avatar avatar-60 rounded mx-auto my-1">
+
+                    <img src="{% get_media_prefix%}User_Imgs/{{User_Data.id}}.jpg?{{Rand}}" alt="">
+
+
+                </figure>
+            </div>
+            <div class="col align-self-center ps-0">
+                <h6 class="mb-0">{{User_Data.Name}}</h6>
+                 <p class="text-opac"><i class="bi bi-house"> </i> {{User_Data.City}}</p>
+            </div>
+        </div>
+         {% endif %}
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        {% if User_Data.Type == "Buyer Account" %}
+                        <a class="nav-link" href="{% url 'stats' %}">
+
+                        {% else %}
+                        <a class="nav-link" href="{% url 'dashboard' %}">
+
+                        {% endif %}
+                            <div class="avatar avatar-40 rounded icon"><i class="bi bi-house-door"></i></div>
+                            <div class="col">Dashboard</div>
+                            <div class="arrow"><i class="bi bi-arrow-right"></i></div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            <div class="avatar avatar-40 rounded icon"><i class="bi bi-shop"></i></div>
+                            <div class="col">Shop</div>
+                            <div class="arrow"><i class="bi bi-plus plus"></i> <i class="bi bi-dash minus"></i>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu">
+
+
+                            <li><a class="dropdown-item nav-link" href="{% url 'cart_view' %}">
+                                    <div class="avatar avatar-40 rounded icon"><i class="bi bi-basket3"></i></div>
+                                    <div class="col">Cart</div>
+                                    <div class="arrow"><i class="bi bi-arrow-right"></i></div>
+                                </a></li>
+
+                            <li><a class="dropdown-item nav-link" href="{% url 'my_orders' %}">
+                                    <div class="avatar avatar-40 rounded icon"><i class="bi bi-box-seam"></i></div>
+                                    <div class="col">My  Orders</div>
+                                    <div class="arrow"><i class="bi bi-arrow-right"></i></div>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'slide' %}" tabindex="-1">
+                            <div class="avatar avatar-40 rounded icon"><i class="bi bi-megaphone-fill"></i></div>
+                            <div class="col">Shop Surf</div>
+                            <div class="arrow"><i class="bi bi-arrow-right"></i></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="{% url 'payout' %}" tabindex="-1">
+                        <div class="avatar avatar-40 rounded icon"><i class="bi bi-cash-coin"></i></div>
+                        <div class="col">Request Payout</div>
+                        <div class="arrow"><i class="bi bi-arrow-right"></i></div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'music_media' %}" tabindex="-1">
+                        <div class="avatar avatar-40 rounded icon"><i class="bi bi-music-note"></i></div>
+                        <div class="col">My Music</div>
+                        <div class="arrow"><i class="bi bi-arrow-right"></i></div>
+                    </a>
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'list_media' %}" tabindex="-1">
+                            <div class="avatar avatar-40 rounded icon"><i class="bi bi-music-note-list"></i></div>
+                            <div class="col">My Media List</div>
+                            <div class="arrow"><i class="bi bi-arrow-right"></i></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'list_ticket' %}" tabindex="-1">
+                            <div class="avatar avatar-40 rounded icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-detailed-fill" viewBox="0 0 16 16">
+                                <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5Zm4 1a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5Zm0 5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5ZM4 8a1 1 0 0 0 1 1h6a1 1 0 1 0 0-2H5a1 1 0 0 0-1 1Z"/>
+                              </svg></div>
+                            <div class="col">Tickets & Invites</div>
+                            <div class="arrow"><i class="bi bi-arrow-right"></i></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'list_file' %}" tabindex="-1">
+                            <div class="avatar avatar-40 rounded icon"><i class="bi bi-folder"></i></div>
+                            <div class="col">My Files</div>
+                            <div class="arrow"><i class="bi bi-arrow-right"></i></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'messages' %}" tabindex="-1">
+                            <div class="avatar avatar-40 rounded icon"><i class="bi bi-chat-text"></i></div>
+                            <div class="col">Messages</div>
+                            <div class="arrow"><i class="bi bi-arrow-right"></i></div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'notifications' %}" tabindex="-1">
+                            <div class="avatar avatar-40 rounded icon"><i class="bi bi-bell"></i></div>
+                            <div class="col">Notifications  <span class="btn btn-sm btn-theme shadow-sm ">{{Note}}</span></div>
+                            <div class="arrow"><i class="bi bi-arrow-right"></i></div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'settings' %}" tabindex="-1">
+                            <div class="avatar avatar-40 rounded icon"><i class="bi bi-gear"></i></div>
+                            <div class="col">Settings</div>
+                            <div class="arrow"><i class="bi bi-arrow-right"></i></div>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+
+                         {% if User_Data.id == 'NULL' %}
+                         <a class="nav-link" href="{% url 'sign_in' %}" tabindex="-1">
+                            <div class="avatar avatar-40 rounded icon"><i class="bi bi-box-arrow-right"></i></div>
+                            <div class="col">LogIn</div>
+                            <div class="arrow"><i class="bi bi-arrow-right"></i></div>
+                        </a>
+
+                         {% else %}
+                        <a class="nav-link" href="{% url 'logout' %}" tabindex="-1">
+                            <div class="avatar avatar-40 rounded icon"><i class="bi bi-box-arrow-right"></i></div>
+                            <div class="col">Logout</div>
+                            <div class="arrow"><i class="bi bi-arrow-right"></i></div>
+                        </a>
+                        {% endif %}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Sidebar main menu ends -->
+
+<!-- Begin page -->
+<main class="h-100 has-header has-footer">
+
+    <!-- Header -->
+    <header class="container-fluid header">
+        <div class="row">
+            <div class="col-auto align-self-center">
+                <button type="button" class="btn btn-link menu-btn text-color-theme">
+                    <i class="bi bi-list size-24"></i>
+                </button>
+            </div>
+            <div class="col text-center">
+                <div class="logo-small">
+                    <img src="{% get_static_prefix %}go/assets/img/logo.png" alt="" class="img">
+                    <h6>MALL<br><small>Shop With Trust</small></h6>
+                </div>
+            </div>
+            <div class="col-auto align-self-center">
+
+
+                {% if User_Data.id == 'NULL' %}
+                <a href="{% url 'sign_in' %}" class="link text-color-theme">
+                    <i class="bi bi-person-circle size-22"></i>
+                </a>
+                {% else %}
+                <a href="{% url 'settings' %}" class="link text-color-theme">
+                    <img style="width: 50px;height: 50px;border-radius: 100%;" src="{% get_media_prefix%}User_Imgs/{{User_Data.id}}.jpg?{{Rand}}" class="size-22" alt="">
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </header>
+    <!-- Header ends -->

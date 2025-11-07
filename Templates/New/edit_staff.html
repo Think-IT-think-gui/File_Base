@@ -1,0 +1,1086 @@
+
+{% load static %}
+<link rel="stylesheet" href="{% get_static_prefix %}New/assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
+<style>
+  .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  }
+  .upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0;
+  }
+  </style>
+{% include "New/Extra/header.html" %}
+          <!--  Header End -->
+          <div class="card shadow-none position-relative overflow-hidden mb-4">
+            <div class="card-body d-flex align-items-center justify-content-between p-4">
+              <h4 class="card-title mb-0">Staff Profile</h4>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item">
+                    <a class="text-muted text-decoration-none" href="index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">Profile</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+
+            <!-- start Zero Configuration -->
+            <div class="card">
+              <div class="card-body">
+
+
+                <div class="row" >
+                  <div class="col-xl-2 col-xxl-12 col-sm-12"  ></div>
+        <div class="col-xl-8 col-xxl-12 col-sm-12" >
+                      <div class="card"   >
+                          <div class="card-header">
+              <h5 class="card-title">Update Staff Infomation</h5>
+            </div>
+            <div class="card-body" >
+                              <form action="" method="post" enctype="multipart/form-data" >
+                                  <div style="padding-top: 20px;"></div>
+
+                                              <div style="text-align: center;" id="fat" class="result">
+                                                  <img id="img" style="border-radius: 2px;width:200px;height:200px;object-fit: cover;" onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';" src="{% get_media_prefix %}Admin/{{Staff.id}}.jpg?{{Rand}}">
+
+                                                </div>
+
+
+                                                  {% csrf_token %}
+                                  <div style="text-align: center;" class="box">
+                                      <div style="padding-top: 20px;"></div>
+                                      <div class="upload-btn-wrapper">
+                                    <button  class="btn btn-light btn-block">Select image</button>
+
+                                    <input  class="mdc-text-field__input"   id="file-input" style="width: 100%;" type="file" name="New_Img" accept="image/*" />
+                                    </div>
+
+
+                                  </div>
+
+                                  <div class="col-lg-12 col-md-6 col-sm-12" style="padding-top: 30px;">
+                                    <div class="form-group">
+                                      <h4 class="">Staff Profile And Bio</h4>
+
+                                    </div>
+                                  </div>
+
+                <div class="row col-lg-12 col-md-12 col-sm-12"  >
+                  <div  class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">Full Name</label>
+                      <input type="text" name="Full_Name" value="{{Staff.Full_Name}}" required  class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">Birth Date</label>
+                      <input type="date" name="Birth" required value='{{Staff.Birth}}'  class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">Gender</label>
+                      <select type="tel" name="Gender"  required class="form-control">
+                        <option value="{{Staff.Gender}}">{{Staff.Gender}}</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+
+
+                      </select>
+                    </div>
+                  </div>
+
+
+                   <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">Mobile Number</label>
+                      <input  name="Contact" required  value='{{Staff.Contact}}' class="form-control" >
+                    </div>
+                  </div>
+
+
+         <div class="col-lg-3 col-md-6 col-sm-12">
+         <div class="form-group">
+            <label class="form-label">Network Provider</label>
+            <select type="tel" name="Method" class="form-control">
+              <option value="{{Staff.Method}}">{{Staff.Method}}</option>
+
+              <option value="mtn-gh">MTN</option>
+                <option value="vodafone-gh">Vodafone</option>
+                <option value="airteltigo-gh">Airtel - Tigo</option>
+
+            </select>
+          </div>
+           </div>
+
+
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">Email Address</label>
+                      <input type="email" name="Email" value='{{Staff.Email}}' required class="form-control">
+                    </div>
+                  </div>
+
+
+
+
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">City Of Recidence</label>
+                      <select type="tel" name="Location"  required class="form-control">
+                        <option value="{{Staff.Location}}">{{Staff.Location}}</option>
+                        <option value="accra">Accra</option>
+                        <option value="kumasi">Kumasi</option>
+                        <option value="tamale">Tamale</option>
+                        <option value="sekondi-takoradi">Sekondi-Takoradi</option>
+                        <option value="cape-coast">Cape Coast</option>
+                        <option value="tema">Tema</option>
+                        <option value="obuasi">Obuasi</option>
+                        <option value="sunyani">Sunyani</option>
+                        <option value="teshie">Teshie</option>
+                        <option value="ho">Ho</option>
+                        <option value="wa">Wa</option>
+                        <option value="koforidua">Koforidua</option>
+                        <option value="techiman">Techiman</option>
+                        <option value="nungua">Nungua</option>
+                        <option value="dome">Dome</option>
+                        <option value="lashibi">Lashibi</option>
+                        <option value="nsawam">Nsawam</option>
+                        <option value="winneba">Winneba</option>
+                        <option value="hohoe">Hohoe</option>
+                        <option value="yendi">Yendi</option>
+
+                      </select>
+                    </div>
+                  </div>
+
+ <div class="col-lg-8 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">Password</label>
+                      <input type="password" name="Password" value='{{Staff.Password}}' required class="form-control">
+                    </div>
+                  </div>
+    <div class="col-4" style="padding-top: 30px;padding-bottom: 30px;text-align: center;">
+                    <button type="button" onclick="clear_cookie()" class="btn btn-danger">Log User Out</button>
+
+</div>
+
+      <div class="row" style="padding-top:50px">
+ <h5 class="card-title">Account Type and Roles</h5>
+
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">All Applications</label>
+            <select type="tel" name="All_Applications" class="form-control">
+              <option value="{{Staff.All_Applications}}">{{Staff.All_Applications}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+
+
+      {% for i in Side_Bar %}
+       <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">{{i.Name}} Data</label>
+            <select type="tel" name="DATA_{{i.id}}" class="form-control">
+
+                <option >No</option>
+                <option {% if i.id in Staff_Permission %} selected {% endif %} >Yes</option>
+
+            </select>
+          </div>
+        </div>
+      {% endfor %}
+
+
+
+
+<div style="padding-top:50px" class="col-12"><hr></div>
+<div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Operation Unit</label>
+            <select type="tel" name="Operation_Unit" class="form-control">
+              <option value="{{Staff.Operation_Unit}}">{{Staff.Operation_Unit}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">IELTS Classes/Exam</label>
+            <select type="tel" name="IELTS" class="form-control">
+              <option value="{{Staff.IELTS}}">{{Staff.IELTS}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+
+         <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Police Report Status</label>
+            <select type="tel" name="Police_Report" class="form-control">
+              <option value="{{Staff.Police_Report}}">{{Staff.Police_Report}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Medicals Status</label>
+            <select type="tel" name="Medicals_Status" class="form-control">
+              <option value="{{Staff.Medicals_Status}}">{{Staff.Medicals_Status}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Client Booking</label>
+            <select type="tel" name="Client_Booking" class="form-control">
+              <option value="{{Staff.Client_Booking}}">{{Staff.Client_Booking}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+
+
+
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Financials</label>
+            <select type="tel" name="Financials" class="form-control">
+              <option value="{{Staff.Financials}}">{{Staff.Financials}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+
+         <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Bills & Pricing</label>
+            <select type="tel" name="Bills_Pricing" class="form-control">
+              <option value="{{Staff.Bills_Pricing}}">{{Staff.Bills_Pricing}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Call Overview</label>
+            <select type="tel" name="Call_Overview" class="form-control">
+              <option value="{{Staff.Call_Overview}}">{{Staff.Call_Overview}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Packages</label>
+            <select type="tel" name="Packages" class="form-control">
+              <option value="{{Staff.Packages}}">{{Staff.Packages}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Traffic Overview</label>
+            <select type="tel" name="Traffic_Overview" class="form-control">
+              <option value="{{Staff.Traffic_Overview}}">{{Staff.Traffic_Overview}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div >
+
+
+
+<div style="padding-top:50px" class="col-12"><hr></div>
+         <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Account Management</label>
+            <select type="tel" name="Account_Management" class="form-control">
+              <option value="{{Staff.Account_Management}}">{{Staff.Account_Management}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+         <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Regional Management</label>
+            <select type="tel" name="Regional" class="form-control">
+              <option value="{{Staff.Regional}}">{{Staff.Regional}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Interview Management</label>
+            <select type="tel" name="Interview" class="form-control">
+              <option value="{{Staff.Interview}}">{{Staff.Interview}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+
+
+
+
+
+
+
+<div style="padding-top:50px" class="col-12"><hr></div>
+         <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Client Profile Group 1</label>
+            <select type="tel" name="Profile_1" class="form-control">
+              <option value="{{Staff.Profile_1}}">{{Staff.Profile_1}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+         <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Client Profile Group 2</label>
+           <select type="tel" name="Profile_2" class="form-control">
+              <option value="{{Staff.Profile_2}}">{{Staff.Profile_2}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Client Profile Group 3</label>
+            <select type="tel" name="Profile_3" class="form-control">
+              <option value="{{Staff.Profile_3}}">{{Staff.Profile_3}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+         <div class="form-group">
+            <label class="form-label">Agent Account</label>
+            <select type="tel" name="Agent" class="form-control">
+              <option value="{{Staff.Agent}}">{{Staff.Agent}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+           </div>
+
+
+         <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Confirm Agent</label>
+            <select type="tel" name="Confirm_Agent" class="form-control">
+              <option value="{{Staff.Confirm_Agent}}">{{Staff.Confirm_Agent}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+           </div>
+
+
+
+
+
+
+
+
+
+<div style="padding-top:50px" class="col-12"><hr></div>
+         <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Ashanti Management</label>
+            <select type="tel" name="Ashanti" class="form-control">
+              <option value="{{Staff.Ashanti}}">{{Staff.Ashanti}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+         <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Bono Management</label>
+            <select type="tel" name="Bono" class="form-control">
+              <option value="{{Staff.Bono}}">{{Staff.Bono}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Bono_East Management</label>
+            <select type="tel" name="Bono_East" class="form-control">
+              <option value="{{Staff.Bono_East}}">{{Staff.Bono_East}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Central Management</label>
+            <select type="tel" name="Central" class="form-control">
+              <option value="{{Staff.Central}}">{{Staff.Central}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Eastern Management</label>
+            <select type="tel" name="Eastern" class="form-control">
+              <option value="{{Staff.Eastern}}">{{Staff.Eastern}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Greater_Accra Management</label>
+            <select type="tel" name="Greater_Accra" class="form-control">
+              <option value="{{Staff.Greater_Accra}}">{{Staff.Greater_Accra}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Northern Management</label>
+            <select type="tel" name="Northern" class="form-control">
+              <option value="{{Staff.Northern}}">{{Staff.Northern}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">North_East Management</label>
+            <select type="tel" name="North_East" class="form-control">
+              <option value="{{Staff.North_East}}">{{Staff.North_East}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Otit Management</label>
+            <select type="tel" name="Oti" class="form-control">
+              <option value="{{Staff.Oti}}">{{Staff.Oti}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Savannah Management</label>
+            <select type="tel" name="Savannah" class="form-control">
+              <option value="{{Staff.Savannah}}">{{Staff.Savannah}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Upper_East Management</label>
+            <select type="tel" name="Upper_East" class="form-control">
+              <option value="{{Staff.Upper_East}}">{{Staff.Upper_East}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Upper West Management</label>
+            <select type="tel" name="Upper_West" class="form-control">
+              <option value="{{Staff.Upper_West}}">{{Staff.Upper_West}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Volta Management</label>
+            <select type="tel" name="Volta" class="form-control">
+              <option value="{{Staff.Volta}}">{{Staff.Volta}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Western Management</label>
+            <select type="tel" name="Western" class="form-control">
+              <option value="{{Staff.Western}}">{{Staff.Western}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Western North Management</label>
+            <select type="tel" name="Western_North" class="form-control">
+              <option value="{{Staff.Western_North}}">{{Staff.Western_North}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label class="form-label">Ahafo Management</label>
+            <select type="tel" name="Ahafo" class="form-control">
+              <option value="{{Staff.Ahafo}}">{{Staff.Ahafo}}</option>
+              <option >Yes</option>
+              <option >No</option>
+
+            </select>
+          </div>
+         </div>
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+                  <div class="col-lg-12 col-md-12 col-sm-12" style="padding-top: 30px;padding-bottom: 30px;text-align: center;">
+                    <button type="submit" class="btn btn-primary">Update Info</button>
+
+                  </div>
+                </div>
+              </form>
+
+
+              <div  class=" row col-12">
+
+                   <div class="col-lg-10 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">Schedule Point</label>
+                      <select  class="form-control" id="Point">
+                         {% for i in Point %}
+                         <option value='{{i.id}}'>{{i.Name}}</option>
+                         {% endfor %}
+                      </select>
+                    </div>
+                  </div>
+                   <div class="col-lg-2 col-md-6 col-sm-6" style="padding-top: 30px;padding-bottom: 30px;text-align: center;">
+                    <button type="button" onclick="create_perm()" class="btn btn-primary">Add Permission</button>
+
+</div>
+<div class="col-12">
+  <div class="card">
+    <div class="card-header">Schedule Point Permissions</div>
+    <div class="card-body">
+
+<div class="table-responsive">
+<table class="table">
+    <thead class="bg-primary text-white">
+        <tr>
+
+            <th>Schedule Point Permission</th>
+
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody id="Main_B">
+        {% for i in Perm %}
+        <tr id="Sc_{{i.id}}">
+            <td>{{i.Name}}</td>
+
+            <td style="text-align:end">
+
+                 <a onclick="del_perm('{{i.id}}')"  class="btn btn-danger">Remove Permission</a>
+            </td>
+
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
+</div>
+    </div>
+  </div>
+</div>
+
+
+
+              </div>
+      </div>
+          </div>
+
+            </div>
+
+
+
+
+              </div>
+            </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+      {% include "New/Extra/footer.html" %}
+
+
+
+
+<div id="cover"  style="background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: hidden">
+	<div class="col-xl-4 col-lg-4 col-xxl-4 col-md-12" style="position: fixed;top:30%;left: 40%;">
+		<div class="card" id="cmain" style="visibility: hidden">
+			<div class="card-body text-center ai-icon  text-primary" >
+				<button style="position: absolute;right: 20px;" class="btn btn-sm btn-danger" onclick="Close()">x</button>
+				<svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+					<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" style="stroke-dasharray: 25, 45; stroke-dashoffset: 0;"></path>
+					<path d="M8,7A4,4 0,1,1 16,7A4,4 0,1,1 8,7" style="stroke-dasharray: 26, 46; stroke-dashoffset: 0;"></path>
+				</svg>
+				<h4 class="my-2" style="color: black;">Type "DELETE" in the form below to delete Bill.</h4>
+				<div class="form-group" >
+
+					<input type="text" id="pass2" class="form-control" style="text-align: center;" >
+				</div>
+				<button onclick="Delete()" id="si_button" class="btn my-2 btn-primary btn-lg px-4"><i class="fa fa-trash"></i> Delete</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+
+
+    function create_perm(){
+
+                var state = document.getElementById("Point")
+                data = JSON.stringify({
+                Point:state.value,
+                id:'{{Staff.id}}'
+                })
+                fetch("{% url 'set_card_point_permission'%}", {
+                method: 'POST',
+                body: data,
+                headers: { 'X-CSRFToken': '{{ csrf_token }}','Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json',
+                    },
+                })
+                .then(response => response.json())
+                .then(data => {
+                if (data["Stat"] === 'OK'){
+
+                   if (data["N_Stat"] === 'YES'){
+                    var t = document.createElement('tr')
+                      t.id='Sc_'+data["ID"]
+                      var htm = `
+
+
+                            <td>`+data["Name"]+`</td>
+
+                            <td style="text-align:end">
+
+                                 <a onclick="del_perm('`+data["ID"]+`')" class="btn btn-danger">Remove Permission</a>
+                            </td>
+                      `
+                      t.innerHTML=htm
+                      h = document.getElementById("Main_B")
+                      h.append(t)
+
+                   }else{
+
+                   }
+                    alert("Permission has been updated successfully!")
+
+                }else{
+                    alert("Please an error occured when updating permission!")
+
+                }
+                });
+
+              }
+
+
+
+ function del_perm(id){
+
+                var state = document.getElementById("Sc_"+id)
+                data = JSON.stringify({
+                id:id,
+                })
+                fetch("{% url 'set_card_point_permission'%}", {
+                method: 'DELETE',
+                body: data,
+                headers: { 'X-CSRFToken': '{{ csrf_token }}','Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json',
+                    },
+                })
+                .then(response => response.json())
+                .then(data => {
+                if (data === 'OK'){
+
+                  state.remove()
+                  alert('Permission Removed.')
+
+                }else{
+                    alert("Please an error occured when updating permission!")
+
+                }
+                });
+
+              }
+
+
+   function clear_cookie(){
+
+        data = JSON.stringify({
+        id:{{Staff.id}},
+        })
+        fetch("{% url 'delete_cookies' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+
+            alert("Account has been logged successfully!")
+
+        }else{
+            alert("Please an error occured when logging account!")
+
+        }
+        });}
+
+  upload = document.getElementById("file-input"),
+  upload1 = document.getElementById("file-input1"),
+  upload2 = document.getElementById("file-input2"),
+  upload3 = document.getElementById("file-input3"),
+  upload4 = document.getElementById("file-input4"),
+  upload5 = document.getElementById("file-input5"),
+  upload6 = document.getElementById("file-input6"),
+
+  upload7 = document.getElementById("file-input7"),
+  upload8 = document.getElementById("file-input8"),
+  upload9 = document.getElementById("file-input9"),
+  upload10 = document.getElementById("file-input10"),
+
+
+
+
+  // on change show image with crop options
+  upload.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload1.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img1');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload2.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img2');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload3.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img3');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload4.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img4');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload5.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img5');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload6.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img6');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+
+  upload7.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img7');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload8.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img8');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload9.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img9');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload10.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img10');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>

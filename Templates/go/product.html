@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+    {% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Omall</title>
+
+    <!-- manifest meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="{% get_static_prefix%}go/manifest.json">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="180x180">
+    <link rel="icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="16x16" type="image/png">
+
+    <!-- Google fonts-->
+    <link href="{% get_static_prefix%}go/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="{% get_static_prefix%}go/css2-1?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="{% get_static_prefix%}go/npm/bootstrap-icons%401.5.0/font/bootstrap-icons.css">
+
+    <!-- nouislider CSS -->
+    <link href="{% get_static_prefix%}go/assets/vendor/nouislider/nouislider.min.css" rel="stylesheet">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="{% get_static_prefix%}go/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.css">
+
+    <!-- style css for this template -->
+    <link href="{% get_static_prefix%}go/assets/css/style.css" rel="stylesheet" id="style">
+</head>
+
+<body class="body-scroll" data-page="product">
+    {% include 'go/Extra/header.html' %}
+        <!-- main page content -->
+        <div class="main-container container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body pb-0 position-relative">
+                         
+                            <div class="swiper-container imageswiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                  {% if Product.Category == "Movies" %}
+                                    <div class="swiper-slide text-center mb-0">
+                                        <video poster="{% get_media_prefix %}Products/{{Product.id}}.jpg" autoplay controls preload="none" src="{% get_media_prefix %}Demo/Video/{{Product.id}}.mp4" muted alt="" class="h-190 mb-2"></video>
+                                    </div>
+                            
+                                 
+                                  {% else %}
+                                  <div class="swiper-slide text-center mb-0">
+                                    <img src="{% get_media_prefix %}Products/{{Product.id}}.jpg?{{Rand}}" alt="" class="h-190 mb-2">
+                                   </div>
+                                  {% endif %}
+                                    {% for i in Image %}
+                                    <div class="swiper-slide text-center mb-0">
+                                        <img src="{% get_media_prefix %}Extra/{{i.id}}.jpg?{{Rand}}" alt="" class="h-190 mb-2">
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                                <div class="swiper-pagination imageswiper-pagination "></div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card-footer justify-content-center text-center">
+                                <p class="mb-1 text-opac">Share product with</p>
+                                <a href="#" class="btn btn-link text-color-theme"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="btn btn-link text-color-theme"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="btn btn-link text-color-theme"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="btn btn-link text-color-theme"><i class="bi bi-google"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% if Product.Category == "Music" %}
+                    <div class="row" style="padding-bottom: 10px;">
+                    <audio autoplay src="{% get_media_prefix %}Demo/Music/{{Product.id}}.mp3" controls></audio>  
+                    </div>
+                    {%  endif %}
+                    <p class="mb-1">
+                        <span class="text-opac">{{Product.Category}}</span>
+                        <span class="float-end"><span class="text-opac">{{Product.Discount}}%</span> <i class="bi bi-star-fill text-warning"></i></span>
+                    </p>
+                    <h4 class="text-color-theme mb-3">{{Product.Name}}</h4>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <h5 class="mb-0">₵{{Discount}} <s class="text-opac fw-light">₵{{Product.Price}}</s></h5>
+                            <p class="text-opac">per 1 product</p>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <!-- button counter increamenter-->
+                            <div class="counter-number">
+                                <div class="counter-number">
+                                    {% if Product.Category == "Movies" %}
+                                    <form action="{% url 'e_buy' %}" method="post">
+                                        {% csrf_token %}
+                                       <input name="Product" type="hidden" value="{{Product.id}}">
+                                       
+                                    <button  type="submit" class="btn btn-sm avatar  p-0 ">
+                                        <span style="padding-left: 3px;padding-right: 3px;"><i class="bi bi-bag size-22" ></i>Buy This Now</span> 
+                                     </button>
+                                    </form> 
+                                    {% elif Product.Category == "Music" %}
+                                    <form action="{% url 'e_buy' %}" method="post">
+                                        {% csrf_token %}
+                                        <input name="Product" type="hidden" value="{{Product.id}}">
+                                      
+                                     <button  type="submit" class="btn btn-sm avatar  p-0 ">
+                                         <span style="padding-left: 3px;padding-right: 3px;"><i class="bi bi-bag size-22" ></i>Buy This Now</span> 
+                                      </button>
+                                     </form> 
+                                    {% elif  Product.Category == "Softwares" %}
+                                    <form action="{% url 'e_buy' %}" method="post">
+                                        {% csrf_token %}
+                                        <input name="Product" type="hidden" value="{{Product.id}}">
+                                        
+                                     <button  type="submit" class="btn btn-sm avatar  p-0 ">
+                                         <span style="padding-left: 3px;padding-right: 3px;"><i class="bi bi-bag size-22" ></i>Buy This Now</span> 
+                                      </button>
+                                     </form> 
+                                    {% elif  Product.Category == "Tickets" %}
+                                     <form action="{% url 'e_buy' %}" method="post">
+                                         {% csrf_token %}
+                                         <input name="Product" type="hidden" value="{{Product.id}}">
+                                         
+                                      <button  type="submit" class="btn btn-sm avatar  p-0 ">
+                                          <span style="padding-left: 3px;padding-right: 3px;"><i class="bi bi-bag size-22" ></i>Buy This Now</span> 
+                                       </button>
+                                      </form>  
+    
+                                    {% else %}
+                                    <button onclick="Add_Cart('{{Product.id}}')" class="btn btn-sm avatar  p-0 ">
+                                        <span style="padding-left: 3px;padding-right: 3px;"><i class="bi bi-bag size-22" ></i> Add To Cart</span> 
+                                     </button>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- delivery time -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card card-light shadow-sm mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <figure class="text-center mb-0 avatar avatar-50 page-bg rounded">
+                                        <img src="{% get_media_prefix%}User_Imgs/{{Vendor.id}}.jpg?{{Rand}}" alt="">
+
+                                    </figure>
+                                </div>
+                                <div class="col align-self-center">
+                                    <h6 class="mb-1">{{Vendor.Name}}
+                                        <a href="{% url 'vendor_profile' Vendor.id %}"> <span class="text-color-theme float-end small">View Profile <i class="bi bi-chevron-right"></i></span></a>
+                                    </h6>
+                                    <p><span class="text-opac">Delivering From:</span> <strong>{{Vendor.Area}}, {{Vendor.City}}</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- description -->
+            <div class="row mb-3">
+                <div class="col">
+                    <h5 class="mb-0">Product details</h5>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <p class="text-opac">{{Product.Description}}</p>
+                </div>
+            </div>
+
+            <!-- description of vitamins -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header">
+                            <div class="row">
+                                {% if Product.Category == "Movies" %}
+                                <div class="" style="padding-bottom: 15px;">
+                                    Movie Category: <span style="font-weight: 700;color: crimson;">{{Product.Condition}}</span>
+                                </div>
+
+                                {% elif Product.Category == "Music" %}
+                                <div class="" style="padding-bottom: 15px;">
+                                    Music Category: <span style="font-weight: 700;color: crimson;">{{Product.Condition}}</span>
+                                </div>
+                                {% elif Product.Category == "Softwares" %}
+                                <div class="" style="padding-bottom: 15px;">
+                                    Software Category: <span style="font-weight: 700;color: crimson;">{{Product.Condition}}</span>
+                                </div>
+                                {% elif Product.Category == "Tickets" %}
+                                <div class="" style="padding-bottom: 15px;">
+                                    Event Category: <span style="font-weight: 700;color: crimson;">{{Product.Condition}}</span>
+                                </div>
+                                <div class="" style="">
+                                    Schedule : <span style="font-weight: 700;color: crimson;">{{Extra_info.Start_Date}}</span>
+                                </div>
+                               
+                                <div style="padding-top: 10px;">
+                                    <head>
+                                        <meta charset="utf-8" />
+                                        <title>Map with Search</title>
+                                        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+                                        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+                                        <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.css" />
+                                        <script src="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.js"></script>
+                                    </head>
+                                    <body>
+                                        <div id="map" style="width: 100%; height: 400px;border-radius: 10px;"></div>
+                                        <script>
+                                            var map = L.map('map').setView([5.634267885100908, -0.15452468634733968], 13);
+                                    
+                                            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                                maxZoom: 19,
+                                            }).addTo(map);
+                                    
+                                         function getLatLong(locationName) {
+                                                const apiUrl = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(locationName)}`;
+                                                
+                                                fetch(apiUrl)
+                                                    .then(response => response.json())
+                                                    .then(data => {
+                                                        if (data.length > 0) {
+                                                            const lat = data[0].lat;
+                                                            const lon = data[0].lon;
+                                                            const displayName = data[0].display_name;
+                                                            map.setView([lat, lon], 13)
+                                                            var marker = L.marker([lat, lon], { opacity: 100 }).addTo(map);     
+                                                        } else {
+                                                            document.getElementById('locationInfo').innerHTML = 'Location not found.';
+                                                        }
+                                                    })
+                                                    .catch(error => {
+                                                        console.error('Error:', error);
+                                                    });
+                                            }
+                                            const geting = getLatLong('{{Extra_info.Location}}');
+                                        </script>
+                                    </body>
+                                </div>
+
+                                {% else %}
+                                <div class="" style="padding-bottom: 15px;">
+                                    Product Condition: <span style="font-weight: 700;color: crimson;">{{Product.Condition}}</span>
+                                </div>
+                                <div class="">
+                                    Avilable Sizes :
+                                    {% for s in Size %}
+                                    <label class="btn btn-outline-primary shadow-sm avatar avatar-50 p-0" for="btn-color-primary">{{s}}</label>
+                                    {% endfor %}
+                                    <br>
+                                    <br>
+                                </div>
+                                
+                                <div class="">
+                                    Available Colors :
+                                    {% for c in Color %}
+                                    <span>
+                                    <p class="btn " style="width: 20px;height: 10px;background-color: {{c}};" ></p>
+                                    </span>
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+                              
+                            </div>
+                        </div>
+                        
+                </div>
+            </div>
+
+            <!-- Available at shops -->
+            <div class="row mb-3">
+                <div class="col">
+                    <h5 class="mb-0">Avaialble in Shop</h5>
+                </div>
+            </div>
+
+            <!-- shop slides -->
+            <div class="row">
+                <div class="col-12 px-0">
+                    <div class="swiper-container shopslides mb-4">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            
+                            {% for i in Stores %}
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm ">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <figure class="text-center mb-0 avatar avatar-60 page-bg rounded">
+                                                    <i class="bi bi-shop size-24 text-color-theme"></i>
+                                                </figure>
+                                            </div>
+                                            <div class="col">
+                                                <a href="{% url 'vendor' i.id %}" class="text-normal text-color-theme">
+                                                    <h6 class="mb-1">{{i.Name}}<i class="bi bi-arrow-up-right-circle text-color-theme float-end"></i></h6>
+                                                </a>
+                                                <p class="mb-1">{{i.Location}}</p>
+                                                <p class="small d-block">
+                                                    <span class="text-opac">{{i.date}}</span>
+                                                    <span class="float-end"><span class="text-opac">2.5km</span> <i class="bi bi-geo-alt"></i></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                           {% endfor %}
+                           
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- offerslides -->
+            <div class="swiper-container offerslides mb-3">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="card shadow-sm card-theme">
+                            <div class="card-body py-1">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="{% get_static_prefix%}go/assets/img/1.png" alt="" class="mw-100">
+                                    </div>
+                                    <div class="col text-start align-self-center ps-0">
+                                        <h6 class="fw-normal mb-0">Season Discount</h6>
+                                        <h2>50% OFF</h2>
+                                        <p>Trending Music<br></p>
+                                        
+                                        <a class="btn btn-sm avatar  p-0 " href="{% url 'category_select' 'Music' %}" >
+                                            <span style="padding-left: 3px;padding-right: 3px;color: antiquewhite;"><i class="bi bi-binoculars size-22"></i> Explore</span> 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card shadow-sm card-theme">
+                            <div class="card-body py-1">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="{% get_static_prefix %}go/assets/img/2.png" alt="" class="mw-100">
+                                    </div>
+                                    <div class="col text-start align-self-center ps-0">
+                                        <h6 class="fw-normal mb-0">Special Discount</h6>
+                                        <h2>65% OFF</h2>
+                                        <p>Top Rated Movies<br></p>
+                                        <a class="btn btn-sm avatar  p-0 " href="{% url 'category_select' 'Movies' %}" >
+                                            <span style="padding-left: 3px;padding-right: 3px;color: antiquewhite;"><i class="bi bi-binoculars size-22"></i> Explore</span> 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card shadow-sm card-theme">
+                            <div class="card-body py-1">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="{% get_static_prefix%}go/assets/img/3.png" alt="" class="mw-100">
+                                    </div>
+                                    <div class="col text-start align-self-center ps-0">
+                                        <h6 class="fw-normal mb-0">Protein Discount</h6>
+                                        <h2>20% OFF</h2>
+                                        <p>Most Streamed Music<br></p>
+                                      
+                                        <a class="btn btn-sm avatar  p-0 " href="{% url 'category_select' 'Music' %}" >
+                                            <span style="padding-left: 3px;padding-right: 3px;color: antiquewhite;"><i class="bi bi-binoculars size-22"></i> Explore</span> 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination pagination-offerslides"></div>
+            </div>
+
+            <!-- Related Items -->
+            <div class="row mb-3">
+                <div class="col">
+                    <h5 class="mb-0">Related Items</h5>
+                </div>
+            </div>
+            <!-- trending -->
+            <div class="swiper-container trendingslides">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    {% for i in Set1%}
+                    <div class="swiper-slide">
+                        <div class="card shadow-sm product mb-4">
+                            <figure class="text-center mb-0 bg-light-warning" style="height: 13vmax;">
+                                <img src="{% get_media_prefix %}Products/{{i.id}}.jpg" style="width: 100%;border-radius: 5px;height: 100%;object-fit: cover;" alt="">
+                            </figure>
+                            <div class="card-body">
+                                <p class="mb-1">
+                                    <small class="text-opac">{{i.Category}}</small>
+                                    <small class="float-end"><span class="text-opac">{{i.Discount}}%</span> <i class="bi bi-star-fill text-warning"></i></small>
+                                </p>
+                                <a href="{% url 'details' i.id %}" class="text-normal">
+                                   <h6 class="text-color-theme" id="ad{{i.id}}"></h6>
+                                    <script>
+                                        url = '{{i.Name}}'
+                                        var con_name = url.substring(0,15)+".." 
+                                        document.getElementById('ad{{i.id}}').innerHTML=con_name
+                                    </script>
+                                </a>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="mb-0">₵{{i.New_Price}}<br><small class="text-opac">₵{{i.Price}}</small></p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <!-- button counter increamenter-->
+                                        <div class="counter-number">
+                                            
+                                           
+                                           <a href="{% url 'details' i.id %}"> <button class="btn btn-sm avatar  p-0 ">
+                                               <span style="padding-left: 3px;padding-right: 3px;"><i class="bi bi-eye size-22" ></i> View</span> 
+                                            </button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    
+                </div>
+            </div>
+
+        </div>
+        <!-- main page content ends -->
+
+
+    </main>
+    <!-- Page ends-->
+
+    {% include 'go/Extra/footer.html' %}
+
+  
+    <!-- Required jquery and libraries -->
+    <script src="{% get_static_prefix%}go/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="{% get_static_prefix%}go/assets/js/popper.min.js"></script>
+    <script src="{% get_static_prefix%}go/assets/vendor/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+
+    <!-- cookie js -->
+    <script src="{% get_static_prefix%}go/assets/js/jquery.cookie.js"></script>
+
+    <!-- PWA app service registration and works -->
+    <script src="{% get_static_prefix%}go/assets/js/pwa-services.js"></script>
+
+    <!-- swiper script -->
+    <script src="{% get_static_prefix%}go/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.js"></script>
+
+    <!-- nouislider js -->
+    <script src="{% get_static_prefix%}go/assets/vendor/nouislider/nouislider.min.js"></script>
+
+    <!-- Customized jquery file  -->
+    <script src="{% get_static_prefix%}go/assets/js/main.js"></script>
+    <script src="{% get_static_prefix%}go/assets/js/color-scheme.js"></script>
+
+    <!-- page level custom script -->
+    <script src="{% get_static_prefix%}go/assets/js/app.js"></script>
+
+
+
+</body>
+
+</html>

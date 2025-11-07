@@ -1,0 +1,456 @@
+Uri: http://maps.google.com/maps/api/js?key=AIzaSyDwJSRi0zFjDemECmFl9JtRj1FY7TiTRRo
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\maps\api\js-1
+Content Type: text/javascript
+
+Uri: http://maps.google.com/maps/api/js?sensor=false
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\maps\api\js
+Content Type: text/javascript
+
+Uri: https://fonts.googleapis.com/css?family=Roboto:400,300,200,100,400italic,700,900|Muli&subset=latin,vietnamese,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\css
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/muli/v28/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkHkw.ttf
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\s\muli\v28\7Aulp_0qiz-aVz7u3PJLcUMYOFnOkHkw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgWxP.ttf
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\s\roboto\v30\KFOkCnqEu92Fr1MmgWxP.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu52xP.ttf
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\s\roboto\v30\KFOkCnqEu92Fr1Mu52xP.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5vAw.ttf
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\s\roboto\v30\KFOlCnqEu92Fr1MmSU5vAw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlvAw.ttf
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\s\roboto\v30\KFOlCnqEu92Fr1MmWUlvAw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtvAw.ttf
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\s\roboto\v30\KFOlCnqEu92Fr1MmYUtvAw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\s\roboto\v30\KFOmCnqEu92Fr1Me5Q.ttf
+Content Type: font/ttf
+
+Uri: https://monolit.kwst.net/site/
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\index.htm
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/404.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\404.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/about.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\about.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/blog-parallax.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\blog-parallax.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/blog-single.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\blog-single.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/blog.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\blog.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/contact.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\contact.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/css/plugins.css
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\css\plugins.css
+Content Type: text/css
+
+Uri: https://monolit.kwst.net/site/css/reset.css
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\css\reset.css
+Content Type: text/css
+
+Uri: https://monolit.kwst.net/site/css/style.css
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\css\style.css
+Content Type: text/css
+
+Uri: https://monolit.kwst.net/site/fonts/fontawesome-webfont.eot?
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\fonts\fontawesome-webfont-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://monolit.kwst.net/site/fonts/fontawesome-webfont.eot?v=4.5.0
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\fonts\fontawesome-webfont.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://monolit.kwst.net/site/fonts/fontawesome-webfont.svg?v=4.5.0
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\fonts\fontawesome-webfont.svg
+Content Type: image/svg+xml
+
+Uri: https://monolit.kwst.net/site/fonts/fontawesome-webfont.ttf?v=4.5.0
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\fonts\fontawesome-webfont.ttf
+Content Type: application/octet-stream
+
+Uri: https://monolit.kwst.net/site/fonts/fontawesome-webfont.woff2?v=4.5.0
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\fonts\fontawesome-webfont.woff2
+Content Type: font/woff2
+
+Uri: https://monolit.kwst.net/site/fonts/fontawesome-webfont.woff?v=4.5.0
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\fonts\fontawesome-webfont.woff
+Content Type: font/woff
+
+Uri: https://monolit.kwst.net/site/fonts/lg.eot?
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\fonts\lg-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://monolit.kwst.net/site/fonts/lg.eot?n1z373
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\fonts\lg.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://monolit.kwst.net/site/fonts/lg.svg?n1z373
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\fonts\lg.svg
+Content Type: image/svg+xml
+
+Uri: https://monolit.kwst.net/site/fonts/lg.ttf?n1z373
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\fonts\lg.ttf
+Content Type: application/octet-stream
+
+Uri: https://monolit.kwst.net/site/fonts/lg.woff?n1z373
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\fonts\lg.woff
+Content Type: font/woff
+
+Uri: https://monolit.kwst.net/site/images/bg-dec.png
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\bg-dec.png
+Content Type: image/png
+
+Uri: https://monolit.kwst.net/site/images/bg-dec2.png
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\bg-dec2.png
+Content Type: image/png
+
+Uri: https://monolit.kwst.net/site/images/bg/1.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\bg\1.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/bg/2.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\bg\2.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/bg/3.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\bg\3.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/blog/1.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\blog\1.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/blog/users/1.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\blog\users\1.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/blog/users/2.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\blog\users\2.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/clients/1.png
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\clients\1.png
+Content Type: image/png
+
+Uri: https://monolit.kwst.net/site/images/clients/2.png
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\clients\2.png
+Content Type: image/png
+
+Uri: https://monolit.kwst.net/site/images/clients/3.png
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\clients\3.png
+Content Type: image/png
+
+Uri: https://monolit.kwst.net/site/images/clients/4.png
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\clients\4.png
+Content Type: image/png
+
+Uri: https://monolit.kwst.net/site/images/clients/5.png
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\clients\5.png
+Content Type: image/png
+
+Uri: https://monolit.kwst.net/site/images/favicon.ico
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\favicon.ico
+Content Type: image/x-icon
+
+Uri: https://monolit.kwst.net/site/images/folio/slider/1.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\slider\1.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/slider/2.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\slider\2.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/slider/3.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\slider\3.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/1.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\1.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/10.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\10.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/11.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\11.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/12.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\12.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/13.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\13.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/14.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\14.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/15.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\15.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/16.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\16.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/17.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\17.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/18.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\18.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/2.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\2.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/20.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\20.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/21.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\21.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/22.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\22.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/23.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\23.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/27.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\27.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/28.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\28.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/29.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\29.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/3.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\3.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/4.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\4.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/5.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\5.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/6.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\6.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/7.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\7.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/8.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\8.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/folio/thumbs/9.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\folio\thumbs\9.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/footer-logo.png
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\footer-logo.png
+Content Type: image/png
+
+Uri: https://monolit.kwst.net/site/images/logo.png
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\logo.png
+Content Type: image/png
+
+Uri: https://monolit.kwst.net/site/images/team/small/1.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\team\small\1.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/team/small/2.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\team\small\2.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/team/small/3.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\team\small\3.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/team/small/4.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\team\small\4.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/team/small/5.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\team\small\5.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/images/team/small/6.jpg
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\images\team\small\6.jpg
+Content Type: image/jpeg
+
+Uri: https://monolit.kwst.net/site/index.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\index.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/index2.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\index2.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/index3.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\index3.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/index4.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\index4.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/index5.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\index5.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/js/jquery.min.js
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\js\jquery.min.js
+Content Type: application/javascript
+
+Uri: https://monolit.kwst.net/site/js/map.js
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\js\map.js
+Content Type: application/javascript
+
+Uri: https://monolit.kwst.net/site/js/plugins.js
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\js\plugins.js
+Content Type: application/javascript
+
+Uri: https://monolit.kwst.net/site/js/scripts.js
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\js\scripts.js
+Content Type: application/javascript
+
+Uri: https://monolit.kwst.net/site/onepage-1.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\onepage-1.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/onepage-2.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\onepage-2.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/onepage-3.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\onepage-3.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/onepage-4.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\onepage-4.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/onepage-5.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\onepage-5.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/portfolio-onepage.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\portfolio-onepage.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/portfolio-parallax.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\portfolio-parallax.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/portfolio-single.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\portfolio-single.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/portfolio-single2.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\portfolio-single2.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/portfolio-single3.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\portfolio-single3.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/portfolio-single4.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\portfolio-single4.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/portfolio-single5.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\portfolio-single5.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/portfolio-single6.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\portfolio-single6.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/portfolio-single7.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\portfolio-single7.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/portfolio-single8.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\portfolio-single8.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/portfolio.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\portfolio.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/portfolio2.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\portfolio2.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/portfolio3.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\portfolio3.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/portfolio4.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\portfolio4.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/portfolio5.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\portfolio5.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/portfolio6.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\portfolio6.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/services.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\services.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/team-single.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\team-single.html
+Content Type: text/html
+
+Uri: https://monolit.kwst.net/site/team.html
+File Name: C:\Downloaded Web Sites\monolit.kwst.net\site\team.html
+Content Type: text/html
+

@@ -1,0 +1,311 @@
+{% load static %}
+<link id="style" href="{% get_static_prefix %}Main/build/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+       
+<!-- APP CSS & APP SCSS -->
+<link rel="preload" as="style" href="{% get_static_prefix %}Main/build/assets/app-b1603905.css" /><link rel="preload" as="style" href="{% get_static_prefix %}Main/build/assets/app-27b4a2c7.css" /><link rel="stylesheet" href="{% get_static_prefix %}Main/build/assets/app-b1603905.css" /><link rel="stylesheet" href="{% get_static_prefix %}Main/build/assets/app-27b4a2c7.css" />
+<style>
+   /* Adjust the width of the DataTables search input */
+   .table-responsive::-webkit-scrollbar {
+    width: 16px; /* Width of the vertical scrollbar */
+    height: 20px; /* Height of the horizontal scrollbar */
+    cursor:grab;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 8px; /* Round the corners of the scrollbar thumb */
+    border: 4px solid #f1f1f1; /* Padding around the thumb */
+    cursor:grab;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the scrollbar track */
+    border-radius: 8px; /* Round the corners of the scrollbar track */
+    cursor:grab;
+}
+
+/* Custom scrollbar for Firefox */
+.table-responsive {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: #888 #f1f1f1; /* thumb and track color */
+    
+}
+  .dataTables_wrapper .dataTables_filter input[type="search"] {
+    width: 300px !important; /* Adjust this value to your preferred width */
+  }
+  .dataTables_length select {
+    width: 120px; /* Adjust this value to your preferred width */
+  }
+  .select2-container--default .select2-selection--single {
+    width: 100px !important; /* Adjust this value to your preferred width */
+    display: inline-block;
+  }
+  
+</style>
+<script>
+  $(document).ready(function() {
+    $('#example1').DataTable();
+    $('#example2').DataTable();
+    $('#example3').DataTable();
+    $('#example4').DataTable();
+    $('#example5').DataTable();
+    $('#example6').DataTable();
+    $('#example7').DataTable();
+    $('#example8').DataTable();
+    $('#example9').DataTable();
+    $('#example10').DataTable();
+    $('#example11').DataTable();
+    $('#example12').DataTable();
+  });
+</script>
+
+{% include "New/Extra/header.html" %}
+      <div class="content-wrapper" style="padding-top: 100px;">
+
+        
+        <div class="container-xxl flex-grow-1 container-p-y">
+            
+            
+
+          
+          
+
+          <div class="card">
+            <div class="card-header border-bottom">
+              <h5 class="card-title">({{Main.Name}}) Questions</h5>
+              <div class="d-flex justify-content-between align-items-center row py-3 gap-3 gap-md-0">
+                <div class="col-md-41 user_role"></div>
+                <div class="col-md-4 user_plan"></div>
+                <div class="col-md-4 user_status"></div>
+              </div>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addNewCCModal">Add Questions </button>
+            </div>
+            <div class="card-datatable table-responsive">
+              <table class="datatables-users responsive table" id="example1">
+                <thead class="table-light">
+                  <tr>
+                    
+                    <th>ID</th>
+                    
+                    <th>Question</th>
+                    
+                    <th>Date</th>
+                    <th>Action</th>
+
+                    
+                  </tr>
+                </thead>
+                <tbody>
+												
+												
+												
+                  {% for i in Listed %}
+                  <tr id="{{i.id}}">
+                    
+                    
+                    
+                    
+
+                    
+                    <td>{{ forloop.counter }}</td>
+											
+                    <td style="width: 30%;">{{i.Question}}</td>
+                    
+                    
+                   <td>{{i.date}}</td>
+                   <td>
+                    <button type="button" onclick="setup('{{i.id}}')" data-bs-toggle="modal" data-bs-target="#deleteModal"  class="btn btn-danger ">
+                     Delete
+                    </button></td>
+                  </tr>
+                  {% endfor %}
+                  
+                  
+                  
+                  
+                </tbody>
+              </table>
+            </div>
+
+      </div>
+          <!-- / Content -->
+
+          <script>
+            $(document).ready(function() {
+    
+              $('#new').DataTable();
+             
+            });
+            upload = document.getElementById("file-input"),
+            upload.addEventListener('change', (e) => {
+              if (e.target.files.length) {
+              const reader = new FileReader();
+              reader.onload = (e)=> {
+                if(e.target.result){
+                let img = document.getElementById('img');
+                img.src = e.target.result;
+                }
+              };
+              reader.readAsDataURL(e.target.files[0]);
+              }
+            });
+      
+            
+            </script>
+             
+          
+{% include "New/Extra/footer.html" %}
+
+<!-- Add New Credit Card Modal -->
+<div class="modal fade" id="addNewCCModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered1 modal-simple modal-add-new-cc">
+    <div class="modal-content p-3 p-md-5">
+      <div class="modal-body p-md-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="text-center mb-4">
+          <h3 class="mb-2 pb-1">To Up Your Wallet</h3>
+          <p>Add money to your church wallet.</p>
+        </div>
+        <form id="addNewCCForm" class="row g-4" method="post" action=''>
+          {% csrf_token %}
+          <div class="col-12">
+            <div class="input-group input-group-merge">
+              <div class="form-floating form-floating-outline">
+                <textarea id="modalAddCard"  name="Question" required style="height: 230px;" class="form-control credit-card-mask"  placeholder="Your question"  aria-describedby="modalAddCard2"></textarea>
+                <label for="modalAddCard">Question</label>
+              </div>
+              <span class="input-group-text cursor-pointer p-1" id="modalAddCard2"><span class="card-type"></span></span>
+            </div>
+          </div>
+          
+         
+         
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary me-sm-3 me-1">Submit</button>
+            <button type="reset" class="btn btn-outline-secondary btn-reset" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade contentmodal" id="deleteModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content doctor-profile">
+          <div class="modal-header pb-0 border-bottom-0  justify-content-end">
+              <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><i class="feather-x-circle"></i></button>
+          </div>
+          <div class="modal-body">
+              <div class="delete-wrap text-center">
+                  <div class="del-icon"><i class="feather-x-circle"></i></div>
+                  <h4>Type "DELETE" in below to delete this.</h4>
+                  <div class="submit-section">
+                      <input id="pass2" class="form-control" type="text" id="test" style="text-align: center;">
+
+                  </div>	
+                  <div style="padding-top: 20px;" class="submit-section">
+                      <button onclick="Delete()"  class="btn btn-danger me-2" id="si_button">Delete This</button>
+                     
+                  </div>								
+              </div>
+          </div>
+      </div>
+  </div> 
+</div>
+<input type="hidden" value="" id='hold_id'>
+</div>
+<!-- / Content -->
+<script>
+
+
+
+function setup(id){
+  document.getElementById('hold_id').value=id
+}
+    
+    function Delete(){
+      var state = document.getElementById("hold_id")
+    data = JSON.stringify({
+    id:state.value,
+    })
+    fetch("", {
+    method: 'DELETE',
+    body: data,
+    headers: { 'X-CSRFToken':'{{ csrf_token }}','Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json',
+        },
+    })
+    .then(response => response.json())
+    .then(data => {
+    if (data === 'Ok'){
+        document.getElementById(state.value).remove() 
+        state.value="" 
+        document.getElementById("pass2").value=""
+        alert("Question has been deleted successfully!")
+    Close()
+    }else{
+        alert("Please an error occured when deleting question!")
+    
+    }
+    });}
+
+setInterval(load_all,1000);
+function load_all(){
+   
+var pass2 = document.getElementById("pass2").value
+if (pass2==="DELETE"){
+
+ document.getElementById("si_button").disabled = false;
+}else{
+ document.getElementById("si_button").disabled = true;
+}   
+}  
+
+
+</script>   
+<script src="{% get_static_prefix %}Main/build/assets/plugins/jquery/jquery.min.js"></script>
+      
+<!-- Bootstrap js -->
+<script src="{% get_static_prefix %}Main/build/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- P-scroll js -->
+<script src="{% get_static_prefix %}Main/build/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="{% get_static_prefix %}Main/build/assets/plugins/perfect-scrollbar/p-scroll.js"></script>
+
+<!-- Sidebar js -->
+<script src="{% get_static_prefix %}Main/build/assets/plugins/side-menu/sidemenu.js"></script>
+
+<!-- Right-sidebar js -->
+<script src="{% get_static_prefix %}Main/build/assets/plugins/sidebar/sidebar.js"></script>
+<script src="{% get_static_prefix %}Main/build/assets/plugins/sidebar/sidebar-custom.js"></script>
+
+
+<!--Internal Echart Plugin -->
+<script src="{% get_static_prefix %}Main/build/assets/plugins/echart/echart.js"></script>
+
+<!-- Internal index js -->
+<link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/index-a335dc45.js" /><script type="module" src="{% get_static_prefix %}Main/build/assets/index-a335dc45.js"></script>
+<!-- Select2 js -->
+<script src="{% get_static_prefix %}Main/build/assets/plugins/select2/js/select2.full.min.js"></script>
+
+<!-- Data tables -->
+<script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+<script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
+<script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/dataTables.responsive.min.js"></script>
+<script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
+
+
+<!-- Switcher js -->
+<link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/switcher-d57e6ced.js" /><script type="module" src="{% get_static_prefix %}Main/build/assets/switcher-d57e6ced.js"></script>                
+<!-- APP JS-->
+<link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/app-2392f432.js" />
+<link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/apexcharts.common-7928d148.js" />
+<script type="module" src="{% get_static_prefix %}Main/build/assets/app-2392f432.js"></script>        <!-- END SCRIPTS -->
+
+<!-- sticky js-->
+<script src="{% get_static_prefix %}Main/build/assets/sticky.js"></script>
+
+
+
+

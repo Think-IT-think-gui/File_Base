@@ -1,0 +1,518 @@
+{% load static %}
+<!DOCTYPE html>
+<script>
+
+            function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+            }
+
+            const csrftoken = getCookie('csrftoken');
+            console.log(csrftoken)
+
+          </script>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signature Capture</title>
+  <style>
+
+    .wrapper {
+      max-width: 900px;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .form-container {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+    .signature-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    canvas {
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      cursor: crosshair;
+      background: #fff;
+    }
+
+    .button-group {
+      margin-top: 10px;
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .clear-btn {
+      background-color: #e74c3c;
+      color: white;
+    }
+
+    .send-btn {
+      background-color: #2ecc71;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      canvas {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+<div style="" class="row" >
+<div style="width:100%">
+<img src="{% get_static_prefix %}Signature/Refund Policy - SIKOBS (1).jpg" class="form-image" style="width:860px;height:1120px" alt="Form">
+</div>
+
+</div>
+<h4 style="position:absolute;top:838px;left:225px">{{User.Full_Name|title}}</h4>
+
+
+<img src="{% get_media_prefix %}Signature/{{Image}}.png?{{Rand}}" class="form-image" style="position:absolute;top:865px;left:250px;width:200px" >
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+
+
+
+  <div id="qrcode" style="position:absolute;top:15px;left:760px;width:200px"></div>
+
+  <script>
+  const qrCode = new QRCodeStyling({
+  width: 100,
+  height: 100,
+  data: "https://www.sikobs.world/sign_file_view/{{Uid}}/{{Main}}",
+  dotsOptions: {
+    type: "square",
+    color: "#21130d"
+  },
+  backgroundOptions: {
+    color: "#ffffff"
+  },
+  cornersSquareOptions: {
+    type: "square",
+    color: "#21130d"
+  },
+  cornersDotOptions: {
+    type: "square",
+    color: "#21130d"
+  }
+});
+
+    window.onload = function() {
+      qrCode.append(document.getElementById("qrcode"));
+      // You can also update the data later using qrCode.update()
+    };
+  </script>
+
+
+<h4 style="position:absolute;top:913px;left:175px">{{Date}}</h4>
+
+
+{% if Type1 == 'Admin' %}
+
+<style>
+    .form-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 20px;
+}
+
+.custom-select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 16px;
+  min-width: 150px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.custom-select:hover {
+  border-color: #888;
+}
+
+.custom-button {
+  padding: 10px 20px;
+  background-color: #4f46e5; /* Indigo */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.custom-button:hover {
+  background-color: #3730a3; /* Darker indigo */
+}
+
+
+/* Glass-style modal background */
+.modal-content {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+/* Large red icon styling */
+.del-icon i {
+  font-size: 48px;
+  color: #dc3545; /* Bootstrap red */
+}
+
+/* Input styling */
+.modal-body input.form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 10px 20px;
+  transition: background 0.3s ease;
+}
+
+.modal-body input.form-control::placeholder {
+  color: #ccc;
+  text-align: center;
+}
+
+.modal-body input.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+  box-shadow: none;
+}
+
+/* Success button styling */
+#si_button.btn-success {
+  background-color: #28a745;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+#si_button.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Close button (top right) */
+.btn-close {
+  filter: invert(1);
+  opacity: 0.8;
+}
+
+
+</style>
+
+<div class="form-group">
+  <select class="custom-select" id="hold_id">
+
+    <option value="Pending" {% if Status == 'Pending' %} selected {% endif %} >Pending</option>
+    <option value="Completed"  {% if Status == 'Completed' %} selected {% endif %}>Completed</option>
+
+  </select>
+  <button data-bs-toggle="modal" data-bs-target="#customModal"  class="custom-button">Submit</button>
+</div>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Feather Icons (optional) -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <style>
+
+
+    .custom-modal {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      color: white;
+    }
+
+    .custom-input {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50px;
+      color: white;
+    }
+
+    .custom-input::placeholder {
+      color: #ccc;
+    }
+
+    .custom-input:focus {
+      background-color: rgba(255, 255, 255, 0.2);
+      box-shadow: none;
+      outline: none;
+    }
+
+    .btn-close {
+      filter: invert(1);
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="customModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content custom-modal">
+
+        <!-- Modal Header -->
+        <div class="modal-header border-0 justify-content-end">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body text-center">
+          <div class="mb-3">
+            <i data-feather="alert-circle" style="font-size: 48px; color: #ffc107;"></i>
+          </div>
+          <h4 class="mb-3">Confirm Action</h4>
+          <p>Type <strong>"YES"</strong> to confirm this action.</p>
+          <input type="text" id='pass2' class="form-control text-center custom-input mb-4" placeholder="Type YES">
+          <button onclick='fix()' disabled id="si_button" class="btn btn-success rounded-pill px-4">Confirm</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Initialize Feather Icons -->
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>
+
+
+<script>
+
+          function fix(){
+            var state = document.getElementById("hold_id")
+          data = JSON.stringify({
+          id:{{Image}},
+          Status:state.value,
+          })
+          fetch("", {
+          method: 'POST',
+          body: data,
+          headers: { 'X-CSRFToken': csrf_token,'Accept': 'application/json, text/plain, */*',
+              'Content-Type': 'application/json',
+              },
+          })
+          .then(response => response.json())
+          .then(data => {
+          if (data === 'Ok'){
+
+
+              document.getElementById("pass2").value=""
+              alert("Data has been updated successfully!")
+          Close()
+          }else{
+              alert("Please an error occured when updated data!")
+
+          }
+          });}
+
+
+
+          setInterval(load_all,1000);
+          function load_all(){
+
+
+              var pass2 = document.getElementById("pass2").value
+          if (pass2==="YES"){
+
+           document.getElementById("si_button").disabled = false;
+          }else{
+           document.getElementById("si_button").disabled = true;
+          }
+          }
+
+
+          </script>
+
+
+{% else %}
+
+
+{% if Status == 'Pending' %}
+{% if Type == 'OFF' %}
+
+{% else %}
+
+<div class="wrapper">
+  <div class="form-container">
+
+
+
+    <div class="signature-area">
+      <h3>Sign Below</h3>
+      <canvas id="signature-pad" width="400" height="150"></canvas>
+      <div class="button-group">
+        <button class="clear-btn" onclick="clearCanvas()">Clear</button>
+        <button class="send-btn" onclick="sendSignature()">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const canvas = document.getElementById("signature-pad");
+  const ctx = canvas.getContext("2d");
+
+  let drawing = false;
+
+  canvas.addEventListener("mousedown", startDraw);
+  canvas.addEventListener("mouseup", endDraw);
+  canvas.addEventListener("mouseout", endDraw);
+  canvas.addEventListener("mousemove", draw);
+
+  canvas.addEventListener("touchstart", startDraw, { passive: false });
+  canvas.addEventListener("touchend", endDraw, { passive: false });
+  canvas.addEventListener("touchcancel", endDraw, { passive: false });
+  canvas.addEventListener("touchmove", draw, { passive: false });
+
+  function getMousePos(evt) {
+    const rect = canvas.getBoundingClientRect();
+    if (evt.touches && evt.touches.length > 0) {
+      return {
+        x: evt.touches[0].clientX - rect.left,
+        y: evt.touches[0].clientY - rect.top
+      };
+    } else if (evt.changedTouches && evt.changedTouches.length > 0) {
+      return {
+        x: evt.changedTouches[0].clientX - rect.left,
+        y: evt.changedTouches[0].clientY - rect.top
+      };
+    } else {
+      return {
+        x: evt.clientX - rect.left,
+        y: evt.clientY - rect.top
+      };
+    }
+  }
+
+  function startDraw(evt) {
+    evt.preventDefault();
+    drawing = true;
+    const pos = getMousePos(evt);
+    ctx.beginPath();
+    ctx.moveTo(pos.x, pos.y);
+  }
+
+  function draw(evt) {
+    if (!drawing) return;
+    evt.preventDefault();
+    const pos = getMousePos(evt);
+    ctx.lineTo(pos.x, pos.y);
+    ctx.strokeStyle = "#000";
+    ctx.lineWidth = 0.5; // More visible line
+    ctx.lineCap = "round";
+    ctx.lineJoin = "round";
+    ctx.stroke();
+  }
+
+  function endDraw(evt) {
+    if (!drawing) return;
+    evt.preventDefault();
+    drawing = false;
+    ctx.closePath();
+  }
+
+  function clearCanvas() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+
+  function sendSignature() {
+    canvas.toBlob(function(blob) {
+      const formData = new FormData();
+      formData.append("signature", blob, "signature.png");
+      formData.append("id", "{{User.id}}");
+
+      fetch("{% url 'sign_file' Main %}", {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'X-CSRFToken': csrftoken,
+          'Accept': 'application/json, text/plain, */*'
+        },
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data === 'Ok') {
+          alert("Signature has been updated successfully!");
+          location.reload();
+        } else {
+          alert("An error occurred while updating the signature.");
+        }
+      })
+      .catch(error => {
+        console.error("Upload failed:", error);
+        alert("Upload failed.");
+      });
+    });
+  }
+</script>
+{% endif %}
+{% else %}
+<button onclick="window.print()">Print</button>
+{% endif %}
+{% endif %}
+</body>
+</html>
+<style>
+
+ html {
+  font-size: 12px; /* or whatever size you prefer */
+}
+
+
+</style>

@@ -1,0 +1,580 @@
+
+{% load static %}
+<link rel="stylesheet" href="{% get_static_prefix %}New/assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
+<style>
+  .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  }
+  .upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0;
+  }
+  </style>
+{% include "New/Extra/header.html" %}
+          <!--  Header End -->
+          <div class="card shadow-none position-relative overflow-hidden mb-4">
+            <div class="card-body d-flex align-items-center justify-content-between p-4">
+              <h4 class="card-title mb-0">Agent Profile</h4>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item">
+                    <a class="text-muted text-decoration-none" href="index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">Profile</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+
+            <!-- start Zero Configuration -->
+            <div class="card">
+              <div class="card-body">
+
+
+                <div class="row" >
+                  <div class="col-xl-2 col-xxl-12 col-sm-12"  ></div>
+        <div class="col-xl-8 col-xxl-12 col-sm-12" >
+                      <div class="card"   >
+                          <div class="card-header">
+              <h5 class="card-title">Update Interviewer Infomation</h5>
+            </div>
+            <div class="card-body" >
+                              <form action="" method="post" enctype="multipart/form-data" >
+                                  <div style="padding-top: 20px;"></div>
+
+                                              <div style="text-align: center;" id="fat" class="result">
+                                                  <img id="img" style="border-radius: 2px;width:200px;height:200px;object-fit: cover;" onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';" src="{% get_media_prefix %}Interview/{{Staff.id}}.jpg?{{Rand}}">
+
+                                                </div>
+
+
+                                                  {% csrf_token %}
+                                  <div style="text-align: center;" class="box">
+                                      <div style="padding-top: 20px;"></div>
+                                      <div class="upload-btn-wrapper">
+                                    <button  class="btn btn-light btn-block">Select image</button>
+
+                                    <input  class="mdc-text-field__input"   id="file-input" style="width: 100%;" type="file" name="New_Img" accept="image/*" />
+                                    </div>
+
+
+                                  </div>
+
+                                  <div class="col-lg-12 col-md-6 col-sm-12" style="padding-top: 30px;">
+                                    <div class="form-group">
+                                      <h4 class="">Interviewer Profile And Bio</h4>
+
+                                    </div>
+                                  </div>
+
+                <div class="row col-lg-12 col-md-12 col-sm-12"  >
+                  <div  class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">Full Name</label>
+                      <input type="text" name="Full_Name" value="{{Staff.Name}}" required  class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">Mobile Number</label>
+                      <input  name="Contact" value="{{Staff.Contact}}" required class="form-control" >
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="form-group">
+                       <label class="form-label">Address</label>
+                      <input  name="Location" value="{{Staff.Location}}" required class="form-control" >
+                    </div>
+                  </div>
+
+
+
+
+
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">Email Address</label>
+                      <input type="email" name="Email" value="{{Staff.Email}}" required class="form-control">
+                    </div>
+                  </div>
+
+
+
+
+
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">Country Of Recidence</label>
+                      <select class="form-control" name="Country" required>
+                <option>{{Staff.Country}}</option>
+				<option>Afghanistan</option>
+				<option>Albania</option>
+				<option>Algeria</option>
+				<option>Andorra</option>
+				<option>Angola</option>
+				<option>Antigua and Barbuda</option>
+				<option>Argentina</option>
+				<option>Armenia</option>
+				<option>Australia</option>
+				<option>Austria</option>
+				<option>Azerbaijan</option>
+				<option>Bahamas</option>
+				<option>Bahrain</option>
+				<option>Bangladesh</option>
+				<option>Barbados</option>
+				<option>Belarus</option>
+				<option>Belgium</option>
+				<option>Belize</option>
+				<option>Benin</option>
+				<option>Bhutan</option>
+				<option>Bolivia</option>
+				<option>Bosnia and Herzegovina</option>
+				<option>Botswana</option>
+				<option>Brazil</option>
+				<option>Brunei</option>
+				<option>Bulgaria</option>
+				<option>Burkina Faso</option>
+				<option>Burundi</option>
+				<option>Cambodia</option>
+				<option>Cameroon</option>
+				<option>Canada</option>
+				<option>Cape Verde</option>
+				<option>Central African Republic</option>
+				<option>Chad</option>
+				<option>Chile</option>
+				<option>China</option>
+				<option>Colombia</option>
+				<option>Comoros</option>
+				<option>Congo (Brazzaville)</option>
+				<option>Congo (Kinshasa)</option>
+				<option>Costa Rica</option>
+				<option>Croatia</option>
+				<option>Cuba</option>
+				<option>Cyprus</option>
+				<option>Czech Republic</option>
+				<option>Denmark</option>
+				<option>Djibouti</option>
+				<option>Dominica</option>
+				<option>Dominican Republic</option>
+				<option>East Timor</option>
+				<option>Ecuador</option>
+				<option>Egypt</option>
+				<option>El Salvador</option>
+				<option>Equatorial Guinea</option>
+				<option>Eritrea</option>
+				<option>Estonia</option>
+				<option>Eswatini</option>
+				<option>Ethiopia</option>
+				<option>Fiji</option>
+				<option>Finland</option>
+				<option>France</option>
+				<option>Gabon</option>
+				<option>Gambia</option>
+				<option>Georgia</option>
+				<option>Germany</option>
+				<option>Ghana</option>
+				<option>Greece</option>
+				<option>Grenada</option>
+				<option>Guatemala</option>
+				<option>Guinea</option>
+				<option>Guinea-Bissau</option>
+				<option>Guyana</option>
+				<option>Haiti</option>
+				<option>Honduras</option>
+				<option>Hungary</option>
+				<option>Iceland</option>
+				<option>India</option>
+				<option>Indonesia</option>
+				<option>Iran</option>
+				<option>Iraq</option>
+		<option>Ireland</option>
+		<option>Israel</option>
+		<option>Italy</option>
+		<option>Ivory Coast</option>
+		<option>Jamaica</option>
+		<option>Japan</option>
+		<option>Jordan</option>
+		<option>Kazakhstan</option>
+		<option>Kenya</option>
+		<option>Kiribati</option>
+		<option>Korea, North</option>
+		<option>Korea, South</option>
+		<option>Kosovo</option>
+		<option>Kuwait</option>
+		<option>Kyrgyzstan</option>
+		<option>Laos</option>
+		<option>Latvia</option>
+		<option>Lebanon</option>
+		<option>Lesotho</option>
+		<option>Liberia</option>
+		<option>Libya</option>
+		<option>Liechtenstein</option>
+		<option>Lithuania</option>
+		<option>Luxembourg</option>
+		<option>Madagascar</option>
+		<option>Malawi</option>
+		<option>Malaysia</option>
+		<option>Maldives</option>
+		<option>Mali</option>
+		<option>Malta</option>
+		<option>Marshall Islands</option>
+		<option>Mauritania</option>
+		<option>Mauritius</option>
+		<option>Mexico</option>
+		<option>Micronesia</option>
+		<option>Moldova</option>
+		<option>Monaco</option>
+		<option>Mongolia</option>
+		<option>Montenegro</option>
+		<option>Morocco</option>
+		<option>Mozambique</option>
+		<option>Myanmar</option>
+		<option>Namibia</option>
+		<option>Nauru</option>
+		<option>Nepal</option>
+		<option>Netherlands</option>
+		<option>New Zealand</option>
+		<option>Nicaragua</option>
+		<option>Niger</option>
+		<option>Nigeria</option>
+		<option>North Macedonia</option>
+		<option>Norway</option>
+		<option>Oman</option>
+		<option>Pakistan</option>
+		<option>Palau</option>
+		<option>Palestinian Territories</option>
+		<option>Panama</option>
+		<option>Papua New Guinea</option>
+		<option>Paraguay</option>
+		<option>Peru</option>
+		<option>Philippines</option>
+		<option>Poland</option>
+		<option>Portugal</option>
+		<option>Qatar</option>
+		<option>Romania</option>
+		<option>Russia</option>
+		<option>Rwanda</option>
+		<option>Saint Kitts and Nevis</option>
+		<option>Saint Lucia</option>
+		<option>Saint Vincent and the Grenadines</option>
+		<option>Samoa</option>
+		<option>San Marino</option>
+		<option>Sao Tome and Principe</option>
+		<option>Saudi Arabia</option>
+		<option>Senegal</option>
+		<option>Serbia</option>
+		<option>Seychelles</option>
+		<option>Sierra Leone</option>
+		<option>Singapore</option>
+		<option>Slovakia</option>
+		<option>Slovenia</option>
+		<option>Solomon Islands</option>
+		<option>Somalia</option>
+		<option>South Africa</option>
+		<option>South Sudan</option>
+		<option>Spain</option>
+		<option>Sri Lanka</option>
+		<option>Sudan</option>
+		<option>Suriname</option>
+		<option>Sweden</option>
+		<option>Switzerland</option>
+		<option>Syria</option>
+		<option>Taiwan</option>
+		<option>Tajikistan</option>
+		<option>Tanzania</option>
+		<option>Thailand</option>
+		<option>Togo</option>
+		<option>Tonga</option>
+		<option>Trinidad and Tobago</option>
+		<option>Tunisia</option>
+		<option>Turkey</option>
+		<option>Turkmenistan</option>
+		<option>Tuvalu</option>
+		<option>Uganda</option>
+		<option>Ukraine</option>
+		<option>United Arab Emirates</option>
+		<option>United Kingdom</option>
+		<option>United States</option>
+		<option>Uruguay</option>
+		<option>Uzbekistan</option>
+		<option>Vanuatu</option>
+		<option>Vatican City</option>
+		<option>Venezuela</option>
+		<option>Vietnam</option>
+		<option>Yemen</option>
+		<option>Zambia</option>
+		<option>Zimbabwe</option>
+
+										</select>
+                    </div>
+                  </div>
+
+
+
+
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="form-group">
+                       <label class="form-label">Password</label>
+                      <input  name="Password" value="{{Staff.Password}}" required class="form-control" >
+                    </div>
+                  </div>
+    </div>
+
+                  <div class="col-lg-12 col-md-12 col-sm-12" style="padding-top: 30px;padding-bottom: 30px;text-align: center;">
+                    <button type="submit" class="btn btn-primary">Update Info</button>
+
+                  </div>
+                </div>
+              </form>
+      </div>
+          </div>
+
+            </div>
+
+
+
+
+              </div>
+            </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+      {% include "New/Extra/footer.html" %}
+
+
+
+
+<div id="cover"  style="background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: hidden">
+	<div class="col-xl-4 col-lg-4 col-xxl-4 col-md-12" style="position: fixed;top:30%;left: 40%;">
+		<div class="card" id="cmain" style="visibility: hidden">
+			<div class="card-body text-center ai-icon  text-primary" >
+				<button style="position: absolute;right: 20px;" class="btn btn-sm btn-danger" onclick="Close()">x</button>
+				<svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+					<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" style="stroke-dasharray: 25, 45; stroke-dashoffset: 0;"></path>
+					<path d="M8,7A4,4 0,1,1 16,7A4,4 0,1,1 8,7" style="stroke-dasharray: 26, 46; stroke-dashoffset: 0;"></path>
+				</svg>
+				<h4 class="my-2" style="color: black;">Type "DELETE" in the form below to delete Bill.</h4>
+				<div class="form-group" >
+
+					<input type="text" id="pass2" class="form-control" style="text-align: center;" >
+				</div>
+				<button onclick="Delete()" id="si_button" class="btn my-2 btn-primary btn-lg px-4"><i class="fa fa-trash"></i> Delete</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+
+  // vars
+
+  upload = document.getElementById("file-input"),
+  upload1 = document.getElementById("file-input1"),
+  upload2 = document.getElementById("file-input2"),
+  upload3 = document.getElementById("file-input3"),
+  upload4 = document.getElementById("file-input4"),
+  upload5 = document.getElementById("file-input5"),
+  upload6 = document.getElementById("file-input6"),
+
+  upload7 = document.getElementById("file-input7"),
+  upload8 = document.getElementById("file-input8"),
+  upload9 = document.getElementById("file-input9"),
+  upload10 = document.getElementById("file-input10"),
+
+
+
+
+  // on change show image with crop options
+  upload.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload1.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img1');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload2.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img2');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload3.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img3');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload4.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img4');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload5.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img5');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload6.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img6');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+
+  upload7.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img7');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload8.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img8');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload9.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img9');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload10.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img10');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+  </script>

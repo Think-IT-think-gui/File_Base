@@ -1,0 +1,168 @@
+{% load static %}
+{% load static %}
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kingdom Dynasty</title>
+
+		<link rel="icon" sizes="192x192" href="{% get_static_prefix %}Pannel/img/touch-icon.png"/>
+		<link rel="apple-touch-icon" href="{% get_static_prefix %}Pannel/img/touch-icon-iphone.png"/>
+		<link rel="apple-touch-icon" sizes="76x76" href="{% get_static_prefix %}Pannel/img/touch-icon-ipad.png"/>
+		<link rel="apple-touch-icon" sizes="120x120" href="{% get_static_prefix %}Pannel/img/touch-icon-iphone-retina.png"/>
+		<link rel="apple-touch-icon" sizes="152x152" href="{% get_static_prefix %}Pannel/img/touch-icon-ipad-retina.png"/>
+
+		<link rel="shortcut icon" type="image/x-icon" href="{% get_static_prefix %}Pannel/img/favicon.ico"/>
+
+		<link rel="stylesheet" type="text/css" href="{% get_static_prefix %}Pannel/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="{% get_static_prefix %}Pannel/css/main.min.css">
+
+		<!-- Pixeden Icon Fonts -->
+		<link rel="stylesheet" type="text/css" href="{% get_static_prefix %}Pannel/css/pe-icon-7-filled.css">
+		<link rel="stylesheet" type="text/css" href="{% get_static_prefix %}Pannel/css/pe-icon-7-stroke.css">
+	</head>
+	<body>
+
+		<header class="top-bar">
+
+			<ul class="profile">
+				<li>
+					<a href="#" class="btn-circle no-circle">
+						<i class="pe-7f-back"></i>
+					</a>
+				</li>
+
+
+				<li class="mobile-nav">
+					<a href="#" onclick="return false;" class="btn-circle btn-sm">
+						<i class="pe-7f-menu"></i>
+					</a>
+				</li>
+			</ul>
+
+			<div class="main-search">
+				<input type="text" placeholder="Search ..." id="msearch">
+				<label for="msearch">
+					<i class="pe-7s-search"></i>
+				</label>
+				<button>
+					<i class="pe-7g-arrow-circled pe-rotate-90"></i>
+				</button>
+			</div>
+
+			<div class="main-brand">
+				<div class="main-brand__container">
+					<div class="main-logo"><img src="{% get_static_prefix %}Pannel/img/logo.png?r"></div>
+					<input type="checkbox" id="s-logo" class="sw"/>
+					<label class="swtc swtc--dark swtc--header" for="s-logo"></label>
+				</div>
+			</div>
+
+		</header>
+		<!-- /top-bar -->
+
+		<div class="wrapper">
+
+			<aside class="sidebar">
+
+				<div class="user-info">
+					<figure class="rounded-image pg" style="padding-top: 10px;">
+						<img src="{% get_media_prefix %}Profiles/{{User.id}}.jpg?{{Rand}}" style="width: 150px;height: 150px;border-radius: 100px;object-fit: cover;" alt="user">
+					</figure>
+					<h2 class="user-info__name">{{User.Full_Name}}</h2>
+					<h3 class="user-info__role">Client Account</h3>
+					<ul class="user-info__numbers">
+						<li>
+
+						</li>
+						<li>
+
+						</li>
+						<li>
+
+						</li>
+					</ul>
+				</div>
+				<!-- /user-info -->
+
+				<ul class="main-nav">
+					<li class="main-nav--active">
+						<a class="main-nav__link" href="{% url "client" %}">
+							<span class="main-nav__icon">
+								<i class="pe-7f-home"></i>
+							</span>
+							Dashboard
+						</a>
+					</li>
+
+					<li class="main-nav--collapsible">
+						<a class="main-nav__link" href="#" onclick="return false;">
+							<span class="main-nav__icon">
+								<i class="pe-7f-monitor"></i>
+							</span>
+							Payment Info<span class="badge badge--line badge--blue">2</span>
+						</a>
+						<ul class="main-nav__submenu">
+							<li>
+								<a href="{% url "client_payment" %}">
+									<span>Make Payment</span></a>
+							</li>
+							<li>
+								<a href="{% url "user_payment_list" %}">
+									<span>Payment Logs</span></a>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						<a class="main-nav__link" href="{% url "client_profile" %}">
+							<span class="main-nav__icon">
+								<i class="pe-7f-graph3"></i>
+							</span>
+							My Info
+						</a>
+					</li>
+
+					<li>
+						<a class="main-nav__link" href="{% url "messages" %}">
+							<span class="main-nav__icon">
+								<i class="pe-7f-chat"></i>
+							</span>
+							My Messages
+						</a>
+					</li>
+
+					<li>
+						<a class="main-nav__link" href="{% url 'list_sign_file' %}">
+							<span class="main-nav__icon">
+								<i class="pe-7f-chat"></i>
+							</span>
+							My Documments
+						</a>
+					</li>
+
+	<li>
+						<a class="main-nav__link" href="{% url "site_blog" %}">
+							<span class="main-nav__icon">
+								<i class="pe-7f-bell"></i>
+							</span>
+							Blogs & News
+						</a>
+					</li>
+
+
+
+					 <li>
+						<a class="main-nav__link" href="{% url "client_logout" %}">
+							<span class="main-nav__icon">
+								<i class="pe-7f-user"></i>
+							</span>
+							Logout
+						</a>
+					</li>
+				</ul>
+				<!-- /main-nav -->
+
+			</aside>
+			<!-- /sidebar -->

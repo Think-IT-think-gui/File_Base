@@ -1,0 +1,356 @@
+{% load static %}
+<link rel="stylesheet" href="{% get_static_prefix %}Home/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css">
+<link rel="stylesheet" href="{% get_static_prefix %}Home/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="{% get_static_prefix %}Home/assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="{% get_static_prefix %}Home/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css">
+<link rel="stylesheet" href="{% get_static_prefix %}Home/assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css">
+<link rel="stylesheet" href="{% get_static_prefix %}Home/assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css">
+<link rel="stylesheet" href="{% get_static_prefix %}Home/assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css">
+<link rel="stylesheet" href="{% get_static_prefix %}Home/assets/vendor/libs/select2/select2.css" />
+<link rel="stylesheet" href="{% get_static_prefix %}Home/assets/vendor/libs/@form-validation/umd/styles/index.min.css" />
+<style>
+  .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  }
+  .upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0;
+  }
+  </style>
+{% include "New/Extra/header.html" %}
+
+      <!-- Content wrapper -->
+      <div class="content-wrapper">
+
+        <!-- Content -->
+
+          <div class="container-xxl flex-grow-1 container-p-y">
+
+
+<h4 class="py-3 mb-4">
+
+</h4>
+<div class="row">
+  <!-- User Sidebar -->
+  <div class="col-xl-4 col-lg-5 col-md-5 order-1 order-md-0">
+    <!-- User Card -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="user-avatar-section">
+          <div class=" d-flex align-items-center flex-column">
+              {% if Cleint.Type == "New" %}
+            <img class="img-fluid rounded mb-3 mt-4" src="{% get_media_prefix %}Booking/{{Client.id}}.jpg?{{Rand}}" height="120" width="120" alt="User avatar" />
+               {% else %}
+                     <img class="img-fluid rounded mb-3 mt-4" src="{% get_media_prefix %}Profiles/{{Client.Type}}.jpg?{{Rand}}" height="120" width="120" alt="User avatar" />
+               {% endif %}
+
+            <div class="user-info text-center">
+              <h4>{{Client.Name}}</h4>
+              <span class="badge bg-label-danger rounded-pill">Visiting Client</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between flex-wrap my-2 py-3">
+          <div class="d-flex align-items-center me-4 mt-3 gap-3">
+            <div class="avatar">
+              <div class="avatar-initial bg-label-primary rounded">
+                <i class="mdi mdi-clock-time-eight-outline mdi-24px"></i>
+              </div>
+            </div>
+            <div>
+              <h6 class="mb-0">Time Scheduled</h6>
+              <span>{{Client.Schedule_Time}}</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mt-3 gap-3">
+            <div class="avatar">
+              <div class="avatar-initial bg-label-primary rounded">
+                <i class="mdi mdi-calendar-badge-outline mdi-24px"></i>
+              </div>
+            </div>
+            <div>
+              <h6 class="mb-0">Date Scheduled</h6>
+              <span>{{Client.Schedule_Date}}</span>
+            </div>
+          </div>
+        </div>
+        <h5 class="pb-3 border-bottom mb-3">Details</h5>
+        <div class="info-container">
+          <ul class="list-unstyled mb-4">
+            <li class="mb-3">
+              <span class="fw-medium text-heading me-2">Full Name:</span>
+              <span>{{Client.Name}}</span>
+            </li>
+            <li class="mb-3">
+              <span class="fw-medium text-heading me-2">Gender:</span>
+              <span>{{Client.Gender}}</span>
+            </li>
+            <li class="mb-3">
+              <span class="fw-medium text-heading me-2">Location:</span>
+              <span class="badge bg-label-success rounded-pill">{{Client.Location}}</span>
+            </li>
+
+            <li class="mb-3">
+              <span class="fw-medium text-heading me-2">Contact:</span>
+              <span>{{Client.Contact}}</span>
+            </li>
+
+
+          </ul>
+          <div class="d-flex justify-content-center">
+
+            <a href="javascript:;" class="btn btn-outline-danger suspend-user">{{Client.Remark}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /User Card -->
+    <!-- Plan Card -->
+
+    <!-- /Plan Card -->
+  </div>
+  <!--/ User Sidebar -->
+
+
+  <!-- User Content -->
+  <div class="col-xl-8 col-lg-7 col-md-7 order-0 order-md-1">
+    <!-- User Tabs -->
+
+    <!--/ User Tabs -->
+
+    <!-- Change Password -->
+    <div class="card mb-4">
+      <h5 class="card-header">About Schedule</h5>
+      <div class="card-body">
+        <form id="formChangePassword" method="POST" action="">
+          {% csrf_token %}
+          Meeting Topic:
+          <div class="card-header">
+             <h5 class="mb-0">{{Client.Topic}}</h5>
+
+          </div>
+          <div class="alert alert-warning" role="alert">
+
+            <span>{{Client.About}}</span>
+          </div>
+          <div class="row">
+            <div class="form-floating form-floating-outline mb-4">
+              <textarea class="form-control h-px-100" id="exampleFormControlTextarea1" required name="Details" placeholder="Comments here...">{{Client.Details}}</textarea>
+              <label for="exampleFormControlTextarea1">Meeting Remark</label>
+            </div>
+            <div class="mb-3 col-12 col-sm-6 form-password-toggle">
+              <div class="input-group input-group-merge">
+                <div class="form-floating form-floating-outline">
+                  <select class="form-control" required id="newPassword" name="Status" >
+                    <option>Pending</option>
+                    <option>On Hold</option>
+                    <option>Rescheduled</option>
+                    <option>Canciled</option>
+                    <option>Completed</option>
+
+
+                  </select>
+                  <label for="newPassword">Meeting Status</label>
+                </div>
+                <span class="input-group-text cursor-pointer"><i class="mdi mdi-calendar"></i></span>
+              </div>
+            </div>
+
+
+            <div>
+              <button type="submit" class="btn btn-primary me-2">Update Info</button>
+            </div>
+
+              <div style="padding-top:20px" class='col-6'>
+                            <a data-bs-toggle="modal" data-bs-target="#top_up" class="w-100 btn btn-outline-success d-flex align-items-center" >
+                            <span>Invite Client <i class="mdi  mdi-eye-arrow-right-outline lh-1 scaleX-n1-rtl"></i></span>
+                          </a>
+                          </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--/ Change Password -->
+
+    <!-- Two-steps verification -->
+
+    <!--/ Two-steps verification -->
+
+    <!-- Recent Devices -->
+
+    <!--/ Recent Devices -->
+  </div>
+  <!--/ User Content -->
+</div>
+
+
+    <div class="modal calendar-modal fade" id="top_up" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content n0-bg p-4 p-md-6 p-xxl-8">
+
+                <div class="modal-body">
+                    <form  class="d-flex flex-column gap-5 gap-lg-6">
+                        <div class="single-input">
+
+                            <div class="spend bg1-opty d-flex p-2 cus-rounded-1 cus-border">
+                                <select id="locator" class="form-control form-control-lg">
+
+
+                                    <option value='Front Desk'>Front Desk</option>
+                                    <option value='Welcome Room'>Welcome Room</option>
+                        <option value='Briefing Room'>Briefing Room</option>
+
+                        <option value='Legal Room'>Legal Room</option>
+                        <option value='Interview Room'>Interview Room</option>
+                        <option value='Finance Office'>Finance Office</option>
+                        <option value='Image Studio'>Image Studio</option>
+                        <option value='Agent Room'>Agent Room</option>
+                        <option value='Agent Desk 1'>Agent Desk 1</option>
+                        <option value='Agent Desk 2'>Agent Desk 2</option>
+                        <option value='Agent Desk 3'>Agent Desk 3</option>
+                        <option value='Agent Desk 4'>Agent Desk 4</option>
+                        <option value='Agent Desk 5'>Agent Desk 5</option>
+                        <option value='Agent Desk 6'>Agent Desk 6</option>
+                        <option value='Agent Desk 7'>Agent Desk 7</option>
+                        <option value='Agent Desk 8'>Agent Desk 8</option>
+                        <option value='Agent Desk 9'>Agent Desk 9</option>
+                        <option value='Agent Desk 10'>Agent Desk 10</option>
+                        <option value='Agent Desk 11'>Agent Desk 11</option>
+                        <option value='Agent Desk 12'>Agent Desk 12</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <button type="button" onclick="call()" data-bs-dismiss="modal" aria-label="Close" class="btn btn-outline-success mb-0">Invite</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!--/ Edit User Modal -->
+
+<!-- Enable OTP Modal -->
+<div class="modal fade" id="enableOTP" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-simple modal-enable-otp modal-dialog-centered">
+    <div class="modal-content p-3 p-md-5">
+      <div class="modal-body p-md-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="text-center mb-4">
+          <h3 class="mb-2 pb-1">Enable One Time Password</h3>
+          <p>Verify Your Mobile Number for SMS</p>
+        </div>
+        <p>Enter your mobile phone number with country code and we will send you a verification code.</p>
+        <form id="enableOTPForm" class="row g-3" onsubmit="return false">
+          <div class="col-12">
+            <div class="input-group input-group-merge">
+              <span class="input-group-text">US (+1)</span>
+              <div class="form-floating form-floating-outline">
+                <input type="text" id="modalEnableOTPPhone" name="modalEnableOTPPhone" class="form-control phone-number-otp-mask" placeholder="202 555 0111" />
+                <label for="modalEnableOTPPhone">Phone Number</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary me-sm-3 me-1">Submit</button>
+            <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/ Enable OTP Modal -->
+
+<!-- Upgrade Plan -->
+<div class="modal fade" id="upgradePlanModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-simple modal-upgrade-plan">
+    <div class="modal-content p-3 p-md-5">
+      <div class="modal-body pt-md-0 px-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="text-center mb-4">
+          <h3 class="mb-2 pb-1">Upgrade Plan</h3>
+          <p>Choose the best plan for user.</p>
+        </div>
+        <form id="upgradePlanForm" class="row g-3 d-flex align-items-center" onsubmit="return false">
+          <div class="col-sm-9">
+            <div class="form-floating form-floating-outline">
+              <select id="choosePlan" name="choosePlan" class="form-select" aria-label="Choose Plan">
+                <option selected>Choose Plan</option>
+                <option value="standard">Standard - $99/month</option>
+                <option value="exclusive">Exclusive - $249/month</option>
+                <option value="Enterprise">Enterprise - $499/month</option>
+              </select>
+              <label for="choosePlan">Choose Plan</label>
+            </div>
+          </div>
+          <div class="col-sm-3 d-flex align-items-end">
+            <button type="submit" class="btn btn-primary h-px-50">Upgrade</button>
+          </div>
+        </form>
+      </div>
+      <hr class="mx-md-n5 mx-n3">
+      <div class="modal-body pb-md-0 px-0">
+        <h6 class="mb-0">User current plan is standard plan</h6>
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+          <div class="d-flex justify-content-center me-2 mt-3">
+            <sup class="h5 pricing-currency pt-1 mt-3 mb-0 me-1 text-primary">$</sup>
+            <h1 class="display-3 mb-0 text-primary">99</h1>
+            <sub class="h5 pricing-duration mt-auto mb-2">/month</sub>
+          </div>
+          <button class="btn btn-outline-danger cancel-subscription mt-3">Cancel Subscription</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/ Upgrade Plan -->
+
+<!-- /Modals -->
+          </div>
+          <!-- / Content -->
+
+<script>
+
+
+          function call(){
+    var state = document.getElementById("locator")
+data = JSON.stringify({
+id:'{{Client.User}}',
+Location:state.value,
+Type:"Old"
+})
+fetch("{% url 'preview_pannel' %}", {
+method: 'POST',
+body: data,
+headers: { 'X-CSRFToken': '{{csrftoken}}','Accept': 'application/json, text/plain, */*',
+  'Content-Type': 'application/json',
+  },
+})
+.then(response => response.json())
+.then(data => {
+if (data === 'Ok'){
+  alert("Visitor prompted successfully!")
+Close()
+}else{
+  alert("Please an error occured when prompting visitor!")
+}
+});}
+
+
+
+</script>
+
+          {% include "New/Extra/footer.html" %}

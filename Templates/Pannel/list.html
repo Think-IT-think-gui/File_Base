@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+{% load static %}
+  {% include "Pannel/Extra.html" %}
+
+			<section class="content">
+				<header class="main-header">
+					<div class="main-header__nav">
+						<h1 class="main-header__title">
+							<i class="pe-7f-home"></i>
+							<span>Payment Logs</span>
+						</h1>
+						<ul class="main-header__breadcrumb">
+					
+						</ul>
+					</div>
+
+					<div class="main-header__date">
+						<input type="radio" id="radio_date_1" name="tab-radio" value="today" checked>
+						<!--
+					-->
+					
+					<input type="radio" id="radio_date_2" name="tab-radio" value="yesterday">
+						<!--
+					-->
+					
+						<!--
+					-->
+						<button>
+							<i class="pe-7f-date"></i>
+							<span>{{Date}}</span>
+						</button>
+					</div>
+				</header>
+				<!-- /main-header -->
+
+				
+				<!-- row -->
+
+				
+				<!-- row -->
+
+				<div class="row">
+
+					<div class="col-md-12">
+						<article class="widget">
+							<header class="widget__header">
+								<div class="widget__title">
+									<i class="pe-7s-display2"></i><h3>Payment Table</h3>
+								</div>
+								<div class="widget__config">
+									<a href="#"><i class="pe-7f-refresh"></i></a>
+									<a href="#"><i class="pe-7s-close"></i></a>
+								</div>
+							</header>
+							
+							<div class="widget__content filled table-responsive pad20">
+								
+										
+								<table class="table  media-table">
+							  	<thead>
+							  		<tr>
+							  			<th>Amount</th>
+							  			<th class="text-center" width="100">Time</th>
+							  			<th class="text-center">Date</th>
+							  			<th class="text-center">Status</th>
+							  		</tr>
+							  	</thead>
+							  	<tbody>
+
+							  	{% for i in Funds %}
+							  		
+							  		<tr>
+							  			<td class="text-center">
+											₵ {{i.Amount}}
+							  			</td>
+							  			<td>
+							  				{{i.time}}
+							  			</td>
+							  			<td>
+							  				{{i.date}}
+							  			</td>
+							  			<td>
+							  				<button class="btn blue fixed">{{i.Status}}</button>
+							  			</td>
+							  		</tr>
+
+                                {% endfor %}
+							  	
+
+							  	</tbody>
+								</table>
+								
+								
+							</div> <!-- /widget__content -->
+
+						</article><!-- /widget -->
+					</div>
+				</div>
+				<!-- /row -->
+
+				
+				<!-- /row -->
+
+				
+				<!-- /row -->
+
+				
+				<!-- /row -->
+
+				<footer class="footer-brand">
+					<img src="img/logo_trim.png">
+					<p>© 2023 Kingdom Dynasty. All rights reserved</p>
+				</footer>
+
+			</section>
+			<!-- /content -->
+
+		</div>
+
+		<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/main.js"></script>
+		<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/amcharts/amcharts.js"></script>
+		<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/amcharts/serial.js"></script>
+		<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/amcharts/pie.js"></script>
+		<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/chart.js"></script>
+	</body>
+</html>

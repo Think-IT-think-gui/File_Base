@@ -1,0 +1,310 @@
+
+
+{% load static %}
+
+
+<link id="style" href="{% get_static_prefix %}Main/build/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+<style>
+  .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  }
+  .upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0;
+  }
+  </style>
+<!-- APP CSS & APP SCSS -->
+<link rel="preload" as="style" href="{% get_static_prefix %}Main/build/assets/app-b1603905.css" /><link rel="preload" as="style" href="{% get_static_prefix %}Main/build/assets/app-27b4a2c7.css" /><link rel="stylesheet" href="{% get_static_prefix %}Main/build/assets/app-b1603905.css" /><link rel="stylesheet" href="{% get_static_prefix %}Main/build/assets/app-27b4a2c7.css" />
+{% include "New/Extra/header.html" %}
+          <!--  Header End -->
+          <div class="card shadow-none position-relative overflow-hidden mb-4">
+            <div class="card-body d-flex align-items-center justify-content-between p-4">
+              <h4 class="card-title mb-0">Account Logs</h4>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item">
+                    <a class="text-muted text-decoration-none" href="{% url 'admin_dashboard' %}">Home</a>
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">Account Logs</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+
+
+
+            <div class="row mb-4 g-4">
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="content-left">
+                        <h5 class="mb-1">{{Picked}}</h5>
+                        <small>Picked Up Calls</small>
+                      </div>
+                      <span class="badge bg-label-primary rounded-circle p-2">
+                        <i class="ti-check"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="content-left">
+                        <h5 class="mb-1">{{Next}}</h5>
+                        <small>Rescheduled Calls</small>
+                      </div>
+                      <span class="badge bg-label-success rounded-circle p-2">
+                        <i class="ti-reload"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="content-left">
+                        <h5 class="mb-1">{{Busy}}</h5>
+                        <small>Unavailable Calls</small>
+                      </div>
+                      <span class="badge bg-label-danger rounded-circle p-2">
+                        <i class="ti-close"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="content-left">
+                        <h5 class="mb-1">{{Answer}}</h5>
+                        <small>Uanswered Calls</small>
+                      </div>
+                      <span class="badge bg-label-danger rounded-circle p-2">
+                        <i class="ti-close"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="content-left">
+                        <h5 class="mb-1">{{Total}}</h5>
+                        <small>Total Calls</small>
+                      </div>
+                      <span class="badge bg-label-info rounded-circle p-2">
+                        <i class="mdi mdi-phone-log mdi-24px"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  <div class="row g-4 mb-4">
+            <div class="col-sm-6 col-xl-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="me-1">
+                      <p class="text-heading mb-2">Today's Call History</p>
+                      <div class="d-flex align-items-center">
+                        <h4 class="mb-2 me-1 display-6">{{Day}}</h4>
+
+                      </div>
+                      <p class="mb-0">A day's analytics</p>
+                    </div>
+                    <div class="avatar">
+                      <div class="avatar-initial bg-label-primary rounded">
+                        <div class="mdi mdi-account-outline mdi-24px"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="me-1">
+                      <p class="text-heading mb-2">Last week's History</p>
+                      <div class="d-flex align-items-center">
+                        <h4 class="mb-2 me-1 display-6"> {{Week}}</h4>
+
+                      </div>
+                      <p class="mb-0">7 days analytics</p>
+                    </div>
+                    <div class="avatar">
+                      <div class="avatar-initial bg-label-danger rounded">
+                        <div class="mdi mdi-account-plus-outline mdi-24px scaleX-n1"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="me-1">
+                      <p class="text-heading mb-2">Last Month Call History</p>
+                      <div class="d-flex align-items-center">
+                        <h4 class="mb-2 me-1 display-6">{{Month}}</h4>
+
+                      </div>
+                      <p class="mb-0">30 days analytics</p>
+                    </div>
+                    <div class="avatar">
+                      <div class="avatar-initial bg-label-success rounded">
+                        <div class="mdi mdi-account-check-outline mdi-24px"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="me-1">
+                      <p class="text-heading mb-2">Total Call History</p>
+                      <div class="d-flex align-items-center">
+                        <h4 class="mb-2 me-1 display-6"> {{Total}}</h4>
+
+                      </div>
+                      <p class="mb-0">Total analytics</p>
+                    </div>
+                    <div class="avatar">
+                      <div class="avatar-initial bg-label-warning rounded">
+                        <div class="mdi mdi-account-search mdi-24px"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+            <!-- Referral List Table -->
+            <div class="card shadow-none position-relative overflow-hidden mb-4">
+              <div class="card-body d-flex align-items-center justify-content-between p-4">
+                <h4 class="card-title mb-0">CRO List</h4>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item">
+                      <a class="text-muted text-decoration-none" href="{{admin_dashboard}}">Home</a>
+                    </li>
+                    <li class="breadcrumb-item" aria-current="page">CRO</li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+            <div class="row">
+
+             {% for i in Member %}
+              <div class="col-md-6 col-lg-4">
+                <div class="card overflow-hidden hover-img">
+                  <div class="position-relative">
+
+                    <a href="">
+
+
+                      <img src="{% get_media_prefix %}Admin/{{i.id}}.jpg?{{Rand}}" style="height:350px;object-fit:cover" class="card-img-top" alt="spike-img">
+                    </a>
+                    <span class="badge text-bg-light fs-2 lh-sm mb-9 me-9 py-1 px-2 fw-semibold position-absolute bottom-0 end-0">{{i.Contact}}</span>
+
+                  </div>
+                  <div class="card-body p-4">
+
+
+                    <a class="d-block my-4 fs-5 text-dark fw-semibold link-primary" href="">
+                      {{i.Full_Name}}</a>
+                    <div class="d-flex align-items-center gap-4">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="ti-email text-dark fs-5" style="padding-right:5px"></i>{{i.Email}}
+                      </div>
+
+
+
+                    </div>
+                    <div style="padding-top:10px">
+                      <a href="{% url 'view_cro_call_logs' i.id %}" class="btn bg-primary-subtle text-primary w-100 rounded-pill">View Account Logs</a>
+
+                    </div>
+
+
+
+                    <hr>
+                  </div>
+                </div>
+              </div>
+  {% endfor %}
+
+
+
+
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+
+
+        {% include "New/Extra/footer.html" %}
+
+
+
+        <!--Internal Echart Plugin -->
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/echart/echart.js"></script>
+
+        <!-- Internal index js -->
+        <link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/index-a335dc45.js" /><script type="module" src="{% get_static_prefix %}Main/build/assets/index-a335dc45.js"></script>
+        <!-- Select2 js -->
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/select2/js/select2.full.min.js"></script>
+
+        <!-- Data tables -->
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/dataTables.responsive.min.js"></script>
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
+
+
+            <!-- Switcher js -->
+            <link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/switcher-d57e6ced.js" /><script type="module" src="{% get_static_prefix %}Main/build/assets/switcher-d57e6ced.js"></script>
+            <!-- APP JS-->
+        <link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/app-2392f432.js" />
+        <link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/apexcharts.common-7928d148.js" />
+        <script type="module" src="{% get_static_prefix %}Main/build/assets/app-2392f432.js"></script>        <!-- END SCRIPTS -->
+
+            <!-- sticky js-->
+        <script src="{% get_static_prefix %}Main/build/assets/sticky.js"></script>

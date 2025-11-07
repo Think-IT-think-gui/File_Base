@@ -1,0 +1,461 @@
+
+
+{% load static %}
+
+
+<link id="style" href="{% get_static_prefix %}Main/build/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+<style>
+  .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  }
+  .upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0;
+  }
+  </style>
+<!-- APP CSS & APP SCSS -->
+<link rel="preload" as="style" href="{% get_static_prefix %}Main/build/assets/app-b1603905.css" /><link rel="preload" as="style" href="{% get_static_prefix %}Main/build/assets/app-27b4a2c7.css" /><link rel="stylesheet" href="{% get_static_prefix %}Main/build/assets/app-b1603905.css" /><link rel="stylesheet" href="{% get_static_prefix %}Main/build/assets/app-27b4a2c7.css" />
+{% include "New/Extra/header3.html" %}
+          <!--  Header End -->
+          <div class="card shadow-none position-relative overflow-hidden mb-4">
+            <div class="card-body d-flex align-items-center justify-content-between p-4">
+              <h4 class="card-title mb-0">User Call Logs</h4>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item">
+                    <a class="text-muted text-decoration-none" href="{% url 'admin_dashboard' %}">Home</a>
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">Call Logs</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+
+
+
+            <div class="row mb-4 g-4">
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="content-left">
+                        <h5 class="mb-1">{{Picked}}</h5>
+                        <small>Picked Up Calls</small>
+                      </div>
+                      <span class="badge bg-label-primary rounded-circle p-2">
+                        <i class="ti-check"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="content-left">
+                        <h5 class="mb-1">{{Next}}</h5>
+                        <small>Rescheduled Calls</small>
+                      </div>
+                      <span class="badge bg-label-success rounded-circle p-2">
+                        <i class="ti-reload"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="content-left">
+                        <h5 class="mb-1">{{Busy}}</h5>
+                        <small>Unavailable Calls</small>
+                      </div>
+                      <span class="badge bg-label-danger rounded-circle p-2">
+                        <i class="ti-close"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="content-left">
+                        <h5 class="mb-1">{{Answer}}</h5>
+                        <small>Uanswered Calls</small>
+                      </div>
+                      <span class="badge bg-label-danger rounded-circle p-2">
+                        <i class="ti-close"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="content-left">
+                        <h5 class="mb-1">{{Booked}}</h5>
+                        <small>Booked Calls</small>
+                      </div>
+                      <span class="badge bg-label-danger rounded-circle p-2">
+                        <i class="ti-close"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="content-left">
+                        <h5 class="mb-1">{{Total}}</h5>
+                        <small>Total Calls</small>
+                      </div>
+                      <span class="badge bg-label-info rounded-circle p-2">
+                        <i class="mdi mdi-phone-log mdi-24px"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <form class="row mb-4 g-4" action="" method="post" enctype="multipart/form-data">
+              {% csrf_token %}
+              <div class="col-lg-7">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="mb-1">Log A Call</h5>
+                    <p class="mb-4">Log your calls with the form below.</p>
+                    <div class="row">
+
+
+                      <div class="col-6 mb-4">
+                        <div class="form-floating form-floating-outline">
+                          <input type="datetime-local" id="modalRoleName" name="Start_Time" required class="form-control" placeholder="4" tabindex="-1" />
+                          <label for="modalRoleName">Call Comence Time/Date</label>
+                        </div>
+                      </div>
+
+                      <div class="col-6 mb-4">
+                        <div class="form-floating form-floating-outline">
+                          <input type="datetime-local" id="modalRoleName" name="End_Time" required class="form-control" placeholder="4" tabindex="-1" />
+                          <label for="modalRoleName">Call End Time/Date</label>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-4">
+                      <div class="form-floating form-floating-outline mb-4">
+                        <textarea class="form-control h-px-100" id="exampleFormControlTextarea1" name="About" placeholder="Comments here..."></textarea>
+                        <label for="exampleFormControlTextarea1"> Your Comments On this call..</label>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-5">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <form class="referral-form" onsubmit="return false">
+                      <div class="mb-4 mt-1">
+
+                        <div class="col-12">
+                          <div class="card">
+                            <h5 class="card-header">Audio Play Back</h5>
+                            <div class="card-body">
+                              <audio class="w-100" id="plyr-audio-player" volume="0.3" autoplay  controls>
+
+                              </audio>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row ">
+                                   <div style="text-align:center">
+                                    <div style="padding-top: 20px;"></div>
+                                    <div class="upload-btn-wrapper">
+                                    <button  class="btn btn-light btn-block btn rounded-pill btn-label-slack waves-effect"><span class="mdi mdi-book-music"></span> Select An Audio File</button>
+
+                                    <input  class="mdc-text-field__input"  id="file-input1" style="width: 100%;" type="file" name="Audio" accept="audio/*" />
+                                    </div>
+
+
+                                  </div>
+
+                        </div>
+                      </div>
+                      <div class="pt-3">
+                        <h5>Call Status</h5>
+                        <div class="row g-2">
+                          <div class="col-sm-9 col-lg-8">
+                            <div class="form-floating form-floating-outline me-3">
+                              <select  name="Status" required class="form-control"  tabindex="-1" >
+                              <option >Picked Up</option>
+
+                              <option >Rescheduled</option>
+                              <option>Unanswered</option></option>
+                              <option >Unavailable</option>
+                              <option >Booked</option>
+
+
+                              </select>
+                              <label class="mb-0" for="referralLink">Call Status</label>
+                            </div>
+                          </div>
+                          <div class="col-sm-3 col-lg-4 ps-1 ps-sm-0">
+                            <div class="d-flex gap-3">
+                              <button type="submit" class="btn bg-success-subtle text-success w-100 rounded-pill">Submit Log</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <!-- Referral List Table -->
+            <div class="row">
+              <div class="col-12 col-sm-12">
+                <div class="card ">
+                  <div class="card-header">
+                    <div class="card-title">Call Logs</div>
+
+                  </div>
+
+
+                  <div class="card-body example1-table">
+                    <div class="table-responsive">
+                      <table class="table table-hover table-bordered text-nowrap mb-0" id="example1">
+                        <thead>
+                          <tr>
+                            <th class="font-weight-normal">Start Time/Date</th>
+                            <th class="font-weight-normal">End Time/Date</th>
+                            <th class="font-weight-normal">Client Name</th>
+                            <th class="font-weight-normal">Client Gender</th>
+                            <th class="font-weight-normal">Client Contact</th>
+                            <th class="font-weight-normal">Client Location</th>
+                            <th class="font-weight-normal">Call Status</th>
+                            <th class="font-weight-normal">Comments</th>
+
+                            <th class="font-weight-normal">Action</th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+
+                          {% for i in Calls %}
+                          <tr id='{{i.id}}'>
+                            <td>{{i.Start_Time}}</td>
+                            <td>{{i.End_Time}}</td>
+                            <td><a>{{i.Name}}</a></td>
+                            <td><a>{{i.Gender}}</a></td>
+                            <td><a>{{i.Contact}}</a></td>
+                            <td><a>{{i.Location}}</a></td>
+                            <td><span
+                              class="badge badge-pill bg-primary-transparent tx-primary px-3 py-2 tx-11">{{i.Status}}</span>
+                           </td>
+                           <td>
+                            <button type="button" onclick="view_info({{i.id}})" class="btn bg-primary-subtle text-primary w-100 rounded-pill">View</button>
+                          </td>
+                          <input id="info{{i.id}}" type="hidden" value="{{i.About}}">
+                          {% if i.Type == "Text" %}
+                          <td>
+                            <button type="button" disabled class="btn rounded-pill btn-label-warning waves-effect">No Audio</button>
+                          </td>
+                          {% else %}
+                          <td>
+                            <button type="button" onclick="played({{i.id}})" class="btn bg-primary-subtle text-primary w-100 rounded-pill">Play Audio</button>
+                          </td>
+                          {% endif %}
+
+
+                          </tr>
+                          {% endfor %}
+
+
+
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+        </div>
+      </div>
+
+
+        {% include "New/Extra/footer.html" %}
+
+
+
+        <!--Internal Echart Plugin -->
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/echart/echart.js"></script>
+
+        <!-- Internal index js -->
+        <link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/index-a335dc45.js" /><script type="module" src="{% get_static_prefix %}Main/build/assets/index-a335dc45.js"></script>
+        <!-- Select2 js -->
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/select2/js/select2.full.min.js"></script>
+
+        <!-- Data tables -->
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/dataTables.responsive.min.js"></script>
+        <script src="{% get_static_prefix %}Main/build/assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
+
+
+            <!-- Switcher js -->
+            <link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/switcher-d57e6ced.js" /><script type="module" src="{% get_static_prefix %}Main/build/assets/switcher-d57e6ced.js"></script>
+            <!-- APP JS-->
+        <link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/app-2392f432.js" />
+        <link rel="modulepreload" href="{% get_static_prefix %}Main/build/assets/apexcharts.common-7928d148.js" />
+        <script type="module" src="{% get_static_prefix %}Main/build/assets/app-2392f432.js"></script>        <!-- END SCRIPTS -->
+
+            <!-- sticky js-->
+        <script src="{% get_static_prefix %}Main/build/assets/sticky.js"></script>
+
+
+<script>
+
+    function view_info(id){
+      alert(document.getElementById('info'+id).value)
+    }
+
+  // vars
+ function played(id){
+  var img = document.getElementById('plyr-audio-player');
+  img.src = '{% get_media_prefix %}Call_Logs/'+id+'.mp3'
+ }
+
+  upload1 = document.getElementById("file-input1"),
+
+  upload1.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+          var img = document.getElementById('plyr-audio-player');
+          img.src = e.target.result;
+
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  </script>
+
+
+
+  <div class="modal fade contentmodal" id="deleteModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content doctor-profile">
+            <div class="modal-header pb-0 border-bottom-0  justify-content-end">
+                <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><i class="feather-x-circle"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="delete-wrap text-center">
+                    <div class="del-icon"><i class="feather-x-circle"></i></div>
+                    <h4>Type "DELETE" in below to delete this.</h4>
+                    <div class="submit-section">
+                        <input id="pass2" class="form-control" type="text" id="test" style="text-align: center;">
+
+                    </div>
+                    <div style="padding-top: 20px;" class="submit-section">
+                        <button onclick="Delete()"  class="btn btn-danger me-2" id="si_button">Delete This</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <input type="hidden" value="" id='hold_id'>
+  <script>
+      function getCookie(name) {
+          let cookieValue = null;
+          if (document.cookie && document.cookie !== '') {
+              const cookies = document.cookie.split(';');
+              for (let i = 0; i < cookies.length; i++) {
+                  const cookie = cookies[i].trim();
+                  // Does this cookie string begin with the name we want?
+                  if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                      cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                      break;
+                  }
+              }
+          }
+          return cookieValue;
+          }
+
+          const csrftoken = getCookie('csrftoken');
+          console.log(csrftoken)
+  function setup(id){
+    document.getElementById('hold_id').value=id
+  }
+
+function Delete(){
+  var state = document.getElementById("hold_id")
+data = JSON.stringify({
+id:state.value,
+})
+fetch("", {
+method: 'DELETE',
+body: data,
+headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json',
+    },
+})
+.then(response => response.json())
+.then(data => {
+if (data === 'Ok'){
+    document.getElementById(state.value).remove()
+    state.value=""
+    document.getElementById("pass2").value=""
+    alert("Log has been deleted successfully!")
+Close()
+}else{
+    alert("Please an error occured when deleting Log!")
+
+}
+});}
+
+setInterval(load_all,1000);
+function load_all(){
+
+
+    var pass2 = document.getElementById("pass2").value
+if (pass2==="DELETE"){
+
+ document.getElementById("si_button").disabled = false;
+}else{
+ document.getElementById("si_button").disabled = true;
+}
+}
+
+  </script>

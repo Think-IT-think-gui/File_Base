@@ -1,0 +1,2538 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Administrateur</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/feather/feather.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="{% get_static_prefix %}Administrator/images/favicon.png" />
+  <style>
+    .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    }
+    .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0;
+    }
+    </style>
+
+</head>
+
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:{% get_static_prefix %}Administrator/partials/_navbar.html -->
+
+    {% include 'Administrator/header1.html'%}
+
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrpper">
+          <div class="container-fluid">
+
+            <div class="row page-titles mx-0">
+                <div class="col-sm-6 p-md-0" style="padding-top: 20px;">
+                    <div class="welcome-text">
+                        <h4></h4>
+                    </div>
+                </div>
+                <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+
+                </div>
+            </div>
+
+    <div class="row" >
+                <div class="col-xl-2 col-xxl-12 col-sm-12"  ></div>
+      <div class="col-xl-8 col-xxl-12 col-sm-12" >
+                    <div class="card"   >
+                        <div class="card-header">
+            <h5 class="card-title">Update User Infomation</h5>
+          </div>
+          <div class="card-body" >
+                            <form action="{% url 'manager_edit' Staff.id %}" method="post" enctype="multipart/form-data" >
+                                <div style="padding-top: 20px;"></div>
+
+                                            <div style="text-align: center;" id="fat" class="result">
+                                                <img id="img" style="border-radius: 2px;width:200px;height:200px;object-fit: cover;" src="{% get_media_prefix %}Profiles/{{Staff.id}}.jpg?{{Rand}}">
+
+                                              </div>
+
+
+                                                {% csrf_token %}
+                                <div style="text-align: center;" class="box">
+                                    <div style="padding-top: 20px;"></div>
+                                    <div class="upload-btn-wrapper">
+                                  <button  class="btn btn-light btn-block">Select image</button>
+
+                                  <input  class="mdc-text-field__input"  id="file-input" style="width: 100%;" type="file" name="New_Img" accept="image/*" />
+                                  </div>
+
+
+                                </div>
+
+                                <div class="col-lg-12 col-md-6 col-sm-12" style="padding-top: 30px;">
+                                  <div class="form-group">
+                                    <h4 class="">Applicant Profile And Bio</h4>
+
+                                  </div>
+                                </div>
+
+              <div class="row col-lg-12 col-md-12 col-sm-12"  >
+                <div  class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" name="Full_Name" value="{{Staff.Full_Name}}" required  class="form-control">
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Birth Date</label>
+                    <input type="date" name="Birth" value="{{Staff.Birth}}" required  class="form-control">
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Gender</label>
+                    <select type="tel" name="Gender"  required class="form-control">
+                      <option selected="" value="{{Staff.Gender}}">{{Staff.Gender}}</option>
+
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+
+
+                    </select>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Marital Status</label>
+                    <select type="tel" name="Marital"  required class="form-control">
+                      <option selected="" value="{{Staff.Marital}}">{{Staff.Marital}}</option>
+
+                      <option >Married</option>
+                      <option >Single</option>
+
+
+                    </select>
+                  </div>
+                </div>
+
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Mobile Number</label>
+                    <input  name="Contact" value="{{Staff.Contact}}" required class="form-control" >
+                  </div>
+                </div>
+
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Email Here</label>
+                    <input type="email" name="Email" value="{{Staff.Email}}" required class="form-control">
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">National Card ID </label>
+                    <input type="text" name="Card_Id" value="{{Staff.Card_Id}}" required class="form-control">
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Weight kg</label>
+                    <input type="number" step="0.1" name="Weight" value="{{Staff.Weight}}" required class="form-control">
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Height in ft</label>
+                    <input type="number" step="0.1" name="Height" value="{{Staff.Height}}" required class="form-control">
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Hair color</label>
+                    <input type="text" name="Hair" value="{{Staff.Hair}}" required class="form-control">
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Eye color</label>
+                    <input type="text" name="Eye" value="{{Staff.Eye}}" required class="form-control">
+                  </div>
+                </div>
+
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Location / Address Of Birth</label>
+                    <input type="text" name="Birth_Address" value="{{Staff.Birth_Address}}" required class="form-control">
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">City Of Birth</label>
+                    <select type="tel" name="Birth_City"  required class="form-control">
+                      <option selected="" value="{{Staff.Birth_City}}">{{Staff.Birth_City}}</option>
+                      <option value="accra">Accra</option>
+                      <option value="kumasi">Kumasi</option>
+                      <option value="tamale">Tamale</option>
+                      <option value="sekondi-takoradi">Sekondi-Takoradi</option>
+                      <option value="cape-coast">Cape Coast</option>
+                      <option value="tema">Tema</option>
+                      <option value="obuasi">Obuasi</option>
+                      <option value="sunyani">Sunyani</option>
+                      <option value="teshie">Teshie</option>
+                      <option value="ho">Ho</option>
+                      <option value="wa">Wa</option>
+                      <option value="koforidua">Koforidua</option>
+                      <option value="techiman">Techiman</option>
+                      <option value="nungua">Nungua</option>
+                      <option value="dome">Dome</option>
+                      <option value="lashibi">Lashibi</option>
+                      <option value="nsawam">Nsawam</option>
+                      <option value="winneba">Winneba</option>
+                      <option value="hohoe">Hohoe</option>
+                      <option value="yendi">Yendi</option>
+
+                    </select>
+                  </div>
+                </div>
+
+
+                <div  class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Country Of Birth</label>
+
+                    <select name="Country_Birth" required class="form-control">
+                      <option selected="">{{Staff.Country_Birth}}</option>
+
+        <option>Afghanistan</option>
+        <option>Albania</option>
+        <option>Algeria</option>
+        <option>Andorra</option>
+        <option>Angola</option>
+        <option>Antigua and Barbuda</option>
+        <option>Argentina</option>
+        <option>Armenia</option>
+        <option>Australia</option>
+        <option>Austria</option>
+        <option>Azerbaijan</option>
+        <option>Bahamas</option>
+        <option>Bahrain</option>
+        <option>Bangladesh</option>
+        <option>Barbados</option>
+        <option>Belarus</option>
+        <option>Belgium</option>
+        <option>Belize</option>
+        <option>Benin</option>
+        <option>Bhutan</option>
+        <option>Bolivia</option>
+        <option>Bosnia and Herzegovina</option>
+        <option>Botswana</option>
+        <option>Brazil</option>
+        <option>Brunei</option>
+        <option>Bulgaria</option>
+        <option>Burkina Faso</option>
+        <option>Burundi</option>
+        <option>Cambodia</option>
+        <option>Cameroon</option>
+        <option>Canada</option>
+        <option>Cape Verde</option>
+        <option>Central African Republic</option>
+        <option>Chad</option>
+        <option>Chile</option>
+        <option>China</option>
+        <option>Colombia</option>
+        <option>Comoros</option>
+        <option>Congo (Brazzaville)</option>
+        <option>Congo (Kinshasa)</option>
+        <option>Costa Rica</option>
+        <option>Croatia</option>
+        <option>Cuba</option>
+        <option>Cyprus</option>
+        <option>Czech Republic</option>
+        <option>Denmark</option>
+        <option>Djibouti</option>
+        <option>Dominica</option>
+        <option>Dominican Republic</option>
+        <option>East Timor</option>
+        <option>Ecuador</option>
+        <option>Egypt</option>
+        <option>El Salvador</option>
+        <option>Equatorial Guinea</option>
+        <option>Eritrea</option>
+        <option>Estonia</option>
+        <option>Eswatini</option>
+        <option>Ethiopia</option>
+        <option>Fiji</option>
+        <option>Finland</option>
+        <option>France</option>
+        <option>Gabon</option>
+        <option>Gambia</option>
+        <option>Georgia</option>
+        <option>Germany</option>
+        <option>Ghana</option>
+        <option>Greece</option>
+        <option>Grenada</option>
+        <option>Guatemala</option>
+        <option>Guinea</option>
+        <option>Guinea-Bissau</option>
+        <option>Guyana</option>
+        <option>Haiti</option>
+        <option>Honduras</option>
+        <option>Hungary</option>
+        <option>Iceland</option>
+        <option>India</option>
+        <option>Indonesia</option>
+        <option>Iran</option>
+        <option>Iraq</option>
+<option>Ireland</option>
+<option>Israel</option>
+<option>Italy</option>
+<option>Ivory Coast</option>
+<option>Jamaica</option>
+<option>Japan</option>
+<option>Jordan</option>
+<option>Kazakhstan</option>
+<option>Kenya</option>
+<option>Kiribati</option>
+<option>Korea, North</option>
+<option>Korea, South</option>
+<option>Kosovo</option>
+<option>Kuwait</option>
+<option>Kyrgyzstan</option>
+<option>Laos</option>
+<option>Latvia</option>
+<option>Lebanon</option>
+<option>Lesotho</option>
+<option>Liberia</option>
+<option>Libya</option>
+<option>Liechtenstein</option>
+<option>Lithuania</option>
+<option>Luxembourg</option>
+<option>Madagascar</option>
+<option>Malawi</option>
+<option>Malaysia</option>
+<option>Maldives</option>
+<option>Mali</option>
+<option>Malta</option>
+<option>Marshall Islands</option>
+<option>Mauritania</option>
+<option>Mauritius</option>
+<option>Mexico</option>
+<option>Micronesia</option>
+<option>Moldova</option>
+<option>Monaco</option>
+<option>Mongolia</option>
+<option>Montenegro</option>
+<option>Morocco</option>
+<option>Mozambique</option>
+<option>Myanmar</option>
+<option>Namibia</option>
+<option>Nauru</option>
+<option>Nepal</option>
+<option>Netherlands</option>
+<option>New Zealand</option>
+<option>Nicaragua</option>
+<option>Niger</option>
+<option>Nigeria</option>
+<option>North Macedonia</option>
+<option>Norway</option>
+<option>Oman</option>
+<option>Pakistan</option>
+<option>Palau</option>
+<option>Palestinian Territories</option>
+<option>Panama</option>
+<option>Papua New Guinea</option>
+<option>Paraguay</option>
+<option>Peru</option>
+<option>Philippines</option>
+<option>Poland</option>
+<option>Portugal</option>
+<option>Qatar</option>
+<option>Romania</option>
+<option>Russia</option>
+<option>Rwanda</option>
+<option>Saint Kitts and Nevis</option>
+<option>Saint Lucia</option>
+<option>Saint Vincent and the Grenadines</option>
+<option>Samoa</option>
+<option>San Marino</option>
+<option>Sao Tome and Principe</option>
+<option>Saudi Arabia</option>
+<option>Senegal</option>
+<option>Serbia</option>
+<option>Seychelles</option>
+<option>Sierra Leone</option>
+<option>Singapore</option>
+<option>Slovakia</option>
+<option>Slovenia</option>
+<option>Solomon Islands</option>
+<option>Somalia</option>
+<option>South Africa</option>
+<option>South Sudan</option>
+<option>Spain</option>
+<option>Sri Lanka</option>
+<option>Sudan</option>
+<option>Suriname</option>
+<option>Sweden</option>
+<option>Switzerland</option>
+<option>Syria</option>
+<option>Taiwan</option>
+<option>Tajikistan</option>
+<option>Tanzania</option>
+<option>Thailand</option>
+<option>Togo</option>
+<option>Tonga</option>
+<option>Trinidad and Tobago</option>
+<option>Tunisia</option>
+<option>Turkey</option>
+<option>Turkmenistan</option>
+<option>Tuvalu</option>
+<option>Uganda</option>
+<option>Ukraine</option>
+<option>United Arab Emirates</option>
+<option>United Kingdom</option>
+<option>United States</option>
+<option>Uruguay</option>
+<option>Uzbekistan</option>
+<option>Vanuatu</option>
+<option>Vatican City</option>
+<option>Venezuela</option>
+<option>Vietnam</option>
+<option>Yemen</option>
+<option>Zambia</option>
+<option>Zimbabwe</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Postal Code Of Birth Place</label>
+                    <input type="text" name="Postal_Code" value="{{Staff.Postal_Code}}" required class="form-control">
+                  </div>
+                </div>
+
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Location / Address Of Recedence</label>
+                    <input type="text" name="Address" value="{{Staff.Address}}" required class="form-control">
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">City Of Recedence</label>
+                    <select type="tel" name="City"  required class="form-control">
+                      <option selected="" value="{{Staff.City}}">{{Staff.City}}</option>
+                      <option value="accra">Accra</option>
+                      <option value="kumasi">Kumasi</option>
+                      <option value="tamale">Tamale</option>
+                      <option value="sekondi-takoradi">Sekondi-Takoradi</option>
+                      <option value="cape-coast">Cape Coast</option>
+                      <option value="tema">Tema</option>
+                      <option value="obuasi">Obuasi</option>
+                      <option value="sunyani">Sunyani</option>
+                      <option value="teshie">Teshie</option>
+                      <option value="ho">Ho</option>
+                      <option value="wa">Wa</option>
+                      <option value="koforidua">Koforidua</option>
+                      <option value="techiman">Techiman</option>
+                      <option value="nungua">Nungua</option>
+                      <option value="dome">Dome</option>
+                      <option value="lashibi">Lashibi</option>
+                      <option value="nsawam">Nsawam</option>
+                      <option value="winneba">Winneba</option>
+                      <option value="hohoe">Hohoe</option>
+                      <option value="yendi">Yendi</option>
+
+                    </select>
+                  </div>
+                </div>
+
+
+                <div  class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Country Of Recidence</label>
+
+                    <select name="Country_Recidence" required class="form-control">
+                      <option selected="">{{Staff.Country_Recidence}}</option>
+
+        <option>Afghanistan</option>
+        <option>Albania</option>
+        <option>Algeria</option>
+        <option>Andorra</option>
+        <option>Angola</option>
+        <option>Antigua and Barbuda</option>
+        <option>Argentina</option>
+        <option>Armenia</option>
+        <option>Australia</option>
+        <option>Austria</option>
+        <option>Azerbaijan</option>
+        <option>Bahamas</option>
+        <option>Bahrain</option>
+        <option>Bangladesh</option>
+        <option>Barbados</option>
+        <option>Belarus</option>
+        <option>Belgium</option>
+        <option>Belize</option>
+        <option>Benin</option>
+        <option>Bhutan</option>
+        <option>Bolivia</option>
+        <option>Bosnia and Herzegovina</option>
+        <option>Botswana</option>
+        <option>Brazil</option>
+        <option>Brunei</option>
+        <option>Bulgaria</option>
+        <option>Burkina Faso</option>
+        <option>Burundi</option>
+        <option>Cambodia</option>
+        <option>Cameroon</option>
+        <option>Canada</option>
+        <option>Cape Verde</option>
+        <option>Central African Republic</option>
+        <option>Chad</option>
+        <option>Chile</option>
+        <option>China</option>
+        <option>Colombia</option>
+        <option>Comoros</option>
+        <option>Congo (Brazzaville)</option>
+        <option>Congo (Kinshasa)</option>
+        <option>Costa Rica</option>
+        <option>Croatia</option>
+        <option>Cuba</option>
+        <option>Cyprus</option>
+        <option>Czech Republic</option>
+        <option>Denmark</option>
+        <option>Djibouti</option>
+        <option>Dominica</option>
+        <option>Dominican Republic</option>
+        <option>East Timor</option>
+        <option>Ecuador</option>
+        <option>Egypt</option>
+        <option>El Salvador</option>
+        <option>Equatorial Guinea</option>
+        <option>Eritrea</option>
+        <option>Estonia</option>
+        <option>Eswatini</option>
+        <option>Ethiopia</option>
+        <option>Fiji</option>
+        <option>Finland</option>
+        <option>France</option>
+        <option>Gabon</option>
+        <option>Gambia</option>
+        <option>Georgia</option>
+        <option>Germany</option>
+        <option>Ghana</option>
+        <option>Greece</option>
+        <option>Grenada</option>
+        <option>Guatemala</option>
+        <option>Guinea</option>
+        <option>Guinea-Bissau</option>
+        <option>Guyana</option>
+        <option>Haiti</option>
+        <option>Honduras</option>
+        <option>Hungary</option>
+        <option>Iceland</option>
+        <option>India</option>
+        <option>Indonesia</option>
+        <option>Iran</option>
+        <option>Iraq</option>
+<option>Ireland</option>
+<option>Israel</option>
+<option>Italy</option>
+<option>Ivory Coast</option>
+<option>Jamaica</option>
+<option>Japan</option>
+<option>Jordan</option>
+<option>Kazakhstan</option>
+<option>Kenya</option>
+<option>Kiribati</option>
+<option>Korea, North</option>
+<option>Korea, South</option>
+<option>Kosovo</option>
+<option>Kuwait</option>
+<option>Kyrgyzstan</option>
+<option>Laos</option>
+<option>Latvia</option>
+<option>Lebanon</option>
+<option>Lesotho</option>
+<option>Liberia</option>
+<option>Libya</option>
+<option>Liechtenstein</option>
+<option>Lithuania</option>
+<option>Luxembourg</option>
+<option>Madagascar</option>
+<option>Malawi</option>
+<option>Malaysia</option>
+<option>Maldives</option>
+<option>Mali</option>
+<option>Malta</option>
+<option>Marshall Islands</option>
+<option>Mauritania</option>
+<option>Mauritius</option>
+<option>Mexico</option>
+<option>Micronesia</option>
+<option>Moldova</option>
+<option>Monaco</option>
+<option>Mongolia</option>
+<option>Montenegro</option>
+<option>Morocco</option>
+<option>Mozambique</option>
+<option>Myanmar</option>
+<option>Namibia</option>
+<option>Nauru</option>
+<option>Nepal</option>
+<option>Netherlands</option>
+<option>New Zealand</option>
+<option>Nicaragua</option>
+<option>Niger</option>
+<option>Nigeria</option>
+<option>North Macedonia</option>
+<option>Norway</option>
+<option>Oman</option>
+<option>Pakistan</option>
+<option>Palau</option>
+<option>Palestinian Territories</option>
+<option>Panama</option>
+<option>Papua New Guinea</option>
+<option>Paraguay</option>
+<option>Peru</option>
+<option>Philippines</option>
+<option>Poland</option>
+<option>Portugal</option>
+<option>Qatar</option>
+<option>Romania</option>
+<option>Russia</option>
+<option>Rwanda</option>
+<option>Saint Kitts and Nevis</option>
+<option>Saint Lucia</option>
+<option>Saint Vincent and the Grenadines</option>
+<option>Samoa</option>
+<option>San Marino</option>
+<option>Sao Tome and Principe</option>
+<option>Saudi Arabia</option>
+<option>Senegal</option>
+<option>Serbia</option>
+<option>Seychelles</option>
+<option>Sierra Leone</option>
+<option>Singapore</option>
+<option>Slovakia</option>
+<option>Slovenia</option>
+<option>Solomon Islands</option>
+<option>Somalia</option>
+<option>South Africa</option>
+<option>South Sudan</option>
+<option>Spain</option>
+<option>Sri Lanka</option>
+<option>Sudan</option>
+<option>Suriname</option>
+<option>Sweden</option>
+<option>Switzerland</option>
+<option>Syria</option>
+<option>Taiwan</option>
+<option>Tajikistan</option>
+<option>Tanzania</option>
+<option>Thailand</option>
+<option>Togo</option>
+<option>Tonga</option>
+<option>Trinidad and Tobago</option>
+<option>Tunisia</option>
+<option>Turkey</option>
+<option>Turkmenistan</option>
+<option>Tuvalu</option>
+<option>Uganda</option>
+<option>Ukraine</option>
+<option>United Arab Emirates</option>
+<option>United Kingdom</option>
+<option>United States</option>
+<option>Uruguay</option>
+<option>Uzbekistan</option>
+<option>Vanuatu</option>
+<option>Vatican City</option>
+<option>Venezuela</option>
+<option>Vietnam</option>
+<option>Yemen</option>
+<option>Zambia</option>
+<option>Zimbabwe</option>
+                    </select>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Postal Code Of Birth Residence</label>
+                    <input type="text" name="Postal_Code_Recidence" value="{{Staff.Postal_Code_Recidence}}" required class="form-control">
+                  </div>
+                </div>
+
+
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Applicant Skill Stack</label>
+                    <select type="text" name="Skill"  required class="form-control">
+                      <option selected="">{{Staff.Skill}}</option>
+                      <option value="Information Technology">Information Technology</option>
+                      <option value="Healthcare">Healthcare</option>
+                      <option value="Engineering">Engineering</option>
+                      <option value="Finance">Finance</option>
+                      <option value="Education">Education</option>
+                      <option value="Culinary">Culinary</option>
+                      <option value="Legal">Legal</option>
+                      <option value="Construction">Construction</option>
+                      <option value="Design and Creative Arts">Design and Creative Arts</option>
+                      <option value="Social Services">Social Services</option>
+                      <option value="Automotive">Automotive</option>
+                      <option value="Hospitality">Hospitality</option>
+                      <option value="Manufacturing">Manufacturing</option>
+                      <option value="Agriculture">Agriculture</option>
+                      <option value="Sales and Marketing">Sales and Marketing</option>
+                      <option value="Science">Science</option>
+                      <option value="Transportation">Transportation</option>
+                      <option value="Management">Management</option>
+                      <option value="Media and Communication">Media and Communication</option>
+                      <option value="Other">Other</option>
+                      </select>
+
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Years Of Experience</label>
+                    <input type="number" name="Experience" value="{{Staff.Experience}}" required class="form-control">
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Skill Level</label>
+                    <select name="Skill_Level" required class="form-control">
+                      <option selected="">{{Staff.Skill_Level}}</option>
+                      <option >Trainee </option>
+
+                                <option >Mid Career</option>
+                                <option >Expect</option>
+                    </select>
+                  </div>
+                </div>
+
+
+
+                <div  class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Country Of Choice 1</label>
+
+                    <select name="Country1" required class="form-control">
+                      <option selected="">{{Staff.Country1}}</option>
+
+        <option>Afghanistan</option>
+        <option>Albania</option>
+        <option>Algeria</option>
+        <option>Andorra</option>
+        <option>Angola</option>
+        <option>Antigua and Barbuda</option>
+        <option>Argentina</option>
+        <option>Armenia</option>
+        <option>Australia</option>
+        <option>Austria</option>
+        <option>Azerbaijan</option>
+        <option>Bahamas</option>
+        <option>Bahrain</option>
+        <option>Bangladesh</option>
+        <option>Barbados</option>
+        <option>Belarus</option>
+        <option>Belgium</option>
+        <option>Belize</option>
+        <option>Benin</option>
+        <option>Bhutan</option>
+        <option>Bolivia</option>
+        <option>Bosnia and Herzegovina</option>
+        <option>Botswana</option>
+        <option>Brazil</option>
+        <option>Brunei</option>
+        <option>Bulgaria</option>
+        <option>Burkina Faso</option>
+        <option>Burundi</option>
+        <option>Cambodia</option>
+        <option>Cameroon</option>
+        <option>Canada</option>
+        <option>Cape Verde</option>
+        <option>Central African Republic</option>
+        <option>Chad</option>
+        <option>Chile</option>
+        <option>China</option>
+        <option>Colombia</option>
+        <option>Comoros</option>
+        <option>Congo (Brazzaville)</option>
+        <option>Congo (Kinshasa)</option>
+        <option>Costa Rica</option>
+        <option>Croatia</option>
+        <option>Cuba</option>
+        <option>Cyprus</option>
+        <option>Czech Republic</option>
+        <option>Denmark</option>
+        <option>Djibouti</option>
+        <option>Dominica</option>
+        <option>Dominican Republic</option>
+        <option>East Timor</option>
+        <option>Ecuador</option>
+        <option>Egypt</option>
+        <option>El Salvador</option>
+        <option>Equatorial Guinea</option>
+        <option>Eritrea</option>
+        <option>Estonia</option>
+        <option>Eswatini</option>
+        <option>Ethiopia</option>
+        <option>Fiji</option>
+        <option>Finland</option>
+        <option>France</option>
+        <option>Gabon</option>
+        <option>Gambia</option>
+        <option>Georgia</option>
+        <option>Germany</option>
+        <option>Ghana</option>
+        <option>Greece</option>
+        <option>Grenada</option>
+        <option>Guatemala</option>
+        <option>Guinea</option>
+        <option>Guinea-Bissau</option>
+        <option>Guyana</option>
+        <option>Haiti</option>
+        <option>Honduras</option>
+        <option>Hungary</option>
+        <option>Iceland</option>
+        <option>India</option>
+        <option>Indonesia</option>
+        <option>Iran</option>
+        <option>Iraq</option>
+<option>Ireland</option>
+<option>Israel</option>
+<option>Italy</option>
+<option>Ivory Coast</option>
+<option>Jamaica</option>
+<option>Japan</option>
+<option>Jordan</option>
+<option>Kazakhstan</option>
+<option>Kenya</option>
+<option>Kiribati</option>
+<option>Korea, North</option>
+<option>Korea, South</option>
+<option>Kosovo</option>
+<option>Kuwait</option>
+<option>Kyrgyzstan</option>
+<option>Laos</option>
+<option>Latvia</option>
+<option>Lebanon</option>
+<option>Lesotho</option>
+<option>Liberia</option>
+<option>Libya</option>
+<option>Liechtenstein</option>
+<option>Lithuania</option>
+<option>Luxembourg</option>
+<option>Madagascar</option>
+<option>Malawi</option>
+<option>Malaysia</option>
+<option>Maldives</option>
+<option>Mali</option>
+<option>Malta</option>
+<option>Marshall Islands</option>
+<option>Mauritania</option>
+<option>Mauritius</option>
+<option>Mexico</option>
+<option>Micronesia</option>
+<option>Moldova</option>
+<option>Monaco</option>
+<option>Mongolia</option>
+<option>Montenegro</option>
+<option>Morocco</option>
+<option>Mozambique</option>
+<option>Myanmar</option>
+<option>Namibia</option>
+<option>Nauru</option>
+<option>Nepal</option>
+<option>Netherlands</option>
+<option>New Zealand</option>
+<option>Nicaragua</option>
+<option>Niger</option>
+<option>Nigeria</option>
+<option>North Macedonia</option>
+<option>Norway</option>
+<option>Oman</option>
+<option>Pakistan</option>
+<option>Palau</option>
+<option>Palestinian Territories</option>
+<option>Panama</option>
+<option>Papua New Guinea</option>
+<option>Paraguay</option>
+<option>Peru</option>
+<option>Philippines</option>
+<option>Poland</option>
+<option>Portugal</option>
+<option>Qatar</option>
+<option>Romania</option>
+<option>Russia</option>
+<option>Rwanda</option>
+<option>Saint Kitts and Nevis</option>
+<option>Saint Lucia</option>
+<option>Saint Vincent and the Grenadines</option>
+<option>Samoa</option>
+<option>San Marino</option>
+<option>Sao Tome and Principe</option>
+<option>Saudi Arabia</option>
+<option>Senegal</option>
+<option>Serbia</option>
+<option>Seychelles</option>
+<option>Sierra Leone</option>
+<option>Singapore</option>
+<option>Slovakia</option>
+<option>Slovenia</option>
+<option>Solomon Islands</option>
+<option>Somalia</option>
+<option>South Africa</option>
+<option>South Sudan</option>
+<option>Spain</option>
+<option>Sri Lanka</option>
+<option>Sudan</option>
+<option>Suriname</option>
+<option>Sweden</option>
+<option>Switzerland</option>
+<option>Syria</option>
+<option>Taiwan</option>
+<option>Tajikistan</option>
+<option>Tanzania</option>
+<option>Thailand</option>
+<option>Togo</option>
+<option>Tonga</option>
+<option>Trinidad and Tobago</option>
+<option>Tunisia</option>
+<option>Turkey</option>
+<option>Turkmenistan</option>
+<option>Tuvalu</option>
+<option>Uganda</option>
+<option>Ukraine</option>
+<option>United Arab Emirates</option>
+<option>United Kingdom</option>
+<option>United States</option>
+<option>Uruguay</option>
+<option>Uzbekistan</option>
+<option>Vanuatu</option>
+<option>Vatican City</option>
+<option>Venezuela</option>
+<option>Vietnam</option>
+<option>Yemen</option>
+<option>Zambia</option>
+<option>Zimbabwe</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Job Choice 1</label>
+                    <input type="text" name="Job_Choice1" value="{{Staff.Job_Choice1}}" required  class="form-control">
+                  </div>
+                </div>
+
+
+
+
+
+
+                <div  class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Country Of Choice 2</label>
+
+                    <select name="Country2" required class="form-control">
+                      <option selected="">{{Staff.Country2}}</option>
+
+        <option>Afghanistan</option>
+        <option>Albania</option>
+        <option>Algeria</option>
+        <option>Andorra</option>
+        <option>Angola</option>
+        <option>Antigua and Barbuda</option>
+        <option>Argentina</option>
+        <option>Armenia</option>
+        <option>Australia</option>
+        <option>Austria</option>
+        <option>Azerbaijan</option>
+        <option>Bahamas</option>
+        <option>Bahrain</option>
+        <option>Bangladesh</option>
+        <option>Barbados</option>
+        <option>Belarus</option>
+        <option>Belgium</option>
+        <option>Belize</option>
+        <option>Benin</option>
+        <option>Bhutan</option>
+        <option>Bolivia</option>
+        <option>Bosnia and Herzegovina</option>
+        <option>Botswana</option>
+        <option>Brazil</option>
+        <option>Brunei</option>
+        <option>Bulgaria</option>
+        <option>Burkina Faso</option>
+        <option>Burundi</option>
+        <option>Cambodia</option>
+        <option>Cameroon</option>
+        <option>Canada</option>
+        <option>Cape Verde</option>
+        <option>Central African Republic</option>
+        <option>Chad</option>
+        <option>Chile</option>
+        <option>China</option>
+        <option>Colombia</option>
+        <option>Comoros</option>
+        <option>Congo (Brazzaville)</option>
+        <option>Congo (Kinshasa)</option>
+        <option>Costa Rica</option>
+        <option>Croatia</option>
+        <option>Cuba</option>
+        <option>Cyprus</option>
+        <option>Czech Republic</option>
+        <option>Denmark</option>
+        <option>Djibouti</option>
+        <option>Dominica</option>
+        <option>Dominican Republic</option>
+        <option>East Timor</option>
+        <option>Ecuador</option>
+        <option>Egypt</option>
+        <option>El Salvador</option>
+        <option>Equatorial Guinea</option>
+        <option>Eritrea</option>
+        <option>Estonia</option>
+        <option>Eswatini</option>
+        <option>Ethiopia</option>
+        <option>Fiji</option>
+        <option>Finland</option>
+        <option>France</option>
+        <option>Gabon</option>
+        <option>Gambia</option>
+        <option>Georgia</option>
+        <option>Germany</option>
+        <option>Ghana</option>
+        <option>Greece</option>
+        <option>Grenada</option>
+        <option>Guatemala</option>
+        <option>Guinea</option>
+        <option>Guinea-Bissau</option>
+        <option>Guyana</option>
+        <option>Haiti</option>
+        <option>Honduras</option>
+        <option>Hungary</option>
+        <option>Iceland</option>
+        <option>India</option>
+        <option>Indonesia</option>
+        <option>Iran</option>
+        <option>Iraq</option>
+<option>Ireland</option>
+<option>Israel</option>
+<option>Italy</option>
+<option>Ivory Coast</option>
+<option>Jamaica</option>
+<option>Japan</option>
+<option>Jordan</option>
+<option>Kazakhstan</option>
+<option>Kenya</option>
+<option>Kiribati</option>
+<option>Korea, North</option>
+<option>Korea, South</option>
+<option>Kosovo</option>
+<option>Kuwait</option>
+<option>Kyrgyzstan</option>
+<option>Laos</option>
+<option>Latvia</option>
+<option>Lebanon</option>
+<option>Lesotho</option>
+<option>Liberia</option>
+<option>Libya</option>
+<option>Liechtenstein</option>
+<option>Lithuania</option>
+<option>Luxembourg</option>
+<option>Madagascar</option>
+<option>Malawi</option>
+<option>Malaysia</option>
+<option>Maldives</option>
+<option>Mali</option>
+<option>Malta</option>
+<option>Marshall Islands</option>
+<option>Mauritania</option>
+<option>Mauritius</option>
+<option>Mexico</option>
+<option>Micronesia</option>
+<option>Moldova</option>
+<option>Monaco</option>
+<option>Mongolia</option>
+<option>Montenegro</option>
+<option>Morocco</option>
+<option>Mozambique</option>
+<option>Myanmar</option>
+<option>Namibia</option>
+<option>Nauru</option>
+<option>Nepal</option>
+<option>Netherlands</option>
+<option>New Zealand</option>
+<option>Nicaragua</option>
+<option>Niger</option>
+<option>Nigeria</option>
+<option>North Macedonia</option>
+<option>Norway</option>
+<option>Oman</option>
+<option>Pakistan</option>
+<option>Palau</option>
+<option>Palestinian Territories</option>
+<option>Panama</option>
+<option>Papua New Guinea</option>
+<option>Paraguay</option>
+<option>Peru</option>
+<option>Philippines</option>
+<option>Poland</option>
+<option>Portugal</option>
+<option>Qatar</option>
+<option>Romania</option>
+<option>Russia</option>
+<option>Rwanda</option>
+<option>Saint Kitts and Nevis</option>
+<option>Saint Lucia</option>
+<option>Saint Vincent and the Grenadines</option>
+<option>Samoa</option>
+<option>San Marino</option>
+<option>Sao Tome and Principe</option>
+<option>Saudi Arabia</option>
+<option>Senegal</option>
+<option>Serbia</option>
+<option>Seychelles</option>
+<option>Sierra Leone</option>
+<option>Singapore</option>
+<option>Slovakia</option>
+<option>Slovenia</option>
+<option>Solomon Islands</option>
+<option>Somalia</option>
+<option>South Africa</option>
+<option>South Sudan</option>
+<option>Spain</option>
+<option>Sri Lanka</option>
+<option>Sudan</option>
+<option>Suriname</option>
+<option>Sweden</option>
+<option>Switzerland</option>
+<option>Syria</option>
+<option>Taiwan</option>
+<option>Tajikistan</option>
+<option>Tanzania</option>
+<option>Thailand</option>
+<option>Togo</option>
+<option>Tonga</option>
+<option>Trinidad and Tobago</option>
+<option>Tunisia</option>
+<option>Turkey</option>
+<option>Turkmenistan</option>
+<option>Tuvalu</option>
+<option>Uganda</option>
+<option>Ukraine</option>
+<option>United Arab Emirates</option>
+<option>United Kingdom</option>
+<option>United States</option>
+<option>Uruguay</option>
+<option>Uzbekistan</option>
+<option>Vanuatu</option>
+<option>Vatican City</option>
+<option>Venezuela</option>
+<option>Vietnam</option>
+<option>Yemen</option>
+<option>Zambia</option>
+<option>Zimbabwe</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Job Choice 2</label>
+                    <input type="text" name="Job_Choice2" value="{{Staff.Job_Choice2}}" required  class="form-control">
+                  </div>
+                </div>
+
+
+
+
+
+                <div  class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Country Of Choice 3</label>
+
+                    <select name="Country3" required class="form-control">
+                      <option selected="">{{Staff.Country3}}</option>
+
+        <option>Afghanistan</option>
+        <option>Albania</option>
+        <option>Algeria</option>
+        <option>Andorra</option>
+        <option>Angola</option>
+        <option>Antigua and Barbuda</option>
+        <option>Argentina</option>
+        <option>Armenia</option>
+        <option>Australia</option>
+        <option>Austria</option>
+        <option>Azerbaijan</option>
+        <option>Bahamas</option>
+        <option>Bahrain</option>
+        <option>Bangladesh</option>
+        <option>Barbados</option>
+        <option>Belarus</option>
+        <option>Belgium</option>
+        <option>Belize</option>
+        <option>Benin</option>
+        <option>Bhutan</option>
+        <option>Bolivia</option>
+        <option>Bosnia and Herzegovina</option>
+        <option>Botswana</option>
+        <option>Brazil</option>
+        <option>Brunei</option>
+        <option>Bulgaria</option>
+        <option>Burkina Faso</option>
+        <option>Burundi</option>
+        <option>Cambodia</option>
+        <option>Cameroon</option>
+        <option>Canada</option>
+        <option>Cape Verde</option>
+        <option>Central African Republic</option>
+        <option>Chad</option>
+        <option>Chile</option>
+        <option>China</option>
+        <option>Colombia</option>
+        <option>Comoros</option>
+        <option>Congo (Brazzaville)</option>
+        <option>Congo (Kinshasa)</option>
+        <option>Costa Rica</option>
+        <option>Croatia</option>
+        <option>Cuba</option>
+        <option>Cyprus</option>
+        <option>Czech Republic</option>
+        <option>Denmark</option>
+        <option>Djibouti</option>
+        <option>Dominica</option>
+        <option>Dominican Republic</option>
+        <option>East Timor</option>
+        <option>Ecuador</option>
+        <option>Egypt</option>
+        <option>El Salvador</option>
+        <option>Equatorial Guinea</option>
+        <option>Eritrea</option>
+        <option>Estonia</option>
+        <option>Eswatini</option>
+        <option>Ethiopia</option>
+        <option>Fiji</option>
+        <option>Finland</option>
+        <option>France</option>
+        <option>Gabon</option>
+        <option>Gambia</option>
+        <option>Georgia</option>
+        <option>Germany</option>
+        <option>Ghana</option>
+        <option>Greece</option>
+        <option>Grenada</option>
+        <option>Guatemala</option>
+        <option>Guinea</option>
+        <option>Guinea-Bissau</option>
+        <option>Guyana</option>
+        <option>Haiti</option>
+        <option>Honduras</option>
+        <option>Hungary</option>
+        <option>Iceland</option>
+        <option>India</option>
+        <option>Indonesia</option>
+        <option>Iran</option>
+        <option>Iraq</option>
+<option>Ireland</option>
+<option>Israel</option>
+<option>Italy</option>
+<option>Ivory Coast</option>
+<option>Jamaica</option>
+<option>Japan</option>
+<option>Jordan</option>
+<option>Kazakhstan</option>
+<option>Kenya</option>
+<option>Kiribati</option>
+<option>Korea, North</option>
+<option>Korea, South</option>
+<option>Kosovo</option>
+<option>Kuwait</option>
+<option>Kyrgyzstan</option>
+<option>Laos</option>
+<option>Latvia</option>
+<option>Lebanon</option>
+<option>Lesotho</option>
+<option>Liberia</option>
+<option>Libya</option>
+<option>Liechtenstein</option>
+<option>Lithuania</option>
+<option>Luxembourg</option>
+<option>Madagascar</option>
+<option>Malawi</option>
+<option>Malaysia</option>
+<option>Maldives</option>
+<option>Mali</option>
+<option>Malta</option>
+<option>Marshall Islands</option>
+<option>Mauritania</option>
+<option>Mauritius</option>
+<option>Mexico</option>
+<option>Micronesia</option>
+<option>Moldova</option>
+<option>Monaco</option>
+<option>Mongolia</option>
+<option>Montenegro</option>
+<option>Morocco</option>
+<option>Mozambique</option>
+<option>Myanmar</option>
+<option>Namibia</option>
+<option>Nauru</option>
+<option>Nepal</option>
+<option>Netherlands</option>
+<option>New Zealand</option>
+<option>Nicaragua</option>
+<option>Niger</option>
+<option>Nigeria</option>
+<option>North Macedonia</option>
+<option>Norway</option>
+<option>Oman</option>
+<option>Pakistan</option>
+<option>Palau</option>
+<option>Palestinian Territories</option>
+<option>Panama</option>
+<option>Papua New Guinea</option>
+<option>Paraguay</option>
+<option>Peru</option>
+<option>Philippines</option>
+<option>Poland</option>
+<option>Portugal</option>
+<option>Qatar</option>
+<option>Romania</option>
+<option>Russia</option>
+<option>Rwanda</option>
+<option>Saint Kitts and Nevis</option>
+<option>Saint Lucia</option>
+<option>Saint Vincent and the Grenadines</option>
+<option>Samoa</option>
+<option>San Marino</option>
+<option>Sao Tome and Principe</option>
+<option>Saudi Arabia</option>
+<option>Senegal</option>
+<option>Serbia</option>
+<option>Seychelles</option>
+<option>Sierra Leone</option>
+<option>Singapore</option>
+<option>Slovakia</option>
+<option>Slovenia</option>
+<option>Solomon Islands</option>
+<option>Somalia</option>
+<option>South Africa</option>
+<option>South Sudan</option>
+<option>Spain</option>
+<option>Sri Lanka</option>
+<option>Sudan</option>
+<option>Suriname</option>
+<option>Sweden</option>
+<option>Switzerland</option>
+<option>Syria</option>
+<option>Taiwan</option>
+<option>Tajikistan</option>
+<option>Tanzania</option>
+<option>Thailand</option>
+<option>Togo</option>
+<option>Tonga</option>
+<option>Trinidad and Tobago</option>
+<option>Tunisia</option>
+<option>Turkey</option>
+<option>Turkmenistan</option>
+<option>Tuvalu</option>
+<option>Uganda</option>
+<option>Ukraine</option>
+<option>United Arab Emirates</option>
+<option>United Kingdom</option>
+<option>United States</option>
+<option>Uruguay</option>
+<option>Uzbekistan</option>
+<option>Vanuatu</option>
+<option>Vatican City</option>
+<option>Venezuela</option>
+<option>Vietnam</option>
+<option>Yemen</option>
+<option>Zambia</option>
+<option>Zimbabwe</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Job Choice 3</label>
+                    <input type="text" name="Job_Choice3" value="{{Staff.Job_Choice3}}" required  class="form-control">
+                  </div>
+                </div>
+
+
+
+
+
+                <div class="col-lg-12 col-md-6 col-sm-12" style="padding-top: 30px;">
+                  <div class="form-group">
+                    <h4 class="">Applicant Documments And Credentials</h4>
+
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Extra Profile images</label>
+                <div class="row col-12" style="text-align: center;">
+                  <div style="text-align: center;padding-left: 5px;padding-right: 5px;" id="fatu" class="result">
+                    <img style="border-radius: 2px;width:150px;height:150px ;object-fit: cover;" id="img1" src="{% get_media_prefix %}Extra/{{Extra.0.id_1}}.jpg?{{Rand}}" onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';"  alt="Profile">
+                    <div style="text-align: center;" class="box">
+                      <div style="padding-top: 20px;"></div>
+                      <div class="upload-btn-wrapper">
+                    <button  class="btn btn-light btn-block">Select image</button>
+                    <input name="Extra_1" value="{{Extra.0.id_1}}" type="hidden">
+                    <input  class="mdc-text-field__input"  id="file-input1" style="width: 100%;" type="file" name="New_Img1" accept="image/*" />
+                    </div>
+                    </div>
+                  </div>
+                  <div style="text-align: center;padding-left: 5px;padding-right: 5px;" id="fatu" class="result">
+                    <img style="border-radius: 2px;width:150px;height:150px ;object-fit: cover;" id="img2" src="{% get_media_prefix %}Extra/{{Extra.1.id_2}}.jpg?{{Rand}}"  onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';" alt="Profile">
+                    <div style="text-align: center;" class="box">
+                      <div style="padding-top: 20px;"></div>
+                      <div class="upload-btn-wrapper">
+                    <button  class="btn btn-light btn-block">Select image</button>
+                    <input name="Extra_2" value="{{Extra.1.id_2}}" type="hidden">
+
+                    <input  class="mdc-text-field__input"  id="file-input2" style="width: 100%;"  type="file" name="New_Img2" accept="image/*" />
+                    </div>
+                    </div>
+                  </div>
+                  <div style="text-align: center;padding-left: 5px;padding-right: 5px;" id="fatu" class="result">
+                    <img style="border-radius: 2px;width:150px;height:150px ;object-fit: cover;" id="img3" src="{% get_media_prefix %}Extra/{{Extra.2.id_3}}.jpg?{{Rand}}"  onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';" alt="Profile">
+                    <div style="text-align: center;" class="box">
+                      <div style="padding-top: 20px;"></div>
+                      <div class="upload-btn-wrapper">
+                    <button  class="btn btn-light btn-block">Select image</button>
+                    <input name="Extra_3" value="{{Extra.2.id_3}}" type="hidden">
+
+                    <input  class="mdc-text-field__input"  id="file-input3" style="width: 100%;" type="file" name="New_Img3" accept="image/*" />
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="form-group">
+                  <label class="form-label">PassPort & Birthcert & Id Card </label>
+                  <div class="row col-12" style="text-align: center;">
+                    <div style="text-align: center;padding-left: 5px;padding-right: 5px;" id="fatu" class="result">
+                      <img style="border-radius: 2px;width:150px;height:150px;object-fit: cover; " id="img4" src="{% get_media_prefix %}Ids/{{Staff.id}}.jpg?{{Rand}}"  onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';" alt="Ids">
+                      <div style="text-align: center;" class="box">
+                        <div style="padding-top: 20px;"></div>
+                        <div class="upload-btn-wrapper">
+                      <button  class="btn btn-light btn-block">Select image</button>
+
+                      <input  class="mdc-text-field__input"  id="file-input4" style="width: 100%;" type="file" name="New_Img4" accept="image/*" />
+                      </div>
+                      </div>
+                    </div>
+
+                    <div style="text-align: center;padding-left: 5px;padding-right: 5px;" id="fatu" class="result">
+                      <img style="border-radius: 2px;width:150px;height:150px ;object-fit: cover;" id="img5" src="{% get_media_prefix %}Extra/{{ID.0.id_1}}.jpg?{{Rand}}"  onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';" alt="Ids">
+                      <div style="text-align: center;" class="box">
+                        <div style="padding-top: 20px;"></div>
+                        <div class="upload-btn-wrapper">
+                      <button  class="btn btn-light btn-block">Select image</button>
+                    <input name="Extra_4" value="{{ID.0.id_1}}" type="hidden">
+
+                      <input  class="mdc-text-field__input"  id="file-input5" style="width: 100%;" type="file" name="New_Img5" accept="image/*" />
+                      </div>
+                      </div>
+                    </div>
+                    <div style="text-align: center;padding-left: 5px;padding-right: 5px;" id="fatu" class="result">
+                      <img style="border-radius: 2px;width:150px;height:150px ;object-fit: cover;" id="img6" src="{% get_media_prefix %}Extra/{{ID.1.id_2}}.jpg?{{Rand}}"  onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';" alt="Ids">
+                      <div style="text-align: center;" class="box">
+                        <div style="padding-top: 20px;"></div>
+                        <div class="upload-btn-wrapper">
+                      <button  class="btn btn-light btn-block">Select image</button>
+                    <input name="Extra_5" value="{{ID.1.id_2}}" type="hidden">
+
+                      <input  class="mdc-text-field__input"  id="file-input6" style="width: 100%;" type="file" name="New_Img6" accept="image/*" />
+                      </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-6 col-sm-12" style="padding-top: 30px;">
+                  <div class="form-group">
+                    <h4 class="">Applicant Education Profile</h4>
+
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Applicant Education Status</label>
+                    <select type="text" name="Education"  required class="form-control">
+                      <option selected="">{{Staff.Education}}</option>
+                      <option >No Formal Education</option>
+
+                      <option >Primary school</option>
+                      <option >Junior Secondary/High School</option>
+                      <option >Senior Secondary School</option>
+                      <option >Tertiary Education</option>
+                      </select>
+
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="form-group">
+
+                    <button type="button" onclick="add_edu()" class="btn btn-success">Add New Education Info</button>
+
+                  </div>
+                </div>
+
+
+                <div class="col-lg-12 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Applicant Education Enteries</label>
+                  </div>
+                </div>
+                <div class="row col-12" id="edu">
+
+                    {% for i in Education %}
+                  <div class="row col-12" id="id_y{{i.id}}">
+                    <div class="col-lg-6 col-md-6 col-sm-12"><div class="form-group">
+                        <label class="form-label">School / Institution Name</label>
+                        <input type="text" name="School_y{{i.id}}" value="{{i.Name}}" required="" class="form-control"></div></div>
+                        <div class="col-lg-2 col-md-6 col-sm-12">
+                            <div class="form-group"><label class="form-label">Commence Date</label>
+                                <input type="date" name="Commence_y{{i.id}}" value="{{i.Start}}" required="" class="form-control"></div></div>
+                                <div class="col-lg-2 col-md-6 col-sm-12"><div class="form-group"><label class="form-label">Completion Date</label>
+                                    <input type="date" name="Complete_y{{i.id}}" value="{{i.End}}" required="" class="form-control"></div></div><div class="col-lg-2 col-md-6 col-sm-12">
+                    <label class="form-label">Delete Input</label>
+                    <button type="button" onclick="del_edu('y{{i.id}}')" class="btn btn-success col-12"><i class="icon-trash"></i></button>
+                </div></div>
+
+                 {% endfor %}
+                  </div>
+
+
+                <div class="col-lg-12 col-md-6 col-sm-12" style="padding-top: 30px;">
+                  <div class="form-group">
+                    <h4 class="">Applicant Education Profile</h4>
+
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="form-group">
+
+                    <button type="button" onclick="add_work()" class="btn btn-success">Add New Working Experience</button>
+
+                  </div>
+                </div>
+
+                <div class="col-lg-12 col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="form-label">Applicant Working Experience Enteries</label>
+
+                  </div>
+                </div>
+                <div class="row col-12" id="work">
+
+
+
+                  {% for i in Work %}
+                  <div class="row col-12" id="id2_x{{i.id}}">
+                    <div class="col-lg-6 col-md-6 col-sm-12"><div class="form-group">
+                        <label class="form-label">Company / Institution Name</label>
+                        <input type="text" name="Work_x{{i.id}}" value="{{i.Name}}" required="" class="form-control"></div></div>
+                        <div class="col-lg-2 col-md-6 col-sm-12">
+                            <div class="form-group"><label class="form-label">Commence Date</label>
+                                <input type="date" name="CommenceComp_x{{i.id}}" value="{{i.Start}}" required="" class="form-control"></div></div>
+                                <div class="col-lg-2 col-md-6 col-sm-12"><div class="form-group"><label class="form-label">Completion Date</label>
+                                    <input type="date" name="CompleteComp_0{{i.id}}" value="{{i.End}}" required="" class="form-control"></div></div><div class="col-lg-2 col-md-6 col-sm-12">
+                    <label class="form-label">Delete Input</label>
+                    <button type="button" onclick="del_work('x{{i.id}}')" class="btn btn-success col-12"><i class="icon-trash"></i></button>
+                </div></div>
+
+                  {% endfor %}
+
+
+
+                </div>
+
+
+
+
+                <div class="col-lg-12 col-md-6 col-sm-12" style="padding-top: 30px;">
+                  <div class="form-group">
+                    <h4 class="">Father's Profile And Bio</h4>
+
+                  </div>
+                </div>
+                <div class="row col-12" style="text-align: center;">
+                <div class="col-3"></div>
+               <div style="padding-left: 30px;" class="col-3">
+    <div style="padding-top: 20px;">Father's Picture</div>
+      <div style="text-align: center;" id="fat" class="result">
+      <img id="img7" style="border-radius: 2px;width:200px;height:200px;object-fit: cover;" src="{% get_media_prefix %}Extra/{{ID.2.id_3}}.jpg?{{Rand}}"  onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';">
+     </div>
+    <div style="text-align: center;" class="box">
+        <div style="padding-top: 20px;"></div>
+        <div class="upload-btn-wrapper">
+      <button  class="btn btn-light btn-block">Select image</button>
+      <input  class="mdc-text-field__input"  id="file-input7" style="width: 100%;" type="file" name="New_Img7" accept="image/*" />
+      <input name="Extra_7" value="{{ID.2.id_3}}" type="hidden">
+      </div>
+    </div>
+               </div>
+               <div style="padding-left: 30px;" class="col-3">
+                <div style="padding-top: 20px;">Father's ID Card</div>
+                  <div style="text-align: center;" id="fat" class="result">
+                  <img id="img8" style="border-radius: 2px;width:200px;height:200px;object-fit: cover;" src="{% get_media_prefix %}Extra/{{ID.3.id_4}}.jpg?{{Rand}}"  onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';">
+                 </div>
+                <div style="text-align: center;" class="box">
+                    <div style="padding-top: 20px;"></div>
+                    <div class="upload-btn-wrapper">
+                  <button  class="btn btn-light btn-block">Select image</button>
+                 <input name="Extra_8" value="{{ID.3.id_4}}" type="hidden">
+
+                  <input  class="mdc-text-field__input"  id="file-input8" style="width: 100%;" type="file" name="New_Img8" accept="image/*" />
+
+                  </div>
+                </div>
+                           </div>
+
+                           <div class="col-3"></div>
+
+</div>
+<div class="row col-lg-12 col-md-12 col-sm-12"  >
+<div  class="col-lg-6 col-md-12 col-sm-12">
+  <div class="form-group">
+    <label class="form-label">Father's Full Name</label>
+    <input type="text" name="Father_Name" value="{{Staff.Father_Full_Name}}" required  class="form-control">
+  </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-12">
+  <div class="form-group">
+    <label class="form-label">Birth Date</label>
+    <input type="date" name="Father_Birth" value="{{Staff.Father_Birth}}" required  class="form-control">
+  </div>
+</div>
+
+
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+  <div class="form-group">
+    <label class="form-label">Father's State</label>
+    <select type="tel" name="Father_Living"  required class="form-control">
+      <option selected="" value="{{Staff.Father_Living}}">{{Staff.Father_Living}}</option>
+      <option >Living</option>
+      <option >Deceased</option>
+    </select>
+  </div>
+</div>
+
+
+
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+  <div class="form-group">
+    <label class="form-label">Father's Mobile Number</label>
+    <input  name="Father_Contact" value="{{Staff.Father_Contact}}" required class="form-control" >
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12">
+  <div class="form-group">
+    <label class="form-label">Father's Location / Address</label>
+    <input type="text" name="Father_Address" value="{{Staff.Father_Address}}" required class="form-control">
+  </div>
+</div>
+<input name="User" value="{{Staff.id}}" type="hidden">
+<div class="col-lg-4 col-md-6 col-sm-12">
+  <div class="form-group">
+    <label class="form-label">Father's City</label>
+    <select type="tel" name="Father_City"  required class="form-control">
+      <option selected="" value="{{Staff.Father_City}}">{{Staff.Father_City}}</option>
+      <option value="accra">Accra</option>
+      <option value="kumasi">Kumasi</option>
+      <option value="tamale">Tamale</option>
+      <option value="sekondi-takoradi">Sekondi-Takoradi</option>
+      <option value="cape-coast">Cape Coast</option>
+      <option value="tema">Tema</option>
+      <option value="obuasi">Obuasi</option>
+      <option value="sunyani">Sunyani</option>
+      <option value="teshie">Teshie</option>
+      <option value="ho">Ho</option>
+      <option value="wa">Wa</option>
+      <option value="koforidua">Koforidua</option>
+      <option value="techiman">Techiman</option>
+      <option value="nungua">Nungua</option>
+      <option value="dome">Dome</option>
+      <option value="lashibi">Lashibi</option>
+      <option value="nsawam">Nsawam</option>
+      <option value="winneba">Winneba</option>
+      <option value="hohoe">Hohoe</option>
+      <option value="yendi">Yendi</option>
+
+    </select>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="col-lg-12 col-md-6 col-sm-12" style="padding-top: 30px;">
+  <div class="form-group">
+    <h4 class="">Mother's Profile And Bio</h4>
+
+  </div>
+</div>
+<div class="row col-12" style="text-align: center;">
+<div class="col-3"></div>
+<div style="padding-left: 30px;" class="col-3">
+<div style="padding-top: 20px;">Mother's Picture</div>
+<div style="text-align: center;" id="fat" class="result">
+<img id="img9" style="border-radius: 2px;width:200px;height:200px;object-fit: cover;" src="{% get_media_prefix %}Extra/{{ID.4.id_5}}.jpg?{{Rand}}"  onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';">
+</div>
+<div style="text-align: center;" class="box">
+<div style="padding-top: 20px;"></div>
+<div class="upload-btn-wrapper">
+<button  class="btn btn-light btn-block">Select image</button>
+<input  class="mdc-text-field__input"  id="file-input9" style="width: 100%;" type="file" name="New_Img9" accept="image/*" />
+<input name="Extra_9" value="{{ID.4.id_5}}" type="hidden">
+
+</div>
+</div>
+</div>
+<div style="padding-left: 30px;" class="col-3">
+<div style="padding-top: 20px;">Mother's ID Card</div>
+  <div style="text-align: center;" id="fat" class="result">
+  <img id="img10" style="border-radius: 2px;width:200px;height:200px;object-fit: cover;" src="{% get_media_prefix %}Extra/{{ID.5.id_6}}.jpg?{{Rand}}"  onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';">
+ </div>
+<div style="text-align: center;" class="box">
+    <div style="padding-top: 20px;"></div>
+    <div class="upload-btn-wrapper">
+  <button  class="btn btn-light btn-block">Select image</button>
+  <input name="Extra_10" value="{{ID.5.id_6}}" type="hidden">
+
+  <input  class="mdc-text-field__input"  id="file-input10" style="width: 100%;" type="file" name="New_Img10" accept="image/*" />
+  </div>
+</div>
+           </div>
+
+           <div class="col-3"></div>
+
+</div>
+<div class="row col-lg-12 col-md-12 col-sm-12"  >
+<div  class="col-lg-6 col-md-12 col-sm-12">
+<div class="form-group">
+<label class="form-label">Mother's Full Name</label>
+<input type="text" name="Mother_Name" value="{{Staff.Mother_Full_Name}}" required  class="form-control">
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-12">
+<div class="form-group">
+<label class="form-label">Birth Date</label>
+<input type="date" name="Mother_Birth" value="{{Staff.Mother_Birth}}" required  class="form-control">
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+  <div class="form-group">
+    <label class="form-label">Mother's State</label>
+    <select type="tel" name="Mother_Living"  required class="form-control">
+      <option selected="" value="{{Staff.Mother_Living}}">{{Staff.Mother_Living}}</option>
+      <option >Living</option>
+      <option >Deceased</option>
+    </select>
+  </div>
+</div>
+
+
+    <div class="col-lg-4 col-md-6 col-sm-12">
+<div class="form-group">
+<label class="form-label">Mother's Mobile Number</label>
+<input  name="Mother_Contact" value="{{Staff.Mother_Contact}}" required class="form-control" >
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="form-group">
+<label class="form-label">Mother's Location / Address</label>
+<input type="text" name="Mother_Address" value="{{Staff.Mother_Address}}" required class="form-control">
+</div>
+</div>
+<input name="User" value="{{Staff.id}}" type="hidden">
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="form-group">
+<label class="form-label">Mother's City</label>
+<select type="tel" name="Mother_City"  required class="form-control">
+<option selected="" value="{{Staff.Mother_City}}">{{Staff.Mother_City}}</option>
+<option value="accra">Accra</option>
+<option value="kumasi">Kumasi</option>
+<option value="tamale">Tamale</option>
+<option value="sekondi-takoradi">Sekondi-Takoradi</option>
+<option value="cape-coast">Cape Coast</option>
+<option value="tema">Tema</option>
+<option value="obuasi">Obuasi</option>
+<option value="sunyani">Sunyani</option>
+<option value="teshie">Teshie</option>
+<option value="ho">Ho</option>
+<option value="wa">Wa</option>
+<option value="koforidua">Koforidua</option>
+<option value="techiman">Techiman</option>
+<option value="nungua">Nungua</option>
+<option value="dome">Dome</option>
+<option value="lashibi">Lashibi</option>
+<option value="nsawam">Nsawam</option>
+<option value="winneba">Winneba</option>
+<option value="hohoe">Hohoe</option>
+<option value="yendi">Yendi</option>
+
+</select>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="col-lg-12 col-md-6 col-sm-12" style="padding-top: 30px;">
+  <div class="form-group">
+    <h4 class="">Referees Profiles</h4>
+
+  </div>
+</div>
+
+<div class="row col-lg-12 col-md-12 col-sm-12"  >
+<div  class="col-lg-8 col-md-12 col-sm-12">
+<div class="form-group">
+<label class="form-label">Referees 1 Full Name</label>
+<input type="text" name="Reference1_Name" value="{{Staff.Reference1_Full_Name}}" required  class="form-control">
+</div>
+</div>
+
+
+
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="form-group">
+<label class="form-label">Referees 1 Mobile Number</label>
+<input  name="Reference1_Contact" value="{{Staff.Reference1_Contact}}" required class="form-control" >
+</div>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12">
+<div class="form-group">
+<label class="form-label">Referees 1 Job Title</label>
+<input type="text" name="Reference1_Job" value="{{Staff.Reference1_Job}}" required class="form-control">
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12">
+<div class="form-group">
+<label class="form-label">Referees 1 Location / Address</label>
+<input type="text" name="Reference1_Address" value="{{Staff.Reference1_Address}}" required class="form-control">
+</div>
+</div>
+
+
+<div class="row col-lg-12 col-md-12 col-sm-12" style="padding-top: 30px;"  >
+  <div  class="col-lg-8 col-md-12 col-sm-12">
+  <div class="form-group">
+  <label class="form-label">Referees 2 Full Name</label>
+  <input type="text" name="Reference2_Name" value="{{Staff.Reference2_Full_Name}}" required  class="form-control">
+  </div>
+  </div>
+
+
+
+  <div class="col-lg-4 col-md-6 col-sm-12" >
+  <div class="form-group">
+  <label class="form-label">Referees 2 Mobile Number</label>
+  <input  name="Reference2_Contact" value="{{Staff.Reference2_Contact}}" required class="form-control" >
+  </div>
+  </div>
+
+  <div class="col-lg-6 col-md-6 col-sm-12">
+  <div class="form-group">
+  <label class="form-label">Referees 2 Job Title</label>
+  <input type="text" name="Reference2_Job" value="{{Staff.Reference2_Job}}" required class="form-control">
+  </div>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12">
+  <div class="form-group">
+  <label class="form-label">Referees 2  Location / Address</label>
+  <input type="text" name="Reference2_Address" value="{{Staff.Reference2_Address}}" required class="form-control">
+  </div>
+  </div>
+
+
+
+
+<div class="row col-lg-12 col-md-12 col-sm-12" style="padding-top: 30px;"  >
+  <div  class="col-lg-8 col-md-12 col-sm-12">
+  <div class="form-group">
+  <label class="form-label">Referees 3 Full Name</label>
+  <input type="text" name="Reference3_Name" value="{{Staff.Reference3_Full_Name}}" required  class="form-control">
+  </div>
+  </div>
+
+
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+  <div class="form-group">
+  <label class="form-label">Referees 3 Mobile Number</label>
+  <input  name="Reference3_Contact" value="{{Staff.Reference3_Contact}}" required class="form-control" >
+  </div>
+  </div>
+
+  <div class="col-lg-6 col-md-6 col-sm-12">
+  <div class="form-group">
+  <label class="form-label">Referees 3 Job Title</label>
+  <input type="text" name="Reference3_Job" value="{{Staff.Reference3_Job}}" required class="form-control">
+  </div>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12">
+  <div class="form-group">
+  <label class="form-label">Referees 3 Location / Address</label>
+  <input type="text" name="Reference3_Address" value="{{Staff.Reference3_Address}}" required class="form-control">
+  </div>
+  </div>
+
+
+
+
+
+
+                <div class="col-lg-12 col-md-6 col-sm-12" style="padding-top: 30px;">
+                  <div class="form-group">
+                    <h4 class="">Guarantor's Profile And Bio</h4>
+
+                  </div>
+                </div>
+
+<div class="row col-lg-12 col-md-12 col-sm-12"  >
+<div  class="col-lg-8 col-md-12 col-sm-12">
+  <div class="form-group">
+    <label class="form-label">Guarantor's Full Name</label>
+    <input type="text" name="Garantor_Name" value="{{Staff.Garantor_Full_Name}}" required  class="form-control">
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12">
+  <div class="form-group">
+    <label class="form-label">Guarantor's Gender</label>
+    <select type="tel" name="Garantor_Gender"  required class="form-control">
+      <option selected="" value="{{Staff.Garantor_Gender}}">{{Staff.Garantor_Gender}}</option>
+
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+
+
+    </select>
+  </div>
+</div>
+
+
+
+
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+  <div class="form-group">
+    <label class="form-label">Guarantor's Mobile Number</label>
+    <input  name="Garantor_Contact" value="{{Staff.Garantor_Contact}}" required class="form-control" >
+  </div>
+</div>
+<div class="col-lg-9 col-md-6 col-sm-12">
+  <div class="form-group">
+    <label class="form-label">Guarantor's Email Here</label>
+    <input type="email" name="Garantor_Email" value="{{Staff.Garantor_Email}}" required class="form-control">
+  </div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12">
+  <div class="form-group">
+    <label class="form-label">Guarantor's Location / Address</label>
+    <input type="text" name="Garantor_Address" value="{{Staff.Garantor_Address}}" required class="form-control">
+  </div>
+</div>
+<input name="User" value="{{Staff.id}}" type="hidden">
+<div class="col-lg-6 col-md-6 col-sm-12">
+  <div class="form-group">
+    <label class="form-label">Garantor's City</label>
+    <select type="tel" name="Garantor_City"  required class="form-control">
+      <option selected="" value="{{Staff.Garantor_City}}">{{Staff.Garantor_City}}</option>
+      <option value="accra">Accra</option>
+      <option value="kumasi">Kumasi</option>
+      <option value="tamale">Tamale</option>
+      <option value="sekondi-takoradi">Sekondi-Takoradi</option>
+      <option value="cape-coast">Cape Coast</option>
+      <option value="tema">Tema</option>
+      <option value="obuasi">Obuasi</option>
+      <option value="sunyani">Sunyani</option>
+      <option value="teshie">Teshie</option>
+      <option value="ho">Ho</option>
+      <option value="wa">Wa</option>
+      <option value="koforidua">Koforidua</option>
+      <option value="techiman">Techiman</option>
+      <option value="nungua">Nungua</option>
+      <option value="dome">Dome</option>
+      <option value="lashibi">Lashibi</option>
+      <option value="nsawam">Nsawam</option>
+      <option value="winneba">Winneba</option>
+      <option value="hohoe">Hohoe</option>
+      <option value="yendi">Yendi</option>
+
+    </select>
+  </div>
+</div>
+
+
+
+
+
+<div class="content-wrapper">
+  <div class="row">
+
+
+    <div class="col-lg-12 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Billing Objects</h4>
+          <p class="card-description">
+           All running bills are listed here.
+          </p>
+          <div class="row col-lg-12 col-md-12 col-sm-12"  >
+            <div  class="col-lg-9 col-md-12 col-sm-12">
+              <div class="form-group">
+                <label class="form-label">Select Billing Object</label>
+                <select type="tel" id="init_bill" name="Garantor_City"  required class="form-control">
+
+                  {% for i in Bills %}
+                  <option value="{{i.id}}">{{i.Name}} - ₵ {{i.Price}}</option>
+                  {% endfor %}
+
+                </select>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-12 col-sm-12" style="padding-top: 30px;">
+              <button onclick="Add_Bill()" type="button" class="btn btn-primary">Add Bill</button>
+
+            </div>
+          </div>
+          <div class="table-responsive data-table hover">
+            <table id="data-table" class="table table-striped">
+              <thead>
+                <tr>
+
+                  <th style="color: black;">
+                    Bill Name
+                  </th>
+                  <th style="color: black;">
+                    Bill Price
+                  </th>
+
+                  <th style="color: black;">
+                    Time Created
+                  </th>
+
+                  <th style="color: black;">
+                    Date Created
+                  </th>
+                  <th style="color: black;">
+                    Delete Bill
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="mb" >
+                {% for i in Listed %}
+                <tr id="t{{i.id}}">
+
+                  <td>
+                    {{i.Name}}
+                  </td>
+                  <td>
+                    ₵ {{i.Price}}
+                  </td>
+                  <td>
+                    {{i.time}}
+                  </td>
+                  <td>
+                    {{i.date}}
+                  </td>
+                  <td>
+                    <button type="button" onclick="Open('{{i.id}}')" class="btn btn-danger btn-icon-text">
+                      <i class="ti-trash btn-icon-check"></i>
+
+                    </button>
+                  </td>
+
+
+
+                {% endfor %}
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+              </div >
+
+                <div class="col-lg-12 col-md-12 col-sm-12" style="padding-top: 30px;padding-bottom: 30px;text-align: center;">
+                  <button type="submit" class="btn btn-primary">Update Info</button>
+
+                </div>
+              </div>
+            </form>
+                        </div>
+
+
+    </div>
+        </div>
+
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:{% get_static_prefix %}Administrator/partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+  <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023.
+              Edumcloud <a href="" target="_blank"></a> from Edumcloud. All rights reserved.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="{% get_static_prefix %}Administrator/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="{% get_static_prefix %}Administrator/js/off-canvas.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/hoverable-collapse.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/template.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/settings.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+<div id="cover"  style="background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: hidden">
+	<div class="col-xl-4 col-lg-4 col-xxl-4 col-md-12" style="position: fixed;top:30%;left: 40%;">
+		<div class="card" id="cmain" style="visibility: hidden">
+			<div class="card-body text-center ai-icon  text-primary" >
+				<button style="position: absolute;right: 20px;" class="btn btn-sm btn-danger" onclick="Close()">x</button>
+				<svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+					<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" style="stroke-dasharray: 25, 45; stroke-dashoffset: 0;"></path>
+					<path d="M8,7A4,4 0,1,1 16,7A4,4 0,1,1 8,7" style="stroke-dasharray: 26, 46; stroke-dashoffset: 0;"></path>
+				</svg>
+				<h4 class="my-2" style="color: black;">Type "DELETE" in the form below to delete Bill.</h4>
+				<div class="form-group" >
+
+					<input type="text" id="pass2" class="form-control" style="text-align: center;" >
+				</div>
+				<button onclick="Delete()" id="si_button" class="btn my-2 btn-primary btn-lg px-4"><i class="fa fa-trash"></i> Delete</button>
+			</div>
+		</div>
+	</div>
+</div>
+<input id="state" type="hidden">
+
+<script>
+  setInterval(load_all,1000);
+function load_all(){
+
+
+    var pass2 = document.getElementById("pass2").value
+if (pass2==="DELETE"){
+
+ document.getElementById("si_button").disabled = false;
+}else{
+ document.getElementById("si_button").disabled = true;
+}
+}
+
+function Open(id){
+document.getElementById("state").value = id
+document.getElementById('cover').setAttribute("style", "background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: visible")
+document.getElementById('cmain').setAttribute("style", "visibility: visible")
+
+}
+function Close(){
+document.getElementById('cover').setAttribute("style", "visibility: hidden;z-index: 0;")
+document.getElementById('cmain').setAttribute("style", "z-index: 0;visibility: hidden;")
+
+}
+
+
+function Delete(){
+  var state = document.getElementById("state")
+data = JSON.stringify({
+id:state.value,
+})
+fetch("{% url 'manager_edit' Staff.id %}", {
+method: 'DELETE',
+body: data,
+headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json',
+    },
+})
+.then(response => response.json())
+.then(data => {
+if (data === 'OK'){
+    document.getElementById('t'+state.value).remove()
+    state.value=""
+    document.getElementById("pass2").value=""
+    alert("Bill has been deleted successfully!")
+Close()
+}else{
+    alert("Please an error occured when deleting bill!")
+
+}
+});}
+
+
+
+
+function Add_Bill(){
+  var name = document.getElementById("init_bill")
+
+
+data = JSON.stringify({
+id:name.value,
+User:{{Staff.id}}
+})
+fetch("{% url 'manager_edit' Staff.id %}", {
+method: 'PUT',
+body: data,
+headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json',
+    },
+})
+.then(response => response.json())
+.then(data => {
+if (data["Stat"] === 'Ok'){
+    var main_body = document.getElementById('mb')
+    var dat_str = '<td>'+data["Data"]["Name"]+'</td><td>₵ '+data["Data"]["Price"]+'</td><td>'+data["Data"]["Time"]+'</td><td>'+data["Data"]["Date"]+'</td><td><button onclick="Open('+data["Data"]["Id"]+')" type="button" class="btn btn-danger btn-icon-text"><i class="ti-trash btn-icon-check"></i></button></td>'
+    var n_b = document.createElement("tr")
+    n_b.id = "t"+data["Data"]["Id"]
+    n_b.innerHTML =dat_str
+    name.value=""
+    main_body.appendChild(n_b)
+    alert("Bill has been added successfully!")
+}else{
+    alert("Please an error occured when adding bill!")
+
+}
+});}
+</script>
+
+
+
+
+
+
+
+<input id="c1" value="0" type="hidden">
+<input id="c2" value="0" type="hidden">
+
+<script>
+ function add_edu(){
+  var edu_hold = document.getElementById('edu')
+  var count = document.getElementById('c1')
+  var newed = parseInt(count.value)+1
+  count.value=newed
+  var info = '<div class="col-lg-6 col-md-6 col-sm-12"><div class="form-group"><label class="form-label">School / Institution Name</label><input type="text" name="School_'+newed+'" value="" required class="form-control"></div></div><div class="col-lg-2 col-md-6 col-sm-12"><div class="form-group"><label class="form-label">Commence Date</label><input type="date" name="Commence_'+newed+'" value="{{Staff.Experience}}" required class="form-control"></div></div><div class="col-lg-2 col-md-6 col-sm-12"><div class="form-group"><label class="form-label">Completion Date</label><input type="date"  name="Complete_'+newed+'" value="{{Staff.Experience}}" required class="form-control"></div></div><div class="col-lg-2 col-md-6 col-sm-12"><label class="form-label">Delete Input</label><button  type="button" onclick="del_edu('+newed+')" class="btn btn-success col-12"><i class="icon-trash"></i></button></div>'
+  var hold = document.createElement("div")
+  hold.setAttribute('class','row col-12')
+  hold.id = "id_"+newed
+  hold.innerHTML=info
+  edu_hold.appendChild(hold)
+
+
+}
+function del_edu(id){
+
+  document.getElementById("id_"+id).remove()
+}
+
+function add_work(){
+  var edu_hold = document.getElementById('work')
+  var count = document.getElementById('c2')
+  var newed = parseInt(count.value)+1
+  count.value=newed
+  var info = '<div class="col-lg-6 col-md-6 col-sm-12"><div class="form-group"><label class="form-label">Company / Institution Name</label><input type="text" name="Work_'+newed+'" value="" required class="form-control"></div></div><div class="col-lg-2 col-md-6 col-sm-12"><div class="form-group"><label class="form-label">Commence Date</label><input type="date" name="CommenceComp_'+newed+'" value="{{Staff.Experience}}" required class="form-control"></div></div><div class="col-lg-2 col-md-6 col-sm-12"><div class="form-group"><label class="form-label">Completion Date</label><input type="date"  name="CompleteComp_'+newed+'" value="{{Staff.Experience}}" required class="form-control"></div></div><div class="col-lg-2 col-md-6 col-sm-12"><label class="form-label">Delete Input</label><button  type="button" onclick="del_work('+newed+')" class="btn btn-success col-12"><i class="icon-trash"></i></button></div>'
+  var hold = document.createElement("div")
+  hold.setAttribute('class','row col-12')
+  hold.id = "id2_"+newed
+  hold.innerHTML=info
+  edu_hold.appendChild(hold)
+
+
+}
+function del_work(id){
+
+  document.getElementById("id2_"+id).remove()
+}
+</script>
+
+<script>
+
+  // vars
+
+  upload = document.getElementById("file-input"),
+  upload1 = document.getElementById("file-input1"),
+  upload2 = document.getElementById("file-input2"),
+  upload3 = document.getElementById("file-input3"),
+  upload4 = document.getElementById("file-input4"),
+  upload5 = document.getElementById("file-input5"),
+  upload6 = document.getElementById("file-input6"),
+
+  upload7 = document.getElementById("file-input7"),
+  upload8 = document.getElementById("file-input8"),
+  upload9 = document.getElementById("file-input9"),
+  upload10 = document.getElementById("file-input10"),
+
+
+
+
+  // on change show image with crop options
+  upload.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload1.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img1');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload2.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img2');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload3.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img3');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload4.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img4');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload5.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img5');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload6.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img6');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+
+  upload7.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img7');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload8.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img8');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload9.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img9');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+
+  upload10.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+
+      const reader = new FileReader();
+      reader.onload = (e)=> {
+        if(e.target.result){
+        console.log(e);
+          let img = document.getElementById('img10');
+          img.src = e.target.result;
+
+        }
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  });
+  </script>

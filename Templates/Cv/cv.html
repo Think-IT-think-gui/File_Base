@@ -1,0 +1,1449 @@
+{% load static %}
+{% include "Cv/Extra/header.html" %}
+<body class="bg-triangles">
+    <!-- Preloader -->
+    <div class="preloader">
+	    <div class="preloader__wrap">
+		    <div class="circle-pulse">
+                <div class="circle-pulse__1"></div>
+                <div class="circle-pulse__2"></div>
+            </div>
+		    <div class="preloader__progress"><span></span></div>
+		</div>
+	</div>
+<style>
+  .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  }
+  .upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0;
+  }
+  </style>
+    <main class="main">
+	    <div class="container gutter-top">
+		    <div class="row sticky-parent">
+			    <!-- Sidebar -->
+                <aside class="col-12 col-md-12 col-xl-3">
+				    <div class="sidebar box shadow pb-0 sticky-column">
+						<svg class="avatar avatar--180" viewbox="0 0 188 188">
+                            <g class="avatar__box">
+                                <image xlink:href="{%get_media_prefix%}Profiles/{{Data.id}}.jpg?{{Rand}}" height="100%" width="100%"></image>
+                            </g>
+                        </svg>
+						<div class="text-center">
+						    <h3 class="title title--h3 sidebar__user-name">{{Data.Full_Name}}</h3>
+							<div class="badge badge--light">Sikobs Client</div>
+
+							<!-- Social -->
+		                    <div class="social">
+		                        <a class="social__link" ><i class="font-icon icon-facebook"></i></a>
+		                        <a class="social__link" ><i class="font-icon icon-twitter"></i></a>
+		                        <a class="social__link" ><i class="font-icon icon-linkedin2"></i></a>
+		                    </div>
+						</div>
+
+						<div class="sidebar__info box-inner box-inner--rounded">
+		                    <ul class="contacts-block">
+					            <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Birthday">
+							        <i class="font-icon icon-calendar"></i>{{Data.Birth}}
+							    </li>
+						        <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Address">
+							        <i class="font-icon icon-location"></i>{{Data.Birth_City}}
+							    </li>
+
+
+					        </ul>
+
+							<a onclick="openModal()" class="btn" style="color:#fff"><i class="font-icon icon-pencil"  ></i>Grade Applicant</a>
+
+
+
+                                  <div style="padding-top:30px">
+                             <a class="btn"  onclick="showLeftModal()" style="color:#fff">View Questions</a>
+                             </div>
+
+
+                                <div style="padding-top:30px">
+                             <a class="btn"  onclick="openModal2()" style="color:#fff">Upload Video File</a>
+                             </div>
+
+                             <div style="padding-top:30px">
+                             <a class="btn" id="openModalBtn"  style="color:#fff">View Medical Report</a>
+                             </div>
+
+						</div>
+					</div>
+		        </aside>
+
+				<!-- Content -->
+		        <div class="col-12 col-md-12 col-xl-9">
+				    <div class="box shadow pb-0">
+					    <!-- Menu -->
+
+
+
+			            <div class="content" id="content">
+						    <div id="about-tab" class="tabcontent active">
+					            <!-- ABOUT -->
+						        <div class="pb-0 pb-sm-2">
+		                            <h1 class="title title--h1 first-title title__separate">About Me</h1>
+						            <p>Dedicated and results-driven professional with a passion for my work. Possessing a diverse set of skills honed through hands-on experience and a commitment to continuous learning. Known for adaptability, attention to detail, and the ability to thrive in dynamic environments. A collaborative team player with excellent communication and problem-solving skills. Committed to achieving organizational goals through a combination of innovation and a strong work ethic.
+
+										My career has been marked by a commitment to excellence and a proactive approach to challenges. I have a proven track record of my achievements and projects. My analytical mindset allows me to approach problems methodically, and my strong interpersonal skills enable me to work effectively with colleagues at all levels.</p>
+					            </div>
+
+						        <!-- What -->
+
+
+								<div class="box-inner pb-0">
+									<h2 class="title title--h3">My Bio</h2>
+									<div class="row">
+										<!-- Case Item -->
+										<div class="col-12 col-lg-6">
+											<div class="case-item box box__second">
+												<img class="case-item__icon" src="{%get_static_prefix%}Cv/assets/icons/icon-design.svg" alt="" />
+												<div>
+													<h3 class="title title--h5">About Me</h3>
+													<p class="case-item__caption">
+														<span>Gender : {{Data.Gender}}</span><br>
+														<span>Marital Status : {{Data.Marital}}</span><br>
+														<span>Birth Date : {{Data.Birth}}</span><br>
+														<span>National ID : {{Data.Card_Id}}</span>
+													</p>
+												</div>
+											</div>
+										</div>
+
+										<!-- Case Item -->
+										<div class="col-12 col-lg-6">
+											<div class="case-item box box__second">
+												<img class="case-item__icon" src="{%get_static_prefix%}Cv/assets/icons/icon-design.svg" alt="" />
+												<div>
+													<h3 class="title title--h5">My Make</h3>
+													<p class="case-item__caption">
+														<span>Height : {{Data.Height}} ft</span><br>
+														<span>Weight : {{Data.Weight}} kg</span><br>
+														<span>Hair Color : {{Data.Hair}}</span><br>
+														<span>Eye Color : {{Data.Eye}}</span>
+
+													</p>
+												</div>
+											</div>
+										</div>
+
+										<!-- Case Item -->
+										<div class="col-12 col-lg-6">
+											<div class="case-item box box__second">
+												<img class="case-item__icon" src="{%get_static_prefix%}Cv/assets/icons/icon-design.svg" alt="" />
+												<div>
+													<h3 class="title title--h5">Place Of Birth</h3>
+													<p class="case-item__caption">
+														<span>Birth Country : {{Data.Country_Birth}}</span><br>
+														<span>Birth City : {{Data.Birth_City}}</span><br>
+														<span>Birth Address : {{Data.Birth_Address}}</span><br>
+														<span>Postal Code : {{Data.Postal_Code}}</span>
+
+													</p>
+												</div>
+										   </div>
+										</div>
+
+										<!-- Case Item -->
+										<div class="col-12 col-lg-6">
+											<div class="case-item box box__second">
+												<img class="case-item__icon" src="{%get_static_prefix%}Cv/assets/icons/icon-design.svg" alt="" />
+												<div>
+													<h3 class="title title--h5">Place Of Recidence</h3>
+													<span>Recidence Country : {{Data.Country_Recidence}}</span><br>
+														<span>Recidence City : {{Data.City}}</span><br>
+														<span>Recidence Address : {{Data.Address}}</span><br>
+														<span>Postal Code : {{Data.Postal_Code_Recidence}}</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+						        <!-- Testimonials -->
+						        <div class="box-inner box-inner--white">
+									<div class="pb-0">
+										<div class="row">
+											<div class="col-12 col-lg-6">
+												<h2 class="title title--h3"><img class="title-icon" src="{%get_static_prefix%}Cv/assets/icons/icon-education.svg" alt="" /> Education</h2>
+												<div class="timeline">
+
+													{% for i in Education %}
+													<article class="timeline__item">
+														<h5 class="title title--h5 timeline__title">{{i.Name}}</h5>
+														<span class="timeline__period">{{i.Start}} — {{i.End}}</span>
+														<p class="timeline__description">I attended {{i.Name}} from {{i.Start}} to {{i.End}}, This institution is an educational ground were i gained knowlage and skills.</p>
+													</article>
+													{% endfor %}
+
+
+												</div>
+											</div>
+
+											<div class="col-12 col-lg-6">
+												<h2 class="title title--h3"><img class="title-icon" src="{%get_static_prefix%}Cv/assets/icons/icon-experience.svg" alt="" /> Experience</h2>
+												<div class="timeline">
+													<!-- Item -->
+													{% for i in Work %}
+													<article class="timeline__item">
+														<h5 class="title title--h5 timeline__title">{{i.Name}}</h5>
+														<span class="timeline__period">{{i.Start}} — {{i.End}}</span>
+														<p class="timeline__description">I worked at {{i.Name}} from {{i.Start}} to {{i.End}}, This is a company where i performed roles and also improved my skills in that field.</p>
+													</article>
+													{% endfor %}
+												</div>
+											</div>
+										</div>
+									</div>
+						        </div>
+
+								<div class="pb-2">
+									<h1 class="title title--h1 first-title title__separate">Parents Info</h1>
+								</div>
+
+								<!-- News -->
+								<div class="news-grid pb-0">
+									<!-- Post -->
+									<article class="news-item box">
+										<div class="news-item__caption">
+											<h2 class="title title--h4">{{Data.Father_Full_Name}}</h2>
+											<p>
+												        <span>Father's Status : {{Data.Father_Living}}</span><br>
+												        <span>Father's Birth Date : {{Data.Father_Birth}}</span><br>
+														<span>Father's Recidence City : {{Data.Father_City}}</span><br>
+														<span> Father's Recidence Address : {{Data.Father_Address}}</span><br>
+														<span>Father's Contact : 00000000000</span>
+											</p>
+										</div>
+									</article>
+
+									<!-- Post -->
+									<article class="news-item box">
+										<div class="news-item__caption">
+											<h2 class="title title--h4">{{Data.Mother_Full_Name}}</h2>
+											<p>
+												        <span>Mother's Status : {{Data.Mother_Living}}</span><br>
+												        <span>Mother's Birth Date : {{Data.Mother_Birth}}</span><br>
+														<span>Mother's Recidence City : {{Data.Mother_City}}</span><br>
+														<span>Mother's Recidence Address : {{Data.Mother_Address}}</span><br>
+														<span>Mother's Contact : 00000000000</span>
+											</p>
+										</div>
+									</article>
+								</div>
+
+								<div class="box-inner pb-0">
+									<h2 class="title title--h3">My Referees and Guarantors</h2>
+									<div class="row">
+										<!-- Case Item -->
+										<div class="col-12 col-lg-6">
+											<div class="case-item box box__second">
+												<img class="case-item__icon" src="{%get_static_prefix%}Cv/assets/icons/icon-experience.svg" alt="" />
+												<div>
+													<h3 class="title title--h5">{{Data.Reference1_Full_Name}}</h3>
+													<p class="case-item__caption">
+														<span>Position / Job : {{Data.Reference1_Job}}</span><br>
+														<span>Contact : {{Data.Reference1_Contact}}</span><br>
+														<span>City Of Recidence : {{Data.Reference1_Address}}</span><br>
+
+													</p>
+												</div>
+											</div>
+										</div>
+
+										<!-- Case Item -->
+										<div class="col-12 col-lg-6">
+											<div class="case-item box box__second">
+												<img class="case-item__icon" src="{%get_static_prefix%}Cv/assets/icons/icon-experience.svg" alt="" />
+												<div>
+													<h3 class="title title--h5">{{Data.Reference2_Full_Name}}</h3>
+													<p class="case-item__caption">
+														<span>Position / Job : {{Data.Reference2_Job}}</span><br>
+														<span>Contact : {{Data.Reference2_Contact}}</span><br>
+														<span>City Of Recidence : {{Data.Reference2_Address}}</span><br>
+
+													</p>
+												</div>
+											</div>
+										</div>
+
+										<!-- Case Item -->
+										<div class="col-12 col-lg-6">
+											<div class="case-item box box__second">
+												<img class="case-item__icon" src="{%get_static_prefix%}Cv/assets/icons/icon-experience.svg" alt="" />
+												<div>
+													<h3 class="title title--h5">{{Data.Reference3_Full_Name}}</h3>
+													<p class="case-item__caption">
+														<span>Position / Job : {{Data.Reference3_Job}}</span><br>
+														<span>Contact : {{Data.Reference3_Contact}}</span><br>
+														<span>City Of Recidence : {{Data.Reference3_Address}}</span><br>
+
+													</p>
+												</div>
+										   </div>
+										</div>
+									</div>
+										<!-- Case Item -->
+										<div class="col-12 col-lg-12">
+											<div class="case-item box box__second">
+												<img class="case-item__icon" src="{%get_static_prefix%}Cv/assets/icons/icon-experience.svg" alt="" />
+												<div>
+													<h3 class="title title--h5">{{Data.Garantor_Full_Name}}</h3>
+													<span>Guarantor's Gender : {{Data.Garantor_Gender}}</span><br>
+														<span>Guarantor's Address : {{Data.Garantor_Address}}</span><br>
+														<span>Guarantor's City : {{Data.Garantor_City}}</span><br>
+														<span>Guarantor's Email : {{Data.Garantor_Email}}</span <br>
+														<span>Guarantor's Contact : 00000000000</span>
+
+												</div>
+											</div>
+										</div>
+
+<div class="row">
+										<div class="col-12 col-lg-6">
+											<div class="case-item box box__second">
+												<img class="case-item__icon" src="{%get_static_prefix%}Cv/assets/icons/icon-experience.svg" alt="" />
+												<div>
+                                                            <span>
+                                                                Country 1:
+                                                                <img
+                                                                    onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';"
+                                                                    src="https://www.countryflags.com/wp-content/uploads/{{ Data.Country1|lower }}-flag-png-large.png"
+                                                                    style="font-weight: 30px; width:30px"
+                                                                    alt="{{ Data.Country1 }} Flag"
+                                                                />
+                                                                {{ Data.Country1|lower }}
+                                                            </span>
+
+                                                            <br>
+
+                                                            <span>
+                                                                Country 2:
+                                                                <img
+                                                                    onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';"
+                                                                    src="https://www.countryflags.com/wp-content/uploads/{{ Data.Country2|lower }}-flag-png-large.png"
+                                                                    style="font-weight: 30px; width:30px"
+                                                                    alt="{{ Data.Country2 }} Flag"
+                                                                />
+                                                                {{ Data.Country2|lower }}
+                                                            </span>
+
+
+                                                            <br>
+
+                                                            <span>
+                                                                Country 3:
+                                                                <img
+                                                                    onerror="this.onerror=null; this.src='{% get_static_prefix %}OIP.jpg';"
+                                                                    src="https://www.countryflags.com/wp-content/uploads/{{ Data.Country3|lower }}-flag-png-large.png"
+                                                                    style="font-weight: 30px; width:30px"
+                                                                    alt="{{ Data.Country3 }} Flag"
+                                                                />
+                                                                {{ Data.Country3|lower }}
+                                                            </span>
+
+                                                            <br>
+                                                        </div>
+
+											</div>
+										</div>
+
+										<div class="col-12 col-lg-6">
+											<div class="case-item box box__second">
+												<img class="case-item__icon" src="{%get_static_prefix%}Cv/assets/icons/icon-experience.svg" alt="" />
+												<div>
+
+												           	<span>Job 1 : {{Data.Job_Choice1}}</span><br>
+
+							                               <span>Job 2 : {{Data.Job_Choice2}}</span><br>
+													     	<span>Job 3 : {{Data.Job_Choice3}}</span><br>
+
+
+												</div>
+											</div>
+										</div>
+
+
+
+                                             {% if i.Status == "Completed" %}
+                                         	<div class="col-12 col-lg-12">
+
+
+                                         	    <div style="padding-top:30px">
+                                                <a class="btn" href="{% url 'interview_profile_admin_report' i.id %}"  style="color:#fff">Export Report</a>
+                                                </div>
+											<div class="case-item box box__second">
+
+												<div>
+													<h3 class="title title--h5">Communication Skill:</h3>
+													<span>{{C5.0.Remark}}</span>
+												</div>
+											</div>
+									     	</div>
+
+									     	<div class="col-12 col-lg-12">
+											<div class="case-item box box__second">
+
+												<div>
+													<h3 class="title title--h5">Practical Experience:</h3>
+													<span>{{C2.0.Remark}}</span>
+												</div>
+											</div>
+									     	</div>
+
+									     	<div class="col-12 col-lg-12">
+											<div class="case-item box box__second">
+
+												<div>
+													<h3 class="title title--h5">Commitment:</h3>
+													<span>{{C6.0.Remark}}</span>
+												</div>
+											</div>
+									     	</div>
+
+
+
+									     	<div class="col-12 col-lg-12">
+											<div class="case-item box box__second">
+
+												<div>
+													<h3 class="title title--h5">Medicals:</h3>
+													<span>{{C1.0.Remark}}</span>
+												</div>
+											</div>
+									     	</div>
+
+									     	<div class="col-12 col-lg-12">
+											<div class="case-item box box__second">
+
+												<div>
+													<h3 class="title title--h5">Confidence:</h3>
+													<span>{{C3.0.Remark}}</span>
+												</div>
+											</div>
+									     	</div>
+
+									     	<div class="col-12 col-lg-12">
+											<div class="case-item box box__second">
+
+												<div>
+													<h3 class="title title--h5">Knowladge:</h3>
+													<span>{{C4.0.Remark}}</span>
+												</div>
+											</div>
+									     	</div>
+
+
+
+                                           {% endif %}
+
+
+
+
+										<div style="padding-top: 30px;"></div>
+									</div>
+
+								</div>
+
+								</div>
+						        <!-- Clients -->
+						      <div style="padding-top: 30px;"></div>
+						    </div>
+
+
+
+
+							<!-- CONTACT -->
+
+
+						</div>
+					</div>
+
+					<!-- Footer -->
+					<footer class="footer">© 2025 Sikobs</footer>
+		        </div>
+			</div>
+		</div>
+    </main>
+
+    <!-- Demo Menu -->
+
+	<!-- JavaScripts -->
+	<script src="{%get_static_prefix%}Cv/assets/js/jquery-3.4.1.min.js"></script>
+	<script src="{%get_static_prefix%}Cv/assets/js/plugins.min.js"></script>
+    <script src="{%get_static_prefix%}Cv/assets/js/common.js"></script>
+
+	<!-- Mapbox init -->
+	<script src="{%get_static_prefix%}Cv/assets/js/mapbox.init.js"></script>
+
+	<script src="{%get_static_prefix%}Cv/assets/demo/plugins-demo.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Basic reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Overlay for background */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            display: none;
+        }
+
+        /* Modal container */
+        .side-modal {
+            position: fixed;
+            top: 0;
+            right: -50%;
+            width: 50%;
+            height: 50%;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            transition: all 0.5s ease;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        /* Open state */
+        .side-modal.open {
+            right: 0;
+        }
+
+        /* Modal content */
+        .side-modal h2 {
+            margin: 0 0 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .side-modal label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .side-modal input[type="range"] {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .side-modal .range-value {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+
+        .side-modal button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .side-modal button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style for range sliders */
+input[type="range"] {
+    -webkit-appearance: none; /* Override default styles */
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #007BFF 0%, #00C6FF 100%);
+    outline: none;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default styles */
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #007BFF;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #007BFF;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    transform: scale(1.2);
+}
+
+input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #007BFF;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+input[type="range"]::-ms-thumb:hover {
+    transform: scale(1.2);
+}
+
+/* Style for text areas */
+textarea {
+    width: 100%;
+    height: 100px; /* Increased height */
+    padding-bottom: 105px; /* Added more padding for better usability */
+    font-size: 16px; /* Slightly larger font size */
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none; /* Prevents manual resizing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+
+    </style>
+</head>
+<body>
+
+<!-- Modal Overlay -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
+
+<!-- Side Modal -->
+<div class="side-modal" id="sideModal">
+    <h2>Review Form</h2>
+
+ <div class="row">
+     <div class="col-6">
+    <!-- Appearance -->
+    <label for="appearance">Appearance:</label>
+    <input type="range" id="appearance" min="0" value='{{i.Appearance}}' max="10" step="1" oninput="updateValue('appearanceValue', this.value)">
+    <div class="range-value" id="appearanceValue">{{i.Appearance}} Out Of  10</div>
+    <textarea  id="appearanceRemark" placeholder="Remarks for Appearance..." >{{i.Appearance_Remark}}</textarea>
+</div>
+ <div class="col-6">
+    <!-- Skill -->
+    <label for="skill">Communication Skill:</label>
+    <input type="range" id="skill" min="0" value='{{i.Communication}}' max="10" step="1" oninput="updateValue('skillValue', this.value)">
+    <div class="range-value" id="skillValue">{{i.Communication}} Out Of  10</div>
+    <textarea id="skillRemark" placeholder="Remarks for Skill...">{{i.Communication_Remark}}</textarea>
+</div>
+
+ <div class="col-6" style="padding-top:20px">
+    <!-- Attitude -->
+    <label for="attitude">Practical Experience:</label>
+    <input type="range" id="practical" min="0" value='{{i.Practical}}' max="10" step="1" oninput="updateValue('attitudeValue', this.value)">
+    <div class="range-value" id="attitudeValue">{{i.Practical}} Out Of  10</div>
+    <textarea id="practicalRemark" placeholder="Remarks for Experience...">{{i.Practical_Remark}}</textarea>
+</div>
+ <div class="col-6" style="padding-top:20px">
+    <!-- Knowledge -->
+    <label for="knowledge">Commitment:</label>
+    <input type="range" id="commitment" min="0" value='{{i.Commitment}}' max="10" step="1" oninput="updateValue('Commitment', this.value)">
+    <div class="range-value" id="Commitment">{{i.Commitment}} Out Of  10</div>
+    <textarea id="commitmentRemark" placeholder="Remarks for Commitment...">{{i.Commitment_Remark}}</textarea>
+
+</div>
+
+ <div class="col-6" style="padding-top:20px">
+    <!-- Knowledge -->
+    <label for="knowledge">Medicals:</label>
+    <input type="range" id="medicals" min="0" value='{{i.Medicals}}' max="10" step="1" oninput="updateValue('Medicals', this.value)">
+    <div class="range-value" id="Medicals">{{i.Medicals}} Out Of  10</div>
+    <textarea id="medicalsRemark" placeholder="Remarks for Medicals...">{{i.Medicals_Remark}}</textarea>
+
+</div>
+
+ <div class="col-6">
+    <!-- Knowledge -->
+    <label for="knowledge" style="padding-top:20px">Confidence:</label>
+    <input type="range" id="confidence" min="0" value='{{i.Confidence}}' max="10" step="1" oninput="updateValue('Confidence', this.value)">
+    <div class="range-value" id="Confidence">{{i.Confidence}} Out Of  10</div>
+    <textarea id="confidenceRemark" placeholder="Remarks for Confidence...">{{i.Confidence_Remark}}</textarea>
+
+</div>
+ <div class="col-6">
+    <!-- Knowledge -->
+    <label for="knowledge" style="padding-top:20px">Knowladge:</label>
+    <input type="range" id="knowledge" min="0" value='{{i.Knowledge}}' max="10" step="1" oninput="updateValue('Knowladge', this.value)">
+    <div class="range-value" id="Knowladge">{{i.Knowledge}} Out Of  10</div>
+    <textarea id="knowledgeRemark" placeholder="Remarks for Knowladge...">{{i.Knowledge_Remark}}</textarea>
+
+</div>
+
+ <div class="col-6">
+     <div>
+      <label for="knowledge" style="padding-top:30px">Meeting Status:</label>
+    <select class="btn" id="stat" >
+        <option {% if i.Status == "Pending" %} selected {% endif %} value="Pending">Pending</option>
+        <option {% if i.Status == "Pending Medicals" %} selected {% endif %} value="Pending Medicals">Pending Medicals</option>
+        <option {% if i.Status == "Missed Interview" %} selected {% endif %} value="Missed Interview">Missed Interview</option>
+        <option {% if i.Status == "Incomplete Medicals" %} selected {% endif %} value="Incomplete Medicals">Incomplete Medicals</option>
+        <option {% if i.Status == "Medicals Issues" %} selected {% endif %} value="Medicals Issues">Medicals Issues</option>
+        <option {% if i.Status == "Rescheduled" %} selected {% endif %} value="Rescheduled">Rescheduled</option>
+        <option {% if i.Status == "Completed" %} selected {% endif %} value="Completed">Completed</option>
+
+    </select>
+
+     </div>
+
+     <div>
+      <label for="knowledge" style="padding-top:30px">Decision:</label>
+    <select class="btn" id="stat2" >
+        <option {% if i.Answer == "Pending" %} selected {% endif %} value="Pending">Pending</option>
+
+        <option {% if i.Answer == "Rejected" %} selected {% endif %} value="Rejected">Rejected</option>
+        <option {% if i.Answer == "Accepted" %} selected {% endif %} value="Accepted">Accepted</option>
+
+    </select>
+
+     </div>
+
+
+
+     </div>
+</div style="padding-top:20px">
+    <a class="btn" onclick="up()" style="color:#fff">Update Remark</a>
+</div>
+</div>
+
+
+
+
+
+
+<script>
+    // Open Modal
+    function openModal() {
+        document.getElementById('modalOverlay').style.display = 'block';
+        document.getElementById('sideModal').classList.add('open');
+    }
+
+    // Close Modal
+    function closeModal() {
+        document.getElementById('modalOverlay').style.display = 'none';
+        document.getElementById('sideModal').classList.remove('open');
+    }
+
+    // Update Range Value Display
+    function updateValue(id, value) {
+        document.getElementById(id).textContent = value+' Out Of  10'
+    }
+
+
+
+    function up(){
+
+     const data = JSON.stringify({
+        appearance: {
+            value: document.getElementById("appearance").value,
+            remark: document.getElementById("appearanceRemark").value,
+        },
+        skill: {
+            value: document.getElementById("skill").value,
+            remark: document.getElementById("skillRemark").value,
+        },
+        practical: {
+            value: document.getElementById("practical").value,
+            remark: document.getElementById("practicalRemark").value,
+        },
+        knowledge: {
+            value: document.getElementById("knowledge").value,
+            remark: document.getElementById("knowledgeRemark").value,
+        },
+        medicals: {
+            value: document.getElementById("medicals").value,
+            remark: document.getElementById("medicalsRemark").value,
+        },
+        confidence: {
+            value: document.getElementById("confidence").value,
+            remark: document.getElementById("confidenceRemark").value,
+        },
+        commitment: {
+            value: document.getElementById("commitment").value,
+            remark: document.getElementById("commitmentRemark").value,
+        },
+        info: {
+            status: document.getElementById("stat").value,
+            answer: document.getElementById("stat2").value,
+        },
+    })
+
+console.log(data)
+
+        fetch("", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': '{{ csrf_token }}','Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+        if (data === 'Ok'){
+
+            alert("Account has been updated successfully!")
+
+        }else{
+            alert("Please an error occured when updating account!")
+
+        }
+        });
+
+    }
+
+ function uploadFile() {
+    const fileInput2 = document.getElementById('fileInput');
+    const file = fileInput2.files[0];
+
+    if (!file) {
+        alert('Please select a file to upload.');
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append('file', file);
+
+    // Show the loading screen
+
+   document.getElementById("loadingBarContainer").style.display = 'block';
+    fetch("{% url 'interview_file' Data.id %}", {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'X-CSRFToken': '{{ csrf_token }}',
+        },
+    })
+        .then(response => response.json())
+        .then(data => {
+
+
+
+            document.getElementById("loadingBarContainer").style.display = 'none';
+closeModal2()
+            showPopup()
+        })
+        .catch(error => {
+            console.error('Upload failed:', error);
+
+
+
+
+        });
+}
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player Modal</title>
+    <style>
+        /* Modal styles */
+        #videoModal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            position: relative;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .modal-content video {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: red;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        #selectButton {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #selectButton:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Video Modal -->
+    <div id="videoModal" style="display: none;">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal2()">×</button>
+            <p>Select a video to play:</p>
+
+            <input type="file" id="fileInput" accept="video/*" style="display: none;" />
+            <button id="selectButton" onclick="document.getElementById('fileInput').click()">Select Video</button>
+            <video id="videoPlayer" controls >
+                <source id="videoSource" src="{%get_media_prefix%}Interview_Files/{{Data.id}}.mp4?{{Rand}}" type="">
+                Your browser does not support the video tag.
+            </video>
+
+                <div style="padding-top:20px">
+            	<a onclick="uploadFile()" class="btn" style="color:#fff"><i class="font-icon icon-pencil"  ></i>Upload</a>
+
+            	</div>
+
+            	<div id="loadingBarContainer" style="display: none;">
+        <div id="loadingBar"></div>
+        <span id="loadingText">0%</span>
+    </div>
+        </div>
+    </div>
+
+    <script>
+        const videoModal = document.getElementById('videoModal');
+        const fileInput = document.getElementById('fileInput');
+        const videoPlayer = document.getElementById('videoPlayer');
+        const videoSource = document.getElementById('videoSource');
+
+        // Open modal
+        function openModal2() {
+            videoModal.style.display = 'flex';
+        }
+
+        // Close modal
+        function closeModal2() {
+            videoModal.style.display = 'none';
+            videoPlayer.pause();
+
+        }
+
+        // Handle file selection and play video
+        fileInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+
+            if (file && file.type.startsWith('video/')) {
+                const videoURL = URL.createObjectURL(file);
+                videoSource.src = videoURL;
+                videoSource.type = file.type;
+                videoPlayer.style.display = 'block';
+                videoPlayer.load();
+            } else {
+                alert('Please select a valid video file.');
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restarting Loading Bar</title>
+    <style>
+        /* Loading bar container */
+        #loadingBarContainer {
+            width: 100%;
+            background-color: #f3f3f3;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Loading bar itself */
+        #loadingBar {
+            height: 100%;
+            width: 0;
+            background-color: #4caf50;
+            transition: width 0.1s linear;
+        }
+
+        /* Optional: Display percentage */
+        #loadingText {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 14px;
+            font-weight: bold;
+            color: #000;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Loading bar -->
+
+
+    <script>
+        let progress = 0; // Initial progress
+        let loadingInterval = null; // Interval reference
+
+        const loadingBar = document.getElementById('loadingBar');
+        const loadingText = document.getElementById('loadingText');
+
+        // Start loading bar animation
+        function startLoading() {
+            // Clear any existing interval to prevent multiple animations
+            if (loadingInterval) clearInterval(loadingInterval);
+
+            // Reset progress and start the interval
+            progress = 0;
+            loadingInterval = setInterval(() => {
+                progress += 5; // Increment progress
+
+                if (progress > 100) {
+                    progress = 0; // Reset to 0 after reaching 100%
+                }
+
+                // Update loading bar and text
+                loadingBar.style.width = progress + '%';
+                loadingText.textContent = progress + '%';
+            }, 100); // Update every 100ms
+        }
+
+        // Stop the loading bar animation
+        function stopLoading() {
+            clearInterval(loadingInterval); // Stop the interval
+            loadingInterval = null; // Reset the interval reference
+        }
+
+        startLoading()
+    </script>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Notification</title>
+   <style>
+        /* Body style */
+
+
+        /* Container for the popup notification */
+        #popupNotification {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.1); /* Transparent white */
+            border-radius: 15px;
+            backdrop-filter: blur(10px); /* Glass effect */
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+            padding: 30px 50px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+            animation: slideIn 1s forwards;
+        }
+
+        /* Animation for sliding in */
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translate(-50%, -60%);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        /* Button to trigger the popup */
+        #showNotificationButton {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #showNotificationButton:hover {
+            background-color: #0056b3;
+        }
+
+        /* OK Button inside the popup */
+        #okButton {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #okButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Button to trigger the popup -->
+
+    <!-- Popup notification -->
+    <div id="popupNotification">
+        <div id="popupMessage" style="color:black">File Uploaded Successfully!</div>
+        <button id="okButton" onclick="closePopup()">OK</button>
+    </div>
+
+    <script>
+        // Function to show the popup notification
+        function showPopup() {
+            const popup = document.getElementById('popupNotification');
+            const popupMessage = document.getElementById('popupMessage');
+
+            // Update the popup message dynamically if needed
+            popupMessage.textContent = "File Uploaded Successfully!";  // Customize your message here
+
+            // Make the popup visible and trigger animation
+            popup.style.visibility = 'visible';
+            popup.style.opacity = 1;
+        }
+
+        // Function to close the popup notification
+        function closePopup() {
+            const popup = document.getElementById('popupNotification');
+            popup.style.visibility = 'hidden';
+            popup.style.opacity = 0;
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Side Modal Popup</title>
+    <style>
+        /* Body styling */
+/* Left modal container */
+#leftModal {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Initially hidden off-screen */
+    height: 100%;
+    width: 300px;
+    background-color: #333;
+    color: white;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+    transition: left 0.5s ease-in-out; /* Smooth slide-in animation */
+    overflow-y: auto; /* Allow scrolling if content exceeds height */
+}
+
+/* Content inside the modal */
+#leftModal h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#leftModal p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+#leftModal button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#leftModal button:hover {
+    background-color: #45a049;
+}
+
+/* Button to trigger the modal */
+#openLeftModal {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#openLeftModal:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+
+
+    <!-- Left modal -->
+ <div id="leftModal">
+    <button style="position: absolute; border-radius: 100px; top: 10px; right: 10px;" onclick="closeLeftModal()">X</button>
+    <h2 style="padding-top: 60px;">{{M.last.Name}} Question</h2>
+    {% for i in Q %}
+        <p>{{ forloop.counter }}. {{ i.Question }}</p>
+        <hr>
+    {% endfor %}
+</div>
+
+    <script>
+        // Function to show the left-side modal
+        function showLeftModal() {
+            const leftModal = document.getElementById('leftModal');
+            leftModal.style.left = '0'; // Slide in
+        }
+
+        // Function to close the left-side modal
+        function closeLeftModal() {
+            const leftModal = document.getElementById('leftModal');
+            leftModal.style.left = '-100%'; // Slide out
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    /* General styles for the page */
+
+
+/* Modal styles */
+.modala {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.7); /* Black with opacity */
+}
+
+.modala-content {
+  background-color: white;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%; /* Default modal size */
+  height:80%;
+}
+
+
+
+.fallback-message {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  display: none;
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  height: 90%;
+  margin-bottom: 20px;
+}
+
+</style>
+<body>
+
+  <!-- Trigger button to open the modal -->
+
+
+  <!-- Modal -->
+  <div class="modala" id="pdfModal">
+    <div class="modala-content">
+      <span class="close-btn" id="closeModalBtn">&times;</span>
+      <h3>Medical Report</h3>
+      <div class="iframe-container">
+        <iframe id="pdfIframe" src="" width="100%" height="500px" onerror="showFallbackMessage()"></iframe>
+      </div>
+      <div id="fallbackMessage" class="fallback-message">Medical Report Not Uploaded</div>
+    </div>
+  </div>
+
+
+</body>
+</html>
+
+<script>
+
+    // Open modal button
+document.getElementById("openModalBtn").addEventListener("click", function() {
+  // Open the modal
+  document.getElementById("pdfModal").style.display = "block";
+
+  // Load the PDF into the iframe
+  var iframe = document.getElementById("pdfIframe");
+  var pdfUrl = "{% get_media_prefix %}Medical_Results/{{Data.id}}.pdf"; // Replace with your PDF URL
+
+  iframe.src = pdfUrl;
+
+  // Reset fallback message and iframe visibility
+  document.getElementById("fallbackMessage").style.display = "none";
+  iframe.style.display = "block";
+});
+
+// Close modal button
+document.getElementById("closeModalBtn").addEventListener("click", function() {
+  // Close the modal and reset iframe
+  document.getElementById("pdfModal").style.display = "none";
+  var iframe = document.getElementById("pdfIframe");
+   // Clear iframe source
+});
+
+// Fallback for when the PDF cannot be loaded
+function showFallbackMessage() {
+  var iframe = document.getElementById("pdfIframe");
+  var fallbackMessage = document.getElementById("fallbackMessage");
+
+  // Hide the iframe and show the fallback message
+  iframe.style.display = "none";
+  fallbackMessage.style.display = "block";
+}
+
+</script>

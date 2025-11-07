@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+    {% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Omall</title>
+
+    <!-- manifest meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="{% get_static_prefix%}go/manifest.json">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="180x180">
+    <link rel="icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="{% get_static_prefix%}go/assets/img/logo.png" sizes="16x16" type="image/png">
+
+    <!-- Google fonts-->
+    <link href="{% get_static_prefix%}go/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="{% get_static_prefix%}go/css2-1?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="{% get_static_prefix%}go/npm/bootstrap-icons%401.5.0/font/bootstrap-icons.css">
+
+    <!-- nouislider CSS -->
+    <link href="{% get_static_prefix%}go/assets/vendor/nouislider/nouislider.min.css" rel="stylesheet">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="{% get_static_prefix%}go/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.css">
+
+    <!-- style css for this template -->
+    <link href="{% get_static_prefix%}go/assets/css/style.css" rel="stylesheet" id="style">
+</head>
+
+
+<body class="body-scroll" data-page="">
+    {% include 'go/Extra/header.html' %}
+        <!-- main page content -->
+        <div class="main-container container">
+            <!-- Search -->
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-floating"  style="z-index: 2;">
+                        <input type="text" id="locationInput" class="form-control is-valid" id="search" placeholder="Search">
+                        <label for="search">Search</label>
+                        <button type="button" class="btn btn-link tooltip-btn d-block text-color-theme">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-auto" style="position: fixed;z-index: 2;bottom: 100px;left: 20px;">
+                <form action="" method="post">
+                    {% csrf_token %}
+
+                    <input style="visibility: hidden;z-index: 2;position: fixed"  required value="" name="Location" id="loc-1">
+                    <input style="visibility: hidden;z-index: 2;position: fixed" required value="" name="Amount" id="pri-1">
+                    <input type="hidden" required value="{{Main.id}}" name="id" id="pri-1">
+
+
+                <button type="submit" style="z-index: 2;"  class="btn btn-lg btn-theme shadow-sm ">
+                    <i class="bi bi-cash-coin"></i>  <small style="z-index: 2;" id="costResult">Cost: ₵ 0.00</small>
+                </button>
+                </form>
+            </div>
+
+            <!-- cart items -->
+            <div  class="row mb-3">
+                <div class="col align-self-center">
+                    <div style="position: absolute;z-index: 100;" >
+
+                        <button style="visibility: hidden;" id="calculateButton">Calculate Distance and Cost</button>
+                        <p id="distanceResult"></p>
+                        <p style="z-index: 2222;" id="costResult"></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+                    <div id="map" style="height: 100%;width: 100%;position: absolute;top: 0px;"></div>
+
+
+                    <!-- Include your Google Maps API script here -->
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ9Z44-CrRsob2sFI5jrwRKyOVsXmNGNQ&libraries=places&callback=initMap" async defer></script>
+
+
+                <script>
+                    // Replace these coordinates with the target coordinates
+                    const targetCoordinates = { lat: 5.645352091185953, lng: -0.2760311995926311 };
+                    const costPerKilometer = 2.35; // Change this to your cost per kilometer
+
+                    let map;
+                    let marker;
+                    let distanceResult = document.getElementById('distanceResult');
+                    let costResult = document.getElementById('costResult');
+
+                    function initMap() {
+                        ghanaBounds = new google.maps.Circle({
+                            center: {  lat: 7.2500, lng: -0.0833 },
+                            radius: 600 * 1000, // 600 kilometers radius around Ghana's center
+                            editable: false,
+                            fillColor: '#00FF00',
+                            fillOpacity: 0.2,
+                            strokeWeight: 0,
+                            clickable: false
+                        });
+
+                        map = new google.maps.Map(document.getElementById('map'), {
+                            center: { lat: 5.645352091185953, lng: -0.2760311995926311 }, // Center the map on Ghana
+                            zoom: 15,
+                            restriction: {
+                                latLngBounds: ghanaBounds.getBounds(),
+                                strictBounds: false
+                            }
+                        });
+
+
+                        marker = new google.maps.Marker({
+                            map: map,
+                            draggable: true,
+                            animation: google.maps.Animation.DROP
+                        });
+
+                        // Listen for a click event on the map to set the marker's position
+                        google.maps.event.addListener(map, 'click', function (event) {
+                            marker.setPosition(event.latLng);
+                            calculateDistance(event.latLng);
+                            getLocationName(event.latLng);
+                        });
+
+                        let searchBox = new google.maps.places.SearchBox(document.getElementById('locationInput'));
+
+                        google.maps.event.addListener(searchBox, 'places_changed', function () {
+                            let places = searchBox.getPlaces();
+
+                            if (places.length == 0) return;
+
+                            let place = places[0];
+                            marker.setPosition(place.geometry.location);
+                            map.setCenter(place.geometry.location);
+
+                            calculateDistance(place.geometry.location);
+                            getLocationName(place.geometry.location);
+
+
+
+                        });
+
+                        document.getElementById('calculateButton').addEventListener('click', function () {
+                            calculateDistance(marker.getPosition());
+                            getLocationName(marker.getPosition());
+
+                        });
+                    }
+
+                    function calculateDistance(location) {
+                        let service = new google.maps.DistanceMatrixService();
+
+                        service.getDistanceMatrix(
+                            {
+                                origins: [location],
+                                destinations: [targetCoordinates],
+                                travelMode: 'DRIVING'
+                            },
+                            function (response, status) {
+                                if (status === 'OK') {
+                                    let distanceValue = response.rows[0].elements[0].distance ? response.rows[0].elements[0].distance.value : 0;
+                                    let distanceText = response.rows[0].elements[0].distance ? response.rows[0].elements[0].distance.text : 'Distance not available';
+                                    distanceResult.innerHTML = `Distance to target: ${distanceText}`;
+
+                                    // Calculate the cost based on distance and display it
+                                    let cost = (distanceValue / 1000) * costPerKilometer; // Convert meters to kilometers
+                                    costResult.innerHTML = `Cost: ₵${cost.toFixed(2)}`;
+                                    document.getElementById('pri-1').value=cost.toFixed(2)
+                                } else {
+                                    distanceResult.innerHTML = 'Error calculating distance.';
+                                    costResult.innerHTML = 'Cost not available.';
+                                }
+                            }
+                        );
+                    }
+                    function getLocationName(location) {
+                        let geocoder = new google.maps.Geocoder();
+                        geocoder.geocode({ location: location }, function (results, status) {
+                            if (status === 'OK' && results[0]) {
+                                console.log(`Location: ${results[0].formatted_address}`)
+                                document.getElementById('loc-1').value=results[0].formatted_address
+
+                            } else {
+                                console.log(`Location`)
+                            }
+                        });
+                    }
+                </script>
+
+
+
+        </div>
+        <!-- main page content ends -->
+
+
+    </main>
+    <!-- Page ends-->
+
+
+    {% include 'go/Extra/footer.html' %}
+
+
+    <!-- Required jquery and libraries -->
+    <script src="{% get_static_prefix%}go/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="{% get_static_prefix%}go/assets/js/popper.min.js"></script>
+    <script src="{% get_static_prefix%}go/assets/vendor/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+
+    <!-- cookie js -->
+    <script src="{% get_static_prefix%}go/assets/js/jquery.cookie.js"></script>
+
+    <!-- PWA app service registration and works -->
+    <script src="{% get_static_prefix%}go/assets/js/pwa-services.js"></script>
+
+    <!-- swiper script -->
+    <script src="{% get_static_prefix%}go/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.js"></script>
+
+    <!-- nouislider js -->
+    <script src="{% get_static_prefix%}go/assets/vendor/nouislider/nouislider.min.js"></script>
+
+    <!-- Customized jquery file  -->
+    <script src="{% get_static_prefix%}go/assets/js/main.js"></script>
+    <script src="{% get_static_prefix%}go/assets/js/color-scheme.js"></script>
+
+    <!-- page level custom script -->
+    <script src="{% get_static_prefix%}go/assets/js/app.js"></script>
+
+
+
+</body>
+
+</html>

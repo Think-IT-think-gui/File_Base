@@ -1,0 +1,449 @@
+{% load static %}
+{% include "New/Extra/header.html" %}
+      <!-- Content wrapper -->
+      <div class="content-wrapper">
+
+        <div class="container-xxl flex-grow-1 container-p-y">
+
+
+
+
+
+          <div class="app-academy">
+            <div class="card p-0 mb-4">
+              <div class="card-body d-flex flex-column flex-md-row justify-content-between p-0 pt-4">
+
+
+                <div class="app-academy-md-50 card-body d-flex align-items-md-center flex-column text-md-center mb-4">
+                  <span class="card-title mb-3 lh-lg px-md-5 display-6 text-heading">
+                    Accounting, Management, and Overview.
+                    <span class="text-primary text-nowrap">All in one place</span>.
+                  </span>
+                  <p class="mb-3 px-2">
+                    Make your clocking easy by using the account filter section and the search section to find and identify your account with ease.
+
+                  </p>
+                  <form action="{% url 'booking_confirm_find' %}" method="post" class="d-flex align-items-center justify-content-between app-academy-md-80">
+                   {% csrf_token %}
+                    <input type="search" name="Key" required placeholder="Find your account.." class="form-control me-2">
+                    <button type="submit" class="btn btn-primary btn-icon">Find</button>
+                  </form>
+                </div>
+                <div class="app-academy-md-25 d-flex align-items-end justify-content-end">
+
+                </div>
+              </div>
+            </div>
+            <div class="row">
+
+
+          </div>
+
+
+
+            <div class="card mb-4">
+              <div class="card-header d-flex flex-wrap justify-content-between gap-3">
+                <div class="card-title mb-0 me-1">
+                  <h5 class="mb-1">Clocking Pannel</h5>
+                  <p class="mb-0">Total <strong style="color: red;">{{Total2}}</strong> schedule For Today</p>
+                </div>
+               <form class="d-flex justify-content-md-end align-items-center gap-3 flex-wrap" action="{% url "confirm_booking_filter" %}" method="post">
+                  {% csrf_token %}
+                  <div class="row">
+                    <div class="col-8">
+                      <select id="select2_course_select" name="Key" class="select2 form-select" data-placeholder="All Courses">
+                        <option value="All">All Schedules</option>
+                      <option value="Clocked In">Clocked In</option>
+                      <option value="Clocked Out">Clocked Out</option>
+                      <option value="Not In">Not Yet In</option>
+
+
+
+                    </select>
+                  </div>
+
+                <div class="col-3">
+                  <button type="submit" class="btn rounded-pill btn-label-info btn-success">Filter</button>
+                </div>
+                </div>
+                </form>
+              </div>
+              <div class="card-body">
+                <div class="row gy-4 mb-4">
+
+
+                  {% for i in Booking %}
+                  <div id='{{i.id}}' class="col-sm-6 col-lg-4">
+                    <div class="card p-2 h-100 shadow-none border">
+                      <span style="position:absolute;width:50px:hieght:50px;right:10px;font-size:20px" class="badge rounded-pill bg-danger">
+                        {{i.Count}}
+                      </span>
+
+
+                      <div class="rounded-2 text-center mb-3">
+
+                         {% if i.Type == 'New' %}
+                        <a href="{% url "view_booking" i.id %}"><img class="img-fluid" src="{% get_media_prefix %}Booking/{{i.id}}.jpg" style="object-fit: cover; width: 400px;height: 400px;border-radius:10px"   alt="tutor image 1"></a>
+                      {% else %}
+                         <a href="{% url "view_booking" i.id %}"><img class="img-fluid" src="{% get_media_prefix %}Profiles/{{i.Type}}.jpg" style="object-fit: cover; width: 400px;height: 400px;border-radius:10px"   alt="tutor image 1"></a>
+                         {% endif %}
+                      </div>
+                      <div class="card-body p-3 pt-2">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                          <span class="badge rounded-pill bg-label-primary"><img src="{% get_media_prefix %}Admin/{{i.User}}.jpg?{{Rand}}" style="object-fit: cover; width: 50px;height: 50px;border-radius: 100px;" alt="Post Author">
+                          </span>
+                          <p class="d-flex align-items-center justify-content-center gap-1 mb-0">
+                            {{i.Admin}} <span class="text-warning"><i class="mdi mdi-star me-1"></i></span><span class="fw-normal">{{i.date}}</span>
+                          </p>
+                        </div>
+
+
+                        <a href="{% url "view_booking" i.id %}" class="h5">{{i.Name}}</a>
+
+                        <p><i class="mdi mdi-phone-classic"></i> Contact: {{i.Contact}}</p>
+                                    <p><i class="mdi mdi-map-marker-radius"></i> Location: {{i.Location}}</p>
+
+
+                   {{i.Status}}
+
+                    {% if i.Type == 'New' %}
+                        <div class="d-flex flex-column flex-md-row gap-3 text-nowrap flex-wrap flex-md-nowrap  flex-lg-wrap flex-xxl-nowrap">
+                         {% if i.Status == "Clocked In" %}
+                    <a class="w-100 btn btn-outline-warning d-flex align-items-center" data-bs-toggle="modal" onclick="set({{i.id}},'{{i.Name}}','Clock Out','New',0)" data-bs-target="#referAndEarn">
+                      <span>Clock Out </span>
+                    </a>
+                   {% elif i.Status == "Clocked Out" %}
+                   <a class="w-100 btn btn-outline-success d-flex align-items-center" >
+                    <span>Meeting Completed</span>
+                  </a>
+                   {% else %}
+                   <a class="w-100 btn btn-outline-success d-flex align-items-center" data-bs-toggle="modal" onclick="set({{i.id}},'{{i.Name}}','Clock In','New',0)" data-bs-target="#referAndEarn">
+                    <span>Clock In </span>
+                  </a>
+                   {% endif %}
+
+
+
+                        </div>
+                {% else %}
+
+
+                          <div class="d-flex flex-column flex-md-row gap-3 text-nowrap flex-wrap flex-md-nowrap  flex-lg-wrap flex-xxl-nowrap">
+                    {% if i.Status == "Clocked In" %}
+                    <a class="w-100 btn btn-outline-warning d-flex align-items-center" data-bs-toggle="modal" onclick="set({{i.id}},'{{i.Name}}','Clock Out','Old','{{i.Type}}')" data-bs-target="#referAndEarn">
+                      <span>Clock Out </span>
+                    </a>
+                   {% elif i.Status == "Clocked Out" %}
+                   <a class="w-100 btn btn-outline-success d-flex align-items-center" >
+                    <span>Meeting Completed</span>
+                  </a>
+                   {% else %}
+                   <a class="w-100 btn btn-outline-success d-flex align-items-center" data-bs-toggle="modal" onclick="set({{i.id}},'{{i.Name}}','Clock In','Old','{{i.Type}}')" data-bs-target="#referAndEarn">
+                    <span>Clock In </span>
+                  </a>
+                   {% endif %}
+
+                        </div>
+
+
+                {% endif %}
+
+
+
+                        <div style="padding-top:20px">
+<div style="padding-top:10px">
+                    <a
+                    {% if i.Type == 'New' %}
+                          onclick="set_book('{{i.id}}','Booking/{{i.id}}')"
+                          {% else %}
+                          onclick="set_book('{{i.id}}','Profiles/{{i.Type}}')"
+                          {% endif %}
+
+                     {% if i.Card == "No" %}
+                    class="btn bg-primary-subtle text-primary w-100 rounded-pill" aria-controls="DataTables_Table_0" id="B_ID_{{i.id}}" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddUser22" >Assign ID Card</a>
+                      {% else %}
+                       class="btn bg-danger-subtle text-danger w-100 rounded-pill"  id="B_ID_{{i.id}}" type="button" >Assigned To ID Card {{i.Card}}</a>
+
+                      {% endif %}
+                  </div>
+               <div style="padding-top:10px">
+                  <a  href="{% url 'manage_files' i.Type %}"   class="btn bg-success-subtle text-success w-100 rounded-pill"  >Upload Files</a>
+                   </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                 {% endfor %}
+
+
+
+
+
+
+                </div>
+
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+
+      </div>
+          <!-- / Content -->
+
+          <div class="modal fade contentmodal" id="deleteModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content doctor-profile">
+                    <div class="modal-header pb-0 border-bottom-0  justify-content-end">
+                        <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><i class="feather-x-circle"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="delete-wrap text-center">
+                            <div class="del-icon"><i class="feather-x-circle"></i></div>
+                            <h4>Type "DELETE" in below to delete this.</h4>
+                            <div class="submit-section">
+                                <input id="pass2" class="form-control" type="text" id="test" style="text-align: center;">
+
+                            </div>
+                            <div style="padding-top: 20px;" class="submit-section">
+                                <button onclick="Delete()"  class="btn btn-danger me-2" id="si_button">Delete This</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <input type="hidden" value="" id='hold_id'>
+<div class="modal fade" id="referAndEarn" tabindex="-1" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-simple modal-refer-and-earn">
+<div class="modal-content p-3 p-md-5">
+  <form class="modal-body pt-3 pt-md-0 px-0 pb-md-0" method="post" action="{% url 'booking_confirm'  %}">
+    {% csrf_token %}
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="text-center mb-4">
+      <h3 class="mb-2">Meeting Styatus</h3>
+      <p class="text-center w-75 m-auto mt-1">
+        Clock In when you arrive and don't forget to clock out when you are leaving. Thank You.
+      </p>
+    </div>
+    <div class="rounded-2 text-center mb-3">
+      <a data-bs-toggle="modal" data-bs-target="#referAndEarn"><img class="img-fluid" src="{% get_media_prefix %}Booking/2.jpg?{{Rand}}" id="img_1" style="object-fit: cover; width: 200px;height: 200px;border-radius:10px"   alt="tutor image 1"></a>
+    </div>
+    <div class="row py-2">
+      <a data-bs-toggle="modal" data-bs-target="#referAndEarn" class="h5" style="text-align:center" id="name_1">Aminu Bob Bay</a>
+
+    </div>
+    <input type="hidden" id="staff_1" name="id">
+    <hr class="my-4 mx-n3 mx-md-n5" />
+
+      <div style="text-align:center">
+      <button type="submit" class="w-100 btn btn-outline-success d-flex align-items-center" id="btn1" >Confirm Booking</button>
+      </div>
+    </div>
+  </div>
+</form>
+</div>
+</div>
+<!--/ Refer & Earn Modal -->
+
+  <!--/ Property Listing Wizard -->
+</div>
+</div>
+</div>
+<!--/ Create App Modal -->
+
+<!-- Two Factor Auth Modal -->
+
+
+      </div>
+      <!-- / Content -->
+</div>
+<!-- /Error -->
+
+<!-- / Content -->
+
+
+
+         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasAddUser22" aria-labelledby="offcanvasAddUserLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasAddUserLabel" class="offcanvas-title">Assigning ID Card</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body mx-0 flex-grow-0 h-100">
+                <div>
+                  {% csrf_token %}
+
+                  <div style="text-align: center;"  class="result">
+                    <img id='imgg' style="border-radius: 5px;width:200px;height:200px;object-fit: cover; " src="{% get_static_prefix %}Manager\assets\img\img-02.jpg">
+
+                    </div>
+
+                  <div style="padding-top: 10px;"></div>
+
+                  <input type="hidden" class="form-control" placeholder="" aria-label="" name="Type" value="Client" />
+                  <input type="hidden" class="form-control" placeholder="" aria-label="" name="Client" value="" id="c_id"/>
+                  <div class="form-floating form-floating-outline mb-4">
+                    <select onchange='check_id()' class="form-control" placeholder=""  aria-label="" id="Card" required >
+                    {% for i in ID %}
+                    <option value="{{i.id}}">Card {{i.id}}</option>
+                    {% endfor %}
+                    </select>
+                    <label for="add-user-email">Select Card</label>
+                  </div>
+
+
+
+                  <p style="padding-bottom:10px">Assign Card Function</p>
+
+                  {% for i in Point %}
+                  <div class="form-check form-check-inline col-12">
+                        <input class="form-check-input success check-outline outline-success" type="checkbox" id="Point_{{i.id}}" value="{{i.id}}" >
+                        <label class="form-check-label" for="success2-outline-check">{{i.Name}}</label>
+                  </div>
+                  {% endfor %}
+
+
+
+                 <p style="padding-bottom:10px"></p>
+                  <div class="form-floating form-floating-outline mb-4">
+                    <textarea type="text" id="About"  class="form-control"  rows="10" cols="50"   required ></textarea>
+                    <label for="add-user-email">Prompt</label>
+                  </div>
+
+                  <button type="button" onclick="assign()" class="btn btn-primary me-sm-3 me-1 data-submit">Submit</button>
+                  <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="offcanvas">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+<script>
+ function assign(){
+
+
+        {% for i in Point %}
+        const checkbox_{{i.id}} = document.getElementById("Point_{{i.id}}");
+        if (checkbox_{{i.id}}.checked) {
+         var Vcheckbox_{{i.id}} = {{i.id}}
+        } else {
+         var Vcheckbox_{{i.id}} = 'NO'
+        }
+        checkbox_{{i.id}}.checked = false;
+        {% endfor %}
+
+        var user = document.getElementById("c_id")
+        var about = document.getElementById("About")
+        var card = document.getElementById("Card")
+
+
+        data = JSON.stringify({
+        id:user.value,
+        About:about.value,
+        Card:card.value,
+        {% for i in Point %}
+         Mbox_{{i.id}}:Vcheckbox_{{i.id}},
+        {% endfor %}
+
+        })
+        fetch("{% url 'assign_id_cards' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': '{{csrf_token}}','Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+
+
+            alert("Card has been assigned successfully!")
+
+            var btn = document.getElementById("B_ID_"+user.value)
+            btn.innerHTML = 'Assigned To ID '+card.value
+            btn.setAttribute('class','btn bg-warning-subtle text-warning w-100 rounded-pill')
+
+
+        }else{
+            alert("Please an error occured when assigning card!")
+
+        }
+        });}
+
+
+
+
+function check_id(){
+        var card = document.getElementById("Card")
+        data = JSON.stringify({
+        Card:card.value,
+        })
+        fetch("{% url 'check_assign_id_cards' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': '{{csrf_token}}','Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+        if (data === 'Ok'){
+
+            alert("This ID CARD is already assigne to someone ealse, select a new one or overide this one!")
+        Close()
+        }else{
+            console.log("None")
+
+        }
+        });}
+
+
+
+
+      function set_book(id,link){
+          document.getElementById("c_id").value=id
+          document.getElementById("imgg").src='{% get_media_prefix %}'+link+'.jpg'
+
+
+        }
+            upload = document.getElementById("file-input"),
+            upload.addEventListener('change', (e) => {
+              if (e.target.files.length) {
+              const reader = new FileReader();
+              reader.onload = (e)=> {
+                if(e.target.result){
+                let img = document.getElementById('img');
+                img.src = e.target.result;
+                }
+              };
+              reader.readAsDataURL(e.target.files[0]);
+              }
+            });
+
+          </script>
+
+
+  <script>
+    function set(id,name,c,p,d){
+     document.getElementById("name_1").innerHTML=name
+     document.getElementById("btn1").innerHTML=c
+
+     document.getElementById("staff_1").value=id
+
+      if (p === "New") {
+    document.getElementById("img_1").src = "/media/Booking/" + id + ".jpg?" + new Date();
+} else {
+    document.getElementById("img_1").src = "/media/Profiles/" + d + ".jpg?" + new Date();
+}
+
+
+    }
+  </script>
+
+
+{% include "New/Extra/footer.html" %}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Admin</title>
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/table/resources/css/app.min.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/table/resources/vendors/zwicon/zwicon.min.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/table/resources/vendors/animate.css/animate.min.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/table/resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+  
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/feather/feather.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{% get_static_prefix %}Administrator/css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="{% get_static_prefix %}Administrator/images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:{% get_static_prefix %}Administrator/partials/_navbar.html -->
+    
+    {% include 'Administrator/header1.html'%}
+
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            
+            
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Dirrect Debit</h4>
+                  <p class="card-description">
+                   All dirrect debits listed here are associated with <strong>({{Client.Full_Name}})</strong>.
+                  </p>
+                 <form action="" method="post" >
+                  {% csrf_token %}
+                  <div class="row col-lg-12 col-md-12 col-sm-12"  >
+                    
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="form-group">
+                        <label class="form-label">Bill Price </label>
+                        <input type="number" name="Amount" value="" id="bprice" required  class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="form-group">
+                        <label class="form-label">Bill Type </label>
+                        <select name="Type" required  class="form-control">
+                          <option value="Credit">Dirrect Credit</option>
+                          <option value="Debit">Dirrect Debit</option>
+
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12" style="padding-top: 30px;">
+                      <button  type="submit" class="btn btn-primary">Add Debit</button>
+                      
+                    </div>
+                  </div>
+                 </form>
+                  <div class="table-responsive data-table hover">
+                    <table id="data-table" class="table table-striped">
+                      <thead>
+                        <tr>
+                          
+                          
+                          <th style="color: black;">
+                            Bill Price
+                          </th>
+                          <th style="color: black;">
+                            Bill Type
+                          </th>
+                          
+                          <th style="color: black;">
+                            Time Created
+                          </th>
+                          
+                          <th style="color: black;">
+                            Date Created
+                          </th>
+                          <th style="color: black;">
+                            Delete Debit
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody id="mb" >
+                        {% for i in Debit %}
+                        <tr id="f_{{i.id}}">
+                         
+                          
+                          <td>
+                            ₵ {{i.Amount}}
+                          </td>
+                          <td>
+                             {{i.Status}}
+                          </td>
+                          <td>
+                            {{i.time}}
+                          </td>
+                          <td>
+                            {{i.date}}
+                          </td>
+                          <td>
+                            <button type="button" onclick="Open('{{i.id}}')" class="btn btn-danger btn-icon-text">
+                              <i class="ti-trash btn-icon-check"></i>                                                    
+                              
+                            </button>
+                          </td>
+                         
+                        
+                         
+                        {% endfor %}
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+           
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:{% get_static_prefix %}Administrator/partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+             <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023.
+              Edumcloud <a href="" target="_blank"></a> from Edumcloud. All rights reserved.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="{% get_static_prefix %}Administrator/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="{% get_static_prefix %}Administrator/js/off-canvas.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/hoverable-collapse.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/template.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/settings.js"></script>
+  <script src="{% get_static_prefix %}Administrator/js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+  
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/jquery/jquery.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/popper.js/popper.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/datatables/jquery.dataTables.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/datatables/datatables-buttons/dataTables.buttons.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/datatables/datatables-buttons/buttons.print.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/jszip/jszip.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/vendors/datatables/datatables-buttons/buttons.html5.min.js"></script>
+  <script src="{% get_static_prefix %}Administrator/table/resources/js/app.min.js"></script>
+</body>
+
+</html>
+
+		
+<div id="cover"  style="background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: hidden">
+	<div class="col-xl-4 col-lg-4 col-xxl-4 col-md-12" style="position: fixed;top:30%;left: 40%;">
+		<div class="card" id="cmain" style="visibility: hidden">
+			<div class="card-body text-center ai-icon  text-primary" >
+				<button style="position: absolute;right: 20px;" class="btn btn-sm btn-danger" onclick="Close()">x</button>
+				<svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+					<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" style="stroke-dasharray: 25, 45; stroke-dashoffset: 0;"></path>
+					<path d="M8,7A4,4 0,1,1 16,7A4,4 0,1,1 8,7" style="stroke-dasharray: 26, 46; stroke-dashoffset: 0;"></path>
+				</svg>
+				<h4 class="my-2" style="color: black;">Type "DELETE" in the form below to delete Debit.</h4>
+				<div class="form-group" >
+					
+					<input type="text" id="pass2" class="form-control" style="text-align: center;" >
+				</div>
+				<button onclick="Delete()" id="si_button" class="btn my-2 btn-primary btn-lg px-4"><i class="fa fa-trash"></i> Delete</button>
+			</div>
+		</div>
+	</div>
+</div>
+<input id="state" type="hidden">
+
+<script>
+  setInterval(load_all,1000);
+function load_all(){
+   
+    
+    var pass2 = document.getElementById("pass2").value
+if (pass2==="DELETE"){
+
+ document.getElementById("si_button").disabled = false;
+}else{
+ document.getElementById("si_button").disabled = true;
+}   
+}  
+
+function Open(id){
+document.getElementById("state").value = id
+document.getElementById('cover').setAttribute("style", "background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: visible")
+document.getElementById('cmain').setAttribute("style", "visibility: visible")
+
+}
+function Close(){
+document.getElementById('cover').setAttribute("style", "visibility: hidden;z-index: 0;")
+document.getElementById('cmain').setAttribute("style", "z-index: 0;visibility: hidden;")
+
+}
+
+
+function Delete(){
+  var state = document.getElementById("state")
+data = JSON.stringify({
+id:state.value,
+})
+fetch("{% url 'delete_debit' %}", {
+method: 'delete',
+body: data,
+headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json',
+    },
+})
+.then(response => response.json())
+.then(data => {
+  console.log(data)
+if (data === 'Ok'){
+    document.getElementById("f_"+state.value).remove() 
+    state.value="" 
+    //document.getElementById("pass2").value=""
+    alert("Bill has been deleted successfully!")
+Close()
+}else{
+    alert("Please an error occured when deleting bill!")
+
+}
+});}
+
+
+
+
+function Add_Bill(){
+  var name = document.getElementById("bname")
+  var priced = document.getElementById("bprice")
+
+data = JSON.stringify({
+Name:name.value,
+Price:priced.value
+})
+fetch("{% url 'billings' %}", {
+method: 'POST',
+body: data,
+headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json',
+    },
+})
+.then(response => response.json())
+.then(data => {
+if (data["Stat"] === 'Ok'){
+    var main_body = document.getElementById('mb')
+    var dat_str = '<td>'+name.value+'</td><td>₵ '+priced.value+'</td><td>'+data["Data"]["Time"]+'</td><td>'+data["Data"]["Date"]+'</td><td><button onclick="Open('+data["Data"]["Id"]+')" type="button" class="btn btn-danger btn-icon-text"><i class="ti-trash btn-icon-check"></i></button></td>'
+    var n_b = document.createElement("tr")
+    n_b.id = data["Data"]["Id"]
+    n_b.innerHTML =dat_str
+    name.value=""
+    priced.value=""
+    main_body.appendChild(n_b)
+    alert("Bill has been added successfully!")
+}else{
+    alert("Please an error occured when adding bill!")
+
+}
+});}
+</script>

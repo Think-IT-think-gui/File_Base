@@ -1,0 +1,198 @@
+{% load static %}
+
+
+{% include "New/Extra/header.html" %}
+          <!--  Header End -->
+          <div class="card shadow-none position-relative overflow-hidden mb-4">
+            <div class="card-body d-flex align-items-center justify-content-between p-4">
+              <h4 class="card-title mb-0">Packages List</h4>
+              <nav aria-label="breadcrumb">
+
+              </nav>
+            </div>
+          </div>
+          <div class="datatables">
+            <!-- start Zero Configuration -->
+            <div class="row">
+
+              {% for i in Listed %}
+              <div class="col-md-6 col-lg-4">
+                <div class="card overflow-hidden hover-img">
+                  <div class="position-relative">
+
+                    <a href="">
+
+                      <img src="{% get_media_prefix %}Jobs/{{i.id}}.jpg?{{Rand}}" style="height:350px;object-fit:cover" class="card-img-top" alt="spike-img">
+                    </a>
+
+
+                  </div>
+                  <div class="card-body p-4">
+                    <div class="d-flex align-items-center fs-2 ms-auto" style="text-align:right">
+                      <i class=" ti-bookmark-alt text-dark" style="padding-right:5px"></i> {{i.date}}
+                    </div>
+
+                    <a class="d-block my-4 fs-5 text-dark fw-semibold link-primary" href="">
+                      {{i.Full_Name}}</a>
+                    <div class="d-flex align-items-center gap-4">
+                      <div class="d-flex align-items-center gap-2">
+                        <a href="javascript:void(0)" class="link me-1">
+                          <i class="ti-pin2 fs-4 favourite-note"></i> ₵ {{i.Min_Salary}}
+                        </a>
+                        <a href="javascript:void(0)" class="link text-danger ms-2">
+                          <i class="ti-pin2 fs-4 remove-note"></i> ₵ {{i.Max_Salary}}
+                        </a>
+                      </div>
+
+
+
+                    </div>
+
+                    <hr>
+                    <div class="row">
+                   {% if Data.Account == '1' %}
+
+                     {% else %}
+                    <div style="padding-top:5px" class="col-6">
+                      <a href="{% url "job_view" i.id %}" class="btn bg-warning-subtle text-warning w-100 rounded-pill">Manage</a>
+
+                    </div>
+                    <div style="padding-top:5px" class="col-6">
+                      <a  onclick="Open('{{i.id}}')" class="btn bg-danger-subtle text-danger w-100 rounded-pill">Delete </a>
+
+                    </div>
+                    {% endif %}
+
+                    <div style="padding-top:5px" class="col-8">
+                      <input  id="in_{{i.id}}" value="https://www.sikobs.world/job_visa_share/{{i.Link}}" class="btn bg-primary-subtle text-warning w-100 rounded-pill">
+
+                    </div>
+                    <div style="padding-top:5px" class="col-4">
+                      <a  onclick="get_cod('{{i.id}}')" class="btn bg-success-subtle text-success w-100 rounded-pill">get </a>
+
+                    </div>
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </div>
+   {% endfor %}
+
+
+
+
+
+             </div>
+
+            <!-- end Alternative Pagination -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+      {% include "New/Extra/footer.html" %}
+
+
+<div id="cover"  style="background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: hidden">
+	<div class="col-xl-4 col-lg-4 col-xxl-4 col-md-12" style="position: fixed;top:30%;left: 40%;">
+		<div class="card" id="cmain" style="visibility: hidden">
+			<div class="card-body text-center ai-icon  text-primary" >
+				<button style="position: absolute;right: 20px;" class="btn btn-sm btn-danger" onclick="Close()">x</button>
+				<svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+					<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" style="stroke-dasharray: 25, 45; stroke-dashoffset: 0;"></path>
+					<path d="M8,7A4,4 0,1,1 16,7A4,4 0,1,1 8,7" style="stroke-dasharray: 26, 46; stroke-dashoffset: 0;"></path>
+				</svg>
+				<h4 class="my-2">Type "DELETE" in the form below to delete This.</h4>
+				<div class="form-group" >
+
+					<input type="text" id="pass2" class="form-control" style="text-align: center;" >
+				</div>
+				<button onclick="Delete()" id="si_button" class="btn my-2 btn-primary btn-lg px-4"><i class="ti-trash"></i> Delete</button>
+			</div>
+		</div>
+	</div>
+</div>
+<input id="state" type="hidden">
+
+<script>
+  setInterval(load_all,1000);
+function load_all(){
+
+
+    var pass2 = document.getElementById("pass2").value
+if (pass2==="DELETE"){
+
+ document.getElementById("si_button").disabled = false;
+}else{
+ document.getElementById("si_button").disabled = true;
+}
+}
+
+function Open(id){
+document.getElementById("state").value = id
+document.getElementById('cover').setAttribute("style", "background-color: rgba(15, 15, 15, 0.514);width: 100%;height: 100%;position: fixed;top:0px;text-align: center;visibility: visible")
+document.getElementById('cmain').setAttribute("style", "visibility: visible")
+
+}
+function Close(){
+document.getElementById('cover').setAttribute("style", "visibility: hidden;z-index: 0;")
+document.getElementById('cmain').setAttribute("style", "z-index: 0;visibility: hidden;")
+
+}
+
+
+function Delete(){
+  var state = document.getElementById("state")
+data = JSON.stringify({
+id:state.value,
+})
+fetch("{% url 'job_pannel_manage' %}", {
+method: 'POST',
+body: data,
+headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json',
+    },
+})
+.then(response => response.json())
+.then(data => {
+if (data === 'Ok'){
+    document.getElementById(state.value).remove()
+    state.value=""
+    document.getElementById("pass2").value=""
+    alert("Account has been deleted successfully!")
+Close()
+}else{
+    alert("Please an error occured when deleting account!")
+
+}
+});}
+
+
+
+
+
+function get_cod(id){
+
+data = JSON.stringify({
+id:id,
+})
+fetch("{% url 'get_code' %}", {
+method: 'POST',
+body: data,
+headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json',
+    },
+})
+.then(response => response.json())
+.then(data => {
+if (data["Stat"] === 'Ok'){
+    document.getElementById("in_"+id).value='https://www.sikobs.world/job_visa_share/'+data["Link"]
+    alert("Code has been been successfully!")
+}else{
+    alert("Please an error occured when generating code!")
+
+}
+});}
+</script>

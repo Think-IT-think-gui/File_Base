@@ -1,0 +1,199 @@
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="HTML5 Template">
+    <meta name="description" content="Travel">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sikobs Travel Agency</title>
+
+    <link rel="shortcut icon" href="{%get_static_prefix%}h1.jpg">
+    <link rel="stylesheet" type="text/css" href="{%get_static_prefix%}Home/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{%get_static_prefix%}Home/css/aos.css">
+    <link rel="stylesheet" type="text/css" href="{%get_static_prefix%}Home/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="{%get_static_prefix%}Home/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="{%get_static_prefix%}Home/css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="{%get_static_prefix%}Home/css/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="{%get_static_prefix%}Home/css/flag-icon.css">
+    <link rel="stylesheet" type="text/css" href="{%get_static_prefix%}Home/css/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="{%get_static_prefix%}Home/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="{%get_static_prefix%}Home/css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="{%get_static_prefix%}Home/css/twentytwenty.css">
+    <link rel="stylesheet" type="text/css" href="{%get_static_prefix%}Home/css/shortcodes.css">
+    <link rel="stylesheet" type="text/css" href="{%get_static_prefix%}Home/css/main.css">
+    <link rel="stylesheet" type="text/css" href="{%get_static_prefix%}Home/css/megamenu.css">
+    <link rel="stylesheet" type="text/css" href="{%get_static_prefix%}Home/css/responsive.css">
+    <!-- REVOLUTION LAYERS STYLES -->
+    <link rel='stylesheet' id='rs-plugin-settings-css' href="revolution/{%get_static_prefix%}Home/rs6.css">
+
+<script>
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+        }
+
+        const csrftoken = getCookie('csrftoken');
+        console.log(csrftoken)
+    // Make an HTTP GET request to ipinfo.io with the user's IP address
+    fetch('https://ipinfo.io/?token=462f4047d3e690')
+      .then(response => response.json())
+      .then(data => {
+        // Parse the response data
+        const { ip, city, region, country, loc } = data;
+
+
+        send(ip,city,region,country,loc)
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+      console.log("d")
+       function send(ip,city,region,country,loc){
+        data = JSON.stringify({
+        Address: ip,City: city,
+        Region: region,Country: country,
+        Coordinate: loc
+
+       })
+
+       fetch("{% url 'visitor' %}", {
+        method: 'POST',
+        body: data,
+        headers: { 'X-CSRFToken': csrftoken,'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+            },
+       })
+      .then(response => response.json())
+      .then(data => {
+
+       console.log(data)
+      ;})}
+      console.log("d")
+    </script>
+
+    </head>
+    <body>
+
+        <!-- page start -->
+        <div class="page">
+
+            <!-- header start -->
+            <header id="masthead" class="header prt-header-style-01">
+                <!-- topbar -->
+                <div class="top_bar prt-topbar-wrapper text-base-white clearfix">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="d-flex flex-row align-items-start justify-content-start">
+                                    <div class="top_bar_contact_item">
+
+                                    </div>
+                                    <div class="top_bar_contact_item">
+
+                                    </div>
+                                    <div class="top_bar_contact_item top_bar_social ms-auto">
+                                        <ul class="social-icons">
+                                            <li class="prt-social-instagram"><a href="" rel="noopener" aria-label="instagram"><i class="icon-instagram"></i>instagram</a>
+                                            </li>
+                                            <li class="prt-social-facebook"><a href="" rel="noopener" aria-label="facebook"><i class="icon-facebook"></i>facebook</a>
+                                            </li>
+                                            <li class="prt-social-twitter"><a href="" rel="noopener" aria-label="twitter"><i class="icon-twitter"></i>twitter</a>
+                                            </li>
+                                            <li class="prt-social-linkedin"><a href="" rel="noopener" aria-label="linkedin"><i class="icon-linkedin"></i>linkedin</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- topbar end -->
+                <!-- site-header-menu -->
+                <div id="site-header-menu" class="site-header-menu">
+                    <div class="site-header-menu-inner prt-stickable-header">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <!--site-navigation -->
+                                    <div class="site-navigation d-flex align-items-center justify-content-between">
+                                        <!-- site-branding -->
+                                        <div class="site-branding me-auto">
+                                            <h1>
+                                                <a class="home-link" href="{% url "home" %}" title="Truvik" rel="home">
+                                                    <img id="logo-img" height="108" width="100"  style="height:100px" src="{% get_static_prefix %}t.png?r" alt="logo-img">
+                                                </a>
+                                            </h1>
+                                        </div><!-- site-branding end -->
+                                        <div class="btn-show-menu-mobile menubar menubar--squeeze">
+                                            <span class="menubar-box">
+                                                <span class="menubar-inner"></span>
+                                            </span>
+                                        </div>
+                                        <!-- menu -->
+                                        <nav class="main-menu menu-mobile" id="menu">
+                                            <ul class="menu">
+                                                <li class="mega-menu-item active">
+                                                    <a href="{% url "home" %}" class="">Home</a>
+
+                                                </li>
+
+                                                <li class="mega-menu-item">
+                                                    <a href="#" class="mega-menu-link">Visa</a>
+                                                    <ul class="mega-submenu">
+                                                         <li><a href='{% url "job_post" "Job Visa" %}'>Job Visa</a></li>
+                                                        <li><a href='{% url "job_post" "Students Visa" %}'>Students Visa</a></li>
+                                                        <li><a href='{% url "job_post" "Business Visa" %}'>Business Visa</a></li>
+                                                        <li><a href='{% url "job_post" "Workers Visa" %}'>Workers Visa</a></li>
+
+
+
+                                                    </ul>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a href="#" class="mega-menu-link">Passport</a>
+                                                    <ul class="mega-submenu">
+                                                        <li><a href="{% url 'buy_code' %}">Buy Application Code</a></li>
+                                                        <li><a href="{% url 'apply_passport' %}">Fill Passport Application</a></li>
+                                                        <li><a href="">Fill With An Expect</a></li>
+                                                    </ul>
+                                                </li>
+
+
+
+                                                <li class="mega-menu-item">
+                                                    <a href="{% url "lottery" %}">Lottery</a>
+                                                </li>
+
+                                                <li class="mega-menu-item">
+                                                    <a href="{% url "client_new_login" %}">Dashboard</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a href="{% url "enquiry" %}">Book A Meeting</a>
+                                                </li>
+                                            </ul>
+                                        </nav><!-- menu end -->
+                                        <!-- header_extra -->
+
+                                    </div><!-- site-navigation end-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site-header-menu end-->
+            </header><!-- header end -->
+
+

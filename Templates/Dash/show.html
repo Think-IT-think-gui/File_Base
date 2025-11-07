@@ -1,0 +1,567 @@
+﻿{% load static %}
+
+{% include "Dash/Extra/header.html" %}
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+		
+		<!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+			<div class="container-fluid">
+				<div class="card shadow-none position-relative overflow-hidden mb-4">
+					<div class="card-body d-flex align-items-center justify-content-between p-4">
+					  <h4 class="card-title mb-0">{{Note}}</h4>
+					  <nav aria-label="breadcrumb">
+						<ol class="breadcrumb mb-0">
+						  <li class="breadcrumb-item">
+							<a class="text-muted text-decoration-none" href="{{admin_dashboard}}">Home</a>
+						  </li>
+						  <li class="breadcrumb-item" aria-current="page">Clients</li>
+						</ol>
+					  </nav>
+					</div>
+				  </div>
+				  <section class="prt-row services01-first-section clearfix">
+					<div class="container">
+						
+						
+				  
+									<div class="card-header">
+						<h5 class="card-title">Passport Request Form - ({{Name}})</h5>
+					  </div>
+					  
+					  <div class="card-body" id="fill" >
+										<div >
+											<div style="padding-top: 20px;"></div>
+			
+														<div style="text-align: center;" id="fat" class="result">
+															<img style="border-radius: 1px;width:200px;height:200px;object-fit: cover; " src="{% get_media_prefix %}Passport/{{I.id}}.jpg?{{Rand}}">
+														  
+														  </div>
+														  
+															
+											
+						  <div class="row col-lg-12 col-md-12 col-sm-12"  >
+							<h5 class="form-label" style="padding-top: 20px;opacity: 0.4;">Applicant Personal Info</h5>
+	
+							<div class="col-lg-4 col-md-12 col-sm-12"  style="padding-top: 20px;">
+								<div class="form-group">
+								  <label class="form-label">First Name</label>
+								  <input  name="First_name" value="{{I.First_name}}"  required class="form-control">
+								</div>
+							  </div>
+							<input name="Code" value="{{Code}}" type="hidden">
+							  <div class="col-lg-4 col-md-12 col-sm-12"  style="padding-top: 20px;">
+								<div class="form-group">
+								  <label class="form-label">Last Name</label>
+								  <input  name="Last_name" value="{{I.Last_name}}"  required class="form-control">
+								</div>
+							  </div>
+	
+							  <div class="col-lg-4 col-md-12 col-sm-12"  style="padding-top: 20px;">
+								<div class="form-group">
+								  <label class="form-label">Other Name</label>
+								  <input  name="Other_name" value="{{I.Other_name}}" required class="form-control">
+								</div>
+							  </div>
+							
+							<div  class="col-lg-3 col-md-12 col-sm-12" style="padding-top: 20px;">
+								<div class="form-group">
+								  <label class="form-label">Applicant's Gender</label>
+								  <input type="text" value="{{I.Gender}}" name="Gender" required  class="form-control">
+									
+								</div>
+							  </div>
+							 
+							  <div class="col-lg-3 col-md-12 col-sm-12" style="padding-top: 20px;">
+								<div class="form-group">
+								  <label class="form-label">Date Of Birth</label>
+								  <input type="date" value="{{I.Date_of_birth}}" name="Date_of_birth"  required class="form-control">
+								</div>
+							  </div>
+	
+							<div class="col-lg-6 col-md-12 col-sm-12" style="padding-top: 20px;">
+							  <div class="form-group">
+								<label class="form-label">Email Address</label>
+								<input type="email"  name="Email" value="{{I.Email}}" required class="form-control">
+							  </div>
+							</div>
+	
+							<div  class="col-lg-3 col-md-12 col-sm-12" style="padding-top: 20px;">
+								<div class="form-group">
+								  <label class="form-label">Mobile Number</label>
+								  <input  name="Contact" value="{{I.Contact}}" required  class="form-control">
+								</div>
+							  </div>
+							 
+	
+							<div class="col-lg-3 col-md-12 col-sm-12"  style="padding-top: 20px;">
+							  <div class="form-group">
+								<label class="form-label">City / Town Of Birth</label>
+								<input  name="City_of_birth" value="{{I.City_of_birth}}" required class="form-control">
+							  </div>
+							</div>
+							
+							<div class="col-lg-3 col-md-12 col-sm-12"  style="padding-top: 20px;">
+								<div class="form-group">
+								  <label class="form-label">Country Of Birth</label>
+								  <input  name="Country_of_birth" value="{{I.Country_of_birth}}"  required class="form-control">
+								</div>
+							  </div>
+							  
+							
+							<div class="row">
+								<!-- Years of Experience -->
+								
+							
+								<!-- Height -->
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Height</label>
+										<input name="Height" value="{{I.Height}}" required class="form-control">
+									</div>
+								</div>
+							
+								<!-- Colour of Eyes -->
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Colour of Eyes</label>
+										<input name="Colour_of_eyes" value="{{I.Colour_of_eyes}}" required class="form-control">
+									</div>
+								</div>
+							
+								<!-- Colour of Hair -->
+								<div class="col-lg-2 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Colour of Hair</label>
+										<input name="Colour_of_hair" value="{{I.Colour_of_hair}}" required class="form-control">
+									</div>
+								</div>
+							
+								<!-- Nationality -->
+								<div class="col-lg-6 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Nationality</label>
+										<input name="Nationality" value="{{I.Nationality}}" required class="form-control">
+									</div>
+								</div>
+							
+								<!-- Marital Status -->
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Marital Status</label>
+										<input name="Marital_status" value="{{I.Marital_status}}" required class="form-control">
+									</div>
+								</div>
+							
+								<!-- Profession -->
+								<div class="col-lg-6 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Profession</label>
+										<input name="Profession" value="{{I.Profession}}" required class="form-control">
+									</div>
+								</div>
+							
+								<!-- Previous Profession -->
+								<div class="col-lg-6 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Previous Profession</label>
+										<input name="Previous_profession" value="{{I.Previous_profession}}" required class="form-control">
+									</div>
+								</div>
+							
+							  
+								<!-- National ID -->
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">National ID</label>
+										<input name="National_id" value="{{I.National_id}}" required class="form-control">
+									</div>
+								</div>
+							
+								<!-- Social Security -->
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Social Security</label>
+										<input name="Social_security" value="{{I.Social_security}}" required class="form-control">
+									</div>
+								</div>
+							
+						  
+								
+							
+								<!-- House Number -->
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">House Number</label>
+										<input name="House_number" value="{{I.House_number}}" required class="form-control">
+									</div>
+								</div>
+							
+								<!-- Street Name -->
+								<div class="col-lg-6 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Street Name</label>
+										<input name="Street_name" value="{{I.Street_name}}" required class="form-control">
+									</div>
+								</div>
+							
+								<!-- Postal Address -->
+								<div class="col-lg-3 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Postal Address</label>
+										<input name="Postal_address" value="{{I.Postal_address}}" required class="form-control">
+									</div>
+								</div>
+							
+							  
+								<!-- City of Residence -->
+								<div class="col-lg-3 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">City of Residence</label>
+										<input name="City_of_residence" value="{{I.City_of_residence}}" required class="form-control">
+									</div>
+								</div>
+							
+								<!-- Country of Residence -->
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Country of Residence</label>
+										<input name="Country_of_residence" value="{{I.Country_of_residence}}" required class="form-control">
+									</div>
+								</div>
+							
+								<!-- ZIP/Postal Code -->
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">ZIP/Postal Code</label>
+										<input name="Zip_code" value="{{I.Zip_code}}" required class="form-control">
+									</div>
+								</div>
+								
+				   
+								<h5 class="form-label" style="padding-top: 20px;opacity: 0.4;">Father's Infomation</h5>
+							
+								<!-- Father's Information -->
+								<div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Father's Full Name</label>
+										<input name="Father_full_name" value="{{I.Father_full_name}}" required class="form-control">
+									</div>
+								</div>
+								  
+								<div class="col-lg-4 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Father's Living</label>
+										<input name="Father_living" value="{{I.Father_living}}" required class="form-control">
+											
+									</div>
+								</div>
+								
+	
+								<div class="col-lg-4 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Father's Contact</label>
+										<input name="Father_contact" value="{{I.Father_contact}}" required class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Father's Email</label>
+										<input name="Father_email" type="email" value="{{I.Father_email}}" required class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Father's Home Town</label>
+										<input name="Father_home_town" value="{{I.Father_home_town}}" required class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Father's Residencial Address</label>
+										<input name="Father_residential_address" value="{{I.Father_residential_address}}" required class="form-control">
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Father's Nationality</label>
+										<input name="Father_nationality" value="{{I.Father_nationality}}" required class="form-control">
+									</div>
+								</div>
+								<!-- Repeat the above structure for Mother's and Grandparent's information -->
+							
+	
+								<h5 class="form-label" style="padding-top: 20px;opacity: 0.4;">Mother's Infomation</h5>
+							
+								<!-- Father's Information -->
+								<div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Mother's Full Name</label>
+										<input name="Mother_full_name" value="{{I.Mother_full_name}}" required class="form-control">
+									</div>
+								</div>
+								  
+								<div class="col-lg-4 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Mother's Living</label>
+										<input name="Mother_living" value="{{I.Mother_living}}" required class="form-control">
+										
+									</div>
+								</div>
+							   
+	
+								<div class="col-lg-4 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Mother's Contact</label>
+										<input name="Mother_contact" value="{{I.Mother_contact}}" required class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Mother's Email</label>
+										<input name="Mother_email" type="email" value="{{I.Email}}" required class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Mother's Home Town</label>
+										<input name="Mother_home_town" value="{{I.Mother_home_town}}" required class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Mother's Residencial Address</label>
+										<input name="Mother_residential_address" value="{{I.Mother_residential_address}}" required class="form-control">
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Mother's Nationality</label>
+										<input name="Mother_nationality" value="{{I.Mother_nationality}}" required class="form-control">
+									</div>
+								</div>
+	
+	
+								<h5 class="form-label" style="padding-top: 20px;opacity: 0.4;">Grand Parent's Infomation</h5>
+							
+								<!-- Father's Information -->
+								<div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Grand Parent's Full Name</label>
+										<input name="Grandparent_full_name" value="{{I.Grandparent_full_name}}" required class="form-control">
+									</div>
+								</div>
+								  
+								<div class="col-lg-4 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Grand Parent's Living</label>
+										<input name="Grandparent_living" value="{{I.Grandparent_living}}" required class="form-control">
+											
+									</div>
+								</div>
+							   
+	
+								<div class="col-lg-4 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Grand Parent's Contact</label>
+										<input name="Grandparent_contact" value="{{I.Grandparent_contact}}" required class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Grand Parent's Email</label>
+										<input name="Grandparent_email" value="{{I.Email}}" type="email" required class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Grand Parent's Home Town</label>
+										<input name="Grandparent_home_town" value="{{I.Grandparent_home_town}}" required class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Grand Parent's Residencial Address</label>
+										<input name="Grandparent_residential_address" value="{{I.Grandparent_residential_address}}" required class="form-control">
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Grand Parent's Nationality</label>
+										<input name="Grandparent_nationality" value="{{I.Grandparent_nationality}}" required class="form-control">
+									</div>
+								</div>
+	
+	
+								
+	
+								<h5 class="form-label" style="padding-top: 20px;opacity: 0.4;">First Guarantor's Infomation</h5>
+							
+								<!-- Father's Information -->
+								<div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">First Guarantor's Full Name</label>
+										<input name="First_guarantor_full_name" value="{{I.First_guarantor_full_name}}" required class="form-control">
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">First Guarantor's Occupation</label>
+										<input name="First_guarantor_occupation" value="{{I.First_guarantor_occupation}}" required class="form-control">
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">First Guarantor's Contact</label>
+										<input name="First_guarantor_contact" value="{{I.First_guarantor_contact}}" required class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">First Guarantor's Email</label>
+										<input name="First_guarantor_email" type="email" value="{{I.First_guarantor_email}}" required class="form-control">
+									</div>
+								</div>
+	
+							
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">First Guarantor's Residencial Address</label>
+										<input name="First_guarantor_residential_address" value="{{I.First_guarantor_residential_address}}" required class="form-control">
+									</div>
+								</div>
+							   
+	
+	
+	
+	
+							   
+	
+	
+	
+								
+								<h5 class="form-label" style="padding-top: 20px;opacity: 0.4;">Second Guarantor's Infomation</h5>
+							
+								<!-- Father's Information -->
+								<div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Second Guarantor's Full Name</label>
+										<input name="Second_guarantor_full_name" value="{{I.Second_guarantor_full_name}}" required class="form-control">
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Second Guarantor's Occupation</label>
+										<input name="Second_guarantor_occupation" value="{{I.Second_guarantor_occupation}}" required class="form-control">
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Second Guarantor's Contact</label>
+										<input name="Second_guarantor_contact" value="{{I.Second_guarantor_contact}}" required class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Second Guarantor's Email</label>
+										<input name="Second_guarantor_email" value="{{I.Second_guarantor_email}}" required class="form-control">
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Second Guarantor's Residencial Address</label>
+										<input name="Second_guarantor_residential_address" value="{{I.Second_guarantor_residential_address}}" required class="form-control">
+									</div>
+								</div>
+							   
+	
+	
+	
+								<h5 class="form-label" style="padding-top: 20px;opacity: 0.4;">Witness's Infomation</h5>
+							
+								<!-- Father's Information -->
+								<div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Witness's Full Name</label>
+										<input name="Witness_full_name" value="{{I.Witness_full_name}}" required class="form-control">
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Witness's Occupation</label>
+										<input name="Witness_occupation" value="{{I.Witness_occupation}}" required class="form-control">
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Witness's Contact</label>
+										<input name="Witness_contact" value="{{I.Witness_contact}}" required class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-lg-8 col-md-4 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Witness's Email</label>
+										<input name="Witness_email" value="{{I.Witness_email}}" required class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Witness's Home Town</label>
+										<input name="Witness_home_town" value="{{I.Witness_home_town}}" required class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-lg-4 col-md-6 col-sm-12" style="padding-top: 20px;">
+									<div class="form-group">
+										<label class="form-label">Witness's Residencial Address</label>
+										<input name="Witness_residential_address" value="{{I.Witness_residential_address}}" required class="form-control">
+									</div>
+								</div>
+	
+								
+							   
+							   
+								<!-- Repeat the above structure for each witness -->
+							</div>
+							
+						  
+							
+						  </div>
+						</div>
+									</div>
+							   
+							
+				</div>
+					</div>
+					   
+					  </div>
+					</div>
+					</div>
+				</section>
+				<!-- services01-first-section-end -->
+	
+				
+            </div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+		
+{% include 'Dash/Extra/footer.html' %}		

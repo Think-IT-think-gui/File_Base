@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+{% load static %}
+  {% include "Pannel/Extra.html" %}
+
+			<section class="content">
+				<header class="main-header">
+					<div class="main-header__nav">
+						<h1 class="main-header__title">
+							<i class="pe-7f-home"></i>
+							<span>Dashboard</span>
+						</h1>
+						<ul class="main-header__breadcrumb">
+
+						</ul>
+					</div>
+
+					<div class="main-header__date">
+						<input type="radio" id="radio_date_1" name="tab-radio" value="today" checked>
+						<!--
+					-->
+
+					<input type="radio" id="radio_date_2" name="tab-radio" value="yesterday">
+						<!--
+					-->
+
+						<!--
+					-->
+						<button>
+							<i class="pe-7f-date"></i>
+							<span>{{Date}}</span>
+						</button>
+					</div>
+				</header>
+				<!-- /main-header -->
+
+
+				<!-- row -->
+
+
+				<!-- row -->
+
+				<div class="row">
+
+
+
+					<div class="col-md-12">
+						<article class="widget">
+							<header class="widget__header">
+								<div class="widget__title">
+									<i class="pe-7f-graph"></i>
+									<h3>Account Overview</h3>
+								</div>
+								<div class="widget__config">
+									<a href="#">
+										<i class="pe-7f-refresh"></i>
+									</a>
+									<a href="#">
+										<i class="pe-7s-close"></i>
+									</a>
+								</div>
+							</header>
+							<style>
+
+								.container {
+									display: flex;
+									justify-content: center;
+									align-items: center;
+									height: 50px;
+									width: 100%;
+								  }
+
+								  .progress-bar__container {
+									width: 80%;
+									height: 2rem;
+									border-radius: 2rem;
+									position: relative;
+									overflow: hidden;
+									transition: all 0.5s;
+									will-change: transform;
+									box-shadow: 0 0 5px #e76f51;
+								  }
+
+								  .progress-bar {
+									position: absolute;
+									height: 100%;
+									width: 100%;
+									content: "";
+									background-color: #e76f51;
+									top:0;
+									bottom: 0;
+									left: {{Value}}%;
+									border-radius: inherit;
+									display: flex;
+									justify-content: center;
+									align-items:center;
+									color: white;
+									font-family: sans-serif;
+								  }
+
+								  .progress-bar__text {
+									display: none;
+								  }
+							</style>
+
+
+							<div class="container">
+								<span style="padding-right: 10px;"> ₵ 0.00 </span>
+							  <div class="progress-bar__container">
+								<div class="progress-bar">
+								  <span class="progress-bar__text">Payment Complete!</span>
+								</div>
+							  </div>
+							  <span style="padding-left: 10px;"> ₵ {{Ballance}}</span>
+							</div>
+							<div class="widget__content filled">
+								<p class="graph-number">
+									<span>₵ {{Ballance}}</span> Total Balance Left</p>
+								<div class="pie-container">
+									<div class="pie-number">
+										<h5>₵ {{Total}}</h5>
+										<p>Amount Paid</p>
+									</div>
+									<svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 180 179">
+										<path fill="#ff3a2f" d="M88,0C48.6,0.9,15.4,27,4,62.9L7.9,64C18.8,29.8,50.4,4.9,88,4V0z"/>
+										<path fill="#52d669" d="M113.4,167.6C106,169.8,98,171,89.9,171C44.7,171,8,134.4,8,89.4c0-8,1.2-15.8,3.4-23.1L3.6,64
+											C1.3,72,0,80.5,0,89.4C0,138.9,40.2,179,89.9,179c9.1,0,17.8-1.4,26.1-3.9L113.4,167.6z"/>
+										<path fill="#1c7dfa" d="M90,0v16c40.8,0,74,33.1,74,73.8c0,32.5-21.2,60.2-50.5,70l5.1,15.2c35.7-11.9,61.4-45.6,61.4-85.2
+											C180,40.2,139.7,0,90,0z"/>
+									</svg>
+								</div>
+
+							</div>
+
+							<div class="widget__content filled">
+								<div class="row">
+									<div class="col-md-4 col-sm-4 col-xs-4 mini-stats">
+										<div class="pie-small blue"></div>
+										<p>
+											<span>50%</span><br>
+											Proccessing Fees
+										</p>
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-4 mini-stats">
+										<div class="pie-small green"></div>
+										<p>
+
+											<span>30%</span><br>
+											Finalization Fees
+										</p>
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-4 mini-stats">
+										<div class="pie-small red"></div>
+										<p>
+
+											<span>20%</span><br>
+											Classes Fees
+										</p>
+									</div>
+								</div>
+							</div>
+
+						</article>
+						<!-- /widget -->
+					</div>
+					<div class="row">
+
+						<div class="col-md-12">
+							<article class="widget">
+								<header class="widget__header">
+									<div class="widget__title">
+										<i class="pe-7s-display2"></i><h3>Billing Table</h3>
+									</div>
+									<div class="widget__config">
+										<a href="#"><i class="pe-7f-refresh"></i></a>
+										<a href="#"><i class="pe-7s-close"></i></a>
+									</div>
+								</header>
+
+								<div class="widget__content filled table-responsive pad20">
+
+
+									<table class="table  media-table">
+									  <thead>
+										  <tr>
+											  <th>Bill Name</th>
+											  <th>Bill Amount</th>
+											  <th class="text-center" width="100">Time Billed</th>
+											  <th class="text-center">Date Billed</th>
+
+										  </tr>
+									  </thead>
+									  <tbody>
+
+									  {% for i in Funds %}
+
+										  <tr>
+											<td>
+												{{i.Name}}
+											</td>
+											  <td class="text-center">
+												₵ {{i.Price}}
+											  </td>
+											  <td>
+												  {{i.time}}
+											  </td>
+											  <td>
+												  {{i.date}}
+											  </td>
+
+										  </tr>
+
+									{% endfor %}
+
+
+									  </tbody>
+									</table>
+
+
+								</div> <!-- /widget__content -->
+
+							</article><!-- /widget -->
+						</div>
+					</div>
+
+
+				</div>
+				<!-- /row -->
+
+				<script>
+					const progressBarContainer = document.querySelector('.progress-bar__container');
+const progressBar = document.querySelector('.progress-bar');
+const progressBarText = document.querySelector('.progress-bar__text');
+
+const progressBarStates = [0, 7, 27, 34, 68, 80, 95, 100];
+
+let time = 0;
+let endState = 100;
+
+			</script>
+				<!-- /row -->
+
+
+				<!-- /row -->
+
+
+				<!-- /row -->
+
+				<footer class="footer-brand">
+					<img src="img/logo_trim.png">
+					<p>© 2023 Kingdom Dynasty. All rights reserved</p>
+				</footer>
+
+			</section>
+			<!-- /content -->
+
+		</div>
+
+		<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/main.js"></script>
+		<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/amcharts/amcharts.js"></script>
+		<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/amcharts/serial.js"></script>
+		<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/amcharts/pie.js"></script>
+		<script type="text/javascript" src="{% get_static_prefix %}Pannel/js/chart.js"></script>
+	</body>
+</html>

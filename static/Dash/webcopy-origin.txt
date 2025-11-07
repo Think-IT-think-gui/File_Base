@@ -1,0 +1,1712 @@
+Uri: https://dompet.dexignlab.com/django/xhtml/add-blog.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\add-blog.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/add-email.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\add-email.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/app-calender.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\app-calender.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/app-profile.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\app-profile.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/blog-category.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\blog-category.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/blog.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\blog.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/cards-center.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\cards-center.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/chart-chartist.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\chart-chartist.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/chart-chartjs.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\chart-chartjs.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/chart-flot.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\chart-flot.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/chart-morris.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\chart-morris.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/chart-peity.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\chart-peity.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/chart-sparkline.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\chart-sparkline.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/content-add.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\content-add.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/content.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\content.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/css/style.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\css\style.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ecom-checkout.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ecom-checkout.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ecom-customers.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ecom-customers.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ecom-invoice.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ecom-invoice.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ecom-product-detail.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ecom-product-detail.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ecom-product-grid.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ecom-product-grid.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ecom-product-list.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ecom-product-list.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ecom-product-order.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ecom-product-order.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/email-compose.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\email-compose.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/email-inbox.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\email-inbox.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/email-read.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\email-read.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/email-template.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\email-template.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/empty-page.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\empty-page.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/form-ckeditor.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\form-ckeditor.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/form-element.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\form-element.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/form-pickers.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\form-pickers.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/form-validation.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\form-validation.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/form-wizard.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\form-wizard.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/avasta/css/style.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\avasta\css\style.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/avasta/fonts/avasta.eot
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\avasta\fonts\avasta.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/avasta/fonts/avasta.svg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\avasta\fonts\avasta.svg
+Content Type: image/svg+xml
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/avasta/fonts/avasta.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\avasta\fonts\avasta.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/avasta/fonts/avasta.woff
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\avasta\fonts\avasta.woff
+Content Type: application/font-woff
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/avasta/fonts/avasta.woff2
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\avasta\fonts\avasta.woff2
+Content Type: application/font-woff2
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/bootstrap-icons/font/bootstrap-icons.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\bootstrap-icons\font\bootstrap-icons.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/bootstrap-icons/font/fonts/bootstrap-icons.woff2?8bd4575acf83c7696dc7a14a966660a3
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\bootstrap-icons\font\fonts\bootstrap-icons.woff2
+Content Type: application/font-woff2
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/bootstrap-icons/font/fonts/bootstrap-icons.woff?8bd4575acf83c7696dc7a14a966660a3
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\bootstrap-icons\font\fonts\bootstrap-icons.woff
+Content Type: application/font-woff
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/flaticon/flaticon.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\flaticon\flaticon.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/flaticon/Flaticon.eot
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\flaticon\Flaticon.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/flaticon/Flaticon.eot?
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\flaticon\Flaticon-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/flaticon/Flaticon.svg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\flaticon\Flaticon.svg
+Content Type: image/svg+xml
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/flaticon/Flaticon.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\flaticon\Flaticon.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/flaticon/Flaticon.woff
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\flaticon\Flaticon.woff
+Content Type: application/font-woff
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/flaticon_1/flaticon_1.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\flaticon_1\flaticon_1.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/flaticon_1/Flaticon_1.eot
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\flaticon_1\Flaticon_1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/flaticon_1/Flaticon_1.eot?
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\flaticon_1\Flaticon_1-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/flaticon_1/Flaticon_1.svg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\flaticon_1\Flaticon_1.svg
+Content Type: image/svg+xml
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/flaticon_1/Flaticon_1.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\flaticon_1\Flaticon_1.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/flaticon_1/Flaticon_1.woff
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\flaticon_1\Flaticon_1.woff
+Content Type: application/font-woff
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/flaticon_1/Flaticon_1.woff2
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\flaticon_1\Flaticon_1.woff2
+Content Type: application/font-woff2
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/font-awesome/css/all.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\font-awesome\css\all.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/font-awesome/webfonts/fa-brands-400.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\font-awesome\webfonts\fa-brands-400.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/font-awesome/webfonts/fa-brands-400.woff2
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\font-awesome\webfonts\fa-brands-400.woff2
+Content Type: application/font-woff2
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/font-awesome/webfonts/fa-regular-400.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\font-awesome\webfonts\fa-regular-400.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/font-awesome/webfonts/fa-regular-400.woff2
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\font-awesome\webfonts\fa-regular-400.woff2
+Content Type: application/font-woff2
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/font-awesome/webfonts/fa-solid-900.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\font-awesome\webfonts\fa-solid-900.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/font-awesome/webfonts/fa-solid-900.woff2
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\font-awesome\webfonts\fa-solid-900.woff2
+Content Type: application/font-woff2
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/font-awesome/webfonts/fa-v4compatibility.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\font-awesome\webfonts\fa-v4compatibility.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/font-awesome/webfonts/fa-v4compatibility.woff2
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\font-awesome\webfonts\fa-v4compatibility.woff2
+Content Type: application/font-woff2
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/icomoon/fonts/icomoon.eot
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\icomoon\fonts\icomoon.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/icomoon/fonts/icomoon.svg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\icomoon\fonts\icomoon.svg
+Content Type: image/svg+xml
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/icomoon/fonts/icomoon.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\icomoon\fonts\icomoon.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/icomoon/fonts/icomoon.woff
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\icomoon\fonts\icomoon.woff
+Content Type: application/font-woff
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/icomoon/icomoon.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\icomoon\icomoon.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/css/line-awesome.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\css\line-awesome.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/fonts/la-brands-400.eot
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\fonts\la-brands-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/fonts/la-brands-400.eot?
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\fonts\la-brands-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/fonts/la-brands-400.svg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\fonts\la-brands-400.svg
+Content Type: image/svg+xml
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/fonts/la-brands-400.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\fonts\la-brands-400.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/fonts/la-brands-400.woff
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\fonts\la-brands-400.woff
+Content Type: application/font-woff
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/fonts/la-brands-400.woff2
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\fonts\la-brands-400.woff2
+Content Type: application/font-woff2
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/fonts/la-regular-400.eot
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\fonts\la-regular-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/fonts/la-regular-400.eot?
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\fonts\la-regular-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/fonts/la-regular-400.svg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\fonts\la-regular-400.svg
+Content Type: image/svg+xml
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/fonts/la-regular-400.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\fonts\la-regular-400.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/fonts/la-regular-400.woff
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\fonts\la-regular-400.woff
+Content Type: application/font-woff
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/fonts/la-regular-400.woff2
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\fonts\la-regular-400.woff2
+Content Type: application/font-woff2
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/fonts/la-solid-900.eot
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\fonts\la-solid-900.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/fonts/la-solid-900.eot?
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\fonts\la-solid-900-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/fonts/la-solid-900.svg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\fonts\la-solid-900.svg
+Content Type: image/svg+xml
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/fonts/la-solid-900.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\fonts\la-solid-900.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/fonts/la-solid-900.woff
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\fonts\la-solid-900.woff
+Content Type: application/font-woff
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/line-awesome/fonts/la-solid-900.woff2
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\line-awesome\fonts\la-solid-900.woff2
+Content Type: application/font-woff2
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/material-design-iconic-font/css/materialdesignicons.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\material-design-iconic-font\css\materialdesignicons.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.eot?
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\material-design-iconic-font\fonts\materialdesignicons-webfont-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.eot?v=2.4.85
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.svg?v=2.4.85
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.svg
+Content Type: image/svg+xml
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.ttf?v=2.4.85
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff2?v=2.4.85
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.woff2
+Content Type: application/font-woff2
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff?v=2.4.85
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.woff
+Content Type: application/font-woff
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/simple-line-icons/css/simple-line-icons.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\simple-line-icons\css\simple-line-icons.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/simple-line-icons/fonts/Simple-Line-Icons4c82.eot?-i3a2kk
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\simple-line-icons\fonts\Simple-Line-Icons4c82.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/simple-line-icons/fonts/Simple-Line-Icons4c82.svg?-i3a2kk
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\simple-line-icons\fonts\Simple-Line-Icons4c82.svg
+Content Type: image/svg+xml
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/simple-line-icons/fonts/Simple-Line-Icons4c82.ttf?-i3a2kk
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\simple-line-icons\fonts\Simple-Line-Icons4c82.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/simple-line-icons/fonts/Simple-Line-Icons4c82.woff2?-i3a2kk
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\simple-line-icons\fonts\Simple-Line-Icons4c82.woff2
+Content Type: application/font-woff2
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/simple-line-icons/fonts/Simple-Line-Icons4c82.woff?-i3a2kk
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\simple-line-icons\fonts\Simple-Line-Icons4c82.woff
+Content Type: application/font-woff
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/simple-line-icons/fonts/Simple-Line-Iconsd41d.eot?
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\simple-line-icons\fonts\Simple-Line-Iconsd41d.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/themify-icons/css/themify-icons.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\themify-icons\css\themify-icons.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/themify-icons/fonts/themify.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\themify-icons\fonts\themify.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/themify-icons/fonts/themify.woff
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\themify-icons\fonts\themify.woff
+Content Type: application/font-woff
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/themify-icons/fonts/themify9f24.eot?-fvbane
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\themify-icons\fonts\themify9f24.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/themify-icons/fonts/themify9f24.svg?-fvbane
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\themify-icons\fonts\themify9f24.svg
+Content Type: image/svg+xml
+
+Uri: https://dompet.dexignlab.com/django/xhtml/icons/themify-icons/fonts/themifyd41d.eot?
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\icons\themify-icons\fonts\themifyd41d.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/avatar/1.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\avatar\1.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/avatar/1.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\avatar\1.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/avatar/2.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\avatar\2.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/avatar/3.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\avatar\3.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/avatar/4.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\avatar\4.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/avatar/5.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\avatar\5.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/avatar/5.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\avatar\5.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/avatar/6.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\avatar\6.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/avatar/7.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\avatar\7.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/avatar/8.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\avatar\8.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/big/img1.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\big\img1.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/big/img2.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\big\img2.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/big/img3.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\big\img3.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/big/img4.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\big\img4.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/big/img5.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\big\img5.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/big/img6.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\big\img6.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/big/img7.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\big\img7.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/big/img8.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\big\img8.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/big/pic1.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\big\pic1.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/big/pic10.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\big\pic10.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/big/pic2.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\big\pic2.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/big/pic3.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\big\pic3.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/big/pic4.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\big\pic4.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/big/pic5.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\big\pic5.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/big/pic6.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\big\pic6.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/big/pic7.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\big\pic7.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/big/pic8.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\big\pic8.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/card/1.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\card\1.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/card/1.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\card\1.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/card/2.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\card\2.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/card/2.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\card\2.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/card/3.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\card\3.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/card/3.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\card\3.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/card/4.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\card\4.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/error-media.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\error-media.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/error.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\error.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/favicon.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\favicon.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/like.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\like.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/login-1.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\login-1.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/login.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\login.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/logo-full.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\logo-full.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/logo-text.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\logo-text.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/logo.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\logo.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/no-img-avatar.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\no-img-avatar.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/pattern/circle.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\pattern\circle.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/pattern/pattern10.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\pattern\pattern10.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/pattern/pattern11.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\pattern\pattern11.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/pattern/pattern5.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\pattern\pattern5.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/pattern/pattern6.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\pattern\pattern6.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/pattern/pattern7.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\pattern\pattern7.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/pattern/pattern8.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\pattern\pattern8.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/pattern/pattern9.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\pattern\pattern9.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/product/1.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\product\1.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/product/2.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\product\2.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/product/3.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\product\3.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/product/4.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\product\4.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/product/5.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\product\5.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/product/6.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\product\6.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/product/7.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\product\7.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/1.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\1.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/1.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\1.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/2.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\2.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/3.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\3.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/4.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\4.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/5.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\5.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/6.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\6.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/7.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\7.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/8.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\8.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/9.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\9.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/cover.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\cover.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/pic1.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\pic1.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/profile.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\profile.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/small/pic1.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\small\pic1.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/small/pic10.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\small\pic10.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/small/pic2.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\small\pic2.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/small/pic3.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\small\pic3.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/small/pic4.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\small\pic4.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/small/pic5.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\small\pic5.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/small/pic6.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\small\pic6.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/small/pic7.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\small\pic7.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/small/pic8.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\small\pic8.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/profile/small/pic9.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\profile\small\pic9.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/qr.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\qr.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/student-bg-recovered.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\student-bg-recovered.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/student-bg.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\student-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/svg/ic_stat1.svg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\svg\ic_stat1.svg
+Content Type: image/svg+xml
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/svg/ic_stat2.svg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\svg\ic_stat2.svg
+Content Type: image/svg+xml
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/tab/1.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\tab\1.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/tab/2.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\tab\2.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/tab/3.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\tab\3.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/tab/4.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\tab\4.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/testimonial/1.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\testimonial\1.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/testimonial/2.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\testimonial\2.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/testimonial/5.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\testimonial\5.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/testimonial/6.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\testimonial\6.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/testimonial/7.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\testimonial\7.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/testimonial/8.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\testimonial\8.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/testimonial/9.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\testimonial\9.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/testimonial/pic11.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\testimonial\pic11.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/testimonial/pic22.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\testimonial\pic22.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/testimonial/reated-img/1.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\testimonial\reated-img\1.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/testimonial/reated-img/2.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\testimonial\reated-img\2.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/testimonial/reated-img/3.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\testimonial\reated-img\3.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/images/testimonial/reated-img/5.jpg
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\images\testimonial\reated-img\5.jpg
+Content Type: image/jpeg
+
+Uri: https://dompet.dexignlab.com/django/xhtml/index-2.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\index-2.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/index-3.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\index-3.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/index-4.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\index-4.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/index-5.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\index-5.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/index-6.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\index-6.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/index-7.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\index-7.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/index-8.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\index-8.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/index.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\index.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/custom.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\custom.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/dashboard/cards-center.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\dashboard\cards-center.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/dashboard/cms.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\dashboard\cms.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/dashboard/dashboard-1.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\dashboard\dashboard-1.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/dashboard/dashboard-3.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\dashboard\dashboard-3.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/dashboard/dashboard-4.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\dashboard\dashboard-4.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/dashboard/dashboard-5.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\dashboard\dashboard-5.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/dashboard/dashboard-6.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\dashboard\dashboard-6.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/dashboard/dashboard-7.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\dashboard\dashboard-7.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/dashboard/dashboard-8.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\dashboard\dashboard-8.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/dashboard/my-wallet.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\dashboard\my-wallet.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/dashboard/transaction-details.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\dashboard\transaction-details.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/demo.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\demo.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/dlabnav-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\dlabnav-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/bs-daterange-picker-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\bs-daterange-picker-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/chartist-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\chartist-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/chartjs-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\chartjs-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/clock-picker-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\clock-picker-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/datatables.init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\datatables.init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/flot-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\flot-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/fullcalendar-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\fullcalendar-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/jquery-asColorPicker.init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\jquery-asColorPicker.init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/jquery.validate-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\jquery.validate-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/jqvmap-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\jqvmap-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/material-date-picker-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\material-date-picker-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/morris-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\morris-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/nestable-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\nestable-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/nouislider-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\nouislider-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/pickadate-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\pickadate-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/piety-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\piety-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/select2-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\select2-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/sparkline-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\sparkline-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/sweetalert.init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\sweetalert.init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/toastr-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\toastr-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/plugins-init/widgets-script-init.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\plugins-init\widgets-script-init.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/js/styleSwitcher.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\js\styleSwitcher.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/map-jqvmap.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\map-jqvmap.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/menu.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\menu.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/my-wallet.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\my-wallet.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/page-error-400.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\page-error-400.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/page-error-403.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\page-error-403.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/page-error-404.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\page-error-404.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/page-error-500.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\page-error-500.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/page-error-503.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\page-error-503.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/page-forgot-password.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\page-forgot-password.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/page-invoices.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\page-invoices.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/page-lock-screen.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\page-lock-screen.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/page-login.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\page-login.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/page-register.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\page-register.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/page-transaction.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\page-transaction.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/post-details.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\post-details.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/table-bootstrap-basic.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\table-bootstrap-basic.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/table-datatable-basic.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\table-datatable-basic.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/transaction-details.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\transaction-details.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/uc-lightgallery.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\uc-lightgallery.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/uc-nestable.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\uc-nestable.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/uc-noui-slider.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\uc-noui-slider.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/uc-select2.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\uc-select2.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/uc-sweetalert.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\uc-sweetalert.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/uc-toastr.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\uc-toastr.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ui-accordion.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ui-accordion.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ui-alert.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ui-alert.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ui-badge.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ui-badge.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ui-button-group.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ui-button-group.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ui-button.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ui-button.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ui-card.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ui-card.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ui-carousel.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ui-carousel.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ui-dropdown.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ui-dropdown.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ui-grid.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ui-grid.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ui-list-group.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ui-list-group.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ui-modal.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ui-modal.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ui-pagination.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ui-pagination.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ui-popover.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ui-popover.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ui-progressbar.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ui-progressbar.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ui-tab.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ui-tab.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/ui-typography.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\ui-typography.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/animate/animate.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\animate\animate.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/aos/css/aos.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\aos\css\aos.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/apexchart/apexchart.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\apexchart\apexchart.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/bootstrap-datepicker-master/css/bootstrap-datepicker.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\bootstrap-datepicker-master\css\bootstrap-datepicker.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/bootstrap-datepicker-master/js/bootstrap-datepicker.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\bootstrap-datepicker-master\js\bootstrap-datepicker.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/bootstrap-daterangepicker/daterangepicker.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\bootstrap-daterangepicker\daterangepicker.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/bootstrap-daterangepicker/daterangepicker.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\bootstrap-daterangepicker\daterangepicker.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\bootstrap-material-datetimepicker\css\bootstrap-material-datetimepicker.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\bootstrap-material-datetimepicker\js\bootstrap-material-datetimepicker.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/bootstrap-select/dist/css/bootstrap-select.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\bootstrap-select\dist\css\bootstrap-select.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/bootstrap-select/dist/js/bootstrap-select.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\bootstrap-select\dist\js\bootstrap-select.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/chart-js/chart.bundle.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\chart-js\chart.bundle.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\chartist-plugin-tooltips\js\chartist-plugin-tooltip.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/chartist/css/chartist.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\chartist\css\chartist.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/chartist/js/chartist.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\chartist\js\chartist.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/ckeditor/ckeditor.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\ckeditor\ckeditor.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/clockpicker/css/bootstrap-clockpicker.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\clockpicker\css\bootstrap-clockpicker.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/clockpicker/js/bootstrap-clockpicker.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\clockpicker\js\bootstrap-clockpicker.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/datatables/css/jquery.dataTables.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\datatables\css\jquery.dataTables.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/datatables/images/sort_asc.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\datatables\images\sort_asc.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/datatables/images/sort_asc_disabled.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\datatables\images\sort_asc_disabled.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/datatables/images/sort_both.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\datatables\images\sort_both.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/datatables/images/sort_desc.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\datatables\images\sort_desc.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/datatables/images/sort_desc_disabled.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\datatables\images\sort_desc_disabled.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/datatables/js/jquery.dataTables.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\datatables\js\jquery.dataTables.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/dlabnav/dlabnav.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\dlabnav\dlabnav.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/dropzone/dist/dropzone.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\dropzone\dist\dropzone.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/dropzone/dist/dropzone.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\dropzone\dist\dropzone.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/flot-spline/jquery.flot.spline.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\flot-spline\jquery.flot.spline.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/flot/jquery.flot.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\flot\jquery.flot.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/flot/jquery.flot.pie.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\flot\jquery.flot.pie.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/flot/jquery.flot.resize.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\flot\jquery.flot.resize.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/fullcalendar/css/main.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\fullcalendar\css\main.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/fullcalendar/js/main.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\fullcalendar\js\main.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/global/global.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\global\global.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/highlightjs/highlight.pack.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\highlightjs\highlight.pack.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jquery-asColor/jquery-asColor.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jquery-asColor\jquery-asColor.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jquery-asColorPicker/css/asColorPicker.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jquery-asColorPicker\css\asColorPicker.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jquery-asColorPicker/images/alpha.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jquery-asColorPicker\images\alpha.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jquery-asColorPicker/images/hue.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jquery-asColorPicker\images\hue.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jquery-asColorPicker/images/saturation.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jquery-asColorPicker\images\saturation.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jquery-asColorPicker/images/transparent.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jquery-asColorPicker\images\transparent.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jquery-asColorPicker/js/jquery-asColorPicker.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jquery-asColorPicker\js\jquery-asColorPicker.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jquery-asGradient/jquery-asGradient.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jquery-asGradient\jquery-asGradient.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jquery-nice-select/css/nice-select.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jquery-nice-select\css\nice-select.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jquery-nice-select/js/jquery.nice-select.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jquery-nice-select\js\jquery.nice-select.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jquery-smartwizard/dist/css/smart_wizard.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jquery-smartwizard\dist\css\smart_wizard.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jquery-smartwizard/dist/js/jquery.smartWizard.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jquery-smartwizard\dist\js\jquery.smartWizard.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jquery-sparkline/jquery.sparkline.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jquery-sparkline\jquery.sparkline.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jquery-steps/build/jquery.steps.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jquery-steps\build\jquery.steps.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jquery-validation/jquery.validate.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jquery-validation\jquery.validate.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jqvmap/css/jqvmap.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jqvmap\css\jqvmap.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jqvmap/js/jquery.vmap.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jqvmap\js\jquery.vmap.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jqvmap/js/jquery.vmap.usa.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jqvmap\js\jquery.vmap.usa.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/jqvmap/js/jquery.vmap.world.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\jqvmap\js\jquery.vmap.world.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/lightgallery/css/lightgallery.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\lightgallery\css\lightgallery.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/lightgallery/fonts/lg.eot?
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\lightgallery\fonts\lg-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/lightgallery/fonts/lg.eot?n1z373
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\lightgallery\fonts\lg.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/lightgallery/fonts/lg.svg?n1z373
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\lightgallery\fonts\lg.svg
+Content Type: image/svg+xml
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/lightgallery/fonts/lg.ttf?n1z373
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\lightgallery\fonts\lg.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/lightgallery/fonts/lg.woff?n1z373
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\lightgallery\fonts\lg.woff
+Content Type: application/font-woff
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/lightgallery/img/loading.gif
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\lightgallery\img\loading.gif
+Content Type: image/gif
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/lightgallery/img/video-play.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\lightgallery\img\video-play.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/lightgallery/img/vimeo-play.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\lightgallery\img\vimeo-play.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/lightgallery/img/youtube-play.png
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\lightgallery\img\youtube-play.png
+Content Type: image/png
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/lightgallery/js/lightgallery-all.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\lightgallery\js\lightgallery-all.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/metismenu/css/metisMenu.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\metismenu\css\metisMenu.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/moment/moment.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\moment\moment.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/morris/morris.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\morris\morris.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/nestable2/css/jquery.nestable.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\nestable2\css\jquery.nestable.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/nestable2/js/jquery.nestable.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\nestable2\js\jquery.nestable.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/nouislider/nouislider.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\nouislider\nouislider.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/nouislider/nouislider.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\nouislider\nouislider.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/owl-carousel/owl.carousel.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\owl-carousel\owl.carousel.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/owl-carousel/owl.carousel.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\owl-carousel\owl.carousel.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/peity/jquery.peity.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\peity\jquery.peity.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/perfect-scrollbar/css/perfect-scrollbar.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\perfect-scrollbar\css\perfect-scrollbar.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/pickadate/picker.date.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\pickadate\picker.date.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/pickadate/picker.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\pickadate\picker.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/pickadate/picker.time.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\pickadate\picker.time.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/pickadate/themes/default.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\pickadate\themes\default.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/pickadate/themes/default.date.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\pickadate\themes\default.date.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/raphael/raphael.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\raphael\raphael.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/select2/css/select2.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\select2\css\select2.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/select2/js/select2.full.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\select2\js\select2.full.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/star-rating/jquery.star-rating-svg.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\star-rating\jquery.star-rating-svg.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/star-rating/star-rating-svg.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\star-rating\star-rating-svg.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/svganimation/svg.animation.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\svganimation\svg.animation.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/svganimation/vivus.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\svganimation\vivus.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/sweetalert2/dist/sweetalert2.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\sweetalert2\dist\sweetalert2.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/sweetalert2/dist/sweetalert2.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\sweetalert2\dist\sweetalert2.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/swiper/css/swiper-bundle.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\swiper\css\swiper-bundle.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/swiper/js/swiper-bundle.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\swiper\js\swiper-bundle.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/toastr/css/toastr.min.css
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\toastr\css\toastr.min.css
+Content Type: text/css
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/toastr/js/toastr.min.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\toastr\js\toastr.min.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/vendor/wnumb/wNumb.js
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\vendor\wnumb\wNumb.js
+Content Type: application/x-javascript
+
+Uri: https://dompet.dexignlab.com/django/xhtml/widget-card.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\widget-card.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/widget-chart.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\widget-chart.html
+Content Type: text/html
+
+Uri: https://dompet.dexignlab.com/django/xhtml/widget-list.html
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\django\xhtml\widget-list.html
+Content Type: text/html
+
+Uri: https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\css2
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\css-2
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css?family=Nunito:400,600,700
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\css-4
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css?family=Open+Sans:400,600,700
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\css-1
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\css
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css?family=Roboto:400,500,700
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\css-3
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/icon?family=Material+Icons
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\icon
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/cairo/v28/SLXgc1nY6HkvangtZmpQdkhzfH5lkSs2SgRjCAGMQ1z0hAc5W1Q.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\cairo\v28\SLXgc1nY6HkvangtZmpQdkhzfH5lkSs2SgRjCAGMQ1z0hAc5W1Q.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/cairo/v28/SLXgc1nY6HkvangtZmpQdkhzfH5lkSs2SgRjCAGMQ1z0hD45W1Q.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\cairo\v28\SLXgc1nY6HkvangtZmpQdkhzfH5lkSs2SgRjCAGMQ1z0hD45W1Q.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/cairo/v28/SLXgc1nY6HkvangtZmpQdkhzfH5lkSs2SgRjCAGMQ1z0hEk5W1Q.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\cairo\v28\SLXgc1nY6HkvangtZmpQdkhzfH5lkSs2SgRjCAGMQ1z0hEk5W1Q.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/cairo/v28/SLXgc1nY6HkvangtZmpQdkhzfH5lkSs2SgRjCAGMQ1z0hGA-W1Q.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\cairo\v28\SLXgc1nY6HkvangtZmpQdkhzfH5lkSs2SgRjCAGMQ1z0hGA-W1Q.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/cairo/v28/SLXgc1nY6HkvangtZmpQdkhzfH5lkSs2SgRjCAGMQ1z0hL4-W1Q.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\cairo\v28\SLXgc1nY6HkvangtZmpQdkhzfH5lkSs2SgRjCAGMQ1z0hL4-W1Q.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/cairo/v28/SLXgc1nY6HkvangtZmpQdkhzfH5lkSs2SgRjCAGMQ1z0hOA-W1Q.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\cairo\v28\SLXgc1nY6HkvangtZmpQdkhzfH5lkSs2SgRjCAGMQ1z0hOA-W1Q.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialicons/v142/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\materialicons\v142\flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aX8.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\montserrat\v26\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw5aX8.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\montserrat\v26\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw5aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w5aX8.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\montserrat\v26\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w5aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aX8.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\montserrat\v26\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/nunito/v26/XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmdTQ3ig.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\nunito\v26\XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmdTQ3ig.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/nunito/v26/XRXI3I6Li01BKofiOc5wtlZ2di8HDGUmdTQ3ig.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\nunito\v26\XRXI3I6Li01BKofiOc5wtlZ2di8HDGUmdTQ3ig.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/nunito/v26/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTQ3ig.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\nunito\v26\XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTQ3ig.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\opensans\v40\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4gaVc.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\opensans\v40\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4gaVc.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\opensans\v40\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLCz7Z1xlEA.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\poppins\v21\pxiByp8kv8JHgFVrLCz7Z1xlEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLDD4Z1xlEA.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\poppins\v21\pxiByp8kv8JHgFVrLDD4Z1xlEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLDz8Z1xlEA.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\poppins\v21\pxiByp8kv8JHgFVrLDz8Z1xlEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLEj6Z1xlEA.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\poppins\v21\pxiByp8kv8JHgFVrLEj6Z1xlEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLGT9Z1xlEA.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\poppins\v21\pxiByp8kv8JHgFVrLGT9Z1xlEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrJJfedw.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\poppins\v21\pxiEyp8kv8JHgFVrJJfedw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc9.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\roboto\v30\KFOlCnqEu92Fr1MmEU9fBBc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc9.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\roboto\v30\KFOlCnqEu92Fr1MmWUlfBBc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf
+File Name: C:\Downloaded Web Sites\dompet.dexignlab.com\s\roboto\v30\KFOmCnqEu92Fr1Mu4mxP.ttf
+Content Type: font/ttf
+
